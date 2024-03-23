@@ -24,4 +24,4 @@ Zijvensters
 Vertaalresultaten beschikbaar
 
 ## Gerelateerde karakters
-* [Robina the Hood](Robina%20the%20Hood.md)
+* [Robina the Hood](Robina-the-Hood.md)
