@@ -1,6 +1,6 @@
 # Twilly
 
-<img src="/images/Twilly.png" alt="Twilly" breedte=200>
+<img src="/images/Twilly.png" alt="Twilly" width=200>
 
 ## Fysieke beschrijving
 
