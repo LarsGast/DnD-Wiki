@@ -1,21 +1,24 @@
 # Twilly
 
-<img src="/images/Twilly.png" alt="Twilly" width=200>
+<img src="/images/Twilly.png" alt="Twilly" breedte=200>
 
-## Physical Description
+## Fysieke beschrijving
 
-### Body Features
-Small, red.
+### Lichaam
+Klein, rood.
 
-### Specialized Equipment 
-Twilly has a little stick with a leaf at the end, which has magical healing powers.
+### Gespecialiseerde apparatuur
+Twilly heeft een stokje met aan het uiteinde een blad, dat magische genezende krachten heeft.
 
-## Mental characteristics
+## Mentale kenmerken
 
-### Personal history
-Twilly was once adopted by Robina the Hood. He has been with her guarding Surewould Forest ever since.
+### Persoonlijke geschiedenis
+Twilly werd ooit gered door Robina the Hood. Sindsdien bewaakt hij samen met haar het Surewould-bos.
 
-## Personality Characteristics
+## Persoonlijkheidskenmerken
 
-### Motivation
-To help and repay Robina the Hood for rescuing him.
+### Motivatie
+Om Robina the Hood te helpen en terug te betalen voor haar redding.
+Feedback sturen
+Zijvensters
+Vertaalresultaten beschikbaar
