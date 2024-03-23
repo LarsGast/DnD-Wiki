@@ -1,1 +1,0 @@
-[Home](index.md) | [Campaigns]() | [Karakters](Characters.md) | [Locaties]()
