@@ -59,7 +59,7 @@ Is heel afhankelijk van zijn labjas, deze geeft hem namelijk veel zelfverzekerdh
 * [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
 
 ## Gerelateerde items
-* Lab Coat (worn)
+* [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
 
 ## Galerij
 <img src="../images/Goblin.png" alt="Albert Tweesteen zonder labjas" width=200>

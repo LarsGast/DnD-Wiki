@@ -9,7 +9,7 @@ title: Circlet of Enlarge Reduce
 50 gp
 
 ## Werking
-Eens per dag mag de drager van dit kroontje de spreuk Enlarge/Reduce uitvoeren.
+<b><i>Big and Small.</i></b> Eens per dag mag de drager van dit kroontje de spreuk Enlarge/Reduce uitvoeren.
 
 ## Beschrijving
 Dit kroontje bevat twee edelstenen, één groot, één klein.
