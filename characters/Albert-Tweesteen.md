@@ -53,7 +53,7 @@ Is heel afhankelijk van zijn labjas, deze geeft hem namelijk veel zelfverzekerdh
 
 ## Gerelateerde karakters
 * [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
-* Nettie Bettie
+* [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
 
 ## Gerelateerde locaties
 * [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})

@@ -8,7 +8,7 @@ title: Koning Splurt
 ## Algemeen
 * Volledige naam: Splurt
 * Bijnamen: Koning Splurt
-* Ras: Mens
+* Ras: Goblin
 * Geslacht: Man
 * Leeftijd: 21
 * Woonplaats: Surewould-bos
@@ -53,7 +53,7 @@ Ongelofelijk dom.
 ## Gerelateerde karakters
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
 * [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
-* Nettie Bettie
+* [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
 
 ## Gerelateerde locaties
 * [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})

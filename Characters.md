@@ -15,7 +15,7 @@ Op deze pagina kun je navigeren naar de verschillende karakters die gebruikt wor
 * [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
 * Kapitein Groenbaard
 * [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
-* Nettie Bettie
+* [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
 * Yulgar
