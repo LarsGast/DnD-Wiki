@@ -23,7 +23,7 @@ Diep in het centrum van het Surewould-bos bevindt zich een magische omgeving, di
 
 ## Gerelateerde karakters
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
-* Azura Zingzwaard
+* [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
 * Koning Splurt
 * Nettie Bettie
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})

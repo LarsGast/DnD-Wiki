@@ -9,7 +9,7 @@ Op deze pagina kun je navigeren naar de verschillende karakters die gebruikt wor
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
 * [Amy Aria]({{ site.baseurl }}{% link characters/Amy-Aria.md %})
 * [Ash Dragonblade]({{ site.baseurl }}{% link characters/Ash-Dragonblade.md %})
-* Azura Zingzwaard
+* [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
 * Gareth Bloodwood
 * Gaston de Kok
 * Hugo Zingzwaard

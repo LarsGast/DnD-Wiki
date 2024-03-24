@@ -51,7 +51,7 @@ Onervaren, kan zijn eigen krachten niet goed inschatten.
 * [The Rescue of (Princess) Azura]({{ site.baseurl }}{% link campaigns/The-Rescue-of-(Princess)-Azura.md %})
 
 ## Gerelateerde karakters
-* Azura Zingzwaard
+* [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
 
 ## Gerelateerde locaties
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
