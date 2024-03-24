@@ -1,4 +1,7 @@
-# Robina the Hood
+---
+layout: post
+title: Robina the Hood
+---
 
 <img src="../images/Robina full body.png" alt="Robina the Hood" width=200>
 
