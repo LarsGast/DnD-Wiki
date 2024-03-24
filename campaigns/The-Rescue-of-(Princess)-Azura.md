@@ -5,7 +5,7 @@ title: The Rescue of (Princess) Azura
 
 ## Verhaal
 
-In een wereld vol magie en wonder ligt een land. In dat land, ligt een dorpje genaamd Falconreach. In dat dorpje, staat een herberg. In die herberg zit een groep avonturiers.
+In een wereld vol magie en wonder ligt een land gemaand Greenguard. In dat land, ligt een dorpje genaamd Falconreach. In dat dorpje, staat een herberg. In die herberg zit een groep avonturiers.
 
 De barman (genaamd Hugo Zingzwaard) roept de avonturiers bij hem, hij heeft namelijk een missie voor ze. Zijn dochter, Azura, is plots verdwenen. Hij weet niet waar ze zich zou kunnen bevinden, en ze is al meerdere dagen zoek. Ze is wel eens vaker weg, dan slaapt ze plots bij vrienden zonder het tegen haar vader te zeggen, maar nu heeft ze wel erg lang niet van haar laten horen. Hugo is bereid om de avonturiers 50 goud te geven als ze zijn kleine prinses weer bij hem terug kunnen brengen.
 
@@ -40,8 +40,8 @@ Om Azura van deze dwangbruiloft te redden verslaan de avonturiers Koning Splurt 
 * Hugo Zingzwaard
 * Koning Splurt
 * Nettie Bettie
-* Robina the Hood
-* Twilly
+* [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
+* [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
 * Yulgar
 
 ## Locaties
