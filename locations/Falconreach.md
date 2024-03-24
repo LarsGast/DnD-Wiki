@@ -23,6 +23,8 @@ Aangezien Falconreach een klein dorpje is, speelt er niet veel politiek. Toch he
 ## Yulgar's Smithy
 Yulgar smeedt zijn eigen wapens in zijn eigen smederij. De wapens die hij hier verkoopt zijn simpel en effectief, perfect voor beginnende avonturiers. Hij verkoopt geen magische wapens, daar heeft hij namelijk geen oog voor.
 
+---
+
 ## Komt voor in
 * [The Rescue of (Princess) Azura]({{ site.baseurl }}{% link campaigns/The-Rescue-of-(Princess)-Azura.md %})
 * Recruiting Twilly

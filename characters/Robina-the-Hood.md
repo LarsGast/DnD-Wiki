@@ -45,6 +45,8 @@ Het beschermen van het Surewould-bos voor en tegen de monsters die erin leven.
 ## Gebreken of fouten
 Ontzettend snel afgeleid en naïef.
 
+---
+
 ## Komt voor in
 * [The Rescue of (Princess) Azura]({{ site.baseurl }}{% link campaigns/The-Rescue-of-(Princess)-Azura.md %})
 

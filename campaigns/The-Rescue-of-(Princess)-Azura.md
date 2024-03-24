@@ -31,6 +31,8 @@ De avonturiers gaan door de deur en komen binnen in een kamer waar het lijkt als
 
 Om Azura van deze dwangbruiloft te redden verslaan de avonturiers Koning Splurt en zijn onderdanen. Triomfantelijk nemen ze haar mee terug naar Hugo, die hen beloont met de beloofde 50 goud en gratis drank. De avonturiers vieren de overwinning met elkaar, en blijven nog even hangen in Falconreach. Wie weet zit er nog meer avontuur op hen te wachten.
 
+---
+
 ## Karakters
 
 * Albert Tweesteen

@@ -45,6 +45,8 @@ Wil op avontuur om de wereld te verkennen.
 ## Gebreken of fouten
 Spreekt bijna geen talen en is naïef.
 
+---
+
 ## Komt voor in
 * [The Rescue of (Princess) Azura]({{ site.baseurl }}{% link campaigns/The-Rescue-of-(Princess)-Azura.md %})
 * [Recruiting Twilly]()
