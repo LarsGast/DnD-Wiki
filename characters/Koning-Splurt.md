@@ -59,7 +59,7 @@ Ongelofelijk dom.
 * [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
 
 ## Items
-* Circlet of Enlarge Reduce
+* [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
 
 ## Galerij
 <img src="../images/Koning Splurt.png" alt="Koning Splurt" width=200>
