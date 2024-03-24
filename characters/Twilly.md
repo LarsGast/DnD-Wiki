@@ -1,4 +1,7 @@
-# Twilly
+---
+layout: post
+title: Twilly
+---
 
 <img src="../images/Twilly.png" alt="Twilly" width=200>
 
@@ -19,9 +22,6 @@ Twilly werd ooit gered door Robina the Hood. Sindsdien bewaakt hij samen met haa
 
 ### Motivatie
 Om Robina the Hood te helpen en terug te betalen voor haar redding.
-Feedback sturen
-Zijvensters
-Vertaalresultaten beschikbaar
 
 ## Gerelateerde karakters
 * [Robina the Hood](Robina-the-Hood.md)

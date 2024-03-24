@@ -1,11 +1,12 @@
-# DnD Wiki
-
-{% include navigation.html %}
+---
+layout: home
+title: Home
+---
 
 Op deze wiki kun je informatie vinden over de karakters, locaties, en meer van de campaigns die we gespeeld hebben. Deze wiki bestaat uit de volgende pagina's:
 
-* [Campaigns](/Campaigns.md)
-* [Karakters](/Characters.md)
+* [Campaigns](/campaigns)
+* [Karakters](/characters)
 * Locaties
 * Monsters
 
