@@ -43,7 +43,7 @@ Vrijheid.
 Helpt haar vrienden wanneer ze haar nodig hebben.
 
 ## Gebreken of fouten
-Komt vaak in de problemen.
+Arrogantie.
 
 ---
 
@@ -52,7 +52,7 @@ Komt vaak in de problemen.
 
 ## Gerelateerde karakters
 * [Ash Dragonblade]({{ site.baseurl }}{% link characters/Ash-Dragonblade.md %})
-* Hugo Zingzwaard
+* [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
 
 ## Gerelateerde locaties
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})

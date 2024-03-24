@@ -34,7 +34,7 @@ Yulgar smeedt zijn eigen wapens in zijn eigen smederij. De wapens die hij hier v
 * [Amy Aria]({{ site.baseurl }}{% link characters/Amy-Aria.md %})
 * [Ash Dragonblade]({{ site.baseurl }}{% link characters/Ash-Dragonblade.md %})
 * [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
-* Hugo Zingzwaard
+* [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
 * Yulgar

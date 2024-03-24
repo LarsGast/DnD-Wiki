@@ -58,3 +58,5 @@ Onervaren, kan zijn eigen krachten niet goed inschatten.
 
 ## Galerij
 <img src="../images/Ash Dragonblade.png" alt="Ash Dragonblade" width=200>
+
+<img src="../images/Falconreach.png" alt="Ash voor de Falconreach Herberg" width=400>

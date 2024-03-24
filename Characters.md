@@ -12,7 +12,7 @@ Op deze pagina kun je navigeren naar de verschillende karakters die gebruikt wor
 * [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
 * Gareth Bloodwood
 * Gaston de Kok
-* Hugo Zingzwaard
+* [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
 * Kapitein Groenbaard
 * Koning Splurt
 * Nettie Bettie
