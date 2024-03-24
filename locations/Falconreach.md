@@ -46,7 +46,7 @@ Yulgar smeedt zijn eigen wapens in zijn eigen smederij. De wapens die hij hier v
 * -
 
 ## Locaties in de buurt
-* Surewould-bos
+* [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
 
 ## Galerij
 <img src="../images/Falconreach.png" alt="Falconreach" width=400>

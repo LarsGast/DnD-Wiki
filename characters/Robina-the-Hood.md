@@ -55,7 +55,7 @@ Ontzettend snel afgeleid en naïef.
 
 ## Gerelateerde locaties
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
-* [Surewould-bos]()
+* [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
 
 ## Galerij
 <img src="../images/Robina full body.png" alt="Robina full body" width=200>
