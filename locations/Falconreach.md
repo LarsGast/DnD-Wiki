@@ -9,7 +9,7 @@ Falconreach is een middel-klein dorpje. Door de positionering van het dorp en he
 Met winkeltjes zoals Amy's Potions en Yulgar's Smithy kunnen avonturiers en voorbijgangers goedkoop voorraden inslaan en in de Falconreach Herberg kunnen ze ervoor zorgen dat ze goed uitgerust weer op pad kunnen.
 
 ## Amy's Potions
-Amy Aria is op haarzelf runt deze potion winkel in haar eentje. Aangezien de meeste klanten niet veel geld hebben, verkoopt ze alleen maar simpele Potions of Healing. Voor 50 goud per stuk worden deze potions op marktwaarde verkocht.
+Amy Aria runt deze potion winkel in haar eentje. Aangezien de meeste klanten niet veel geld hebben, verkoopt ze alleen maar simpele Potions of Healing. Voor 50 goud per stuk worden deze potions op marktwaarde verkocht.
 
 ## Falconreach Haven
 In de haven van Falconreach liggen voornamelijk handelsschepen. Handelaars verkopen hun handel hier en rusten uit voor de reis die zal volgen.
