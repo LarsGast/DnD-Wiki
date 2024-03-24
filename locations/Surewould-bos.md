@@ -29,6 +29,11 @@ Diep in het centrum van het Surewould-bos bevindt zich een magische omgeving, di
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
 
+## Items
+* [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
+* [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
+* Staff of Average Intelligence
+
 ## Super-locaties
 * Greenguard
 
