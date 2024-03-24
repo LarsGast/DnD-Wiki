@@ -23,7 +23,7 @@ Uiteindelijk wijst Robina de avonturiers de weg naar de schuilplaats van de Gobl
 
 Op de plek die Robina heeft aangewezen staan twee Goblins de wacht te houden voor een dikke, uitgeholde boom. De avonturiers pakken de Goblins aan en klimmen op de trap in de boom omhoog. Eenmaal bovenaan de trap worden de avonturiers verblind door de zon. De schuilplaats van de Goblins blijkt een enorme boomhut te zijn die zich boven de dichtbegroeide bomen van het Surewould-bos bevindt.
 
-De uitgang van de trap lijdt naar een open platform boven de bomen. Hier zitten zo'n 10 Goblins rond te lopen, spellen te spelen, of te drinken. De Goblins kijken één keer op naar de avonturiers, maar gaan dan snel weer verder met waar ze mee bezig waren. Eén van de Goblins die hier aanwezig is is Albert Tweesteen. Hij heeft een oude, vieze labjas aan en vertelt anderen graag hoe slim hij is en hij laat anderen graag zijn drankjes proeven. Er is één deur die naar een andere kamer leidt. Deze deur zit echter op slot, en een stem van de andere kant van de deur vraagt om een wachtwoord zodra iemand aanklopt.
+De uitgang van de trap lijdt naar een open platform boven de bomen. Hier zitten zo'n 10 Goblins rond te lopen, spellen te spelen, of te drinken. De Goblins kijken één keer op naar de avonturiers, maar gaan dan snel weer verder met waar ze mee bezig waren. Eén van de Goblins die hier aanwezig is is [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %}). Hij heeft een oude, vieze labjas aan en vertelt anderen graag hoe slim hij is en hij laat anderen graag zijn drankjes proeven. Er is één deur die naar een andere kamer leidt. Deze deur zit echter op slot, en een stem van de andere kant van de deur vraagt om een wachtwoord zodra iemand aanklopt.
 
 Na een tijdje komen de avonturiers erachter wat het wachtwoord van de deur is. Het wachtwoord bestaat uit vier cijfers, maar het maakt schijnbaar niet uit wat deze vier cijfers zijn of in welke volgorde ze staan. Als degene aan de ene kant van de deur zelfverzekerd genoeg is, opent de Goblin aan de andere kant de deur.
 
@@ -35,7 +35,7 @@ Om Azura van deze dwangbruiloft te redden verslaan de avonturiers Koning Splurt 
 
 ## Karakters
 
-* Albert Tweesteen
+* [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
 * Amy Aria
 * Ash
 * Azura Zingzwaard
