@@ -58,7 +58,7 @@ Arrogant.
 * [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
 
 ## Items
-* Staff of Average Intelligence
+* [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
 
 ## Galerij
 <img src="../images/Nettie Bettie.png" alt="Nettie Bettie" width=200>

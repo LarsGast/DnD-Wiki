@@ -32,7 +32,7 @@ Diep in het centrum van het Surewould-bos bevindt zich een magische omgeving, di
 ## Items
 * [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
 * [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
-* Staff of Average Intelligence
+* [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
 
 ## Super-locaties
 * Greenguard
