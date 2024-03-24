@@ -54,7 +54,7 @@ Spreekt bijna geen talen en is naïef.
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
 
 ## Gerelateerde locaties
-* [Falconreach]()
+* [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 * [Surewould-bos]()
 
 ## Galerij

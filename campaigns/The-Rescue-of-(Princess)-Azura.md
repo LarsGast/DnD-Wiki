@@ -46,7 +46,7 @@ Om Azura van deze dwangbruiloft te redden verslaan de avonturiers Koning Splurt 
 
 ## Locaties
 
-* Falconreach
+* [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 * Surewould-bos
 
 ## Monsters

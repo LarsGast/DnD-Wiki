@@ -52,7 +52,7 @@ Ontzettend snel afgeleid en naïef.
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
 
 ## Gerelateerde locaties
-* [Falconreach]()
+* [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 * [Surewould-bos]()
 
 ## Galerij
