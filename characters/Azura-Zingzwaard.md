@@ -53,6 +53,7 @@ Arrogantie.
 ## Gerelateerde karakters
 * [Ash Dragonblade]({{ site.baseurl }}{% link characters/Ash-Dragonblade.md %})
 * [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
+* [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
 
 ## Gerelateerde locaties
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})

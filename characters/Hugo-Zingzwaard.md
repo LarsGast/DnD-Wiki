@@ -29,7 +29,7 @@ Uitstekende zakenman.
 Neemt graag een slokje van zijn eigen bier.
 
 ## Interactie met anderen
-Vriendelijk met iedereen die een drankje van hem koopt, maar niet bang om mensen uit de herberg te gooien als ze vervelend doen.
+Vriendelijk met iedereen die een drankje van hem koopt, maar niet bang om mensen uit de herberg te gooien als ze vervelend doen. Goede vrienden met Yulgar Lark.
 
 ## Kennis
 Hoort wel eens geruchten van de inwoners van Falconreach.
@@ -50,6 +50,7 @@ Verwend zijn dochter iets te veel.
 
 ## Gerelateerde karakters
 * [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
+* [Yulgar Lark]({{ site.baseurl }}{% link characters/Yulgar-Lark.md %})
 
 ## Gerelateerde locaties
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})

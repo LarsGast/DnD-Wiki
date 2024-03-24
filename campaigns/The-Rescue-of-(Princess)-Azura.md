@@ -44,7 +44,7 @@ Om Azura van deze dwangbruiloft te redden verslaan de avonturiers Koning Splurt 
 * [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
-* Yulgar
+* [Yulgar Lark]({{ site.baseurl }}{% link characters/Yulgar-Lark.md %})
 
 ## Locaties
 

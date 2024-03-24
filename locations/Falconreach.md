@@ -21,7 +21,7 @@ De lokale herberg wordt gerund door Hugo Zingzwaard. Door de frequentie van voor
 Aangezien Falconreach een klein dorpje is, speelt er niet veel politiek. Toch heeft het dorpje een raad van inwoners. Deze raad komt eens in de zoveel tijd bij elkaar in de Falconreach Toren, die zich bevindt op een heuvel aan zee. De toren is het meest luxueuze gebouw in het dorp, maar het is lang geen tempel of kasteel.
 
 ## Yulgar's Smithy
-Yulgar smeedt zijn eigen wapens in zijn eigen smederij. De wapens die hij hier verkoopt zijn simpel en effectief, perfect voor beginnende avonturiers. Hij verkoopt geen magische wapens, daar heeft hij namelijk geen oog voor.
+Yulgar Lark smeedt zijn eigen wapens in zijn eigen smederij. De wapens die hij hier verkoopt zijn simpel en effectief, perfect voor beginnende avonturiers. Hij verkoopt geen magische wapens, daar heeft hij namelijk geen oog voor.
 
 ---
 
@@ -37,7 +37,7 @@ Yulgar smeedt zijn eigen wapens in zijn eigen smederij. De wapens die hij hier v
 * [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
-* Yulgar
+* [Yulgar Lark]({{ site.baseurl }}{% link characters/Yulgar-Lark.md %})
 
 ## Super-locaties
 * Greenguard
