@@ -36,7 +36,7 @@ Om Azura van deze dwangbruiloft te redden verslaan de avonturiers Koning Splurt 
 ## Karakters
 
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
-* Amy Aria
+* [Amy Aria]({{ site.baseurl }}{% link characters/Amy-Aria.md %})
 * Ash
 * Azura Zingzwaard
 * Hugo Zingzwaard

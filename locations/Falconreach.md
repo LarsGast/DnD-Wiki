@@ -31,7 +31,7 @@ Yulgar smeedt zijn eigen wapens in zijn eigen smederij. De wapens die hij hier v
 * Captain Greenbeard's Legend
 
 ## Gerelateerde karakters
-* Amy Aria
+* [Amy Aria]({{ site.baseurl }}{% link characters/Amy-Aria.md %})
 * Ash
 * Azura Zingzwaard
 * Hugo Zingzwaard
