@@ -14,7 +14,7 @@ Op deze pagina kun je navigeren naar de verschillende karakters die gebruikt wor
 * Gaston de Kok
 * [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
 * Kapitein Groenbaard
-* Koning Splurt
+* [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
 * Nettie Bettie
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})

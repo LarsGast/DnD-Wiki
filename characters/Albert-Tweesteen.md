@@ -6,8 +6,8 @@ title: Albert Tweesteen
 <img src="../images/Goblin.png" alt="Albert Tweesteen" width=200>
 
 ## Algemeen
-* Volledige naam: Onbekend
-* Bijnamen: Albert Tweesteen
+* Volledige naam: Albert Tweesteen
+* Bijnamen: -
 * Ras: Goblin
 * Geslacht: Man
 * Leeftijd: 20
@@ -52,7 +52,7 @@ Is heel afhankelijk van zijn labjas, deze geeft hem namelijk veel zelfverzekerdh
 * Captain Greenbeard's Legend
 
 ## Gerelateerde karakters
-* Koning Splurt
+* [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
 * Nettie Bettie
 
 ## Gerelateerde locaties
