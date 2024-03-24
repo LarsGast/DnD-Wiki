@@ -5,59 +5,57 @@ title: Robina the Hood
 
 <img src="../images/Robina full body.png" alt="Robina the Hood" width=200>
 
-Prinses Victoria Alteon (ook bekend als Robina the Hood, bewaker van het Surewould-bos)
+## Algemeen
+* Volledige naam: Victoria Alteon
+* Bijnamen: Robina the Hood
+* Ras: Wood-Elf
+* Geslacht: Vrouw
+* Leeftijd: 45
+* Woonplaats: Falconreach
+* Bevindt zich op dit moment in: Surewould-bos
+* Talen: Common, Elvish, Goblin
 
-## Fysieke beschrijving
+## Beroep en geschiedenis
+Eerder een premiejager, tegenwoordig beschermer van het SureWould-bos.
 
-### Algemene fysieke conditie
-Wendbaar en snel. Sterk voor haar lichaamstype.
+## Uiterlijk
+Een Wood-Elf gekleed in het groen. Ze heeft een slank lichaamstype.
 
-### Gezichtskenmerken
-Puntige elfenoren.
+## Capaciteiten
+Snel, sterk, en behendig, maar ook snel afgeleid.
 
-### Kleding en accessoires
-Een groene mantel en een groene hoed.
+## Talenten
+Goed met dieren. Kan van grote afstand een doelwit raken met haar boog.
 
-### Gespecialiseerde apparatuur
-Bogen, lang en kort.
+## Hebbelijkheden
+Spreekt snel en is snel afgeleid.
 
-## Mentale kenmerken
+## Interactie met anderen
+Vriendelijk tegenover iedereen die ze ontmoet, zowel mens als dier als monster.
 
-### Persoonlijke geschiedenis
-Middelste dochter van koning Alden Alteon van Swordhaven. Premiejager in haar late tienerjaren. Bewaker van het Surewould-bos.
+## Kennis
+Haar training als Ranger heeft ervoor gezorgd dat ze het hele Surewould-bos op haar duimpje kent.
 
-### Onderwijs
-Als prinses, maar ze vond haar eigen manier om mensen en dieren met respect te behandelen.
+## Idealen
+Is ervan overtuigt dat mens, dier, en monster in vrede samen kunnen leven.
 
-### Werkgelegenheid
-Premiejager, bewaker van het Surewould-bos.
+## Bonden
+Het beschermen van het Surewould-bos voor en tegen de monsters die erin leven.
 
-### Moraliteit en filosofie
-Iedereen verdient het om gelijk behandeld te worden, zelfs monsters en beesten.
+## Gebreken of fouten
+Ontzettend snel afgeleid en naïef.
 
-## Persoonlijkheidskenmerken
-
-### Motivatie
-Brengt balans in het bos, zowel voor mensen als voor monsters.
-
-### Persoonlijkheidskenmerken
-ADHD.
-
-## Sociaal
-
-### Familiebanden
-Middelste dochter van Koning Alden Alteon.
-
-### Hobby's en huisdieren
-Twilly.
-
-<img src="../images/Robina & Twilly.png" alt="Robina en Twilly" width=200>
-
-### Toespraak
-Snel en grillig.
-
-### Rijkdom en financiële toestand
-Groeide rijk op, maar gaf haar geld weg toen ze in opstand kwam tegen haar vader en premiejager werd.
+## Komt voor in
+* [The Rescue of (Princess) Azura]({{ site.baseurl }}{% link campaigns/The-Rescue-of-(Princess)-Azura.md %})
 
 ## Gerelateerde karakters
-* [Twilly](Twilly.md)
+* [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
+
+## Gerelateerde locaties
+* [Falconreach]()
+* [Surewould-bos]()
+
+## Galerij
+<img src="../images/Robina full body.png" alt="Robina full body" width=200>
+
+<img src="../images/Robina & Twilly.png" alt="Robina & Twilly" width=200>
