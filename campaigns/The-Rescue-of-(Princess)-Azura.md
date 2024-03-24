@@ -1,6 +1,7 @@
-# The Rescue of (Princess) Azura
-
-{% include navigation.html %}
+---
+layout: post
+title: The Rescue of (Princess) Azura
+---
 
 ## Verhaal
 
