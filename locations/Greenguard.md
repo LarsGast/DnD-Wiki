@@ -20,7 +20,7 @@ Greenguard is een divers land met diverse klimaten, van de vlaktes van Falconrea
 
 ## Komt voor in
 * [The Rescue of (Princess) Azura]({{ site.baseurl }}{% link campaigns/The-Rescue-of-(Princess)-Azura.md %})
-* Recruiting Twilly
+* [Recruiting Twilly]({{ site.baseurl }}{% link campaigns/Recruiting-Twilly.md %})
 * Captain Greenbeard's Legend
 
 ## Gerelateerde karakters

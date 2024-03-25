@@ -39,7 +39,7 @@ Yulgar Lark smeedt zijn eigen wapens in zijn eigen smederij. De wapens die hij h
 
 ## Komt voor in
 * [The Rescue of (Princess) Azura]({{ site.baseurl }}{% link campaigns/The-Rescue-of-(Princess)-Azura.md %})
-* Recruiting Twilly
+* [Recruiting Twilly]({{ site.baseurl }}{% link campaigns/Recruiting-Twilly.md %})
 * Captain Greenbeard's Legend
 
 ## Gerelateerde karakters

@@ -49,7 +49,7 @@ Ontzettend snel afgeleid en naïef.
 
 ## Komt voor in
 * [The Rescue of (Princess) Azura]({{ site.baseurl }}{% link campaigns/The-Rescue-of-(Princess)-Azura.md %})
-* Recruiting Twilly
+* [Recruiting Twilly]({{ site.baseurl }}{% link campaigns/Recruiting-Twilly.md %})
 
 ## Gerelateerde karakters
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
