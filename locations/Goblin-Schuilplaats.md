@@ -3,6 +3,16 @@ layout: post
 title: Goblin Schuilplaats
 ---
 
+## Algemeen
+* Soort: Dungeon
+* Inwoners: De Goblins van het Surewould-bos
+* Populatie: 16
+* Geografische locatie: Ergens in het Surewould-bos
+* Infrastructuur: Boomhut 
+* Politiek: Koning Splurt heeft de leiding. Albert Tweesteen en Nettie Bettie zijn zijn adviseurs.
+* Geschiedenis: Enige tijd geleden gebouwd door Goblins
+* Cultuur: Ieder voor zich
+
 ## Overzicht
 Diep in het Surewould-bos bevindt zich een boomhut. De Goblins van het Surewould-bos gebruiken deze locatie als hun thuis basis. Koning Splurt staat aan het hoofd met zijn twee adviseurs, Albert Tweesteen en Nettie Bettie. Het feit dat de basis een boomhut is zorgt ervoor dat ze niet gemakkelijk gevonden kunnen worden. Alleen Robina the Hood weet de locatie van deze schuilplaats.
 

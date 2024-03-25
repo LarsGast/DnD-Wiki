@@ -3,6 +3,16 @@ layout: post
 title: Falconreach
 ---
 
+## Algemeen
+* Soort: Dorp
+* Inwoners: Diverse rassen
+* Populatie: 500-1000
+* Geografische locatie: Aan zee
+* Infrastructuur: Oude stijl gebouwen 
+* Politiek: Heeft een raad van inwoners
+* Geschiedenis: Uitgegroeid tot een controlepunt in een handelsroute
+* Cultuur: Iedereen is welkom
+
 ## Overzicht
 Falconreach is een middel-klein dorpje. Door de positionering van het dorp en het feit dat het dorp aan zee ligt is het een ideaal handelsdorpje. Ook is het een dorpje waar veel beginnende avonturiers hun avonturen starten. De omgeving is rustig en er gebeurt niet zo vaak wat. Zo nu en dan hebben de inwoners van Falconreach last van kleine Goblin plagen of van enkele beesten of monsters die uit het Surewould-bos het dorp in lopen. Robina the Hood zorgt er echter voor dat het dorp wordt beschermd tegen alles wat zich in het bos schuilhoudt.
 
