@@ -55,7 +55,7 @@ Arrogant.
 * [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
 
 ## Gerelateerde locaties
-* [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
+* [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 
 ## Items
 * [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})

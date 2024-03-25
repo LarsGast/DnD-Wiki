@@ -23,7 +23,7 @@ title: Lab Coat (worn)
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
 
 ## Gerelateerde locaties
-* [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
+* [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 
 ## Galerij
 <img src="../images/Lab Coat (Worn).png" alt="Lab Coat (Worn)" width=200>

@@ -23,7 +23,7 @@ Dit kroontje bevat twee edelstenen, één groot, één klein.
 * [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
 
 ## Gerelateerde locaties
-* [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
+* [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 
 ## Galerij
 <img src="../images/Circlet of Enlarge Reduce.png" alt="Circlet of Enlarge Reduce" width=200>

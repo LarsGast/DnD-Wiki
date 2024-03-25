@@ -23,7 +23,7 @@ Deze staaf lijkt elke Goblin slim te maken, en elke wizard dom.
 * [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
 
 ## Gerelateerde locaties
-* [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
+* [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 
 ## Galerij
 <img src="../images/Staff of Normal Intelligence.png" alt="Staff of Average Intelligence" width=75>

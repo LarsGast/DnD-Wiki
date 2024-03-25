@@ -56,7 +56,7 @@ Is heel afhankelijk van zijn labjas, deze geeft hem namelijk veel zelfverzekerdh
 * [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
 
 ## Gerelateerde locaties
-* [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
+* [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 
 ## Gerelateerde items
 * [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})

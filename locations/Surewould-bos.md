@@ -38,7 +38,7 @@ Diep in het centrum van het Surewould-bos bevindt zich een magische omgeving, di
 * Greenguard
 
 ## Sub-locaties
-* Goblin Schuilplaats
+* [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 * Magisch Centrum
 
 ## Locaties in de buurt
