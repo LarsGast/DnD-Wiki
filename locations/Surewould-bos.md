@@ -45,7 +45,7 @@ Diep in het centrum van het Surewould-bos bevindt zich een magische omgeving, di
 * [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
 
 ## Super-locaties
-* Greenguard
+* [Greenguard]({{ site.baseurl }}{% link locations/Greenguard.md %})
 
 ## Sub-locaties
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})

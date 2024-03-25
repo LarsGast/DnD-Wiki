@@ -50,7 +50,7 @@ Om Azura van deze dwangbruiloft te redden verslaan de avonturiers Koning Splurt 
 
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
-* Greenguard
+* [Greenguard]({{ site.baseurl }}{% link locations/Greenguard.md %})
 * [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
 
 ## Items

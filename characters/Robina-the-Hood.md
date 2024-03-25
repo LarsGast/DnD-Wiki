@@ -6,7 +6,7 @@ title: Robina the Hood
 <img src="../images/Robina full body.png" alt="Robina the Hood" width=200>
 
 ## Algemeen
-* Volledige naam: Victoria Alteon
+* Volledige naam: Onbekend
 * Bijnamen: Robina the Hood
 * Ras: Wood-Elf
 * Geslacht: Vrouw
@@ -49,6 +49,7 @@ Ontzettend snel afgeleid en naïef.
 
 ## Komt voor in
 * [The Rescue of (Princess) Azura]({{ site.baseurl }}{% link campaigns/The-Rescue-of-(Princess)-Azura.md %})
+* Recruiting Twilly
 
 ## Gerelateerde karakters
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})

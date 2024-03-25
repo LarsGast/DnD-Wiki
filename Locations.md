@@ -8,7 +8,7 @@ Op deze pagina kun je navigeren naar de verschillende locaties die bezocht zijn 
 
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
-* Greenguard
+* [Greenguard]({{ site.baseurl }}{% link locations/Greenguard.md %})
 * Magisch Centrum
 * [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
 * Zandzee
