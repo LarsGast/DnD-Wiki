@@ -11,4 +11,5 @@ Op deze pagina kun je navigeren naar de verschillende locaties die bezocht zijn 
 * [Greenguard]({{ site.baseurl }}{% link locations/Greenguard.md %})
 * [Magisch Centrum]({{ site.baseurl }}{% link locations/Magisch-Centrum.md %})
 * [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
+* Wraak van Koning Alden
 * Zandzee
