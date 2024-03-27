@@ -57,7 +57,7 @@ De Hangout wordt gebruikt als de plaats waar de Goblins van het Surewould-bos ve
 * -
 
 ## Locaties in de buurt
-* Magisch Centrum
+* [Magisch Centrum]({{ site.baseurl }}{% link locations/Magisch-Centrum.md %})
 
 ## Galerij
 <img src="../images/The Goblin Hangout.png" alt="De Goblin Hangout" width=200>

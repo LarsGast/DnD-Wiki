@@ -49,7 +49,7 @@ Diep in het centrum van het Surewould-bos bevindt zich een magische omgeving, di
 
 ## Sub-locaties
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
-* Magisch Centrum
+* [Magisch Centrum]({{ site.baseurl }}{% link locations/Magisch-Centrum.md %})
 
 ## Locaties in de buurt
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})

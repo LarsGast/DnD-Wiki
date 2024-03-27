@@ -31,7 +31,7 @@ Uiteindelijk lukt het de avonturiers om de geest te overtuigen dat ze waardig zi
 
 ## Locaties
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
-* Magisch Centrum
+* [Magisch Centrum]({{ site.baseurl }}{% link locations/Magisch-Centrum.md %})
 * [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
 
 ## Items
