@@ -12,6 +12,12 @@ Voordat Twilly mee kan, moet er nog iets geregeld worden. Het blaadje dat op het
 
 ---
 
+## Vorige Campaign
+* [The Rescue of (Princess) Azura]({{ site.baseurl }}{% link campaigns/The-Rescue-of-(Princess)-Azura.md %})
+
+## Volgende Campaign
+* Captain Greenbeard's Legend
+
 ## Karakters
 * Kapitein Groenbaard
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
