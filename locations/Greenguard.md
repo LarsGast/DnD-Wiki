@@ -40,4 +40,7 @@ Greenguard is een divers land met diverse klimaten, van de vlaktes van Falconrea
 ## Locaties in de buurt
 * -
 
+## Items
+* -
+
 ## Galerij

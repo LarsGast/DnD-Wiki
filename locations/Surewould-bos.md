@@ -54,4 +54,7 @@ Diep in het centrum van het Surewould-bos bevindt zich een magische omgeving, di
 ## Locaties in de buurt
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 
+## Items
+* -
+
 ## Galerij

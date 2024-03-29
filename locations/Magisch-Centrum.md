@@ -72,6 +72,9 @@ Aan de andere kant van de deur bij de ingang van het magische centrum bevindt zi
 ## Locaties in de buurt
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 
+## Items
+* -
+
 ## Galerij
 <img src="../images/Magic Center Entrance.jpg" alt="Ingang" width=200>
 <img src="../images/Magic Center Water Room.jpg" alt="Water kamer" width=200>

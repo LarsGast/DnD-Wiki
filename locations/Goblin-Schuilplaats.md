@@ -45,11 +45,6 @@ De Hangout wordt gebruikt als de plaats waar de Goblins van het Surewould-bos ve
 * [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
 * [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
 
-## Items
-* [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
-* [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
-* [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
-
 ## Super-locaties
 * [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
 
@@ -58,6 +53,11 @@ De Hangout wordt gebruikt als de plaats waar de Goblins van het Surewould-bos ve
 
 ## Locaties in de buurt
 * [Magisch Centrum]({{ site.baseurl }}{% link locations/Magisch-Centrum.md %})
+
+## Items
+* [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
+* [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
+* [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
 
 ## Galerij
 <img src="../images/The Goblin Hangout.png" alt="De Goblin Hangout" width=200>

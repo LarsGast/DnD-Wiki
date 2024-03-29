@@ -60,5 +60,8 @@ Yulgar Lark smeedt zijn eigen wapens in zijn eigen smederij. De wapens die hij h
 ## Locaties in de buurt
 * [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
 
+## Items
+* -
+
 ## Galerij
 <img src="../images/Falconreach.png" alt="Falconreach" width=400>
