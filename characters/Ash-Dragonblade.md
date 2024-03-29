@@ -56,6 +56,9 @@ Onervaren, kan zijn eigen krachten niet goed inschatten.
 ## Gerelateerde locaties
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 
+## Items
+* -
+
 ## Galerij
 <img src="../images/Ash Dragonblade.png" alt="Ash Dragonblade" width=200>
 

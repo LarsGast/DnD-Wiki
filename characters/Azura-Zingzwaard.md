@@ -59,5 +59,8 @@ Arrogantie.
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 
+## Items
+* -
+
 ## Galerij
 <img src="../images/Azura Zingzwaard.jpeg" alt="Azura Zingzwaard" width=200>

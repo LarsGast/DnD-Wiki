@@ -59,7 +59,7 @@ Arrogantie, denkt dat hij alles en iedereen aankan.
 * Wraak van Koning Alden
 * Zandzee
 
-## Gerelateerde items
+## Items
 * -
 
 ## Galerij

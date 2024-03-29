@@ -59,6 +59,9 @@ Spreekt bijna geen talen en is naïef.
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 * [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
 
+## Items
+* -
+
 ## Galerij
 <img src="../images/Twilly.png" alt="Robina full body" width=200>
 

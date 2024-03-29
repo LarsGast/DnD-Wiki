@@ -56,5 +56,8 @@ Niet een hele goede zakenpersoon.
 ## Gerelateerde locaties
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 
+## Items
+* -
+
 ## Galerij
 <img src="../images/Amy Aria.png" alt="Amy Aria" width=200>

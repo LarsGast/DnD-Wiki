@@ -58,7 +58,7 @@ Is heel afhankelijk van zijn labjas, deze geeft hem namelijk veel zelfverzekerdh
 ## Gerelateerde locaties
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 
-## Gerelateerde items
+## Items
 * [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
 
 ## Galerij

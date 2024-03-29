@@ -55,6 +55,9 @@ Verwend zijn dochter iets te veel.
 ## Gerelateerde locaties
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 
+## Items
+* -
+
 ## Galerij
 <img src="../images/Azura Zingzwaard.jpeg" alt="Azura Zingzwaard, dochter van Hugo" width=200>
 
