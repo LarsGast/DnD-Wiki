@@ -49,15 +49,15 @@ Arrogantie, denkt dat hij alles en iedereen aankan.
 
 ## Komt voor in
 * [Recruiting Twilly]({{ site.baseurl }}{% link campaigns/Recruiting-Twilly.md %})
-* Captain Greenbeard's Legend
+* [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
 
 ## Gerelateerde karakters
-* Gareth Bloodwood
-* Gaston de Kok
+* [Gareth Bloodwood]({{ site.baseurl }}{% link characters/Gareth-Bloodwood.md %})
+* [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
 
 ## Gerelateerde locaties
-* Wraak van Koning Alden
-* Zandzee
+* [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
+* [Zandzee]({{ site.baseurl }}{% link locations/Zandzee.md %})
 
 ## Items
 * -

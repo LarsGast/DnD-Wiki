@@ -22,7 +22,7 @@ Uiteindelijk lukt het de avonturiers om de geest te overtuigen dat ze waardig zi
 * [The Rescue of (Princess) Azura]({{ site.baseurl }}{% link campaigns/The-Rescue-of-(Princess)-Azura.md %})
 
 ## Volgende Campaign
-* Captain Greenbeard's Legend
+* [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
 
 ## Karakters
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})

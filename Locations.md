@@ -13,5 +13,5 @@ Sommige locatie bevinden zich binnenin andere locaties, zoals een stad zich in e
 * [Greenguard]({{ site.baseurl }}{% link locations/Greenguard.md %})
 * [Magisch Centrum]({{ site.baseurl }}{% link locations/Magisch-Centrum.md %})
 * [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
-* Wraak van Koning Alden
-* Zandzee
+* [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
+* [Zandzee]({{ site.baseurl }}{% link locations/Zandzee.md %})

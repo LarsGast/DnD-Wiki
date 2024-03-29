@@ -49,7 +49,7 @@ Is heel afhankelijk van zijn labjas, deze geeft hem namelijk veel zelfverzekerdh
 
 ## Komt voor in
 * [The Rescue of (Princess) Azura]({{ site.baseurl }}{% link campaigns/The-Rescue-of-(Princess)-Azura.md %})
-* Captain Greenbeard's Legend
+* [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
 
 ## Gerelateerde karakters
 * [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
