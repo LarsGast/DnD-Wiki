@@ -14,6 +14,6 @@ Deze wiki bestaat uit de volgende pagina's:
 * [Locaties]({{ site.baseurl}} {% link Locations.md %})
 * [Items]({{ site.baseurl}} {% link Items.md %})
 
-In de header van elke pagina zijn deze hoofdpagina's ook te vinden. Op deze pagina's vind je een overzicht van alles wat voorgekomen is in de gespeelde avonturen op alfabetische volgorde of op chronologische volgorde. Op een pagina van een specifieke campaign, karakter, etc. zul je ook navigatie linkjes vinden naar alle gerelateerde content.
+In de header van elke pagina zijn deze hoofdpagina's ook te vinden. Op deze pagina's vind je een overzicht van alles wat voorgekomen is in de gespeelde avonturen op alfabetische volgorde of op chronologische volgorde. Op een pagina van een specifieke campaign, karakter, etc. zal je ook navigatie linkjes vinden naar alle gerelateerde content.
 
 Nieuw materiaal wordt gepubliceerd zodra de informatie gecommuniceerd is binnen de campaign om spoilers te voorkomen. Mogelijk komt er in de toekomst ook informatie over niet-zelfbedachte campaigns op deze wiki beschikbaar. Dit zal pas gebeuren als deze module gespeeld wordt.
