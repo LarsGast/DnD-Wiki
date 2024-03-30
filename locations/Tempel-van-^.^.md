@@ -48,7 +48,7 @@ Aan één van de muren hangt een hendel. Deze hendel opent een soort achterdeur 
 * [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
 
 ## Items
-* -
+* [Dust of Dryness]({{ site.baseurl }}{% link items/Dust-of-Dryness.md %})
 
 ## Galerij
 <img src="../images/Tempel van ^.^ laatste kamer.jpg" alt="Laatste kamer van de Tempel van ^.^" width=200>
