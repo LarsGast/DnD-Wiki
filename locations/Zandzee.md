@@ -31,6 +31,7 @@ Een enorme woestijn dat zo'n 100 jaar geleden bewoond werd door zand-elven, een 
 
 ## Sub-locaties
 * [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
+* [Tempel van ^.^]({{ site.baseurl }}{% link locations/Tempel-van-^.^.md %})
 
 ## Locaties in de buurt
 * -

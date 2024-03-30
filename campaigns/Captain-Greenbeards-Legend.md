@@ -45,6 +45,7 @@ De vlucht duurt nog een paar dagen, maar uiteindelijk zullen de avonturiers same
 ## Locaties
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 * [Greenguard]({{ site.baseurl }}{% link locations/Greenguard.md %})
+* [Tempel van ^.^]({{ site.baseurl }}{% link locations/Tempel-van-^.^.md %})
 * [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
 * [Zandzee]({{ site.baseurl }}{% link locations/Zandzee.md %})
 

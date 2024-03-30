@@ -44,7 +44,7 @@ Onderin het schip bevindt zich een grote opslagruimte, twee kamers voor bemannin
 * -
 
 ## Locaties in de buurt
-* -
+* [Tempel van ^.^]({{ site.baseurl }}{% link locations/Tempel-van-^.^.md %})
 
 ## Items
 * -
