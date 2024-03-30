@@ -51,3 +51,4 @@ De vlucht duurt nog een paar dagen, maar uiteindelijk zullen de avonturiers same
 
 ## Items
 * [Dust of Dryness]({{ site.baseurl }}{% link items/Dust-of-Dryness.md %})
+* [Wind Fan]({{ site.baseurl }}{% link items/Wind-Fan.md %})

@@ -10,3 +10,4 @@ In deze sectie van de wiki zijn alle items die voorkomen in de campaigns die ik 
 * [Dust of Dryness]({{ site.baseurl }}{% link items/Dust-of-Dryness.md %})
 * [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
 * [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
+* [Wind Fan]({{ site.baseurl }}{% link items/Wind-Fan.md %})
