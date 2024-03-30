@@ -22,5 +22,9 @@ Terwijl je deze waaier vasthoudt, kun je een action gebruiken om de gust of wind
 ## Gerelateerde locaties
 * [Tempel van ^.^]({{ site.baseurl }}{% link locations/Tempel-van-^.^.md %})
 
+## Links naar D&D Beyond
+* [Wind Fan](https://www.dndbeyond.com/magic-items/4803-wind-fan)
+* [Gust of wind](https://www.dndbeyond.com/spells/gust-of-wind)
+
 ## Galerij
 <img src="../images/Wind Fan.png" alt="Wind Fan" width=200>

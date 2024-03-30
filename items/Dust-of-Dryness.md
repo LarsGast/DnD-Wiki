@@ -26,5 +26,8 @@ Een elemental monster dat voornamelijk bestaat uit water dat wordt blootgesteld 
 ## Gerelateerde locaties
 * [Tempel van ^.^]({{ site.baseurl }}{% link locations/Tempel-van-^.^.md %})
 
+## Links naar D&D Beyond
+* [Dust of Dryness](https://www.dndbeyond.com/magic-items/4624-dust-of-dryness)
+
 ## Galerij
 <img src="../images/Dust of Dryness.png" alt="Dust of Dryness" width=200>
