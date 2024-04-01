@@ -12,8 +12,8 @@ title: Wraak van Koning Alden
 * Geografische locatie: Wisselend, vaak in de lucht van Greenguard
 * Infrastructuur: Houten romp en hennepvezel zeilen 
 * Politiek: Kapitein Groenbaard is de baas, maar hij luistert graag naar zijn bemanning
-* Geschiedenis: 
-* Cultuur: 
+* Geschiedenis: Diende als luchtschip voor het koninkrijk van Greenguard. Nog niet zo lang geleden gestolen door Kapitein Groenbaard en zijn bemanning
+* Cultuur: Draag je eigen steentje bij en wordt naar rato beloond
 
 ## Overzicht
 Het schip van Kapitein Groenbaard lijkt erg op de schepen van de koninklijke luchtmacht van Greenguard. Sterker nog, het is één van de schepen van het rijk. Groenbaard heeft het schip samen met zijn bemanning weten kapen door een goed gecoördineerde aanval te plegen in een licht-bemande luchthaven. De vlaggen van het schip zijn vervangen zodat het minder duidelijk is dat dit een gestolen schip is, maar een goed oog kan de overeenkomsten wel zien.
