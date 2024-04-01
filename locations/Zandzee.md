@@ -10,11 +10,11 @@ title: Zandzee
 * Geografische locatie: In Greenguard
 * Infrastructuur: Zand, weinig begroeiing
 * Politiek: Geen
-* Geschiedenis: Ooit bewoond door zand-elven, totdat de Tarrasque 98 jaar geleden aanviel
+* Geschiedenis: Ooit bewoond door Zand-Elven, totdat de Tarrasque 98 jaar geleden aanviel
 * Cultuur: Geen
 
 ## Overzicht
-Een enorme woestijn dat zo'n 100 jaar geleden bewoond werd door zand-elven, een uitgestorven ras. De zand-elven waren het enige ras dat de constante hitte en droogte van de Zandzee konden weerstaan, maar zij waren net zoals alles en iedereen niet opgewassen tegen de Tarrasque. Tegenwoordig leven hier alleen woestijndieren zoals aasgieren en schorpioenen.
+Een enorme woestijn dat zo'n 100 jaar geleden bewoond werd door Zand-Elven, een uitgestorven ras. De Zand-Elven waren het enige ras dat de constante hitte en droogte van de Zandzee konden weerstaan, maar zij waren net zoals alles en iedereen niet opgewassen tegen de Tarrasque. Tegenwoordig leven hier alleen woestijndieren zoals aasgieren en schorpioenen.
 
 ---
 
