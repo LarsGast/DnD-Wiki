@@ -3,6 +3,17 @@ layout: post
 title: Kapitein Groenbaard
 ---
 
+## Dungeon master notities
+
+### Bezittingen
+* [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
+  * Gekregen van Adonis in ruil voor zeggenschap op het schip
+
+### Statblock
+<img src="../images/Kapitein Groenbaard Statblock.png" alt="Kapitein Groenbaard Statblock" width=600>
+
+---
+
 <img src="../images/Kapitein Groenbaard.jpg" alt="Kapitein Groenbaard" width=200>
 
 ## Algemeen
