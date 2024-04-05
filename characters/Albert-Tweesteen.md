@@ -3,6 +3,30 @@ layout: post
 title: Albert Tweesteen
 ---
 
+## Dungeon master notities
+
+### Bezittingen
+* Schorpioen angel
+* 1 [Dust of Dryness]({{ site.baseurl }}{% link items/Dust-of-Dryness.md %}) snufje
+
+### Algemeen
+* Kan 1 potion per dag maken, als de spelers hier de dag van tevoren om vragen en als hij de [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %}) aan heeft
+
+### Statblock
+<img src="../images/Albert Tweesteen Statblock.png" alt="Albert Tweesteen Statblock" width=300>
+
+**Potion Slinging Table**
+
+Resultaat (D20) | Potion
+---     |---
+1-4     | [Potion of Healing](https://www.dndbeyond.com/magic-items/4708-potion-of-healing)
+5-8     | [Oil of Slipperiness](https://www.dndbeyond.com/magic-items/4689-oil-of-slipperiness)
+9 - 12  | [Potion of Hill Giant Strength](https://www.dndbeyond.com/magic-items/4706-potion-of-hill-giant-strength)
+13 - 16 | [Potion of Poison](https://www.dndbeyond.com/magic-items/4712-potion-of-poison)
+17 - 20 | [Potion of Water Breathing](https://www.dndbeyond.com/magic-items/4715-potion-of-water-breathing)
+
+---
+
 <img src="../images/Goblin.png" alt="Albert Tweesteen" width=200>
 
 ## Algemeen
