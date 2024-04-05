@@ -3,6 +3,11 @@ layout: post
 title: Gareth Bloodwood
 ---
 
+## Dungeon master notities
+* Is homo
+
+---
+
 ## Algemeen
 * Volledige naam: Gareth Bloodwood
 * Bijnamen: -
