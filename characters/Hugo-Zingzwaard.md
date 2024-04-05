@@ -3,6 +3,13 @@ layout: post
 title: Hugo Zingzwaard
 ---
 
+## Dungeon master notities
+* Heeft een identieke neef, Hugo Staalzwaard, die in Phandalin woont
+* Heeft een godenbeeldje van Lushikukukanda gekregen
+* Heeft Laranlor gratis drank beloofd, dat ook Hugo Staalzwaard hem zal geven
+
+---
+
 ## Algemeen
 * Volledige naam: Hugo Zingzwaard
 * Bijnamen: -
