@@ -3,6 +3,13 @@ layout: post
 title: Nettie Bettie
 ---
 
+## Dungeon master notities
+
+### Statblock
+<img src="../images/Nettie Bettie Statblock.png" alt="Nettie Bettie" width=300>
+
+---
+
 <img src="../images/Nettie Bettie.png" alt="Nettie Bettie" width=200>
 
 ## Algemeen
