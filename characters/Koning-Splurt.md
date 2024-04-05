@@ -3,6 +3,13 @@ layout: post
 title: Koning Splurt
 ---
 
+## Dungeon master notities
+
+### Statblock
+<img src="../images/King Splurt Statblock.png" alt="Koning Splurt Statblock" width=500>
+
+---
+
 <img src="../images/Koning Splurt.png" alt="Koning Splurt" width=200>
 
 ## Algemeen
