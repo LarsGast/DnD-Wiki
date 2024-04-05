@@ -12,26 +12,26 @@ title: Nettie Bettie
 * Geslacht: Vrouw
 * Leeftijd: 21
 * Woonplaats: Surewould-bos
-* Bevindt zich op dit moment in: Goblin schuilplaats in het Surewould-bos
+* Bevindt zich op dit moment in: Dood in de Goblin schuilplaats in het Surewould-bos
 * Talen: Common, Goblin
 
 ## Beroep en geschiedenis
-Adviseur van Koning Splurt.
+Was de adviseur van Koning Splurt toen ze nog leefde.
 
 ## Uiterlijk
 Een typische Goblin, maar dan met een staaf.
 
 ## Capaciteiten
-Heel intelligent voor een Goblin. Dit heeft waarschijnlijk iets te maken met de staaf die ze altijd bij zich draagt.
+Heel intelligent voor een Goblin. Dit heeft waarschijnlijk iets te maken met de staaf die ze altijd bij haar droeg.
 
 ## Talenten
 Gecertificeerd trouwambtenaar. 
 
 ## Hebbelijkheden
-Heeft te neiging om andere Goblins vaak dom te noemen.
+Had de neiging om andere Goblins vaak dom te noemen.
 
 ## Interactie met anderen
-Aangezien ze veel slimmer is dan een gemiddelde Goblin, heeft ze constant het gevoel dat ze omringd is door idioten.
+Aangezien ze veel slimmer was dan een gemiddelde Goblin, had ze constant het gevoel dat ze omringd was door idioten.
 
 ## Kennis
 Verassend veel, voor een Goblin.
@@ -40,7 +40,7 @@ Verassend veel, voor een Goblin.
 Hebzucht.
 
 ## Bonden
-Splurt helpen om de wereld over te nemen, zodat ze zelf poppenmeester kan spelen.
+Splurt helpen om de wereld over te nemen, zodat ze zelf poppenmeester kon spelen.
 
 ## Gebreken of fouten
 Arrogant.

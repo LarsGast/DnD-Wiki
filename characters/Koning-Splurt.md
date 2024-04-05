@@ -12,14 +12,14 @@ title: Koning Splurt
 * Geslacht: Man
 * Leeftijd: 21
 * Woonplaats: Surewould-bos
-* Bevindt zich op dit moment in: Goblin schuilplaats in het Surewould-bos
+* Bevindt zich op dit moment in: Dood in de Goblin schuilplaats in het Surewould-bos
 * Talen: Common, Goblin
 
 ## Beroep en geschiedenis
-Koning van de Goblins in het Surewould-bos.
+Was de koning van de Goblins in het Surewould-bos toen hij nog leefde.
 
 ## Uiterlijk
-Ongeveer 8 keer zo groot als een gewone Goblin (2 keer zo groot in elke dimensie). Hij heeft een kroontje op die vast zit op zijn hoofd.
+Ongeveer 8 keer zo groot als een gewone Goblin (2 keer zo groot in elke dimensie). Hij had lange tijd een kroontje op die vast zat op zijn hoofd.
 
 ## Capaciteiten
 Sterk en behendig, maar niet intelligent.
@@ -31,7 +31,7 @@ Angstaanjagende koning van een groep Goblins.
 Slechte taalvaardigheid.
 
 ## Interactie met anderen
-Andere Goblins zijn bang voor hem, hij is immers 8 keer zo groot.
+Andere Goblins waren bang voor hem, hij was immers 8 keer zo groot.
 
 ## Kennis
 Bijna niks.
