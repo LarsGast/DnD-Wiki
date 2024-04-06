@@ -83,7 +83,7 @@ title: Dragon of Icepire Peak
 * Sword Mountains
 * Tower of Storms
 * Triboar Trail
-* Umbrage Hill
+* [Umbrage Hill]({{ site.baseurl }}{% link locations/Umbrage-Hill.md %})
 * Woodland Manse
 * [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
 

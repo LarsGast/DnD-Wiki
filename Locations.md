@@ -41,7 +41,7 @@ Sommige locatie bevinden zich binnenin andere locaties, zoals een stad zich in e
 * [Tempel van ^.^]({{ site.baseurl }}{% link locations/Tempel-van-^.^.md %})
 * Tower of Storms
 * Triboar Trail
-* Umbrage Hill
+* [Umbrage Hill]({{ site.baseurl }}{% link locations/Umbrage-Hill.md %})
 * Woodland Manse
 * [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
 * [Zandzee]({{ site.baseurl }}{% link locations/Zandzee.md %})

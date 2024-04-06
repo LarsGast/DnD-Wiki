@@ -82,7 +82,7 @@ Als avonturiers hem naar een zoektocht vragen, zet Harbin ze op het goede spoor 
 * Icepire Hold
 * Icepire Peak
 * Mountain's Toe Gold Mine
-* Umbrage Hill
+* [Umbrage Hill]({{ site.baseurl }}{% link locations/Umbrage-Hill.md %})
 
 ## Items
 * -
