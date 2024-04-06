@@ -3,6 +3,23 @@ layout: post
 title: Magisch Centrum
 ---
 
+## Dungeon master notities
+
+### Monsters voor de proef
+* 3x [Crawling Claw](https://www.aidedd.org/dnd/monstres.php?vo=crawling-claw)
+* 2x [Flying Snake](https://www.dndbeyond.com/monsters/16864-flying-snake)
+* 2x [Flying Sword](https://www.dndbeyond.com/monsters/16865-flying-sword)
+* 1x [Ghoul](https://www.dndbeyond.com/monsters/16872-ghoul)
+
+### Statblocks
+<img src="../images/Crawling Claw Statblock.png" alt="Crawling Claw Statblock" width=400>
+
+<img src="../images/Flying Snake Statblock.png" alt="Flying Snake Statblock" width=400>
+
+<img src="../images/Flying Sword Statblock.png" alt="Flying Sword Statblock" width=400>
+
+<img src="../images/Ghoul Statblock.png" alt="Ghoul Statblock" width=400>
+
 ## Algemeen
 * Soort: Dungeon
 * Inwoners: Een eekhoorn en een geest
