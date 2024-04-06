@@ -32,7 +32,7 @@ Sommige locatie bevinden zich binnenin andere locaties, zoals een stad zich in e
 * Mountain's Toe Gold Mine
 * Neverwinter
 * Neverwinter Wood
-* Phandalin
+* [Phandalin]({{ site.baseurl }}{% link locations/Phandalin.md %})
 * Shrine of Savras
 * Starmetal Hills
 * [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})

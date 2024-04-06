@@ -76,7 +76,7 @@ title: Dragon of Icepire Peak
 * Mountain's Toe Gold Mine
 * Neverwinter
 * Neverwinter Wood
-* Phandalin
+* [Phandalin]({{ site.baseurl }}{% link locations/Phandalin.md %})
 * Shrine of Savras
 * Starmetal Hills
 * Sword Coast
