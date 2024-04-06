@@ -14,7 +14,6 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * Ander
 * [Ash Dragonblade]({{ site.baseurl }}{% link characters/Ash-Dragonblade.md %})
 * [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
-* Barthen
 * Caramip
 * Cryovain
 * Dabbledob
