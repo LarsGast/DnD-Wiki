@@ -3,6 +3,14 @@ layout: post
 title: Twilly
 ---
 
+## Dungeon master notities
+
+### Statblock
+<img src="../images/Twilly, Hero of Falconreach Statblock.png" alt="Twilly statblock" width=500>
+
+<img src="../images/Twilly, Hero of Falconreach Companion Sheet.png" alt="Twilly companion sheet" width=600>
+
+---
 <img src="../images/Twilly.png" alt="Twilly" width=200>
 
 ## Algemeen
