@@ -3,6 +3,18 @@ layout: post
 title: Lab Coat (worn)
 ---
 
+## Dungeon master notities
+
+### Geschiedenis van bezitting
+* [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
+  * Tot zijn ontvoering
+* Groep avonturiers
+  * Vanaf de ontvoering van Albert tot de vlucht op de [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
+* [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
+  * Vanaf de vlucht op de [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %}) tot heden
+
+---
+
 <img src="../images/Lab Coat (Worn).png" alt="Lab Coat (Worn)" width=200>
 
 ## Prijs
