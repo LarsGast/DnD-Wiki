@@ -6,16 +6,52 @@ permalink: /characters/
 
 In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die ik als DM gegeven heb te vinden. De individuele pagina van elk karakter bevat verschillende stukken informatie over het karakter. Hieronder staat een lijst met alle karakters op alfabetische volgorde. Klik op de naam van een karakter om de pagina van dat karakter te bekijken. Informatie dat (nog) niet bekend is over het karakter zal niet beschreven staan op de pagina van het karakter, tenzij het weinig tot niet met het verhaallijn te maken heeft.
 
+* Adabra Gwynn
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
+* Alfonse Kalazorn
 * [Amy Aria]({{ site.baseurl }}{% link characters/Amy-Aria.md %})
+* Anverth
+* Ander
 * [Ash Dragonblade]({{ site.baseurl }}{% link characters/Ash-Dragonblade.md %})
 * [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
+* Barthen
+* Caramip
+* Cryovain
+* Dabbledob
+* Dazlyn Grayhard
+* Delebean
+* Dimble
+* Don-Jon Raskin
+* Elmar Barthen
+* Fackroré
+* Fibblestib
 * [Gareth Bloodwood]({{ site.baseurl }}{% link characters/Gareth-Bloodwood.md %})
 * [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
+* Gnerkli
+* Halia Thornton
+* Harbin Wester
 * [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
+* Jabby
+* Joybell
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 * [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
+* Korboz
+* Linene Graywind
 * [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
+* Norbus Ironrune
+* Nyx
+* Pallabar
+* Panana
+* Pog
+* Quippy
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
+* Sister Garaele
+* Tevraround
+* Thistle
+* Tibor Wester
+* Toblen Stonehill
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
+* Ulla
+* Uppendown
 * [Yulgar Lark]({{ site.baseurl }}{% link characters/Yulgar-Lark.md %})
+* Zook
