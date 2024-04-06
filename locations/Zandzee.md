@@ -40,3 +40,4 @@ Een enorme woestijn dat zo'n 100 jaar geleden bewoond werd door Zand-Elven, een 
 * -
 
 ## Galerij
+<img src="../images/Reuze Aasgier.jpeg" alt="Reuze Aasgier" width=200>
