@@ -30,6 +30,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * Gnerkli
 * Halia Thornton
 * Harbin Wester
+* Hugo Staalzwaard
 * [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
 * Jabby
 * Joybell
@@ -49,7 +50,6 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * Tevraround
 * Thistle
 * Tibor Wester
-* Toblen Stonehill
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
 * Ulla
 * Uppendown
