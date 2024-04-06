@@ -3,6 +3,22 @@ layout: post
 title: Tempel van ^.^
 ---
 
+## Dungeon master notities
+
+### Algemeen
+* Goud (sieraden) is in de tombes te vinden
+
+### Extra informatie
+<img src="../images/Trap Room text 1.jpg" alt="Trap Room text 1" width=250>
+<img src="../images/Trap Room text 2.jpg" alt="Trap Room text 2" width=250>
+
+### Statblocks
+<img src="../images/Giant Scorpion Statblock.png" alt="Giant Scorpion Statblock" width=500>
+
+<img src="../images/Giant Scorpion Flowchart.jpg" alt="Giant Scorpion Flowchart" width=500>
+
+---
+
 <img src="../images/Tempel van ^.^ laatste kamer.jpg" alt="Laatste kamer van de Tempel van ^.^" width=200>
 
 ## Algemeen
@@ -53,7 +69,6 @@ Aan één van de muren hangt een hendel. Deze hendel opent een soort achterdeur 
 
 ## Galerij
 <img src="../images/Tempel van ^.^ laatste kamer.jpg" alt="Laatste kamer van de Tempel van ^.^" width=200>
-
 <img src="../images/Tempel van ^.^ trap room.jpg" alt="Vallen kamer van de Tempel van ^.^" width=200>
 
 <img src="../images/Giant Scorpion.jpeg" alt="Reuze Schorpioen" width=200>

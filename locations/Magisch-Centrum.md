@@ -20,6 +20,8 @@ title: Magisch Centrum
 
 <img src="../images/Ghoul Statblock.png" alt="Ghoul Statblock" width=400>
 
+---
+
 ## Algemeen
 * Soort: Dungeon
 * Inwoners: Een eekhoorn en een geest
