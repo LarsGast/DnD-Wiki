@@ -80,3 +80,8 @@ De Hangout wordt gebruikt als de plaats waar de Goblins van het Surewould-bos ve
 <img src="../images/The Goblin Hangout.png" alt="De Goblin Hangout" width=200>
 
 <img src="../images/The Goblin Community Room.png" alt="De Goblin Community Room" width=200>
+
+<img src="../images/Goblin Gang.png" alt="Goblin Gang" width=200>
+<img src="../images/Koning Splurt.png" alt="Koning Splurt" width=200>
+<img src="../images/Goblin.png" alt="De Goblin" width=200>
+<img src="../images/Nettie Bettie.png" alt="Nettie Bettie" width=200>

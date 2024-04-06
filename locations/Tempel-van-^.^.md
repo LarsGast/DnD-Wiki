@@ -55,3 +55,5 @@ Aan één van de muren hangt een hendel. Deze hendel opent een soort achterdeur 
 <img src="../images/Tempel van ^.^ laatste kamer.jpg" alt="Laatste kamer van de Tempel van ^.^" width=200>
 
 <img src="../images/Tempel van ^.^ trap room.jpg" alt="Vallen kamer van de Tempel van ^.^" width=200>
+
+<img src="../images/Giant Scorpion.jpeg" alt="Reuze Schorpioen" width=200>
