@@ -3,6 +3,13 @@ layout: post
 title: Robina the Hood
 ---
 
+## Dungeon master notities
+
+### Statblock
+<img src="../images/Robina the Hood statblock.png" alt="Robina the Hood statblock" width=500>
+
+---
+
 <img src="../images/Robina full body.png" alt="Robina the Hood" width=200>
 
 ## Algemeen
