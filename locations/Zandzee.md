@@ -3,6 +3,18 @@ layout: post
 title: Zandzee
 ---
 
+## Dungeon master notities
+
+### Algemeen
+* Vultures zijn weggevlogen nadat Lushikukukanda ze heeft overgehaald
+
+### Statblocks
+<img src="../images/Vulture Statblock.png" alt="Vulture Statblock" width=500>
+
+<img src="../images/Giant Vulture Statblock.png" alt="Giant Vulture Statblock" width=500>
+
+---
+
 ## Algemeen
 * Soort: Woestijn
 * Inwoners: Geen
