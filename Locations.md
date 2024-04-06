@@ -17,7 +17,7 @@ Sommige locatie bevinden zich binnenin andere locaties, zoals een stad zich in e
 * [Dwarven Excavation]({{ site.baseurl }}{% link locations/Dwarven-Excavation.md %})
 * Falcon's Hunting Lodge
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
-* Gnomengarde
+* [Gnomengarde]({{ site.baseurl }}{% link locations/Gnomengarde.md %})
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 * [Greenguard]({{ site.baseurl }}{% link locations/Greenguard.md %})
 * High Road

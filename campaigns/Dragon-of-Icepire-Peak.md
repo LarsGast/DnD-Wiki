@@ -64,7 +64,7 @@ title: Dragon of Icepire Peak
 * Dragon Barrow
 * [Dwarven Excavation]({{ site.baseurl }}{% link locations/Dwarven-Excavation.md %})
 * Falcon's Hunting Lodge
-* Gnomengarde
+* [Gnomengarde]({{ site.baseurl }}{% link locations/Gnomengarde.md %})
 * High Road
 * Icepire Hold
 * Icepire Peak

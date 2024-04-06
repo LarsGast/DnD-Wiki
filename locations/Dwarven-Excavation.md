@@ -78,7 +78,7 @@ Om deze kamer te bereiken, moeten de personages het puin opruimen dat de kamer a
 
 ## Locaties in de buurt
 * Axeholm
-* Gnomengarde
+* [Gnomengarde]({{ site.baseurl }}{% link locations/Gnomengarde.md %})
 * Icepire Hold
 * Icepire Peak
 * Mountain's Toe Gold Mine
