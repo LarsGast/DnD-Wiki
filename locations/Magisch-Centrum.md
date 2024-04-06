@@ -84,3 +84,8 @@ Aan de andere kant van de deur bij de ingang van het magische centrum bevindt zi
 <img src="../images/Magic Center Mind Room.jpg" alt="Geest kamer" width=200>
 <img src="../images/Chess puzzle.png" alt="Schaak puzzel" width=200>
 <img src="../images/Forest Battlemap.jpg" alt="Midden" width=200>
+
+<img src="../images/Crawling Claw.jpg" alt="Crawling Claw" width=200>
+<img src="../images/Flying Snake.jpeg" alt="Flying Snake" width=200>
+<img src="../images/Flying Sword.png" alt="Flying Sword" width=200>
+<img src="../images/Ghoul.png" alt="Ghoul" width=200>
