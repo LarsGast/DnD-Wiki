@@ -62,7 +62,7 @@ title: Dragon of Icepire Peak
 * Conyberry
 * Crags
 * Dragon Barrow
-* Dwarven Excavation
+* [Dwarven Excavation]({{ site.baseurl }}{% link locations/Dwarven-Excavation.md %})
 * Falcon's Hunting Lodge
 * Gnomengarde
 * High Road

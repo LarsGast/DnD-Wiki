@@ -77,7 +77,7 @@ Als avonturiers hem naar een zoektocht vragen, zet Harbin ze op het goede spoor 
 
 ## Locaties in de buurt
 * Axeholm
-* Dwarven Excavation
+* [Dwarven Excavation]({{ site.baseurl }}{% link locations/Dwarven-Excavation.md %})
 * Gnomengarde
 * Icepire Hold
 * Icepire Peak

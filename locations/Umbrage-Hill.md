@@ -38,7 +38,7 @@ Adabra verkoopt genezingsdrankjes voor 50 gp.
 
 ## Locaties in de buurt
 * Axeholm
-* Dwarven Excavation
+* [Dwarven Excavation]({{ site.baseurl }}{% link locations/Dwarven-Excavation.md %})
 * Gnomengarde
 * Icepire Hold
 * Icepire Peak
