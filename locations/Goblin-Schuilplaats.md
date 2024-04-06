@@ -3,6 +3,23 @@ layout: post
 title: Goblin Schuilplaats
 ---
 
+## Dungeon master notities
+
+### Algemeen
+* Koning Splurt en Nettie Bettie zijn dood, maar de Goblins komen er altijd wel weer bovenop.
+  * Als de speler hier nog eens heen gaan zijn de Goblins nog niet weg, maar ze zijn ook nog niet terug op volledige sterkte.
+
+### Statblocks
+<img src="../images/Goblin Statblock.png" alt="Goblin Statblock" width=400>
+
+<img src="../images/Koning Splurt Statblock.png" alt="Koning Splurt Statblock" width=600>
+
+<img src="../images/Albert Tweesteen Statblock.png" alt="Albert Tweesteen Statblock" width=400>
+
+<img src="../images/Nettie Bettie Statblock.png" alt="Nettie Bettie Statblock" width=400>
+
+---
+
 ## Algemeen
 * Soort: Dungeon
 * Inwoners: De Goblins van het Surewould-bos
