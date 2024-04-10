@@ -8,7 +8,7 @@ title: Arikikuchiariku
 ## Algemeen
 * Volledige naam: Onbekend
 * Bijnamen: Arikikuchiariku
-* Ras: Hens
+* Ras: Mens
 * Geslacht: Man
 * Leeftijd: 27
 * Woonplaats: Onbekend
