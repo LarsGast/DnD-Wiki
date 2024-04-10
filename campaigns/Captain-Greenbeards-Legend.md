@@ -41,6 +41,7 @@ De vlucht duurt nog een paar dagen, maar uiteindelijk zullen de avonturiers same
 * [Gareth Bloodwood]({{ site.baseurl }}{% link characters/Gareth-Bloodwood.md %})
 * [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
+* [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
 

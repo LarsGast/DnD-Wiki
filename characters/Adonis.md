@@ -47,7 +47,7 @@ Onbekend.
 
 ## Gerelateerde karakters
 * [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
-* Laranlor Cormearil
+* [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
 * Lushikukukanda
 * P.E.K.K.A.
 * Theodas

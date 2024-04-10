@@ -52,7 +52,7 @@ Onbekend.
 ## Gerelateerde karakters
 * [Adonis]({{ site.baseurl }}{% link characters/Adonis.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
-* Laranlor Cormearil
+* [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
 * Lushikukukanda
 * P.E.K.K.A.
 * Theodas
