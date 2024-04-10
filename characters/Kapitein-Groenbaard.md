@@ -33,9 +33,6 @@ Probeert zelf spreekwoorden te bedenken.
 ## Interactie met anderen
 Vertrouwd het koninkrijk niet, maar maakt snel vrienden met anderen.
 
-## Kennis
-Weet van een draak die opgedoken is op Icepire Peak
-
 ## Idealen
 Avontuur, vrijheid en hebzucht.
 
