@@ -33,9 +33,6 @@ Is graag to-the-point in wat hij zegt.
 ## Interactie met anderen
 Neutraal en to-the-point.
 
-## Kennis
-Kent Kapitein Groenbaard en zijn bemanning goed.
-
 ## Idealen
 Neutraliteit.
 
