@@ -25,6 +25,7 @@ Uiteindelijk lukt het de avonturiers om de geest te overtuigen dat ze waardig zi
 * [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
 
 ## Karakters
+* [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})

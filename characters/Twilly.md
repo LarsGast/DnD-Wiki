@@ -50,6 +50,7 @@ Spreekt bijna geen talen en is naïef.
 * [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
 
 ## Gerelateerde karakters
+* [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
 
 ## Gerelateerde locaties

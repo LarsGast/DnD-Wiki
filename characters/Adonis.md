@@ -46,7 +46,7 @@ Onbekend.
 * [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
 
 ## Gerelateerde karakters
-* Arikikuchiariku
+* [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
 * Laranlor Cormearil
 * Lushikukukanda
 * P.E.K.K.A.

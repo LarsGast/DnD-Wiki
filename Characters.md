@@ -9,7 +9,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * [Adonis]({{ site.baseurl }}{% link characters/Adonis.md %})
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
 * [Amy Aria]({{ site.baseurl }}{% link characters/Amy-Aria.md %})
-* Arikikuchiariku
+* [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
 * [Ash Dragonblade]({{ site.baseurl }}{% link characters/Ash-Dragonblade.md %})
 * [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
 * [Gareth Bloodwood]({{ site.baseurl }}{% link characters/Gareth-Bloodwood.md %})
