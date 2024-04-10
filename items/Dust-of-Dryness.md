@@ -21,7 +21,7 @@ Een elemental monster dat voornamelijk bestaat uit water dat wordt blootgesteld 
 * [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
 
 ## Gerelateerde karakters
-* -
+* [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
 
 ## Gerelateerde locaties
 * [Tempel van ^.^]({{ site.baseurl }}{% link locations/Tempel-van-^.^.md %})
