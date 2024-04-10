@@ -33,9 +33,6 @@ Zegt niet veel.
 ## Interactie met anderen
 Vriendelijk, altijd bereid om iemand te groeten.
 
-## Kennis
-Door veel met Robina op te trekken heeft hij kennis opgedaan over de natuur, in het specifiek bossen.
-
 ## Idealen
 Vrijheid.
 
