@@ -52,7 +52,7 @@ Heeft een zwak voor de ondeugden van de stad, vooral voor sterke drank.
 * [Adonis]({{ site.baseurl }}{% link characters/Adonis.md %})
 * [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
 * [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
-* P.E.K.K.A.
+* [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
 * Theodas
 
 ## Gerelateerde locaties

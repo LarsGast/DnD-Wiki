@@ -52,7 +52,7 @@ Ondbeken.
 * [Adonis]({{ site.baseurl }}{% link characters/Adonis.md %})
 * [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
 * [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
-* P.E.K.K.A.
+* [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
 * Theodas
 
 ## Gerelateerde locaties

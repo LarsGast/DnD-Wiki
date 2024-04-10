@@ -49,7 +49,7 @@ Onbekend.
 * [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
 * [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
 * [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
-* P.E.K.K.A.
+* [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
 * Theodas
 
 ## Gerelateerde locaties

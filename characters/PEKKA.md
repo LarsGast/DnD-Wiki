@@ -1,34 +1,34 @@
 ---
 layout: post
-title: Arikikuchiariku
+title: P.E.K.K.A.
 ---
 
-<img src="../images/Arikikuchiariku.jpg" alt="Arikikuchiariku" width=200>
+<img src="../images/PEKKA.jpg" alt="P.E.K.K.A." width=200>
 
 ## Algemeen
-* Volledige naam: Onbekend
-* Bijnamen: Arikikuchiariku
-* Ras: Mens
+* Volledige naam: Onbeklend
+* Bijnamen: P.E.K.K.A.
+* Ras: Warforged
 * Geslacht: Man
-* Leeftijd: 27
+* Leeftijd: Onbekend
 * Woonplaats: Onbekend
 * Bevindt zich op dit moment in: Een gestolen luchtschip riching Phandalin
-* Talen: Common, Sylvan, Primordial
+* Talen: Onbekend
 
 ## Beroep en geschiedenis
-Heeft nauw met Kapitein Groenbaard samengewerkt als piraat. Tegenwoordig ranger en avonturier, maar is zijn piratenleven nog niet vergeten.
+Als Warforged is P.E.K.K.A. gemaakt voor oorlog, maar aangezien de oorlog in Eberron voorbij is, leeft P.E.K.K.A. zijn eigen leven. Hij heeft besloten om zijn krachten in te zetten voor avontuur.
 
 ## Uiterlijk
-Ongeveer 180 cm en 85 kg. Zwarte huid, blauwe ogen, en kort, zwart haar.
+Een enorm lopen blauw en paars harnas.
 
 ## Capaciteiten
-Behandig en verstandig.
+Zeer sterk.
 
 ## Talenten
-Kan luchtschepen besturen.
+Onbekend.
 
 ## Hebbelijkheden
-Onbekend.
+Wordt snel afgeleid door vlinders.
 
 ## Interactie met anderen
 Onbekend.
@@ -51,18 +51,16 @@ Onbekend.
 
 ## Gerelateerde karakters
 * [Adonis]({{ site.baseurl }}{% link characters/Adonis.md %})
-* [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
+* [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
 * [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
 * [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
-* [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
 * Theodas
-* [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
 
 ## Gerelateerde locaties
 * -
 
 ## Items
-* [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
+* -
 
 ## Galerij
-<img src="../images/Arikikuchiariku.jpg" alt="Arikikuchiariku" width=200>
+<img src="../images/PEKKA.jpg" alt="P.E.K.K.A." width=200>

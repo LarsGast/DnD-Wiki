@@ -20,7 +20,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
 * [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
 * [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
-* P.E.K.K.A.
+* [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
 * Theodas
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
