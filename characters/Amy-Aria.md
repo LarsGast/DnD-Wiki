@@ -33,9 +33,6 @@ Optimistisch.
 ## Interactie met anderen
 Vrolijk en vriendelijk.
 
-## Kennis
-Potions maken.
-
 ## Idealen
 Oprechtheid en liefdadigheid.
 
