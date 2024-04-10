@@ -1,46 +1,46 @@
 ---
 layout: post
-title: Laranlor Cormearil
+title: Theodas
 ---
 
-<img src="../images/Laranlor.jpg" alt="Laranlor" width=200>
+<img src="../images/Theodas.jpg" alt="Theodas" width=200>
 
 ## Algemeen
-* Volledige naam: Laranlor Cormearil
-* Bijnamen: Lan
-* Ras: Half-Elf
+* Volledige naam: Onbeklend
+* Bijnamen: Theodas
+* Ras: High-Elf
 * Geslacht: Man
-* Leeftijd: Onbekend
+* Leeftijd: 100
 * Woonplaats: Onbekend
 * Bevindt zich op dit moment in: Een gestolen luchtschip riching Phandalin
-* Talen: Common, Elvish, Primordial, Draconic
+* Talen: Common, Elvish, Undercommon
 
 ## Beroep en geschiedenis
-Wettelijke prins van een land. Uit het land verbannen door zijn ouders. Nu op de vlucht leert hij steeds meer van zijn magische aard, en traint hij zichzelf om de magie in hem in bedwang te houden.
+Als buitenstaander leefde hij met een nauwe groep Elven, totdat het dorpje waar hij woonde aan werd gevallen. Theodas is de enige die de aanval heeft overleefd, en zoekt nu manieren om de moordenaars te berechten.
 
 ## Uiterlijk
-Als adel gekleed. Lijkt altijd schoon te zijn en lekker te ruiken.
+Ongeveer 165 cm lang.
 
 ## Capaciteiten
-Zeer charismatisch.
+Charismatisch en bevorderd in magie.
 
 ## Talenten
-Ondbeken.
+Onbekend.
 
 ## Hebbelijkheden
-Voert vaak de sreuk prestidigitation uit op zichzelf om aantrekkelijker over te komen.
+Onbekend.
 
 ## Interactie met anderen
-Ondbeken.
+Onbekend.
 
 ## Idealen
-Ondbeken.
+Onbekend.
 
 ## Bonden
-Ondbeken.
+Onbekend.
 
 ## Gebreken of fouten
-Ondbeken.
+Onbekend.
 
 ---
 
@@ -51,15 +51,15 @@ Ondbeken.
 ## Gerelateerde karakters
 * [Adonis]({{ site.baseurl }}{% link characters/Adonis.md %})
 * [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
+* [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
 * [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
 * [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
-* [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})
 
 ## Gerelateerde locaties
 * -
 
 ## Items
-* [Dust of Dryness]({{ site.baseurl }}{% link items/Dust-of-Dryness.md %})
+* [Wind Fan]({{ site.baseurl }}{% link items/Wind-Fan.md %})
 
 ## Galerij
-<img src="../images/Laranlor.jpg" alt="Laranlor" width=200>
+<img src="../images/Theodas.jpg" alt="Theodas" width=200>

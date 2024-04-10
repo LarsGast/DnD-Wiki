@@ -45,6 +45,7 @@ De vlucht duurt nog een paar dagen, maar uiteindelijk zullen de avonturiers same
 * [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
 * [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
+* [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
 
 ## Locaties

@@ -53,7 +53,7 @@ Heeft een zwak voor de ondeugden van de stad, vooral voor sterke drank.
 * [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
 * [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
 * [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
-* Theodas
+* [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})
 
 ## Gerelateerde locaties
 * -

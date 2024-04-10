@@ -22,6 +22,6 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
 * [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
-* Theodas
+* [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
 * [Yulgar Lark]({{ site.baseurl }}{% link characters/Yulgar-Lark.md %})

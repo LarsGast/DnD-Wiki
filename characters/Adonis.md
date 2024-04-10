@@ -50,7 +50,7 @@ Onbekend.
 * [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
 * [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
 * [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
-* Theodas
+* [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})
 
 ## Gerelateerde locaties
 * -

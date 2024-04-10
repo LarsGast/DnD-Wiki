@@ -54,7 +54,7 @@ Onbekend.
 * [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
 * [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
 * [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
-* Theodas
+* [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})
 
 ## Gerelateerde locaties
 * -
