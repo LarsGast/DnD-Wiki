@@ -35,6 +35,7 @@ De vlucht duurt nog een paar dagen, maar uiteindelijk zullen de avonturiers same
 * -
 
 ## Karakters
+* [Adonis]({{ site.baseurl }}{% link characters/Adonis.md %})
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
 * [Gareth Bloodwood]({{ site.baseurl }}{% link characters/Gareth-Bloodwood.md %})
 * [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
