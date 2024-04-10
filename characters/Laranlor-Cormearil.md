@@ -51,7 +51,7 @@ Ondbeken.
 ## Gerelateerde karakters
 * [Adonis]({{ site.baseurl }}{% link characters/Adonis.md %})
 * [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
-* Lushikukukanda
+* [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
 * P.E.K.K.A.
 * Theodas
 

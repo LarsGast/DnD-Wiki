@@ -18,7 +18,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 * [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
 * [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
-* Lushikukukanda
+* [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
 * [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
 * P.E.K.K.A.
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})

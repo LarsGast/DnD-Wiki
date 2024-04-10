@@ -53,7 +53,7 @@ Onbekend.
 * [Adonis]({{ site.baseurl }}{% link characters/Adonis.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 * [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
-* Lushikukukanda
+* [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
 * P.E.K.K.A.
 * Theodas
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
