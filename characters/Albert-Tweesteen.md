@@ -57,9 +57,6 @@ Is heel zelfverzekerd. Hij denkt schijnbaar echt dat hij een slimme wetenschappe
 ## Interactie met anderen
 Voelt zich heel slim, dus kijkt een beetje op anderen neer. Koning Splurt behandelt hij wel met respect, aangezien hij groter en sterker is dan Albert.
 
-## Kennis
-Net zo onintelligent dan andere Goblins.
-
 ## Idealen
 Hebzucht en trots.
 

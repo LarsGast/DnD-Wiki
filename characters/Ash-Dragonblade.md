@@ -33,9 +33,6 @@ Loopt vaak te ijsberen.
 ## Interactie met anderen
 Is verlegen rond vreemdelingen. Heeft een goede vriendschap met Azura Zingzwaard.
 
-## Kennis
-Kent zijn vrienden goed, en weet vaak waar ze uitspoken als de rest dat niet weet.
-
 ## Idealen
 Eer en algemeen belang.
 

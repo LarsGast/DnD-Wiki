@@ -40,9 +40,6 @@ Slechte taalvaardigheid.
 ## Interactie met anderen
 Andere Goblins waren bang voor hem, hij was immers 8 keer zo groot.
 
-## Kennis
-Bijna niks.
-
 ## Idealen
 Hebzucht.
 

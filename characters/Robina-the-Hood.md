@@ -40,9 +40,6 @@ Spreekt snel en is snel afgeleid.
 ## Interactie met anderen
 Vriendelijk tegenover iedereen die ze ontmoet, zowel mens als dier als monster.
 
-## Kennis
-Haar training als Ranger heeft ervoor gezorgd dat ze het hele Surewould-bos op haar duimpje kent.
-
 ## Idealen
 Is ervan overtuigt dat mens, dier, en monster in vrede samen kunnen leven.
 

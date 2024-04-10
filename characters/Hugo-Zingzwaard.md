@@ -38,9 +38,6 @@ Neemt graag een slokje van zijn eigen bier.
 ## Interactie met anderen
 Vriendelijk met iedereen die een drankje van hem koopt, maar niet bang om mensen uit de herberg te gooien als ze vervelend doen. Goede vrienden met Yulgar Lark.
 
-## Kennis
-Hoort wel eens geruchten van de inwoners van Falconreach.
-
 ## Idealen
 Eerlijkheid en respect.
 
