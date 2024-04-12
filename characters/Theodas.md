@@ -6,13 +6,13 @@ title: Theodas
 <img src="../images/Theodas.jpg" alt="Theodas" width=200>
 
 ## Algemeen
-* Volledige naam: Onbeklend
+* Volledige naam: Onbekend
 * Bijnamen: Theodas
 * Ras: High-Elf
 * Geslacht: Man
 * Leeftijd: 100
 * Woonplaats: Onbekend
-* Bevindt zich op dit moment in: Een gestolen luchtschip riching Phandalin
+* Bevindt zich op dit moment in: Een gestolen luchtschip richting Phandalin
 * Talen: Common, Elvish, Undercommon
 
 ## Beroep en geschiedenis
@@ -62,4 +62,4 @@ Onbekend.
 * [Wind Fan]({{ site.baseurl }}{% link items/Wind-Fan.md %})
 
 ## Galerij
-<img src="../images/Theodas.jpg" alt="Theodas" width=200>
+<img src="../images/Theodas.jpg" alt="Theodas" width=200> 

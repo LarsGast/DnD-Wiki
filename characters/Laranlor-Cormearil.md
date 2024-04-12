@@ -12,7 +12,7 @@ title: Laranlor Cormearil
 * Geslacht: Man
 * Leeftijd: Onbekend
 * Woonplaats: Onbekend
-* Bevindt zich op dit moment in: Een gestolen luchtschip riching Phandalin
+* Bevindt zich op dit moment in: Een gestolen luchtschip richting Phandalin
 * Talen: Common, Elvish, Primordial, Draconic
 
 ## Beroep en geschiedenis
@@ -25,22 +25,22 @@ Als adel gekleed. Lijkt altijd schoon te zijn en lekker te ruiken.
 Zeer charismatisch.
 
 ## Talenten
-Ondbeken.
+Onbekend.
 
 ## Hebbelijkheden
-Voert vaak de sreuk prestidigitation uit op zichzelf om aantrekkelijker over te komen.
+Voert vaak de spreuk prestidigitation uit op zichzelf om aantrekkelijker over te komen.
 
 ## Interactie met anderen
-Ondbeken.
+Onbekend.
 
 ## Idealen
-Ondbeken.
+Onbekend.
 
 ## Bonden
-Ondbeken.
+Onbekend.
 
 ## Gebreken of fouten
-Ondbeken.
+Onbekend.
 
 ---
 

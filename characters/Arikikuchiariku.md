@@ -12,7 +12,7 @@ title: Arikikuchiariku
 * Geslacht: Man
 * Leeftijd: 27
 * Woonplaats: Onbekend
-* Bevindt zich op dit moment in: Een gestolen luchtschip riching Phandalin
+* Bevindt zich op dit moment in: Een gestolen luchtschip richting Phandalin
 * Talen: Common, Sylvan, Primordial
 
 ## Beroep en geschiedenis
@@ -22,7 +22,7 @@ Heeft nauw met Kapitein Groenbaard samengewerkt als piraat. Tegenwoordig ranger 
 Ongeveer 180 cm en 85 kg. Zwarte huid, blauwe ogen, en kort, zwart haar.
 
 ## Capaciteiten
-Behandig en verstandig.
+Behendig en verstandig.
 
 ## Talenten
 Kan luchtschepen besturen.

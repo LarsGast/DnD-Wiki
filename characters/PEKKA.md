@@ -6,13 +6,13 @@ title: P.E.K.K.A.
 <img src="../images/PEKKA.jpg" alt="P.E.K.K.A." width=200>
 
 ## Algemeen
-* Volledige naam: Onbeklend
+* Volledige naam: Onbekend
 * Bijnamen: P.E.K.K.A.
 * Ras: Warforged
 * Geslacht: Man
 * Leeftijd: Onbekend
 * Woonplaats: Onbekend
-* Bevindt zich op dit moment in: Een gestolen luchtschip riching Phandalin
+* Bevindt zich op dit moment in: Een gestolen luchtschip richting Phandalin
 * Talen: Onbekend
 
 ## Beroep en geschiedenis

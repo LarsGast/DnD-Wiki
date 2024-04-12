@@ -12,11 +12,11 @@ title: Lushikukukanda
 * Geslacht: Man
 * Leeftijd: 24
 * Woonplaats: Onbekend
-* Bevindt zich op dit moment in: Een gestolen luchtschip riching Phandalin
+* Bevindt zich op dit moment in: Een gestolen luchtschip richting Phandalin
 * Talen: Common, Draconic
 
 ## Beroep en geschiedenis
-Deze volksheld kwam in opstand tegen de agenten van een tiran van de cashewindustrie in Wakanda. Hij heeft later besloten om als cleric het avonturenleven aan te gaan om mogelijk zijn familie te kunnen vinden.
+Deze volksheld kwam in opstand tegen de agenten van een tiran van de cashew-industrie in Wakanda. Hij heeft later besloten om als cleric het avonturenleven aan te gaan om mogelijk zijn familie te kunnen vinden.
 
 ## Uiterlijk
 Ongeveer 190 cm en 220 kg. Zwarte huid, blauwe ogen, en geen haar.

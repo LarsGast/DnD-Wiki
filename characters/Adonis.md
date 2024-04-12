@@ -10,7 +10,7 @@ title: Adonis
 * Geslacht: Man
 * Leeftijd: 80
 * Woonplaats: Onbekend
-* Bevindt zich op dit moment in: Een gestolen luchtschip riching Phandalin
+* Bevindt zich op dit moment in: Een gestolen luchtschip richting Phandalin
 * Talen: Common, Elvish
 
 ## Beroep en geschiedenis
@@ -23,7 +23,7 @@ Ongeveer 170 cm en 70 kg. Zwarte huid, rode ogen, en wit haar.
 Erg behendig. Kan zijn mannetje staan.
 
 ## Talenten
-Begrijpt Thieves Cant.
+Begrijpt Thieves' Cant.
 
 ## Hebbelijkheden
 Doet wel eens alsof hij geen Common spreekt, terwijl hij dit wel kan.
