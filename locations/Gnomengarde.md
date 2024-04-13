@@ -144,7 +144,7 @@ Een kleine, niet-afgesloten kist onder het bed van de kabouters bevat een Hat of
 * [Clockwork Amulet]({{ site.baseurl }}{% link items/Clockwork-Amulet.md %})
 * [Hat of Wizardry]({{ site.baseurl }}{% link items/Hat-of-Wizardry.md %})
 * [Pole of Collapsing]({{ site.baseurl }}{% link items/Pole-of-Collapsing.md %})
-* Wand of Pyrotechnics
+* [Wand of Pyrotechnics]({{ site.baseurl }}{% link items/Wand-of-Pyrotechnics.md %})
 
 ## Galerij
 <img src="../images/Gnomengarde.png" alt="Gnomengarde" width=500>

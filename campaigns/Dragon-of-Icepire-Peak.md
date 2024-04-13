@@ -111,5 +111,5 @@ title: Dragon of Icepire Peak
 * [Pole of Collapsing]({{ site.baseurl }}{% link items/Pole-of-Collapsing.md %})
 * [Sending Stone]({{ site.baseurl }}{% link items/Sending-Stone.md %})
 * Staff of Birdcalls
-* Wand of Pyrotechnics
+* [Wand of Pyrotechnics]({{ site.baseurl }}{% link items/Wand-of-Pyrotechnics.md %})
 * Wand of Secrets
