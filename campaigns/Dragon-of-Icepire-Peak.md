@@ -108,7 +108,7 @@ title: Dragon of Icepire Peak
 * Mithrall Chain Mail
 * Mystery Key
 * Necklace of Fireballs
-* Pole of Collapsing
+* [Pole of Collapsing]({{ site.baseurl }}{% link items/Pole-of-Collapsing.md %})
 * [Sending Stone]({{ site.baseurl }}{% link items/Sending-Stone.md %})
 * Staff of Birdcalls
 * Wand of Pyrotechnics

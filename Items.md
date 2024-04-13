@@ -29,7 +29,7 @@ In deze sectie van de wiki zijn alle items die voorkomen in de campaigns die ik 
 * Mithrall Chain Mail
 * Mystery Key
 * Necklace of Fireballs
-* Pole of Collapsing
+* [Pole of Collapsing]({{ site.baseurl }}{% link items/Pole-of-Collapsing.md %})
 * [Sending Stone]({{ site.baseurl }}{% link items/Sending-Stone.md %})
 * [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
 * Staff of Birdcalls
