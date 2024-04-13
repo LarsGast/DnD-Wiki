@@ -56,6 +56,6 @@ Onbekend.
 * -
 
 ## Items
-* -
+* [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
 
 ## Galerij

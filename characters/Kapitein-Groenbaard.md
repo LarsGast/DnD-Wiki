@@ -58,7 +58,7 @@ Arrogantie, denkt dat hij alles en iedereen aankan.
 * [Zandzee]({{ site.baseurl }}{% link locations/Zandzee.md %})
 
 ## Items
-* -
+* [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
 
 ## Galerij
 <img src="../images/Kapitein Groenbaard.jpg" alt="Kapitein Groenbaard" width=200>
