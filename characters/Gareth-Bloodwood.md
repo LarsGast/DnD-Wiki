@@ -53,6 +53,11 @@ Arrogantie tegenover mensen die niet bang zijn om te moorden.
 * [Zandzee]({{ site.baseurl }}{% link locations/Zandzee.md %})
 
 ## Items
+
+### Huidige bezittingen
+* -
+
+### Vorige bezittingen
 * -
 
 ## Galerij
