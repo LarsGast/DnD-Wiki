@@ -54,6 +54,11 @@ Onervaren, kan zijn eigen krachten niet goed inschatten.
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 
 ## Items
+
+### Huidige bezittingen
+* -
+
+### Vorige bezittingen
 * -
 
 ## Galerij
