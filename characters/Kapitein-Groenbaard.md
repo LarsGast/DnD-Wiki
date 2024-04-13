@@ -33,9 +33,6 @@ Probeert zelf spreekwoorden te bedenken.
 ## Interactie met anderen
 Vertrouwd het koninkrijk niet, maar maakt snel vrienden met anderen.
 
-## Kennis
-Weet van een draak die opgedoken is op Icepire Peak
-
 ## Idealen
 Avontuur, vrijheid en hebzucht.
 
@@ -52,6 +49,7 @@ Arrogantie, denkt dat hij alles en iedereen aankan.
 * [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
 
 ## Gerelateerde karakters
+* [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
 * [Gareth Bloodwood]({{ site.baseurl }}{% link characters/Gareth-Bloodwood.md %})
 * [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
 
@@ -60,6 +58,11 @@ Arrogantie, denkt dat hij alles en iedereen aankan.
 * [Zandzee]({{ site.baseurl }}{% link locations/Zandzee.md %})
 
 ## Items
+
+### Huidige bezittingen
+* [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
+
+### Vorige bezittingen
 * -
 
 ## Galerij

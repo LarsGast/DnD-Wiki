@@ -31,9 +31,6 @@ Had een ontzettende haat voor piraten.
 ## Interactie met anderen
 Vriendelijk tegen iedereen die de wet niet overtreed, maar zeer onvriendelijk tegenover criminelen.
 
-## Kennis
-Wist veel van hoe het koninkrijk van Greenguard.
-
 ## Idealen
 Wettelijkheid en respect.
 
@@ -56,6 +53,11 @@ Arrogantie tegenover mensen die niet bang zijn om te moorden.
 * [Zandzee]({{ site.baseurl }}{% link locations/Zandzee.md %})
 
 ## Items
+
+### Huidige bezittingen
+* -
+
+### Vorige bezittingen
 * -
 
 ## Galerij

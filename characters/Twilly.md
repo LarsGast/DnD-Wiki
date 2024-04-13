@@ -33,9 +33,6 @@ Zegt niet veel.
 ## Interactie met anderen
 Vriendelijk, altijd bereid om iemand te groeten.
 
-## Kennis
-Door veel met Robina op te trekken heeft hij kennis opgedaan over de natuur, in het specifiek bossen.
-
 ## Idealen
 Vrijheid.
 
@@ -53,6 +50,7 @@ Spreekt bijna geen talen en is naïef.
 * [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
 
 ## Gerelateerde karakters
+* [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
 
 ## Gerelateerde locaties
@@ -60,6 +58,11 @@ Spreekt bijna geen talen en is naïef.
 * [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
 
 ## Items
+
+### Huidige bezittingen
+* -
+
+### Vorige bezittingen
 * -
 
 ## Galerij

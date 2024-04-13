@@ -33,9 +33,6 @@ Optimistisch.
 ## Interactie met anderen
 Vrolijk en vriendelijk.
 
-## Kennis
-Potions maken.
-
 ## Idealen
 Oprechtheid en liefdadigheid.
 
@@ -57,6 +54,11 @@ Niet een hele goede zakenpersoon.
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 
 ## Items
+
+### Huidige bezittingen
+* -
+
+### Vorige bezittingen
 * -
 
 ## Galerij

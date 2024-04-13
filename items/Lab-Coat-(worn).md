@@ -14,6 +14,12 @@ title: Lab Coat (worn)
 ## Beschrijving
 <i>"Die gast ziet eruit alsof hij weet waar hij het over heeft!"</i>
 
+## Geschiedenis van bezitting
+* Albert Tweesteen
+  * Tot zijn ontvoering
+* Lushikukukanda
+  * Vanaf de ontvoering van Albert Tweesteen tot de vlucht van Falconreach naar Phandalin
+
 ---
 
 ## Komt voor in
@@ -21,6 +27,7 @@ title: Lab Coat (worn)
 
 ## Gerelateerde karakters
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
+* [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
 
 ## Gerelateerde locaties
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})

@@ -33,9 +33,6 @@ Slechte taalvaardigheid.
 ## Interactie met anderen
 Andere Goblins waren bang voor hem, hij was immers 8 keer zo groot.
 
-## Kennis
-Bijna niks.
-
 ## Idealen
 Hebzucht.
 
@@ -59,6 +56,11 @@ Ongelofelijk dom.
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 
 ## Items
+
+### Huidige bezittingen
+* -
+
+### Vorige bezittingen
 * [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
 
 ## Galerij

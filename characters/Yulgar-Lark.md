@@ -33,9 +33,6 @@ Gaat graag te vissen. Gooit daar voor zelf zijn winkel een dag dicht.
 ## Interactie met anderen
 Afstandelijk, maar goede vrienden met Hugo Zingzwaard.
 
-## Kennis
-Weet veel van wapens af.
-
 ## Idealen
 even en laten leven.
 
@@ -57,6 +54,11 @@ Ongeïnteresseerd.
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 
 ## Items
+
+### Huidige bezittingen
+* -
+
+### Vorige bezittingen
 * -
 
 ## Galerij

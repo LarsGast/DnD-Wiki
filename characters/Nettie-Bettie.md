@@ -33,9 +33,6 @@ Had de neiging om andere Goblins vaak dom te noemen.
 ## Interactie met anderen
 Aangezien ze veel slimmer was dan een gemiddelde Goblin, had ze constant het gevoel dat ze omringd was door idioten.
 
-## Kennis
-Verassend veel, voor een Goblin.
-
 ## Idealen
 Hebzucht.
 
@@ -58,6 +55,11 @@ Arrogant.
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 
 ## Items
+
+### Huidige bezittingen
+* -
+
+### Vorige bezittingen
 * [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
 
 ## Galerij

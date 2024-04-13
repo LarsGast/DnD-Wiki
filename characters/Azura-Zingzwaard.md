@@ -33,9 +33,6 @@ Komt vaak in de problemen.
 ## Interactie met anderen
 Ze probeert anderen vaak te slim af te zijn.
 
-## Kennis
-Door haar ontvoering weet ze waar de Goblins van het Surewould-bos zich bevinden.
-
 ## Idealen
 Vrijheid.
 
@@ -60,6 +57,11 @@ Arrogantie.
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 
 ## Items
+
+### Huidige bezittingen
+* -
+
+### Vorige bezittingen
 * -
 
 ## Galerij
