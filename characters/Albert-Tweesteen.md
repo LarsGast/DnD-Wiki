@@ -58,7 +58,7 @@ Is heel afhankelijk van zijn labjas, deze geeft hem namelijk veel zelfverzekerdh
 ## Items
 
 ### Huidige bezittingen
-* [Dust of Dryness]({{ site.baseurl }}{% link items/Dust-of-Dryness.md %})
+* [Dust of Dryness]({{ site.baseurl }}{% link items/Dust-of-Dryness.md %}) (1 snufje)
 
 ### Vorige bezittingen
 * [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})

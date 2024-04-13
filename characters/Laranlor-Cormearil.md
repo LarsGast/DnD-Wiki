@@ -59,7 +59,12 @@ Onbekend.
 * -
 
 ## Items
-* [Dust of Dryness]({{ site.baseurl }}{% link items/Dust-of-Dryness.md %})
+
+### Huidige bezittingen
+* [Dust of Dryness]({{ site.baseurl }}{% link items/Dust-of-Dryness.md %}) (4 snufjes)
+
+### Vorige bezittingen
+* [Dust of Dryness]({{ site.baseurl }}{% link items/Dust-of-Dryness.md %}) (1 snufje)
 
 ## Galerij
 <img src="../images/Laranlor.jpg" alt="Laranlor" width=200>
