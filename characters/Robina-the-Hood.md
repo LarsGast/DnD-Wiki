@@ -57,6 +57,11 @@ Ontzettend snel afgeleid en naïef.
 * [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
 
 ## Items
+
+### Huidige bezittingen
+* -
+
+### Vorige bezittingen
 * -
 
 ## Galerij
