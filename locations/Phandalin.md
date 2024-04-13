@@ -43,12 +43,12 @@ Mijnwerkers komen hier om hun waardevolle vondsten te laten wegen, meten en uitb
 De mijnwerkersbeurs is een geweldige plek om mensen te ontmoeten die veel tijd doorbrengen op het platteland rond Phandalin. De gildemeester is een berekenende menselijke vrouw genaamd Halia Thornton.
 
 ## Heiligdom van Geluk
-De enige tempel van Phandalin is een heiligdom gemaakt van stenen uit de nabijgelegen ruïnes. Het is opgedragen aan Tymora (godin van geluk) en wordt normaal gesproken beheerd door een ijverige elfacoliet genaamd Sister Garaele. Ze is echter de stad uit voor onbepaalde duur. Zuster Garaele brengt regelmatig verslag uit aan haar superieuren over de gebeurtenissen in en rond Phandalin, en is momenteel in Neverwinter om precies dat te doen. Bij haar afwezigheid blijft het heiligdom onbeheerd achter.
+De enige tempel van Phandalin is een heiligdom gemaakt van stenen uit de nabijgelegen ruïnes. Het is opgedragen aan Tymora (godin van geluk) en wordt normaal gesproken beheerd door een ijverige elf acoliet genaamd Sister Garaele. Ze is echter de stad uit voor onbepaalde duur. Zuster Garaele brengt regelmatig verslag uit aan haar superieuren over de gebeurtenissen in en rond Phandalin, en is momenteel in Neverwinter om precies dat te doen. Bij haar afwezigheid blijft het heiligdom onbeheerd achter.
 
 ## Stadhuis
 De hal van de stadmeester heeft stevige stenen muren, een schuin houten dak en een klokkentoren aan de achterkant. Op het vacaturebord naast de voordeur staan een beperkt aantal mededelingen, allemaal geschreven in Common en in hetzelfde handschrift.
 
-Alle aankondigingen op de vacaturebank zijn geschreven door Harbin Wester, de door Phandalin aangewezen gemeentemeester. Harbin is een pompeuze bankier van middelbare leeftijd die in een huis ten oosten van de stadmeesterszaal woont. Berichten over een witte draak in het gebied hebben hem tot een ware opsluiting gemaakt, en hij gaat zelden naar buiten, behalve om eten te halen en nieuwe mededelingen te plaatsen waarin hij avonturiers oproept.
+Alle aankondigingen op de vacaturebank zijn geschreven door Harbin Wester, de door Phandalin aangewezen gemeentemeester. Harbin is een pompeuze bankier van middelbare leeftijd die in een huis ten oosten van het stadhuis woont. Berichten over een witte draak in het gebied hebben hem tot een ware opsluiting gemaakt, en hij gaat zelden naar buiten, behalve om eten te halen en nieuwe mededelingen te plaatsen waarin hij avonturiers oproept.
 
 Personen die bij Harbin aankloppen, horen zijn stem aan de andere kant zeggen: "Als je een draak bent, weet dan dat ik veel te mager en benig ben om een goede maaltijd te bereiden!" Wat de avonturiers ook doen om zijn angsten weg te nemen, Harbin weigert de deur te openen en praat er liever doorheen. Andere bewoners die Harbin met klachten lastigvallen, krijgen een soortgelijke behandeling.
 

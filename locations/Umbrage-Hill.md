@@ -18,7 +18,7 @@ title: Umbrage Hill
 ## Overzicht
 Umbrage Hill kreeg zijn naam nadat twee ruziënde dwergclans er bovenop een veldslag hadden uitgevochten. De oorzaak van hun aanstoot is een verhaal dat verloren is gegaan door de tijd, en alleen de steenmannetjes van de doden zijn er nog over. De stenen windmolen op de heuvel is een latere toevoeging, maar nog steeds ruim honderd jaar oud.
 
-Adabra Gwynn, een vroedvrouw en apotheker gewijd aan Chauntea (godin van de landbouw), woont hier. Adabra weigert terug te keren naar Phandalin, ookal loopt ze gevaar.
+Adabra Gwynn, een vroedvrouw en apotheker gewijd aan Chauntea (godin van de landbouw), woont hier. Adabra weigert terug te keren naar Phandalin, ook al loopt ze gevaar.
 
 Adabra verkoopt genezingsdrankjes voor 50 gp.
 

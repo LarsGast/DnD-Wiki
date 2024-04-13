@@ -10,7 +10,7 @@ In deze sectie van de wiki zijn alle items die voorkomen in de campaigns die ik 
 * +1 Longbow
 * +1 Mace
 * +1 Shield
-* +1 Shorrtsword
+* +1 Shortsword
 * Boots of Elvenkind
 * [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
 * Cloak of Billowing

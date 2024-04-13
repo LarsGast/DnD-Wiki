@@ -16,18 +16,18 @@ title: Gnomengarde
 * Cultuur: 
 
 ## Overzicht
-Een stroom leidt bergopwaarts naar de voet van de berg, waar de erosie van de waterval een natuurlijke holte heeft uitgesleten. De brullende waterval creëert een mistwolk wanneer deze in een ondiepe waterplas stort, waarbinnen twee kleine eilandjes oprijzen die bedekt zijn met zestig cenitmeter hoge rode, groene en paarse paddenstoelen. Verschillende grotopeningen kijken uit op de poel vanaf rotsachtige richels, twintig tot tien meter boven de grond. De berg blokkeert het zonlicht om deze plek te bereiken.
+Een stroom leidt bergopwaarts naar de voet van de berg, waar de erosie van de waterval een natuurlijke holte heeft uitgesleten. De brullende waterval creëert een mistwolk wanneer deze in een ondiepe waterplas stort, waarbinnen twee kleine eilandjes oprijzen die bedekt zijn met zestig centimeter hoge rode, groene en paarse paddenstoelen. Verschillende grotopeningen kijken uit op de poel vanaf rotsachtige richels, twintig tot tien meter boven de grond. De berg blokkeert het zonlicht om deze plek te bereiken.
 
 Gnomengarde heeft vijf grotingangen bovenop richels met steile, rotsachtige hellingen. Een smal voetpad loopt omhoog langs de noordoostelijke helling, waardoor het gemakkelijk is om zonder controle naar de ingang van de grot te klimmen.
 
-In Gnomengarde wonen twintig rotskabouters, waaronder koning Gnerkli en koning Korboz.
+In Gnomengarde wonen twintig rots kabouters, waaronder koning Gnerkli en koning Korboz.
 
 ## Wilde magie
 Wilde magie is een soort magie die niet onder controle kan worden gehouden, en Gnomengarde is daar al lang een bron van. Wanneer een wezen ergens op de Gnomengarde-kaart een spreuk uitvoert, kan er een bijkomend effect optreden.
 
 ## Locaties
 
-### G1 Misty Pool en Mushroom Islands
+### G1 Mistige beek en paddenstoel eilanden
 De kabouters leven van 60 cm hoge paddenstoelen die groeien bovenop twee kleine eilanden in het midden van deze 90 cm diepe poel. De eilanden zijn voortdurend gehuld in mist van de waterval. De magie die door de eerste kolonisten van Gnomengarde aan de eilanden wordt verleend, zorgt ervoor dat de paddenstoelen abnormaal groot worden. Deze zelfde magie is de bron van de wilde magie van Gnomengarde (zie hierboven).
 
 De paddenstoelen zijn er in drie kleuren. Rode paddenstoelen leveren olie die de kabouters gebruiken om hun lantaarns en andere mechanische apparaten van brandstof te voorzien. Groene paddenstoelen worden vermalen tot meel en gebruikt om een smakelijk groen brood te maken. Paarse paddenstoelen worden geplet en gefermenteerd om paddenstoelenwijn te maken, die net zo lekker smaakt als hij klinkt.
@@ -39,7 +39,7 @@ De waterval stort zich 20 meter naar beneden, waarbij de mist een 10 meter lange
 Deze kamer bevat verschillende eettafels en stoelen die geschikt zijn voor kleine mensen. Een stevige houten kast tegen de oostelijke muur bevat tinnen serviesgoed en bestek.
 
 ### G4. Keuken
-Deze keuken is ingericht met het oog op kabouters, dus alles ligt dicht bij de vloer of is gemakkelijk bereikbaar door aan een te ingewikkeld touw-en-katrolmechanisme te trekken. Vijf rotskabouters zijn hier bezig:
+Deze keuken is ingericht met het oog op kabouters, dus alles ligt dicht bij de vloer of is gemakkelijk bereikbaar door aan een te ingewikkeld touw-en-katrolmechanisme te trekken. Vijf rots kabouters zijn hier bezig:
 
 * Joybell (vrouw) gebruikt een pook om het vuur aan te wakkeren van een hete ijzeren kachel die tegen de oostelijke muur staat.
 * Dimble (man) gebruikt een ingewikkeld persachtig apparaat om olie uit een grote rode paddenstoel te persen en de vloeistof in vier olieflessen te filteren.
@@ -51,19 +51,19 @@ Deze keuken is ingericht met het oog op kabouters, dus alles ligt dicht bij de v
 Deze kamer is hoog opgestapeld met kleine houten kratten. Elk bevat broden van groen champignonbrood en andere voedingsmiddelen die door de kabouters zijn verzameld en bewaard.
 
 ### G6. Vatkrabben
-Geparkeerd in nissen in deze verder lege kamer staan twee gnomische constructies. Ze lijken allemaal op een krab met een ton als schelp, zes scharnierende metalen poten en een paar naar voren gerichte tangklauwen. Een luik aan de bovenkant van elke loop gaat open en onthult een binnencompartiment dat is uitgerust met een kleine, met leer beklede stoel omgeven door hendels, pedalen en versnellingen. De vaten zijn niet luchtdicht.
+Geparkeerd in nissen in deze verder lege kamer staan twee gnomische constructies. Ze lijken allemaal op een krab met een ton als schelp, zes scharnierende metalen poten en een paar naar voren gerichte tangklauwen. Een luik aan de bovenkant van elke loop gaat open en onthult een binnen compartiment dat is uitgerust met een kleine, met leer beklede stoel omgeven door hendels, pedalen en versnellingen. De vaten zijn niet luchtdicht.
 
 De kabouters bouwden deze krabachtige constructies om andere voorwerpen vast te pakken en te verplaatsen, een beetje zoals ruwe vorkheftrucks. De constructies zijn echter zo onhandig dat ze onbruikbaar zijn voor delicaat werk. Ze zijn net klein genoeg om door de 1,5 meter brede gangen van Gnomengarde te navigeren.
 
-Elke vatkrab is ontworpen om een enkele kleine mensachtige vast te houden, hoewel een middelgrote mensachtige er met enig ongemak in kan passen. Terwijl het wezen zich in de ton bevindt met het luik gesloten, heeft het volledige dekking tegen aanvallen van buiten het apparaat.
+Elke vat krab is ontworpen om een enkele kleine mensachtige vast te houden, hoewel een middelgrote mensachtige er met enig ongemak in kan passen. Terwijl het wezen zich in de ton bevindt met het luik gesloten, heeft het volledige dekking tegen aanvallen van buiten het apparaat.
 
 ### G7. Automatisch ladend kruisboogplatform
 Aan de vloer van deze kamer is een roterend platform vastgeschroefd, uitgerust met vier zware kruisbogen die automatisch herladen. Elke kruisboog wordt geleverd met twintig bouten. Boven de kruisbogen is op een hoogte van 1,80 meter een stoel gemonteerd die is uitgerust met pedalen die ervoor zorgen dat het hele apparaat tegen de klok in draait, en met hendels die de kruisbogen herladen en afvuren.
 
-De uitvinder van het apparaat zit in de stoel, een kluizenaar van de rotskabouter genaamd Facktoré. Als ze vreemden ziet, besluit Facktoré het apparaat op hen uit te testen. Ze gaat pas staan als zij of haar apparaat niet meer functioneert, of als ze geen doelen meer kan zien. Omdat ze gestoord is en volledig in beslag wordt genomen door haar werk, kan ze nauwelijks een samenhangende zin aan elkaar rijgen, laat staan bezoekers adviseren waar ze heen moeten of met wie ze moeten praten.
+De uitvinder van het apparaat zit in de stoel, een kluizenaar van de rots kabouter genaamd Facktoré. Als ze vreemden ziet, besluit Facktoré het apparaat op hen uit te testen. Ze gaat pas staan als zij of haar apparaat niet meer functioneert, of als ze geen doelen meer kan zien. Omdat ze gestoord is en volledig in beslag wordt genomen door haar werk, kan ze nauwelijks een samenhangende zin aan elkaar rijgen, laat staan bezoekers adviseren waar ze heen moeten of met wie ze moeten praten.
 
 ### G8. Mimic en Champignonwijn
-Deze kamer bevat twaalf vaten van veertig liter, geplaatst in brede nissen. Elk vat is beveiligd met een houten beugel. De vaten in de zuidnis zijn afgetapt met houten tappen. Twee van die vaten zijn halfvol en twee zijn bijna leeg. Zeven van de acht vaten in de noordelijke en oostelijke alkoven zijn onaangeboord en zitten vol paddenstoelwijn.
+Deze kamer bevat twaalf vaten van veertig liter, geplaatst in brede nissen. Elk vat is beveiligd met een houten beugel. De vaten zijn afgetapt met houten tappen. Twee van die vaten zijn halfvol en twee zijn bijna leeg. Zeven van de acht vaten in de noordelijke en oostelijke alkoven zijn on-aangeboord en zitten vol paddenstoelwijn.
 
 ### G9. Kabouterwachtpost
 Mist van de waterval dempt deze lege grot, die een 3 meter hoge rand heeft die erop uitkijkt in het zuiden. Op de rand staan twee rotskabouters: een vrouwtje genaamd Ulla en een mannetje genaamd Pog. Hun opdracht is om 'shapechangers ter plekke aan te vallen'. Omdat iedereen een shapechanger kan zijn, vallen ze iedereen aan die niet kan bewijzen dat hij is wie hij beweert te zijn.
@@ -78,13 +78,13 @@ Een mannetje genaamd Fibblestib en een vrouwtje genaamd Dabbledob bevinden zich 
 
 Fibblestib en Dabbledob beschouwen het mysterie van de verdwijnende kabouters van ondergeschikt belang voor hun missie om hun koningen te helpen. Ze concentreren zich op Korboz en Gnerkli met uitsluiting van al het andere, en beloven magische beloningen in ruil voor hulp.
 
-De werkplaats is volgestouwd met halfvoltooide gnomische uitvindingen die geen enkel doel dienen, en met werktafels bezaaid met ketellappergereedschap. Een 3 meter hoge richel kijkt uit over de kamer en is voorzien van een houten voetstuk waarop een in leer gebonden boek staat.
+De werkplaats is volgestouwd met half voltooide gnomische uitvindingen die geen enkel doel dienen, en met werktafels bezaaid met ketellappergereedschap. Een 3 meter hoge richel kijkt uit over de kamer en is voorzien van een houten voetstuk waarop een in leer gebonden boek staat.
 
 ### G12. Kabouterwoonplaatsen
-De vloer van deze grot is bezaaid met de overblijfselen van oude kampvuren. Vier zijgrotten dienen als slaapgedeelte, met in elke grot vijf kleine houten bedjes gepropt. Acht rotskabouters slapen hier heerlijk als de personages voor het eerst arriveren, met twee kabouters in elke zijgrot: Caramip, Jabby, Nyx en Quippy (vrouwtjes), en Anverth, Delebean, Pallabar en Zook (mannetjes).
+De vloer van deze grot is bezaaid met de overblijfselen van oude kampvuren. Vier zijgrotten dienen als slaapgedeelte, met in elke grot vijf kleine houten bedjes gepropt. Acht rotskabouters slapen hier heerlijk als de personages voor het eerst arriveren, met twee kabouters in elke zij grot: Caramip, Jabby, Nyx en Quippy (vrouwtjes), en Anverth, Delebean, Pallabar en Zook (mannetjes).
 
 ### G13. Schatkist
-De deur van deze kamer is op slot en Fibblestib en Dabbledob (zie gebied G11) dragen de sleutels. De kamer bevat een wirwar van niet-functionele gnomish-gadgets, maar ook losse tandwielen, verwrongen stukjes metaal en andere restjes die de kabouters gebruiken om nieuwe uitvindingen in elkaar te zetten.
+De deur van deze kamer is op slot en Fibblestib en Dabbledob (zie gebied G11) dragen de sleutels. De kamer bevat een wirwar van niet-functionele kabouters-gadgets, maar ook losse tandwielen, verwrongen stukjes metaal en andere restjes die de kabouters gebruiken om nieuwe uitvindingen in elkaar te zetten.
 
 Te midden van de rommel kunnen de zijn een Clockwork Amulet en een Pole of Collapsing te vinden.
 
@@ -109,7 +109,7 @@ Een kleine, niet-afgesloten kist onder het bed van de kabouters bevat een Hat of
 * Dabbledob
 * Delebean
 * Dimble
-* Fackroré
+* Facktoré
 * Fibblestib
 * Gnerkli
 * Jabby
@@ -120,7 +120,7 @@ Een kleine, niet-afgesloten kist onder het bed van de kabouters bevat een Hat of
 * Panana
 * Pog
 * Quippy
-* Tevraround
+* Tervaround
 * Ulla
 * Uppendown
 * Zook

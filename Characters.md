@@ -19,12 +19,12 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * Caramip
 * Cryovain
 * Dabbledob
-* Dazlyn Grayhard
+* Dazlyn Grayshard
 * Delebean
 * Dimble
 * Don-Jon Raskin
 * Elmar Barthen
-* Fackroré
+* Facktoré
 * Fibblestib
 * [Gareth Bloodwood]({{ site.baseurl }}{% link characters/Gareth-Bloodwood.md %})
 * [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
@@ -51,7 +51,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * Quippy
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
 * Sister Garaele
-* Tevraround
+* Tervaround
 * [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})
 * Thistle
 * Tibor Wester
