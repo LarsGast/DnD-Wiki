@@ -54,6 +54,11 @@ Ongeïnteresseerd.
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 
 ## Items
+
+### Huidige bezittingen
+* -
+
+### Vorige bezittingen
 * -
 
 ## Galerij

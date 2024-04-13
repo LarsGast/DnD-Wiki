@@ -59,7 +59,12 @@ Heeft een zwak voor de ondeugden van de stad, vooral voor sterke drank.
 * -
 
 ## Items
+
+### Huidige bezittingen
 * [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
+
+### Vorige bezittingen
+* -
 
 ## Galerij
 <img src="../images/Lushikukukanda.jpg" alt="Lushikukukanda" width=200>

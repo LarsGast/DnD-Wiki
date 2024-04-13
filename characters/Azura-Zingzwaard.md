@@ -57,6 +57,11 @@ Arrogantie.
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 
 ## Items
+
+### Huidige bezittingen
+* -
+
+### Vorige bezittingen
 * -
 
 ## Galerij

@@ -60,6 +60,11 @@ Verwend zijn dochter iets te veel.
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 
 ## Items
+
+### Huidige bezittingen
+* -
+
+### Vorige bezittingen
 * -
 
 ## Galerij

@@ -59,7 +59,12 @@ Onbekend.
 * -
 
 ## Items
+
+### Huidige bezittingen
 * [Wind Fan]({{ site.baseurl }}{% link items/Wind-Fan.md %})
+
+### Vorige bezittingen
+* -
 
 ## Galerij
 <img src="../images/Theodas.jpg" alt="Theodas" width=200> 

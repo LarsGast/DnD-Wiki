@@ -55,6 +55,11 @@ Komt soms bot en onaardig over.
 * [Zandzee]({{ site.baseurl }}{% link locations/Zandzee.md %})
 
 ## Items
+
+### Huidige bezittingen
+* -
+
+### Vorige bezittingen
 * -
 
 ## Galerij

@@ -80,7 +80,13 @@ Is heel afhankelijk van zijn labjas, deze geeft hem namelijk veel zelfverzekerdh
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 
 ## Items
+
+### Huidige bezittingen
+* [Dust of Dryness]({{ site.baseurl }}{% link items/Dust-of-Dryness.md %}) (1 snufje)
+
+### Vorige bezittingen
 * [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
+* [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
 
 ## Galerij
 <img src="../images/Goblin.png" alt="Albert Tweesteen zonder labjas" width=200>

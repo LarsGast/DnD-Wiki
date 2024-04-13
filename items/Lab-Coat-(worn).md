@@ -26,6 +26,12 @@ title: Lab Coat (worn)
 ## Beschrijving
 <i>"Die gast ziet eruit alsof hij weet waar hij het over heeft!"</i>
 
+## Geschiedenis van bezitting
+* Albert Tweesteen
+  * Tot zijn ontvoering
+* Lushikukukanda
+  * Vanaf de ontvoering van Albert Tweesteen tot de vlucht van Falconreach naar Phandalin
+
 ---
 
 ## Komt voor in

@@ -69,6 +69,11 @@ Arrogantie, denkt dat hij alles en iedereen aankan.
 * [Zandzee]({{ site.baseurl }}{% link locations/Zandzee.md %})
 
 ## Items
+
+### Huidige bezittingen
+* [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
+
+### Vorige bezittingen
 * -
 
 ## Galerij

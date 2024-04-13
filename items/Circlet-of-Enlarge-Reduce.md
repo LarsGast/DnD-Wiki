@@ -24,6 +24,12 @@ title: Circlet of Enlarge Reduce
 ## Beschrijving
 Dit kroontje bevat twee edelstenen, één groot, één klein.
 
+## Geschiedenis van bezitting
+* Koning Splurt
+  * Tot zijn dood
+* Arikikuchiariku
+  * Vanaf de dood van Koning Splurt tot heden
+
 ---
 
 ## Komt voor in

@@ -30,12 +30,24 @@ Iemand kan een action gebruiken om de pellet tegen een hard oppervlak te slaan, 
 
 Een elemental monster dat voornamelijk bestaat uit water dat wordt blootgesteld aan een snufje stof, moet een DC 13 CON saving throw maken, waarbij hij 10d6 necrotische schade oploopt bij een mislukte save, of half zoveel schade bij een succesvolle save.
 
+## Algemeen
+* Totaal aantal snufjes: 5
+
+## Geschiedenis van bezitting
+* Een dode Zand-Elf in een tombe in de Tempel van ^.^
+  * Tot de grafroof van de Tempel van ^.^
+* Laranlor
+  * Vanaf de grafroof van de Tempel van ^.^ tot heden (4 snufjes)
+* Albert Tweesteen
+  * Vanaf de grafroof van de Tempel van ^.^ tot heden (1 snufje)
+
 ---
 
 ## Komt voor in
 * [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
 
 ## Gerelateerde karakters
+* [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
 * [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
 
 ## Gerelateerde locaties
