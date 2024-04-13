@@ -56,7 +56,11 @@ Is heel afhankelijk van zijn labjas, deze geeft hem namelijk veel zelfverzekerdh
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 
 ## Items
+
+### Huidige bezittingen
 * [Dust of Dryness]({{ site.baseurl }}{% link items/Dust-of-Dryness.md %})
+
+### Vorige bezittingen
 * [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
 
 ## Galerij
