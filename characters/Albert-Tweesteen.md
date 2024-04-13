@@ -62,6 +62,7 @@ Is heel afhankelijk van zijn labjas, deze geeft hem namelijk veel zelfverzekerdh
 
 ### Vorige bezittingen
 * [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
+* [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
 
 ## Galerij
 <img src="../images/Goblin.png" alt="Albert Tweesteen zonder labjas" width=200>

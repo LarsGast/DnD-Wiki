@@ -60,6 +60,11 @@ Onbekend.
 * -
 
 ## Items
+
+### Huidige bezittingen
+* -
+
+### Vorige bezittingen
 * [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
 
 ## Galerij
