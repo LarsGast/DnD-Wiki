@@ -3,16 +3,6 @@ layout: post
 title: Wind Fan
 ---
 
-## Dungeon master notities
-
-### Geschiedenis van bezitting
-* Een dode Zand-Elf in een tombe in de [Tempel van ^.^]({{ site.baseurl }}{% link locations/Tempel-van-^.^.md %})
-  * Tot de roof
-* Laranlor
-  * Vanaf de roof tot heden
-
----
-
 <img src="../images/Wind Fan.png" alt="Wind Fan" width=200>
 
 ## Prijs
