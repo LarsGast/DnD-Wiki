@@ -33,6 +33,7 @@ title: Lab Coat (worn)
 
 ## Gerelateerde karakters
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
+* [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
 
 ## Gerelateerde locaties
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})

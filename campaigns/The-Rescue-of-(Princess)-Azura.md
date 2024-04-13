@@ -43,12 +43,17 @@ Om Azura van deze dwangbruiloft te redden verslaan de avonturiers Koning Splurt 
 
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
 * [Amy Aria]({{ site.baseurl }}{% link characters/Amy-Aria.md %})
+* [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
 * [Ash Dragonblade]({{ site.baseurl }}{% link characters/Ash-Dragonblade.md %})
 * [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
 * [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
 * [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
+* [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
+* [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
 * [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
+* [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
+* [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
 * [Yulgar Lark]({{ site.baseurl }}{% link characters/Yulgar-Lark.md %})
 

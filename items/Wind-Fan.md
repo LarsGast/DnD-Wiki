@@ -27,7 +27,7 @@ Terwijl je deze waaier vasthoudt, kun je een action gebruiken om de gust of wind
 * [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
 
 ## Gerelateerde karakters
-* -
+* [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})
 
 ## Gerelateerde locaties
 * [Tempel van ^.^]({{ site.baseurl }}{% link locations/Tempel-van-^.^.md %})

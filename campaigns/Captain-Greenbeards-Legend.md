@@ -35,11 +35,17 @@ De vlucht duurt nog een paar dagen, maar uiteindelijk zullen de avonturiers same
 * -
 
 ## Karakters
+* [Adonis]({{ site.baseurl }}{% link characters/Adonis.md %})
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
+* [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
 * [Gareth Bloodwood]({{ site.baseurl }}{% link characters/Gareth-Bloodwood.md %})
 * [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
+* [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
+* [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
+* [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
+* [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
 
 ## Locaties
