@@ -96,7 +96,7 @@ title: Dragon of Icepire Peak
 * Boots of Elvenkind
 * Cloak of Billowing
 * Cloak of Many Fashions
-* Clockwork Amulet
+* [Clockwork Amulet]({{ site.baseurl }}{% link items/Clockwork-Amulet.md %})
 * Dragon Slayer
 * Dread Helm
 * Dust of Disappearance

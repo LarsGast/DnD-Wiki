@@ -141,7 +141,7 @@ Een kleine, niet-afgesloten kist onder het bed van de kabouters bevat een Hat of
 * [Umbrage Hill]({{ site.baseurl }}{% link locations/Umbrage-Hill.md %})
 
 ## Items
-* Clockwork Amulet
+* [Clockwork Amulet]({{ site.baseurl }}{% link items/Clockwork-Amulet.md %})
 * Hat of Wizardry
 * Pole of Collapsing
 * Wand of Pyrotechnics

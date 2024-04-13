@@ -15,7 +15,7 @@ In deze sectie van de wiki zijn alle items die voorkomen in de campaigns die ik 
 * [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
 * Cloak of Billowing
 * Cloak of Many Fashions
-* Clockwork Amulet
+* [Clockwork Amulet]({{ site.baseurl }}{% link items/Clockwork-Amulet.md %})
 * Dragon Slayer
 * Dread Helm
 * Dust of Disappearance
