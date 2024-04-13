@@ -3,21 +3,6 @@ layout: post
 title: Dust of Dryness
 ---
 
-## Dungeon master notities
-
-### Algemeen
-* Totaal aantal snufjes: 6
-
-### Geschiedenis van bezitting
-* Een dode Zand-Elf in een tombe in de [Tempel van ^.^]({{ site.baseurl }}{% link locations/Tempel-van-^.^.md %})
-  * Tot de roof
-* Laranlor
-  * Vanaf de roof tot heden (5 snufjes)
-* [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
-  * Vanaf de roof tot heden (1 snufje)
-
----
-
 <img src="../images/Dust of Dryness.png" alt="Dust of Dryness" width=200>
 
 ## Prijs
