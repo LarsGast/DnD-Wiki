@@ -34,7 +34,11 @@ Deze staaf lijkt elke Goblin slim te maken, en elke wizard dom.
 * [The Rescue of (Princess) Azura]({{ site.baseurl }}{% link campaigns/The-Rescue-of-(Princess)-Azura.md %})
 
 ## Gerelateerde karakters
+* [Adonis]({{ site.baseurl }}{% link characters/Adonis.md %})
+* [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
+* [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 * [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
+* [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
 
 ## Gerelateerde locaties
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
