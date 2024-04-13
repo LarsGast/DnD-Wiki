@@ -62,7 +62,12 @@ Onbekend.
 * -
 
 ## Items
+
+### Huidige bezittingen
 * [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
+
+### Vorige bezittingen
+* -
 
 ## Galerij
 <img src="../images/Arikikuchiariku.jpg" alt="Arikikuchiariku" width=200>
