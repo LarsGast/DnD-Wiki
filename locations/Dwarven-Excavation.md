@@ -86,7 +86,7 @@ Om deze kamer te bereiken, moeten de personages het puin opruimen dat de kamer a
 * [Umbrage Hill]({{ site.baseurl }}{% link locations/Umbrage-Hill.md %})
 
 ## Items
-* Sending Stone
+* [Sending Stone]({{ site.baseurl }}{% link items/Sending-Stone.md %})
 
 ## Galerij
 <img src="../images/Dwarven Excavation.jpg" alt="Dwarven Excavation" width=500>

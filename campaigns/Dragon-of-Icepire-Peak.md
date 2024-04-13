@@ -109,7 +109,7 @@ title: Dragon of Icepire Peak
 * Mystery Key
 * Necklace of Fireballs
 * Pole of Collapsing
-* Sending Stone
+* [Sending Stone]({{ site.baseurl }}{% link items/Sending-Stone.md %})
 * Staff of Birdcalls
 * Wand of Pyrotechnics
 * Wand of Secrets

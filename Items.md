@@ -30,7 +30,7 @@ In deze sectie van de wiki zijn alle items die voorkomen in de campaigns die ik 
 * Mystery Key
 * Necklace of Fireballs
 * Pole of Collapsing
-* Sending Stone
+* [Sending Stone]({{ site.baseurl }}{% link items/Sending-Stone.md %})
 * [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
 * Staff of Birdcalls
 * Wand of Pyrotechnics
