@@ -22,7 +22,7 @@ In deze sectie van de wiki zijn alle items die voorkomen in de campaigns die ik 
 * [Dust of Dryness]({{ site.baseurl }}{% link items/Dust-of-Dryness.md %})
 * Gauntlets of Ogre Power
 * Goggles of Night
-* Hat of Wizardry
+* [Hat of Wizardry]({{ site.baseurl }}{% link items/Hat-of-Wizardry.md %})
 * Immovable Rod
 * [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
 * Lute of Illusions

@@ -102,7 +102,7 @@ title: Dragon of Icepire Peak
 * Dust of Disappearance
 * Gauntlets of Ogre Power
 * Goggles of Night
-* Hat of Wizardry
+* [Hat of Wizardry]({{ site.baseurl }}{% link items/Hat-of-Wizardry.md %})
 * Immovable Rod
 * Lute of Illusions
 * Mithrall Chain Mail

@@ -142,7 +142,7 @@ Een kleine, niet-afgesloten kist onder het bed van de kabouters bevat een Hat of
 
 ## Items
 * [Clockwork Amulet]({{ site.baseurl }}{% link items/Clockwork-Amulet.md %})
-* Hat of Wizardry
+* [Hat of Wizardry]({{ site.baseurl }}{% link items/Hat-of-Wizardry.md %})
 * Pole of Collapsing
 * Wand of Pyrotechnics
 
