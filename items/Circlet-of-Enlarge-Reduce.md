@@ -3,16 +3,6 @@ layout: post
 title: Circlet of Enlarge Reduce
 ---
 
-## Dungeon master notities
-
-### Geschiedenis van bezitting
-* [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
-  * Tot zijn dood
-* Arikikuchariku
-  * Vanaf de dood van Koning Splurt tot heden
-
----
-
 <img src="../images/Circlet of Enlarge Reduce.png" alt="Circlet of Enlarge Reduce" width=200>
 
 ## Prijs
