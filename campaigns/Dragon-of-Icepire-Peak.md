@@ -34,7 +34,7 @@ title: Dragon of Icepire Peak
 * Gnerkli
 * Halia Thornton
 * [Harbin Wester]({{ site.baseurl }}{% link characters/Harbin-Wester.md %})
-* Hugo Staalzwaard
+* [Hugo Staalzwaard]({{ site.baseurl }}{% link characters/Hugo-Staalzwaard.md %})
 * Jabby
 * Joybell
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})

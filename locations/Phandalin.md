@@ -64,7 +64,7 @@ Als avonturiers hem naar een zoektocht vragen, zet Harbin ze op het goede spoor 
 * [Elmar Barthen]({{ site.baseurl }}{% link characters/Elmar-Barthen.md %})
 * Halia Thornton
 * [Harbin Wester]({{ site.baseurl }}{% link characters/Harbin-Wester.md %})
-* Hugo Staalzwaard
+* [Hugo Staalzwaard]({{ site.baseurl }}{% link characters/Hugo-Staalzwaard.md %})
 * Linene Graywind
 * Sister Garaele
 * [Thistle]({{ site.baseurl }}{% link characters/Thistle.md %})

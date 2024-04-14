@@ -31,7 +31,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * Gnerkli
 * Halia Thornton
 * [Harbin Wester]({{ site.baseurl }}{% link characters/Harbin-Wester.md %})
-* Hugo Staalzwaard
+* [Hugo Staalzwaard]({{ site.baseurl }}{% link characters/Hugo-Staalzwaard.md %})
 * [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
 * Jabby
 * Joybell
