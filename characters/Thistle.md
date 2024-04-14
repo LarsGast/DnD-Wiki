@@ -1,46 +1,46 @@
 ---
 layout: post
-title: Elmar Barthen
+title: Thistle
 ---
 
-<img src="../images/Elmar Barthen.png" alt="Elmar Barthen" width=100>
+<img src="../images/Thistle.png" alt="Thistle" width=200>
 
 ## Algemeen
-* Volledige naam: Elmar Barthen
-* Bijnamen: -
+* Volledige naam: Onbekend
+* Bijnamen: Thistle
 * Ras: Mens
-* Geslacht: Man
-* Leeftijd: 50
+* Geslacht: vrouw
+* Leeftijd: 18
 * Woonplaats: Phandalin
-* Bevindt zich op dit moment in: Zijn winkel, Barthen's Voorzieningen
+* Bevindt zich op dit moment in: De winkel waar ze werkt, Barthen's Voorzieningen
 * Talen: Common
 
 ## Beroep en geschiedenis
-Baas van Barthen's Voorzieningen.
+Winkel bediende in Barthen's Voorzieningen.
 
 ## Uiterlijk
-Mager en kalend.
+Jong en slank.
 
 ## Capaciteiten
-Charismatisch.
+Behendig.
 
 ## Talenten
-Kan goed schilderen.
+Kan goed zingen.
 
 ## Hebbelijkheden
-Maakt vaak grappen.
+Hyperactief.
 
 ## Interactie met anderen
-Altijd vriendelijk.
+Vriendelijk, probeert vaak grappen te maken.
 
 ## Idealen
-Creativiteit en respect.
+Leven en vrijheid.
 
 ## Bonden
-Beschermend voor zijn naasten.
+Wil de wereld ontdekken.
 
 ## Gebreken of fouten
-Ziet soms niet het slechte in anderen.
+Komt soms onbedoeld brutaal over.
 
 ---
 
@@ -63,4 +63,4 @@ Ziet soms niet het slechte in anderen.
 * -
 
 ## Galerij
-<img src="../images/Elmar Barthen.png" alt="Elmar Barthen" width=100>
+<img src="../images/Thistle.png" alt="Thistle" width=200>

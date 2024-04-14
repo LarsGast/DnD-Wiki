@@ -48,7 +48,7 @@ title: Dragon of Icepire Peak
 * Quippy
 * Sister Garaele
 * Tevraround
-* Thistle
+* [Thistle]({{ site.baseurl }}{% link characters/Thistle.md %})
 * Tibor Wester
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
 * Ulla

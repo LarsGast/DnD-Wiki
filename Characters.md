@@ -53,7 +53,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * Sister Garaele
 * Tervaround
 * [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})
-* Thistle
+* [Thistle]({{ site.baseurl }}{% link characters/Thistle.md %})
 * Tibor Wester
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
 * Ulla

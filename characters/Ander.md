@@ -49,7 +49,7 @@ Heeft moeite met nieuwe vrienden maken.
 
 ## Gerelateerde karakters
 * [Elmar Barthen]({{ site.baseurl }}{% link characters/Elmar-Barthen.md %})
-* Thistle
+* [Thistle]({{ site.baseurl }}{% link characters/Thistle.md %})
 
 ## Gerelateerde locaties
 * [Phandalin]({{ site.baseurl }}{% link locations/Phandalin.md %})

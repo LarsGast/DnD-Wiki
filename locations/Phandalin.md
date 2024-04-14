@@ -67,7 +67,7 @@ Als avonturiers hem naar een zoektocht vragen, zet Harbin ze op het goede spoor 
 * Hugo Staalzwaard
 * Linene Graywind
 * Sister Garaele
-* Thistle
+* [Thistle]({{ site.baseurl }}{% link characters/Thistle.md %})
 
 ## Super-locaties
 * Sword Mountains
