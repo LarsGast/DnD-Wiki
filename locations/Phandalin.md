@@ -43,7 +43,7 @@ Mijnwerkers komen hier om hun waardevolle vondsten te laten wegen, meten en uitb
 De mijnwerkersbeurs is een geweldige plek om mensen te ontmoeten die veel tijd doorbrengen op het platteland rond Phandalin. De gildemeester is een berekenende menselijke vrouw genaamd Halia Thornton.
 
 ## Heiligdom van Geluk
-De enige tempel van Phandalin is een heiligdom gemaakt van stenen uit de nabijgelegen ruïnes. Het is opgedragen aan Tymora (godin van geluk) en wordt normaal gesproken beheerd door een ijverige elf acoliet genaamd Sister Garaele. Ze is echter de stad uit voor onbepaalde duur. Zuster Garaele brengt regelmatig verslag uit aan haar superieuren over de gebeurtenissen in en rond Phandalin, en is momenteel in Neverwinter om precies dat te doen. Bij haar afwezigheid blijft het heiligdom onbeheerd achter.
+De enige tempel van Phandalin is een heiligdom gemaakt van stenen uit de nabijgelegen ruïnes. Het is opgedragen aan Tymora (godin van geluk) en wordt normaal gesproken beheerd door een ijverige elf acoliet genaamd Sister Garaele. Ze is echter de stad uit voor onbepaalde duur. Sister Garaele brengt regelmatig verslag uit aan haar superieuren over de gebeurtenissen in en rond Phandalin, en is momenteel in Neverwinter om precies dat te doen. Bij haar afwezigheid blijft het heiligdom onbeheerd achter.
 
 ## Stadhuis
 De hal van de stadmeester heeft stevige stenen muren, een schuin houten dak en een klokkentoren aan de achterkant. Op het vacaturebord naast de voordeur staan een beperkt aantal mededelingen, allemaal geschreven in Common en in hetzelfde handschrift.
@@ -66,7 +66,7 @@ Als avonturiers hem naar een zoektocht vragen, zet Harbin ze op het goede spoor 
 * [Harbin Wester]({{ site.baseurl }}{% link characters/Harbin-Wester.md %})
 * [Hugo Staalzwaard]({{ site.baseurl }}{% link characters/Hugo-Staalzwaard.md %})
 * [Linene Graywind]({{ site.baseurl }}{% link characters/Linene-Graywind.md %})
-* Sister Garaele
+* [Sister Garaele]({{ site.baseurl }}{% link characters/Sister-Garaele.md %})
 * [Thistle]({{ site.baseurl }}{% link characters/Thistle.md %})
 
 ## Super-locaties

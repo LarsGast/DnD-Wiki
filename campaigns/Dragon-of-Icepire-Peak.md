@@ -46,7 +46,7 @@ title: Dragon of Icepire Peak
 * Panana
 * Pog
 * Quippy
-* Sister Garaele
+* [Sister Garaele]({{ site.baseurl }}{% link characters/Sister-Garaele.md %})
 * Tevraround
 * [Thistle]({{ site.baseurl }}{% link characters/Thistle.md %})
 * Tibor Wester

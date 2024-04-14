@@ -50,7 +50,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * Pog
 * Quippy
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
-* Sister Garaele
+* [Sister Garaele]({{ site.baseurl }}{% link characters/Sister-Garaele.md %})
 * Tervaround
 * [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})
 * [Thistle]({{ site.baseurl }}{% link characters/Thistle.md %})
