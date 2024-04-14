@@ -19,7 +19,7 @@ title: Dragon of Icepire Peak
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
 * Alfonse Kalazorn
 * Anverth
-* Ander
+* [Ander]({{ site.baseurl }}{% link characters/Ander.md %})
 * Barthen
 * Caramip
 * Cryovain

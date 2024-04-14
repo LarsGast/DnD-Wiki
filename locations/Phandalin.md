@@ -60,7 +60,7 @@ Als avonturiers hem naar een zoektocht vragen, zet Harbin ze op het goede spoor 
 * [Dragon of Icepire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icepire-Peak.md %})
 
 ## Gerelateerde karakters
-* Ander
+* [Ander]({{ site.baseurl }}{% link characters/Ander.md %})
 * [Elmar Barthen]({{ site.baseurl }}{% link characters/Elmar-Barthen.md %})
 * Halia Thornton
 * [Harbin Wester]({{ site.baseurl }}{% link characters/Harbin-Wester.md %})

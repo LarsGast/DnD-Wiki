@@ -12,7 +12,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * Alfonse Kalazorn
 * [Amy Aria]({{ site.baseurl }}{% link characters/Amy-Aria.md %})
 * Anverth
-* Ander
+* [Ander]({{ site.baseurl }}{% link characters/Ander.md %})
 * [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
 * [Ash Dragonblade]({{ site.baseurl }}{% link characters/Ash-Dragonblade.md %})
 * [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})

@@ -1,46 +1,46 @@
 ---
 layout: post
-title: Elmar Barthen
+title: Ander
 ---
 
-<img src="../images/Elmar Barthen.png" alt="Elmar Barthen" width=100>
+<img src="../images/Ander.jpg" alt="Ander" width=200>
 
 ## Algemeen
-* Volledige naam: Elmar Barthen
-* Bijnamen: -
+* Volledige naam: Onbekend
+* Bijnamen: Ander
 * Ras: Mens
 * Geslacht: Man
-* Leeftijd: 50
+* Leeftijd: 18
 * Woonplaats: Phandalin
-* Bevindt zich op dit moment in: Zijn winkel, Barthen's Voorzieningen
+* Bevindt zich op dit moment in: De winkel waar hij werkt, Barthen's Voorzieningen
 * Talen: Common
 
 ## Beroep en geschiedenis
-Baas van Barthen's Voorzieningen.
+Winkel bediende in Barthen's Voorzieningen.
 
 ## Uiterlijk
-Mager en kalend.
+Jong en slank.
 
 ## Capaciteiten
-Charismatisch.
+Intelligent.
 
 ## Talenten
-Kan goed schilderen.
+Heeft een goed geheugen.
 
 ## Hebbelijkheden
-Maakt vaak grappen.
+Een serieus persoon.
 
 ## Interactie met anderen
-Altijd vriendelijk.
+Voorzichtig.
 
 ## Idealen
-Creativiteit en respect.
+Logica en kennis.
 
 ## Bonden
 Beschermend voor zijn naasten.
 
 ## Gebreken of fouten
-Ziet soms niet het slechte in anderen.
+Heeft moeite met nieuwe vrienden maken.
 
 ---
 
@@ -48,7 +48,7 @@ Ziet soms niet het slechte in anderen.
 * [Dragon of Icepire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icepire-Peak.md %})
 
 ## Gerelateerde karakters
-* [Ander]({{ site.baseurl }}{% link characters/Ander.md %})
+* [Elmar Barthen]({{ site.baseurl }}{% link characters/Elmar-Barthen.md %})
 * Thistle
 
 ## Gerelateerde locaties
@@ -63,4 +63,4 @@ Ziet soms niet het slechte in anderen.
 * -
 
 ## Galerij
-<img src="../images/Elmar Barthen.png" alt="Elmar Barthen" width=100>
+<img src="../images/Ander.jpg" alt="Ander" width=200>
