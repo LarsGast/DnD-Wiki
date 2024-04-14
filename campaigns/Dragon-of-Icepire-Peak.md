@@ -39,7 +39,7 @@ title: Dragon of Icepire Peak
 * Joybell
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 * Korboz
-* Linene Graywind
+* [Linene Graywind]({{ site.baseurl }}{% link characters/Linene-Graywind.md %})
 * Norbus Ironrune
 * Nyx
 * Pallabar

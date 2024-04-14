@@ -39,7 +39,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
 * Korboz
 * [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
-* Linene Graywind
+* [Linene Graywind]({{ site.baseurl }}{% link characters/Linene-Graywind.md %})
 * [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
 * [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
 * Norbus Ironrune
