@@ -29,7 +29,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * [Gareth Bloodwood]({{ site.baseurl }}{% link characters/Gareth-Bloodwood.md %})
 * [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
 * Gnerkli
-* Halia Thornton
+* [Halia Thornton]({{ site.baseurl }}{% link characters/Halia-Thornton.md %})
 * [Harbin Wester]({{ site.baseurl }}{% link characters/Harbin-Wester.md %})
 * [Hugo Staalzwaard]({{ site.baseurl }}{% link characters/Hugo-Staalzwaard.md %})
 * [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})

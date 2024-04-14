@@ -62,7 +62,7 @@ Als avonturiers hem naar een zoektocht vragen, zet Harbin ze op het goede spoor 
 ## Gerelateerde karakters
 * [Ander]({{ site.baseurl }}{% link characters/Ander.md %})
 * [Elmar Barthen]({{ site.baseurl }}{% link characters/Elmar-Barthen.md %})
-* Halia Thornton
+* [Halia Thornton]({{ site.baseurl }}{% link characters/Halia-Thornton.md %})
 * [Harbin Wester]({{ site.baseurl }}{% link characters/Harbin-Wester.md %})
 * [Hugo Staalzwaard]({{ site.baseurl }}{% link characters/Hugo-Staalzwaard.md %})
 * Linene Graywind

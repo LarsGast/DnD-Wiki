@@ -32,7 +32,7 @@ title: Dragon of Icepire Peak
 * Fackroré
 * Fibblestib
 * Gnerkli
-* Halia Thornton
+* [Halia Thornton]({{ site.baseurl }}{% link characters/Halia-Thornton.md %})
 * [Harbin Wester]({{ site.baseurl }}{% link characters/Harbin-Wester.md %})
 * [Hugo Staalzwaard]({{ site.baseurl }}{% link characters/Hugo-Staalzwaard.md %})
 * Jabby
