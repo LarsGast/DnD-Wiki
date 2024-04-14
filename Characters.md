@@ -30,7 +30,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
 * Gnerkli
 * Halia Thornton
-* Harbin Wester
+* [Harbin Wester]({{ site.baseurl }}{% link characters/Harbin-Wester.md %})
 * Hugo Staalzwaard
 * [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
 * Jabby

@@ -33,7 +33,7 @@ title: Dragon of Icepire Peak
 * Fibblestib
 * Gnerkli
 * Halia Thornton
-* Harbin Wester
+* [Harbin Wester]({{ site.baseurl }}{% link characters/Harbin-Wester.md %})
 * Hugo Staalzwaard
 * Jabby
 * Joybell

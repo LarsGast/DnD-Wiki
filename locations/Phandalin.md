@@ -63,7 +63,7 @@ Als avonturiers hem naar een zoektocht vragen, zet Harbin ze op het goede spoor 
 * Ander
 * Elmar Barthen
 * Halia Thornton
-* Harbin Wester
+* [Harbin Wester]({{ site.baseurl }}{% link characters/Harbin-Wester.md %})
 * Hugo Staalzwaard
 * Linene Graywind
 * Sister Garaele
