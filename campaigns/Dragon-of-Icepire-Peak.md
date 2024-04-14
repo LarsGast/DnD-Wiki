@@ -28,7 +28,7 @@ title: Dragon of Icepire Peak
 * Delebean
 * Dimble
 * Don-Jon Raskin
-* Elmar Barthen
+* [Elmar Barthen]({{ site.baseurl }}{% link characters/Elmar-Barthen.md %})
 * Fackroré
 * Fibblestib
 * Gnerkli

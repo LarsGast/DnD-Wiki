@@ -61,7 +61,7 @@ Als avonturiers hem naar een zoektocht vragen, zet Harbin ze op het goede spoor 
 
 ## Gerelateerde karakters
 * Ander
-* Elmar Barthen
+* [Elmar Barthen]({{ site.baseurl }}{% link characters/Elmar-Barthen.md %})
 * Halia Thornton
 * [Harbin Wester]({{ site.baseurl }}{% link characters/Harbin-Wester.md %})
 * Hugo Staalzwaard

@@ -23,7 +23,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * Delebean
 * Dimble
 * Don-Jon Raskin
-* Elmar Barthen
+* [Elmar Barthen]({{ site.baseurl }}{% link characters/Elmar-Barthen.md %})
 * Facktoré
 * Fibblestib
 * [Gareth Bloodwood]({{ site.baseurl }}{% link characters/Gareth-Bloodwood.md %})
