@@ -33,9 +33,14 @@ Onderin het schip bevindt zich een grote opslagruimte, twee kamers voor bemannin
 * [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
 
 ## Gerelateerde karakters
+* [Barnaby Kraai]({{ site.baseurl }}{% link characters/Barnaby-Kraai.md %})
+* [Elara Zonschaduw]({{ site.baseurl }}{% link characters/Elara-Zonschaduw.md %})
 * [Gareth Bloodwood]({{ site.baseurl }}{% link characters/Gareth-Bloodwood.md %})
 * [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
+* [Grog Steenvuist]({{ site.baseurl }}{% link characters/Grog-Steenvuist.md %})
+* [Isabella Swift]({{ site.baseurl }}{% link characters/Isabella-Swift.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
+* [Kaelen Schaduwzwaard]({{ site.baseurl }}{% link characters/Kaelen-Schaduwzwaard.md %})
 
 ## Super-locaties
 * [Zandzee]({{ site.baseurl }}{% link locations/Zandzee.md %})
