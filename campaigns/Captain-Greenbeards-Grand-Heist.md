@@ -17,7 +17,7 @@ Dit verhaal begint met Kapitein Groenbaard en zijn bemanning in de gevangenis, z
 * -
 
 ## Karakters
-* Barnaby Kraai
+* [Barnaby Kraai]({{ site.baseurl }}{% link characters/Barnaby-Kraai.md %})
 * Elara Zonschaduw
 * Grog Steenbreker
 * Isabella Swift
