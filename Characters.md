@@ -18,7 +18,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
 * [Grog Steenvuist]({{ site.baseurl }}{% link characters/Grog-Steenvuist.md %})
 * [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
-* Isabella Swift
+* [Isabella Swift]({{ site.baseurl }}{% link characters/Isabella-Swift.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 * Kaelen Schaduwzwaard
 * [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})

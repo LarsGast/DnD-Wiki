@@ -50,7 +50,7 @@ Elara kan soms te rationeel en analytisch zijn, waardoor ze moeite heeft om haar
 ## Gerelateerde karakters
 * [Barnaby Kraai]({{ site.baseurl }}{% link characters/Barnaby-Kraai.md %})
 * [Grog Steenvuist]({{ site.baseurl }}{% link characters/Grog-Steenvuist.md %})
-* Isabella Swift
+* [Isabella Swift]({{ site.baseurl }}{% link characters/Isabella-Swift.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 * Kaelen Schaduwzwaard
 
