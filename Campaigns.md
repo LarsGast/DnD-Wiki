@@ -9,4 +9,4 @@ In deze sectie van de wiki zijn alle campaigns die ik als DM gegeven heb te vind
 * [The Rescue of (Princess) Azura]({{ site.baseurl }}{% link campaigns/The-Rescue-of-(Princess)-Azura.md %})
 * [Recruiting Twilly]({{ site.baseurl }}{% link campaigns/Recruiting-Twilly.md %})
 * [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
-* Captain Greenbeard's Grand Heist
+* [Captain Greenbeard's Grand Heist]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Grand-Heist.md %})
