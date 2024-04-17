@@ -12,10 +12,15 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
 * [Ash Dragonblade]({{ site.baseurl }}{% link characters/Ash-Dragonblade.md %})
 * [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
+* Barnaby Kraai
+* Elara Zonschaduw
 * [Gareth Bloodwood]({{ site.baseurl }}{% link characters/Gareth-Bloodwood.md %})
 * [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
+* Grog Steenbreker
 * [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
+* Isabella Swift
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
+* Kaelen Schaduwzwaard
 * [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
 * [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
 * [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
