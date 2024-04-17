@@ -3,7 +3,7 @@ layout: post
 title: Elara Zonschaduw
 ---
 
-<img src="../images/Elara Zonschaduw.jpg" alt="Elara Zonschaduw" width=200>
+<img src="../images/Elara Zonschaduw.png" alt="Elara Zonschaduw" width=200>
 
 ## Algemeen
 * Volledige naam: Elara Zonschaduw
@@ -67,4 +67,4 @@ Elara kan soms te rationeel en analytisch zijn, waardoor ze moeite heeft om haar
 * -
 
 ## Galerij
-<img src="../images/Elara Zonschaduw.jpg" alt="Elara Zonschaduw" width=200>
+<img src="../images/Elara Zonschaduw.png" alt="Elara Zonschaduw" width=200>
