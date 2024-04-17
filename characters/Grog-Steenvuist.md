@@ -52,7 +52,7 @@ Grog kan soms te koppig en onverzettelijk zijn, waardoor hij moeite heeft om com
 * [Elara Zonschaduw]({{ site.baseurl }}{% link characters/Elara-Zonschaduw.md %})
 * [Isabella Swift]({{ site.baseurl }}{% link characters/Isabella-Swift.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
-* Kaelen Schaduwzwaard
+* [Kaelen Schaduwzwaard]({{ site.baseurl }}{% link characters/Kaelen-Schaduwzwaard.md %})
 
 ## Gerelateerde locaties
 * Drakengreep

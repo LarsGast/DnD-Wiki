@@ -52,7 +52,7 @@ Isabella kan soms te snel oordelen of impulsief handelen, wat haar in moeilijkhe
 * [Elara Zonschaduw]({{ site.baseurl }}{% link characters/Elara-Zonschaduw.md %})
 * [Grog Steenvuist]({{ site.baseurl }}{% link characters/Grog-Steenvuist.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
-* Kaelen Schaduwzwaard
+* [Kaelen Schaduwzwaard]({{ site.baseurl }}{% link characters/Kaelen-Schaduwzwaard.md %})
 
 ## Gerelateerde locaties
 * Drakengreep

@@ -22,7 +22,7 @@ Dit verhaal begint met Kapitein Groenbaard en zijn bemanning in de gevangenis, z
 * [Grog Steenvuist]({{ site.baseurl }}{% link characters/Grog-Steenvuist.md %})
 * [Isabella Swift]({{ site.baseurl }}{% link characters/Isabella-Swift.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
-* Kaelen Schaduwzwaard
+* [Kaelen Schaduwzwaard]({{ site.baseurl }}{% link characters/Kaelen-Schaduwzwaard.md %})
 
 ## Locaties
 * Drakengreep
