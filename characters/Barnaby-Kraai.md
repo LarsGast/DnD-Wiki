@@ -48,7 +48,7 @@ Barnaby is vaak roekeloos en impulsief, en zijn verlangen naar avontuur en opwin
 * [Captain Greenbeard's Grand Heist]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Grand-Heist.md %})
 
 ## Gerelateerde karakters
-* Elara Zonschaduw
+* [Elara Zonschaduw]({{ site.baseurl }}{% link characters/Elara-Zonschaduw.md %})
 * Grog Steenbreker
 * Isabella Swift
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
