@@ -55,7 +55,7 @@ Barnaby is vaak roekeloos en impulsief, en zijn verlangen naar avontuur en opwin
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 
 ## Gerelateerde locaties
-* Drakengreep
+* [Drakengreep]({{ site.baseurl }}{% link locations/Drakengreep.md %})
 * [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
 
 ## Items

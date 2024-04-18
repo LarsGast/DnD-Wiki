@@ -55,7 +55,7 @@ Kaelen kan soms te wantrouwig zijn, waardoor oprechte tekens van bondgenootschap
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 
 ## Gerelateerde locaties
-* Drakengreep
+* [Drakengreep]({{ site.baseurl }}{% link locations/Drakengreep.md %})
 * [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
 
 ## Items
