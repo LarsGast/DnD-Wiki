@@ -3,6 +3,13 @@ layout: post
 title: Umbrage Hill
 ---
 
+## Dungeon master notities
+
+### Manticore Statblock
+<img src="../images/Manticore Statblock.png" alt="Manticore Statblock" width=500>
+
+---
+
 <img src="../images/Umbrage Hill.png" alt="Umbrage Hill" width=400>
 
 ## Algemeen
