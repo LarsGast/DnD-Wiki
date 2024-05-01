@@ -3,6 +3,23 @@ layout: post
 title: Phandalin
 ---
 
+## Dungeon master notities
+
+### Phandalin verhalen
+
+De verschillende NPC's in Phandalin horen wel eens geruchten. Als de spelers hierom vragen, rol dan een d6 op onderstaande tabel om te kijken welk verhaal de NPC verteld. Als de spelers dit verhaal al hebben gehoord, vertel dan niks, rol opnieuw, of vertel een verhaal die ze nog niet gehoord hebben.
+
+|  d6  |  Verhaal  |
+| ---- | --------- |
+|  1   | "Wederom zijn de Orcs uit de bergen gekomen om op de laaglanden te jagen! Als Neverwinter niet snel hulp stuurt, zullen de Orcs Phandalin overrompelen en alles vernietigen waar we zo hard aan hebben gewerkt om het weer op te bouwen."|
+| 2  | "Terwijl de Triboar Trail naar het oosten loopt, loopt hij door de ruïnes van Conyberry, een stad die jaren geleden door barbaren is geplunderd. Er is een verwoeste tempel ten zuiden van Conyberry, waar naar verluidt de lokale bevolking hun goud heeft verborgen.' (Als de personages de tempel bezoeken, zie "Shrine of Savras" op pagina 38.)" |
+| 3  | "Vreemde magie doordringt Neverwinter Wood, brengt zeevaarders in verwarring en verdoezelt de oude ruïnes van vervlogen koninkrijken die in de diepte verloren zijn gegaan." |
+| 4  | "Falcon's Hunting Lodge is de enige veilige haven in Neverwinter Wood. Het ligt diep in het bos langs de rand van een rivier, en rijke edelen wagen zich daar om te jagen terwijl ze onder Falcon's bescherming staan. Falcon is een gepensioneerde veteraan van vele oorlogen, en er wordt gezegd dat hij gratis verblijf zal aanbieden aan iedereen die hem een fles wijn brengt." (Als de personages Falcon bezoeken, zie dan "Falcon's Hunting Lodge" op pagina 24.)|
+| 5  | "Ten westen van Phandalin, aan de kust, staat een oude stenen vuurtoren. Schepen worden naar deze glanzende toren getrokken als motten naar een vlam, en zijn gedoemd op de rotsen neer te storten. Hun wrakken moeten gevuld zijn met schatten!" (Als de personages de vuurtoren bezoeken, zie "Tower of Storms" op pagina 40.) |
+| 6  | "Sommige mensen beweren een draak door de hoge wolken te hebben zien vliegen. Op die afstand is het moeilijk om de grootte van het wezen in te schatten, maar sommigen zeggen dat het zo groot is als een olifant en glanzende witte schubben heeft." |
+
+---
+
 <img src="../images/Phandalin.jpg" alt="Phandalin" width=500>
 
 ## Algemeen
