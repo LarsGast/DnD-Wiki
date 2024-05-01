@@ -16,14 +16,14 @@ title: Phandalin
 * Cultuur: Nauwe samenleving, bezoekers zijn welkom
 
 ## Overzicht
-Genesteld in de rotsachtige uitlopers van de met sneeuw bedekte Sword Mountains ligt het mijnstadje Phandalin, dat bestaat uit veertig tot vijftig eenvoudige houten gebouwen. Afbrokkelende stenen ruïnes omringen de nieuwere huizen en winkels en laten zien hoe dit in de afgelopen eeuwen een veel grotere stad moet zijn geweest.
+Genesteld in de rotsachtige heuvels aan de voet van de met sneeuw bedekte Sword Mountains ligt het mijnstadje Phandalin, dat bestaat uit veertig tot vijftig eenvoudige houten gebouwen. Afbrokkelende stenen ruïnes omringen de nieuwere huizen en winkels en laten zien hoe dit in de afgelopen eeuwen een veel grotere stad moet zijn geweest.
 
 De inwoners van Phandalin zijn rustige, hardwerkende mensen die uit verre steden kwamen om een leven op te bouwen in de barre wildernis. Het zijn boeren, steenhouwers, smeden, handelaars, goudzoekers en kinderen. De stad heeft geen muren en geen garnizoen, maar de meeste volwassenen houden wapens binnen handbereik voor het geval de behoefte aan wapens zich mocht voordoen.
 
-Bezoekers zijn hier welkom, vooral als ze goud te besteden hebben of nieuws te delen. De Stonehill Herberg in het centrum van de stad biedt bescheiden accommodatie en maaltijden. Een paar deuren verder van de herberg, buiten de hal van de stadmeester, is een vacaturesbord voor avonturiers.
+Bezoekers zijn hier welkom, vooral als ze goud te besteden hebben of nieuws te delen. De Stonehill Herberg in het centrum van de stad biedt bescheiden accommodatie en maaltijden. Een paar deuren verder van de herberg, buiten de hal van de stadmeester, is een vacaturebord voor avonturiers.
 
 ## Stonehill Herberg
-In dit bescheiden wegrestaurant van twee verdiepingen zijn op de bovenverdieping zes kamers te huur. Een bed voor de nacht kost 5 sp, terwijl een maaltijd 1 sp kost. De eigenaar is een kleine, vriendelijke mannelijke mens genaamd Hugo Staalzwaard. Hugo is een inwoner van de stad Triboar in het oosten. Hij kwam naar Phandalin om te prospecteren, maar besefte al snel dat hij veel meer wist over het runnen van een herberg dan over de mijnbouw.
+In dit bescheiden wegrestaurant van twee verdiepingen zijn op de bovenverdieping zes kamers te huur. Een bed voor de nacht kost 5 sp, terwijl een maaltijd 1 sp kost. De eigenaar is een vriendelijke mannelijke mens genaamd Hugo Staalzwaard. Hugo is een inwoner van de stad Triboar in het oosten. Hij kwam naar Phandalin om te prospecteren, maar besefte al snel dat hij veel meer wist over het runnen van een herberg dan over de mijnbouw.
 
 ## Barthen's Voorzieningen
 In de schappen van deze winkel liggen de meeste gewone goederen en benodigdheden, waaronder rugzakken, slaaprollen, touw en rantsoenen. Barthen's heeft geen wapens of bepantsering op voorraad, maar je kunt hier andere avonturenuitrusting kopen, met uitzondering van items die meer dan 25 gp kosten. Degenen die wapens of bepantsering nodig hebben, worden doorverwezen naar de Lionshield Coster. Degenen die genezingsdrankjes willen kopen, worden verzocht om Adabra Gwynn op Umbrage Hill te bezoeken.
