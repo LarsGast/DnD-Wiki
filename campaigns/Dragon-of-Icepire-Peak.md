@@ -15,7 +15,7 @@ title: Dragon of Icepire Peak
 * -
 
 ## Karakters
-* Adabra Gwynn
+* [Adabra Gwynn]({{ site.baseurl }}{% link characters/Adabra-Gwynn.md %})
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
 * Alfonse Kalazorn
 * Anverth

@@ -20,7 +20,7 @@ Umbrage Hill kreeg zijn naam nadat twee ruziënde dwergclans er bovenop een veld
 
 Adabra Gwynn, een vroedvrouw en apotheker gewijd aan Chauntea (godin van de landbouw), woont hier. Adabra weigert terug te keren naar Phandalin, ook al loopt ze gevaar.
 
-Adabra verkoopt genezingsdrankjes voor 50 gp.
+Adabra verkoopt Potions of Healing voor 50 gp.
 
 ---
 
@@ -28,7 +28,7 @@ Adabra verkoopt genezingsdrankjes voor 50 gp.
 * [Dragon of Icepire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icepire-Peak.md %})
 
 ## Gerelateerde karakters
-* Adabra Gwynn
+* [Adabra Gwynn]({{ site.baseurl }}{% link characters/Adabra-Gwynn.md %})
 
 ## Super-locaties
 * Sword Mountains
@@ -52,3 +52,5 @@ Adabra verkoopt genezingsdrankjes voor 50 gp.
 <img src="../images/Umbrage Hill.png" alt="Umbrage Hill" width=400>
 
 <img src="../images/Umbrage Hill Quest.png" alt="Umbrage Hill Quest" width=200>
+
+<img src="../images/Manticore.jpg" alt="Manticore" width=300>
