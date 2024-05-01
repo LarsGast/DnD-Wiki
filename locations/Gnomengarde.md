@@ -3,6 +3,13 @@ layout: post
 title: Gnomengarde
 ---
 
+## Dungeon Master notities
+
+### Statblocks
+<img src="../images/Mimic Statblock.png" alt="Mimic Statblock" width=500>
+
+---
+
 <img src="../images/Gnomengarde.png" alt="Gnomengarde" width=500>
 
 ## Algemeen
