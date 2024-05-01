@@ -3,6 +3,16 @@ layout: post
 title: Dwarven Excavation
 ---
 
+## Dungeon master notities
+
+### Statblocks
+
+<img src="../images/Ochre Jelly Statblock.png" alt="Ochre Jelly Statblock" width=500>
+
+<img src="../images/Orc Statblock.png" alt="Orc Statblock" width=500>
+
+---
+
 <img src="../images/Dwarven Excavation.jpg" alt="Dwarven Excavation" width=500>
 
 ## Algemeen
