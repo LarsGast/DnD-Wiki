@@ -6,14 +6,14 @@ title: Gnomengarde
 <img src="../images/Gnomengarde.png" alt="Gnomengarde" width=500>
 
 ## Algemeen
-* Soort: 
-* Inwoners: 
-* Populatie: 
-* Geografische locatie: 
-* Infrastructuur: 
-* Politiek: 
-* Geschiedenis: 
-* Cultuur: 
+* Soort: Grot
+* Inwoners: Kabouters
+* Populatie: 20
+* Geografische locatie: In de Sword Mountains
+* Infrastructuur: Ingegraven in de berg
+* Politiek: Konings Korboz en Gnerkli hebben het voor het zeggen
+* Geschiedenis: De kabouters zijn hier gaan wonen om de waterval dat een meer vormt aan de voet van de berg.
+* Cultuur: Iedereen gaat goed met elkaar om
 
 ## Overzicht
 Een stroom leidt bergopwaarts naar de voet van de berg, waar de erosie van de waterval een natuurlijke holte heeft uitgesleten. De brullende waterval creëert een mistwolk wanneer deze in een ondiepe waterplas stort, waarbinnen twee kleine eilandjes oprijzen die bedekt zijn met zestig centimeter hoge rode, groene en paarse paddenstoelen. Verschillende grotopeningen kijken uit op de poel vanaf rotsachtige richels, twintig tot tien meter boven de grond. De berg blokkeert het zonlicht om deze plek te bereiken.
@@ -150,3 +150,5 @@ Een kleine, niet-afgesloten kist onder het bed van de kabouters bevat een Hat of
 <img src="../images/Gnomengarde.png" alt="Gnomengarde" width=500>
 
 <img src="../images/Gnomengarde Quest.png" alt="Gnomengarde Quest" width=200>
+
+<img src="../images/Mimic.jpeg" alt="Mimic" width=200>
