@@ -68,7 +68,7 @@ Om deze kamer te bereiken, moeten de personages het puin opruimen dat de kamer a
 
 ## Gerelateerde karakters
 * [Dazlyn Grayshard]({{ site.baseurl }}{% link characters/Dazlyn-Grayshard.md %})
-* Norbus Ironrune
+* [Norbus Ironrune]({{ site.baseurl }}{% link characters/Norbus-Ironrune.md %})
 
 ## Super-locaties
 * Sword Mountains

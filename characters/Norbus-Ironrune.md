@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Dazlyn Grayshard
+title: Norbus Ironrune
 ---
 
-<img src="../images/Dazlyn Grayshard.jpg" alt="Dazlyn Grayshard" width=200>
+<img src="../images/Norbus Ironrune.jpeg" alt="Norbus Ironrune" width=200>
 
 ## Algemeen
-* Volledige naam: Dazlyn Grayshard
+* Volledige naam: Norbus Ironrune
 * Bijnamen: -
 * Ras: Shield Dwarf
 * Geslacht: Man
@@ -16,16 +16,16 @@ title: Dazlyn Grayshard
 * Talen: Common, Dwarvish
 
 ## Beroep en geschiedenis
-Dazlyn Grayshard is een Shield Dwarf die een mijnwerker van beroep is. Hij is samen met zijn neef Norbus Ironrune naar de Sword Mountains gekomen om mineralen te inspecteren.
+Norbus Ironrune is een schilddwerg die een mijnwerker van beroep is. Hij reist samen met zijn neef Dazlyn Grayshard naar de Sword Mountains om mineralen te inspecteren en hopelijk een waardevolle vondst te doen.
 
 ## Uiterlijk
-Dazlyn heeft het typische uiterlijk van een dwerg: kort, stevig, met een lange baard.
+Norbus heeft het typische uiterlijk van een dwerg: kort, stevig, met een lange baard.
 
 ## Capaciteiten
-Hij is een ervaren mijnwerker met kennis van mijnbouw en mineralen.
+Norbus is een ervaren mijnwerker met kennis van mijnbouw en mineralen.
 
 ## Talenten
-Dazlyn is bedreven in mijnbouw, met een goede kennis van het werk en de omgeving van de mijn.
+Hij heeft veel ervaring met mijnbouw en is bekend met de uitdagingen die daarbij komen kijken.
 
 ## Hebbelijkheden
 Ontzettend gretig.
@@ -48,7 +48,7 @@ Kan soms te gretig zijn.
 * [Dragon of Icepire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icepire-Peak.md %})
 
 ## Gerelateerde karakters
-* [Norbus Ironrune]({{ site.baseurl }}{% link characters/Norbus-Ironrune.md %})
+* [Dazlyn Grayshard]({{ site.baseurl }}{% link characters/Dazlyn-Grayshard.md %})
 
 ## Gerelateerde locaties
 * [Dwarven Excavation]({{ site.baseurl }}{% link locations/Dwarven-Excavation.md %})
@@ -62,4 +62,4 @@ Kan soms te gretig zijn.
 * -
 
 ## Galerij
-<img src="../images/Dazlyn Grayshard.jpg" alt="Dazlyn Grayshard" width=200>
+<img src="../images/Norbus Ironrune.jpeg" alt="Norbus Ironrune" width=200>

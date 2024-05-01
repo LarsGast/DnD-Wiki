@@ -42,7 +42,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * [Linene Graywind]({{ site.baseurl }}{% link characters/Linene-Graywind.md %})
 * [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
 * [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
-* Norbus Ironrune
+* [Norbus Ironrune]({{ site.baseurl }}{% link characters/Norbus-Ironrune.md %})
 * Nyx
 * Pallabar
 * Panana

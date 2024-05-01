@@ -23,7 +23,7 @@ Zodra het verzenden door de stenen is geworpen, kunnen ze pas bij zonsopgang opn
 
 ## Gerelateerde karakters
 * [Dazlyn Grayshard]({{ site.baseurl }}{% link characters/Dazlyn-Grayshard.md %})
-* Norbus Ironrune
+* [Norbus Ironrune]({{ site.baseurl }}{% link characters/Norbus-Ironrune.md %})
 
 ## Gerelateerde locaties
 * [Dwarven Excavation]({{ site.baseurl }}{% link locations/Dwarven-Excavation.md %})
