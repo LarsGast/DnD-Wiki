@@ -29,7 +29,7 @@ title: Dragon of Icepire Peak
 * Dimble
 * Don-Jon Raskin
 * [Elmar Barthen]({{ site.baseurl }}{% link characters/Elmar-Barthen.md %})
-* Fackroré
+* Facktoré
 * Fibblestib
 * Gnerkli
 * [Halia Thornton]({{ site.baseurl }}{% link characters/Halia-Thornton.md %})
@@ -47,7 +47,7 @@ title: Dragon of Icepire Peak
 * Pog
 * Quippy
 * [Sister Garaele]({{ site.baseurl }}{% link characters/Sister-Garaele.md %})
-* Tevraround
+* Tervaround
 * [Thistle]({{ site.baseurl }}{% link characters/Thistle.md %})
 * Tibor Wester
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
@@ -56,7 +56,7 @@ title: Dragon of Icepire Peak
 * Zook
 
 ## Locaties
-* Axehom
+* Axeholm
 * Butterskull Ranch
 * Cicrle of Thunder
 * Conyberry
@@ -92,7 +92,7 @@ title: Dragon of Icepire Peak
 * +1 Longbow
 * +1 Mace
 * +1 Shield
-* +1 Shorrtsword
+* +1 Shortsword
 * Boots of Elvenkind
 * Cloak of Billowing
 * Cloak of Many Fashions
