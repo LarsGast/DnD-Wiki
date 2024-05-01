@@ -148,3 +148,5 @@ Een kleine, niet-afgesloten kist onder het bed van de kabouters bevat een Hat of
 
 ## Galerij
 <img src="../images/Gnomengarde.png" alt="Gnomengarde" width=500>
+
+<img src="../images/Gnomengarde Quest.png" alt="Gnomengarde Quest" width=200>

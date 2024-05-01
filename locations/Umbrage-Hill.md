@@ -50,3 +50,5 @@ Adabra verkoopt genezingsdrankjes voor 50 gp.
 
 ## Galerij
 <img src="../images/Umbrage Hill.png" alt="Umbrage Hill" width=400>
+
+<img src="../images/Umbrage Hill Quest.png" alt="Umbrage Hill Quest" width=200>

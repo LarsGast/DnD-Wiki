@@ -89,3 +89,9 @@ Als avonturiers hem naar een zoektocht vragen, zet Harbin ze op het goede spoor 
 
 ## Galerij
 <img src="../images/Phandalin.jpg" alt="Phandalin" width=500>
+
+<img src="../images/Dwarven Excavation Quest.png" alt="Dwarven Excavation Quest" width=200>
+
+<img src="../images/Gnomengarde Quest.png" alt="Gnomengarde Quest" width=200>
+
+<img src="../images/Umbrage Hill Quest.png" alt="Umbrage Hill Quest" width=200>

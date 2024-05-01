@@ -90,3 +90,7 @@ Om deze kamer te bereiken, moeten de personages het puin opruimen dat de kamer a
 
 ## Galerij
 <img src="../images/Dwarven Excavation.jpg" alt="Dwarven Excavation" width=500>
+
+<img src="../images/Dwarven Excavation Quest.png" alt="Dwarven Excavation Quest" width=200>
+
+<img src="../images/Ochre Jelly.png" alt="Ochre Jelly" width=200>
