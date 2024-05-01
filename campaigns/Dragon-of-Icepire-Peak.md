@@ -24,7 +24,7 @@ title: Dragon of Icepire Peak
 * Caramip
 * Cryovain
 * Dabbledob
-* Dazlyn Grayhard
+* [Dazlyn Grayshard]({{ site.baseurl }}{% link characters/Dazlyn-Grayshard.md %})
 * Delebean
 * Dimble
 * Don-Jon Raskin

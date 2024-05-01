@@ -19,7 +19,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * Caramip
 * Cryovain
 * Dabbledob
-* Dazlyn Grayshard
+* [Dazlyn Grayshard]({{ site.baseurl }}{% link characters/Dazlyn-Grayshard.md %})
 * Delebean
 * Dimble
 * Don-Jon Raskin

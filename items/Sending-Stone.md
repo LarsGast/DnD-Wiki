@@ -22,7 +22,7 @@ Zodra het verzenden door de stenen is geworpen, kunnen ze pas bij zonsopgang opn
 * [Dragon of Icepire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icepire-Peak.md %})
 
 ## Gerelateerde karakters
-* Dazlyn Grayshard
+* [Dazlyn Grayshard]({{ site.baseurl }}{% link characters/Dazlyn-Grayshard.md %})
 * Norbus Ironrune
 
 ## Gerelateerde locaties

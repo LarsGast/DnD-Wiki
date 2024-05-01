@@ -67,7 +67,7 @@ Om deze kamer te bereiken, moeten de personages het puin opruimen dat de kamer a
 * [Dragon of Icepire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icepire-Peak.md %})
 
 ## Gerelateerde karakters
-* Dazlyn Grayhard
+* [Dazlyn Grayshard]({{ site.baseurl }}{% link characters/Dazlyn-Grayshard.md %})
 * Norbus Ironrune
 
 ## Super-locaties
