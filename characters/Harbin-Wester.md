@@ -23,7 +23,7 @@ Onbekend.
 Onbekend.
 
 ## Talenten
-Ongelofelijk ongeduldig.
+Ongelofelijk geduldig.
 
 ## Hebbelijkheden
 Angstig sinds de witte draak in de buurt is opgedoken. Sluit zichzelf op in zijn huis als hij het niet vertrouwd.
