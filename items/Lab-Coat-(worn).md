@@ -5,9 +5,6 @@ title: Lab Coat (worn)
 
 <img src="../images/Lab Coat (Worn).png" alt="Lab Coat (Worn)" width=200>
 
-## Prijs
-10 gp
-
 ## Werking
 <b><i>Look Smarts.</i></b> De persoon die deze lab jas draagt krijg advantage op Charisma (Deception) checks tegen Goblins.
 
