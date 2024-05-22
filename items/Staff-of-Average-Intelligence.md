@@ -5,9 +5,6 @@ title: Staff of Average Intelligence
 
 <img src="../images/Staff of Normal Intelligence.png" alt="Staff of Average Intelligence" width=75>
 
-## Prijs
-10 gp
-
 ## Werking
 <b><i>Second Eye.</i></b> De intelligence score van de persoon die deze staaf vast heeft wordt gelijk gezet aan 10 zolang de persoon de staaf vast heeft.
 

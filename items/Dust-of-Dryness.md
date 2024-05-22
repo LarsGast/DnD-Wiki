@@ -5,9 +5,6 @@ title: Dust of Dryness
 
 <img src="../images/Dust of Dryness.png" alt="Dust of Dryness" width=200>
 
-## Prijs
-100 gp
-
 ## Werking
 Dit kleine pakje bevat 1d6 + 4 snufjes stof. Je kunt met een action een snufje ervan over water strooien. Het stof verandert een kubus water van 15 ft in een pellet ter grootte van een marmer, die drijft of rust in de buurt van de plek waar het stof werd gestrooid. Het gewicht van de pellet is verwaarloosbaar.
 

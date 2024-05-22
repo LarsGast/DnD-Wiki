@@ -5,9 +5,6 @@ title: Circlet of Enlarge Reduce
 
 <img src="../images/Circlet of Enlarge Reduce.png" alt="Circlet of Enlarge Reduce" width=200>
 
-## Prijs
-50 gp
-
 ## Werking
 <b><i>Big and Small.</i></b> Eens per dag mag de drager van dit kroontje de spreuk Enlarge/Reduce uitvoeren.
 
