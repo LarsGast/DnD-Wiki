@@ -47,7 +47,7 @@ Alle aankondigingen op de vacaturebank zijn geschreven door Harbin Wester, de do
 ---
 
 ## Komt voor in
-* [Dragon of Icepire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icepire-Peak.md %})
+* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
 
 ## Gerelateerde karakters
 * [Halia Thornton]({{ site.baseurl }}{% link characters/Halia-Thornton.md %})
