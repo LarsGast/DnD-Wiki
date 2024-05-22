@@ -5,9 +5,6 @@ title: Clockwork Amulet
 
 <img src="../images/Clockwork Amulet.jpeg" alt="Clockwork Amulet" width=200>
 
-## Prijs
-Onbekend
-
 ## Werking
 Als je een attack roll maakt terwijl je het amulet draagt, kun je afzien van het gooien van een d20 om automatisch een 10 op de dobbelsteen te krijgen. Eenmaal gebruikt, kan dit voorwerp pas de volgende zonsopgang opnieuw worden gebruikt.
 

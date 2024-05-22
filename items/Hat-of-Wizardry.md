@@ -5,9 +5,6 @@ title: Hat of Wizardry
 
 <img src="../images/Hat of Wizardry.png" alt="Hat of Wizardry" width=200>
 
-## Prijs
-Onbekend
-
 ## Werking
 Deze ouderwetse, kegelvormige hoed is versierd met gouden halve manen en sterren. Terwijl je het draagt, profiteer je van de volgende voordelen:
 * Je kunt de hoed gebruiken als spellcasting focus voor je wizard spreuken.
