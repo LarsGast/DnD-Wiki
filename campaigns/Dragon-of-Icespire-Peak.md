@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Dragon of Icepire Peak
+title: Dragon of Icespire Peak
 ---
 
 ## Verhaal
 
 ### Introductie
-Nieuws van een draak die opgedoken is in Icepire Peak dichtbij Phandalin heeft de oren van Kapitein Groenbaard bereikt. Avontuurlijk als hij is, heeft hij besloten om de held uit te hangen en deze draak te verslaan, voor een aardig prijsje natuurlijk.
+Nieuws van een draak die opgedoken is in Icespire Peak dichtbij Phandalin heeft de oren van Kapitein Groenbaard bereikt. Avontuurlijk als hij is, heeft hij besloten om de held uit te hangen en deze draak te verslaan, voor een aardig prijsje natuurlijk.
 
 De bemanning van Groenbaard heeft niet allemaal evenveel vertrouwen in dit plan, aangezien de kapitein al op leeftijd is voor een piraat en waarschijnlijk bijna met pensioen gaat. Gelukkig is er een groep dappere avonturiers die hem te hulp wil staan. Samen met de overgebleven bemanning van Groenbaard vinden ze hun weg naar Phandalin. Tijdens deze reis is het schip van Groenbaard echter flink beschadigd geraakt. Als ze een kans willen maken tegen de jonge witte draak, hebben ze groot geschut nodig, dus de restauratie van de Wraak van Koning Alden heeft hoge prioriteit. De groep avonturiers heeft ook een luchtschip weten te bemachtigen, maar net als dat van Kapitein Groenbaard is deze niet in staat om mee te gaan vechten.
 
@@ -100,8 +100,8 @@ Wordt vervolgd...
 * Falcon's Hunting Lodge
 * [Gnomengarde]({{ site.baseurl }}{% link locations/Gnomengarde.md %})
 * High Road
-* Icepire Hold
-* Icepire Peak
+* Icespire Hold
+* Icespire Peak
 * Kryptgarden Forest
 * Leilon
 * Loggers' Camp

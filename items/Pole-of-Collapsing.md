@@ -14,7 +14,7 @@ Terwijl je deze 10 ft lange paal vasthoudt, kun je een actie gebruiken om een co
 ---
 
 ## Komt voor in
-* [Dragon of Icepire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icepire-Peak.md %})
+* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
 
 ## Gerelateerde karakters
 * Dabbledob

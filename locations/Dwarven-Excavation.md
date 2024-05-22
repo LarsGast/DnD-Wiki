@@ -64,7 +64,7 @@ Om deze kamer te bereiken, moeten de personages het puin opruimen dat de kamer a
 ---
 
 ## Komt voor in
-* [Dragon of Icepire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icepire-Peak.md %})
+* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
 
 ## Gerelateerde karakters
 * [Dazlyn Grayshard]({{ site.baseurl }}{% link characters/Dazlyn-Grayshard.md %})
@@ -79,8 +79,8 @@ Om deze kamer te bereiken, moeten de personages het puin opruimen dat de kamer a
 ## Locaties in de buurt
 * Axeholm
 * [Gnomengarde]({{ site.baseurl }}{% link locations/Gnomengarde.md %})
-* Icepire Hold
-* Icepire Peak
+* Icespire Hold
+* Icespire Peak
 * Mountain's Toe Gold Mine
 * [Phandalin]({{ site.baseurl }}{% link locations/Phandalin.md %})
 * [Umbrage Hill]({{ site.baseurl }}{% link locations/Umbrage-Hill.md %})

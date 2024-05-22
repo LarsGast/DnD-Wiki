@@ -45,7 +45,7 @@ Heeft moeite met nieuwe vrienden maken.
 ---
 
 ## Komt voor in
-* [Dragon of Icepire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icepire-Peak.md %})
+* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
 
 ## Gerelateerde karakters
 * [Elmar Barthen]({{ site.baseurl }}{% link characters/Elmar-Barthen.md %})

@@ -45,7 +45,7 @@ Probeert overal een bovennatuurlijke reden in te zien, ook als deze er niet is.
 ---
 
 ## Komt voor in
-* [Dragon of Icepire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icepire-Peak.md %})
+* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
 
 ## Gerelateerde karakters
 * -
