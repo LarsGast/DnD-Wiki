@@ -5,9 +5,6 @@ title: Wand of Pyrotechnics
 
 <img src="../images/Wand of Pyrotechnics.jpeg" alt="Wand of Pyrotechnics" width=200>
 
-## Prijs
-Onbekend
-
 ## Werking
 Deze toverstaf heeft 7 ladingen. Terwijl je het vasthoudt, kun je een actie gebruiken om 1 van de ladingen te verbruiken en een onschadelijke uitbarsting van veelkleurig licht te creëren op een punt dat je tot 60 ft verderop kunt zien. De lichtuitbarsting gaat gepaard met een knetterend geluid dat tot op 300 ft afstand te horen is. Het licht is zo helder als de vlam van een fakkel, maar duurt slechts een seconde.
 
@@ -19,7 +16,7 @@ De toverstaf krijgt dagelijks bij zonsopgang 1d6 + 1 verbruikte ladingen terug. 
 ---
 
 ## Komt voor in
-* [Dragon of Icepire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icepire-Peak.md %})
+* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
 
 ## Gerelateerde karakters
 * Gnerkli

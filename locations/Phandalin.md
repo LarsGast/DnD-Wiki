@@ -74,7 +74,7 @@ Als avonturiers hem naar een zoektocht vragen, zet Harbin ze op het goede spoor 
 ---
 
 ## Komt voor in
-* [Dragon of Icepire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icepire-Peak.md %})
+* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
 
 ## Gerelateerde karakters
 * [Ander]({{ site.baseurl }}{% link characters/Ander.md %})
@@ -96,8 +96,8 @@ Als avonturiers hem naar een zoektocht vragen, zet Harbin ze op het goede spoor 
 * Axeholm
 * [Dwarven Excavation]({{ site.baseurl }}{% link locations/Dwarven-Excavation.md %})
 * [Gnomengarde]({{ site.baseurl }}{% link locations/Gnomengarde.md %})
-* Icepire Hold
-* Icepire Peak
+* Icespire Hold
+* Icespire Peak
 * Mountain's Toe Gold Mine
 * [Umbrage Hill]({{ site.baseurl }}{% link locations/Umbrage-Hill.md %})
 

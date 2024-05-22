@@ -108,7 +108,7 @@ Een kleine, niet-afgesloten kist onder het bed van de kabouters bevat een Hat of
 ---
 
 ## Komt voor in
-* [Dragon of Icepire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icepire-Peak.md %})
+* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
 
 ## Gerelateerde karakters
 * Anverth
@@ -141,8 +141,8 @@ Een kleine, niet-afgesloten kist onder het bed van de kabouters bevat een Hat of
 ## Locaties in de buurt
 * Axeholm
 * [Dwarven Excavation]({{ site.baseurl }}{% link locations/Dwarven-Excavation.md %})
-* Icepire Hold
-* Icepire Peak
+* Icespire Hold
+* Icespire Peak
 * Mountain's Toe Gold Mine
 * [Phandalin]({{ site.baseurl }}{% link locations/Phandalin.md %})
 * [Umbrage Hill]({{ site.baseurl }}{% link locations/Umbrage-Hill.md %})

@@ -21,8 +21,8 @@ Sommige locatie bevinden zich binnenin andere locaties, zoals een stad zich in e
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 * [Greenguard]({{ site.baseurl }}{% link locations/Greenguard.md %})
 * High Road
-* Icepire Hold
-* Icepire Peak
+* Icespire Hold
+* Icespire Peak
 * Kryptgarden Forest
 * Leilon
 * Loggers' Camp

@@ -32,7 +32,7 @@ Adabra verkoopt Potions of Healing voor 50 gp.
 ---
 
 ## Komt voor in
-* [Dragon of Icepire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icepire-Peak.md %})
+* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
 
 ## Gerelateerde karakters
 * [Adabra Gwynn]({{ site.baseurl }}{% link characters/Adabra-Gwynn.md %})
@@ -47,8 +47,8 @@ Adabra verkoopt Potions of Healing voor 50 gp.
 * Axeholm
 * [Dwarven Excavation]({{ site.baseurl }}{% link locations/Dwarven-Excavation.md %})
 * [Gnomengarde]({{ site.baseurl }}{% link locations/Gnomengarde.md %})
-* Icepire Hold
-* Icepire Peak
+* Icespire Hold
+* Icespire Peak
 * Mountain's Toe Gold Mine
 * [Phandalin]({{ site.baseurl }}{% link locations/Phandalin.md %})
 

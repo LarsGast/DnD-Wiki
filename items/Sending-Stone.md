@@ -5,9 +5,6 @@ title: Sending Stone
 
 <img src="../images/Sending stones.jpeg" alt="Sending stones" width=200>
 
-## Prijs
-Onbekend
-
 ## Werking
 De Sending Stones worden in paren geleverd, waarbij elke gladde steen zo is uitgesneden dat hij bij de andere past, zodat de combinatie gemakkelijk te herkennen is. Terwijl je een steen aanraakt, kun je een actie gebruiken om de sending spreuk uit te spreken. Het doel is de drager van de andere steen. Als geen enkel wezen de andere steen draagt, weet je dat zodra je de steen gebruikt en de spreuk niet uitspreekt.
 
@@ -19,7 +16,7 @@ Zodra het verzenden door de stenen is geworpen, kunnen ze pas bij zonsopgang opn
 ---
 
 ## Komt voor in
-* [Dragon of Icepire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icepire-Peak.md %})
+* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
 
 ## Gerelateerde karakters
 * [Dazlyn Grayshard]({{ site.baseurl }}{% link characters/Dazlyn-Grayshard.md %})
