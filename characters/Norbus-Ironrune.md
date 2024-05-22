@@ -56,7 +56,7 @@ Kan soms te gretig zijn.
 ## Items
 
 ### Huidige bezittingen
-* [Sending Stone]({{ site.baseurl }}{% link items/Sending-Stone.md %})
+* -
 
 ### Vorige bezittingen
 * -
