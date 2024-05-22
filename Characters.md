@@ -28,6 +28,5 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
 * [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
 * [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})
-* [Thistle]({{ site.baseurl }}{% link characters/Thistle.md %})
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
 * [Yulgar Lark]({{ site.baseurl }}{% link characters/Yulgar-Lark.md %})
