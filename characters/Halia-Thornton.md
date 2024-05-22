@@ -56,7 +56,7 @@ Ze vertrouwd niemand, ook al heeft diegene zich proberen te bewijzen.
 ## Items
 
 ### Huidige bezittingen
-* -
+* Een ordinaire ijzeren pot waarvan haar wijsgemaakt is dat deze magische krachten bezit.
 
 ### Vorige bezittingen
 * -
