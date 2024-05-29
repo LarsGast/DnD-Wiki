@@ -47,7 +47,6 @@ Verwend zijn dochter iets te veel.
 
 ## Gerelateerde karakters
 * [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
-* [Hugo Staalzwaard]({{ site.baseurl }}{% link characters/Hugo-Staalzwaard.md %})
 * [Yulgar Lark]({{ site.baseurl }}{% link characters/Yulgar-Lark.md %})
 
 ## Gerelateerde locaties
