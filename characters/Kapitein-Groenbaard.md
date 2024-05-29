@@ -50,8 +50,13 @@ Arrogantie, denkt dat hij alles en iedereen aankan.
 
 ## Gerelateerde karakters
 * [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
+* [Barnaby Kraai]({{ site.baseurl }}{% link characters/Barnaby-Kraai.md %})
 * [Gareth Bloodwood]({{ site.baseurl }}{% link characters/Gareth-Bloodwood.md %})
 * [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
+* [Grog Steenvuist]({{ site.baseurl }}{% link characters/Grog-Steenvuist.md %})
+* [Isabella Swift]({{ site.baseurl }}{% link characters/Isabella-Swift.md %})
+* [Kaelen Schaduwholster]({{ site.baseurl }}{% link characters/Kaelen-Schaduwholster.md %})
+* [Kosharakar Coemeydus]({{ site.baseurl }}{% link characters/Kosharakar-Coemeydus.md %})
 
 ## Gerelateerde locaties
 * [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
@@ -61,6 +66,7 @@ Arrogantie, denkt dat hij alles en iedereen aankan.
 
 ### Huidige bezittingen
 * [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
+* [Tia's Kompas]({{ site.baseurl }}{% link items/Tias-Kompas.md %})
 
 ### Vorige bezittingen
 * -

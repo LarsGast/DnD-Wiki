@@ -32,11 +32,17 @@ Onderin het schip bevindt zich een grote opslagruimte, twee kamers voor bemannin
 ## Komt voor in
 * [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
 * [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
+* [Captain Greenbeard's Grand Escape]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Grand-Escape.md %})
 
 ## Gerelateerde karakters
+* [Barnaby Kraai]({{ site.baseurl }}{% link characters/Barnaby-Kraai.md %})
 * [Gareth Bloodwood]({{ site.baseurl }}{% link characters/Gareth-Bloodwood.md %})
 * [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
+* [Grog Steenvuist]({{ site.baseurl }}{% link characters/Grog-Steenvuist.md %})
+* [Isabella Swift]({{ site.baseurl }}{% link characters/Isabella-Swift.md %})
+* [Kaelen Schaduwholster]({{ site.baseurl }}{% link characters/Kaelen-Schaduwholster.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
+* [Kosharakar Coemeydus]({{ site.baseurl }}{% link characters/Kosharakar-Coemeydus.md %})
 
 ## Super-locaties
 * [Zandzee]({{ site.baseurl }}{% link locations/Zandzee.md %})
