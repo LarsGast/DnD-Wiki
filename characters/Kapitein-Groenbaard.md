@@ -66,6 +66,7 @@ Arrogantie, denkt dat hij alles en iedereen aankan.
 
 ### Huidige bezittingen
 * [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
+* [Tia's Kompas]({{ site.baseurl }}{% link items/Tias-Kompas.md %})
 
 ### Vorige bezittingen
 * -

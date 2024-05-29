@@ -51,4 +51,4 @@ Eenmaal aangekomen in Falconreach wijst Groenbaard zijn bemanning naar de Falcon
 * [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
 
 ## Items
-* Tia's Kompas
+* [Tia's Kompas]({{ site.baseurl }}{% link items/Tias-Kompas.md %})

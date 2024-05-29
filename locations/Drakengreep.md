@@ -47,7 +47,7 @@ Drakengreep beschikt over een haven met dokken voor luchtvervoer, geschikt voor 
 * [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
 
 ## Items
-* Tia's Kompas
+* [Tia's Kompas]({{ site.baseurl }}{% link items/Tias-Kompas.md %})
 
 ## Galerij
 <img src="../images/Drakengreep.jpg" alt="Drakengreep" width=300>
