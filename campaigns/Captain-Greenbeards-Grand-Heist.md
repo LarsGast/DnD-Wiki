@@ -33,10 +33,10 @@ Eenmaal aangekomen in Falconreach wijst Groenbaard zijn bemanning naar de Falcon
 ---
 
 ## Vorige Campaign
-* -
+* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
 
 ## Volgende Campaign
-* -
+* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
 
 ## Karakters
 * [Barnaby Kraai]({{ site.baseurl }}{% link characters/Barnaby-Kraai.md %})
