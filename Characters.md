@@ -22,7 +22,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * [Hugo Staalzwaard]({{ site.baseurl }}{% link characters/Hugo-Staalzwaard.md %})
 * [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
 * [Isabella Swift]({{ site.baseurl }}{% link characters/Isabella-Swift.md %})
-* [Kaelen Schaduwzwaard]({{ site.baseurl }}{% link characters/Kaelen-Schaduwzwaard.md %})
+* [Kaelen Schaduwholster]({{ site.baseurl }}{% link characters/Kaelen-Schaduwholster.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 * [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
 * [Kosharakar Coemeydus]({{ site.baseurl }}{% link characters/Kosharakar-Coemeydus.md %})

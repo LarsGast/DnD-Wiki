@@ -50,7 +50,7 @@ Barnaby is vaak roekeloos en impulsief, en zijn verlangen naar avontuur en opwin
 ## Gerelateerde karakters
 * [Grog Steenvuist]({{ site.baseurl }}{% link characters/Grog-Steenvuist.md %})
 * [Isabella Swift]({{ site.baseurl }}{% link characters/Isabella-Swift.md %})
-* [Kaelen Schaduwzwaard]({{ site.baseurl }}{% link characters/Kaelen-Schaduwzwaard.md %})
+* [Kaelen Schaduwholster]({{ site.baseurl }}{% link characters/Kaelen-Schaduwholster.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 * [Kosharakar Coemeydus]({{ site.baseurl }}{% link characters/Kosharakar-Coemeydus.md %})
 

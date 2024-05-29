@@ -55,7 +55,7 @@ Arrogantie, denkt dat hij alles en iedereen aankan.
 * [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
 * [Grog Steenvuist]({{ site.baseurl }}{% link characters/Grog-Steenvuist.md %})
 * [Isabella Swift]({{ site.baseurl }}{% link characters/Isabella-Swift.md %})
-* [Kaelen Schaduwzwaard]({{ site.baseurl }}{% link characters/Kaelen-Schaduwzwaard.md %})
+* [Kaelen Schaduwholster]({{ site.baseurl }}{% link characters/Kaelen-Schaduwholster.md %})
 * [Kosharakar Coemeydus]({{ site.baseurl }}{% link characters/Kosharakar-Coemeydus.md %})
 
 ## Gerelateerde locaties

@@ -50,7 +50,7 @@ Grog kan soms te koppig en onverzettelijk zijn, waardoor hij moeite heeft om com
 ## Gerelateerde karakters
 * [Barnaby Kraai]({{ site.baseurl }}{% link characters/Barnaby-Kraai.md %})
 * [Isabella Swift]({{ site.baseurl }}{% link characters/Isabella-Swift.md %})
-* [Kaelen Schaduwzwaard]({{ site.baseurl }}{% link characters/Kaelen-Schaduwzwaard.md %})
+* [Kaelen Schaduwholster]({{ site.baseurl }}{% link characters/Kaelen-Schaduwholster.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 * [Kosharakar Coemeydus]({{ site.baseurl }}{% link characters/Kosharakar-Coemeydus.md %})
 
