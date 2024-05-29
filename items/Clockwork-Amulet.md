@@ -17,7 +17,7 @@ Als je een attack roll maakt terwijl je het amulet draagt, kun je afzien van het
 ---
 
 ## Komt voor in
-* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
+* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
 
 ## Gerelateerde karakters
 * Dabbledob
