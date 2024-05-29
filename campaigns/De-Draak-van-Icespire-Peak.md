@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dragon of Icespire Peak
+title: De Draak van Icespire Peak
 ---
 
 ## Verhaal

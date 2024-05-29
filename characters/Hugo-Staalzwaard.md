@@ -43,7 +43,7 @@ Vertrouwd mensen soms te snel.
 ---
 
 ## Komt voor in
-* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
+* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
 
 ## Gerelateerde karakters
 * [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})

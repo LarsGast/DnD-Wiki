@@ -9,5 +9,5 @@ In deze sectie van de wiki zijn alle campaigns die ik als DM gegeven heb te vind
 * [De Redding van (Prinses) Azura]({{ site.baseurl }}{% link campaigns/De-Redding-van-(Prinses)-Azura.md %})
 * [Twilly Rekruteren]({{ site.baseurl }}{% link campaigns/Twilly-Rekruteren.md %})
 * [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/De-Legende-van-Kapitein-Groenbaard.md %})
-* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
+* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
 * [Captain Greenbeard's Grand Escape]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Grand-Escape.md %})
