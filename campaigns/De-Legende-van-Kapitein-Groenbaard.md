@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Captain Greenbeard's Legend
+title: De Legende van Kapitein Groenbaard
 ---
 
 ## Verhaal
@@ -29,10 +29,10 @@ De vlucht duurt nog een paar dagen, maar uiteindelijk zullen de avonturiers same
 ---
 
 ## Vorige Campaign
-* [Recruiting Twilly]({{ site.baseurl }}{% link campaigns/Recruiting-Twilly.md %})
+* [Twilly Rekruteren]({{ site.baseurl }}{% link campaigns/Twilly-Rekruteren.md %})
 
 ## Volgende Campaign
-* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
+* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
 
 ## Karakters
 * [Adonis]({{ site.baseurl }}{% link characters/Adonis.md %})

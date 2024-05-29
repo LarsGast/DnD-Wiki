@@ -22,7 +22,7 @@ title: Lab Coat (worn)
 ---
 
 ## Komt voor in
-* [The Rescue of (Princess) Azura]({{ site.baseurl }}{% link campaigns/The-Rescue-of-(Princess)-Azura.md %})
+* [De Redding van (Prinses) Azura]({{ site.baseurl }}{% link campaigns/De-Redding-van-(Prinses)-Azura.md %})
 
 ## Gerelateerde karakters
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
