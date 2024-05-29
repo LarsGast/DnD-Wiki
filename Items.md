@@ -33,6 +33,7 @@ In deze sectie van de wiki zijn alle items die voorkomen in de campaigns die ik 
 * [Sending Stone]({{ site.baseurl }}{% link items/Sending-Stone.md %})
 * [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
 * Staff of Birdcalls
+* [Tia's Kompas]({{ site.baseurl }}{% link items/Tias-Kompas.md %})
 * [Wand of Pyrotechnics]({{ site.baseurl }}{% link items/Wand-of-Pyrotechnics.md %})
 * Wand of Secrets
 * [Wind Fan]({{ site.baseurl }}{% link items/Wind-Fan.md %})

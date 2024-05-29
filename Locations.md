@@ -14,6 +14,7 @@ Sommige locatie bevinden zich binnenin andere locaties, zoals een stad zich in e
 * Conyberry
 * Crags
 * Dragon Barrow
+* [Drakengreep]({{ site.baseurl }}{% link locations/Drakengreep.md %})
 * [Dwarven Excavation]({{ site.baseurl }}{% link locations/Dwarven-Excavation.md %})
 * Falcon's Hunting Lodge
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
