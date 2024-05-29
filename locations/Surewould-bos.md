@@ -29,7 +29,7 @@ Diep in het centrum van het Surewould-bos bevindt zich een magische omgeving, di
 
 ## Komt voor in
 * [De Redding van (Prinses) Azura]({{ site.baseurl }}{% link campaigns/De-Redding-van-(Prinses)-Azura.md %})
-* [Recruiting Twilly]({{ site.baseurl }}{% link campaigns/Recruiting-Twilly.md %})
+* [Twilly Rekruteren]({{ site.baseurl }}{% link campaigns/Twilly-Rekruteren.md %})
 
 ## Gerelateerde karakters
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})

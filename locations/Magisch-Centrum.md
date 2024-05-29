@@ -55,7 +55,7 @@ Aan de andere kant van de deur bij de ingang van het magische centrum bevindt zi
 ---
 
 ## Komt voor in
-* [Recruiting Twilly]({{ site.baseurl }}{% link campaigns/Recruiting-Twilly.md %})
+* [Twilly Rekruteren]({{ site.baseurl }}{% link campaigns/Twilly-Rekruteren.md %})
 
 ## Gerelateerde karakters
 * -
