@@ -16,6 +16,8 @@ title: Lab Coat (worn)
   * Tot zijn ontvoering
 * Lushikukukanda
   * Vanaf de ontvoering van Albert Tweesteen tot de vlucht van Falconreach naar Phandalin
+* Albert Tweesteen
+  * Vanaf het einde van de vlucht van Falconreach naar Phandalin
 
 ---
 
