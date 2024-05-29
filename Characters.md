@@ -25,6 +25,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * [Kaelen Schaduwzwaard]({{ site.baseurl }}{% link characters/Kaelen-Schaduwzwaard.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 * [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
+* [Kosharakar Coemeydus]({{ site.baseurl }}{% link characters/Kosharakar-Coemeydus.md %})
 * [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
 * [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
 * [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})

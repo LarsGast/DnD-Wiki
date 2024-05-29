@@ -56,6 +56,7 @@ Arrogantie, denkt dat hij alles en iedereen aankan.
 * [Grog Steenvuist]({{ site.baseurl }}{% link characters/Grog-Steenvuist.md %})
 * [Isabella Swift]({{ site.baseurl }}{% link characters/Isabella-Swift.md %})
 * [Kaelen Schaduwzwaard]({{ site.baseurl }}{% link characters/Kaelen-Schaduwzwaard.md %})
+* [Kosharakar Coemeydus]({{ site.baseurl }}{% link characters/Kosharakar-Coemeydus.md %})
 
 ## Gerelateerde locaties
 * [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})

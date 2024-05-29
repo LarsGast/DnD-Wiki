@@ -42,6 +42,7 @@ Onderin het schip bevindt zich een grote opslagruimte, twee kamers voor bemannin
 * [Isabella Swift]({{ site.baseurl }}{% link characters/Isabella-Swift.md %})
 * [Kaelen Schaduwzwaard]({{ site.baseurl }}{% link characters/Kaelen-Schaduwzwaard.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
+* [Kosharakar Coemeydus]({{ site.baseurl }}{% link characters/Kosharakar-Coemeydus.md %})
 
 ## Super-locaties
 * [Zandzee]({{ site.baseurl }}{% link locations/Zandzee.md %})

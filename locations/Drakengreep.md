@@ -35,6 +35,7 @@ Drakengreep beschikt over een haven met dokken voor luchtvervoer, geschikt voor 
 * [Isabella Swift]({{ site.baseurl }}{% link characters/Isabella-Swift.md %})
 * [Kaelen Schaduwzwaard]({{ site.baseurl }}{% link characters/Kaelen-Schaduwzwaard.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
+* [Kosharakar Coemeydus]({{ site.baseurl }}{% link characters/Kosharakar-Coemeydus.md %})
 
 ## Super-locaties
 * [Greenguard]({{ site.baseurl }}{% link locations/Greenguard.md %})
