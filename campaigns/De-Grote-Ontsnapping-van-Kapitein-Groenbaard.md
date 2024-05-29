@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Captain Greenbeard's Grand Escape
+title: De Grote Ontsnapping van Kapitein Groenbaard
 ---
 
 ## Verhaal

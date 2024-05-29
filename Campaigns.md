@@ -10,4 +10,4 @@ In deze sectie van de wiki zijn alle campaigns die ik als DM gegeven heb te vind
 * [Twilly Rekruteren]({{ site.baseurl }}{% link campaigns/Twilly-Rekruteren.md %})
 * [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/De-Legende-van-Kapitein-Groenbaard.md %})
 * [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
-* [Captain Greenbeard's Grand Escape]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Grand-Escape.md %})
+* [De Grote Ontsnapping van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/De-Grote-Ontsnapping-van-Kapitein-Groenbaard.md %})
