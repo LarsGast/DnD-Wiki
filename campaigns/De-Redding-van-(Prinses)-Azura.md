@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Rescue of (Princess) Azura
+title: De Redding van (Prinses) Azura
 ---
 
 ## Verhaal
