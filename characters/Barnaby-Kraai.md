@@ -45,7 +45,7 @@ Barnaby is vaak roekeloos en impulsief, en zijn verlangen naar avontuur en opwin
 ---
 
 ## Komt voor in
-* [Captain Greenbeard's Grand Heist]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Grand-Heist.md %})
+* [Captain Greenbeard's Grand Escape]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Grand-Escape.md %})
 
 ## Gerelateerde karakters
 * [Elara Zonschaduw]({{ site.baseurl }}{% link characters/Elara-Zonschaduw.md %})

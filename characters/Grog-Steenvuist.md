@@ -45,7 +45,7 @@ Grog kan soms te koppig en onverzettelijk zijn, waardoor hij moeite heeft om com
 ---
 
 ## Komt voor in
-* [Captain Greenbeard's Grand Heist]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Grand-Heist.md %})
+* [Captain Greenbeard's Grand Escape]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Grand-Escape.md %})
 
 ## Gerelateerde karakters
 * [Barnaby Kraai]({{ site.baseurl }}{% link characters/Barnaby-Kraai.md %})

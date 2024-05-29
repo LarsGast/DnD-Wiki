@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Captain Greenbeard's Grand Heist
+title: Captain Greenbeard's Grand Escape
 ---
 
 ## Verhaal
