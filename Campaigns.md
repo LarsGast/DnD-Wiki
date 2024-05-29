@@ -10,3 +10,4 @@ In deze sectie van de wiki zijn alle campaigns die ik als DM gegeven heb te vind
 * [Recruiting Twilly]({{ site.baseurl }}{% link campaigns/Recruiting-Twilly.md %})
 * [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
 * [Captain Greenbeard's Grand Heist]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Grand-Heist.md %})
+* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
