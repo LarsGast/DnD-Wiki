@@ -25,7 +25,7 @@ Adabra verkoopt Potions of Healing voor 50 gp.
 ---
 
 ## Komt voor in
-* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
+* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
 
 ## Gerelateerde karakters
 * [Adabra Gwynn]({{ site.baseurl }}{% link characters/Adabra-Gwynn.md %})

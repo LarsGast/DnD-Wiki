@@ -16,7 +16,7 @@ De toverstaf krijgt dagelijks bij zonsopgang 1d6 + 1 verbruikte ladingen terug. 
 ---
 
 ## Komt voor in
-* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
+* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
 
 ## Gerelateerde karakters
 * Gnerkli
