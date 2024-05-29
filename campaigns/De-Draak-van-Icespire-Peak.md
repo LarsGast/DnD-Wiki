@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dragon of Icespire Peak
+title: De Draak van Icespire Peak
 ---
 
 ## Verhaal
@@ -43,7 +43,7 @@ Wordt vervolgd...
 ---
 
 ## Vorige Campaign
-* [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
+* [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/De-Legende-van-Kapitein-Groenbaard.md %})
 
 ## Volgende Campaign
 * -

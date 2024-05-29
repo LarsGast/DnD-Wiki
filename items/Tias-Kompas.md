@@ -18,7 +18,7 @@ Dit kompas wijst altijd naar dat wat de eigenaar het meest verlangt.
 ---
 
 ## Komt voor in
-* [Captain Greenbeard's Grand Escape]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Grand-Escape.md %})
+* [De Grote Ontsnapping van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/De-Grote-Ontsnapping-van-Kapitein-Groenbaard.md %})
 
 ## Gerelateerde karakters
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})

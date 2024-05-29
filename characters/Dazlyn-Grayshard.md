@@ -45,7 +45,7 @@ Kan soms te gretig zijn.
 ---
 
 ## Komt voor in
-* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
+* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
 
 ## Gerelateerde karakters
 * [Norbus Ironrune]({{ site.baseurl }}{% link characters/Norbus-Ironrune.md %})

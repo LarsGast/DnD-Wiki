@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Rescue of (Princess) Azura
+title: De Redding van (Prinses) Azura
 ---
 
 ## Verhaal
@@ -37,7 +37,7 @@ Om Azura van deze dwangbruiloft te redden verslaan de avonturiers Koning Splurt 
 * -
 
 ## Volgende Campaign
-* [Recruiting Twilly]({{ site.baseurl }}{% link campaigns/Recruiting-Twilly.md %})
+* [Twilly Rekruteren]({{ site.baseurl }}{% link campaigns/Twilly-Rekruteren.md %})
 
 ## Karakters
 

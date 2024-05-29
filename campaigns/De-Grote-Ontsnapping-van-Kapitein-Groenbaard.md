@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Captain Greenbeard's Grand Escape
+title: De Grote Ontsnapping van Kapitein Groenbaard
 ---
 
 ## Verhaal
@@ -33,10 +33,10 @@ Eenmaal aangekomen in Falconreach wijst Groenbaard zijn bemanning naar de Falcon
 ---
 
 ## Vorige Campaign
-* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
+* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
 
 ## Volgende Campaign
-* [Dragon of Icespire Peak]({{ site.baseurl }}{% link campaigns/Dragon-of-Icespire-Peak.md %})
+* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
 
 ## Karakters
 * [Barnaby Kraai]({{ site.baseurl }}{% link characters/Barnaby-Kraai.md %})
