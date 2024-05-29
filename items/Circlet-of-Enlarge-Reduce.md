@@ -20,7 +20,7 @@ Dit kroontje bevat twee edelstenen, één groot, één klein.
 ---
 
 ## Komt voor in
-* [The Rescue of (Princess) Azura]({{ site.baseurl }}{% link campaigns/The-Rescue-of-(Princess)-Azura.md %})
+* [De Redding van (Prinses) Azura]({{ site.baseurl }}{% link campaigns/De-Redding-van-(Prinses)-Azura.md %})
 
 ## Gerelateerde karakters
 * [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})

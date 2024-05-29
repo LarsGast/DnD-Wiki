@@ -49,7 +49,7 @@ Aan één van de muren hangt een hendel. Deze hendel opent een soort achterdeur 
 ---
 
 ## Komt voor in
-* [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
+* [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/De-Legende-van-Kapitein-Groenbaard.md %})
 
 ## Gerelateerde karakters
 * -

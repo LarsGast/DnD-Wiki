@@ -31,7 +31,7 @@ Een enorme woestijn dat zo'n 100 jaar geleden bewoond werd door Zand-Elven, een 
 ---
 
 ## Komt voor in
-* [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
+* [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/De-Legende-van-Kapitein-Groenbaard.md %})
 
 ## Gerelateerde karakters
 * [Gareth Bloodwood]({{ site.baseurl }}{% link characters/Gareth-Bloodwood.md %})
