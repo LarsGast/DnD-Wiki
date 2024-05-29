@@ -10,63 +10,25 @@ Dit verhaal begint met Kapitein Groenbaard en zijn bemanning in de gevangenis, z
 
 Groenbaard en zijn bemanning zitten vast in aparte cellen. Groenbaard in het midden, met Isabella Swift links en Grog Steenvuist rechts van hem. Door hun respectievelijke expertises te gebruiken vinden Isabella en Grog een weg naar de cel van Groenbaard. Groenbaard heeft ondertussen een geheime doorgang ontdekt onder zijn bed. Blijkbaar heeft iemand anders ook al eens deze cel weten te ontsnappen zonder dat de bewakers dit door hebben gehad. De doorgang wordt echter bedekt door een magisch krachtveld, waardoor ze er niet zomaar doorheen kunnen. Ze hebben iemand met sterke kennis van de magie nodig om deze doorgang te nemen.
 
-Plots verschijnt er een vel licht in het midden van de cel. De gevangenen moeten hun ogen voor een paar seconden beschermen, totdat het licht begint te dempen. Zodra het licht volledig gedempt is, zien de gevangenen een mens gekleed als een wizard staan. Deze persoon legt uit dat hij uit de toekomst komt, en dat er iets mis is gegaan tijdens het tijdreizen. Nu hij eenmaal hier is, heeft hij niet de krachten om terug te reizen naar zijn eigen tijd, dus zit hij ook gevangen op Drakengreep.
+Plots verschijnt er een vel licht in het midden van de cel. De gevangenen moeten hun ogen voor een paar seconden beschermen, totdat het licht begint te dempen. Zodra het licht volledig gedempt is, zien de gevangenen een mens gekleed als een wizard staan. Deze persoon vertelt dat hij Kosharakar Coemeydus heet en legt uit dat hij uit de toekomst komt, en dat er iets mis is gegaan tijdens het tijdreizen. Nu hij eenmaal hier is, heeft hij niet de krachten om terug te reizen naar zijn eigen tijd, dus zit hij ook gevangen op Drakengreep. Kosharakar heeft gelukkig veel kennis van de magie, en besluit Groenbaard en zijn bemanning te helpen met het ontsnappen van deze gevangenis.
 
-Deze wizard heeft gelukkig veel kennis van de magie, en besluit Groenbaard en zijn bemanning te helpen met het ontsnappen van deze gevangenis (afhankelijk van hoe hoog hij rolt worden guards gewaarschuwd en moeten ze vechten).
+Na het ontsnappen van hun cellen gaan de piraten en de wizard opzoek naar hun wapens en andere spullen. Ze komen er na het confronteren van één van de bewakers achter waar hun spullen worden bewaakt. Dit is een gebouw zonder bewakers, maar met een deur die magisch op slot zit. Door het juiste antwoord op een puzzel te geven komt de groep de deur door en verzamelen ze hun spullen weer. Naast hun eigen spullen vinden ze ook een hoopje goud, en Kapitein Groenbaard vindt zijn magische kompas weer terug, die altijd wijst naar wat de drager het meeste naar verlangt. Op dit moment verlangt Groenbaard naar vrijheid, dus wijst het kompas naar de haven van dit vliegende eiland.
 
-Na het ontsnappen van hun cellen gaan ze opzoek naar hun spulletjes (wapens en Tia's Kompas). Mogelijk stealth gebruiken om binnen te dringen, anders vechten.
+Aangezien het hele eiland een soort gevangenis is, kan de groep niet zo gemakkelijk ontsnappen. Ze moeten met een plan komen. Het plan waar uiteindelijk voor gekozen wordt gaat als volg: De bemanning van Groenbaard kleedt zich als bewakers van de gevangenis, en ze gaan doen alsof ze een gevangene (Kapitein Groenbaard) van het eiland af nemen voor tijdelijk verlof. Met deze vermomming kunnen ze met weinig problemen de straten over, totdat ze bij de haven zelf komen.
 
-Puzzel: De Elementale Runen Deur
+De hoofddeur van de haven wordt bewaakt door een stel hoge bewakers. Deze bewakers laten niet zomaar iemand binnen zonder bewijs van een admiraal dat ze binnen mogen komen. Aangezien Kapitein Groenbaard en zijn bemanning geen bewijs van verlof hebben zal het lastig worden om voorbij deze bewakers te komen. Terwijl de groep piraten probeert om toch voorbij deze bewakers te komen komt er ineens een andere bewaker op hun af, die beweert de situatie over te nemen. Hij neemt de groep mee naar een afgelegen locatie en onthult ook onderdeel te zijn van de bemanning van Kapitein Groenbaard. Barnaby Kraai vertelt dat hij in een ander cellenblok zat dan Groenbaard, en dat hij samen met Kaelen Schaduwzwaard een stel bewakersuniformen heeft weten te bemachtigen.
 
-Opstelling:
-De deur naar de opslagkamer met de uitrusting is beveiligd met een reeks elementale runen die in de juiste volgorde geactiveerd moeten worden. De juiste volgorde wordt aangegeven door objecten en symbolen die in de kamer voor de opslagdeur te vinden zijn.
-Kamerdetails:
+Kraai leidt de groep naar de zijkant van de haven, waar hij samen met Kaelen een raampje heeft gevonden om naar binnen te sluipen. Binnen in de haven ziet de groep een groot aantal bewakers en zo'n 8 luchtschepen liggen. Opnieuw zullen ze met een plan moeten komen om één van de luchtschepen te kapen om zo succesvol te ontsnappen. Tijdens het maken van dit plan, hoort Groenbaard een bewaker zeggen dat er een witte draak is opgedoken in de buurt van Phandalin, een dorpje aan de Sword Coast. Groenbaard bedenkt zich dat hij wel eens een draak zou willen vellen, maart voordat hij dit kan doen, zal hij eerst een luchtschip moeten hebben. Isabella Swift gooit haar charme in de strijd om de kapitein van één van de schepen over te halen om haar en Groenbaard mee te nemen. De kapitein is het er wel mee eens, maar alleen als zei alleen met zijn tweeën aan boord komen, aangezien het schip aardig vol zit en ze de extra bewakers niet nodig hebben. De rest van Groenbaard zijn bemanning zal dus een andere manier moeten vinden om op het schip te komen.
 
-    Runen op de Deur: Er zijn vier runen op de deur, elk vertegenwoordigt een ander element: Vuur, Water, Aarde, en Lucht.
-    Elementale Objecten: Verspreid door de kamer liggen vier objecten, elk geassocieerd met een van de elementen. De spelers moeten deze objecten vinden en op de bijbehorende voetstukken voor de deur plaatsen.
+Barnaby Kraai pakt het perfecte moment om super stilletjes achter op het schip de sluipen. Grog Steenvuist ziet dit en volgt hem stijlvol. Kosharakar Coemeydus beseft zich dat zijn talenten in investigeren vele malen beter zijn dan zijn talenten in sluipen en stil zijn, dus inspecteert het schip grondig om een plekje te vinden om met veel minder moeite naar binnen te sluipen. Kaelen Schaduwzwaard volgt hem, en samen sluipen ze zonder moeite naar binnen. Aangezien de rest al aan boord is, gaan Isabella en Groenbaard akkoord met de voorwaarden van de kapitein komen zonder problemen aan boord.
 
-Elementale Objecten en Hun Locaties:
+Eenmaal in de lucht en een goede afstand tot Drakengreep, bevrijdt de bemanning van Groenbaard hem uit zijn cel en doen een poging om het schip te kapen. Een episch gevecht vindt plaats waar Kapitein Groenbaard zich verwikkeld in de strijd met de kapitein van het schip, terwijl zijn bemanning in strijd gaat met de rest van de matrozen. Groenbaard is in de minderheid, maar al snel keert het tij in zijn voordeel.
 
-    Vuur Object (Fakkel): Gevonden in een muurhouder.
-    Water Object (Flesje Water): Gevonden in een kleine fontein of bassin.
-    Aarde Object (Steen): Gevonden in de vloer of muur ingebed.
-    Lucht Object (Veer): Gevonden in een vogelkooi of zwevend in de lucht.
+Uiteindelijk weet Groenbaard en zijn bemanning de overwinning te pakken en het schip van het rijk te kapen. De Kapitein zet koers richting Falconreach, een dorpje dat zich in de buurt bevindt. Zijn plan is om zichzelf en zijn bemanning voor te bereiden op een reis richting Phandalin, waar hij de witte draak zal gaan verslaan.
 
-Voetstukken en Oplossing van de Puzzel:
+Tijdens de korte reis naar Falconreach overkomt Kosharakar weer een sterke golf van magie en energie. Zonder dat hij het zelf onder controle kan houden verdwijnt hij plots, net zoals hij eerder verscheen.
 
-    Voetstukken: Vier voetstukken zijn geplaatst voor de deur, elk met een symbool dat een van de elementen vertegenwoordigt. De spelers moeten het juiste object op elk voetstuk plaatsen.
-
-Aanwijzingen en Proces:
-
-    Aanwijzing 1: Een muurschildering toont een reeks natuurevenementen:
-        Muurschildering: Toont een bosbrand (Vuur), gevolgd door regen (Water), leidend tot groeiende planten (Aarde), en vervolgens de wind die waait (Lucht).
-        Interpretatie: Deze volgorde geeft de volgorde aan waarin de objecten op de voetstukken geplaatst moeten worden.
-
-    Aanwijzing 2: Een raadsel gegraveerd op een nabijgelegen plaquette:
-        Raadsel: "Wanneer de vlammen zijn veranderd in as, lessen de wateren de dorst. Uit de bodem zal nieuw leven ontspruiten, en de wind zal eerst dragen."
-        Interpretatie: Bevestigt de volgorde: Vuur, Water, Aarde, Lucht.
-
-Puzzeloplossingsproces:
-
-    Stap 1: Verzamel de Objecten
-        De spelers moeten de Fakkel (Vuur), het Flesje Water (Water), de Steen (Aarde), en de Veer (Lucht) vinden en verzamelen.
-
-    Stap 2: Interpreteer de Aanwijzingen
-        De muurschildering en het raadsel geven beide de juiste volgorde aan: Vuur, Water, Aarde, Lucht.
-
-    Stap 3: Plaats de Objecten
-        De spelers plaatsen de Fakkel op het voetstuk met het Vuur symbool.
-        De spelers plaatsen het Flesje Water op het voetstuk met het Water symbool.
-        De spelers plaatsen de Steen op het voetstuk met het Aarde symbool.
-        De spelers plaatsen de Veer op het voetstuk met het Lucht symbool.
-
-Samenvatting:
-
-    Voetstuk Volgorde: Vuur (Fakkel), Water (Flesje), Aarde (Steen), Lucht (Veer)
-
-Na het succesvol plaatsen van de objecten in de juiste volgorde, lichten de runen op de deur op en ontgrendelt de deur, waardoor de spelers toegang krijgen tot hun uitrusting.
-
-Deze puzzel moedigt spelers aan om hun omgeving te verkennen, benodigde voorwerpen te verzamelen, en observatievaardigheden en logica te gebruiken om de juiste volgorde te bepalen. Het is boeiend en past goed bij de hoogbeveiligde gevangenisomgeving.
+Eenmaal aangekomen in Falconreach wijst Groenbaard zijn bemanning naar de Falconreach Inn, waar een groep avonturiers bij zit te komen van een strijd met een lokale groep Goblins. Onder deze avonturiers zit Arikikuchiariku, de oude rechterhand van Kapitein Groenbaard.
 
 ---
 
