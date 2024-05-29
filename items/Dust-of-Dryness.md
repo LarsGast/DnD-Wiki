@@ -26,7 +26,7 @@ Een elemental monster dat voornamelijk bestaat uit water dat wordt blootgesteld 
 ---
 
 ## Komt voor in
-* [Captain Greenbeard's Legend]({{ site.baseurl }}{% link campaigns/Captain-Greenbeards-Legend.md %})
+* [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/De-Legende-van-Kapitein-Groenbaard.md %})
 
 ## Gerelateerde karakters
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})

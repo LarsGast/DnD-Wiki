@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Captain Greenbeard's Legend
+title: De Legende van Kapitein Groenbaard
 ---
 
 ## Verhaal
