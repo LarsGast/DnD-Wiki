@@ -29,7 +29,7 @@ De vlucht duurt nog een paar dagen, maar uiteindelijk zullen de avonturiers same
 ---
 
 ## Vorige Campaign
-* [Twilly Rekruteren]({{ site.baseurl }}{% link campaigns/Twilly-Rekruteren.md %})
+* [Twilly Rekruteren]({{ site.baseurl }}{% link campaigns/twilly-rekruteren.md %})
 
 ## Volgende Campaign
 * [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
