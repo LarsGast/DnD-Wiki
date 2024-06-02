@@ -5,9 +5,6 @@ title: Naam
 
 <img src="../images/" alt="Afbeelding" width=200>
 
-## Prijs
-
-
 ## Werking
 
 
