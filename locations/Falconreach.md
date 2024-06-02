@@ -40,7 +40,7 @@ Yulgar Lark smeedt zijn eigen wapens in zijn eigen smederij. De wapens die hij h
 ## Komt voor in
 * [De Redding van (Prinses) Azura]({{ site.baseurl }}{% link campaigns/de-redding-van-(prinses)-azura.md %})
 * [Twilly Rekruteren]({{ site.baseurl }}{% link campaigns/twilly-rekruteren.md %})
-* [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/De-Legende-van-Kapitein-Groenbaard.md %})
+* [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-legende-van-kapitein-groenbaard.md %})
 
 ## Gerelateerde karakters
 * [Amy Aria]({{ site.baseurl }}{% link characters/Amy-Aria.md %})
