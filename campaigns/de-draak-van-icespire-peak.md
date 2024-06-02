@@ -46,7 +46,7 @@ Wordt vervolgd...
 * [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-legende-van-kapitein-groenbaard.md %})
 
 ## Oneshots Die Tijdens Deze Campaign Plaats Vinden
-* [De Grote Ontsnapping van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/De-Grote-Ontsnapping-van-Kapitein-Groenbaard.md %})
+* [De Grote Ontsnapping van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-grote-ontsnapping-van-kapitein-groenbaard.md %})
 
 ## Volgende Campaign
 * -
