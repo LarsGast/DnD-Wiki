@@ -24,7 +24,7 @@ Dit kompas wijst altijd naar dat wat de eigenaar het meest verlangt.
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 
 ## Gerelateerde locaties
-* [Drakengreep]({{ site.baseurl }}{% link locations/Drakengreep.md %})
+* [Drakengreep]({{ site.baseurl }}{% link locations/drakengreep.md %})
 
 ## Galerij
 <img src="../images/Tias Kompas.png" alt="Tia's Kompas" width=200>

@@ -55,7 +55,7 @@ Barnaby is vaak roekeloos en impulsief, en zijn verlangen naar avontuur en opwin
 * [Kosharakar Coemeydus]({{ site.baseurl }}{% link characters/Kosharakar-Coemeydus.md %})
 
 ## Gerelateerde locaties
-* [Drakengreep]({{ site.baseurl }}{% link locations/Drakengreep.md %})
+* [Drakengreep]({{ site.baseurl }}{% link locations/drakengreep.md %})
 * [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
 
 ## Items

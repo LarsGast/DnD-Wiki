@@ -55,7 +55,7 @@ Onbekend.
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 
 ## Gerelateerde locaties
-* [Drakengreep]({{ site.baseurl }}{% link locations/Drakengreep.md %})
+* [Drakengreep]({{ site.baseurl }}{% link locations/drakengreep.md %})
 * [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
 
 ## Items
