@@ -15,7 +15,7 @@ title: Conflict van Stammen
 * [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
 
 ## Locaties
-* -
+* [Grijssteen]({{ site.baseurl }}{% link locations/grijssteen.md %})
 
 ## Items
 * -

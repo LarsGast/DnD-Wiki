@@ -13,6 +13,7 @@ Sommige locatie bevinden zich binnenin andere locaties, zoals een stad zich in e
 * [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
 * [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
 * [Greenguard]({{ site.baseurl }}{% link locations/Greenguard.md %})
+* [Grijssteen]({{ site.baseurl }}{% link locations/grijssteen.md %})
 * [Magisch Centrum]({{ site.baseurl }}{% link locations/Magisch-Centrum.md %})
 * [Phandalin]({{ site.baseurl }}{% link locations/Phandalin.md %})
 * [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})

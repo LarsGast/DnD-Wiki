@@ -47,6 +47,7 @@ Wordt vervolgd...
 
 ## Oneshots Die Tijdens Deze Campaign Plaats Vinden
 * [De Grote Ontsnapping van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-grote-ontsnapping-van-kapitein-groenbaard.md %})
+* [Conflict van Stammen]({{ site.baseurl }}{% link campaigns/conflict-van-stammen.md %})
 
 ## Volgende Campaign
 * -
