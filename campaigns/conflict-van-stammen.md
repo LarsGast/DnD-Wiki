@@ -16,6 +16,7 @@ title: Conflict van Stammen
 
 ## Locaties
 * [Grijssteen]({{ site.baseurl }}{% link locations/grijssteen.md %})
+* [IJzerfort]({{ site.baseurl }}{% link locations/ijzerfort.md %})
 
 ## Items
 * -
