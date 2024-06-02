@@ -19,7 +19,7 @@ Uiteindelijk lukt het de avonturiers om de geest te overtuigen dat ze waardig zi
 ---
 
 ## Vorige Campaign
-* [De Redding van (Prinses) Azura]({{ site.baseurl }}{% link campaigns/De-Redding-van-(Prinses)-Azura.md %})
+* [De Redding van (Prinses) Azura]({{ site.baseurl }}{% link campaigns/de-redding-van-(prinses)-azura.md %})
 
 ## Volgende Campaign
 * [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/De-Legende-van-Kapitein-Groenbaard.md %})

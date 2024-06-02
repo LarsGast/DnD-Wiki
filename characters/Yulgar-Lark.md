@@ -45,7 +45,7 @@ Ongeïnteresseerd.
 ---
 
 ## Komt voor in
-* [De Redding van (Prinses) Azura]({{ site.baseurl }}{% link campaigns/De-Redding-van-(Prinses)-Azura.md %})
+* [De Redding van (Prinses) Azura]({{ site.baseurl }}{% link campaigns/de-redding-van-(prinses)-azura.md %})
 
 ## Gerelateerde karakters
 * [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
