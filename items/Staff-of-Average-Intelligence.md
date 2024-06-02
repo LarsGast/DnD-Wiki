@@ -31,7 +31,7 @@ Deze staaf lijkt elke Goblin slim te maken, en elke wizard dom.
 * [De Redding van (Prinses) Azura]({{ site.baseurl }}{% link campaigns/de-redding-van-(prinses)-azura.md %})
 
 ## Gerelateerde karakters
-* [Adonis]({{ site.baseurl }}{% link characters/Adonis.md %})
+* [Adonis]({{ site.baseurl }}{% link characters/adonis.md %})
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 * [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})

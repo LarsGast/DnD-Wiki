@@ -49,7 +49,7 @@ Heeft een zwak voor de ondeugden van de stad, vooral voor sterke drank.
 * [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-legende-van-kapitein-groenbaard.md %})
 
 ## Gerelateerde karakters
-* [Adonis]({{ site.baseurl }}{% link characters/Adonis.md %})
+* [Adonis]({{ site.baseurl }}{% link characters/adonis.md %})
 * [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
 * [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
 * [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
