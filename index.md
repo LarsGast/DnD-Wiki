@@ -9,7 +9,7 @@ Op deze wiki kun je informatie vinden over de campaigns, karakters, locaties, en
 
 Deze wiki bestaat uit de volgende pagina's:
 
-* [Campaigns]({{ site.baseurl }}{% link Campaigns.md %})
+* [Campaigns]({{ site.baseurl }}{% link campaigns.md %})
 * [Karakters]({{ site.baseurl }}{% link Characters.md %})
 * [Locaties]({{ site.baseurl }}{% link Locations.md %})
 * [Items]({{ site.baseurl }}{% link Items.md %})

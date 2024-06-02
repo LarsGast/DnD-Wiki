@@ -28,7 +28,7 @@ plugins:
 
 header_pages:
   - index.md
-  - Campaigns.md
+  - campaigns.md
   - Characters.md
   - Locations.md
   - Items.md
