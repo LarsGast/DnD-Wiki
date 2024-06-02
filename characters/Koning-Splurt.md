@@ -61,7 +61,7 @@ Ongelofelijk dom.
 * -
 
 ### Vorige bezittingen
-* [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
+* [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/circlet-of-enlarge-reduce.md %})
 
 ## Galerij
 <img src="../images/Koning Splurt.png" alt="Koning Splurt" width=200>

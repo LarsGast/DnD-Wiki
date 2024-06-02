@@ -64,7 +64,7 @@ Onbekend.
 ## Items
 
 ### Huidige bezittingen
-* [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
+* [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/circlet-of-enlarge-reduce.md %})
 
 ### Vorige bezittingen
 * -

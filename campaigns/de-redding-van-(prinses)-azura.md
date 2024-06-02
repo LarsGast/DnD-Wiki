@@ -66,6 +66,6 @@ Om Azura van deze dwangbruiloft te redden verslaan de avonturiers Koning Splurt 
 
 ## Items
 
-* [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
+* [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/circlet-of-enlarge-reduce.md %})
 * [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
 * [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})

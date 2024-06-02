@@ -55,7 +55,7 @@ De Hangout wordt gebruikt als de plaats waar de Goblins van het Surewould-bos ve
 * [Magisch Centrum]({{ site.baseurl }}{% link locations/Magisch-Centrum.md %})
 
 ## Items
-* [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
+* [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/circlet-of-enlarge-reduce.md %})
 * [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
 * [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
 
