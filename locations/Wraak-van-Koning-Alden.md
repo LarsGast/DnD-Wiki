@@ -59,4 +59,4 @@ Onderin het schip bevindt zich een grote opslagruimte, twee kamers voor bemannin
 ## Galerij
 <img src="../images/Airship.jpg" alt="De Wraak van Koning Alden" width=200>
 
-<img src="../images/Airship Layers.jpg" alt="De Wraak van Koning Alden met lagen" width=600>
+<img src="../images/airship-layers.jpg" alt="De Wraak van Koning Alden met lagen" width=600>
