@@ -31,7 +31,7 @@ Onderin het schip bevindt zich een grote opslagruimte, twee kamers voor bemannin
 
 ## Komt voor in
 * [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-legende-van-kapitein-groenbaard.md %})
-* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
+* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/de-draak-van-icespire-peak.md %})
 * [De Grote Ontsnapping van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/De-Grote-Ontsnapping-van-Kapitein-Groenbaard.md %})
 
 ## Gerelateerde karakters

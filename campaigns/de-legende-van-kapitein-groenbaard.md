@@ -32,7 +32,7 @@ De vlucht duurt nog een paar dagen, maar uiteindelijk zullen de avonturiers same
 * [Twilly Rekruteren]({{ site.baseurl }}{% link campaigns/twilly-rekruteren.md %})
 
 ## Volgende Campaign
-* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
+* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/de-draak-van-icespire-peak.md %})
 
 ## Karakters
 * [Adonis]({{ site.baseurl }}{% link characters/Adonis.md %})
