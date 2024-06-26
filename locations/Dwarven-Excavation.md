@@ -44,10 +44,37 @@ De dwergenopgraving ligt pal ten oosten van Leilon, 24 kilometer ten zuidwesten 
 * -
 
 ## Galerij
-<img src="../images/Dwarven Excavation NOT FOUND.jpg" alt="Dwarven Excavation plattegrond nog niet beschikbaar" width=500>
-
-<img src="../images/Dwarven Excavation Quest.png" alt="Dwarven Excavation Quest" width=200>
-
-<img src="../images/Ochre Jelly.png" alt="Ochre Jelly" width=200>
-
-<img src="../images/Orc.jpeg" alt="Orc" width=200>
+<ul class="gallery">
+    <li>
+        <figure>
+            <div class="img-gallery-container">
+                <img src="../images/Dwarven Excavation NOT FOUND.jpg" alt="Dwarven Excavation plattegrond nog niet beschikbaar">
+            </div>
+            <figcaption>Dwarven Excavation</figcaption>
+        </figure>
+    </li>
+    <li>
+        <figure>
+            <div class="img-gallery-container">
+                <img src="../images/Dwarven Excavation Quest.png" alt="Dwarven Excavation Quest">
+            </div>
+            <figcaption>Dwarven Excavation Quest</figcaption>
+        </figure>
+    </li>
+    <li>
+        <figure>
+            <div class="img-gallery-container">
+                <img src="../images/Ochre Jelly.png" alt="Ochre Jelly">
+            </div>
+            <figcaption>Ochre Jelly</figcaption>
+        </figure>
+    </li>
+    <li>
+        <figure>
+            <div class="img-gallery-container">
+                <img src="../images/Orc.jpeg" alt="Orc">
+            </div>
+            <figcaption>Orc</figcaption>
+        </figure>
+    </li>
+</ul>
