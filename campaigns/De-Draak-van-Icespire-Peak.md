@@ -38,7 +38,15 @@ Na het vakkundig afhandelen van de bedreigende situatie beginnen de schilddwerge
 
 Tijdens een korte rust vertellen de dwergen dat de Ochre Jelly die ze tegen waren gekomen, gesplitst werd toen ze probeerden om het aan te vallen; toen hadden ze ineens twee problemen in plaats van één. Met deze informatie gaat de groep avonturiers goed voorbereid het gevecht in. Opnieuw komt iedereen met relatief weinig kleerscheuren af van deze ontmoeting.
 
-Wordt vervolgd...
+Nu de ruïnes veilig zijn kunnen ze geplunderd worden. In de één van de kamers bevindt zich een viertal pilaren. In één van deze pilaren zitten 15 edelstenen verstopt ter waarde van 10 goud per edelsteen. Verder zijn er veel geheide deuren te vinden, de dwergen die hier vroeger leefden waren vakkundig in het goed verstoppen van hun eigendommen.
+
+De groep avonturiers doorzoekt samen met de schilddwergen de rest van de ruïnes, en komen erachter dat hier al een hele tijd niemand meer is geweest. Gangen zijn ingestort waardoor omwegen gevonden moeten worden, en het meubilair dat nog over is is in slechte staat. Uiteindelijk vinden ze een dwergenskelet onder het puin van een ingestorte doorgang, met een klein dolkje die aan een ketting zit waar een symbool en dwergentekst op staat. Dazlyn en Norbus herkennen het symbool als Abbathor, de god van de hebzucht. De tekst die op de ketting staat leest "Hebzucht is goed" in het Dwergs.
+
+Uiteindelijk herkennen de dwergen de indeling van de ruïnes. Ze merken op dat er nog één kamer is waar ze nog niet geweest zijn. Deze kamer is vaak het beste beveiligd en bevat de grootste schatten. De gang naar deze kamer is echter ingestort, en de dwergen schatten in dat het zo'n 40 uur duurt voor één persoon om de gang uit te graven. De groep avonturiers besluit het werk te verdelen, en laat twee leden de wacht staan terwijl de rest helpt met graven.
+
+De zes uren dat gegraven moet worden gaan niet zonder problemen voorbij. Orcs die door de draak weg zijn gedreven vallen de ruïnes binnen om een nieuwe woonplaats te vinden en zullen vechten tot de dood. De avonturiers hebben het tactische voordeel, en verslaan de binnenvallende Orcs vakkundig.
+
+Na een aantal uren te hebben gegraven worden de schilddwergen wat geniepig, en beginnen Dwergs tegen elkaar te praten. De groep vertrouwd dit niet en confronteert de dwergen. Het blijkt dat de dwergen een plan aan het smeden waren waardoor ze zelf de laatste schatten konden plunderen en de groep dus zouden verraden. Een ruzie barst uit en de dwergen worden op hun plek gezet. Norbus overlijd, en Dazlyn wordt bewusteloos geslagen. Terwijl dit gebeurt vallen er opnieuw Orcs binnen. Zonder de hulp van de rest van de groep zullen de twee avonturiers die te wacht staan met deze Orcs moeten dealen. Dit zorgt ervoor dat ze strategischer gaan nadenken in plaats van dat ze afhankelijk zijn van pure kracht. Het lukt ze bijna om de groep van 5 Orcs volledig met zijn tweeën te verslaan, maar op het einde wordt het spannend. Gelukkig komt de rest van de groep op data moment aanrennen om ze te helpen.
 
 ---
 
