@@ -20,30 +20,45 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                     <span class="icon genderfluid"></span>
                     <span class="icon dead"></span>
                 </div>
-                <h2>Adonis</h2>
-                <p>
-                    Verhaaltje over Adonis. Dit verhaaltje kan meerdere regels lang zijn (ik weet nog niet hoe lang ik het wil hebben), dus ik schrijf hier lekker veel tekst op in de hoop dat er meerdere regels gebruikt worden. Zo kan ik goed zien of wat gewenst is ook echt getoond wordt.
-                </p>
+                <div class="text-summary">
+                    <h2>Adonis</h2>
+                    <p>
+                        Verhaaltje over Adonis. Dit verhaaltje kan meerdere regels lang zijn (ik weet nog niet hoe lang ik het wil hebben), dus ik schrijf hier lekker veel tekst op in de hoop dat er meerdere regels gebruikt worden. Zo kan ik goed zien of wat gewenst is ook echt getoond wordt.
+                    </p>
+                </div>
             </div>
         </a>
     </li>
     <li>
         <a href="../characters/Albert-Tweesteen">
             <div class="character-summary-wrapper">
-                <h2>Albert Tweesteen</h2>
-                <p>
-                    Verhaaltje over Albert Tweesteen. Dit verhaaltje kan meerdere regels lang zijn (ik weet nog niet hoe lang ik het wil hebben), dus ik schrijf hier lekker veel tekst op in de hoop dat er meerdere regels gebruikt worden. Zo kan ik goed zien of wat gewenst is ook echt getoond wordt.
-                </p>
+                <div class="text-summary">
+                    <h2>Albert Tweesteen</h2>
+                    <p>
+                    </p>
+                </div>
             </div>
         </a>
     </li>
     <li>
         <a href="../characters/Amy-Aria">
             <div class="character-summary-wrapper">
-                <h2>Amy Aria</h2>
-                <p>
-                    Verhaaltje over Amy Aria. Dit verhaaltje kan meerdere regels lang zijn (ik weet nog niet hoe lang ik het wil hebben), dus ik schrijf hier lekker veel tekst op in de hoop dat er meerdere regels gebruikt worden. Zo kan ik goed zien of wat gewenst is ook echt getoond wordt.
-                </p>
+                <div class="text-summary">
+                    <h2>Amy Aria</h2>
+                    <p>
+                    </p>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Gareth-Bloodwood">
+            <div class="character-summary-wrapper">
+                <div class="text-summary">
+                    <h2>Gareth Bloodwood</h2>
+                    <p>
+                    </p>
+                </div>
             </div>
         </a>  
     </li>
@@ -53,7 +68,6 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
 * [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
 * [Barnaby Kraai]({{ site.baseurl }}{% link characters/Barnaby-Kraai.md %})
 * [Dazlyn Grayshard]({{ site.baseurl }}{% link characters/Dazlyn-Grayshard.md %})
-* [Gareth Bloodwood]({{ site.baseurl }}{% link characters/Gareth-Bloodwood.md %})
 * [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
 * [Grog Steenvuist]({{ site.baseurl }}{% link characters/Grog-Steenvuist.md %})
 * [Halia Thornton]({{ site.baseurl }}{% link characters/Halia-Thornton.md %})
