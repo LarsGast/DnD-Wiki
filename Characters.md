@@ -10,15 +10,10 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
     <li>
         <a href="../characters/Adonis">
             <div class="character-summary-wrapper">
+                <h2>Adonis</h2>
                 <div class="character-icons">
                     <span class="icon player"></span>
                     <span class="icon male"></span>
-                </div>
-                <div class="text-summary">
-                    <h2>Adonis</h2>
-                    <p>
-                        Verhaaltje over Adonis. Dit verhaaltje kan meerdere regels lang zijn (ik weet nog niet hoe lang ik het wil hebben), dus ik schrijf hier lekker veel tekst op in de hoop dat er meerdere regels gebruikt worden. Zo kan ik goed zien of wat gewenst is ook echt getoond wordt.
-                    </p>
                 </div>
             </div>
         </a>
@@ -26,16 +21,12 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
     <li>
         <a href="../characters/Albert-Tweesteen">
             <div class="character-summary-wrapper">
+                <h2>Albert Tweesteen</h2>
                 <div class="character-icons">
                     <span class="icon key"></span>
                     <span class="icon quest"></span>
                     <span class="icon with-party"></span>
                     <span class="icon male"></span>
-                </div>
-                <div class="text-summary">
-                    <h2>Albert Tweesteen</h2>
-                    <p>
-                    </p>
                 </div>
             </div>
         </a>
@@ -43,13 +34,9 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
     <li>
         <a href="../characters/Amy-Aria">
             <div class="character-summary-wrapper">
+                <h2>Amy Aria</h2>
                 <div class="character-icons">
                     <span class="icon female"></span>
-                </div>
-                <div class="text-summary">
-                    <h2>Amy Aria</h2>
-                    <p>
-                    </p>
                 </div>
             </div>
         </a>  
@@ -57,15 +44,11 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
     <li>
         <a href="../characters/Arikikuchiariku">
             <div class="character-summary-wrapper">
+                <h2>Arikikuchiariku</h2>
                 <div class="character-icons">
                     <span class="icon player"></span>
                     <span class="icon with-party"></span>
                     <span class="icon male"></span>
-                </div>
-                <div class="text-summary">
-                    <h2>Arikikuchiariku</h2>
-                    <p>
-                    </p>
                 </div>
             </div>
         </a>  
@@ -73,14 +56,10 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
     <li>
         <a href="../characters/Ash-Dragonblade">
             <div class="character-summary-wrapper">
+                <h2>Ash Dragonblade</h2>
                 <div class="character-icons">
                     <span class="icon quest"></span>
                     <span class="icon male"></span>
-                </div>
-                <div class="text-summary">
-                    <h2>Ash Dragonblade</h2>
-                    <p>
-                    </p>
                 </div>
             </div>
         </a>  
@@ -88,14 +67,10 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
     <li>
         <a href="../characters/Azura-Zingzwaard">
             <div class="character-summary-wrapper">
+                <h2>Azura Zingzwaard</h2>
                 <div class="character-icons">
                     <span class="icon quest"></span>
                     <span class="icon female"></span>
-                </div>
-                <div class="text-summary">
-                    <h2>Azura Zingzwaard</h2>
-                    <p>
-                    </p>
                 </div>
             </div>
         </a>  
@@ -103,14 +78,10 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
     <li>
         <a href="../characters/Barnaby-Kraai">
             <div class="character-summary-wrapper">
+                <h2>Barnaby Kraai</h2>
                 <div class="character-icons">
                     <span class="icon quest"></span>
                     <span class="icon male"></span>
-                </div>
-                <div class="text-summary">
-                    <h2>Barnaby Kraai</h2>
-                    <p>
-                    </p>
                 </div>
             </div>
         </a>  
@@ -118,15 +89,11 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
     <li>
         <a href="../characters/Character-Name">
             <div class="character-summary-wrapper">
+                <h2>Dazlyn Grayshard</h2>
                 <div class="character-icons">
                     <span class="icon quest"></span>
                     <span class="icon with-party"></span>
                     <span class="icon male"></span>
-                </div>
-                <div class="text-summary">
-                    <h2>Dazlyn Grayshard</h2>
-                    <p>
-                    </p>
                 </div>
             </div>
         </a>  
@@ -134,15 +101,11 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
     <li>
         <a href="../characters/Gareth-Bloodwood">
             <div class="character-summary-wrapper">
+                <h2>Gareth Bloodwood</h2>
                 <div class="character-icons">
                     <span class="icon quest"></span>
                     <span class="icon male"></span>
                     <span class="icon dead"></span>
-                </div>
-                <div class="text-summary">
-                    <h2>Gareth Bloodwood</h2>
-                    <p>
-                    </p>
                 </div>
             </div>
         </a>  
@@ -150,6 +113,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
     <li>
         <a href="../characters/Character-Name">
             <div class="character-summary-wrapper">
+                <h2>Name</h2>
                 <div class="character-icons">
                     <span class="icon player"></span>
                     <span class="icon key"></span>
@@ -161,17 +125,10 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                     <span class="icon genderfluid"></span>
                     <span class="icon dead"></span>
                 </div>
-                <div class="text-summary">
-                    <h2>Name</h2>
-                    <p>
-                        Description
-                    </p>
-                </div>
             </div>
         </a>  
     </li>
 </ul>
-* [Dazlyn Grayshard]({{ site.baseurl }}{% link characters/Dazlyn-Grayshard.md %})
 * [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
 * [Grog Steenvuist]({{ site.baseurl }}{% link characters/Grog-Steenvuist.md %})
 * [Halia Thornton]({{ site.baseurl }}{% link characters/Halia-Thornton.md %})
