@@ -11,6 +11,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
         <a href="../characters/Adonis">
             <div class="character-summary-wrapper">
                 <div class="character-icons">
+                    <span class="icon player"></span>
                     <span class="icon key"></span>
                     <span class="icon quest"></span>
                     <span class="icon with-party"></span>
