@@ -10,6 +10,16 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
     <li>
         <a href="../characters/Adonis">
             <div class="character-summary-wrapper">
+                <div class="character-icons">
+                    <span class="icon key"></span>
+                    <span class="icon quest"></span>
+                    <span class="icon with-party"></span>
+                    <span class="icon male"></span>
+                    <span class="icon female"></span>
+                    <span class="icon non-binary"></span>
+                    <span class="icon genderfluid"></span>
+                    <span class="icon dead"></span>
+                </div>
                 <h2>Adonis</h2>
                 <p>
                     Verhaaltje over Adonis. Dit verhaaltje kan meerdere regels lang zijn (ik weet nog niet hoe lang ik het wil hebben), dus ik schrijf hier lekker veel tekst op in de hoop dat er meerdere regels gebruikt worden. Zo kan ik goed zien of wat gewenst is ook echt getoond wordt.
