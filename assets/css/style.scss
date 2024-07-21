@@ -3,3 +3,50 @@
 
 @import "{{ site.theme }}";
 
+* {
+    // border: 1px solid red !important;
+}
+
+.no-style-list {
+    list-style-type: none; /* Remove bullets */
+    margin: 0;
+}
+
+.no-style-link-group {
+    a {
+        display: block;
+        height: 100%;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.character-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 10px;
+
+    li {
+        border: 1px solid black;
+        box-shadow: 5px 5px;
+        border-radius: 10px;
+        transition: transform 0.2s;
+        
+        .character-summary-wrapper {
+            padding: 10px;
+
+            h2 {
+                font-size: 16px;
+                font-weight: bold;
+            }
+        
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    li:hover {
+        transform: translateY(-10px)
+    }
+}
