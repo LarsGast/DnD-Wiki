@@ -28,6 +28,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                     <span class="icon quest"></span>
                     <span class="icon with-party"></span>
                     <span class="icon male"></span>
+                    <span class="icon friendly"></span>
                 </div>
             </div>
         </a>
@@ -38,6 +39,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                 <h2>Amy Aria</h2>
                 <div class="character-icons">
                     <span class="icon female"></span>
+                    <span class="icon indifferent"></span>
                 </div>
             </div>
         </a>  
@@ -61,6 +63,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                 <div class="character-icons">
                     <span class="icon quest"></span>
                     <span class="icon male"></span>
+                    <span class="icon indifferent"></span>
                 </div>
             </div>
         </a>  
@@ -73,6 +76,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                     <span class="icon key"></span>
                     <span class="icon quest"></span>
                     <span class="icon female"></span>
+                    <span class="icon friendly"></span>
                 </div>
             </div>
         </a>  
@@ -84,18 +88,20 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                 <div class="character-icons">
                     <span class="icon quest"></span>
                     <span class="icon male"></span>
+                    <span class="icon indifferent"></span>
                 </div>
             </div>
         </a>  
     </li>
     <li>
-        <a href="../characters/Character-Name">
+        <a href="../characters/Dazlyn-Grayshard">
             <div class="character-summary-wrapper">
                 <h2>Dazlyn Grayshard</h2>
                 <div class="character-icons">
                     <span class="icon quest"></span>
                     <span class="icon with-party"></span>
                     <span class="icon male"></span>
+                    <span class="icon indifferent"></span>
                 </div>
             </div>
         </a>  
@@ -119,6 +125,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                 <div class="character-icons">
                     <span class="icon quest"></span>
                     <span class="icon male"></span>
+                    <span class="icon indifferent"></span>
                 </div>
             </div>
         </a>  
@@ -131,6 +138,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                     <span class="icon player"></span>
                     <span class="icon quest"></span>
                     <span class="icon male"></span>
+                    <span class="icon indifferent"></span>
                 </div>
             </div>
         </a>  
@@ -141,6 +149,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                 <h2>Halia Thornton</h2>
                 <div class="character-icons">
                     <span class="icon female"></span>
+                    <span class="icon indifferent"></span>
                 </div>
             </div>
         </a>  
@@ -153,6 +162,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                     <span class="icon key"></span>
                     <span class="icon quest"></span>
                     <span class="icon male"></span>
+                    <span class="icon indifferent"></span>
                 </div>
             </div>
         </a>  
@@ -163,6 +173,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                 <h2>Hugo Staalzwaard</h2>
                 <div class="character-icons">
                     <span class="icon male"></span>
+                    <span class="icon friendly"></span>
                 </div>
             </div>
         </a>  
@@ -175,6 +186,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                     <span class="icon key"></span>
                     <span class="icon quest"></span>
                     <span class="icon male"></span>
+                    <span class="icon friendly"></span>
                 </div>
             </div>
         </a>  
@@ -187,6 +199,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                     <span class="icon player"></span>
                     <span class="icon quest"></span>
                     <span class="icon female"></span>
+                    <span class="icon indifferent"></span>
                 </div>
             </div>
         </a>  
@@ -198,6 +211,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                 <div class="character-icons">
                     <span class="icon quest"></span>
                     <span class="icon non-binary"></span>
+                    <span class="icon indifferent"></span>
                 </div>
             </div>
         </a>  
@@ -211,6 +225,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                     <span class="icon quest"></span>
                     <span class="icon with-party"></span>
                     <span class="icon male"></span>
+                    <span class="icon friendly"></span>
                 </div>
             </div>
         </a>  
@@ -283,6 +298,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                     <span class="icon quest"></span>
                     <span class="icon with-party"></span>
                     <span class="icon male"></span>
+                    <span class="icon indifferent"></span>
                 </div>
             </div>
         </a>  
@@ -306,6 +322,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                 <div class="character-icons">
                     <span class="icon quest"></span>
                     <span class="icon female"></span>
+                    <span class="icon friendly"></span>
                 </div>
             </div>
         </a>  
@@ -331,6 +348,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                     <span class="icon quest"></span>
                     <span class="icon with-party"></span>
                     <span class="icon genderfluid"></span>
+                    <span class="icon friendly"></span>
                 </div>
             </div>
         </a>  
@@ -341,11 +359,12 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                 <h2>Yulgar Lark</h2>
                 <div class="character-icons">
                     <span class="icon male"></span>
+                    <span class="icon indifferent"></span>
                 </div>
             </div>
         </a>  
     </li>
-    <li>
+    <li hidden>
         <a href="../characters/Character-Name">
             <div class="character-summary-wrapper">
                 <h2>Name</h2>
@@ -358,6 +377,9 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                     <span class="icon female"></span>
                     <span class="icon non-binary"></span>
                     <span class="icon genderfluid"></span>
+                    <span class="icon friendly"></span>
+                    <span class="icon indifferent"></span>
+                    <span class="icon hostile"></span>
                     <span class="icon dead"></span>
                 </div>
             </div>
