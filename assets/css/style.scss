@@ -111,4 +111,8 @@
     &.dead::before {
         content: "\f54c";
     }
+
+    &.shop::before {
+        content: "\f54e";
+    }
 }

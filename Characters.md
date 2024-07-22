@@ -38,6 +38,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
             <div class="character-summary-wrapper">
                 <h2>Amy Aria</h2>
                 <div class="character-icons">
+                    <span class="icon shop"></span>
                     <span class="icon female"></span>
                     <span class="icon indifferent"></span>
                 </div>
@@ -148,6 +149,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
             <div class="character-summary-wrapper">
                 <h2>Halia Thornton</h2>
                 <div class="character-icons">
+                    <span class="icon shop"></span>
                     <span class="icon female"></span>
                     <span class="icon indifferent"></span>
                 </div>
@@ -183,7 +185,6 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
             <div class="character-summary-wrapper">
                 <h2>Hugo Zingzwaard</h2>
                 <div class="character-icons">
-                    <span class="icon key"></span>
                     <span class="icon quest"></span>
                     <span class="icon male"></span>
                     <span class="icon friendly"></span>
@@ -358,13 +359,14 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
             <div class="character-summary-wrapper">
                 <h2>Yulgar Lark</h2>
                 <div class="character-icons">
+                    <span class="icon shop"></span>
                     <span class="icon male"></span>
                     <span class="icon indifferent"></span>
                 </div>
             </div>
         </a>  
     </li>
-    <li hidden>
+    <li>
         <a href="../characters/Character-Name">
             <div class="character-summary-wrapper">
                 <h2>Name</h2>
@@ -373,6 +375,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                     <span class="icon key"></span>
                     <span class="icon quest"></span>
                     <span class="icon with-party"></span>
+                    <span class="icon shop"></span>
                     <span class="icon male"></span>
                     <span class="icon female"></span>
                     <span class="icon non-binary"></span>
