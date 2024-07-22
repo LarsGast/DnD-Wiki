@@ -12,8 +12,8 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Adonis</h2>
                 <div class="character-icons">
-                    <span class="icon player"></span>
-                    <span class="icon male"></span>
+                    <span class="icon player" title="Speler"></span>
+                    <span class="icon male" title="Man"></span>
                 </div>
             </div>
         </a>
@@ -23,10 +23,10 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Albert Tweesteen</h2>
                 <div class="character-icons">
-                    <span class="icon quest"></span>
-                    <span class="icon with-party"></span>
-                    <span class="icon male"></span>
-                    <span class="icon friendly"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon with-party" title="Bij de groep"></span>
+                    <span class="icon male" title="Man"></span>
+                    <span class="icon friendly" title="Vriendelijk"></span>
                 </div>
             </div>
         </a>
@@ -36,9 +36,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Amy Aria</h2>
                 <div class="character-icons">
-                    <span class="icon shop"></span>
-                    <span class="icon female"></span>
-                    <span class="icon indifferent"></span>
+                    <span class="icon shop" title="Heeft een winkel"></span>
+                    <span class="icon female" title="Vrouw"></span>
+                    <span class="icon indifferent" title="Onverschillig"></span>
                 </div>
             </div>
         </a>  
@@ -48,9 +48,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Arikikuchiariku</h2>
                 <div class="character-icons">
-                    <span class="icon player"></span>
-                    <span class="icon with-party"></span>
-                    <span class="icon male"></span>
+                    <span class="icon player" title="Speler"></span>
+                    <span class="icon with-party" title="Bij de groep"></span>
+                    <span class="icon male" title="Man"></span>
                 </div>
             </div>
         </a>  
@@ -60,9 +60,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Ash Dragonblade</h2>
                 <div class="character-icons">
-                    <span class="icon quest"></span>
-                    <span class="icon male"></span>
-                    <span class="icon indifferent"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon male" title="Man"></span>
+                    <span class="icon indifferent" title="Onverschillig"></span>
                 </div>
             </div>
         </a>  
@@ -72,9 +72,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Azura Zingzwaard</h2>
                 <div class="character-icons">
-                    <span class="icon quest"></span>
-                    <span class="icon female"></span>
-                    <span class="icon friendly"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon female" title="Vrouw"></span>
+                    <span class="icon friendly" title="Vriendelijk"></span>
                 </div>
             </div>
         </a>  
@@ -84,9 +84,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Barnaby Kraai</h2>
                 <div class="character-icons">
-                    <span class="icon quest"></span>
-                    <span class="icon male"></span>
-                    <span class="icon indifferent"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon male" title="Man"></span>
+                    <span class="icon indifferent" title="Onverschillig"></span>
                 </div>
             </div>
         </a>  
@@ -96,10 +96,10 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Dazlyn Grayshard</h2>
                 <div class="character-icons">
-                    <span class="icon quest"></span>
-                    <span class="icon with-party"></span>
-                    <span class="icon male"></span>
-                    <span class="icon indifferent"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon with-party" title="Bij de groep"></span>
+                    <span class="icon male" title="Man"></span>
+                    <span class="icon indifferent" title="Onverschillig"></span>
                 </div>
             </div>
         </a>  
@@ -109,9 +109,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Gareth Bloodwood</h2>
                 <div class="character-icons">
-                    <span class="icon quest"></span>
-                    <span class="icon male"></span>
-                    <span class="icon dead"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon male" title="Man"></span>
+                    <span class="icon dead" title="Dood"></span>
                 </div>
             </div>
         </a>  
@@ -121,9 +121,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Gaston de Kok</h2>
                 <div class="character-icons">
-                    <span class="icon quest"></span>
-                    <span class="icon male"></span>
-                    <span class="icon indifferent"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon male" title="Man"></span>
+                    <span class="icon indifferent" title="Onverschillig"></span>
                 </div>
             </div>
         </a>  
@@ -133,10 +133,10 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Grog Steenvuist</h2>
                 <div class="character-icons">
-                    <span class="icon player"></span>
-                    <span class="icon quest"></span>
-                    <span class="icon male"></span>
-                    <span class="icon indifferent"></span>
+                    <span class="icon player" title="Speler"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon male" title="Man"></span>
+                    <span class="icon indifferent" title="Onverschillig"></span>
                 </div>
             </div>
         </a>  
@@ -146,9 +146,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Halia Thornton</h2>
                 <div class="character-icons">
-                    <span class="icon shop"></span>
-                    <span class="icon female"></span>
-                    <span class="icon indifferent"></span>
+                    <span class="icon shop" title="Heeft een winkel"></span>
+                    <span class="icon female" title="Vrouw"></span>
+                    <span class="icon indifferent" title="Onverschillig"></span>
                 </div>
             </div>
         </a>  
@@ -158,9 +158,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Harbin Wester</h2>
                 <div class="character-icons">
-                    <span class="icon quest"></span>
-                    <span class="icon male"></span>
-                    <span class="icon indifferent"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon male" title="Man"></span>
+                    <span class="icon indifferent" title="Onverschillig"></span>
                 </div>
             </div>
         </a>  
@@ -170,9 +170,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Hugo Staalzwaard</h2>
                 <div class="character-icons">
-                    <span class="icon tavern"></span>
-                    <span class="icon male"></span>
-                    <span class="icon friendly"></span>
+                    <span class="icon tavern" title="Heeft een herberg"></span>
+                    <span class="icon male" title="Man"></span>
+                    <span class="icon friendly" title="Vriendelijk"></span>
                 </div>
             </div>
         </a>  
@@ -182,10 +182,10 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Hugo Zingzwaard</h2>
                 <div class="character-icons">
-                    <span class="icon quest"></span>
-                    <span class="icon tavern"></span>
-                    <span class="icon male"></span>
-                    <span class="icon friendly"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon tavern" title="Heeft een herberg"></span>
+                    <span class="icon male" title="Man"></span>
+                    <span class="icon friendly" title="Vriendelijk"></span>
                 </div>
             </div>
         </a>  
@@ -195,10 +195,10 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Isabella Swift</h2>
                 <div class="character-icons">
-                    <span class="icon player"></span>
-                    <span class="icon quest"></span>
-                    <span class="icon female"></span>
-                    <span class="icon indifferent"></span>
+                    <span class="icon player" title="Speler"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon female" title="Vrouw"></span>
+                    <span class="icon indifferent" title="Onverschillig"></span>
                 </div>
             </div>
         </a>  
@@ -208,9 +208,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Kaelen Schaduwholster</h2>
                 <div class="character-icons">
-                    <span class="icon quest"></span>
-                    <span class="icon non-binary"></span>
-                    <span class="icon indifferent"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon non-binary" title="Non-binair"></span>
+                    <span class="icon indifferent" title="Onverschillig"></span>
                 </div>
             </div>
         </a>  
@@ -220,10 +220,10 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Kapitein Groenbaard</h2>
                 <div class="character-icons">
-                    <span class="icon quest"></span>
-                    <span class="icon with-party"></span>
-                    <span class="icon male"></span>
-                    <span class="icon friendly"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon with-party" title="Bij de groep"></span>
+                    <span class="icon male" title="Man"></span>
+                    <span class="icon friendly" title="Vriendelijk"></span>
                 </div>
             </div>
         </a>  
@@ -233,9 +233,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Koning Splurt</h2>
                 <div class="character-icons">
-                    <span class="icon quest"></span>
-                    <span class="icon male"></span>
-                    <span class="icon dead"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon male" title="Man"></span>
+                    <span class="icon dead" title="Dood"></span>
                 </div>
             </div>
         </a>  
@@ -245,9 +245,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Kosharakar Coemeydus</h2>
                 <div class="character-icons">
-                    <span class="icon player"></span>
-                    <span class="icon quest"></span>
-                    <span class="icon male"></span>
+                    <span class="icon player" title="Speler"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon male" title="Man"></span>
                 </div>
             </div>
         </a>  
@@ -257,9 +257,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Laranlor Cormearil</h2>
                 <div class="character-icons">
-                    <span class="icon player"></span>
-                    <span class="icon with-party"></span>
-                    <span class="icon male"></span>
+                    <span class="icon player" title="Speler"></span>
+                    <span class="icon with-party" title="Bij de groep"></span>
+                    <span class="icon male" title="Man"></span>
                 </div>
             </div>
         </a>  
@@ -269,9 +269,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Lushikukukanda</h2>
                 <div class="character-icons">
-                    <span class="icon player"></span>
-                    <span class="icon with-party"></span>
-                    <span class="icon male"></span>
+                    <span class="icon player" title="Speler"></span>
+                    <span class="icon with-party" title="Bij de groep"></span>
+                    <span class="icon male" title="Man"></span>
                 </div>
             </div>
         </a>  
@@ -281,9 +281,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Nettie Bettie</h2>
                 <div class="character-icons">
-                    <span class="icon quest"></span>
-                    <span class="icon female"></span>
-                    <span class="icon dead"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon female" title="Vrouw"></span>
+                    <span class="icon dead" title="Dood"></span>
                 </div>
             </div>
         </a>  
@@ -293,10 +293,10 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Norbus Ironrune</h2>
                 <div class="character-icons">
-                    <span class="icon quest"></span>
-                    <span class="icon with-party"></span>
-                    <span class="icon male"></span>
-                    <span class="icon indifferent"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon with-party" title="Bij de groep"></span>
+                    <span class="icon male" title="Man"></span>
+                    <span class="icon indifferent" title="Onverschillig"></span>
                 </div>
             </div>
         </a>  
@@ -306,9 +306,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>P.E.K.K.A.</h2>
                 <div class="character-icons">
-                    <span class="icon player"></span>
-                    <span class="icon with-party"></span>
-                    <span class="icon male"></span>
+                    <span class="icon player" title="Speler"></span>
+                    <span class="icon with-party" title="Bij de groep"></span>
+                    <span class="icon male" title="Man"></span>
                 </div>
             </div>
         </a>  
@@ -318,9 +318,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Robina the Hood</h2>
                 <div class="character-icons">
-                    <span class="icon quest"></span>
-                    <span class="icon female"></span>
-                    <span class="icon friendly"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon female" title="Vrouw"></span>
+                    <span class="icon friendly" title="Vriendelijk"></span>
                 </div>
             </div>
         </a>  
@@ -330,9 +330,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Theodas</h2>
                 <div class="character-icons">
-                    <span class="icon player"></span>
-                    <span class="icon with-party"></span>
-                    <span class="icon male"></span>
+                    <span class="icon player" title="Speler"></span>
+                    <span class="icon with-party" title="Bij de groep"></span>
+                    <span class="icon male" title="Man"></span>
                 </div>
             </div>
         </a>  
@@ -342,10 +342,10 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Twilly</h2>
                 <div class="character-icons">
-                    <span class="icon quest"></span>
-                    <span class="icon with-party"></span>
-                    <span class="icon genderfluid"></span>
-                    <span class="icon friendly"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon with-party" title="Bij de groep"></span>
+                    <span class="icon genderfluid" title="Genderfluid"></span>
+                    <span class="icon friendly" title="Vriendelijk"></span>
                 </div>
             </div>
         </a>  
@@ -355,9 +355,9 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Yulgar Lark</h2>
                 <div class="character-icons">
-                    <span class="icon shop"></span>
-                    <span class="icon male"></span>
-                    <span class="icon indifferent"></span>
+                    <span class="icon shop" title="Heeft een winkel"></span>
+                    <span class="icon male" title="Man"></span>
+                    <span class="icon indifferent" title="Onverschillig"></span>
                 </div>
             </div>
         </a>  
@@ -367,19 +367,19 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             <div class="character-summary-wrapper">
                 <h2>Name</h2>
                 <div class="character-icons">
-                    <span class="icon player"></span>
-                    <span class="icon quest"></span>
-                    <span class="icon shop"></span>
-                    <span class="icon tavern"></span>
-                    <span class="icon with-party"></span>
-                    <span class="icon male"></span>
-                    <span class="icon female"></span>
-                    <span class="icon non-binary"></span>
-                    <span class="icon genderfluid"></span>
-                    <span class="icon friendly"></span>
-                    <span class="icon indifferent"></span>
-                    <span class="icon hostile"></span>
-                    <span class="icon dead"></span>
+                    <span class="icon player" title="Speler"></span>
+                    <span class="icon quest" title="Komt voor in quest"></span>
+                    <span class="icon shop" title="Heeft een winkel"></span>
+                    <span class="icon tavern" title="Heeft een herberg"></span>
+                    <span class="icon with-party" title="Bij de groep"></span>
+                    <span class="icon male" title="Man"></span>
+                    <span class="icon female" title="Vrouw"></span>
+                    <span class="icon non-binary" title="Non-binair"></span>
+                    <span class="icon genderfluid" title="Genderfluid"></span>
+                    <span class="icon friendly" title="Vriendelijk"></span>
+                    <span class="icon indifferent" title="Onverschillig"></span>
+                    <span class="icon hostile" title="Vijandig"></span>
+                    <span class="icon dead" title="Dood"></span>
                 </div>
             </div>
         </a>  
