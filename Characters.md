@@ -13,7 +13,6 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                 <h2>Adonis</h2>
                 <div class="character-icons">
                     <span class="icon player"></span>
-                    <span class="icon quest"></span>
                     <span class="icon male"></span>
                 </div>
             </div>
@@ -368,8 +367,8 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                 <div class="character-icons">
                     <span class="icon player"></span>
                     <span class="icon quest"></span>
-                    <span class="icon with-party"></span>
                     <span class="icon shop"></span>
+                    <span class="icon with-party"></span>
                     <span class="icon male"></span>
                     <span class="icon female"></span>
                     <span class="icon non-binary"></span>

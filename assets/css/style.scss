@@ -68,6 +68,10 @@
     &.quest::before {
         content: "\f70e";
     }
+
+    &.shop::before {
+        content: "\f54e";
+    }
     
     &.with-party::before {
         content: "\f6bb"; 
@@ -106,9 +110,5 @@
     
     &.dead::before {
         content: "\f54c";
-    }
-
-    &.shop::before {
-        content: "\f54e";
     }
 }
