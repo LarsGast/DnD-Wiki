@@ -24,7 +24,6 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
             <div class="character-summary-wrapper">
                 <h2>Albert Tweesteen</h2>
                 <div class="character-icons">
-                    <span class="icon key"></span>
                     <span class="icon quest"></span>
                     <span class="icon with-party"></span>
                     <span class="icon male"></span>
@@ -74,7 +73,6 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
             <div class="character-summary-wrapper">
                 <h2>Azura Zingzwaard</h2>
                 <div class="character-icons">
-                    <span class="icon key"></span>
                     <span class="icon quest"></span>
                     <span class="icon female"></span>
                     <span class="icon friendly"></span>
@@ -161,7 +159,6 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
             <div class="character-summary-wrapper">
                 <h2>Harbin Wester</h2>
                 <div class="character-icons">
-                    <span class="icon key"></span>
                     <span class="icon quest"></span>
                     <span class="icon male"></span>
                     <span class="icon indifferent"></span>
@@ -222,7 +219,6 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
             <div class="character-summary-wrapper">
                 <h2>Kapitein Groenbaard</h2>
                 <div class="character-icons">
-                    <span class="icon key"></span>
                     <span class="icon quest"></span>
                     <span class="icon with-party"></span>
                     <span class="icon male"></span>
@@ -345,7 +341,6 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
             <div class="character-summary-wrapper">
                 <h2>Twilly</h2>
                 <div class="character-icons">
-                    <span class="icon key"></span>
                     <span class="icon quest"></span>
                     <span class="icon with-party"></span>
                     <span class="icon genderfluid"></span>
@@ -372,7 +367,6 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                 <h2>Name</h2>
                 <div class="character-icons">
                     <span class="icon player"></span>
-                    <span class="icon key"></span>
                     <span class="icon quest"></span>
                     <span class="icon with-party"></span>
                     <span class="icon shop"></span>
