@@ -72,6 +72,10 @@
     &.shop::before {
         content: "\f54e";
     }
+
+    &.tavern::before {
+        content: "\f7b6";
+    }
     
     &.with-party::before {
         content: "\f6bb"; 
