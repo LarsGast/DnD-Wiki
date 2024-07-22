@@ -3,12 +3,13 @@
 
 @import "{{ site.theme }}";
 
+/* DEBUG MODE */
 * {
     // border: 1px solid red !important;
 }
 
 .no-style-list {
-    list-style-type: none; /* Remove bullets */
+    list-style-type: none;
     margin: 0;
 }
 
@@ -21,12 +22,14 @@
     }
 }
 
+/* For the list of characters on the Characters page */
 .character-list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px 10px;
 
     > li {
+        /* Make the boxes pretty */
         border: 1px solid black;
         box-shadow: 5px 5px;
         border-radius: 10px;
@@ -37,6 +40,7 @@
             transform: translateY(-10px)
         }
         
+        /* Make the content of the boxes pretty */
         .character-summary-wrapper {
             padding: 10px;
             display: flex;
@@ -57,10 +61,13 @@
     }
 }
 
+/* Character Icons */
 .icon {
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
 
+    /* Each icon has its own Unicode */
+    
     &.player::before {
         content: "\f007";
     }

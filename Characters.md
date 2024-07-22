@@ -362,6 +362,7 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
             </div>
         </a>  
     </li>
+    <!-- Hidden list item for easy access to icons -->
     <li hidden>
         <a href="../characters/Character-Name">
             <div class="character-summary-wrapper">
