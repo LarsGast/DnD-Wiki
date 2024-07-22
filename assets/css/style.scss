@@ -30,8 +30,12 @@
         border: 1px solid black;
         box-shadow: 5px 5px;
         border-radius: 10px;
-        transition: transform 0.2s;
         width: 238px;
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: translateY(-10px)
+        }
         
         .character-summary-wrapper {
             padding: 10px;
@@ -49,10 +53,6 @@
                 margin: 0;
             }
         }
-    }
-
-    > li:hover {
-        transform: translateY(-10px)
     }
 }
 

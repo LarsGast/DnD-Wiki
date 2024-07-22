@@ -13,6 +13,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
                 <h2>Adonis</h2>
                 <div class="character-icons">
                     <span class="icon player"></span>
+                    <span class="icon quest"></span>
                     <span class="icon male"></span>
                 </div>
             </div>
@@ -69,6 +70,7 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
             <div class="character-summary-wrapper">
                 <h2>Azura Zingzwaard</h2>
                 <div class="character-icons">
+                    <span class="icon key"></span>
                     <span class="icon quest"></span>
                     <span class="icon female"></span>
                 </div>
@@ -111,6 +113,239 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
         </a>  
     </li>
     <li>
+        <a href="../characters/Gaston-de-Kok">
+            <div class="character-summary-wrapper">
+                <h2>Gaston de Kok</h2>
+                <div class="character-icons">
+                    <span class="icon quest"></span>
+                    <span class="icon male"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Grog-Steenvuist">
+            <div class="character-summary-wrapper">
+                <h2>Grog Steenvuist</h2>
+                <div class="character-icons">
+                    <span class="icon player"></span>
+                    <span class="icon quest"></span>
+                    <span class="icon male"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Halia-Thornton">
+            <div class="character-summary-wrapper">
+                <h2>Halia Thornton</h2>
+                <div class="character-icons">
+                    <span class="icon female"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Harbin-Wester">
+            <div class="character-summary-wrapper">
+                <h2>Harbin Wester</h2>
+                <div class="character-icons">
+                    <span class="icon key"></span>
+                    <span class="icon quest"></span>
+                    <span class="icon male"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Hugo-Staalzwaard">
+            <div class="character-summary-wrapper">
+                <h2>Hugo Staalzwaard</h2>
+                <div class="character-icons">
+                    <span class="icon male"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Hugo-Zingzwaard">
+            <div class="character-summary-wrapper">
+                <h2>Hugo Zingzwaard</h2>
+                <div class="character-icons">
+                    <span class="icon key"></span>
+                    <span class="icon quest"></span>
+                    <span class="icon male"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Isabella-Swift">
+            <div class="character-summary-wrapper">
+                <h2>Isabella Swift</h2>
+                <div class="character-icons">
+                    <span class="icon player"></span>
+                    <span class="icon quest"></span>
+                    <span class="icon female"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Kaelen-Schaduwholster">
+            <div class="character-summary-wrapper">
+                <h2>Kaelen Schaduwholster</h2>
+                <div class="character-icons">
+                    <span class="icon quest"></span>
+                    <span class="icon non-binary"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Kapitein-Groenbaard">
+            <div class="character-summary-wrapper">
+                <h2>Kapitein Groenbaard</h2>
+                <div class="character-icons">
+                    <span class="icon key"></span>
+                    <span class="icon quest"></span>
+                    <span class="icon with-party"></span>
+                    <span class="icon male"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Koning-Splurt">
+            <div class="character-summary-wrapper">
+                <h2>Koning Splurt</h2>
+                <div class="character-icons">
+                    <span class="icon quest"></span>
+                    <span class="icon male"></span>
+                    <span class="icon dead"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Kosharakar-Coemeydus">
+            <div class="character-summary-wrapper">
+                <h2>Kosharakar Coemeydus</h2>
+                <div class="character-icons">
+                    <span class="icon player"></span>
+                    <span class="icon quest"></span>
+                    <span class="icon male"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Laranlor-Cormearil">
+            <div class="character-summary-wrapper">
+                <h2>Laranlor Cormearil</h2>
+                <div class="character-icons">
+                    <span class="icon player"></span>
+                    <span class="icon with-party"></span>
+                    <span class="icon male"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Lushikukukanda">
+            <div class="character-summary-wrapper">
+                <h2>Lushikukukanda</h2>
+                <div class="character-icons">
+                    <span class="icon player"></span>
+                    <span class="icon with-party"></span>
+                    <span class="icon male"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Nettie-Bettie">
+            <div class="character-summary-wrapper">
+                <h2>Nettie Bettie</h2>
+                <div class="character-icons">
+                    <span class="icon quest"></span>
+                    <span class="icon female"></span>
+                    <span class="icon dead"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Norbus-Ironrune">
+            <div class="character-summary-wrapper">
+                <h2>Norbus Ironrune</h2>
+                <div class="character-icons">
+                    <span class="icon quest"></span>
+                    <span class="icon with-party"></span>
+                    <span class="icon male"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/PEKKA">
+            <div class="character-summary-wrapper">
+                <h2>P.E.K.K.A.</h2>
+                <div class="character-icons">
+                    <span class="icon player"></span>
+                    <span class="icon with-party"></span>
+                    <span class="icon male"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Robina-the-Hood">
+            <div class="character-summary-wrapper">
+                <h2>Robina the Hood</h2>
+                <div class="character-icons">
+                    <span class="icon quest"></span>
+                    <span class="icon female"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Theodas">
+            <div class="character-summary-wrapper">
+                <h2>Theodas</h2>
+                <div class="character-icons">
+                    <span class="icon player"></span>
+                    <span class="icon with-party"></span>
+                    <span class="icon male"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Twilly">
+            <div class="character-summary-wrapper">
+                <h2>Twilly</h2>
+                <div class="character-icons">
+                    <span class="icon key"></span>
+                    <span class="icon quest"></span>
+                    <span class="icon with-party"></span>
+                    <span class="icon genderfluid"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Yulgar-Lark">
+            <div class="character-summary-wrapper">
+                <h2>Yulgar Lark</h2>
+                <div class="character-icons">
+                    <span class="icon male"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
         <a href="../characters/Character-Name">
             <div class="character-summary-wrapper">
                 <h2>Name</h2>
@@ -129,23 +364,3 @@ In deze sectie van de wiki zijn alle karakters die voorkomen in de campaigns die
         </a>  
     </li>
 </ul>
-* [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
-* [Grog Steenvuist]({{ site.baseurl }}{% link characters/Grog-Steenvuist.md %})
-* [Halia Thornton]({{ site.baseurl }}{% link characters/Halia-Thornton.md %})
-* [Harbin Wester]({{ site.baseurl }}{% link characters/Harbin-Wester.md %})
-* [Hugo Staalzwaard]({{ site.baseurl }}{% link characters/Hugo-Staalzwaard.md %})
-* [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
-* [Isabella Swift]({{ site.baseurl }}{% link characters/Isabella-Swift.md %})
-* [Kaelen Schaduwholster]({{ site.baseurl }}{% link characters/Kaelen-Schaduwholster.md %})
-* [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
-* [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
-* [Kosharakar Coemeydus]({{ site.baseurl }}{% link characters/Kosharakar-Coemeydus.md %})
-* [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
-* [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
-* [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
-* [Norbus Ironrune]({{ site.baseurl }}{% link characters/Norbus-Ironrune.md %})
-* [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
-* [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
-* [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})
-* [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
-* [Yulgar Lark]({{ site.baseurl }}{% link characters/Yulgar-Lark.md %})
