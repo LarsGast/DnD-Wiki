@@ -63,42 +63,26 @@ Na een aantal uren te hebben gegraven worden de schilddwergen wat geniepig, en b
 * [Adabra Gwynn]({{ site.baseurl }}{% link characters/Adabra-Gwynn.md %})
 * [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
 * Alfonse Kalazorn
-* Anverth
 * [Ander]({{ site.baseurl }}{% link characters/Ander.md %})
 * Barthen
-* Caramip
 * Cryovain
 * Dabbledob
 * [Dazlyn Grayshard]({{ site.baseurl }}{% link characters/Dazlyn-Grayshard.md %})
-* Delebean
-* Dimble
 * Don-Jon Raskin
 * [Elmar Barthen]({{ site.baseurl }}{% link characters/Elmar-Barthen.md %})
-* Facktoré
 * Fibblestib
 * Gnerkli
 * [Halia Thornton]({{ site.baseurl }}{% link characters/Halia-Thornton.md %})
 * [Harbin Wester]({{ site.baseurl }}{% link characters/Harbin-Wester.md %})
 * [Hugo Staalzwaard]({{ site.baseurl }}{% link characters/Hugo-Staalzwaard.md %})
-* Jabby
-* Joybell
 * [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
 * Korboz
 * [Linene Graywind]({{ site.baseurl }}{% link characters/Linene-Graywind.md %})
 * [Norbus Ironrune]({{ site.baseurl }}{% link characters/Norbus-Ironrune.md %})
-* Nyx
-* Pallabar
-* Panana
-* Pog
-* Quippy
 * [Sister Garaele]({{ site.baseurl }}{% link characters/Sister-Garaele.md %})
-* Tervaround
 * [Thistle]({{ site.baseurl }}{% link characters/Thistle.md %})
 * Tibor Wester
 * [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
-* Ulla
-* Uppendown
-* Zook
 
 ## Locaties
 * Axeholm

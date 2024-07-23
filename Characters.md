@@ -389,30 +389,14 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
 * [Adabra Gwynn]({{ site.baseurl }}{% link characters/Adabra-Gwynn.md %})
 * Alfonse Kalazorn
 * [Ander]({{ site.baseurl }}{% link characters/Ander.md %})
-* Anverth
-* Caramip
 * Cryovain
 * Dabbledob
-* Delebean
-* Dimble
 * Don-Jon Raskin
 * [Elmar Barthen]({{ site.baseurl }}{% link characters/Elmar-Barthen.md %})
-* Facktoré
 * Fibblestib
 * Gnerkli
-* Jabby
-* Joybell
 * Korboz
 * [Linene Graywind]({{ site.baseurl }}{% link characters/Linene-Graywind.md %})
-* Nyx
-* Pallabar
-* Panana
-* Pog
-* Quippy
 * [Sister Garaele]({{ site.baseurl }}{% link characters/Sister-Garaele.md %})
-* Tervaround
 * [Thistle]({{ site.baseurl }}{% link characters/Thistle.md %})
 * Tibor Wester
-* Ulla
-* Uppendown
-* Zook

@@ -104,26 +104,10 @@ Een kleine, niet-afgesloten kist onder het bed van de kabouters bevat een Hat of
 * [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/de-draak-van-icespire-peak.md %})
 
 ## Gerelateerde karakters
-* Anverth
-* Caramip
 * Dabbledob
-* Delebean
-* Dimble
-* Facktoré
 * Fibblestib
 * Gnerkli
-* Jabby
-* Joybell
 * Korboz
-* Nyx
-* Pallabar
-* Panana
-* Pog
-* Quippy
-* Tervaround
-* Ulla
-* Uppendown
-* Zook
 
 ## Super-locaties
 * Sword Mountains
