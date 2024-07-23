@@ -16,7 +16,7 @@ Zodra het verzenden door de stenen is geworpen, kunnen ze pas bij zonsopgang opn
 ---
 
 ## Komt voor in
-* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
+* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/de-draak-van-icespire-peak.md %})
 
 ## Gerelateerde karakters
 * [Dazlyn Grayshard]({{ site.baseurl }}{% link characters/Dazlyn-Grayshard.md %})

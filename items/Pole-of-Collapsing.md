@@ -14,7 +14,7 @@ Terwijl je deze 10 ft lange paal vasthoudt, kun je een actie gebruiken om een co
 ---
 
 ## Komt voor in
-* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
+* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/de-draak-van-icespire-peak.md %})
 
 ## Gerelateerde karakters
 * Dabbledob

@@ -45,8 +45,8 @@ Heeft een zwak voor de ondeugden van de stad, vooral voor sterke drank.
 ---
 
 ## Komt voor in
-* [De Redding van (Prinses) Azura]({{ site.baseurl }}{% link campaigns/De-Redding-van-(Prinses)-Azura.md %})
-* [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/De-Legende-van-Kapitein-Groenbaard.md %})
+* [De Redding van (Prinses) Azura]({{ site.baseurl }}{% link campaigns/de-redding-van-(prinses)-azura.md %})
+* [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-legende-van-kapitein-groenbaard.md %})
 
 ## Gerelateerde karakters
 * [Adonis]({{ site.baseurl }}{% link characters/Adonis.md %})

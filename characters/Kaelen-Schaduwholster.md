@@ -45,7 +45,7 @@ Kaelen kan soms te wantrouwig zijn, waardoor oprechte tekens van bondgenootschap
 ---
 
 ## Komt voor in
-* [De Grote Ontsnapping van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/De-Grote-Ontsnapping-van-Kapitein-Groenbaard.md %})
+* [De Grote Ontsnapping van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-grote-ontsnapping-van-kapitein-groenbaard.md %})
 
 ## Gerelateerde karakters
 * [Barnaby Kraai]({{ site.baseurl }}{% link characters/Barnaby-Kraai.md %})

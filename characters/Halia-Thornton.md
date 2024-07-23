@@ -45,7 +45,7 @@ Ze vertrouwd niemand, ook al heeft diegene zich proberen te bewijzen.
 ---
 
 ## Komt voor in
-* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
+* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/de-draak-van-icespire-peak.md %})
 
 ## Gerelateerde karakters
 * -

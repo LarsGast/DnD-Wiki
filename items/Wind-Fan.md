@@ -17,7 +17,7 @@ Terwijl je deze waaier vasthoudt, kun je een action gebruiken om de gust of wind
 ---
 
 ## Komt voor in
-* [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/De-Legende-van-Kapitein-Groenbaard.md %})
+* [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-legende-van-kapitein-groenbaard.md %})
 
 ## Gerelateerde karakters
 * [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})

@@ -57,7 +57,7 @@ Als avonturiers hem naar een zoektocht vragen, zet Harbin ze op het goede spoor 
 ---
 
 ## Komt voor in
-* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
+* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/de-draak-van-icespire-peak.md %})
 
 ## Gerelateerde karakters
 * [Ander]({{ site.baseurl }}{% link characters/Ander.md %})

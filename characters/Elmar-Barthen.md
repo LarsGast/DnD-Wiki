@@ -45,7 +45,7 @@ Ziet soms niet het slechte in anderen.
 ---
 
 ## Komt voor in
-* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/De-Draak-van-Icespire-Peak.md %})
+* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/de-draak-van-icespire-peak.md %})
 
 ## Gerelateerde karakters
 * [Ander]({{ site.baseurl }}{% link characters/Ander.md %})
