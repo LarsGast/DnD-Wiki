@@ -1,0 +1,32 @@
+- name: Drakengreep
+  visible: true
+
+- name: Dwarven Excavation
+  visible: true
+
+- name: Falconreach
+  visible: true
+
+- name: Goblin Schuilplaats
+  visible: true
+
+- name: Greenguard
+  visible: true
+
+- name: Magisch Centrum
+  visible: true
+
+- name: Phandalin
+  visible: true
+
+- name: Surewould-bos
+  visible: true
+
+- name: Tempel van ^.^
+  visible: true
+
+- name: Wraak van Koning Alden
+  visible: true
+
+- name: Zandzee
+  visible: true

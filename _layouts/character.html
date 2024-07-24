@@ -23,6 +23,9 @@ layout: default
     
     <h2>Gerelateerde karakters</h2>
     {% include character-list.html filterType="character" filterName=page.title %}
+    
+    <h2>Gerelateerde locaties</h2>
+    {% include location-list.html filterType="character" filterName=page.title %}
   </div>
 
   {%- if site.disqus.shortname -%}

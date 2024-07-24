@@ -1,0 +1,38 @@
+<!-- Input parameters -->
+{% assign filterType = include.filterType %}
+{% assign filterName = include.filterName %}
+
+<ul class>
+
+    <!-- Initialize an empty array for location names -->
+    {% assign locationNames = '' | split: ',' %}
+
+    <!-- Filtering for character page -->
+    {% if filterType == "character" %}
+        {% for locationCharacterLink in site.data.location-character-link %}
+            <!-- Filtered name could be the first in the link, or the second -->
+            {% if locationCharacterLink.characterName == filterName %}
+                {% assign locationNames = locationNames | push: locationCharacterLink.locationName %}
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <!-- No filtering, get all location names -->
+        {% for location in site.data.locations %}
+            {% assign locationNames = locationNames | push: location.name %}
+        {% endfor %}
+    {% endif %}
+
+    <!-- Sort by chronologically -->
+    {% assign locationNames = locationNames | sort %}
+  
+    {% for locationName in locationNames %}
+        {% assign location = site.data.locations | where:"name", locationName | first %}
+        {% if location.visible %}
+        <li>
+            <a href="../locations/{% if location.customLink %}{{ location.customLink }}{% else %}{{ location.name | replace: ' ', '-' }}{% endif %}">
+                {{location.name}}
+            </a>  
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>
