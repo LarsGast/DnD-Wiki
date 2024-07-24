@@ -97,7 +97,6 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
                 <h2>Dazlyn Grayshard</h2>
                 <div class="character-icons">
                     <span class="icon quest" title="Komt voor in quest"></span>
-                    <span class="icon with-party" title="Bij de groep"></span>
                     <span class="icon male" title="Man"></span>
                     <span class="icon indifferent" title="Onverschillig"></span>
                 </div>
@@ -318,9 +317,8 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
                 <h2>Norbus Ironrune</h2>
                 <div class="character-icons">
                     <span class="icon quest" title="Komt voor in quest"></span>
-                    <span class="icon with-party" title="Bij de groep"></span>
                     <span class="icon male" title="Man"></span>
-                    <span class="icon indifferent" title="Onverschillig"></span>
+                    <span class="icon dead" title="Dood"></span>
                 </div>
             </div>
         </a>  
