@@ -1,96 +1,222 @@
 - name: Adonis
   visible: true
+  icons:
+    - name: player
+    - name: male
 
 - name: Albert Tweesteen
   visible: true
+  icons:
+    - name: quest
+    - name: with-party
+    - name: male
+    - name: friendly
 
 - name: Amy Aria
   visible: true
+  icons:
+    - name: shop
+    - name: female
+    - name: indifferent
 
 - name: Arikikuchiariku
   visible: true
+  icons:
+    - name: player
+    - name: with-party
+    - name: male
 
 - name: Ash Dragonblade
   visible: true
+  icons:
+    - name: quest
+    - name: male
+    - name: indifferent
 
 - name: Azura Zingzwaard
   visible: true
+  icons:
+    - name: quest
+    - name: female
+    - name: friendly
 
 - name: Barnaby Kraai
   visible: true
+  icons:
+    - name: quest
+    - name: male
+    - name: indifferent
 
 - name: Dazlyn Grayshard
   visible: true
+  icons:
+    - name: quest
+    - name: male
+    - name: indifferent
 
 - name: Elmar Barthen
   visible: true
+  icons:
+    - name: shop
+    - name: male
+    - name: indifferent
 
 - name: Gareth Bloodwood
   visible: true
+  icons:
+    - name: quest
+    - name: male
+    - name: dead
 
 - name: Gaston de Kok
   visible: true
+  icons:
+    - name: quest
+    - name: male
+    - name: indifferent
 
 - name: Grog Steenvuist
   visible: true
+  icons:
+    - name: player
+    - name: quest
+    - name: male
+    - name: indifferent
 
 - name: Halia Thornton
   visible: true
+  icons:
+    - name: shop
+    - name: female
+    - name: indifferent
 
 - name: Harbin Wester
   visible: true
+  icons:
+    - name: quest
+    - name: male
+    - name: indifferent
 
 - name: Hugo Staalzwaard
   visible: true
+  icons:
+    - name: tavern
+    - name: male
+    - name: friendly
 
 - name: Hugo Zingzwaard
   visible: true
+  icons:
+    - name: quest
+    - name: tavern
+    - name: male
+    - name: friendly
 
 - name: Isabella Swift
   visible: true
+  icons:
+    - name: player
+    - name: quest
+    - name: female
+    - name: indifferent
 
 - name: Kaelen Schaduwholster
   visible: true
+  icons:
+    - name: quest
+    - name: non-binary
+    - name: indifferent
 
 - name: Kapitein Groenbaard
   visible: true
+  icons:
+    - name: quest
+    - name: with-party
+    - name: male
+    - name: friendly
 
 - name: Koning Splurt
   visible: true
+  icons:
+    - name: quest
+    - name: male
+    - name: dead
 
 - name: Kosharakar Coemeydus
   visible: true
+  icons:
+    - name: player
+    - name: quest
+    - name: male
 
 - name: Laranlor Cormearil
   visible: true
+  icons:
+    - name: player
+    - name: with-party
+    - name: male
 
 - name: Linene Graywind
   visible: true
+  icons:
+    - name: shop
+    - name: female
+    - name: indifferent
 
 - name: Lushikukukanda
   visible: true
+  icons:
+    - name: player
+    - name: with-party
+    - name: male
 
 - name: Nettie Bettie
   visible: true
+  icons:
+    - name: quest
+    - name: female
+    - name: dead
 
 - name: Norbus Ironrune
   visible: true
+  icons:
+    - name: quest
+    - name: male
+    - name: dead
 
 - name: P.E.K.K.A.
   visible: true
   customLink: PEKKA
+  icons:
+    - name: player
+    - name: with-party
+    - name: male
 
 - name: Robina the Hood
   visible: true
+  icons:
+    - name: quest
+    - name: female
+    - name: friendly
 
 - name: Theodas
   visible: true
+  icons:
+    - name: player
+    - name: with-party
+    - name: male
 
 - name: Twilly
   visible: true
+  icons:
+    - name: quest
+    - name: with-party
+    - name: genderfluid
+    - name: friendly
 
 - name: Yulgar Lark
   visible: true
-
-
-  
+  icons:
+    - name: shop
+    - name: male
+    - name: indifferent
