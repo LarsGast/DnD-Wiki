@@ -1,0 +1,42 @@
+# This file contains all icons that characters can have.
+# These sort of act like metadata on each character.
+# If a new one gets added, be sure to add it to the relevant characters in the _data/characters.yml
+
+- name: player
+  description: Speler
+
+- name: quest
+  description: Komt voor in quest
+
+- name: shop
+  description: Heeft een winkel
+
+- name: tavern
+  description: Heeft een herberg
+
+- name: with-party
+  description: Bij de groep
+
+- name: male
+  description: Man
+
+- name: female
+  description: Vrouw
+
+- name: non-binary
+  description: Non-binair
+
+- name: genderfluid
+  description: Genderfluid
+
+- name: friendly
+  description: Vriendelijk
+
+- name: indifferent
+  description: Onverschillig
+
+- name: hostile
+  description: Vijandig
+
+- name: dead
+  description: Dood
