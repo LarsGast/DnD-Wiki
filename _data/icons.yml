@@ -1,0 +1,38 @@
+- name: player
+  description: speler
+
+- name: quest
+  description: Komt voor in quest
+
+- name: shop
+  description: Heeft een winkel
+
+- name: tavern
+  description: Heeft een herberg
+
+- name: with-party
+  description: Bij de groep
+
+- name: male
+  description: Man
+
+- name: female
+  description: Vrouw
+
+- name: non-binary
+  description: Non-binair
+
+- name: genderfluid
+  description: Genderfluid
+
+- name: friendly
+  description: vriendelijk
+
+- name: indifferent
+  description: Onverschillig
+
+- name: hostile
+  description: Vijandig
+
+- name: dead
+  description: Dood

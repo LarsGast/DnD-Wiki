@@ -408,3 +408,26 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
         </a>  
     </li>
 </ul>
+
+<ul class="no-style-list no-style-link-group character-list">
+    {% for character in site.data.characters %}
+        {% if character.visible %}
+        <li>
+            <a href="../characters/{% if character.customLink %}{{ character.customLink }}{% else %}{{ character.name | replace: ' ', '-' }}{% endif %}">
+                <div class="character-summary-wrapper">
+                    <h2>{{ character.name }}</h2>
+                    <div class="character-icons">
+                        {% assign icons_links = site.data.character-icon-links | where:"characterName", character.name %}
+                        {% for icon_link in icons_links %}
+                            {% assign icon = site.data.icons | where:"name", icon_link.iconName | first %}
+                            {% if icon %}
+                                <span class="icon {{ icon.name }}" title="{{ icon.description }}"></span>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </a>  
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>
