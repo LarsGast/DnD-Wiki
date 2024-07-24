@@ -1,3 +1,7 @@
+# This file contains all icons that characters can have.
+# These sort of act like metadata on each character.
+# If a new one gets added, be sure to add it to the relevant characters in the _data/characters.yml
+
 - name: player
   description: Speler
 

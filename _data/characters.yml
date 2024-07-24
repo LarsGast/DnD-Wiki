@@ -1,3 +1,27 @@
+# This file contains all characters that have appeared in all DnD campaigns on the site.
+# This file may also contain characters that have not appeared in the story yet.
+# If this is the case, the character should have the key "visible" set to false.
+# This way it does not appear in any links.
+
+# Each character should have the following structure:
+# - name: # Name of the character (can contain spaces)
+#   visible: # If the character is published and should appear in links
+#   customLink: # Optional, if the name cannot create a valid link in URL
+#   icons: # Any of the following icons, in order
+#     - name: player
+#     - name: quest
+#     - name: shop
+#     - name: tavern
+#     - name: with-party
+#     - name: male
+#     - name: female
+#     - name: non-binary
+#     - name: genderfluid
+#     - name: friendly
+#     - name: indifferent
+#     - name: hostile
+#     - name: dead
+
 - name: Adonis
   visible: true
   icons:
