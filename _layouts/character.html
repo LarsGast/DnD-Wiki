@@ -26,6 +26,12 @@ layout: default
     
     <h2>Gerelateerde locaties</h2>
     {% include location-list.html filterType="character" filterName=page.title %}
+    
+    <h2>Items</h2>
+    <h3>Huidige bezittingen</h3>
+    {% include item-list.html filterType="character" filterName=page.title time="current" %}
+    <h3>Vorige bezittingen</h3>
+    {% include item-list.html filterType="character" filterName=page.title time="past" %}
   </div>
 
   {%- if site.disqus.shortname -%}

@@ -1,0 +1,34 @@
+- itemName: Circlet of Enlarge Reduce
+  characterName: Test Karakter
+  current: true
+  past: false
+
+- itemName: Dust of Dryness
+  characterName: Test Karakter
+  current: true
+  past: false
+
+- itemName: Lab Coat (worn)
+  characterName: Test Karakter
+  current: true
+  past: false
+
+- itemName: Sending Stone
+  characterName: Test Karakter
+  current: true
+  past: false
+
+- itemName: Staff of Average Intelligence
+  characterName: Test Karakter
+  current: false
+  past: true
+
+- itemName: Tia’s Kompas
+  characterName: Test Karakter
+  current: false
+  past: true
+
+- itemName: Wind Fan
+  characterName: Test Karakter
+  current: false
+  past: true
