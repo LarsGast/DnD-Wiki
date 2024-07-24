@@ -48,8 +48,7 @@ Ziet soms niet het slechte in anderen.
 * [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/de-draak-van-icespire-peak.md %})
 
 ## Gerelateerde karakters
-* [Ander]({{ site.baseurl }}{% link characters/Ander.md %})
-* [Thistle]({{ site.baseurl }}{% link characters/Thistle.md %})
+* -
 
 ## Gerelateerde locaties
 * [Phandalin]({{ site.baseurl }}{% link locations/Phandalin.md %})

@@ -105,6 +105,18 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
         </a>  
     </li>
     <li>
+        <a href="../characters/Elmar-Barthen">
+            <div class="character-summary-wrapper">
+                <h2>Elmar Barthen</h2>
+                <div class="character-icons">
+                    <span class="icon shop" title="Heeft een winkel"></span>
+                    <span class="icon male" title="Man"></span>
+                    <span class="icon indifferent" title="Onverschillig"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
         <a href="../characters/Gareth-Bloodwood">
             <div class="character-summary-wrapper">
                 <h2>Gareth Bloodwood</h2>
@@ -265,6 +277,18 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
         </a>  
     </li>
     <li>
+        <a href="../characters/Linene-Graywind">
+            <div class="character-summary-wrapper">
+                <h2>Linene Graywind</h2>
+                <div class="character-icons">
+                    <span class="icon shop" title="Heeft een winkel"></span>
+                    <span class="icon female" title="Vrouw"></span>
+                    <span class="icon indifferent" title="Onverschillig"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
         <a href="../characters/Lushikukukanda">
             <div class="character-summary-wrapper">
                 <h2>Lushikukukanda</h2>
@@ -386,17 +410,3 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
         </a>  
     </li>
 </ul>
-* [Adabra Gwynn]({{ site.baseurl }}{% link characters/Adabra-Gwynn.md %})
-* Alfonse Kalazorn
-* [Ander]({{ site.baseurl }}{% link characters/Ander.md %})
-* Cryovain
-* Dabbledob
-* Don-Jon Raskin
-* [Elmar Barthen]({{ site.baseurl }}{% link characters/Elmar-Barthen.md %})
-* Fibblestib
-* Gnerkli
-* Korboz
-* [Linene Graywind]({{ site.baseurl }}{% link characters/Linene-Graywind.md %})
-* [Sister Garaele]({{ site.baseurl }}{% link characters/Sister-Garaele.md %})
-* [Thistle]({{ site.baseurl }}{% link characters/Thistle.md %})
-* Tibor Wester

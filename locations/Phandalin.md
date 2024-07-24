@@ -60,14 +60,11 @@ Als avonturiers hem naar een zoektocht vragen, zet Harbin ze op het goede spoor 
 * [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/de-draak-van-icespire-peak.md %})
 
 ## Gerelateerde karakters
-* [Ander]({{ site.baseurl }}{% link characters/Ander.md %})
 * [Elmar Barthen]({{ site.baseurl }}{% link characters/Elmar-Barthen.md %})
 * [Halia Thornton]({{ site.baseurl }}{% link characters/Halia-Thornton.md %})
 * [Harbin Wester]({{ site.baseurl }}{% link characters/Harbin-Wester.md %})
 * [Hugo Staalzwaard]({{ site.baseurl }}{% link characters/Hugo-Staalzwaard.md %})
 * [Linene Graywind]({{ site.baseurl }}{% link characters/Linene-Graywind.md %})
-* [Sister Garaele]({{ site.baseurl }}{% link characters/Sister-Garaele.md %})
-* [Thistle]({{ site.baseurl }}{% link characters/Thistle.md %})
 
 ## Super-locaties
 * Sword Mountains
@@ -76,13 +73,7 @@ Als avonturiers hem naar een zoektocht vragen, zet Harbin ze op het goede spoor 
 * -
 
 ## Locaties in de buurt
-* Axeholm
 * [Dwarven Excavation]({{ site.baseurl }}{% link locations/Dwarven-Excavation.md %})
-* [Gnomengarde]({{ site.baseurl }}{% link locations/Gnomengarde.md %})
-* Icespire Hold
-* Icespire Peak
-* Mountain's Toe Gold Mine
-* [Umbrage Hill]({{ site.baseurl }}{% link locations/Umbrage-Hill.md %})
 
 ## Items
 * -

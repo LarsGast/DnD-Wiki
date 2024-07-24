@@ -77,13 +77,7 @@ Om deze kamer te bereiken, moeten de personages het puin opruimen dat de kamer a
 * -
 
 ## Locaties in de buurt
-* Axeholm
-* [Gnomengarde]({{ site.baseurl }}{% link locations/Gnomengarde.md %})
-* Icespire Hold
-* Icespire Peak
-* Mountain's Toe Gold Mine
 * [Phandalin]({{ site.baseurl }}{% link locations/Phandalin.md %})
-* [Umbrage Hill]({{ site.baseurl }}{% link locations/Umbrage-Hill.md %})
 
 ## Items
 * [Sending Stone]({{ site.baseurl }}{% link items/Sending-Stone.md %})
