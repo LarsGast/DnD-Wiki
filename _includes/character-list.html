@@ -2,10 +2,6 @@
 {% assign filterType = include.filterType %}
 {% assign filterName = include.filterName %}
 
-{% if filterType %}
-    <h2>Gerelateerde karakters</h2>
-{% endif %}
-
 <ul class="no-style-list no-style-link-group character-list">
 
     <!-- Initialize an empty array for character names -->
@@ -20,7 +16,7 @@
             {% elsif characterLink.secondCharacterName == filterName %}
                 {% assign characterNames = characterNames | push: characterLink.firstCharacterName %}
             {% endif %}
-        {% endfor %}   
+        {% endfor %}
     {% else %}
         <!-- No filtering, get all character names -->
         {% for character in site.data.characters %}

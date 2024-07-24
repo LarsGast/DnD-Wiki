@@ -1,0 +1,24 @@
+- name: De Redding van (Prinses) Azura
+  order: 1
+  visible: true
+  isFlashback: false
+
+- name: Twilly Rekruteren
+  order: 2
+  visible: true
+  isFlashback: false
+
+- name: De Legende van Kapitein Groenbaard
+  order: 3
+  visible: true
+  isFlashback: false
+
+- name: De Draak van Icespire Peak
+  order: 4
+  visible: true
+  isFlashback: false
+
+- name: De Grote Ontsnapping van Kapitein Groenbaard
+  order: 5
+  visible: true
+  isFlashback: true

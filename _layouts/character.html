@@ -17,6 +17,11 @@ layout: default
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
+
+    <h2>Komt voor in</h2>
+    {% include campaign-list.html filterType="character" filterName=page.title %}
+    
+    <h2>Gerelateerde karakters</h2>
     {% include character-list.html filterType="character" filterName=page.title %}
   </div>
 
