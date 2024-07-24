@@ -62,6 +62,7 @@ Onbekend.
 
 ### Huidige bezittingen
 * [Dust of Dryness]({{ site.baseurl }}{% link items/Dust-of-Dryness.md %}) (4 snufjes)
+* [Sending Stone]({{ site.baseurl }}{% link items/Sending-Stone.md %})
 
 ### Vorige bezittingen
 * [Dust of Dryness]({{ site.baseurl }}{% link items/Dust-of-Dryness.md %}) (1 snufje)

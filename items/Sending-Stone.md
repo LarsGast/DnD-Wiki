@@ -12,6 +12,9 @@ Zodra het verzenden door de stenen is geworpen, kunnen ze pas bij zonsopgang opn
 
 ## Geschiedenis van bezitting
 * Dazlyn Grayshard en Norbus Ironrune
+  * Tot Dwarven Excavation
+* Laranlor en P.E.K.K.A
+  * Vanaf Dwarven Excavation
 
 ---
 
@@ -20,7 +23,9 @@ Zodra het verzenden door de stenen is geworpen, kunnen ze pas bij zonsopgang opn
 
 ## Gerelateerde karakters
 * [Dazlyn Grayshard]({{ site.baseurl }}{% link characters/Dazlyn-Grayshard.md %})
+* [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
 * [Norbus Ironrune]({{ site.baseurl }}{% link characters/Norbus-Ironrune.md %})
+* [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
 
 ## Gerelateerde locaties
 * [Dwarven Excavation]({{ site.baseurl }}{% link locations/Dwarven-Excavation.md %})
