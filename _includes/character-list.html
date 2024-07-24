@@ -1,7 +1,12 @@
+<!-- Input parameters -->
+{% assign filterType = include.filterType %}
+{% assign filterName = include.filterName %}
+
+{% if filterType %}
+    <h2>Gerelateerde karakters</h2>
+{% endif %}
+
 <ul class="no-style-list no-style-link-group character-list">
-    <!-- Input parameters -->
-    {% assign filterType = include.filterType %}
-    {% assign filterName = include.filterName %}
 
     <!-- Initialize an empty array for character names -->
     {% assign characterNames = '' | split: ',' %}
