@@ -9,7 +9,7 @@ title: Twilly
 * Volledige naam: Twilly
 * Bijnamen: Held van Falconreach
 * Ras: Onbekend
-* Geslacht: Man
+* Geslacht: Genderfluid
 * Leeftijd: 5
 * Woonplaats: Falconreach
 * Bevindt zich op dit moment in: Op avontuur met een groep avonturiers
@@ -22,10 +22,10 @@ Samen met Robina the Hood beschermer van het SureWould-bos.
 Een klein, rood beestje met gele oren.
 
 ## Capaciteiten
-Wijs en behendig, maar niet sterk. Het stokje dat hij bij zich heeft, heeft helende krachten.
+Wijs en behendig, maar niet sterk. Het stokje dat ze bij zich hebben, heeft helende krachten.
 
 ## Talenten
-Kan snel voor gevaar uit de weg duiken. Ontzettend dapper voor zijn maat.
+Kan snel voor gevaar uit de weg duiken. Ontzettend dapper voor hun maat.
 
 ## Hebbelijkheden
 Zegt niet veel.

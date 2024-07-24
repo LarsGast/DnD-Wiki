@@ -62,7 +62,7 @@ Onbekend.
 ## Items
 
 ### Huidige bezittingen
-* -
+* [Sending Stone]({{ site.baseurl }}{% link items/Sending-Stone.md %})
 
 ### Vorige bezittingen
 * [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})

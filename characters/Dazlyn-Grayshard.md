@@ -12,7 +12,7 @@ title: Dazlyn Grayshard
 * Geslacht: Man
 * Leeftijd: Onbekend, volwassen
 * Woonplaats: Onbekend
-* Bevindt zich op dit moment in: Dwarven Excavation
+* Bevindt zich op dit moment in: Phandalin
 * Talen: Common, Dwarvish
 
 ## Beroep en geschiedenis
@@ -37,7 +37,7 @@ Doet alles voor goud.
 Dazlyn wil de mineralen van de mijn inspecteren voor een mogelijke vondst, een gewoonte die typisch is voor zijn ras.
 
 ## Bonden
-Hij reist samen met zijn neef Norbus Ironrune, en de twee werken vaak samen.
+Hij reisde samen met zijn neef Norbus Ironrune, en de twee werkten vaak samen.
 
 ## Gebreken of fouten
 Kan soms te gretig zijn.
@@ -59,7 +59,7 @@ Kan soms te gretig zijn.
 * -
 
 ### Vorige bezittingen
-* -
+* [Sending Stone]({{ site.baseurl }}{% link items/Sending-Stone.md %})
 
 ## Galerij
 <img src="../images/Dazlyn Grayshard.jpg" alt="Dazlyn Grayshard" width=200>

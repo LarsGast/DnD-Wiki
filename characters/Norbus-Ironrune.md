@@ -10,37 +10,37 @@ title: Norbus Ironrune
 * Bijnamen: -
 * Ras: Shield Dwarf
 * Geslacht: Man
-* Leeftijd: Onbekend, volwassen
+* Leeftijd: Onbekend, overleden
 * Woonplaats: Onbekend
-* Bevindt zich op dit moment in: Dwarven Excavation
+* Bevindt zich op dit moment in: Begraven in Dwarven Excavation
 * Talen: Common, Dwarvish
 
 ## Beroep en geschiedenis
-Norbus Ironrune is een schilddwerg die een mijnwerker van beroep is. Hij reist samen met zijn neef Dazlyn Grayshard naar de Sword Mountains om mineralen te inspecteren en hopelijk een waardevolle vondst te doen.
+Norbus Ironrune was een schilddwerg die een mijnwerker van beroep was. Hij reisde samen met zijn neef Dazlyn Grayshard naar de Sword Mountains om mineralen te inspecteren en hopelijk een waardevolle vondst te doen.
 
 ## Uiterlijk
-Norbus heeft het typische uiterlijk van een dwerg: kort, stevig, met een lange baard.
+Norbus had het typische uiterlijk van een dwerg: kort, stevig, met een lange baard.
 
 ## Capaciteiten
-Norbus is een ervaren mijnwerker met kennis van mijnbouw en mineralen.
+Norbus was een ervaren mijnwerker met kennis van mijnbouw en mineralen.
 
 ## Talenten
-Hij heeft veel ervaring met mijnbouw en is bekend met de uitdagingen die daarbij komen kijken.
+Hij had veel ervaring met mijnbouw en was bekend met de uitdagingen die daarbij komen kijken.
 
 ## Hebbelijkheden
 Ontzettend gretig.
 
 ## Interactie met anderen
-Doet alles voor goud.
+Deed alles voor goud.
 
 ## Idealen
-Dazlyn wil de mineralen van de mijn inspecteren voor een mogelijke vondst, een gewoonte die typisch is voor zijn ras.
+Dazlyn wou de mineralen van de mijn inspecteren voor een mogelijke vondst, een gewoonte die typisch is voor zijn ras.
 
 ## Bonden
-Hij reist samen met zijn neef Norbus Ironrune, en de twee werken vaak samen.
+Hij reisde samen met zijn neef Norbus Ironrune, en de twee werkten vaak samen.
 
 ## Gebreken of fouten
-Kan soms te gretig zijn.
+Kon soms te gretig zijn.
 
 ---
 
@@ -59,7 +59,7 @@ Kan soms te gretig zijn.
 * -
 
 ### Vorige bezittingen
-* -
+* [Sending Stone]({{ site.baseurl }}{% link items/Sending-Stone.md %})
 
 ## Galerij
 <img src="../images/Norbus Ironrune.jpeg" alt="Norbus Ironrune" width=200>

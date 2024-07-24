@@ -45,8 +45,10 @@ Arrogantie, denkt dat hij alles en iedereen aankan.
 ---
 
 ## Komt voor in
+* [De Grote Ontsnapping van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-grote-ontsnapping-van-kapitein-groenbaard.md %})
 * [Twilly Rekruteren]({{ site.baseurl }}{% link campaigns/twilly-rekruteren.md %})
 * [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-legende-van-kapitein-groenbaard.md %})
+* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/de-draak-van-icespire-peak.md %})
 
 ## Gerelateerde karakters
 * [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})

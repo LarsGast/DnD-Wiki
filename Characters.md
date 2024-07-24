@@ -97,7 +97,18 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
                 <h2>Dazlyn Grayshard</h2>
                 <div class="character-icons">
                     <span class="icon quest" title="Komt voor in quest"></span>
-                    <span class="icon with-party" title="Bij de groep"></span>
+                    <span class="icon male" title="Man"></span>
+                    <span class="icon indifferent" title="Onverschillig"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
+        <a href="../characters/Elmar-Barthen">
+            <div class="character-summary-wrapper">
+                <h2>Elmar Barthen</h2>
+                <div class="character-icons">
+                    <span class="icon shop" title="Heeft een winkel"></span>
                     <span class="icon male" title="Man"></span>
                     <span class="icon indifferent" title="Onverschillig"></span>
                 </div>
@@ -265,6 +276,18 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
         </a>  
     </li>
     <li>
+        <a href="../characters/Linene-Graywind">
+            <div class="character-summary-wrapper">
+                <h2>Linene Graywind</h2>
+                <div class="character-icons">
+                    <span class="icon shop" title="Heeft een winkel"></span>
+                    <span class="icon female" title="Vrouw"></span>
+                    <span class="icon indifferent" title="Onverschillig"></span>
+                </div>
+            </div>
+        </a>  
+    </li>
+    <li>
         <a href="../characters/Lushikukukanda">
             <div class="character-summary-wrapper">
                 <h2>Lushikukukanda</h2>
@@ -294,9 +317,8 @@ In deze sectie van de wiki vind je alle karakters die voorkomen in de campaigns 
                 <h2>Norbus Ironrune</h2>
                 <div class="character-icons">
                     <span class="icon quest" title="Komt voor in quest"></span>
-                    <span class="icon with-party" title="Bij de groep"></span>
                     <span class="icon male" title="Man"></span>
-                    <span class="icon indifferent" title="Onverschillig"></span>
+                    <span class="icon dead" title="Dood"></span>
                 </div>
             </div>
         </a>  
