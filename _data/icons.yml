@@ -1,5 +1,5 @@
 - name: player
-  description: speler
+  description: Speler
 
 - name: quest
   description: Komt voor in quest
@@ -26,7 +26,7 @@
   description: Genderfluid
 
 - name: friendly
-  description: vriendelijk
+  description: Vriendelijk
 
 - name: indifferent
   description: Onverschillig
