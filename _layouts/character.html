@@ -16,7 +16,11 @@ layout: default
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
+    {% include main-image.html  filterType="character" filterName=page.title %}
+
     {{ content }}
+
+    <hr/>
 
     <h2>Komt voor in</h2>
     {% include campaign-list.html filterType="character" filterName=page.title %}
@@ -32,6 +36,9 @@ layout: default
     {% include item-list.html filterType="character" filterName=page.title time="current" %}
     <h3>Vorige bezittingen</h3>
     {% include item-list.html filterType="character" filterName=page.title time="past" %}
+
+    <h2>Galerij</h2>
+    {% include image-list.html filterType="character" filterName=page.title %}
   </div>
 
   {%- if site.disqus.shortname -%}

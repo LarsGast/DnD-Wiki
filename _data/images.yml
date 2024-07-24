@@ -1,0 +1,11 @@
+- name: Test Karakter Headshot
+  fileName: Test Karakter Headshot.jpg
+  alt: Test Karakter hoofd
+  height: 100px
+  width: 100px
+
+- name: Test Karakter Full Body
+  fileName: Test Karakter Full Body.jpg
+  alt: Test Karakter volledig lichaam
+  height: 300px
+  width: 200px

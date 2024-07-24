@@ -1,0 +1,29 @@
+<!-- Input parameters -->
+{% assign filterType = include.filterType %}
+{% assign filterName = include.filterName %}
+
+<!-- Initialize an empty array for image names -->
+{% assign imageNames = '' | split: ',' %}
+
+<!-- Filtering for character page -->
+{% if filterType == "character" %}
+    {% for imageCharacterLink in site.data.image-character-link %}
+        <!-- Filtered name could be the first in the link, or the second -->
+        {% if imageCharacterLink.characterName == filterName %}
+            {% assign imageNames = imageNames | push: imageCharacterLink.imageName %}
+        {% endif %}
+    {% endfor %}
+{% else %}
+    <!-- No filtering, get all image names -->
+    {% for image in site.data.images %}
+        {% assign imageNames = imageNames | push: image.name %}
+    {% endfor %}
+{% endif %}
+
+<!-- Sort by chronologically -->
+{% assign imageNames = imageNames | sort %}
+
+{% for imageName in imageNames %}
+    {% assign image = site.data.images | where:"name", imageName | first %}
+    <img src="../images/{{ image.fileName }}" alt="{{ image.alt }}" height="{{ image.height }}" width="{{ image.width }}"/>
+{% endfor %}

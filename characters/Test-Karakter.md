@@ -39,25 +39,3 @@ lorum ipsum
 
 ## Gebreken of fouten
 lorum ipsum
-
----
-
-## Komt voor in
-* -
-
-## Gerelateerde karakters
-* -
-
-## Gerelateerde locaties
-* -
-
-## Items
-
-### Huidige bezittingen
-* -
-
-### Vorige bezittingen
-* -
-
-## Galerij
-* -

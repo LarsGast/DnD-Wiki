@@ -6,6 +6,7 @@
 # Each character should have the following structure:
 - name: Test Karakter
   visible: true
+  headerImageName: Test Karakter Headshot
   customLink: Test-Karakter
   icons: 
     - name: player
