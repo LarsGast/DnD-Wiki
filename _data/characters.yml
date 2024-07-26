@@ -43,6 +43,17 @@
 
 - name: Adonis
   visible: true
+  properties:
+    - name: Ras
+      value: Drow
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 80
+    - name: Bevindt zich op dit moment in
+      value: Onbekend
+    - name: Talen
+      value: Common, Elvish
   icons:
     - name: player
     - name: male

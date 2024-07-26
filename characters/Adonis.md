@@ -1,17 +1,7 @@
 ---
-layout: post
+layout: character
 title: Adonis
 ---
-
-## Algemeen
-* Volledige naam: Onbekend
-* Bijnamen: Adonis
-* Ras: Drow
-* Geslacht: Man
-* Leeftijd: 80
-* Woonplaats: Onbekend
-* Bevindt zich op dit moment in: Een gestolen luchtschip richting Phandalin
-* Talen: Common, Elvish
 
 ## Beroep en geschiedenis
 Een behendige rogue die vroeger in de Underdark heeft geleefd. Tegenwoordig leeft hij boven de grond als spion.

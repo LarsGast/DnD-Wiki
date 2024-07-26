@@ -2,11 +2,13 @@
 {% assign filterType = include.filterType %}
 {% assign filterName = include.filterName %}
 
-{% assign image = '' %}
-
 {% if filterType == "character" %}
     {% assign character = site.data.characters | where:"name", filterName | first %}
-    {% assign image = site.data.images | where:"name", character.headerImageName | first %}
+    {% if character and character.headerImageName %}
+        {% assign image = site.data.images | where:"name", character.headerImageName | first %}
+    {% endif %}
 {% endif %}
 
-<img src="../images/{{ image.fileName }}" alt="{{ image.alt }}" height="{{ image.height }}" width="{{ image.width }}"/>
+{% if image %}
+    <img src="../images/{{ image.fileName }}" alt="{{ image.alt }}" height="{{ image.height }}" width="{{ image.width }}"/>
+{% endif %}
