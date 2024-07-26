@@ -1,19 +1,7 @@
 ---
-layout: post
+layout: character
 title: Ash Dragonblade
 ---
-
-<img src="../images/Ash Dragonblade.png" alt="Ash Dragonblade" width=200>
-
-## Algemeen
-* Volledige naam: Ash Dragonblade
-* Bijnamen: -
-* Ras: Mens
-* Geslacht: Man
-* Leeftijd: 14
-* Woonplaats: Falconreach
-* Bevindt zich op dit moment in: Falconreach
-* Talen: Common
 
 ## Beroep en geschiedenis
 Wil later avonturier worden.
@@ -41,27 +29,3 @@ Is bereid om veel te doen voor het algemeen belang.
 
 ## Gebreken of fouten
 Onervaren, kan zijn eigen krachten niet goed inschatten.
-
----
-
-## Komt voor in
-* [De Redding van (Prinses) Azura]({{ site.baseurl }}{% link campaigns/de-redding-van-(prinses)-azura.md %})
-
-## Gerelateerde karakters
-* [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
-
-## Gerelateerde locaties
-* [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
-
-## Items
-
-### Huidige bezittingen
-* -
-
-### Vorige bezittingen
-* -
-
-## Galerij
-<img src="../images/Ash Dragonblade.png" alt="Ash Dragonblade" width=200>
-
-<img src="../images/Falconreach.png" alt="Ash voor de Falconreach Herberg" width=400>

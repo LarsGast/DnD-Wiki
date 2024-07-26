@@ -118,6 +118,19 @@
 
 - name: Ash Dragonblade
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 14
+    - name: Woonplaats
+      value: Falconreach
+    - name: Bevindt zich op dit moment in
+      value: De straten van Falconreach
+    - name: Talen
+      value: Common
   icons:
     - name: quest
     - name: male
