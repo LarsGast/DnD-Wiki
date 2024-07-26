@@ -3,16 +3,6 @@ layout: character
 title: Test Karakter
 ---
 
-## Algemeen
-* Volledige naam: 
-* Bijnamen: 
-* Ras: 
-* Geslacht: 
-* Leeftijd: 
-* Woonplaats: 
-* Bevindt zich op dit moment in: 
-* Talen: 
-
 ## Beroep en geschiedenis
 lorum ipsum
 

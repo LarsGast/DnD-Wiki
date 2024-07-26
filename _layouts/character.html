@@ -16,7 +16,10 @@ layout: default
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    {% include main-image.html  filterType="character" filterName=page.title %}
+    {% include main-image.html filterType="character" filterName=page.title %}
+
+    <h2>Algemeen</h2>
+    {% include general-info.html filterType="character" filterName=page.title %}
 
     {{ content }}
 

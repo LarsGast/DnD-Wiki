@@ -9,6 +9,23 @@
   index: -1
   headerImageName: Test Karakter Headshot
   customLink: Test-Karakter
+  properties:
+    - name: Volledige naam
+      value: Test Karakter
+    - name: Bijnamen
+      value: Testie, TK
+    - name: Ras
+      value: mens
+    - name: Geslacht
+      value: Alles en niks
+    - name: Leeftijd
+      value: Oneindig
+    - name: Woonplaats
+      value: Overal
+    - name: Bevindt zich op dit moment in
+      value: Achter je
+    - name: Talen
+      value: Frans
   icons: 
     - name: player
     - name: quest
