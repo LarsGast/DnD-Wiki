@@ -2,6 +2,10 @@
   characterName: Test Karakter
   current: true
   past: false
+- itemName: Circlet of Enlarge Reduce
+  characterName: Arikikuchiariku
+  current: true
+  past: false
 
 - itemName: Dust of Dryness
   characterName: Test Karakter

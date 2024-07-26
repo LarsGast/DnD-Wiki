@@ -100,6 +100,17 @@
 
 - name: Arikikuchiariku
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 27
+    - name: Bevindt zich op dit moment in
+      value: De Sword Mountains
+    - name: Talen
+      value: Common, Sylvan, Primordial
   icons:
     - name: player
     - name: with-party
