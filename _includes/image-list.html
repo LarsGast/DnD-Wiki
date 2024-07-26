@@ -20,9 +20,6 @@
     {% endfor %}
 {% endif %}
 
-<!-- Sort by chronologically -->
-{% assign imageNames = imageNames | sort %}
-
 {% for imageName in imageNames %}
     {% assign image = site.data.images | where:"name", imageName | first %}
     <img src="../images/{{ image.fileName }}" alt="{{ image.alt }}" height="{{ image.height }}" width="{{ image.width }}"/>
