@@ -25,6 +25,6 @@
 {% else %}
     {% for imageName in imageNames %}
         {% assign image = site.data.images | where:"name", imageName | first %}
-        <img src="../images/{{ image.fileName }}" alt="{{ image.alt }}" height="{{ image.height }}" width="{{ image.width }}"/>
+        <img src="../images/{{ image.name }}.{{ image.fileType }}" alt="{{ image.alt }}" height="{{ image.height }}" width="{{ image.width }}"/>
     {% endfor %}
 {% endif %}
