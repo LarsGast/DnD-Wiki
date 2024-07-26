@@ -2,7 +2,11 @@
 {% assign filterType = include.filterType %}
 {% assign filterName = include.filterName %}
 
-{% assign character = site.data.characters | where:"name", filterName | first %}
-{% assign image = site.data.images | where:"name", character.headerImageName | first %}
+{% assign image = '' %}
+
+{% if filterType == "character" %}
+    {% assign character = site.data.characters | where:"name", filterName | first %}
+    {% assign image = site.data.images | where:"name", character.headerImageName | first %}
+{% endif %}
 
 <img src="../images/{{ image.fileName }}" alt="{{ image.alt }}" height="{{ image.height }}" width="{{ image.width }}"/>
