@@ -2,37 +2,41 @@
 {% assign filterType = include.filterType %}
 {% assign filterName = include.filterName %}
 
-<ul class>
+<!-- Initialize an empty array for campaign names -->
+{% assign campaignNames = '' | split: ',' %}
 
-    <!-- Initialize an empty array for campaign names -->
-    {% assign campaignNames = '' | split: ',' %}
-
-    <!-- Filtering for character page -->
-    {% if filterType == "character" %}
-        {% for campaignCharacterLink in site.data.campaign-character-link %}
-            <!-- Filtered name could be the first in the link, or the second -->
-            {% if campaignCharacterLink.characterName == filterName %}
-                {% assign campaignNames = campaignNames | push: campaignCharacterLink.campaignName %}
-            {% endif %}
-        {% endfor %}
-    {% else %}
-        <!-- No filtering, get all campaign names -->
-        {% for campaign in site.data.campaigns %}
-            {% assign campaignNames = campaignNames | push: campaign.name %}
-        {% endfor %}
-    {% endif %}
-
-    <!-- Sort by chronologically -->
-    {% assign campaignNames = campaignNames | sort: "order" %}
-  
-    {% for campaignName in campaignNames %}
-        {% assign campaign = site.data.campaigns | where:"name", campaignName | first %}
-        {% if campaign.visible or site.showInvisible %}
-        <li>
-            <a href="../campaigns/{% if campaign.customLink %}{{ campaign.customLink }}{% else %}{{ campaign.name | replace: ' ', '-' }}{% endif %}">
-                {{campaign.name}}
-            </a>  
-        </li>
+<!-- Filtering for character page -->
+{% if filterType == "character" %}
+    {% for campaignCharacterLink in site.data.campaign-character-link %}
+        <!-- Filtered name could be the first in the link, or the second -->
+        {% if campaignCharacterLink.characterName == filterName %}
+            {% assign campaignNames = campaignNames | push: campaignCharacterLink.campaignName %}
         {% endif %}
     {% endfor %}
+{% else %}
+    <!-- No filtering, get all campaign names -->
+    {% for campaign in site.data.campaigns %}
+        {% assign campaignNames = campaignNames | push: campaign.name %}
+    {% endfor %}
+{% endif %}
+
+<!-- Sort by chronologically -->
+{% assign campaignNames = campaignNames | sort: "order" %}
+
+<ul class>
+  
+    {% if campaignNames.size == 0 %}
+        <li>-</li>
+    {% else %}
+        {% for campaignName in campaignNames %}
+            {% assign campaign = site.data.campaigns | where:"name", campaignName | first %}
+            {% if campaign.visible or site.showInvisible %}
+            <li>
+                <a href="../campaigns/{% if campaign.customLink %}{{ campaign.customLink }}{% else %}{{ campaign.name | replace: ' ', '-' }}{% endif %}">
+                    {{campaign.name}}
+                </a>  
+            </li>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
 </ul>
