@@ -4,42 +4,46 @@
 {% assign time = include.time %}
 
 <!-- Initialize an empty array for item names -->
-{% assign itemNames = '' | split: ',' %}
+{% assign itemLinks = '' | split: ',' %}
 
 <!-- Filtering for character page -->
 {% if filterType == "character" %}
     {% for itemCharacterLink in site.data.item-character-link %}
+
         <!-- Filtered name could be the first in the link, or the second -->
         {% if itemCharacterLink.characterName == filterName %}
             {% if time == "current" and itemCharacterLink.current %}
-                {% assign itemNames = itemNames | push: itemCharacterLink.itemName %}
+                {% assign itemLinks = itemLinks | push: itemCharacterLink %}
             {% endif %}
             {% if time == "past" and itemCharacterLink.past %}
-                {% assign itemNames = itemNames | push: itemCharacterLink.itemName %}
+                {% assign itemLinks = itemLinks | push: itemCharacterLink %}
             {% endif %}
         {% endif %}
     {% endfor %}
 {% else %}
     <!-- No filtering, get all item names -->
     {% for item in site.data.items %}
-        {% assign itemNames = itemNames | push: item.name %}
+        {% assign itemLinks = itemLinks | push: item.name %}
     {% endfor %}
 {% endif %}
 
 <!-- Sort by chronologically -->
-{% assign itemNames = itemNames | sort %}
+{% assign itemLinks = itemLinks | sort:"itemName" %}
 
 <ul class>
-    {% if itemNames.size == 0 %}
+    {% if itemLinks.size == 0 %}
         <li>-</li>
     {% else %}
-        {% for itemName in itemNames %}
-            {% assign item = site.data.items | where:"name", itemName | first %}
+        {% for itemLink in itemLinks %}
+            {% assign item = site.data.items | where:"name", itemLink.itemName | first %}
             {% if item.visible or site.showInvisible %}
                 <li>
                     <a href="../items/{% if item.customLink %}{{ item.customLink }}{% else %}{{ item.name | replace: ' ', '-' }}{% endif %}">
                         {{item.name}}
-                    </a>  
+                    </a>
+                    {% if itemLink.comment %}
+                        ({{itemLink.comment}})
+                    {% endif %}
                 </li>
             {% endif %}
         {% endfor %}
