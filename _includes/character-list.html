@@ -30,7 +30,6 @@
         {% endif %}
     {% endfor %}
 {% else %}
-    <!-- No filtering, get all characters -->
     {% for character in site.data.characters %}
         {% if character.index %}
             {% assign indexedCharacters = indexedCharacters | push: character %}
