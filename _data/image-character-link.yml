@@ -1,4 +1,11 @@
-- imageName: Test Karakter Headshot
-  characterName: Test Karakter
-- imageName: Test Karakter Full Body
-  characterName: Test Karakter
+- characterName: Test Karakter
+  imageName: Test Karakter Headshot
+- characterName: Test Karakter
+  imageName: Test Karakter Full Body
+
+- characterName: Albert Tweesteen
+  imageName: Goblin
+- characterName: Albert Tweesteen
+  imageName: Goblin Gang
+- characterName: Albert Tweesteen
+  imageName: Lab Coat (Worn)

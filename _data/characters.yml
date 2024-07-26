@@ -60,6 +60,19 @@
 
 - name: Albert Tweesteen
   visible: true
+  properties:
+    - name: Ras
+      value: Goblin
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 20
+    - name: Woonplaats
+      value: Surewould-bos
+    - name: Bevindt zich op dit moment in
+      value: Op avontuur met een groep avonturiers
+    - name: Talen
+      value: Common, Goblin
   icons:
     - name: quest
     - name: with-party

@@ -9,3 +9,21 @@
   alt: Test Karakter volledig lichaam
   height: 300px
   width: 200px
+
+- name: Goblin
+  fileType: png
+  alt: Goblin
+  height: 557px
+  width: 539px
+
+- name: Goblin Gang
+  fileType: png
+  alt: Drie Goblins naast elkaar
+  height: 219px
+  width: 295px
+
+- name: Lab Coat (Worn)
+  fileType: png
+  alt: Drie Goblins naast elkaar
+  height: 500px
+  width: 500px

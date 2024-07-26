@@ -7,11 +7,20 @@
   characterName: Test Karakter
   current: true
   past: false
+- itemName: Dust of Dryness
+  characterName: Albert Tweesteen
+  current: true
+  past: false
+  comment: 1 snufje
 
 - itemName: Lab Coat (worn)
   characterName: Test Karakter
   current: true
   past: false
+- itemName: Lab Coat (worn)
+  characterName: Albert Tweesteen
+  current: false
+  past: true
 
 - itemName: Sending Stone
   characterName: Test Karakter
@@ -24,6 +33,10 @@
   past: true
 - itemName: Staff of Average Intelligence
   characterName: Adonis
+  current: false
+  past: true
+- itemName: Staff of Average Intelligence
+  characterName: Albert Tweesteen
   current: false
   past: true
 
