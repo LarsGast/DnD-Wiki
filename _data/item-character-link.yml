@@ -22,6 +22,10 @@
   characterName: Test Karakter
   current: false
   past: true
+- itemName: Staff of Average Intelligence
+  characterName: Adonis
+  current: false
+  past: true
 
 - itemName: Tia’s Kompas
   characterName: Test Karakter
