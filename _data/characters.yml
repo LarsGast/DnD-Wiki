@@ -14,7 +14,7 @@
     - name: Bijnamen
       value: Testie, TK
     - name: Ras
-      value: mens
+      value: Mens
     - name: Geslacht
       value: Alles en niks
     - name: Leeftijd
@@ -80,6 +80,19 @@
 
 - name: Amy Aria
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Vrouw
+    - name: Leeftijd
+      value: 24
+    - name: Woonplaats
+      value: Falconreach
+    - name: Bevindt zich op dit moment in
+      value: Amy’s Potions in Falconreach
+    - name: Talen
+      value: Common
   icons:
     - name: shop
     - name: female

@@ -11,3 +11,7 @@
   imageName: Goblin Gang
 - characterName: Albert Tweesteen
   imageName: Lab Coat (Worn)
+
+- characterName: Amy Aria
+  imageName: Amy Aria
+  isHeaderImage: true
