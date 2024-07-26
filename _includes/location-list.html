@@ -27,7 +27,7 @@
   
     {% for locationName in locationNames %}
         {% assign location = site.data.locations | where:"name", locationName | first %}
-        {% if location.visible %}
+        {% if location.visible or site.showInvisible %}
         <li>
             <a href="../locations/{% if location.customLink %}{{ location.customLink }}{% else %}{{ location.name | replace: ' ', '-' }}{% endif %}">
                 {{location.name}}

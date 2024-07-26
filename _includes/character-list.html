@@ -42,7 +42,7 @@
     {% assign characters = indexedCharacters | concat: characters %}
   
     {% for character in characters %}
-        {% if character.visible %}
+        {% if character.visible or site.showInvisible %}
         <li>
             <a href="../characters/{% if character.customLink %}{{ character.customLink }}{% else %}{{ character.name | replace: ' ', '-' }}{% endif %}">
                 <div class="character-summary-wrapper">

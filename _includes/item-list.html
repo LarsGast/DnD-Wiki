@@ -33,7 +33,7 @@
   
     {% for itemName in itemNames %}
         {% assign item = site.data.items | where:"name", itemName | first %}
-        {% if item.visible %}
+        {% if item.visible or site.showInvisible %}
         <li>
             <a href="../items/{% if item.customLink %}{{ item.customLink }}{% else %}{{ item.name | replace: ' ', '-' }}{% endif %}">
                 {{item.name}}

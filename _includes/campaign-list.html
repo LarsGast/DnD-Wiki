@@ -27,7 +27,7 @@
   
     {% for campaignName in campaignNames %}
         {% assign campaign = site.data.campaigns | where:"name", campaignName | first %}
-        {% if campaign.visible %}
+        {% if campaign.visible or site.showInvisible %}
         <li>
             <a href="../campaigns/{% if campaign.customLink %}{{ campaign.customLink }}{% else %}{{ campaign.name | replace: ' ', '-' }}{% endif %}">
                 {{campaign.name}}
