@@ -3,9 +3,10 @@
 {% assign filterName = include.filterName %}
 
 {% if filterType == "character" %}
-    {% assign character = site.data.characters | where:"name", filterName | first %}
-    {% if character and character.headerImageName %}
-        {% assign image = site.data.images | where:"name", character.headerImageName | first %}
+    {% assign imageCharacterLinks = site.data.image-character-link | where:"characterName", filterName %}
+    {% assign headerImageLink = imageCharacterLinks | where:"isHeaderImage", true | first %}
+    {% if headerImageLink %}
+        {% assign image = site.data.images | where:"name", headerImageLink.imageName | first %}
     {% endif %}
 {% endif %}
 

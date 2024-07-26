@@ -7,7 +7,6 @@
 - name: Test Karakter
   visible: false
   index: -1
-  headerImageName: Test Karakter Headshot
   customLink: Test-Karakter
   properties:
     - name: Volledige naam
