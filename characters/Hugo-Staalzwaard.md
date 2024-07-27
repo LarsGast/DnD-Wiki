@@ -1,17 +1,7 @@
 ---
-layout: post
+layout: character
 title: Hugo Staalzwaard
 ---
-
-## Algemeen
-* Volledige naam: Hugo Staalzwaard
-* Bijnamen: -
-* Ras: Mens
-* Geslacht: Man
-* Leeftijd: 42
-* Woonplaats: Phandalin
-* Bevindt zich op dit moment in: Stonehill Herberg
-* Talen: Common
 
 ## Beroep en geschiedenis
 Runt de Stonehill Herberg in Phandalin. Komt uit Triboar, ten oosten van Phandalin.
@@ -39,24 +29,3 @@ Hoopt Phandalin ooit weder op te bouwen tot de stad die het ooit was.
 
 ## Gebreken of fouten
 Vertrouwd mensen soms te snel.
-
----
-
-## Komt voor in
-* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/de-draak-van-icespire-peak.md %})
-
-## Gerelateerde karakters
-* [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
-
-## Gerelateerde locaties
-* [Phandalin]({{ site.baseurl }}{% link locations/Phandalin.md %})
-
-## Items
-
-### Huidige bezittingen
-* -
-
-### Vorige bezittingen
-* -
-
-## Galerij
