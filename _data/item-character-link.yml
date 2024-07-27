@@ -66,6 +66,10 @@
   characterName: Norbus Ironrune
   current: false
   past: true
+- itemName: Sending Stone
+  characterName: P.E.K.K.A.
+  current: true
+  past: false
 
 - itemName: Staff of Average Intelligence
   characterName: Test Karakter
@@ -85,6 +89,10 @@
   past: false
 - itemName: Staff of Average Intelligence
   characterName: Nettie Bettie
+  current: false
+  past: true
+- itemName: Staff of Average Intelligence
+  characterName: P.E.K.K.A.
   current: false
   past: true
 

@@ -570,6 +570,17 @@
 
 - name: P.E.K.K.A.
   visible: true
+  properties:
+    - name: Ras
+      value: Warforged
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen
+    - name: Bevindt zich op dit moment in
+      value: De Sword Mountains
+    - name: Talen
+      value: Common
   customLink: PEKKA
   icons:
     - name: player
