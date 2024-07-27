@@ -20,6 +20,16 @@
   current: true
   past: false
   comment: 1 snufje
+- itemName: Dust of Dryness
+  characterName: Laranlor Cormearil
+  current: true
+  past: false
+  comment: 4 snufjes
+- itemName: Dust of Dryness
+  characterName: Laranlor Cormearil
+  current: false
+  past: true
+  comment: 1 snufje
 
 - itemName: IJzeren Pot
   characterName: Halia Thornton
@@ -44,6 +54,10 @@
   characterName: Dazlyn Grayshard
   current: false
   past: true
+- itemName: Sending Stone
+  characterName: Laranlor Cormearil
+  current: true
+  past: false
 
 - itemName: Staff of Average Intelligence
   characterName: Test Karakter

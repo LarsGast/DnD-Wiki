@@ -474,6 +474,19 @@
 
 - name: Laranlor Cormearil
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Lan
+    - name: Ras
+      value: Half-Elf
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen
+    - name: Bevindt zich op dit moment in
+      value: De Sword Mountains
+    - name: Talen
+      value: Common, Elfs, Primordial, Draconic
   icons:
     - name: player
     - name: with-party
