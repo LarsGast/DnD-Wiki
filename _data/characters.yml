@@ -218,6 +218,17 @@
 
 - name: Gareth Bloodwood
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen, overleden
+    - name: Bevindt zich op dit moment in
+      value: Dood in de Zandzee
+    - name: Talen
+      value: Common
   icons:
     - name: quest
     - name: male
