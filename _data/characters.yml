@@ -198,6 +198,19 @@
 
 - name: Elmar Barthen
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 50
+    - name: Woonplaats
+      value: Phandalin
+    - name: Bevindt zich op dit moment in
+      value: Zijn winkel, Barthen’s Voorzieningen
+    - name: Talen
+      value: Common
   icons:
     - name: shop
     - name: male
