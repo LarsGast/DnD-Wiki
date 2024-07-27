@@ -28,6 +28,8 @@
   characterName: Hugo Zingzwaard
 - locationName: Falconreach
   characterName: Robina the Hood
+- locationName: Falconreach
+  characterName: Twilly
 
 - locationName: Goblin Schuilplaats
   characterName: Test Karakter
@@ -63,6 +65,8 @@
   characterName: Test Karakter
 - locationName: Surewould-bos
   characterName: Robina the Hood
+- locationName: Surewould-bos
+  characterName: Twilly
 
 - locationName: Tempel van ^.^
   characterName: Test Karakter

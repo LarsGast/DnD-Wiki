@@ -627,6 +627,19 @@
 
 - name: Twilly
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Held van Falconreach
+    - name: Ras
+      value: Onbekend
+    - name: Geslacht
+      value: Genderfluid
+    - name: Leeftijd
+      value: 5
+    - name: Bevindt zich op dit moment in
+      value: Op avontuur met een groep avonturiers
+    - name: Talen
+      value: Begrijpt Common en Goblin, spreekt één woord Common (“Hallo!”)
   icons:
     - name: quest
     - name: with-party
