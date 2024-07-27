@@ -301,6 +301,19 @@
 
 - name: Harbin Wester
   visible: true
+  properties:
+    - name: Ras
+      value: Onbekend
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen
+    - name: Woonplaats
+      value: Phandalin
+    - name: Bevindt zich op dit moment in
+      value: Zijn huis, ten oosten van het stadhuis in Phandalin
+    - name: Talen
+      value: Common
   icons:
     - name: quest
     - name: male
