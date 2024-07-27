@@ -1,19 +1,7 @@
 ---
-layout: post
+layout: character
 title: Koning Splurt
 ---
-
-<img src="../images/Koning Splurt.png" alt="Koning Splurt" width=200>
-
-## Algemeen
-* Volledige naam: Splurt
-* Bijnamen: Koning Splurt
-* Ras: Goblin
-* Geslacht: Man
-* Leeftijd: 21
-* Woonplaats: Surewould-bos
-* Bevindt zich op dit moment in: Dood in de Goblin schuilplaats in het Surewould-bos
-* Talen: Common, Goblin
 
 ## Beroep en geschiedenis
 Was de koning van de Goblins in het Surewould-bos toen hij nog leefde.
@@ -41,31 +29,3 @@ De wereld overnemen.
 
 ## Gebreken of fouten
 Ongelofelijk dom.
-
----
-
-## Komt voor in
-* [De Redding van (Prinses) Azura]({{ site.baseurl }}{% link campaigns/de-redding-van-(prinses)-azura.md %})
-
-## Gerelateerde karakters
-* [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
-* [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
-* [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
-
-## Gerelateerde locaties
-* [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
-
-## Items
-
-### Huidige bezittingen
-* -
-
-### Vorige bezittingen
-* [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
-
-## Galerij
-<img src="../images/Koning Splurt.png" alt="Koning Splurt" width=200>
-
-<img src="../images/Koning Splurt Lengte.png" alt="Koning Splurt naast een gewone Goblin" width=300>
-
-<img src="../images/Circlet of Enlarge Reduce.png" alt="Circlet of Enlarge Reduce" width=200>

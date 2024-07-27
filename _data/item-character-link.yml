@@ -6,6 +6,10 @@
   characterName: Arikikuchiariku
   current: true
   past: false
+- itemName: Circlet of Enlarge Reduce
+  characterName: Koning Splurt
+  current: false
+  past: true
 
 - itemName: Dust of Dryness
   characterName: Test Karakter

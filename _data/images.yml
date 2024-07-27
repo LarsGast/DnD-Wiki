@@ -117,3 +117,21 @@
   alt: Kapitein Groenbaard in piraten kleding en met zijn houten poot, haak voor een hand, ooglapje, en zijn iconische groene baard
   width: 949px
   height: 2048px
+
+- name: Koning Splurt Lengte
+  fileType: png
+  alt: Koning Splurt naast een gewone Goblin, hij is twee keer zo lang en twee keer zo breed
+  width: 582px
+  height: 429px
+
+- name: Koning Splurt
+  fileType: png
+  alt: Koning Splurt met de Circlet of Enlarge Reduce op zijn hoofd
+  width: 524px
+  height: 366px
+
+- name: Circlet of Enlarge Reduce
+  fileType: png
+  alt: De Circlet of Enlarge Reduce. In het midden zit één grote edelsteen, en één kleine.
+  width: 500px
+  height: 500px

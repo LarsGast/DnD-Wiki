@@ -432,6 +432,21 @@
 
 - name: Koning Splurt
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Koning Splurt
+    - name: Ras
+      value: Goblin
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 21, overleden
+    - name: Woonplaats
+      value: Surewould-bos
+    - name: Bevindt zich op dit moment in
+      value: Dood in de Goblin schuilplaats in het Surewould-bos
+    - name: Talen
+      value: Common, Goblin
   icons:
     - name: quest
     - name: male
