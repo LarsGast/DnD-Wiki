@@ -1,0 +1,172 @@
+- firstCharacterName: Test Karakter
+  secondCharacterName: Adonis
+- firstCharacterName: Test Karakter
+  secondCharacterName: Albert Tweesteen
+- firstCharacterName: Test Karakter
+  secondCharacterName: Amy Aria
+- firstCharacterName: Test Karakter
+  secondCharacterName: Arikikuchiariku
+- firstCharacterName: Test Karakter
+  secondCharacterName: Ash Dragonblade
+- firstCharacterName: Test Karakter
+  secondCharacterName: Azura Zingzwaard
+- firstCharacterName: Test Karakter
+  secondCharacterName: Barnaby Kraai
+- firstCharacterName: Test Karakter
+  secondCharacterName: Dazlyn Grayshard
+- firstCharacterName: Test Karakter
+  secondCharacterName: Elmar Barthen
+- firstCharacterName: Test Karakter
+  secondCharacterName: Gareth Bloodwood
+- firstCharacterName: Test Karakter
+  secondCharacterName: Gaston de Kok
+- firstCharacterName: Test Karakter
+  secondCharacterName: Grog Steenvuist
+- firstCharacterName: Test Karakter
+  secondCharacterName: Halia Thornton
+- firstCharacterName: Test Karakter
+  secondCharacterName: Harbin Wester
+- firstCharacterName: Test Karakter
+  secondCharacterName: Hugo Staalzwaard
+- firstCharacterName: Test Karakter
+  secondCharacterName: Hugo Zingzwaard
+- firstCharacterName: Test Karakter
+  secondCharacterName: Isabella Swift
+- firstCharacterName: Test Karakter
+  secondCharacterName: Kaelen Schaduwholster
+- firstCharacterName: Test Karakter
+  secondCharacterName: Kapitein Groenbaard
+- firstCharacterName: Test Karakter
+  secondCharacterName: Koning Splurt
+- firstCharacterName: Test Karakter
+  secondCharacterName: Kosharakar Coemeydus
+- firstCharacterName: Test Karakter
+  secondCharacterName: Laranlor Cormearil
+- firstCharacterName: Test Karakter
+  secondCharacterName: Linene Graywind
+- firstCharacterName: Test Karakter
+  secondCharacterName: Lushikukukanda
+- firstCharacterName: Test Karakter
+  secondCharacterName: Nettie Bettie
+- firstCharacterName: Test Karakter
+  secondCharacterName: Norbus Ironrune
+- firstCharacterName: Test Karakter
+  secondCharacterName: P.E.K.K.A.
+- firstCharacterName: Test Karakter
+  secondCharacterName: Robina the Hood
+- firstCharacterName: Test Karakter
+  secondCharacterName: Theodas
+- firstCharacterName: Test Karakter
+  secondCharacterName: Twilly
+- firstCharacterName: Test Karakter
+  secondCharacterName: Yulgar Lark
+
+- firstCharacterName: Adonis
+  secondCharacterName: Arikikuchiariku
+- firstCharacterName: Adonis
+  secondCharacterName: Laranlor Cormearil
+- firstCharacterName: Adonis
+  secondCharacterName: Lushikukukanda
+- firstCharacterName: Adonis
+  secondCharacterName: P.E.K.K.A.
+- firstCharacterName: Adonis
+  secondCharacterName: Theodas
+
+- firstCharacterName: Albert Tweesteen
+  secondCharacterName: Koning Splurt
+- firstCharacterName: Albert Tweesteen
+  secondCharacterName: Nettie Bettie
+
+- firstCharacterName: Arikikuchiariku
+  secondCharacterName: Kapitein Groenbaard
+- firstCharacterName: Arikikuchiariku
+  secondCharacterName: Laranlor Cormearil
+- firstCharacterName: Arikikuchiariku
+  secondCharacterName: Lushikukukanda
+- firstCharacterName: Arikikuchiariku
+  secondCharacterName: P.E.K.K.A.
+- firstCharacterName: Arikikuchiariku
+  secondCharacterName: Theodas
+- firstCharacterName: Arikikuchiariku
+  secondCharacterName: Twilly
+
+- firstCharacterName: Ash Dragonblade
+  secondCharacterName: Azura Zingzwaard
+
+- firstCharacterName: Azura Zingzwaard
+  secondCharacterName: Hugo Staalzwaard
+- firstCharacterName: Azura Zingzwaard
+  secondCharacterName: Hugo Zingzwaard
+- firstCharacterName: Azura Zingzwaard
+  secondCharacterName: Koning Splurt
+
+- firstCharacterName: Barnaby Kraai
+  secondCharacterName: Grog Steenvuist
+- firstCharacterName: Barnaby Kraai
+  secondCharacterName: Isabella Swift
+- firstCharacterName: Barnaby Kraai
+  secondCharacterName: Kaelen Schaduwholster
+- firstCharacterName: Barnaby Kraai
+  secondCharacterName: Kapitein Groenbaard
+- firstCharacterName: Barnaby Kraai
+  secondCharacterName: Kosharakar Coemeydus
+
+- firstCharacterName: Dazlyn Grayshard
+  secondCharacterName: Norbus Ironrune
+
+- firstCharacterName: Gareth Bloodwood
+  secondCharacterName: Kapitein Groenbaard
+
+- firstCharacterName: Gaston de Kok
+  secondCharacterName: Kapitein Groenbaard
+
+- firstCharacterName: Grog Steenvuist
+  secondCharacterName: Isabella Swift
+- firstCharacterName: Grog Steenvuist
+  secondCharacterName: Kaelen Schaduwholster
+- firstCharacterName: Grog Steenvuist
+  secondCharacterName: Kapitein Groenbaard
+- firstCharacterName: Grog Steenvuist
+  secondCharacterName: Kosharakar Coemeydus
+
+- firstCharacterName: Hugo Staalzwaard
+  secondCharacterName: Hugo Zingzwaard
+
+- firstCharacterName: Hugo Zingzwaard
+  secondCharacterName: Yulgar Lark
+
+- firstCharacterName: Isabella Swift
+  secondCharacterName: Kaelen Schaduwholster
+- firstCharacterName: Isabella Swift
+  secondCharacterName: Kapitein Groenbaard
+- firstCharacterName: Isabella Swift
+  secondCharacterName: Kosharakar Coemeydus
+
+- firstCharacterName: Kaelen Schaduwholster
+  secondCharacterName: Kapitein Groenbaard
+- firstCharacterName: Kaelen Schaduwholster
+  secondCharacterName: Kosharakar Coemeydus
+
+- firstCharacterName: Kapitein Groenbaard
+  secondCharacterName: Kosharakar Coemeydus
+
+- firstCharacterName: Koning Splurt
+  secondCharacterName: Nettie Bettie
+
+- firstCharacterName: Laranlor Cormearil
+  secondCharacterName: Lushikukukanda
+- firstCharacterName: Laranlor Cormearil
+  secondCharacterName: P.E.K.K.A.
+- firstCharacterName: Laranlor Cormearil
+  secondCharacterName: Theodas
+
+- firstCharacterName: Lushikukukanda
+  secondCharacterName: P.E.K.K.A.
+- firstCharacterName: Lushikukukanda
+  secondCharacterName: Theodas
+
+- firstCharacterName: P.E.K.K.A.
+  secondCharacterName: Theodas
+
+- firstCharacterName: Robina the Hood
+  secondCharacterName: Twilly

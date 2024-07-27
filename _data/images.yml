@@ -1,0 +1,215 @@
+- name: Test Karakter Headshot
+  fileType: jpg
+  alt: Test Karakter hoofd
+  width: 100px
+  height: 100px
+
+- name: Test Karakter Full Body
+  fileType: jpg
+  alt: Test Karakter volledig lichaam
+  width: 200px
+  height: 300px
+
+- name: Goblin
+  fileType: png
+  alt: Goblin
+  width: 539px
+  height: 557px
+
+- name: Goblin Gang
+  fileType: png
+  alt: Drie Goblins naast elkaar
+  height: 219px
+  width: 295px
+
+- name: Lab Coat (Worn)
+  fileType: png
+  alt: Drie Goblins naast elkaar
+  width: 500px
+  height: 500px
+
+- name: Amy Aria
+  fileType: png
+  alt: Amy Aria in haar winkel, Amy's Potions
+  width: 219px
+  height: 521px
+
+- name: Arikikuchiariku
+  fileType: jpg
+  alt: Arikikuchiariku in piraten kleding in een drukke haven
+  width: 1024px
+  height: 1024px
+
+- name: Ash Dragonblade
+  fileType: png
+  alt: Ash Dragonblade met zijn zelf gemaakte zwaard
+  width: 450px
+  height: 625px
+
+- name: Falconreach
+  fileType: png
+  alt: De straten van Falconreach, met Ash Dragonblade en Twilly. Op de voorgrond zijn de Falconreach Herberg en Yulgar's Smithy te zien. Op de achtergrond is de Falconreach toren en de zee te zien.
+  width: 1055px
+  height: 628px
+
+- name: Azura Zingzwaard
+  fileType: jpeg
+  alt: Azura Zingzwaard
+  width: 474px
+  height: 910px
+
+- name: Barnaby Kraai
+  fileType: png
+  alt: Barnaby Kraai
+  width: 500px
+  height: 500px
+
+- name: Dazlyn Grayshard
+  fileType: jpg
+  alt: Portret van Dazlyn Grayshard, gekleed in mijnwerkers kleding
+  width: 1178px
+  height: 1500px
+
+- name: Elmar Barthen
+  fileType: png
+  alt: Portret van Elmar Barthen, gekleed voor zijn werk en met een dolk voor bescherming
+  width: 282px
+  height: 640px
+
+- name: Gaston de Kok
+  fileType: jpg
+  alt: Gaston de Kok die in chefs kleding eten aan het voorbereiden is. Zijn gespierde armen zijn goed te zien door zijn korte mouwen.
+  width: 700px
+  height: 936px
+
+- name: Grog Steenvuist
+  fileType: png
+  alt: Grog Steenvuist die klaar staat om een gevecht aan te gaan
+  width: 472px
+  height: 464px
+
+- name: Halia Thornton
+  fileType: jpg
+  alt: Portret van Halia Thornton
+  width: 407px
+  height: 640px
+
+- name: IJzeren Pot
+  fileType: jpg
+  alt: Een ordinaire ijzeren pot
+  width: 2000px
+  height: 2000px
+
+- name: Isabella Swift
+  fileType: jpg
+  alt: Isabella Swift met een uil op haar schouder en een schrijfboek in haar hand
+  width: 542px
+  height: 767px
+
+- name: Kaelen Schaduwholster
+  fileType: png
+  alt: Kaelen Schaduwholster in het donker gekleed, met een dolk op hun heup en een spreuk in hun hand 
+  width: 542px
+  height: 767px
+
+- name: Kapitein Groenbaard
+  fileType: jpg
+  alt: Kapitein Groenbaard in piraten kleding en met zijn houten poot, haak voor een hand, ooglapje, en zijn iconische groene baard
+  width: 949px
+  height: 2048px
+
+- name: Koning Splurt Lengte
+  fileType: png
+  alt: Koning Splurt naast een gewone Goblin, hij is twee keer zo lang en twee keer zo breed
+  width: 582px
+  height: 429px
+
+- name: Koning Splurt
+  fileType: png
+  alt: Koning Splurt met de Circlet of Enlarge Reduce op zijn hoofd
+  width: 524px
+  height: 366px
+
+- name: Circlet of Enlarge Reduce
+  fileType: png
+  alt: De Circlet of Enlarge Reduce. In het midden zit één grote edelsteen, en één kleine.
+  width: 500px
+  height: 500px
+
+- name: Kosharakar Coemeydus
+  fileType: jpg
+  alt: Kosharakar Coemeydus, klaar voor een gevecht. Hij is gekleed met stylen uit verschillende tijden. Hij heeft zijn staf in de hand, moderne schoenen aan, en een rode doek over zijn gezicht. Zijn ogen gloeien van magie.
+  width: 1080px
+  height: 1510px
+
+- name: Laranlor
+  fileType: jpg
+  alt: Laranlor Cormearil, als adel gekleed. Hij bereid een spreuk voor in zijn rechter hand.
+  width: 1024px
+  height: 1024px
+
+- name: Linene Graywind
+  fileType: png
+  alt: Linene Graywind die twee muntjes op gooit. Ze straalt zelfverzekerdheid en geluk uit.
+  width: 850px
+  height: 1549px
+
+- name: Lushikukukanda
+  fileType: jpg
+  alt: Lushikukukanda, de zwarte Dragonborn met een harnas aan. Imponerend kijkt hij toe hoe een gevecht uitbreekt.
+  width: 1024px
+  height: 1024px
+
+- name: Nettie Bettie
+  fileType: png
+  alt: Nettie Bettie met de Staff of Average Intelligence
+  width: 407px
+  height: 354px
+
+- name: Staff of Normal Intelligence
+  fileType: png
+  alt: De Staff of Average Intelligence, gemaakt van hout
+  width: 299px
+  height: 834px
+
+- name: Norbus Ironrune
+  fileType: jpeg
+  alt: Portret van Norbus Ironrune, gekleed in mijnwerkers kleding
+  width: 564px
+  height: 798px
+
+- name: PEKKA
+  fileType: jpg
+  alt: P.E.K.K.A in gevechtspositie
+  width: 1080px
+  height: 1256px
+
+- name: Robina & Twilly
+  fileType: png
+  alt: Robina the Hood met Twilly op haar schouder
+  width: 506px
+  height: 493px
+
+- name: Robina full body
+  fileType: png
+  alt: Robina the Hood met Haar boog klaar voor gebruik
+  width: 566px
+  height: 953px
+
+- name: Theodas
+  fileType: jpg
+  alt: Theodas, die met veel ervaring rust zijn omgeving aan het scannen is
+  width: 1024px
+  height: 1024px
+
+- name: Twilly
+  fileType: png
+  alt: Twilly met hoopvolle ogen en zijn eigen stokje
+  width: 533px
+  height: 669px
+
+- name: Yulgar Lark
+  fileType: png
+  alt: Yulgar Lark in zijn winkel, Yulgar's Smithy
+  width: 255px
+  height: 438px

@@ -1,0 +1,17 @@
+<!-- Input parameters -->
+{% assign filterType = include.filterType %}
+{% assign filterName = include.filterName %}
+
+{% assign object = '' %}
+
+{% if filterType == "character" %}
+    {% assign object = site.data.characters | where:'name', filterName | first %}
+{% endif %}
+
+<ul>
+    {% for property in object.properties %}
+        <li>
+            {{property.name}}: {{property.value}}
+        </li>
+    {% endfor %}
+</ul>

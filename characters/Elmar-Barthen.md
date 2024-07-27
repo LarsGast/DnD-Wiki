@@ -1,19 +1,7 @@
 ---
-layout: post
+layout: character
 title: Elmar Barthen
 ---
-
-<img src="../images/Elmar Barthen.png" alt="Elmar Barthen" width=100>
-
-## Algemeen
-* Volledige naam: Elmar Barthen
-* Bijnamen: -
-* Ras: Mens
-* Geslacht: Man
-* Leeftijd: 50
-* Woonplaats: Phandalin
-* Bevindt zich op dit moment in: Zijn winkel, Barthen's Voorzieningen
-* Talen: Common
 
 ## Beroep en geschiedenis
 Baas van Barthen's Voorzieningen.
@@ -41,25 +29,3 @@ Beschermend voor zijn naasten.
 
 ## Gebreken of fouten
 Ziet soms niet het slechte in anderen.
-
----
-
-## Komt voor in
-* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/de-draak-van-icespire-peak.md %})
-
-## Gerelateerde karakters
-* -
-
-## Gerelateerde locaties
-* [Phandalin]({{ site.baseurl }}{% link locations/Phandalin.md %})
-
-## Items
-
-### Huidige bezittingen
-* -
-
-### Vorige bezittingen
-* -
-
-## Galerij
-<img src="../images/Elmar Barthen.png" alt="Elmar Barthen" width=100>

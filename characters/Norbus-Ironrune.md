@@ -1,19 +1,7 @@
 ---
-layout: post
+layout: character
 title: Norbus Ironrune
 ---
-
-<img src="../images/Norbus Ironrune.jpeg" alt="Norbus Ironrune" width=200>
-
-## Algemeen
-* Volledige naam: Norbus Ironrune
-* Bijnamen: -
-* Ras: Shield Dwarf
-* Geslacht: Man
-* Leeftijd: Onbekend, overleden
-* Woonplaats: Onbekend
-* Bevindt zich op dit moment in: Begraven in Dwarven Excavation
-* Talen: Common, Dwarvish
 
 ## Beroep en geschiedenis
 Norbus Ironrune was een schilddwerg die een mijnwerker van beroep was. Hij reisde samen met zijn neef Dazlyn Grayshard naar de Sword Mountains om mineralen te inspecteren en hopelijk een waardevolle vondst te doen.
@@ -41,25 +29,3 @@ Hij reisde samen met zijn neef Norbus Ironrune, en de twee werkten vaak samen.
 
 ## Gebreken of fouten
 Kon soms te gretig zijn.
-
----
-
-## Komt voor in
-* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/de-draak-van-icespire-peak.md %})
-
-## Gerelateerde karakters
-* [Dazlyn Grayshard]({{ site.baseurl }}{% link characters/Dazlyn-Grayshard.md %})
-
-## Gerelateerde locaties
-* [Dwarven Excavation]({{ site.baseurl }}{% link locations/Dwarven-Excavation.md %})
-
-## Items
-
-### Huidige bezittingen
-* -
-
-### Vorige bezittingen
-* [Sending Stone]({{ site.baseurl }}{% link items/Sending-Stone.md %})
-
-## Galerij
-<img src="../images/Norbus Ironrune.jpeg" alt="Norbus Ironrune" width=200>

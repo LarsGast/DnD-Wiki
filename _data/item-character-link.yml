@@ -1,0 +1,115 @@
+- itemName: Circlet of Enlarge Reduce
+  characterName: Test Karakter
+  current: true
+  past: false
+- itemName: Circlet of Enlarge Reduce
+  characterName: Arikikuchiariku
+  current: true
+  past: false
+- itemName: Circlet of Enlarge Reduce
+  characterName: Koning Splurt
+  current: false
+  past: true
+
+- itemName: Dust of Dryness
+  characterName: Test Karakter
+  current: true
+  past: false
+- itemName: Dust of Dryness
+  characterName: Albert Tweesteen
+  current: true
+  past: false
+  comment: 1 snufje
+- itemName: Dust of Dryness
+  characterName: Laranlor Cormearil
+  current: true
+  past: false
+  comment: 4 snufjes
+- itemName: Dust of Dryness
+  characterName: Laranlor Cormearil
+  current: false
+  past: true
+  comment: 1 snufje
+
+- itemName: IJzeren Pot
+  characterName: Halia Thornton
+  current: true
+  past: false
+  comment: Is er van overtuigd dat de pot magische eigenschappen heeft
+
+- itemName: Lab Coat (worn)
+  characterName: Test Karakter
+  current: true
+  past: false
+- itemName: Lab Coat (worn)
+  characterName: Albert Tweesteen
+  current: true
+  past: false
+- itemName: Lab Coat (worn)
+  characterName: Lushikukukanda
+  current: false
+  past: true
+
+- itemName: Sending Stone
+  characterName: Test Karakter
+  current: true
+  past: false
+- itemName: Sending Stone
+  characterName: Dazlyn Grayshard
+  current: false
+  past: true
+- itemName: Sending Stone
+  characterName: Laranlor Cormearil
+  current: true
+  past: false
+- itemName: Sending Stone
+  characterName: Norbus Ironrune
+  current: false
+  past: true
+- itemName: Sending Stone
+  characterName: P.E.K.K.A.
+  current: true
+  past: false
+
+- itemName: Staff of Average Intelligence
+  characterName: Test Karakter
+  current: false
+  past: true
+- itemName: Staff of Average Intelligence
+  characterName: Adonis
+  current: false
+  past: true
+- itemName: Staff of Average Intelligence
+  characterName: Albert Tweesteen
+  current: false
+  past: true
+- itemName: Staff of Average Intelligence
+  characterName: Kapitein Groenbaard
+  current: true
+  past: false
+- itemName: Staff of Average Intelligence
+  characterName: Nettie Bettie
+  current: false
+  past: true
+- itemName: Staff of Average Intelligence
+  characterName: P.E.K.K.A.
+  current: false
+  past: true
+
+- itemName: Tia’s Kompas
+  characterName: Test Karakter
+  current: false
+  past: true
+- itemName: Tia’s Kompas
+  characterName: Kapitein Groenbaard
+  current: true
+  past: false
+
+- itemName: Wind Fan
+  characterName: Test Karakter
+  current: false
+  past: true
+- itemName: Wind Fan
+  characterName: Theodas
+  current: true
+  past: false

@@ -1,19 +1,7 @@
 ---
-layout: post
+layout: character
 title: Kapitein Groenbaard
 ---
-
-<img src="../images/Kapitein Groenbaard.jpg" alt="Kapitein Groenbaard" width=200>
-
-## Algemeen
-* Volledige naam: Eddie Riet
-* Bijnamen: Kapitein Groenbaard
-* Ras: Mens
-* Geslacht: Man
-* Leeftijd: 35-40
-* Woonplaats: Wraak van Koning Alden
-* Bevindt zich op dit moment in: Op avontuur met een groep avonturiers
-* Talen: Common
 
 ## Beroep en geschiedenis
 Kapitein van zijn eigen schip, de Wraak van Koning Alden. Hiervoor matroos als deel van verschillende andere bemanningen.
@@ -41,37 +29,3 @@ Wil de meest gevreesde piraat van de zeven luchten worden.
 
 ## Gebreken of fouten
 Arrogantie, denkt dat hij alles en iedereen aankan.
-
----
-
-## Komt voor in
-* [De Grote Ontsnapping van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-grote-ontsnapping-van-kapitein-groenbaard.md %})
-* [Twilly Rekruteren]({{ site.baseurl }}{% link campaigns/twilly-rekruteren.md %})
-* [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-legende-van-kapitein-groenbaard.md %})
-* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/de-draak-van-icespire-peak.md %})
-
-## Gerelateerde karakters
-* [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
-* [Barnaby Kraai]({{ site.baseurl }}{% link characters/Barnaby-Kraai.md %})
-* [Gareth Bloodwood]({{ site.baseurl }}{% link characters/Gareth-Bloodwood.md %})
-* [Gaston de Kok]({{ site.baseurl }}{% link characters/Gaston-de-Kok.md %})
-* [Grog Steenvuist]({{ site.baseurl }}{% link characters/Grog-Steenvuist.md %})
-* [Isabella Swift]({{ site.baseurl }}{% link characters/Isabella-Swift.md %})
-* [Kaelen Schaduwholster]({{ site.baseurl }}{% link characters/Kaelen-Schaduwholster.md %})
-* [Kosharakar Coemeydus]({{ site.baseurl }}{% link characters/Kosharakar-Coemeydus.md %})
-
-## Gerelateerde locaties
-* [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
-* [Zandzee]({{ site.baseurl }}{% link locations/Zandzee.md %})
-
-## Items
-
-### Huidige bezittingen
-* [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
-* [Tia's Kompas]({{ site.baseurl }}{% link items/Tias-Kompas.md %})
-
-### Vorige bezittingen
-* -
-
-## Galerij
-<img src="../images/Kapitein Groenbaard.jpg" alt="Kapitein Groenbaard" width=200>

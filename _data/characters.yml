@@ -4,32 +4,74 @@
 # This way it does not appear in any links.
 
 # Each character should have the following structure:
-# - name: # Name of the character (can contain spaces)
-#   visible: # If the character is published and should appear in links
-#   customLink: # Optional, if the name cannot create a valid link in URL
-#   icons: # Any of the following icons, in order
-#     - name: player
-#     - name: quest
-#     - name: shop
-#     - name: tavern
-#     - name: with-party
-#     - name: male
-#     - name: female
-#     - name: non-binary
-#     - name: genderfluid
-#     - name: friendly
-#     - name: indifferent
-#     - name: hostile
-#     - name: dead
+- name: Test Karakter
+  visible: false
+  index: -1
+  customLink: Test-Karakter
+  properties:
+    - name: Volledige naam
+      value: Test Karakter
+    - name: Bijnamen
+      value: Testie, TK
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Alles en niks
+    - name: Leeftijd
+      value: Oneindig
+    - name: Woonplaats
+      value: Overal
+    - name: Bevindt zich op dit moment in
+      value: Achter je
+    - name: Talen
+      value: Frans
+  icons: 
+    - name: player
+    - name: quest
+    - name: shop
+    - name: tavern
+    - name: with-party
+    - name: male
+    - name: female
+    - name: non-binary
+    - name: genderfluid
+    - name: friendly
+    - name: indifferent
+    - name: hostile
+    - name: dead
 
 - name: Adonis
   visible: true
+  properties:
+    - name: Ras
+      value: Drow
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 80
+    - name: Bevindt zich op dit moment in
+      value: Onbekend
+    - name: Talen
+      value: Common, Elvish
   icons:
     - name: player
     - name: male
 
 - name: Albert Tweesteen
   visible: true
+  properties:
+    - name: Ras
+      value: Goblin
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 20
+    - name: Woonplaats
+      value: Surewould-bos
+    - name: Bevindt zich op dit moment in
+      value: Op avontuur met een groep avonturiers
+    - name: Talen
+      value: Common, Goblin
   icons:
     - name: quest
     - name: with-party
@@ -38,6 +80,19 @@
 
 - name: Amy Aria
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Vrouw
+    - name: Leeftijd
+      value: 24
+    - name: Woonplaats
+      value: Falconreach
+    - name: Bevindt zich op dit moment in
+      value: Amy’s Potions in Falconreach
+    - name: Talen
+      value: Common
   icons:
     - name: shop
     - name: female
@@ -45,6 +100,17 @@
 
 - name: Arikikuchiariku
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 27
+    - name: Bevindt zich op dit moment in
+      value: De Sword Mountains
+    - name: Talen
+      value: Common, Sylvan, Primordial
   icons:
     - name: player
     - name: with-party
@@ -52,6 +118,19 @@
 
 - name: Ash Dragonblade
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 14
+    - name: Woonplaats
+      value: Falconreach
+    - name: Bevindt zich op dit moment in
+      value: De straten van Falconreach
+    - name: Talen
+      value: Common
   icons:
     - name: quest
     - name: male
@@ -59,6 +138,21 @@
 
 - name: Azura Zingzwaard
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Prinses (door Hugo Zingzwaard en Koning Splurt)
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Vrouw
+    - name: Leeftijd
+      value: 14
+    - name: Woonplaats
+      value: Falconreach
+    - name: Bevindt zich op dit moment in
+      value: Falconreach
+    - name: Talen
+      value: Common
   icons:
     - name: quest
     - name: female
@@ -66,6 +160,19 @@
 
 - name: Barnaby Kraai
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Zwartsnavel
+    - name: Ras
+      value: Kenku
+    - name: Geslacht
+      value: Man
+    - name: Woonplaats
+      value: Mobiel, op het piratenschip van Kapitein Groenbaard
+    - name: Bevindt zich op dit moment in
+      value: Op het piratenschip van Kapitein Groenbaard
+    - name: Talen
+      value: Common, Kenku
   icons:
     - name: quest
     - name: male
@@ -73,6 +180,17 @@
 
 - name: Dazlyn Grayshard
   visible: true
+  properties:
+    - name: Ras
+      value: Schild Dwerg
+    - name: Geslacht
+      value: Man
+    - name: Woonplaats
+      value: Onbekend
+    - name: Bevindt zich op dit moment in
+      value: Phandalin
+    - name: Talen
+      value: Common, Dwergs
   icons:
     - name: quest
     - name: male
@@ -80,6 +198,19 @@
 
 - name: Elmar Barthen
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 50
+    - name: Woonplaats
+      value: Phandalin
+    - name: Bevindt zich op dit moment in
+      value: Zijn winkel, Barthen’s Voorzieningen
+    - name: Talen
+      value: Common
   icons:
     - name: shop
     - name: male
@@ -87,6 +218,17 @@
 
 - name: Gareth Bloodwood
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen, overleden
+    - name: Bevindt zich op dit moment in
+      value: Dood in de Zandzee
+    - name: Talen
+      value: Common
   icons:
     - name: quest
     - name: male
@@ -94,6 +236,21 @@
 
 - name: Gaston de Kok
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Chef Bulk (door een groep avonturiers)
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen
+    - name: Woonplaats
+      value: Mobiel, De Wraak van Koning Alden
+    - name: Bevindt zich op dit moment in
+      value: De Wraak van Koning Alden
+    - name: Talen
+      value: Common
   icons:
     - name: quest
     - name: male
@@ -101,6 +258,21 @@
 
 - name: Grog Steenvuist
   visible: true
+  properties:
+    - name: Bijnaam
+      value: IJzerwerk
+    - name: Ras
+      value: Berg Dwerg
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen
+    - name: Woonplaats
+      value: Mobiel, De Wraak van Koning Alden
+    - name: Bevindt zich op dit moment in
+      value: De Wraak van Koning Alden
+    - name: Talen
+      value: Common, Dwergs
   icons:
     - name: player
     - name: quest
@@ -109,6 +281,19 @@
 
 - name: Halia Thornton
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Vrouw
+    - name: Leeftijd
+      value: Volwassen
+    - name: Woonplaats
+      value: Phandalin
+    - name: Bevindt zich op dit moment in
+      value: Phandalin Mijnwerkersbeurs
+    - name: Talen
+      value: Common, Thieves' Cant
   icons:
     - name: shop
     - name: female
@@ -116,6 +301,19 @@
 
 - name: Harbin Wester
   visible: true
+  properties:
+    - name: Ras
+      value: Onbekend
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen
+    - name: Woonplaats
+      value: Phandalin
+    - name: Bevindt zich op dit moment in
+      value: Zijn huis, ten oosten van het stadhuis in Phandalin
+    - name: Talen
+      value: Common
   icons:
     - name: quest
     - name: male
@@ -123,6 +321,19 @@
 
 - name: Hugo Staalzwaard
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 42
+    - name: Woonplaats
+      value: Phandalin
+    - name: Bevindt zich op dit moment in
+      value: De Stonehill Herberg in Phandalin
+    - name: Talen
+      value: Common
   icons:
     - name: tavern
     - name: male
@@ -130,6 +341,19 @@
 
 - name: Hugo Zingzwaard
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 42
+    - name: Woonplaats
+      value: Falconreach
+    - name: Bevindt zich op dit moment in
+      value: De Falconreach Inn in Falconreach
+    - name: Talen
+      value: Common
   icons:
     - name: quest
     - name: tavern
@@ -138,6 +362,21 @@
 
 - name: Isabella Swift
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Zilvermaan
+    - name: Ras
+      value: Wood-Elf
+    - name: Geslacht
+      value: Vrouw
+    - name: Leeftijd
+      value: Volwassen
+    - name: Woonplaats
+      value: Mobiel, De Wraak van Koning Alden
+    - name: Bevindt zich op dit moment in
+      value: De Wraak van Koning Alden
+    - name: Talen
+      value: Common, Elfs
   icons:
     - name: player
     - name: quest
@@ -146,6 +385,21 @@
 
 - name: Kaelen Schaduwholster
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Duisterster
+    - name: Ras
+      value: Tiefling
+    - name: Geslacht
+      value: Non-binair
+    - name: Leeftijd
+      value: Volwassen
+    - name: Woonplaats
+      value: Mobiel, De Wraak van Koning Alden
+    - name: Bevindt zich op dit moment in
+      value: De Wraak van Koning Alden
+    - name: Talen
+      value: Common, Infernal
   icons:
     - name: quest
     - name: non-binary
@@ -153,6 +407,23 @@
 
 - name: Kapitein Groenbaard
   visible: true
+  properties:
+    - name: Volledige naam
+      value: Eddie Riet
+    - name: Bijnaam
+      value: Kapitein Groenbaard
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 35-40
+    - name: Woonplaats
+      value: Mobiel, De Wraak van Koning Alden
+    - name: Bevindt zich op dit moment in
+      value: De Wraak van Koning Alden
+    - name: Talen
+      value: Common
   icons:
     - name: quest
     - name: with-party
@@ -161,6 +432,21 @@
 
 - name: Koning Splurt
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Koning Splurt
+    - name: Ras
+      value: Goblin
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 21, overleden
+    - name: Woonplaats
+      value: Surewould-bos
+    - name: Bevindt zich op dit moment in
+      value: Dood in de Goblin schuilplaats in het Surewould-bos
+    - name: Talen
+      value: Common, Goblin
   icons:
     - name: quest
     - name: male
@@ -168,6 +454,19 @@
 
 - name: Kosharakar Coemeydus
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Kosha
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen
+    - name: Bevindt zich op dit moment in
+      value: Onbekend
+    - name: Talen
+      value: Common
   icons:
     - name: player
     - name: quest
@@ -175,6 +474,19 @@
 
 - name: Laranlor Cormearil
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Lan
+    - name: Ras
+      value: Half-Elf
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen
+    - name: Bevindt zich op dit moment in
+      value: De Sword Mountains
+    - name: Talen
+      value: Common, Elfs, Primordial, Draconic
   icons:
     - name: player
     - name: with-party
@@ -182,6 +494,19 @@
 
 - name: Linene Graywind
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Vrouw
+    - name: Leeftijd
+      value: Volwassen
+    - name: Woonplaats
+      value: Phandalin
+    - name: Bevindt zich op dit moment in
+      value: De Lionshield Coster in Phandalin
+    - name: Talen
+      value: Common
   icons:
     - name: shop
     - name: female
@@ -189,6 +514,19 @@
 
 - name: Lushikukukanda
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Kuku
+    - name: Ras
+      value: Dragonborn
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 24
+    - name: Bevindt zich op dit moment in
+      value: De Sword Mountains
+    - name: Talen
+      value: Common, Draconic
   icons:
     - name: player
     - name: with-party
@@ -196,6 +534,17 @@
 
 - name: Nettie Bettie
   visible: true
+  properties:
+    - name: Ras
+      value: Goblin
+    - name: Geslacht
+      value: Vrouw
+    - name: Leeftijd
+      value: 21, overleden
+    - name: Bevindt zich op dit moment in
+      value: Dood in de Goblin schuilplaats in het Surewould-bos
+    - name: Talen
+      value: Common, Goblin
   icons:
     - name: quest
     - name: female
@@ -203,6 +552,17 @@
 
 - name: Norbus Ironrune
   visible: true
+  properties:
+    - name: Ras
+      value: Schild Dwerg
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen, overleden
+    - name: Bevindt zich op dit moment in
+      value: Begraven in Dwarven Excavation
+    - name: Talen
+      value: Common, Dwergs
   icons:
     - name: quest
     - name: male
@@ -210,6 +570,17 @@
 
 - name: P.E.K.K.A.
   visible: true
+  properties:
+    - name: Ras
+      value: Warforged
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen
+    - name: Bevindt zich op dit moment in
+      value: De Sword Mountains
+    - name: Talen
+      value: Common
   customLink: PEKKA
   icons:
     - name: player
@@ -218,6 +589,19 @@
 
 - name: Robina the Hood
   visible: true
+  properties:
+    - name: Ras
+      value: Wood-Elf
+    - name: Geslacht
+      value: Vrouw
+    - name: Leeftijd
+      value: 45
+    - name: Woonplaats
+      value: Falconreach
+    - name: Bevindt zich op dit moment in
+      value: Surewould-bos
+    - name: Talen
+      value: Common, Elvish, Goblin
   icons:
     - name: quest
     - name: female
@@ -225,6 +609,17 @@
 
 - name: Theodas
   visible: true
+  properties:
+    - name: Ras
+      value: High-Elf
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 100
+    - name: Bevindt zich op dit moment in
+      value: De Sword Mountains
+    - name: Talen
+      value: Common, Elvish, Undercommon
   icons:
     - name: player
     - name: with-party
@@ -232,6 +627,19 @@
 
 - name: Twilly
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Held van Falconreach
+    - name: Ras
+      value: Onbekend
+    - name: Geslacht
+      value: Genderfluid
+    - name: Leeftijd
+      value: 5
+    - name: Bevindt zich op dit moment in
+      value: Op avontuur met een groep avonturiers
+    - name: Talen
+      value: Begrijpt Common en Goblin, spreekt één woord Common (“Hallo!”)
   icons:
     - name: quest
     - name: with-party
@@ -240,6 +648,19 @@
 
 - name: Yulgar Lark
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 49
+    - name: Woonplaats
+      value: Falconreach
+    - name: Bevindt zich op dit moment in
+      value: Yulgar's Smithy in Falconreach
+    - name: Talen
+      value: Common
   icons:
     - name: shop
     - name: male

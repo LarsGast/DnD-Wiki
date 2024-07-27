@@ -1,0 +1,15 @@
+<!-- Input parameters -->
+{% assign filterType = include.filterType %}
+{% assign filterName = include.filterName %}
+
+{% if filterType == "character" %}
+    {% assign imageCharacterLinks = site.data.image-character-link | where:"characterName", filterName %}
+    {% assign headerImageLink = imageCharacterLinks | where:"isHeaderImage", true | first %}
+    {% if headerImageLink %}
+        {% assign image = site.data.images | where:"name", headerImageLink.imageName | first %}
+    {% endif %}
+{% endif %}
+
+{% if image %}
+    <img src="../images/{{ image.name }}.{{ image.fileType}}" alt="{{ image.alt }}" height="{{ image.height }}" width="{{ image.width }}"/>
+{% endif %}

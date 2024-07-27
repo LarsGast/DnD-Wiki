@@ -1,19 +1,7 @@
 ---
-layout: post
-title: Isabella  Swift
+layout: character
+title: Isabella Swift
 ---
-
-<img src="../images/Isabella Swift.jpg" alt="Isabella Swift" width=200>
-
-## Algemeen
-* Volledige naam: Isabella Swift
-* Bijnamen: Zilvermaan
-* Ras: Wood-Elf
-* Geslacht: Vrouw
-* Leeftijd: Onbekend
-* Woonplaats: Mobiel, op het piratenschip van Kapitein Groenbaard
-* Bevindt zich op dit moment in: Op het piratenschip van Kapitein Groenbaard
-* Talen: Common, Elvish
 
 ## Beroep en geschiedenis
 Isabella Swift, bijgenaamd Zilvermaan, is een charmante en charismatische bard, bekend om haar zilveren tong en betoverende muziek. Ze houdt de moraal hoog onder de bemanning met haar inspirerende optredens en slimme humor.
@@ -41,30 +29,3 @@ Isabella voelt een sterke band met haar medepiraten op het schip van Kapitein Gr
 
 ## Gebreken of fouten
 Isabella kan soms te snel oordelen of impulsief handelen, wat haar in moeilijkheden kan brengen.
-
----
-
-## Komt voor in
-* [De Grote Ontsnapping van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-grote-ontsnapping-van-kapitein-groenbaard.md %})
-
-## Gerelateerde karakters
-* [Barnaby Kraai]({{ site.baseurl }}{% link characters/Barnaby-Kraai.md %})
-* [Grog Steenvuist]({{ site.baseurl }}{% link characters/Grog-Steenvuist.md %})
-* [Kaelen Schaduwholster]({{ site.baseurl }}{% link characters/Kaelen-Schaduwholster.md %})
-* [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
-* [Kosharakar Coemeydus]({{ site.baseurl }}{% link characters/Kosharakar-Coemeydus.md %})
-
-## Gerelateerde locaties
-* [Drakengreep]({{ site.baseurl }}{% link locations/Drakengreep.md %})
-* [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
-
-## Items
-
-### Huidige bezittingen
-* -
-
-### Vorige bezittingen
-* -
-
-## Galerij
-<img src="../images/Isabella Swift.jpg" alt="Isabella Swift" width=200>

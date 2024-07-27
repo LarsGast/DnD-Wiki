@@ -8,6 +8,7 @@ In deze sectie van de wiki zijn alle items die voorkomen in de campaigns die ik 
 
 * [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
 * [Dust of Dryness]({{ site.baseurl }}{% link items/Dust-of-Dryness.md %})
+* [IJzeren Pot]({{ site.baseurl }}{% link items/IJzeren-Pot.md %})
 * [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
 * [Sending Stone]({{ site.baseurl }}{% link items/Sending-Stone.md %})
 * [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})

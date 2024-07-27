@@ -1,0 +1,24 @@
+- name: Circlet of Enlarge Reduce
+  visible: true
+
+- name: Dust of Dryness
+  visible: true
+
+- name: IJzeren Pot
+  visible: true
+
+- name: Lab Coat (worn)
+  visible: true
+
+- name: Sending Stone
+  visible: true
+
+- name: Staff of Average Intelligence
+  visible: true
+
+- name: Tia’s Kompas
+  visible: true
+  customLink: Tias-Kompas
+
+- name: Wind Fan
+  visible: true
