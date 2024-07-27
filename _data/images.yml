@@ -1,20 +1,20 @@
 - name: Test Karakter Headshot
   fileType: jpg
   alt: Test Karakter hoofd
-  height: 100px
   width: 100px
+  height: 100px
 
 - name: Test Karakter Full Body
   fileType: jpg
   alt: Test Karakter volledig lichaam
-  height: 300px
   width: 200px
+  height: 300px
 
 - name: Goblin
   fileType: png
   alt: Goblin
-  height: 557px
   width: 539px
+  height: 557px
 
 - name: Goblin Gang
   fileType: png
@@ -25,29 +25,35 @@
 - name: Lab Coat (Worn)
   fileType: png
   alt: Drie Goblins naast elkaar
-  height: 500px
   width: 500px
+  height: 500px
 
 - name: Amy Aria
   fileType: png
   alt: Amy Aria in haar winkel, Amy's Potions
-  height: 521px
   width: 219px
+  height: 521px
 
 - name: Arikikuchiariku
   fileType: jpg
   alt: Arikikuchiariku in piraten kleding in een drukke haven
-  height: 1024px
   width: 1024px
+  height: 1024px
 
 - name: Ash Dragonblade
   fileType: png
   alt: Ash Dragonblade met zijn zelf gemaakte zwaard
-  height: 625px
   width: 450px
+  height: 625px
 
 - name: Falconreach
   fileType: png
   alt: De straten van Falconreach, met Ash Dragonblade en Twilly. Op de voorgrond zijn de Falconreach Herberg en Yulgar's Smithy te zien. Op de achtergrond is de Falconreach toren en de zee te zien.
-  height: 628px
   width: 1055px
+  height: 628px
+
+- name: Azura Zingzwaard
+  fileType: jpeg
+  alt: Azura Zingzwaard
+  width: 474px
+  height: 910px

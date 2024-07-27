@@ -138,6 +138,21 @@
 
 - name: Azura Zingzwaard
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Prinses (door Hugo Zingzwaard en Koning Splurt)
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Vrouw
+    - name: Leeftijd
+      value: 14
+    - name: Woonplaats
+      value: Falconreach
+    - name: Bevindt zich op dit moment in
+      value: Falconreach
+    - name: Talen
+      value: Common
   icons:
     - name: quest
     - name: female
