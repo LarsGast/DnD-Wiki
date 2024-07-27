@@ -4,6 +4,8 @@
   characterName: Barnaby Kraai
 - locationName: Drakengreep
   characterName: Grog Steenvuist
+- locationName: Drakengreep
+  characterName: Isabella Swift
 
 - locationName: Dwarven Excavation
   characterName: Test Karakter
@@ -59,6 +61,8 @@
   characterName: Gaston de Kok
 - locationName: Wraak van Koning Alden
   characterName: Grog Steenvuist
+- locationName: Wraak van Koning Alden
+  characterName: Isabella Swift
 
 - locationName: Zandzee
   characterName: Test Karakter

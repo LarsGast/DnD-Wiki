@@ -362,6 +362,21 @@
 
 - name: Isabella Swift
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Zilvermaan
+    - name: Ras
+      value: Wood-Elf
+    - name: Geslacht
+      value: Vrouw
+    - name: Leeftijd
+      value: Volwassen
+    - name: Woonplaats
+      value: Mobiel, De Wraak van Koning Alden
+    - name: Bevindt zich op dit moment in
+      value: De Wraak van Koning Alden
+    - name: Talen
+      value: Common, Elfs
   icons:
     - name: player
     - name: quest

@@ -60,3 +60,7 @@
   imageName: Azura Zingzwaard
 - characterName: Hugo Zingzwaard
   imageName: Falconreach
+
+- characterName: Isabella Swift
+  imageName: Isabella Swift
+  isHeaderImage: true
