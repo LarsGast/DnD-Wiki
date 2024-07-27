@@ -53,11 +53,19 @@
   characterName: Albert Tweesteen
   current: false
   past: true
+- itemName: Staff of Average Intelligence
+  characterName: Kapitein Groenbaard
+  current: true
+  past: false
 
 - itemName: Tia’s Kompas
   characterName: Test Karakter
   current: false
   past: true
+- itemName: Tia’s Kompas
+  characterName: Kapitein Groenbaard
+  current: true
+  past: false
 
 - itemName: Wind Fan
   characterName: Test Karakter
