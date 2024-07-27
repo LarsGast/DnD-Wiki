@@ -6,8 +6,15 @@
 {% assign characters = '' | split: ',' %}
 {% assign indexedCharacters = '' | split: ',' %}
 
-<!-- Filtering based on related characters -->
-{% if filterType == "character" %}
+{% if filterType == "campaign" %}
+    {% for characterLink in site.data.campaign-character-link %}
+        {% if characterLink.campaignName == filterName %}
+            {% assign character = site.data.characters | where:"name", characterLink.characterName %}
+            {% assign characters = characters | push: character %}
+        {% endif %}
+    {% endfor %}
+{% elsif filterType == "character" %}
+    <!-- Filtering based on related characters -->
     {% for characterLink in site.data.character-character-link %}
 
         <!-- Reset the character variable so we know if one was found -->

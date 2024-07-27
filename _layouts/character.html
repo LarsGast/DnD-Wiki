@@ -25,9 +25,13 @@ layout: default
 
     <hr/>
 
-    <h2>Komt voor in</h2>
-    {% include campaign-list.html filterType="character" filterName=page.title %}
-    
+    <h2>Gerelateerde Campaigns</h2>
+    <h3>Verleden</h3>
+    {% include campaign-list.html filterType="character" filterName=page.title isFlashback=true %}
+
+    <h3>Heden</h3>
+    {% include campaign-list.html filterType="character" filterName=page.title isFlashback=false %}
+
     <h2>Gerelateerde karakters</h2>
     {% include character-list.html filterType="character" filterName=page.title %}
     

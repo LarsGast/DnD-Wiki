@@ -1,9 +1,7 @@
 ---
-layout: post
+layout: campaign
 title: De Draak van Icespire Peak
 ---
-
-## Verhaal
 
 ### Introductie
 Nieuws van een draak die opgedoken is in Icespire Peak dichtbij Phandalin heeft de oren van Kapitein Groenbaard bereikt. Avontuurlijk als hij is, heeft hij besloten om de held uit te hangen en deze draak te verslaan, voor een aardig prijsje natuurlijk.
@@ -53,39 +51,3 @@ De hal is bijna volledig uitgegraven, en de schat komt steeds dichter bij. Zodra
 In de kamer die verschijnt zodra de hal vrij van puin is staat een groot standbeeld van een dwerg met hoorns, die gretig naar een gloeiende groene edelsteen in zijn handen staart. De groep probeert voorzichtig te doen, en grijpt uiteindelijk naar de edelsteen. Zodra de edelsteen uit de handen van het standbeeld gaat, verpulvert deze in stof, en explodeert het standbeeld. De avonturiers die in de buurt staan gaan neer, maar worden gouw overeind geholpen door de rest. De Hal van Hebzucht had bijna nieuwe slachtoffers geëist.
 
 Samen met Dazlyn (die nog steeds aan het bij komen is) reist de groep terug naar Phandalin, waar ze hun beloning kunnen eisen. Ondanks dat één van de Dwergen het niet gered heeft hebben ze hun missie volbracht. Dazlyn houd zichzelf verantwoordelijk voor de hebzucht die hij en zijn neef hebben getoond.
-
----
-
-## Vorige Campaign
-* [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-legende-van-kapitein-groenbaard.md %})
-
-## Oneshots Die Tijdens Deze Campaign Plaats Vinden
-* [De Grote Ontsnapping van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-grote-ontsnapping-van-kapitein-groenbaard.md %})
-
-## Volgende Campaign
-* -
-
-## Karakters
-* [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
-* [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
-* [Dazlyn Grayshard]({{ site.baseurl }}{% link characters/Dazlyn-Grayshard.md %})
-* [Elmar Barthen]({{ site.baseurl }}{% link characters/Elmar-Barthen.md %})
-* [Halia Thornton]({{ site.baseurl }}{% link characters/Halia-Thornton.md %})
-* [Harbin Wester]({{ site.baseurl }}{% link characters/Harbin-Wester.md %})
-* [Hugo Staalzwaard]({{ site.baseurl }}{% link characters/Hugo-Staalzwaard.md %})
-* [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
-* [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
-* [Linene Graywind]({{ site.baseurl }}{% link characters/Linene-Graywind.md %})
-* [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
-* [Norbus Ironrune]({{ site.baseurl }}{% link characters/Norbus-Ironrune.md %})
-* [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
-* [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})
-* [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
-
-## Locaties
-* [Dwarven Excavation]({{ site.baseurl }}{% link locations/Dwarven-Excavation.md %})
-* [Phandalin]({{ site.baseurl }}{% link locations/Phandalin.md %})
-* [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
-
-## Items
-* [Sending Stone]({{ site.baseurl }}{% link items/Sending-Stone.md %})

@@ -6,11 +6,14 @@
 <!-- Initialize an empty array for item names -->
 {% assign itemLinks = '' | split: ',' %}
 
-<!-- Filtering for character page -->
-{% if filterType == "character" %}
+{% if filterType == "campaign" %}
+{% for campaignItemLink in site.data.campaign-item-link %}
+    {% if campaignItemLink.campaignName == filterName %}
+        {% assign itemLinks = itemLinks | push: campaignItemLink %}
+    {% endif %}
+{% endfor %}
+{% elsif filterType == "character" %}
     {% for itemCharacterLink in site.data.item-character-link %}
-
-        <!-- Filtered name could be the first in the link, or the second -->
         {% if itemCharacterLink.characterName == filterName %}
             {% if time == "current" and itemCharacterLink.current %}
                 {% assign itemLinks = itemLinks | push: itemCharacterLink %}

@@ -1,9 +1,8 @@
 ---
-layout: post
+layout: campaign
 title: De Grote Ontsnapping van Kapitein Groenbaard
 ---
 
-## Verhaal
 Ergens in een herberg zit de beruchte Kapitein Groenbaard sterke verhalen te vertellen over zijn avonturen. Eén van deze avonturen is de grandioze ontsnapping van Drakengreep.
 
 Dit verhaal begint met Kapitein Groenbaard en zijn bemanning in de gevangenis. Ze zijn gevangen genomen door de koninklijke luchtmacht van Greenguard voor hun piratenstreken. De gevangenis waar ze zich bevinden is geen gewone gevangenis. Deze bevindt zich op Drakengreep, een zwevend eiland boven Greenguard. Aangezien het onmogelijk is om het eiland te voet te verlaten, wordt de gevangenis als één van de strengste van het land gezien. Om van dit eiland te ontsnappen, moet je al een luchtschip van de koninklijke luchtmacht kapen, en dat is precies wat Kapitein Groenbaard beweert te hebben gedaan.
@@ -16,7 +15,7 @@ Na het ontsnappen uit hun cellen gaan de piraten en de tovenaar op zoek naar hun
 
 Aangezien het hele eiland een gevangenis is, kan de groep niet zomaar ontsnappen. Ze moeten een plan bedenken. Het uiteindelijke plan is als volgt: De bemanning van Groenbaard verkleedt zich als bewakers van de gevangenis en doet alsof ze een gevangene (Kapitein Groenbaard) voor tijdelijk verlof van het eiland afvoeren. Met deze vermomming kunnen ze zonder problemen de straten oversteken tot ze bij de haven komen.
 
-De hoofddeur van de haven wordt bewaakt door een stel hoge bewakers. Deze bewakers laten niemand binnen zonder bewijs van een admiraal dat ze toestemming hebben. Aangezien Kapitein Groenbaard en zijn bemanning geen verlofbewijs hebben, zal het lastig worden om voorbij deze bewakers te komen. Terwijl de groep piraten probeert om toch voorbij deze bewakers te komen, komt er ineens een andere bewaker op hen af, die beweert de situatie over te nemen. Hij neemt de groep mee naar een afgelegen locatie en onthult dat hij ook deel uitmaakt van de bemanning van Kapitein Groenbaard. Barnaby Kraai vertelt dat hij in een ander cellenblok zat dan Groenbaard en dat hij samen met Kaelen Schaduwholster bewakersuniformen heeft weten te bemachtigen.
+De hoofddeur van de haven wordt bewaakt door een stel hoge bewakers. Deze bewakers laten niemand binnen zonder bewijs van een admiraal dat ze toestemming hebben. Aangezien Kapitein Groenbaard en zijn bemanning geen verlofbewijs hebben, zal het lastig worden om voorbij deze bewakers te komen. Terwijl de groep piraten probeert om toch voorbij deze bewakers te komen, komt er ineens een andere bewaker op hen af, die beweert de situatie over te nemen. Hij neemt de groep mee naar een afgelegen locatie en onthult dat hij ook deel uitmaakt van de bemanning van Kapitein Groenbaard. Barnaby Kraai vertelt dat hij in een ander cellenblok zat dan Groenbaard en dat hij samen met Kaelen Schaduwholster bewakers uniformen heeft weten te bemachtigen.
 
 Kraai leidt de groep naar de zijkant van de haven, waar hij samen met Kaelen een raampje heeft gevonden om naar binnen te sluipen. Binnen in de haven ziet de groep veel bewakers en zo’n acht luchtschepen liggen. Opnieuw moeten ze een plan bedenken om een luchtschip te kapen en succesvol te ontsnappen. Tijdens het maken van dit plan hoort Groenbaard een bewaker zeggen dat er een witte draak is opgedoken in de buurt van Phandalin, een dorpje aan de Sword Coast. Groenbaard bedenkt zich dat hij wel eens een draak zou willen vellen, maar voordat hij dit kan doen, zal hij eerst een luchtschip moeten hebben. Isabella Swift gooit haar charme in de strijd om de kapitein van één van de schepen over te halen om haar en Groenbaard mee te nemen. De kapitein stemt toe, maar alleen als zij alleen met zijn tweeën aan boord komen, aangezien het schip al aardig vol zit en ze geen extra bewakers nodig hebben. De rest van Groenbaard's bemanning zal een andere manier moeten vinden om aan boord te komen.
 
@@ -29,23 +28,3 @@ Uiteindelijk weet Groenbaard samen met zijn bemanning de overwinning te behalen 
 Tijdens de korte reis naar Falconreach overkomt Kosharakar weer een sterke golf van magie en energie. Zonder dat hij het zelf onder controle heeft, verdwijnt hij plotseling, net zoals hij eerder verscheen.
 
 Eenmaal aangekomen in Falconreach wijst Groenbaard zijn bemanning naar de Falconreach Inn, waar een groep avonturiers aan het bijkomen is van een strijd met een lokale groep Goblins. Onder deze avonturiers bevindt zich Arikikuchiariku, de oude rechterhand van Kapitein Groenbaard.
-
----
-
-## Oneshot Vindt Plaats Tijdens 
-* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/de-draak-van-icespire-peak.md %})
-
-## Karakters
-* [Barnaby Kraai]({{ site.baseurl }}{% link characters/Barnaby-Kraai.md %})
-* [Grog Steenvuist]({{ site.baseurl }}{% link characters/Grog-Steenvuist.md %})
-* [Isabella Swift]({{ site.baseurl }}{% link characters/Isabella-Swift.md %})
-* [Kaelen Schaduwholster]({{ site.baseurl }}{% link characters/Kaelen-Schaduwholster.md %})
-* [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
-* [Kosharakar Coemeydus]({{ site.baseurl }}{% link characters/Kosharakar-Coemeydus.md %})
-
-## Locaties
-* [Drakengreep]({{ site.baseurl }}{% link locations/Drakengreep.md %})
-* [Wraak van Koning Alden]({{ site.baseurl }}{% link locations/Wraak-van-Koning-Alden.md %})
-
-## Items
-* [Tia's Kompas]({{ site.baseurl }}{% link items/Tias-Kompas.md %})

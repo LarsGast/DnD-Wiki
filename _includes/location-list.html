@@ -5,10 +5,14 @@
 <!-- Initialize an empty array for location names -->
 {% assign locationNames = '' | split: ',' %}
 
-<!-- Filtering for character page -->
-{% if filterType == "character" %}
+{% if filterType == "campaign" %}
+    {% for campaignLocationLink in site.data.campaign-location-link %}
+        {% if campaignLocationLink.campaignName == filterName %}
+            {% assign locationNames = locationNames | push: campaignLocationLink.locationName %}
+        {% endif %}
+    {% endfor %}
+{% elsif filterType == "character" %}
     {% for locationCharacterLink in site.data.location-character-link %}
-        <!-- Filtered name could be the first in the link, or the second -->
         {% if locationCharacterLink.characterName == filterName %}
             {% assign locationNames = locationNames | push: locationCharacterLink.locationName %}
         {% endif %}

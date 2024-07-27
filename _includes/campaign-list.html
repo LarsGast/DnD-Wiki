@@ -1,41 +1,39 @@
 <!-- Input parameters -->
 {% assign filterType = include.filterType %}
 {% assign filterName = include.filterName %}
+{% assign isFlashback = include.isFlashback %}
 
-<!-- Initialize an empty array for campaign names -->
-{% assign campaignNames = '' | split: ',' %}
+<!-- Initialize an empty array for campaigns -->
+{% assign campaigns = '' | split: ',' %}
 
 <!-- Filtering for character page -->
 {% if filterType == "character" %}
     {% for campaignCharacterLink in site.data.campaign-character-link %}
-        <!-- Filtered name could be the first in the link, or the second -->
         {% if campaignCharacterLink.characterName == filterName %}
-            {% assign campaignNames = campaignNames | push: campaignCharacterLink.campaignName %}
+            {% assign campaign = site.data.campaigns | where:"name", campaignCharacterLink.campaignName | first %}
+            {% assign campaigns = campaigns | push: campaign %}
         {% endif %}
     {% endfor %}
 {% else %}
-    <!-- No filtering, get all campaign names -->
-    {% for campaign in site.data.campaigns %}
-        {% assign campaignNames = campaignNames | push: campaign.name %}
-    {% endfor %}
+    {% assign campaigns = site.data.campaigns %}
 {% endif %}
 
-<!-- Sort by chronologically -->
-{% assign campaignNames = campaignNames | sort: "order" %}
+<!-- Sort by order of appearance -->
+{% assign campaigns = campaigns | sort_natural:"order" %}
 
-<ul class>
-  
-    {% if campaignNames.size == 0 %}
+<ul>
+    {% if campaigns.size == 0 %}
         <li>-</li>
     {% else %}
-        {% for campaignName in campaignNames %}
-            {% assign campaign = site.data.campaigns | where:"name", campaignName | first %}
-            {% if campaign.visible or site.showInvisible %}
-            <li>
-                <a href="../campaigns/{% if campaign.customLink %}{{ campaign.customLink }}{% else %}{{ campaign.name | replace: ' ', '-' }}{% endif %}">
-                    {{campaign.name}}
-                </a>  
-            </li>
+        {% for campaign in campaigns %}
+            {% if campaign.isFlashback == isFlashback %}
+                {% if campaign.visible or site.showInvisible %}
+                <li>
+                    <a href="../campaigns/{% if campaign.customLink %}{{ campaign.customLink }}{% else %}{{ campaign.name | replace: ' ', '-' | downcase }}{% endif %}">
+                        {{campaign.name}}
+                    </a>  
+                </li>
+                {% endif %}
             {% endif %}
         {% endfor %}
     {% endif %}

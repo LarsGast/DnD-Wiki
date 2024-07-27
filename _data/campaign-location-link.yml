@@ -1,0 +1,61 @@
+- campaignName: Test Campaign
+  locationName: Drakengreep
+- campaignName: Test Campaign
+  locationName: Dwarven Excavation
+- campaignName: Test Campaign
+  locationName: Falconreach
+- campaignName: Test Campaign
+  locationName: Goblin Schuilplaats
+- campaignName: Test Campaign
+  locationName: Greenguard
+- campaignName: Test Campaign
+  locationName: Magisch Centrum
+- campaignName: Test Campaign
+  locationName: Phandalin
+- campaignName: Test Campaign
+  locationName: Surewould-bos
+- campaignName: Test Campaign
+  locationName: Tempel van ^.^
+- campaignName: Test Campaign
+  locationName: Wraak van Koning Alden
+- campaignName: Test Campaign
+  locationName: Zandzee
+
+- campaignName: De Redding van (Prinses) Azura
+  locationName: Falconreach
+- campaignName: De Redding van (Prinses) Azura
+  locationName: Goblin Schuilplaats
+- campaignName: De Redding van (Prinses) Azura
+  locationName: Greenguard
+- campaignName: De Redding van (Prinses) Azura
+  locationName: Surewould-bos
+
+- campaignName: Twilly Rekruteren
+  locationName: Falconreach
+- campaignName: Twilly Rekruteren
+  locationName: Magisch Centrum
+- campaignName: Twilly Rekruteren
+  locationName: Surewould-bos
+
+- campaignName: De Legende van Kapitein Groenbaard
+  locationName: Falconreach
+- campaignName: De Legende van Kapitein Groenbaard
+  locationName: Greenguard
+- campaignName: De Legende van Kapitein Groenbaard
+  locationName: Tempel van ^.^
+- campaignName: De Legende van Kapitein Groenbaard
+  locationName: Wraak van Koning Alden
+- campaignName: De Legende van Kapitein Groenbaard
+  locationName: Zandzee
+
+- campaignName: De Draak van Icespire Peak
+  locationName: Dwarven Excavation
+- campaignName: De Draak van Icespire Peak
+  locationName: Phandalin
+- campaignName: De Draak van Icespire Peak
+  locationName: Wraak van Koning Alden
+
+- campaignName: De Grote Ontsnapping van Kapitein Groenbaard
+  locationName: Drakengreep
+- campaignName: De Grote Ontsnapping van Kapitein Groenbaard
+  locationName: Wraak van Koning Alden

@@ -1,9 +1,7 @@
 ---
-layout: post
+layout: campaign
 title: De Redding van (Prinses) Azura
 ---
-
-## Verhaal
 
 In een wereld vol magie en wonder ligt een land gemaand Greenguard. In dat land, ligt een dorpje genaamd Falconreach. In dat dorpje, staat een herberg. In die herberg zit een groep avonturiers.
 
@@ -30,42 +28,3 @@ Na een tijdje komen de avonturiers erachter wat het wachtwoord van de deur is. H
 De avonturiers gaan door de deur en komen binnen in een kamer waar het lijkt alsof er een bruiloft gaande is. Ze zien een Goblin die ongeveer 8 keer zo groot (2 keer in elke dimensie) is dan een gewone Goblin. Tegenover deze Goblin staat een meisje met vastgebonden handen, en tussen hun in staat een Goblin met een staaf bovenop een kist. Tijdens de confrontatie met de grote Goblin wordt duidelijk dat hij (Koning Splurt) van plan was om met dit meisje (Azura) te gaan trouwen, om zo de prins van de wereld te worden. Hij had namelijk eens gehoord dat Hugo Azura "zijn kleine prinses" had genoemd, en dacht hierdoor dat Azura een echte prinses was.
 
 Om Azura van deze dwangbruiloft te redden verslaan de avonturiers Koning Splurt en zijn onderdanen. Triomfantelijk nemen ze haar mee terug naar Hugo, die hen beloont met de beloofde 50 goud en gratis drank. De avonturiers vieren de overwinning met elkaar, en blijven nog even hangen in Falconreach. Wie weet zit er nog meer avontuur op hen te wachten.
-
----
-
-## Vorige Campaign
-* -
-
-## Volgende Campaign
-* [Twilly Rekruteren]({{ site.baseurl }}{% link campaigns/twilly-rekruteren.md %})
-
-## Karakters
-
-* [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
-* [Amy Aria]({{ site.baseurl }}{% link characters/Amy-Aria.md %})
-* [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
-* [Ash Dragonblade]({{ site.baseurl }}{% link characters/Ash-Dragonblade.md %})
-* [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
-* [Hugo Zingzwaard]({{ site.baseurl }}{% link characters/Hugo-Zingzwaard.md %})
-* [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
-* [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
-* [Lushikukukanda]({{ site.baseurl }}{% link characters/Lushikukukanda.md %})
-* [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
-* [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
-* [Robina the Hood]({{ site.baseurl }}{% link characters/Robina-the-Hood.md %})
-* [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})
-* [Twilly]({{ site.baseurl }}{% link characters/Twilly.md %})
-* [Yulgar Lark]({{ site.baseurl }}{% link characters/Yulgar-Lark.md %})
-
-## Locaties
-
-* [Falconreach]({{ site.baseurl }}{% link locations/Falconreach.md %})
-* [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
-* [Greenguard]({{ site.baseurl }}{% link locations/Greenguard.md %})
-* [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
-
-## Items
-
-* [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
-* [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
-* [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
