@@ -552,6 +552,17 @@
 
 - name: Norbus Ironrune
   visible: true
+  properties:
+    - name: Ras
+      value: Schild Dwerg
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen, overleden
+    - name: Bevindt zich op dit moment in
+      value: Begraven in Dwarven Excavation
+    - name: Talen
+      value: Common, Dwergs
   icons:
     - name: quest
     - name: male
