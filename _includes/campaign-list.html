@@ -29,7 +29,7 @@
             {% if campaign.isFlashback == isFlashback %}
                 {% if campaign.visible or site.showInvisible %}
                 <li>
-                    <a href="../campaigns/{% if campaign.customLink %}{{ campaign.customLink }}{% else %}{{ campaign.name | replace: ' ', '-' }}{% endif %}">
+                    <a href="../campaigns/{% if campaign.customLink %}{{ campaign.customLink }}{% else %}{{ campaign.name | replace: ' ', '-' | downcase }}{% endif %}">
                         {{campaign.name}}
                     </a>  
                 </li>
