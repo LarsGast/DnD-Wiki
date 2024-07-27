@@ -79,6 +79,10 @@
   characterName: Kapitein Groenbaard
   current: true
   past: false
+- itemName: Staff of Average Intelligence
+  characterName: Nettie Bettie
+  current: false
+  past: true
 
 - itemName: Tia’s Kompas
   characterName: Test Karakter

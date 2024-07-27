@@ -159,3 +159,15 @@
   alt: Lushikukukanda, de zwarte Dragonborn met een harnas aan. Imponerend kijkt hij toe hoe een gevecht uitbreekt.
   width: 1024px
   height: 1024px
+
+- name: Nettie Bettie
+  fileType: png
+  alt: Nettie Bettie met de Staff of Average Intelligence
+  width: 407px
+  height: 354px
+
+- name: Staff of Normal Intelligence
+  fileType: png
+  alt: De Staff of Average Intelligence, gemaakt van hout
+  width: 299px
+  height: 834px  

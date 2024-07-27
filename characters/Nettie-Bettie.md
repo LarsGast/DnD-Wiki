@@ -1,19 +1,7 @@
 ---
-layout: post
+layout: character
 title: Nettie Bettie
 ---
-
-<img src="../images/Nettie Bettie.png" alt="Nettie Bettie" width=200>
-
-## Algemeen
-* Volledige naam: Nettie Bettie
-* Bijnamen: -
-* Ras: Goblin
-* Geslacht: Vrouw
-* Leeftijd: 21
-* Woonplaats: Surewould-bos
-* Bevindt zich op dit moment in: Dood in de Goblin schuilplaats in het Surewould-bos
-* Talen: Common, Goblin
 
 ## Beroep en geschiedenis
 Was de adviseur van Koning Splurt toen ze nog leefde.
@@ -41,29 +29,3 @@ Splurt helpen om de wereld over te nemen, zodat ze zelf poppenmeester kon spelen
 
 ## Gebreken of fouten
 Arrogant.
-
----
-
-## Komt voor in
-* [De Redding van (Prinses) Azura]({{ site.baseurl }}{% link campaigns/de-redding-van-(prinses)-azura.md %})
-
-## Gerelateerde karakters
-* [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
-* [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
-
-## Gerelateerde locaties
-* [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
-
-## Items
-
-### Huidige bezittingen
-* -
-
-### Vorige bezittingen
-* [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
-
-## Galerij
-<img src="../images/Nettie Bettie.png" alt="Nettie Bettie" width=200>
-
-
-<img src="../images/Staff of Normal Intelligence.png" alt="Staff of Average Intelligence" width=75>

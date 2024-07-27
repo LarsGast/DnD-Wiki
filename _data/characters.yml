@@ -534,6 +534,17 @@
 
 - name: Nettie Bettie
   visible: true
+  properties:
+    - name: Ras
+      value: Goblin
+    - name: Geslacht
+      value: Vrouw
+    - name: Leeftijd
+      value: 21, overleden
+    - name: Bevindt zich op dit moment in
+      value: Dood in de Goblin schuilplaats in het Surewould-bos
+    - name: Talen
+      value: Common, Goblin
   icons:
     - name: quest
     - name: female
