@@ -1,3 +1,7 @@
+- name: Test Locatie
+  visible: false
+  index: -1
+
 - name: Drakengreep
   visible: true
 

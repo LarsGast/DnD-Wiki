@@ -3,36 +3,44 @@
 {% assign filterName = include.filterName %}
 
 <!-- Initialize an empty array for location names -->
-{% assign locationNames = '' | split: ',' %}
+{% assign locations = '' | split: ',' %}
+{% assign indexedLocations = '' | split: ',' %}
 
 {% if filterType == "campaign" %}
     {% for campaignLocationLink in site.data.campaign-location-link %}
         {% if campaignLocationLink.campaignName == filterName %}
-            {% assign locationNames = locationNames | push: campaignLocationLink.locationName %}
+            {% assign location = site.data.locations | where:"name", campaignLocationLink.locationName | first %}
+            {% assign locations = locations | push: location %}
         {% endif %}
     {% endfor %}
 {% elsif filterType == "character" %}
     {% for locationCharacterLink in site.data.location-character-link %}
         {% if locationCharacterLink.characterName == filterName %}
-            {% assign locationNames = locationNames | push: locationCharacterLink.locationName %}
+            {% assign locations = locations | push: locationCharacterLink.locationName %}
         {% endif %}
     {% endfor %}
 {% else %}
-    <!-- No filtering, get all location names -->
     {% for location in site.data.locations %}
-        {% assign locationNames = locationNames | push: location.name %}
+        {% if location.index %}
+            {% assign indexedLocations = indexedLocations | push: location %}
+        {% else %}
+            {% assign locations = locations | push: location %}
+        {% endif %}
     {% endfor %}
 {% endif %}
 
-<!-- Sort by chronologically -->
-{% assign locationNames = locationNames | sort %}
+<!-- Sort alphabetically, but by index first -->
+{% assign indexedLocations = indexedLocations | sort_natural:"index" %}
+{% assign locations = locations | sort_natural:"name" %}
+
+<!-- Add all the characters back together -->
+{% assign locations = indexedLocations | concat: locations %}
 
 <ul class>
-    {% if locationNames.size == 0 %}
+    {% if locations.size == 0 %}
         <li>-</li>
     {% else %}
-        {% for locationName in locationNames %}
-            {% assign location = site.data.locations | where:"name", locationName | first %}
+        {% for location in locations %}
             {% if location.visible or site.showInvisible %}
             <li>
                 <a href="../locations/{% if location.customLink %}{{ location.customLink }}{% else %}{{ location.name | replace: ' ', '-' }}{% endif %}">
