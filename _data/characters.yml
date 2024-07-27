@@ -236,6 +236,21 @@
 
 - name: Gaston de Kok
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Chef Bulk (door een groep avonturiers)
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen
+    - name: Woonplaats
+      value: Mobiel, De Wraak van Koning Alden
+    - name: Bevindt zich op dit moment in
+      value: De Wraak van Koning Alden
+    - name: Talen
+      value: Common
   icons:
     - name: quest
     - name: male
