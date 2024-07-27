@@ -4,6 +4,9 @@
 - name: Dust of Dryness
   visible: true
 
+- name: IJzeren Pot
+  visible: true
+
 - name: Lab Coat (worn)
   visible: true
 

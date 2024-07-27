@@ -281,6 +281,19 @@
 
 - name: Halia Thornton
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Vrouw
+    - name: Leeftijd
+      value: Volwassen
+    - name: Woonplaats
+      value: Phandalin
+    - name: Bevindt zich op dit moment in
+      value: Phandalin Mijnwerkersbeurs
+    - name: Talen
+      value: Common, Thieves' Cant
   icons:
     - name: shop
     - name: female
