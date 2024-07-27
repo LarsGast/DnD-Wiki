@@ -1,5 +1,7 @@
 - locationName: Drakengreep
   characterName: Test Karakter
+- locationName: Drakengreep
+  characterName: Barnaby Kraai
 
 - locationName: Dwarven Excavation
   characterName: Test Karakter
@@ -37,6 +39,8 @@
 
 - locationName: Wraak van Koning Alden
   characterName: Test Karakter
+- locationName: Wraak van Koning Alden
+  characterName: Barnaby Kraai
 
 - locationName: Zandzee
   characterName: Test Karakter

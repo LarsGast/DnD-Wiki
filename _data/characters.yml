@@ -160,6 +160,19 @@
 
 - name: Barnaby Kraai
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Zwartsnavel
+    - name: Ras
+      value: Kenku
+    - name: Geslacht
+      value: Man
+    - name: Woonplaats
+      value: Mobiel, op het piratenschip van Kapitein Groenbaard
+    - name: Bevindt zich op dit moment in
+      value: Op het piratenschip van Kapitein Groenbaard
+    - name: Talen
+      value: Common, Kenku
   icons:
     - name: quest
     - name: male
