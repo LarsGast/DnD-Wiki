@@ -30,6 +30,10 @@
   characterName: Test Karakter
   current: true
   past: false
+- itemName: Sending Stone
+  characterName: Dazlyn Grayshard
+  current: false
+  past: true
 
 - itemName: Staff of Average Intelligence
   characterName: Test Karakter

@@ -180,6 +180,17 @@
 
 - name: Dazlyn Grayshard
   visible: true
+  properties:
+    - name: Ras
+      value: Schild Dwerg
+    - name: Geslacht
+      value: Man
+    - name: Woonplaats
+      value: Onbekend
+    - name: Bevindt zich op dit moment in
+      value: Phandalin
+    - name: Talen
+      value: Common, Dwergs
   icons:
     - name: quest
     - name: male
