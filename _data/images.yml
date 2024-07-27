@@ -87,3 +87,15 @@
   alt: Grog Steenvuist die klaar staat om een gevecht aan te gaan
   width: 472px
   height: 464px
+
+- name: Halia Thornton
+  fileType: jpg
+  alt: Portret van Halia Thornton
+  width: 407px
+  height: 640px
+
+- name: IJzeren Pot
+  fileType: jpg
+  alt: Een ordinaire ijzeren pot
+  width: 2000px
+  height: 2000px

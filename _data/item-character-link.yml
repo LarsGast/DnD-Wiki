@@ -17,6 +17,12 @@
   past: false
   comment: 1 snufje
 
+- itemName: IJzeren Pot
+  characterName: Halia Thornton
+  current: true
+  past: false
+  comment: Is er van overtuigd dat de pot magische eigenschappen heeft
+
 - itemName: Lab Coat (worn)
   characterName: Test Karakter
   current: true
