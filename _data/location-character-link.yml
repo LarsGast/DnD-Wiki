@@ -2,6 +2,8 @@
   characterName: Test Karakter
 - locationName: Drakengreep
   characterName: Barnaby Kraai
+- locationName: Drakengreep
+  characterName: Grog Steenvuist
 
 - locationName: Dwarven Excavation
   characterName: Test Karakter
@@ -47,6 +49,8 @@
   characterName: Barnaby Kraai
 - locationName: Wraak van Koning Alden
   characterName: Gaston de Kok
+- locationName: Wraak van Koning Alden
+  characterName: Grog Steenvuist
 
 - locationName: Zandzee
   characterName: Test Karakter

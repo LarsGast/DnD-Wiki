@@ -258,6 +258,21 @@
 
 - name: Grog Steenvuist
   visible: true
+  properties:
+    - name: Bijnaam
+      value: IJzerwerk
+    - name: Ras
+      value: Berg Dwerg
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen
+    - name: Woonplaats
+      value: Mobiel, De Wraak van Koning Alden
+    - name: Bevindt zich op dit moment in
+      value: De Wraak van Koning Alden
+    - name: Talen
+      value: Common, Dwergs
   icons:
     - name: player
     - name: quest
