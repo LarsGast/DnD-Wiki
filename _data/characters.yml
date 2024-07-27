@@ -514,6 +514,19 @@
 
 - name: Lushikukukanda
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Kuku
+    - name: Ras
+      value: Dragonborn
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 24
+    - name: Bevindt zich op dit moment in
+      value: De Sword Mountains
+    - name: Talen
+      value: Common, Draconic
   icons:
     - name: player
     - name: with-party

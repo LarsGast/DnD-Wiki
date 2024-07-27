@@ -43,6 +43,10 @@
   past: false
 - itemName: Lab Coat (worn)
   characterName: Albert Tweesteen
+  current: true
+  past: false
+- itemName: Lab Coat (worn)
+  characterName: Lushikukukanda
   current: false
   past: true
 

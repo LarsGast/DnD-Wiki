@@ -1,19 +1,7 @@
 ---
-layout: post
+layout: character
 title: Lushikukukanda
 ---
-
-<img src="../images/Lushikukukanda.jpg" alt="Lushikukukanda" width=200>
-
-## Algemeen
-* Volledige naam: Onbekend
-* Bijnamen: Lushikukukanda, Kuku
-* Ras: Dragonborn
-* Geslacht: Man
-* Leeftijd: 24
-* Woonplaats: Onbekend
-* Bevindt zich op dit moment in: Een gestolen luchtschip richting Phandalin
-* Talen: Common, Draconic
 
 ## Beroep en geschiedenis
 Deze volksheld kwam in opstand tegen de agenten van een tiran van de cashew-industrie in Wakanda. Hij heeft later besloten om als cleric het avonturenleven aan te gaan om mogelijk zijn familie te kunnen vinden.
@@ -41,30 +29,3 @@ Familie.
 
 ## Gebreken of fouten
 Heeft een zwak voor de ondeugden van de stad, vooral voor sterke drank.
-
----
-
-## Komt voor in
-* [De Redding van (Prinses) Azura]({{ site.baseurl }}{% link campaigns/de-redding-van-(prinses)-azura.md %})
-* [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-legende-van-kapitein-groenbaard.md %})
-
-## Gerelateerde karakters
-* [Adonis]({{ site.baseurl }}{% link characters/Adonis.md %})
-* [Arikikuchiariku]({{ site.baseurl }}{% link characters/Arikikuchiariku.md %})
-* [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
-* [P.E.K.K.A.]({{ site.baseurl }}{% link characters/PEKKA.md %})
-* [Theodas]({{ site.baseurl }}{% link characters/Theodas.md %})
-
-## Gerelateerde locaties
-* -
-
-## Items
-
-### Huidige bezittingen
-* [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
-
-### Vorige bezittingen
-* -
-
-## Galerij
-<img src="../images/Lushikukukanda.jpg" alt="Lushikukukanda" width=200>
