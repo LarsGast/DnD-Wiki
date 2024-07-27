@@ -589,6 +589,19 @@
 
 - name: Robina the Hood
   visible: true
+  properties:
+    - name: Ras
+      value: Wood-Elf
+    - name: Geslacht
+      value: Vrouw
+    - name: Leeftijd
+      value: 45
+    - name: Woonplaats
+      value: Falconreach
+    - name: Bevindt zich op dit moment in
+      value: Surewould-bos
+    - name: Talen
+      value: Common, Elvish, Goblin
   icons:
     - name: quest
     - name: female

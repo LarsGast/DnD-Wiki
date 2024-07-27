@@ -26,6 +26,8 @@
   characterName: Azura Zingzwaard
 - locationName: Falconreach
   characterName: Hugo Zingzwaard
+- locationName: Falconreach
+  characterName: Robina the Hood
 
 - locationName: Goblin Schuilplaats
   characterName: Test Karakter
@@ -59,6 +61,8 @@
 
 - locationName: Surewould-bos
   characterName: Test Karakter
+- locationName: Surewould-bos
+  characterName: Robina the Hood
 
 - locationName: Tempel van ^.^
   characterName: Test Karakter
