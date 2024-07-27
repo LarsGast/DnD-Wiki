@@ -128,3 +128,7 @@
   imageName: Robina & Twilly
 - characterName: Twilly
   imageName: Falconreach
+
+- characterName: Yulgar Lark
+  imageName: Yulgar Lark
+  isHeaderImage: true

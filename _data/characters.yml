@@ -648,6 +648,19 @@
 
 - name: Yulgar Lark
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 49
+    - name: Woonplaats
+      value: Falconreach
+    - name: Bevindt zich op dit moment in
+      value: Yulgar's Smithy in Falconreach
+    - name: Talen
+      value: Common
   icons:
     - name: shop
     - name: male
