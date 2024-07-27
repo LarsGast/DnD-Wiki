@@ -1,6 +1,7 @@
 <!-- Input parameters -->
 {% assign filterType = include.filterType %}
 {% assign filterName = include.filterName %}
+{% assign isFlashback = include.isFlashback %}
 
 <!-- Initialize an empty array for campaigns -->
 {% assign campaigns = '' | split: ',' %}
@@ -9,12 +10,11 @@
 {% if filterType == "character" %}
     {% for campaignCharacterLink in site.data.campaign-character-link %}
         {% if campaignCharacterLink.characterName == filterName %}
-            {% assign campaign = site.data.campaigns | where:"name", campaignCharacterLink.campaignName %}
+            {% assign campaign = site.data.campaigns | where:"name", campaignCharacterLink.campaignName | first %}
             {% assign campaigns = campaigns | push: campaign %}
         {% endif %}
     {% endfor %}
 {% else %}
-    <!-- No filtering, get all campaigns -->
     {% assign campaigns = site.data.campaigns %}
 {% endif %}
 
@@ -26,12 +26,14 @@
         <li>-</li>
     {% else %}
         {% for campaign in campaigns %}
-            {% if campaign.visible or site.showInvisible %}
-            <li>
-                <a href="../campaigns/{% if campaign.customLink %}{{ campaign.customLink }}{% else %}{{ campaign.name | replace: ' ', '-' }}{% endif %}">
-                    {{campaign.name}}
-                </a>  
-            </li>
+            {% if campaign.isFlashback == isFlashback %}
+                {% if campaign.visible or site.showInvisible %}
+                <li>
+                    <a href="../campaigns/{% if campaign.customLink %}{{ campaign.customLink }}{% else %}{{ campaign.name | replace: ' ', '-' }}{% endif %}">
+                        {{campaign.name}}
+                    </a>  
+                </li>
+                {% endif %}
             {% endif %}
         {% endfor %}
     {% endif %}
