@@ -494,6 +494,19 @@
 
 - name: Linene Graywind
   visible: true
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Vrouw
+    - name: Leeftijd
+      value: Volwassen
+    - name: Woonplaats
+      value: Phandalin
+    - name: Bevindt zich op dit moment in
+      value: De Lionshield Coster in Phandalin
+    - name: Talen
+      value: Common
   icons:
     - name: shop
     - name: female
