@@ -109,3 +109,7 @@
   characterName: Test Karakter
   current: false
   past: true
+- itemName: Wind Fan
+  characterName: Theodas
+  current: true
+  past: false

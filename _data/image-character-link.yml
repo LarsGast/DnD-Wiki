@@ -116,3 +116,7 @@
   isHeaderImage: true
 - characterName: Robina the Hood
   imageName: Robina & Twilly
+
+- characterName: Theodas
+  imageName: Theodas
+  isHeaderImage: true

@@ -609,6 +609,17 @@
 
 - name: Theodas
   visible: true
+  properties:
+    - name: Ras
+      value: High-Elf
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 100
+    - name: Bevindt zich op dit moment in
+      value: De Sword Mountains
+    - name: Talen
+      value: Common, Elvish, Undercommon
   icons:
     - name: player
     - name: with-party
