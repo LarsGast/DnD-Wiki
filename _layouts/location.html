@@ -31,6 +31,16 @@ layout: default
 
     <h2>Gerelateerde Karakter</h2>
     {% include character-list.html filterType="location" filterName=page.title %}
+
+    <h2>Gerelateerde Locaties</h2>
+    <h3>Super-locaties</h3>
+    {% include location-list.html filterType="location" filterName=page.title locationType="super" %}
+
+    <h3>Sub-locaties</h3>
+    {% include location-list.html filterType="location" filterName=page.title locationType="sub" %}
+
+    <h3>Locaties in de buurt</h3>
+    {% include location-list.html filterType="location" filterName=page.title locationType="nearby" %}
     
   </div>
 

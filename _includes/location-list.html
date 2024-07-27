@@ -1,6 +1,7 @@
 <!-- Input parameters -->
 {% assign filterType = include.filterType %}
 {% assign filterName = include.filterName %}
+{% assign locationType = include.locationType %}
 
 <!-- Initialize an empty array for location names -->
 {% assign locations = '' | split: ',' %}
@@ -11,6 +12,26 @@
         {% if campaignLocationLink.campaignName == filterName %}
             {% assign location = site.data.locations | where:"name", campaignLocationLink.locationName | first %}
             {% assign locations = locations | push: location %}
+        {% endif %}
+    {% endfor %}
+{% elsif filterType == "location" %}
+    {% for locationLink in site.data.location-location-link %}
+        {% if locationLink.firstLocationName == filterName %}
+            {% if locationType == "sub" and locationLink.isSuperSubRelationship %}
+                {% assign location = site.data.locations | where:"name", locationLink.secondLocationName | first %}
+                {% assign locations = locations | push: location %}
+            {% elsif locationType == "nearby" and locationLink.isSuperSubRelationship == false %}
+                {% assign location = site.data.locations | where:"name", locationLink.secondLocationName | first %}
+                {% assign locations = locations | push: location %}
+            {% endif %}
+        {% elsif locationLink.secondLocationName == filterName %}
+            {% if locationType == "super" and locationLink.isSuperSubRelationship %}
+                {% assign location = site.data.locations | where:"name", locationLink.firstLocationName | first %}
+                {% assign locations = locations | push: location %}
+            {% elsif locationType == "nearby" and locationLink.isSuperSubRelationship == false %}
+                {% assign location = site.data.locations | where:"name", locationLink.firstLocationName | first %}
+                {% assign locations = locations | push: location %}
+            {% endif %}
         {% endif %}
     {% endfor %}
 {% elsif filterType == "character" %}
