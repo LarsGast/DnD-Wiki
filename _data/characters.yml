@@ -385,6 +385,21 @@
 
 - name: Kaelen Schaduwholster
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Duisterster
+    - name: Ras
+      value: Tiefling
+    - name: Geslacht
+      value: Non-binair
+    - name: Leeftijd
+      value: Volwassen
+    - name: Woonplaats
+      value: Mobiel, De Wraak van Koning Alden
+    - name: Bevindt zich op dit moment in
+      value: De Wraak van Koning Alden
+    - name: Talen
+      value: Common, Infernal
   icons:
     - name: quest
     - name: non-binary
