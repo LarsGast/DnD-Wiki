@@ -7,11 +7,17 @@
 {% assign itemLinks = '' | split: ',' %}
 
 {% if filterType == "campaign" %}
-{% for campaignItemLink in site.data.campaign-item-link %}
-    {% if campaignItemLink.campaignName == filterName %}
-        {% assign itemLinks = itemLinks | push: campaignItemLink %}
-    {% endif %}
-{% endfor %}
+    {% for itemLink in site.data.campaign-item-link %}
+        {% if itemLink.campaignName == filterName %}
+            {% assign itemLinks = itemLinks | push: itemLink %}
+        {% endif %}
+    {% endfor %}
+{% elsif filterType == "location" %}
+    {% for itemLink in site.data.location-item-link %}
+        {% if itemLink.locationName == filterName %}
+            {% assign itemLinks = itemLinks | push: itemLink %}
+        {% endif %}
+    {% endfor %}
 {% elsif filterType == "character" %}
     {% for itemCharacterLink in site.data.item-character-link %}
         {% if itemCharacterLink.characterName == filterName %}

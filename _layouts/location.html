@@ -42,6 +42,9 @@ layout: default
     <h3>Locaties in de buurt</h3>
     {% include location-list.html filterType="location" filterName=page.title locationType="nearby" %}
     
+    <h2>Items</h2>
+    {% include item-list.html filterType="location" filterName=page.title %}
+
   </div>
 
   {%- if site.disqus.shortname -%}
