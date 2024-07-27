@@ -1,4 +1,4 @@
 ---
-layout: post
+layout: location
 title: Test Locatie
 ---

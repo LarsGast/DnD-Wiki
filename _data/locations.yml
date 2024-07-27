@@ -1,6 +1,23 @@
 - name: Test Locatie
   visible: false
   index: -1
+  properties:
+    - name: Soort
+      value: Dorp, Stad, Gehucht, Universum
+    - name: Inwoners
+      value: Alle rassen die je kunt bedenken
+    - name: Populatie
+      value: Oneindig veel, maar ook 0
+    - name: Geografische locatie
+      value: Overal
+    - name: Infrastructuur
+      value: Oud, nieuw, en alles ertussenin
+    - name: Politiek
+      value: Bestuurt het hele universum
+    - name: Geschiedenis
+      value: Bestaat nog niet
+    - name: Cultuur
+      value: Wees jezelf, maar niet te veel
 
 - name: Drakengreep
   visible: true
