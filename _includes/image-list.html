@@ -5,12 +5,16 @@
 <!-- Initialize an empty array for image names -->
 {% assign imageNames = '' | split: ',' %}
 
-<!-- Filtering for character page -->
-{% if filterType == "character" %}
-    {% for imageCharacterLink in site.data.image-character-link %}
-        <!-- Filtered name could be the first in the link, or the second -->
-        {% if imageCharacterLink.characterName == filterName %}
-            {% assign imageNames = imageNames | push: imageCharacterLink.imageName %}
+{% if filterType == "location" %}
+    {% for imageLink in site.data.location-image-link %}
+        {% if imageLink.locationName == filterName %}
+            {% assign imageNames = imageNames | push: imageLink.imageName %}
+        {% endif %}
+    {% endfor %}
+{% elsif filterType == "character" %}
+    {% for imageLink in site.data.image-character-link %}
+        {% if imageLink.characterName == filterName %}
+            {% assign imageNames = imageNames | push: imageLink.imageName %}
         {% endif %}
     {% endfor %}
 {% else %}

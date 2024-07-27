@@ -213,3 +213,9 @@
   alt: Yulgar Lark in zijn winkel, Yulgar's Smithy
   width: 255px
   height: 438px
+
+- name: Test Locatie
+  fileType: jpg
+  alt: De hele wereld, daar heb je 'em
+  width: 1024px
+  height: 768px
