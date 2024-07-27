@@ -13,6 +13,13 @@
             {% assign characters = characters | push: character %}
         {% endif %}
     {% endfor %}
+{% elsif filterType == "location" %}
+    {% for characterLink in site.data.location-character-link %}
+        {% if characterLink.locationName == filterName %}
+            {% assign character = site.data.characters | where:"name", characterLink.characterName %}
+            {% assign characters = characters | push: character %}
+        {% endif %}
+    {% endfor %}
 {% elsif filterType == "character" %}
     <!-- Filtering based on related characters -->
     {% for characterLink in site.data.character-character-link %}
