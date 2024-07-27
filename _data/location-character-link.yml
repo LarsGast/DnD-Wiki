@@ -6,6 +6,8 @@
   characterName: Grog Steenvuist
 - locationName: Drakengreep
   characterName: Isabella Swift
+- locationName: Drakengreep
+  characterName: Kosharakar Coemeydus
 
 - locationName: Dwarven Excavation
   characterName: Test Karakter
@@ -69,6 +71,8 @@
   characterName: Kaelen Schaduwholster
 - locationName: Wraak van Koning Alden
   characterName: Kapitein Groenbaard
+- locationName: Wraak van Koning Alden
+  characterName: Kosharakar Coemeydus
 
 - locationName: Zandzee
   characterName: Test Karakter

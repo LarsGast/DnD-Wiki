@@ -454,6 +454,19 @@
 
 - name: Kosharakar Coemeydus
   visible: true
+  properties:
+    - name: Bijnaam
+      value: Kosha
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen
+    - name: Bevindt zich op dit moment in
+      value: Onbekend
+    - name: Talen
+      value: Common
   icons:
     - name: player
     - name: quest
