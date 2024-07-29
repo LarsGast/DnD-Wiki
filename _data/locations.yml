@@ -55,6 +55,23 @@
 
 - name: Falconreach
   visible: true
+  properties:
+    - name: Soort
+      value: Dorp
+    - name: Inwoners
+      value: Diverse rassen
+    - name: Populatie
+      value: 500-1000
+    - name: Geografische locatie
+      value: Aan zee
+    - name: Infrastructuur
+      value: Oude stijl gebouwen
+    - name: Politiek
+      value: Heeft een raad van inwoners
+    - name: Geschiedenis
+      value: Uitgegroeid tot een controlepunt in een handelsroute
+    - name: Cultuur
+      value: Iedereen is welkom
 
 - name: Goblin Schuilplaats
   visible: true

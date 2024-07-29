@@ -35,6 +35,9 @@
 - firstLocationName: Greenguard
   secondLocationName: Drakengreep
   isSuperSubRelationship: true
+- firstLocationName: Greenguard
+  secondLocationName: Falconreach
+  isSuperSubRelationship: true
 
 - firstLocationName: Drakengreep
   secondLocationName: Wraak van Koning Alden
@@ -42,4 +45,8 @@
 
 - firstLocationName: Dwarven Excavation
   secondLocationName: Phandalin
+  isSuperSubRelationship: false
+
+- firstLocationName: Falconreach
+  secondLocationName: Surewould-bos
   isSuperSubRelationship: false

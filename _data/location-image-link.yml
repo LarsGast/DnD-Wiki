@@ -20,3 +20,7 @@
 - locationName: Dwarven Excavation
   imageName: Orc
   isHeaderImage: false
+
+- locationName: Falconreach
+  imageName: Falconreach
+  isHeaderImage: true
