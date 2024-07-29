@@ -95,6 +95,17 @@
 
 - name: Greenguard
   visible: true
+  properties:
+    - name: Soort
+      value: Land
+    - name: Inwoners
+      value: Diverse rassen, dieren, en monsters
+    - name: Populatie
+      value: Ongeveer 6.000.000
+    - name: Infrastructuur
+      value: Divers onder de verschillende steden en dorpen
+    - name: Politiek
+      value: Monarchie, met Alden Alteon als koning
 
 - name: Magisch Centrum
   visible: true

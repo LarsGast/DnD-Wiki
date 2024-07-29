@@ -38,6 +38,12 @@
 - firstLocationName: Greenguard
   secondLocationName: Falconreach
   isSuperSubRelationship: true
+- firstLocationName: Greenguard
+  secondLocationName: Surewould-bos
+  isSuperSubRelationship: true
+- firstLocationName: Greenguard
+  secondLocationName: Zandzee
+  isSuperSubRelationship: true
 
 - firstLocationName: Drakengreep
   secondLocationName: Wraak van Koning Alden
