@@ -1,17 +1,7 @@
 ---
-layout: post
+layout: location
 title: Magisch Centrum
 ---
-
-## Algemeen
-* Soort: Dungeon
-* Inwoners: Een eekhoorn en een geest
-* Populatie: 2
-* Geografische locatie: Diep in het midden Surewould-bos
-* Infrastructuur: Meerder kamers die op een of andere manier allemaal een ander klimaat hebben 
-* Politiek: Alleen degenen met een puur hart mogen de locatie betreden
-* Geschiedenis: Ooit gebouwd als een beschermplek voor magische planten
-* Cultuur: Bijna niemand weet van de locatie af
 
 ## Overzicht
 Diep in het centrum van het Surewould-bos bevindt zich een magische plek. Robina the Hood is één van de enige personen die van deze plek af weet, en alleen degenen met een puur en oprecht hart mogen deze locatie betreden. Ergens in deze locatie bevindt zich de groeiplaats van een magische plant met helende krachten. Op de staf van Twilly zit een blaadje van deze plant. Voordat iemand bij die plant mag komen moet diegene eerst een puzzel oplossen door vijf stenen op de juiste plek te leggen. Zodra dat gedaan is gaat de deur naar de groeiplaats open. Een geest bewaakt deze locatie, en stelt iedereen die binnen probeert te komen te proef om te controleren of ze het plukken van de plant waard zijn.
@@ -51,41 +41,3 @@ De steen wordt alleen geactiveerd als het op het podium ligt en de schaakpuzzel 
 
 ## Proef
 Aan de andere kant van de deur bij de ingang van het magische centrum bevindt zich de zesde kamer van deze locatie. Deze kamer is een bos, met dichte begroeiingen aan de zijkant en een open ruimte in het midden. In het midden van de ruimte groeit een klein blaadje. Zodra iemand binnen komt komt een geest van een oude man tevoorschijn. Deze geest begroet de bezoekers en vertelt ze dat er nog één proef te wachten staat voordat ze het blaadje mee mogen nemen. Deze proef kan verschillen van persoon tot persoon, maar het heeft vaak te maken met de missie die de bezoekers aan het uitvoeren zijn. Zodra deze gepersonaliseerd proef is doorstaan geeft de geest toestemming om het blaadje te plukken en mee te nemen. Hierdoor is bewezen dat de bezoekers puur van hart zijn en dat ze elke uitdaging op hun pad gerelateerd aan hun missie aankunnen.
-
----
-
-## Komt voor in
-* [Twilly Rekruteren]({{ site.baseurl }}{% link campaigns/twilly-rekruteren.md %})
-
-## Gerelateerde karakters
-* -
-
-## Items
-* -
-
-## Super-locaties
-* [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
-
-## Sub-locaties
-* -
-
-## Locaties in de buurt
-* [Goblin Schuilplaats]({{ site.baseurl }}{% link locations/Goblin-Schuilplaats.md %})
-
-## Items
-* -
-
-## Galerij
-<img src="../images/Magic Center Entrance.jpg" alt="Ingang" width=200>
-<img src="../images/Magic Center Water Room.jpg" alt="Water kamer" width=200>
-<img src="../images/Magic Center Nature Room.jpg" alt="Natuur kamer" width=200>
-<img src="../images/Magic Center Sun Room.jpg" alt="Zon kamer" width=200>
-<img src="../images/Magic Center Fire Room.jpg" alt="Vuur kamer" width=200>
-<img src="../images/Magic Center Mind Room.jpg" alt="Geest kamer" width=200>
-<img src="../images/Chess puzzle.png" alt="Schaak puzzel" width=200>
-<img src="../images/Forest Battlemap.jpg" alt="Midden" width=200>
-
-<img src="../images/Crawling Claw.jpg" alt="Crawling Claw" width=200>
-<img src="../images/Flying Snake.jpeg" alt="Flying Snake" width=200>
-<img src="../images/Flying Sword.png" alt="Flying Sword" width=200>
-<img src="../images/Ghoul.png" alt="Ghoul" width=200>

@@ -1,17 +1,7 @@
 ---
-layout: post
+layout: location
 title: Goblin Schuilplaats
 ---
-
-## Algemeen
-* Soort: Dungeon
-* Inwoners: De Goblins van het Surewould-bos
-* Populatie: 16
-* Geografische locatie: Ergens in het Surewould-bos
-* Infrastructuur: Boomhut 
-* Politiek: Koning Splurt heeft de leiding. Albert Tweesteen en Nettie Bettie zijn zijn adviseurs.
-* Geschiedenis: Enige tijd geleden gebouwd door Goblins
-* Cultuur: Ieder voor zich
 
 ## Overzicht
 Diep in het Surewould-bos bevindt zich een boomhut. De Goblins van het Surewould-bos gebruiken deze locatie als hun thuis basis. Koning Splurt staat aan het hoofd met zijn twee adviseurs, Albert Tweesteen en Nettie Bettie. Het feit dat de basis een boomhut is zorgt ervoor dat ze niet gemakkelijk gevonden kunnen worden. Alleen Robina the Hood weet de locatie van deze schuilplaats.
@@ -33,38 +23,3 @@ Goblins zijn hebzuchtige wezens. Ze stelen graag alles wat niet vast zit, of ze 
 
 ## Community Room
 De Hangout wordt gebruikt als de plaats waar de Goblins van het Surewould-bos veel vrije tijd besteden, maar deze ruimte is niet overal geschikt voor. De Community Room wordt gebruikt voor vergaderingen, maaltijden, en als plaats om te relaxen als de Hangout te druk is. Het is een grote ruimte met muren en een dak, dus tijdens regen wordt hier ook veel tijd besteed. Zo nu en dan neemt Koning Splurt deze kamer in om om te bouwen naar waar hij op dat moment behoefte aan heeft, zoals een bruiloft of een disco.
-
----
-
-## Komt voor in
-* [De Redding van (Prinses) Azura]({{ site.baseurl }}{% link campaigns/de-redding-van-(prinses)-azura.md %})
-
-## Gerelateerde karakters
-* [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
-* [Azura Zingzwaard]({{ site.baseurl }}{% link characters/Azura-Zingzwaard.md %})
-* [Koning Splurt]({{ site.baseurl }}{% link characters/Koning-Splurt.md %})
-* [Nettie Bettie]({{ site.baseurl }}{% link characters/Nettie-Bettie.md %})
-
-## Super-locaties
-* [Surewould-bos]({{ site.baseurl }}{% link locations/Surewould-bos.md %})
-
-## Sub-locaties
-* -
-
-## Locaties in de buurt
-* [Magisch Centrum]({{ site.baseurl }}{% link locations/Magisch-Centrum.md %})
-
-## Items
-* [Circlet of Enlarge Reduce]({{ site.baseurl }}{% link items/Circlet-of-Enlarge-Reduce.md %})
-* [Lab Coat (worn)]({{ site.baseurl }}{% link items/Lab-Coat-(worn).md %})
-* [Staff of Average Intelligence]({{ site.baseurl }}{% link items/Staff-of-Average-Intelligence.md %})
-
-## Galerij
-<img src="../images/The Goblin Hangout.png" alt="De Goblin Hangout" width=200>
-
-<img src="../images/The Goblin Community Room.png" alt="De Goblin Community Room" width=200>
-
-<img src="../images/Goblin Gang.png" alt="Goblin Gang" width=200>
-<img src="../images/Koning Splurt.png" alt="Koning Splurt" width=200>
-<img src="../images/Goblin.png" alt="De Goblin" width=200>
-<img src="../images/Nettie Bettie.png" alt="Nettie Bettie" width=200>

@@ -6,8 +6,14 @@
 <!-- Initialize an empty array for campaigns -->
 {% assign campaigns = '' | split: ',' %}
 
-<!-- Filtering for character page -->
-{% if filterType == "character" %}
+{% if filterType == "location" %}
+    {% for campaignLocationLink in site.data.campaign-location-link %}
+        {% if campaignLocationLink.locationName == filterName %}
+            {% assign campaign = site.data.campaigns | where:"name", campaignLocationLink.campaignName | first %}
+            {% assign campaigns = campaigns | push: campaign %}
+        {% endif %}
+    {% endfor %}
+{% elsif filterType == "character" %}
     {% for campaignCharacterLink in site.data.campaign-character-link %}
         {% if campaignCharacterLink.characterName == filterName %}
             {% assign campaign = site.data.campaigns | where:"name", campaignCharacterLink.campaignName | first %}

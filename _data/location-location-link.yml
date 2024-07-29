@@ -1,0 +1,80 @@
+- firstLocationName: Test Locatie
+  secondLocationName: Drakengreep
+  isSuperSubRelationship: false
+- firstLocationName: Test Locatie
+  secondLocationName: Dwarven Excavation
+  isSuperSubRelationship: false
+- firstLocationName: Test Locatie
+  secondLocationName: Falconreach
+  isSuperSubRelationship: false
+- firstLocationName: Test Locatie
+  secondLocationName: Goblin Schuilplaats
+  isSuperSubRelationship: true
+- firstLocationName: Test Locatie
+  secondLocationName: Magisch Centrum
+  isSuperSubRelationship: true
+- firstLocationName: Test Locatie
+  secondLocationName: Phandalin
+  isSuperSubRelationship: false
+- firstLocationName: Test Locatie
+  secondLocationName: Surewould-bos
+  isSuperSubRelationship: false
+- firstLocationName: Test Locatie
+  secondLocationName: Tempel van ^.^
+  isSuperSubRelationship: true
+- firstLocationName: Test Locatie
+  secondLocationName: Wraak van Koning Alden
+  isSuperSubRelationship: true
+- firstLocationName: Test Locatie
+  secondLocationName: Zandzee
+  isSuperSubRelationship: false
+
+- firstLocationName: Greenguard
+  secondLocationName: Test Locatie
+  isSuperSubRelationship: true
+- firstLocationName: Greenguard
+  secondLocationName: Drakengreep
+  isSuperSubRelationship: true
+- firstLocationName: Greenguard
+  secondLocationName: Falconreach
+  isSuperSubRelationship: true
+- firstLocationName: Greenguard
+  secondLocationName: Surewould-bos
+  isSuperSubRelationship: true
+- firstLocationName: Greenguard
+  secondLocationName: Zandzee
+  isSuperSubRelationship: true
+
+- firstLocationName: Drakengreep
+  secondLocationName: Wraak van Koning Alden
+  isSuperSubRelationship: true
+
+- firstLocationName: Dwarven Excavation
+  secondLocationName: Phandalin
+  isSuperSubRelationship: false
+
+- firstLocationName: Falconreach
+  secondLocationName: Surewould-bos
+  isSuperSubRelationship: false
+
+- firstLocationName: Surewould-bos
+  secondLocationName: Goblin Schuilplaats
+  isSuperSubRelationship: true
+- firstLocationName: Surewould-bos
+  secondLocationName: Magisch Centrum
+  isSuperSubRelationship: true
+
+- firstLocationName: Goblin Schuilplaats
+  secondLocationName: Magisch Centrum
+  isSuperSubRelationship: false
+
+- firstLocationName: Zandzee
+  secondLocationName: Tempel van ^.^
+  isSuperSubRelationship: true
+- firstLocationName: Zandzee
+  secondLocationName: Wraak van Koning Alden
+  isSuperSubRelationship: true
+
+- firstLocationName: Phandalin
+  secondLocationName: Wraak van Koning Alden
+  isSuperSubRelationship: true

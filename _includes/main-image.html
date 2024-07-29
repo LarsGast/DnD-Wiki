@@ -2,9 +2,15 @@
 {% assign filterType = include.filterType %}
 {% assign filterName = include.filterName %}
 
-{% if filterType == "character" %}
-    {% assign imageCharacterLinks = site.data.image-character-link | where:"characterName", filterName %}
-    {% assign headerImageLink = imageCharacterLinks | where:"isHeaderImage", true | first %}
+{% if filterType == "location" %}
+    {% assign imageLinks = site.data.location-image-link | where:"locationName", filterName %}
+    {% assign headerImageLink = imageLinks | where:"isHeaderImage", true | first %}
+    {% if headerImageLink %}
+        {% assign image = site.data.images | where:"name", headerImageLink.imageName | first %}
+    {% endif %}
+{% elsif filterType == "character" %}
+    {% assign imageLinks = site.data.image-character-link | where:"characterName", filterName %}
+    {% assign headerImageLink = imageLinks | where:"isHeaderImage", true | first %}
     {% if headerImageLink %}
         {% assign image = site.data.images | where:"name", headerImageLink.imageName | first %}
     {% endif %}

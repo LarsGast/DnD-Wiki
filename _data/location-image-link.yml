@@ -1,0 +1,116 @@
+- locationName: Test Locatie
+  imageName: Test Locatie
+  isHeaderImage: true
+- locationName: Test Locatie
+  imageName: Test Karakter Full Body
+
+- locationName: Drakengreep
+  imageName: Drakengreep
+  isHeaderImage: true
+
+- locationName: Dwarven Excavation
+  imageName: Dwarven Excavation
+  isHeaderImage: true
+- locationName: Dwarven Excavation
+  imageName: Dwarven Excavation Quest
+  isHeaderImage: false
+- locationName: Dwarven Excavation
+  imageName: Ochre Jelly
+  isHeaderImage: false
+- locationName: Dwarven Excavation
+  imageName: Orc
+  isHeaderImage: false
+
+- locationName: Falconreach
+  imageName: Falconreach
+  isHeaderImage: true
+
+- locationName: Goblin Schuilplaats
+  imageName: Goblin Gang
+  isHeaderImage: true
+- locationName: Goblin Schuilplaats
+  imageName: Koning Splurt
+  isHeaderImage: false
+- locationName: Goblin Schuilplaats
+  imageName: Goblin
+  isHeaderImage: false
+- locationName: Goblin Schuilplaats
+  imageName: Nettie Bettie
+  isHeaderImage: false
+- locationName: Goblin Schuilplaats
+  imageName: The Goblin Hangout
+  isHeaderImage: false
+- locationName: Goblin Schuilplaats
+  imageName: The Goblin Community Room
+  isHeaderImage: false
+
+- locationName: Magisch Centrum
+  imageName: Forest Battlemap
+  isHeaderImage: true
+- locationName: Magisch Centrum
+  imageName: Magic Center Entrance
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Magic Center Fire Room
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Magic Center Mind Room
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Magic Center Nature Room
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Magic Center Sun Room
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Magic Center Water Room
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Chess puzzle
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Crawling Claw
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Flying Snake
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Flying Sword
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Ghoul
+  isHeaderImage: false
+
+- locationName: Phandalin
+  imageName: Phandalin
+  isHeaderImage: true
+- locationName: Phandalin
+  imageName: Dwarven Excavation Quest
+  isHeaderImage: false
+- locationName: Phandalin
+  imageName: Gnomengarde Quest
+  isHeaderImage: false
+- locationName: Phandalin
+  imageName: Umbrage Hill Quest
+  isHeaderImage: false
+
+- locationName: Tempel van ^.^
+  imageName: Tempel van ^.^ laatste kamer
+  isHeaderImage: true
+- locationName: Tempel van ^.^
+  imageName: Tempel van ^.^ trap room
+  isHeaderImage: false
+- locationName: Tempel van ^.^
+  imageName: Giant Scorpion
+  isHeaderImage: false
+
+- locationName: Wraak van Koning Alden
+  imageName: Airship
+  isHeaderImage: true
+- locationName: Wraak van Koning Alden
+  imageName: Airship Layers
+  isHeaderImage: false
+
+- locationName: Zandzee
+  imageName: Reuze Aasgier
+  isHeaderImage: false

@@ -1,32 +1,220 @@
+- name: Test Locatie
+  visible: false
+  index: -1
+  properties:
+    - name: Soort
+      value: Dorp, Stad, Gehucht, Universum
+    - name: Inwoners
+      value: Alle rassen die je kunt bedenken
+    - name: Populatie
+      value: Oneindig veel, maar ook 0
+    - name: Geografische locatie
+      value: Overal
+    - name: Infrastructuur
+      value: Oud, nieuw, en alles ertussenin
+    - name: Politiek
+      value: Bestuurt het hele universum
+    - name: Geschiedenis
+      value: Bestaat nog niet
+    - name: Cultuur
+      value: Wees jezelf, maar niet te veel
+
 - name: Drakengreep
   visible: true
+  properties:
+    - name: Soort
+      value: Zwevend eiland
+    - name: Inwoners
+      value: Bewakers, gevangenen
+    - name: Populatie
+      value: Onbekend, afhankelijk van de hoeveelheid gevangenen en bemanning
+    - name: Geografische locatie
+      value: Boven het land van Greenguard, bewegend tussen verschillende locaties
+    - name: Infrastructuur
+      value: Een hoog beveiligde gevangenis, luchtvervoer-dokken voor vliegende voertuigen
+    - name: Politiek
+      value: Het eiland valt onder de jurisdictie van Greenguard en dient als mobiel gevangeniseiland
+    - name: Geschiedenis
+      value: Drakengreep heeft een lange geschiedenis als gevangenis en wordt al eeuwen gebruikt om gevaarlijke criminelen op te sluiten
+    - name: Cultuur
+      value: De bewoners van het eiland, voornamelijk bewakers en gevangenen, hebben een cultuur van discipline, een strikt regime en omgaan met de uitdagingen van hun isolatie
 
 - name: Dwarven Excavation
   visible: true
+  properties:
+    - name: Soort
+      value: Tempel
+    - name: Inwoners
+      value: Vroeger dwergen, tegenwoordig niemand
+    - name: Geografische locatie
+      value: In de zijkant van de Sword Mountains
+    - name: Infrastructuur
+      value: Oude, gladde muren. Hoge plafonds.
+    - name: Geschiedenis
+      value: Ooit gebruikt als tempel van de boze god van de hebzucht, Abbathor
 
 - name: Falconreach
   visible: true
+  properties:
+    - name: Soort
+      value: Dorp
+    - name: Inwoners
+      value: Diverse rassen
+    - name: Populatie
+      value: 500-1000
+    - name: Geografische locatie
+      value: Aan zee
+    - name: Infrastructuur
+      value: Oude stijl gebouwen
+    - name: Politiek
+      value: Heeft een raad van inwoners
+    - name: Geschiedenis
+      value: Uitgegroeid tot een controlepunt in een handelsroute
+    - name: Cultuur
+      value: Iedereen is welkom
 
 - name: Goblin Schuilplaats
   visible: true
+  properties:
+    - name: Soort
+      value: Boomhut
+    - name: Inwoners
+      value: De Goblins van het Surewould-bos
+    - name: Populatie
+      value: Ongeveer 20
+    - name: Geografische locatie
+      value: Ergens verstopt in het Surewould-bos
+    - name: Infrastructuur
+      value: Hout en andere materialen die gemakkelijk te vinden zijn
+    - name: Politiek
+      value: Koning Splurt had de leiding. Albert Tweesteen en Nettie Bettie waren zijn adviseurs
+    - name: Geschiedenis
+      value: Enige tijd geleden gebouwd door Goblins
+    - name: Cultuur
+      value: Ieder voor zich
 
 - name: Greenguard
   visible: true
+  properties:
+    - name: Soort
+      value: Land
+    - name: Inwoners
+      value: Diverse rassen, dieren, en monsters
+    - name: Populatie
+      value: Ongeveer 6.000.000
+    - name: Infrastructuur
+      value: Divers onder de verschillende steden en dorpen
+    - name: Politiek
+      value: Monarchie, met Alden Alteon als koning
 
 - name: Magisch Centrum
   visible: true
+  properties:
+    - name: Soort
+      value: Magisch gebied in een bos
+    - name: Inwoners
+      value: Een eekhoorn en een geest
+    - name: Populatie
+      value: 2
+    - name: Geografische locatie
+      value: Diep in het midden Surewould-bos
+    - name: Infrastructuur
+      value: Meerder kamers die op een of andere manier allemaal een ander klimaat hebben
+    - name: Politiek
+      value: Alleen degenen met een puur hart mogen de locatie betreden
+    - name: Geschiedenis
+      value: Ooit gebouwd als een beschermplek voor magische planten
+    - name: Cultuur
+      value: Bijna niemand weet van de locatie af
 
 - name: Phandalin
   visible: true
+  properties:
+    - name: Soort
+      value: Dorp
+    - name: Inwoners
+      value: Diverse rassen, vooral mensen
+    - name: Populatie
+      value: 50-200
+    - name: Geografische locatie
+      value: Aan de voet van de Sword Mountains
+    - name: Infrastructuur
+      value: Zo’n 40 tot 50 houten gebouwen
+    - name: Politiek
+      value: Harbin Wester is de gemeentemeester
+    - name: Geschiedenis
+      value: Een aantal jaren geleden wederopgebouwd uit de ruïnes van de grote, rijke stad dat het ooit was
+    - name: Cultuur
+      value: Nauwe samenleving, bezoekers zijn welkom
 
 - name: Surewould-bos
   visible: true
+  properties:
+    - name: Soort
+      value: Bos
+    - name: Inwoners
+      value: Robina the Hood & Twilly, dieren, monsters
+    - name: Geografische locatie
+      value: Dichtbij Falconreach
+    - name: Infrastructuur
+      value: Hoge bomen en dichte begroeiing
+    - name: Politiek
+      value: Robina the Hood is de beschermer van dit bos
+    - name: Geschiedenis
+      value: De buitenkanten van het bos worden gebruikt om hout te verzamelen door de inwoners van Falconreach
+    - name: Cultuur
+      value: Leven en laten leven
 
 - name: Tempel van ^.^
   visible: true
+  properties:
+    - name: Soort
+      value: Tempel
+    - name: Inwoners
+      value: Woestijn dieren, zoals schorpioenen
+    - name: Geografische locatie
+      value: Ondergronds in de Zandzee
+    - name: Infrastructuur
+      value: Vierkante zandstenen kamers
+    - name: Politiek
+      value: Dient als begraafplaats voor overleden Zand-Elven
+    - name: Geschiedenis
+      value: Gebouwd door de Zand-Elven, onder het zand beland na de aanval van de Tarrasque
+    - name: Cultuur
+      value: Vreemdelingen zijn niet welkom
 
 - name: Wraak van Koning Alden
   visible: true
+  properties:
+    - name: Soort
+      value: Luchtschip
+    - name: Inwoners
+      value: Diverse rassen aan zeelieden
+    - name: Populatie
+      value: Ongeveer 10
+    - name: Geografische locatie
+      value: Wisselend, vaak in de lucht van Greenguard
+    - name: Infrastructuur
+      value: Houten romp en hennepvezel zeilen
+    - name: Politiek
+      value: Kapitein Groenbaard is de baas, maar hij luistert graag naar zijn bemanning
+    - name: Geschiedenis
+      value: Diende als luchtschip voor het koninkrijk van Greenguard. Nog niet zo lang geleden gestolen door Kapitein Groenbaard en zijn bemanning
+    - name: Cultuur
+      value: Draag je eigen steentje bij en wordt naar rato beloond
 
 - name: Zandzee
   visible: true
+  properties:
+    - name: Soort
+      value: Woestijn
+    - name: Inwoners
+      value: Geen
+    - name: Populatie
+      value: 0
+    - name: Geografische locatie
+      value: In Greenguard
+    - name: Infrastructuur
+      value: Zand, weinig begroeiing
+    - name: Geschiedenis
+      value: Ooit bewoond door Zand-Elven, totdat de Tarrasque 98 jaar geleden aanviel

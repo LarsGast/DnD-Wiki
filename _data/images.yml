@@ -213,3 +213,177 @@
   alt: Yulgar Lark in zijn winkel, Yulgar's Smithy
   width: 255px
   height: 438px
+
+- name: Test Locatie
+  fileType: jpg
+  alt: De hele wereld, daar heb je 'em
+  width: 1024px
+  height: 768px
+
+- name: Drakengreep
+  fileType: jpg
+  alt: Het vliegende eiland Drakengreep, met één van de zwaarst bewaakte gevangenissen in Greenguard
+  width: 939px
+  height: 939px
+
+- name: Dwarven Excavation Quest
+  fileType: png
+  alt: De Dwarven Excavation Quest, die op het noticeboard in Phandalin hing
+  width: 1673px
+  height: 2164px
+
+- name: Dwarven Excavation
+  fileType: jpg
+  alt: De plattegrond van de Dwarven Excavation tempel, waar alle kamers en geheime deuren te zien zijn
+  width: 2888px
+  height: 1838px
+
+- name: Ochre Jelly
+  fileType: png
+  alt: Een Ochre Jelly (een oranje slijm monster) dat een aanvalspositie inneemt
+  width: 1000px
+  height: 853px
+
+- name: Orc
+  fileType: jpeg
+  alt: Een Orc in leren harnas
+  width: 474px
+  height: 582px
+
+- name: The Goblin Community Room
+  fileType: png
+  alt: De ruimte in de Goblin Schuilplaats waar Goblins normaal gesproken samenkomen. De tafels zijn aan de kant geschoven en de stoelen staan opgesteld alsof er een bruiloft plaats gaat vinden.
+  width: 1260px
+  height: 1190px
+
+- name: The Goblin Hangout
+  fileType: png
+  alt: De ruimte in de Goblin Schuilplaats waar Goblins kunnen relaxen. Er staan tafels waar spellen kunnen worden gespeeld en er zijn veel dozen te zien.
+  width: 1820px
+  height: 1050px
+
+- name: Magic Center Entrance
+  fileType: jpg
+  alt: De ingang van het magisch centrum met 5 stenen (water, vuur, aarde, brein, en licht) en 5 gangen
+  width: 1080px
+  height: 952px
+
+- name: Magic Center Fire Room
+  fileType: jpg
+  alt: De vuur ruimte van het magisch centrum
+  width: 1052px
+  height: 1004px
+
+- name: Magic Center Mind Room
+  fileType: jpg
+  alt: De brein ruimte van het magisch centrum
+  width: 1048px
+  height: 840px
+
+- name: Magic Center Nature Room
+  fileType: jpg
+  alt: De natuur ruimte van het magisch centrum
+  width: 1160px
+  height: 848px
+
+- name: Magic Center Sun Room
+  fileType: jpg
+  alt: De zon ruimte van het magisch centrum
+  width: 1040px
+  height: 1036px
+
+- name: Magic Center Water Room
+  fileType: jpg
+  alt: De water ruimte van het magisch centrum
+  width: 920px
+  height: 836px
+
+- name: Chess puzzle
+  fileType: png
+  alt: Een schaakpuzzel met maar één oplossing
+  width: 949px
+  height: 949px
+
+- name: Forest Battlemap
+  fileType: jpg
+  alt: Een plattegrond van de binnenste kamer van het magisch centrum
+  width: 2200px
+  height: 1600px
+
+- name: Crawling Claw
+  fileType: jpg
+  alt: Een Crawling Claw, een losse, rottende hand die zijn eigen wil heeft
+  width: 626px
+  height: 788px
+
+- name: Flying Snake
+  fileType: jpeg
+  alt: Een vliegende slang gewikkeld om de arm van een persoon
+  width: 615px
+  height: 1000px
+
+- name: Flying Sword
+  fileType: png
+  alt: Een vliegend zwaard. Lijkt precies op een gewoon zwaard
+  width: 594px
+  height: 1000px
+
+- name: Ghoul
+  fileType: png
+  alt: Een Ghoul die op een losse arm van een persoon aan her kauwen is
+  width: 583px
+  height: 1000px
+
+- name: Phandalin
+  fileType: jpg
+  alt: Een plattegrond van Phandalin, waar alle belangrijke bezienswaardigheden aan zijn gegeven
+  width: 2550px
+  height: 1830px
+
+- name: Gnomengarde Quest
+  fileType: png
+  alt: De Gnomengarde Quest, die op het noticeboard in Phandalin hing
+  width: 1649px
+  height: 2155px
+
+- name: Umbrage Hill Quest
+  fileType: png
+  alt: De Umbrage Hill Quest, die op het noticeboard in Phandalin hing
+  width: 1659px
+  height: 2142px
+
+- name: Tempel van ^.^ laatste kamer
+  fileType: jpg
+  alt: De diepste kamer van de Tempel van ^.^, waar de belangrijkste Zand-Elven zijn begraven
+  width: 863px
+  height: 1100px
+
+- name: Tempel van ^.^ trap room
+  fileType: jpg
+  alt: En kamer vol vallen in de Tempel van ^.^, met pilaren en vlammenwerpers de doorgang bewaken
+  width: 1065px
+  height: 1600px
+
+- name: Giant Scorpion
+  fileType: jpeg
+  alt: Een reuze schorpioen, met grote klauwen en een gevaarlijke angel
+  width: 1065px
+  height: 1600px
+
+- name: Airship
+  fileType: jpg
+  alt: Een luchtschip van het rijk van Greenguard van boven af
+  width: 1227px
+  height: 1515px
+
+- name: Airship Layers
+  fileType: jpg
+  alt: De verschillende lagen van een luchtschip van het rijk van Greenguard
+  width: 4176px
+  height: 1584px
+
+- name: Reuze Aasgier
+  fileType: jpeg
+  alt: Een reuze aasgier die geduldig zit te wachten op een mogelijke prooi
+  width: 474px
+  height: 335px
