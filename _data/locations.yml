@@ -205,3 +205,16 @@
 
 - name: Zandzee
   visible: true
+  properties:
+    - name: Soort
+      value: Woestijn
+    - name: Inwoners
+      value: Geen
+    - name: Populatie
+      value: 0
+    - name: Geografische locatie
+      value: In Greenguard
+    - name: Infrastructuur
+      value: Zand, weinig begroeiing
+    - name: Geschiedenis
+      value: Ooit bewoond door Zand-Elven, totdat de Tarrasque 98 jaar geleden aanviel
