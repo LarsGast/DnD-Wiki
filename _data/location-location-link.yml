@@ -67,3 +67,7 @@
 - firstLocationName: Goblin Schuilplaats
   secondLocationName: Magisch Centrum
   isSuperSubRelationship: false
+
+- firstLocationName: Zandzee
+  secondLocationName: Tempel van ^.^
+  isSuperSubRelationship: true

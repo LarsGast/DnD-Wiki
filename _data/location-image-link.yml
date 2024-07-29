@@ -93,3 +93,13 @@
 - locationName: Phandalin
   imageName: Umbrage Hill Quest
   isHeaderImage: false
+
+- locationName: Tempel van ^.^
+  imageName: Tempel van ^.^ laatste kamer
+  isHeaderImage: true
+- locationName: Tempel van ^.^
+  imageName: Tempel van ^.^ trap room
+  isHeaderImage: false
+- locationName: Tempel van ^.^
+  imageName: Giant Scorpion
+  isHeaderImage: false

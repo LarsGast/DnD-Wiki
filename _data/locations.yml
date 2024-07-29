@@ -167,6 +167,21 @@
 
 - name: Tempel van ^.^
   visible: true
+  properties:
+    - name: Soort
+      value: Tempel
+    - name: Inwoners
+      value: Woestijn dieren, zoals schorpioenen
+    - name: Geografische locatie
+      value: Ondergronds in de Zandzee
+    - name: Infrastructuur
+      value: Vierkante zandstenen kamers
+    - name: Politiek
+      value: Dient als begraafplaats voor overleden Zand-Elven
+    - name: Geschiedenis
+      value: Gebouwd door de Zand-Elven, onder het zand beland na de aanval van de Tarrasque
+    - name: Cultuur
+      value: Vreemdelingen zijn niet welkom
 
 - name: Wraak van Koning Alden
   visible: true
