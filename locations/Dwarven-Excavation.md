@@ -1,19 +1,7 @@
 ---
-layout: post
+layout: location
 title: Dwarven Excavation
 ---
-
-<img src="../images/Dwarven Excavation.jpg" alt="Dwarven Excavation" width=500>
-
-## Algemeen
-* Soort: Tempel
-* Inwoners: Geen
-* Populatie: 0
-* Geografische locatie: In de zijkant van de Sword Mountains
-* Infrastructuur: Oude, gladde muren
-* Politiek: -
-* Geschiedenis: Ooit gebruikt als tempel door dwergen
-* Cultuur: -
 
 ## Overzicht
 
@@ -22,33 +10,3 @@ Deze dwergen-opgraving ligt pal ten oosten van Leilon, 24 kilometer ten zuidwest
 Achter de nederzetting, uitgehouwen in de achterwand van de kloof, staat een oude tempel van Abbathor, de boze dwergen god van de hebzucht. Tijdens zonsverduisteringen wordt Abbathor tevredengesteld met offers van bloed en edelstenen. Bij één gelegenheid ontdekte de god dat de offers van de priesters van deze tempel ontbraken, dus veroorzaakte hij een aardbeving en lawine die delen van de tempel instortte en de nederzetting begroef. De priesters in de tempel die niet regelrecht werden gedood, werden omgevormd tot okerkleurige gelei - vernederde weerspiegelingen van Abbathor zijn honger en hebzucht.
 
 Dazlyn Grayshard en Norbus Ironrune zijn schilddwerg goudzoekers en zakenpartners. Terwijl ze op zoek waren naar goud in de bergen ten zuidwesten van Phandalin, besloten ze een nabijgelegen kloof te verkennen en vonden ze bewijs van een oude dwergennederzetting begraven door een lawine. Ze zijn de afgelopen maanden bezig geweest met het opruimen van het puin en het doorzoeken van de ruïnes op zoek naar schatten, maar tot nu toe hebben ze niets van waarde gevonden.
-
----
-
-## Komt voor in
-* [De Draak van Icespire Peak]({{ site.baseurl }}{% link campaigns/de-draak-van-icespire-peak.md %})
-
-## Gerelateerde karakters
-* [Dazlyn Grayshard]({{ site.baseurl }}{% link characters/Dazlyn-Grayshard.md %})
-* [Norbus Ironrune]({{ site.baseurl }}{% link characters/Norbus-Ironrune.md %})
-
-## Super-locaties
-* Sword Mountains
-
-## Sub-locaties
-* -
-
-## Locaties in de buurt
-* [Phandalin]({{ site.baseurl }}{% link locations/Phandalin.md %})
-
-## Items
-* [Sending Stone]({{ site.baseurl }}{% link items/Sending-Stone.md %})
-
-## Galerij
-<img src="../images/Dwarven Excavation.jpg" alt="Dwarven Excavation" width=500>
-
-<img src="../images/Dwarven Excavation Quest.png" alt="Dwarven Excavation Quest" width=200>
-
-<img src="../images/Ochre Jelly.png" alt="Ochre Jelly" width=200>
-
-<img src="../images/Orc.jpeg" alt="Orc" width=200>

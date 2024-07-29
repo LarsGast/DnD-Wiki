@@ -7,3 +7,16 @@
 - locationName: Drakengreep
   imageName: Drakengreep
   isHeaderImage: true
+
+- locationName: Dwarven Excavation
+  imageName: Dwarven Excavation
+  isHeaderImage: true
+- locationName: Dwarven Excavation
+  imageName: Dwarven Excavation Quest
+  isHeaderImage: false
+- locationName: Dwarven Excavation
+  imageName: Ochre Jelly
+  isHeaderImage: false
+- locationName: Dwarven Excavation
+  imageName: Orc
+  isHeaderImage: false

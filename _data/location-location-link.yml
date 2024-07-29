@@ -39,3 +39,7 @@
 - firstLocationName: Drakengreep
   secondLocationName: Wraak van Koning Alden
   isSuperSubRelationship: false
+
+- firstLocationName: Dwarven Excavation
+  secondLocationName: Phandalin
+  isSuperSubRelationship: false

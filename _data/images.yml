@@ -225,3 +225,27 @@
   alt: Het vliegende eiland Drakengreep, met één van de zwaarst bewaakte gevangenissen in Greenguard
   width: 939px
   height: 939px
+
+- name: Dwarven Excavation Quest
+  fileType: png
+  alt: De Dwarven Excavation Quest, die op het noticeboard in Phandalin hing
+  width: 1673px
+  height: 2164px
+
+- name: Dwarven Excavation
+  fileType: jpg
+  alt: De plattegrond van de Dwarven Excavation tempel, waar alle kamers en geheime deuren te zien zijn
+  width: 2888px
+  height: 1838px
+
+- name: Ochre Jelly
+  fileType: png
+  alt: Een Ochre Jelly (een oranje slijm monster) dat een aanvalspositie inneemt
+  width: 1000px
+  height: 853px
+
+- name: Orc
+  fileType: jpeg
+  alt: Een Orc in leren harnas
+  width: 474px
+  height: 582px

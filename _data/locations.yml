@@ -41,6 +41,17 @@
 
 - name: Dwarven Excavation
   visible: true
+  properties:
+    - name: Soort
+      value: Tempel
+    - name: Inwoners
+      value: Vroeger dwergen, tegenwoordig niemand
+    - name: Geografische locatie
+      value: In de zijkant van de Sword Mountains
+    - name: Infrastructuur
+      value: Oude, gladde muren. Hoge plafonds.
+    - name: Geschiedenis
+      value: Ooit gebruikt als tempel van de boze god van de hebzucht, Abbathor
 
 - name: Falconreach
   visible: true
