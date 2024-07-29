@@ -249,3 +249,15 @@
   alt: Een Orc in leren harnas
   width: 474px
   height: 582px
+
+- name: The Goblin Community Room
+  fileType: png
+  alt: De ruimte in de Goblin Schuilplaats waar Goblins normaal gesproken samenkomen. De tafels zijn aan de kant geschoven en de stoelen staan opgesteld alsof er een bruiloft plaats gaat vinden.
+  width: 1260px
+  height: 1190px
+
+- name: The Goblin Hangout
+  fileType: png
+  alt: De ruimte in de Goblin Schuilplaats waar Goblins kunnen relaxen. Er staan tafels waar spellen kunnen worden gespeeld en er zijn veel dozen te zien.
+  width: 1820px
+  height: 1050px

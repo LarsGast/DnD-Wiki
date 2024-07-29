@@ -50,3 +50,11 @@
 - firstLocationName: Falconreach
   secondLocationName: Surewould-bos
   isSuperSubRelationship: false
+
+- firstLocationName: Surewould-bos
+  secondLocationName: Goblin Schuilplaats
+  isSuperSubRelationship: true
+
+- firstLocationName: Goblin Schuilplaats
+  secondLocationName: Magisch Centrum
+  isSuperSubRelationship: false

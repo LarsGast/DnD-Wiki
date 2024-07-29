@@ -75,6 +75,23 @@
 
 - name: Goblin Schuilplaats
   visible: true
+  properties:
+    - name: Soort
+      value: Boomhut
+    - name: Inwoners
+      value: De Goblins van het Surewould-bos
+    - name: Populatie
+      value: Ongeveer 20
+    - name: Geografische locatie
+      value: Ergens verstopt in het Surewould-bos
+    - name: Infrastructuur
+      value: Hout en andere materialen die gemakkelijk te vinden zijn
+    - name: Politiek
+      value: Koning Splurt had de leiding. Albert Tweesteen en Nettie Bettie waren zijn adviseurs
+    - name: Geschiedenis
+      value: Enige tijd geleden gebouwd door Goblins
+    - name: Cultuur
+      value: Ieder voor zich
 
 - name: Greenguard
   visible: true
