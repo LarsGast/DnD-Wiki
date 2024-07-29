@@ -47,7 +47,7 @@
 
 - firstLocationName: Drakengreep
   secondLocationName: Wraak van Koning Alden
-  isSuperSubRelationship: false
+  isSuperSubRelationship: true
 
 - firstLocationName: Dwarven Excavation
   secondLocationName: Phandalin
@@ -70,4 +70,11 @@
 
 - firstLocationName: Zandzee
   secondLocationName: Tempel van ^.^
+  isSuperSubRelationship: true
+- firstLocationName: Zandzee
+  secondLocationName: Wraak van Koning Alden
+  isSuperSubRelationship: true
+
+- firstLocationName: Phandalin
+  secondLocationName: Wraak van Koning Alden
   isSuperSubRelationship: true

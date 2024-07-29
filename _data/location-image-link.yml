@@ -103,3 +103,10 @@
 - locationName: Tempel van ^.^
   imageName: Giant Scorpion
   isHeaderImage: false
+
+- locationName: Wraak van Koning Alden
+  imageName: Airship
+  isHeaderImage: true
+- locationName: Wraak van Koning Alden
+  imageName: Airship Layers
+  isHeaderImage: false

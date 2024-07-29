@@ -369,3 +369,15 @@
   alt: Een reuze schorpioen, met grote klauwen en een gevaarlijke angel
   width: 1065px
   height: 1600px
+
+- name: Airship
+  fileType: jpg
+  alt: Een luchtschip van het rijk van Greenguard van boven af
+  width: 1227px
+  height: 1515px
+
+- name: Airship Layers
+  fileType: jpg
+  alt: De verschillende lagen van een luchtschip van het rijk van Greenguard
+  width: 4176px
+  height: 1584px

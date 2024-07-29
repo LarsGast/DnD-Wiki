@@ -185,6 +185,23 @@
 
 - name: Wraak van Koning Alden
   visible: true
+  properties:
+    - name: Soort
+      value: Luchtschip
+    - name: Inwoners
+      value: Diverse rassen aan zeelieden
+    - name: Populatie
+      value: Ongeveer 10
+    - name: Geografische locatie
+      value: Wisselend, vaak in de lucht van Greenguard
+    - name: Infrastructuur
+      value: Houten romp en hennepvezel zeilen
+    - name: Politiek
+      value: Kapitein Groenbaard is de baas, maar hij luistert graag naar zijn bemanning
+    - name: Geschiedenis
+      value: Diende als luchtschip voor het koninkrijk van Greenguard. Nog niet zo lang geleden gestolen door Kapitein Groenbaard en zijn bemanning
+    - name: Cultuur
+      value: Draag je eigen steentje bij en wordt naar rato beloond
 
 - name: Zandzee
   visible: true
