@@ -43,3 +43,40 @@
 - locationName: Goblin Schuilplaats
   imageName: The Goblin Community Room
   isHeaderImage: false
+
+- locationName: Magisch Centrum
+  imageName: Forest Battlemap
+  isHeaderImage: true
+- locationName: Magisch Centrum
+  imageName: Magic Center Entrance
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Magic Center Fire Room
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Magic Center Mind Room
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Magic Center Nature Room
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Magic Center Sun Room
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Magic Center Water Room
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Chess puzzle
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Crawling Claw
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Flying Snake
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Flying Sword
+  isHeaderImage: false
+- locationName: Magisch Centrum
+  imageName: Ghoul
+  isHeaderImage: false

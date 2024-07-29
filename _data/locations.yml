@@ -109,6 +109,23 @@
 
 - name: Magisch Centrum
   visible: true
+  properties:
+    - name: Soort
+      value: Magisch gebied in een bos
+    - name: Inwoners
+      value: Een eekhoorn en een geest
+    - name: Populatie
+      value: 2
+    - name: Geografische locatie
+      value: Diep in het midden Surewould-bos
+    - name: Infrastructuur
+      value: Meerder kamers die op een of andere manier allemaal een ander klimaat hebben
+    - name: Politiek
+      value: Alleen degenen met een puur hart mogen de locatie betreden
+    - name: Geschiedenis
+      value: Ooit gebouwd als een beschermplek voor magische planten
+    - name: Cultuur
+      value: Bijna niemand weet van de locatie af
 
 - name: Phandalin
   visible: true

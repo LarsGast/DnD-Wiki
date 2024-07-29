@@ -60,6 +60,9 @@
 - firstLocationName: Surewould-bos
   secondLocationName: Goblin Schuilplaats
   isSuperSubRelationship: true
+- firstLocationName: Surewould-bos
+  secondLocationName: Magisch Centrum
+  isSuperSubRelationship: true
 
 - firstLocationName: Goblin Schuilplaats
   secondLocationName: Magisch Centrum
