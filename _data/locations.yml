@@ -129,6 +129,23 @@
 
 - name: Phandalin
   visible: true
+  properties:
+    - name: Soort
+      value: Dorp
+    - name: Inwoners
+      value: Diverse rassen, vooral mensen
+    - name: Populatie
+      value: 50-200
+    - name: Geografische locatie
+      value: Aan de voet van de Sword Mountains
+    - name: Infrastructuur
+      value: Zo’n 40 tot 50 houten gebouwen
+    - name: Politiek
+      value: Harbin Wester is de gemeentemeester
+    - name: Geschiedenis
+      value: Een aantal jaren geleden wederopgebouwd uit de ruïnes van de grote, rijke stad dat het ooit was
+    - name: Cultuur
+      value: Nauwe samenleving, bezoekers zijn welkom
 
 - name: Surewould-bos
   visible: true

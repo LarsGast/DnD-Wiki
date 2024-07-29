@@ -333,3 +333,21 @@
   alt: Een Ghoul die op een losse arm van een persoon aan her kauwen is
   width: 583px
   height: 1000px
+
+- name: Phandalin
+  fileType: jpg
+  alt: Een plattegrond van Phandalin, waar alle belangrijke bezienswaardigheden aan zijn gegeven
+  width: 2550px
+  height: 1830px
+
+- name: Gnomengarde Quest
+  fileType: png
+  alt: De Gnomengarde Quest, die op het noticeboard in Phandalin hing
+  width: 1649px
+  height: 2155px
+
+- name: Umbrage Hill Quest
+  fileType: png
+  alt: De Umbrage Hill Quest, die op het noticeboard in Phandalin hing
+  width: 1659px
+  height: 2142px

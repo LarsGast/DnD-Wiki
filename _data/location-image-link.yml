@@ -80,3 +80,16 @@
 - locationName: Magisch Centrum
   imageName: Ghoul
   isHeaderImage: false
+
+- locationName: Phandalin
+  imageName: Phandalin
+  isHeaderImage: true
+- locationName: Phandalin
+  imageName: Dwarven Excavation Quest
+  isHeaderImage: false
+- locationName: Phandalin
+  imageName: Gnomengarde Quest
+  isHeaderImage: false
+- locationName: Phandalin
+  imageName: Umbrage Hill Quest
+  isHeaderImage: false
