@@ -149,6 +149,21 @@
 
 - name: Surewould-bos
   visible: true
+  properties:
+    - name: Soort
+      value: Bos
+    - name: Inwoners
+      value: Robina the Hood & Twilly, dieren, monsters
+    - name: Geografische locatie
+      value: Dichtbij Falconreach
+    - name: Infrastructuur
+      value: Hoge bomen en dichte begroeiing
+    - name: Politiek
+      value: Robina the Hood is de beschermer van dit bos
+    - name: Geschiedenis
+      value: De buitenkanten van het bos worden gebruikt om hout te verzamelen door de inwoners van Falconreach
+    - name: Cultuur
+      value: Leven en laten leven
 
 - name: Tempel van ^.^
   visible: true
