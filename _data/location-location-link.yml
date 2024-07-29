@@ -1,7 +1,3 @@
-- firstLocationName: Greenguard
-  secondLocationName: Test Locatie
-  isSuperSubRelationship: true
-
 - firstLocationName: Test Locatie
   secondLocationName: Drakengreep
   isSuperSubRelationship: false
@@ -31,4 +27,15 @@
   isSuperSubRelationship: true
 - firstLocationName: Test Locatie
   secondLocationName: Zandzee
+  isSuperSubRelationship: false
+
+- firstLocationName: Greenguard
+  secondLocationName: Test Locatie
+  isSuperSubRelationship: true
+- firstLocationName: Greenguard
+  secondLocationName: Drakengreep
+  isSuperSubRelationship: true
+
+- firstLocationName: Drakengreep
+  secondLocationName: Wraak van Koning Alden
   isSuperSubRelationship: false

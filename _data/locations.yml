@@ -21,6 +21,23 @@
 
 - name: Drakengreep
   visible: true
+  properties:
+    - name: Soort
+      value: Zwevend eiland
+    - name: Inwoners
+      value: Bewakers, gevangenen
+    - name: Populatie
+      value: Onbekend, afhankelijk van de hoeveelheid gevangenen en bemanning
+    - name: Geografische locatie
+      value: Boven het land van Greenguard, bewegend tussen verschillende locaties
+    - name: Infrastructuur
+      value: Een hoog beveiligde gevangenis, luchtvervoer-dokken voor vliegende voertuigen
+    - name: Politiek
+      value: Het eiland valt onder de jurisdictie van Greenguard en dient als mobiel gevangeniseiland
+    - name: Geschiedenis
+      value: Drakengreep heeft een lange geschiedenis als gevangenis en wordt al eeuwen gebruikt om gevaarlijke criminelen op te sluiten
+    - name: Cultuur
+      value: De bewoners van het eiland, voornamelijk bewakers en gevangenen, hebben een cultuur van discipline, een strikt regime en omgaan met de uitdagingen van hun isolatie
 
 - name: Dwarven Excavation
   visible: true
