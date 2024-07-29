@@ -37,7 +37,8 @@
 {% elsif filterType == "character" %}
     {% for locationCharacterLink in site.data.location-character-link %}
         {% if locationCharacterLink.characterName == filterName %}
-            {% assign locations = locations | push: locationCharacterLink.locationName %}
+            {% assign location = site.data.locations | where:"name", locationCharacterLink.locationName | first %}
+            {% assign locations = locations | push: location %}
         {% endif %}
     {% endfor %}
 {% else %}
