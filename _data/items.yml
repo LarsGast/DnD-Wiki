@@ -22,3 +22,6 @@
 
 - name: Wind Fan
   visible: true
+
+- name: Bloodwell Vial
+  visible: false
