@@ -100,11 +100,11 @@
   current: false
   past: true
 
-- itemName: Tia’s Kompas
+- itemName: Tia's Kompas
   characterName: Test Karakter
   current: false
   past: true
-- itemName: Tia’s Kompas
+- itemName: Tia's Kompas
   characterName: Kapitein Groenbaard
   current: true
   past: false

@@ -25,3 +25,7 @@
   isHeaderImage: true
 - itemName: Staff of Average Intelligence
   imageName: Nettie Bettie
+
+- itemName: Tia's Kompas
+  imageName: Tias Kompas
+  isHeaderImage: true
