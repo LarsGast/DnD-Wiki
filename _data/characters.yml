@@ -445,15 +445,15 @@
     - name: Geslacht
       value: Man
     - name: Leeftijd
-      value: Volwassen
-    - name: Bevindt zich op dit moment in
-      value: De Sword Mountains
+      value: Volwassen, overleden
+    - name: Laatst gezien in
+      value: Weggevlogen in de klauwen van Cryovain
     - name: Talen
       value: Common, Elfs, Primordial, Draconic
   icons:
     - name: player
-    - name: with-party
     - name: male
+    - name: dead
 
 - name: Linene Graywind
   visible: true
