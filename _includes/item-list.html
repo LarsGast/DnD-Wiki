@@ -3,58 +3,57 @@
 {% assign filterName = include.filterName %}
 {% assign time = include.time %}
 
-<!-- Initialize an empty array for item names -->
-{% assign itemLinks = '' | split: ',' %}
-
 {% if filterType == "campaign" %}
-    {% for itemLink in site.data.campaign-item-link %}
-        {% if itemLink.campaignName == filterName %}
-            {% assign itemLinks = itemLinks | push: itemLink %}
-        {% endif %}
-    {% endfor %}
+    {% assign itemLinkFile = site.data.campaign-item-link %}
 {% elsif filterType == "location" %}
-    {% for itemLink in site.data.location-item-link %}
-        {% if itemLink.locationName == filterName %}
-            {% assign itemLinks = itemLinks | push: itemLink %}
-        {% endif %}
-    {% endfor %}
+    {% assign itemLinkFile = site.data.location-item-link %}
 {% elsif filterType == "character" %}
-    {% for itemCharacterLink in site.data.item-character-link %}
-        {% if itemCharacterLink.characterName == filterName %}
-            {% if time == "current" and itemCharacterLink.current %}
-                {% assign itemLinks = itemLinks | push: itemCharacterLink %}
-            {% endif %}
-            {% if time == "past" and itemCharacterLink.past %}
-                {% assign itemLinks = itemLinks | push: itemCharacterLink %}
-            {% endif %}
-        {% endif %}
-    {% endfor %}
-{% else %}
-    <!-- No filtering, get all item names -->
-    {% for item in site.data.items %}
-        {% assign itemLinks = itemLinks | push: item.name %}
-    {% endfor %}
+    {% assign itemLinkFile = site.data.item-character-link %}
 {% endif %}
 
-<!-- Sort by chronologically -->
-{% assign itemLinks = itemLinks | sort:"itemName" %}
+{% assign filter = filterType | append:"Name" %}
+
+{% assign items = site.data.items %}
+{% assign items = items | sort:"name" %}
 
 <ul class>
-    {% if itemLinks.size == 0 %}
-        <li>-</li>
-    {% else %}
-        {% for itemLink in itemLinks %}
-            {% assign item = site.data.items | where:"name", itemLink.itemName | first %}
-            {% if item.visible or site.showInvisible %}
+    {% for item in items %}
+        {% if item.visible or site.showInvisible %}
+            {% assign itemLinks = itemLinkFile | where:"itemName", item.name %}
+            {% assign itemLinks = itemLinks | where:filter, filterName %}
+
+            {% if filterType %}
+                {% for itemLink in itemLinks %}
+                    {% if itemLink %}
+                        {% assign current = false %}
+                        {% if time == "current" and itemLink.current %}
+                            {% assign current = true %}
+                        {% endif %}
+                        
+                        {% assign past = false %}
+                        {% if time == "past" and itemLink.past %}
+                            {% assign past = true %}
+                        {% endif %}
+
+                        {% if current or past %}
+                            <li>
+                                <a href="../items/{% if item.customLink %}{{ item.customLink }}{% else %}{{ item.name | replace: ' ', '-' }}{% endif %}">
+                                    {{item.name}}
+                                </a>
+                                {% if itemLink.comment %}
+                                    ({{itemLink.comment}})
+                                {% endif %}
+                            </li>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            {% else %}
                 <li>
                     <a href="../items/{% if item.customLink %}{{ item.customLink }}{% else %}{{ item.name | replace: ' ', '-' }}{% endif %}">
                         {{item.name}}
                     </a>
-                    {% if itemLink.comment %}
-                        ({{itemLink.comment}})
-                    {% endif %}
                 </li>
             {% endif %}
-        {% endfor %}
-    {% endif %}
+        {% endif %}
+    {% endfor %}
 </ul>
