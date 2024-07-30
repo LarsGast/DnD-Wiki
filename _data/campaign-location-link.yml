@@ -1,6 +1,4 @@
 - campaignName: De Redding van (Prinses) Azura
-  locationName: Test Locatie
-- campaignName: De Redding van (Prinses) Azura
   locationName: Falconreach
 - campaignName: De Redding van (Prinses) Azura
   locationName: Goblin Schuilplaats
@@ -10,8 +8,6 @@
   locationName: Surewould-bos
 
 - campaignName: Twilly Rekruteren
-  locationName: Test Locatie
-- campaignName: Twilly Rekruteren
   locationName: Greenguard
 - campaignName: Twilly Rekruteren
   locationName: Falconreach
@@ -20,8 +16,6 @@
 - campaignName: Twilly Rekruteren
   locationName: Surewould-bos
 
-- campaignName: De Legende van Kapitein Groenbaard
-  locationName: Test Locatie
 - campaignName: De Legende van Kapitein Groenbaard
   locationName: Greenguard
 - campaignName: De Legende van Kapitein Groenbaard
@@ -34,16 +28,12 @@
   locationName: Zandzee
 
 - campaignName: De Draak van Icespire Peak
-  locationName: Test Locatie
-- campaignName: De Draak van Icespire Peak
   locationName: Dwarven Excavation
 - campaignName: De Draak van Icespire Peak
   locationName: Phandalin
 - campaignName: De Draak van Icespire Peak
   locationName: Wraak van Koning Alden
 
-- campaignName: De Grote Ontsnapping van Kapitein Groenbaard
-  locationName: Test Locatie
 - campaignName: De Grote Ontsnapping van Kapitein Groenbaard
   locationName: Drakengreep
 - campaignName: De Grote Ontsnapping van Kapitein Groenbaard
