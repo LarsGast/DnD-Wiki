@@ -25,6 +25,8 @@
             {% if filterType %}
                 {% for itemLink in itemLinks %}
                     {% if itemLink %}
+
+                        {% assign isCharacter = filterType == "character" %}
                         {% assign current = false %}
                         {% if time == "current" and itemLink.current %}
                             {% assign current = true %}
@@ -35,7 +37,7 @@
                             {% assign past = true %}
                         {% endif %}
 
-                        {% if current or past %}
+                        {% if current or past or !isCharacter %}
                             <li>
                                 <a href="../items/{% if item.customLink %}{{ item.customLink }}{% else %}{{ item.name | replace: ' ', '-' }}{% endif %}">
                                     {{item.name}}
