@@ -11,3 +11,7 @@
 - itemName: IJzeren Pot
   imageName: IJzeren Pot
   isHeaderImage: true
+
+- itemName: Lab Coat (worn)
+  imageName: Lab Coat (worn)
+  isHeaderImage: true
