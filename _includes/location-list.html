@@ -41,6 +41,13 @@
             {% assign locations = locations | push: location %}
         {% endif %}
     {% endfor %}
+{% elsif filterType == "item" %}
+    {% for locationLink in site.data.location-item-link %}
+        {% if locationLink.itemName == filterName %}
+            {% assign location = site.data.locations | where:"name", locationLink.locationName | first %}
+            {% assign locations = locations | push: location %}
+        {% endif %}
+    {% endfor %}
 {% else %}
     {% for location in site.data.locations %}
         {% if location.index %}
