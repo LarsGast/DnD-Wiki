@@ -18,9 +18,6 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {% include main-image.html filterType="item" filterName=page.title %}
 
-    <h2>Algemeen</h2>
-    {% include general-info.html filterType="item" filterName=page.title %}
-
     {{ content }}
 
     <hr/>
@@ -37,12 +34,6 @@ layout: default
     
     <h2>Gerelateerde locaties</h2>
     {% include location-list.html filterType="item" filterName=page.title %}
-    
-    <h2>Items</h2>
-    <h3>Huidige bezittingen</h3>
-    {% include item-list.html filterType="item" filterName=page.title time="current" %}
-    <h3>Vorige bezittingen</h3>
-    {% include item-list.html filterType="item" filterName=page.title time="past" %}
 
     <h2>Galerij</h2>
     {% include image-list.html filterType="item" filterName=page.title %}
