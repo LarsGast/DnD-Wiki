@@ -33,3 +33,7 @@
 - itemName: Wind Fan
   imageName: Wind Fan
   isHeaderImage: true
+
+- itemName: Bloodwell Vial
+  imageName: Bloodwell Vial
+  isHeaderImage: true
