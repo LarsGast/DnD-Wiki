@@ -15,3 +15,7 @@
 - itemName: Lab Coat (worn)
   imageName: Lab Coat (worn)
   isHeaderImage: true
+
+- itemName: Sending Stone
+  imageName: Sending Stones
+  isHeaderImage: true
