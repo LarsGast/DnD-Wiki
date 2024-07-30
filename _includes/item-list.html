@@ -19,25 +19,28 @@
 <ul class>
     {% for item in items %}
         {% if item.visible or site.showInvisible %}
-            {% assign itemLinks = itemLinkFile | where:"itemName", item.name %}
-            {% assign itemLinks = itemLinks | where:filter, filterName %}
 
             {% if filterType %}
+
+                {% assign itemLinks = itemLinkFile | where:"itemName", item.name %}
+                {% assign itemLinks = itemLinks | where:filter, filterName %}
+
                 {% for itemLink in itemLinks %}
                     {% if itemLink %}
 
-                        {% assign isCharacter = filterType == "character" %}
-                        {% assign current = false %}
-                        {% if time == "current" and itemLink.current %}
-                            {% assign current = true %}
-                        {% endif %}
-                        
-                        {% assign past = false %}
-                        {% if time == "past" and itemLink.past %}
-                            {% assign past = true %}
+                        {% assign show = false %}
+                        {% if filterType == "character" %}
+                            {% if time == "current" and itemLink.current %}
+                                {% assign show = true %}
+                            {% endif %}
+                            {% if time == "past" and itemLink.past %}
+                                {% assign show = true %}
+                            {% endif %}
+                        {% else %}
+                            {% assign show = true %}
                         {% endif %}
 
-                        {% if current or past or !isCharacter %}
+                        {% if show %}
                             <li>
                                 <a href="../items/{% if item.customLink %}{{ item.customLink }}{% else %}{{ item.name | replace: ' ', '-' }}{% endif %}">
                                     {{item.name}}
