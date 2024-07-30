@@ -1,9 +1,7 @@
 ---
-layout: post
+layout: item
 title: Tia's Kompas
 ---
-
-<img src="../images/Tias Kompas.png" alt="Tia's Kompas" width=200>
 
 ## Werking
 Dit kompas wijst altijd naar dat wat de eigenaar het meest verlangt.
@@ -14,17 +12,3 @@ Dit kompas wijst altijd naar dat wat de eigenaar het meest verlangt.
 ## Geschiedenis van bezitting
 * Kapitein Groenbaard
   * Sinds onbekend tot heden
-
----
-
-## Komt voor in
-* [De Grote Ontsnapping van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-grote-ontsnapping-van-kapitein-groenbaard.md %})
-
-## Gerelateerde karakters
-* [Kapitein Groenbaard]({{ site.baseurl }}{% link characters/Kapitein-Groenbaard.md %})
-
-## Gerelateerde locaties
-* [Drakengreep]({{ site.baseurl }}{% link locations/Drakengreep.md %})
-
-## Galerij
-<img src="../images/Tias Kompas.png" alt="Tia's Kompas" width=200>

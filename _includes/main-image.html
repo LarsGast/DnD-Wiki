@@ -14,6 +14,12 @@
     {% if headerImageLink %}
         {% assign image = site.data.images | where:"name", headerImageLink.imageName | first %}
     {% endif %}
+{% elsif filterType == "item" %}
+    {% assign imageLinks = site.data.item-image-link | where:"itemName", filterName %}
+    {% assign headerImageLink = imageLinks | where:"isHeaderImage", true | first %}
+    {% if headerImageLink %}
+        {% assign image = site.data.images | where:"name", headerImageLink.imageName | first %}
+    {% endif %}
 {% endif %}
 
 {% if image %}

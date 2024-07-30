@@ -11,12 +11,12 @@
 - locationName: Test Locatie
   itemName: Staff of Average Intelligence
 - locationName: Test Locatie
-  itemName: Tia’s Kompas
+  itemName: Tia's Kompas
 - locationName: Test Locatie
   itemName: Wind Fan
 
 - locationName: Drakengreep
-  itemName: Tia’s Kompas
+  itemName: Tia's Kompas
 
 - locationName: Dwarven Excavation
   itemName: Sending Stone
@@ -32,3 +32,9 @@
   itemName: Wind Fan
 - locationName: Tempel van ^.^
   itemName: Dust of Dryness
+
+- locationName: Phandalin
+  itemName: IJzeren Pot
+
+- locationName: Wraak van Koning Alden
+  itemName: Staff of Average Intelligence

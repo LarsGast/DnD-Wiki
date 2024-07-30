@@ -1,9 +1,7 @@
 ---
-layout: post
+layout: item
 title: Dust of Dryness
 ---
-
-<img src="../images/Dust of Dryness.png" alt="Dust of Dryness" width=200>
 
 ## Werking
 Dit kleine pakje bevat 1d6 + 4 snufjes stof. Je kunt met een action een snufje ervan over water strooien. Het stof verandert een kubus water van 15 ft in een pellet ter grootte van een marmer, die drijft of rust in de buurt van de plek waar het stof werd gestrooid. Het gewicht van de pellet is verwaarloosbaar.
@@ -22,21 +20,3 @@ Een elemental monster dat voornamelijk bestaat uit water dat wordt blootgesteld 
   * Vanaf de grafroof van de Tempel van ^.^ tot heden (4 snufjes)
 * Albert Tweesteen
   * Vanaf de grafroof van de Tempel van ^.^ tot heden (1 snufje)
-
----
-
-## Komt voor in
-* [De Legende van Kapitein Groenbaard]({{ site.baseurl }}{% link campaigns/de-legende-van-kapitein-groenbaard.md %})
-
-## Gerelateerde karakters
-* [Albert Tweesteen]({{ site.baseurl }}{% link characters/Albert-Tweesteen.md %})
-* [Laranlor Cormearil]({{ site.baseurl }}{% link characters/Laranlor-Cormearil.md %})
-
-## Gerelateerde locaties
-* [Tempel van ^.^]({{ site.baseurl }}{% link locations/Tempel-van-^.^.md %})
-
-## Links naar D&D Beyond
-* [Dust of Dryness](https://www.dndbeyond.com/magic-items/4624-dust-of-dryness)
-
-## Galerij
-<img src="../images/Dust of Dryness.png" alt="Dust of Dryness" width=200>

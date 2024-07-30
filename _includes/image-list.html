@@ -17,6 +17,12 @@
             {% assign imageNames = imageNames | push: imageLink.imageName %}
         {% endif %}
     {% endfor %}
+{% elsif filterType == "item" %}
+    {% for imageLink in site.data.item-image-link %}
+        {% if imageLink.itemName == filterName %}
+            {% assign imageNames = imageNames | push: imageLink.imageName %}
+        {% endif %}
+    {% endfor %}
 {% else %}
     <!-- No filtering, get all image names -->
     {% for image in site.data.images %}

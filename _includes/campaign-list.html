@@ -20,6 +20,13 @@
             {% assign campaigns = campaigns | push: campaign %}
         {% endif %}
     {% endfor %}
+{% elsif filterType == "item" %}
+    {% for campaignLink in site.data.campaign-item-link %}
+        {% if campaignLink.itemName == filterName %}
+            {% assign campaign = site.data.campaigns | where:"name", campaignLink.campaignName | first %}
+            {% assign campaigns = campaigns | push: campaign %}
+        {% endif %}
+    {% endfor %}
 {% else %}
     {% assign campaigns = site.data.campaigns %}
 {% endif %}

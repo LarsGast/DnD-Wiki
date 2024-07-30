@@ -36,6 +36,10 @@
   current: true
   past: false
   comment: Is er van overtuigd dat de pot magische eigenschappen heeft
+- itemName: IJzeren Pot
+  characterName: Lushikukukanda
+  current: false
+  past: true
 
 - itemName: Lab Coat (worn)
   characterName: Test Karakter
@@ -96,11 +100,11 @@
   current: false
   past: true
 
-- itemName: Tia’s Kompas
+- itemName: Tia's Kompas
   characterName: Test Karakter
   current: false
   past: true
-- itemName: Tia’s Kompas
+- itemName: Tia's Kompas
   characterName: Kapitein Groenbaard
   current: true
   past: false

@@ -22,7 +22,7 @@
   height: 219px
   width: 295px
 
-- name: Lab Coat (Worn)
+- name: Lab Coat (worn)
   fileType: png
   alt: Drie Goblins naast elkaar
   width: 500px
@@ -166,7 +166,7 @@
   width: 407px
   height: 354px
 
-- name: Staff of Normal Intelligence
+- name: Staff of Average Intelligence
   fileType: png
   alt: De Staff of Average Intelligence, gemaakt van hout
   width: 299px
@@ -387,3 +387,27 @@
   alt: Een reuze aasgier die geduldig zit te wachten op een mogelijke prooi
   width: 474px
   height: 335px
+
+- name: Dust of Dryness
+  fileType: png
+  alt: Een zakje met Dust of Dryness
+  width: 512px
+  height: 487px
+
+- name: Sending Stones
+  fileType: jpeg
+  alt: Twee Sending Stones, stenen met vrolijke gezichten
+  width: 474px
+  height: 474px
+
+- name: Tias Kompas
+  fileType: png
+  alt: Tia's Kompas, een kompas dat altijd wijst naar dat wat je het meest verlangd
+  width: 474px
+  height: 243px
+
+- name: Wind Fan
+  fileType: png
+  alt: Een Wind Fan, uitgeklapt waardoor de schilderingen goed te zien zijn
+  width: 500px
+  height: 500px
