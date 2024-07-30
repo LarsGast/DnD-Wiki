@@ -92,5 +92,9 @@
 
 - itemName: Bloodwell Vial
   characterName: Laranlor Cormearil 
+  current: false
+  past: true
+- itemName: Bloodwell Vial
+  characterName: Theodas 
   current: true
   past: false
