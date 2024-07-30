@@ -1,9 +1,3 @@
-- characterName: Test Karakter
-  imageName: Test Karakter Headshot
-  isHeaderImage: true
-- characterName: Test Karakter
-  imageName: Test Karakter Full Body
-
 - characterName: Albert Tweesteen
   imageName: Goblin
   isHeaderImage: true

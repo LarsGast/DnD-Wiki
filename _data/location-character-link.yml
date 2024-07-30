@@ -1,6 +1,4 @@
 - locationName: Test Locatie
-  characterName: Test Karakter
-- locationName: Test Locatie
   characterName: Adonis
 - locationName: Test Locatie
   characterName: Albert Tweesteen
@@ -64,8 +62,6 @@
   characterName: Yulgar Lark
 
 - locationName: Drakengreep
-  characterName: Test Karakter
-- locationName: Drakengreep
   characterName: Barnaby Kraai
 - locationName: Drakengreep
   characterName: Grog Steenvuist
@@ -79,14 +75,10 @@
   characterName: Kosharakar Coemeydus
 
 - locationName: Dwarven Excavation
-  characterName: Test Karakter
-- locationName: Dwarven Excavation
   characterName: Dazlyn Grayshard
 - locationName: Dwarven Excavation
   characterName: Norbus Ironrune
 
-- locationName: Falconreach
-  characterName: Test Karakter
 - locationName: Falconreach
   characterName: Amy Aria
 - locationName: Falconreach
@@ -103,8 +95,6 @@
   characterName: Yulgar Lark
 
 - locationName: Goblin Schuilplaats
-  characterName: Test Karakter
-- locationName: Goblin Schuilplaats
   characterName: Albert Tweesteen
 - locationName: Goblin Schuilplaats
   characterName: Azura Zingzwaard
@@ -113,14 +103,6 @@
 - locationName: Goblin Schuilplaats
   characterName: Nettie Bettie
 
-- locationName: Greenguard
-  characterName: Test Karakter
-
-- locationName: Magisch Centrum
-  characterName: Test Karakter
-
-- locationName: Phandalin
-  characterName: Test Karakter
 - locationName: Phandalin
   characterName: Elmar Barthen
 - locationName: Phandalin
@@ -133,17 +115,10 @@
   characterName: Linene Graywind
 
 - locationName: Surewould-bos
-  characterName: Test Karakter
-- locationName: Surewould-bos
   characterName: Robina the Hood
 - locationName: Surewould-bos
   characterName: Twilly
 
-- locationName: Tempel van ^.^
-  characterName: Test Karakter
-
-- locationName: Wraak van Koning Alden
-  characterName: Test Karakter
 - locationName: Wraak van Koning Alden
   characterName: Barnaby Kraai
 - locationName: Wraak van Koning Alden
@@ -157,7 +132,5 @@
 - locationName: Wraak van Koning Alden
   characterName: Kapitein Groenbaard
 
-- locationName: Zandzee
-  characterName: Test Karakter
 - locationName: Zandzee
   characterName: Gareth Bloodwood
