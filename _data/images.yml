@@ -405,3 +405,9 @@
   alt: Tia's Kompas, een kompas dat altijd wijst naar dat wat je het meest verlangd
   width: 474px
   height: 243px
+
+- name: Wind Fan
+  fileType: png
+  alt: Een Wind Fan, uitgeklapt waardoor de schilderingen goed te zien zijn
+  width: 500px
+  height: 500px

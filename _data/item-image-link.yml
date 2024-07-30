@@ -29,3 +29,7 @@
 - itemName: Tia's Kompas
   imageName: Tias Kompas
   isHeaderImage: true
+
+- itemName: Wind Fan
+  imageName: Wind Fan
+  isHeaderImage: true
