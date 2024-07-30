@@ -539,7 +539,7 @@
     - name: Geslacht
       value: Man
     - name: Leeftijd
-      value: Volwassen
+      value: Volwassen, overleden
     - name: Bevindt zich op dit moment in
       value: De Sword Mountains
     - name: Talen
@@ -549,6 +549,7 @@
     - name: player
     - name: with-party
     - name: male
+    - name: dead
 
 - name: Robina the Hood
   visible: true
