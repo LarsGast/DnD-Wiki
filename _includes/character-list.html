@@ -43,6 +43,13 @@
             {% endif %}
         {% endif %}
     {% endfor %}
+{% elsif filterType == "item" %}
+    {% for characterLink in site.data.item-character-link %}
+        {% if characterLink.itemName == filterName %}
+            {% assign character = site.data.characters | where:"name", characterLink.characterName %}
+            {% assign characters = characters | push: character %}
+        {% endif %}
+    {% endfor %}
 {% else %}
     {% for character in site.data.characters %}
         {% if character.index %}
