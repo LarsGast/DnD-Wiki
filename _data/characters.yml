@@ -630,16 +630,14 @@
     - name: indifferent
 
 - name: Cryovain
-  visible: false
+  visible: true
   properties:
     - name: Ras
       value: Jonge witte draak
-    - name: Woonplaats
-      value: Icespire Hold
     - name: Bevindt zich op dit moment in
-      value: Icespire Hold op Icespire Peak in de Sword Mountains
+      value: In de Sword Mountains
     - name: Talen
-      value: Common, Draconic
+      value: Draconic
   icons:
     - name: quest
     - name: male
