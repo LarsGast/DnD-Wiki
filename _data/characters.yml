@@ -445,15 +445,15 @@
     - name: Geslacht
       value: Man
     - name: Leeftijd
-      value: Volwassen
-    - name: Bevindt zich op dit moment in
-      value: De Sword Mountains
+      value: Volwassen, overleden
+    - name: Laatst gezien in
+      value: Weggevlogen in de klauwen van Cryovain
     - name: Talen
       value: Common, Elfs, Primordial, Draconic
   icons:
     - name: player
-    - name: with-party
     - name: male
+    - name: dead
 
 - name: Linene Graywind
   visible: true
@@ -539,7 +539,7 @@
     - name: Geslacht
       value: Man
     - name: Leeftijd
-      value: Volwassen
+      value: Volwassen, overleden
     - name: Bevindt zich op dit moment in
       value: De Sword Mountains
     - name: Talen
@@ -549,6 +549,7 @@
     - name: player
     - name: with-party
     - name: male
+    - name: dead
 
 - name: Robina the Hood
   visible: true
@@ -630,16 +631,14 @@
     - name: indifferent
 
 - name: Cryovain
-  visible: false
+  visible: true
   properties:
     - name: Ras
       value: Jonge witte draak
-    - name: Woonplaats
-      value: Icespire Hold
     - name: Bevindt zich op dit moment in
-      value: Icespire Hold op Icespire Peak in de Sword Mountains
+      value: De Sword Mountains
     - name: Talen
-      value: Common, Draconic
+      value: Draconic
   icons:
     - name: quest
     - name: male

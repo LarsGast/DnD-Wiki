@@ -11,5 +11,9 @@ Zodra het verzenden door de stenen is geworpen, kunnen ze pas bij zonsopgang opn
 ## Geschiedenis van bezitting
 * Dazlyn Grayshard en Norbus Ironrune
   * Tot Dwarven Excavation
-* Laranlor en P.E.K.K.A
+* Laranlor
+  * Vanaf Dwarven Excavation tot zijn dood
+* P.E.K.K.A
   * Vanaf Dwarven Excavation
+* Theodas
+  * Vanaf de dood van Laranlor

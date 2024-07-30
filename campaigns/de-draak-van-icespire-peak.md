@@ -51,3 +51,24 @@ De hal is bijna volledig uitgegraven, en de schat komt steeds dichter bij. Zodra
 In de kamer die verschijnt zodra de hal vrij van puin is staat een groot standbeeld van een dwerg met hoorns, die gretig naar een gloeiende groene edelsteen in zijn handen staart. De groep probeert voorzichtig te doen, en grijpt uiteindelijk naar de edelsteen. Zodra de edelsteen uit de handen van het standbeeld gaat, verpulvert deze in stof, en explodeert het standbeeld. De avonturiers die in de buurt staan gaan neer, maar worden gouw overeind geholpen door de rest. De Hal van Hebzucht had bijna nieuwe slachtoffers geëist.
 
 Samen met Dazlyn (die nog steeds aan het bij komen is) reist de groep terug naar Phandalin, waar ze hun beloning kunnen eisen. Ondanks dat één van de Dwergen het niet gered heeft hebben ze hun missie volbracht. Dazlyn houd zichzelf verantwoordelijk voor de hebzucht die hij en zijn neef hebben getoond.
+
+Eenmaal terug in Phandalin besluit de groep avonturiers hun buit uit te geven aan nieuwe uitrusting. P.E.K.K.A. koopt een longsword en een schil voor betere bescherming, en Theodas koopt een fluit, aangezien hij dat goed kan spelen.
+
+Voordat de groep op bed gaat komen ze Halia tegen, die benoemd dat ze benieuwd is naar de magische krachten van de ijzeren pot die ze eerder heeft gekocht van de groep. Aangezien de pot helemaal niet magisch is, besluiten Lushikukukanda en Laranlor om in haar huis te sluipen om zo een spreuk uit te voeren op het eten dat ze in de pot heeft gedaan. Ze breken een raam in en sluipen naar binnen, maar kunnen de pot niet vinden voordat Halia thuis komt. Op dat moment zet Laranlor zijn charme in om haar ervan te overtuigen om nog een drankje te doen in de lokale herberg. Ze accepteert dit waardoor Lushikukukanda genoeg tijd krijgt om de pot te vinden en zijn magie te gebruiken.
+
+Later in de avond verzamelen de avonturiers zich in hun gestolen luchtschip om de nacht door te brengen. De volgende ochtend maken ze zich klaar om naar Gnomengarde te gaan, waar ze mogelijk magische voorwerpen kunnen verzamelen om te gebruiken tegen de witte draak.
+
+### Ontmoeting met Cryovain en het verraad van Laranlor
+De avonturiers hebben de draak die de omgeving terroriseert nog niet van dichtbij gezien. Hij leek een enkele keer boven Gnomengarde te vliegen, maar toen waren de avonturiers bij Dwarven Excavation. Nu de avonturiers besloten hebben om naar Gnomengarde te gaan om magische voorwerpen te verzamelen voor de strijd tegen Cryovain, vliegt hij vlak over hun heen. Arikikuchiariku besluit om het vuur te openen om zo wellicht de draak vroegtijdig te verslaan. De pijl van zijn boog mist echter, en de draak richt zich op de groep.
+
+De groep slaagt er niet in om zich te verstoppen, en de draak vliegt vlug dichterbij. Op dit moment besluit Laranlor om de rest van zijn avonturiersgroep te verraden. Hij was het al een tijdje zat van de manier waarop de groep met anderen omgaat. Hij belooft de draak dat hij hem zal helpen om de rest van de groep te verslaan.
+
+Een episch gevecht barst uit, waarbij de groep stand moet houden tegen Cryovain en Laranlor. Laranlor opent het vuur, en gebruikt zijn recent bemachtigde Bloodwell Vial om krachtige spreuken uit te voeren. De draak blijkt ook ongelofelijk sterk te zijn, met één ijs-adem aanval zorgt hij ervoor dat Arikikuchiariku en zijn panter neer gaan, waarna hij zich op P.E.K.K.A. richt. Ondertussen focust te rest van de groep zich op het uitschakelen van Laranlor en het wegrennen van de draak.
+
+Spreuken en pijlen vliegen heen en weer. Lushikukukanda helpt Arikikuchiariku overeind, Theodas gebruikt zijn afstandsspreuken op Laranlor en probeert ondertussen weg te rennen. P.E.K.K.A. richt zich op Laranlor, terwijl hij de aanvallen die op hem af worden gestuurd probeert af te weren met zijn schild.
+
+Uiteindelijk gebruikt Theodas een sterkere versie van Magic Missile om de laatste klap aan Laranlor te geven, die bewusteloos neervalt. Het gevaar is echter nog niet geweken, want de draak rent snel naar P.E.K.K.A. toe. Weer laat Cryovain een vlaag van ijs uit zijn bek verschijnen, die P.E.K.K.A. volledig omsingeld. De aanval is zo sterk dat P.E.K.K.A. in zijn geheel in wordt gevroren en ter plekke overlijdt.
+
+Op dat moment realiseert de draak zich dat Laranlor ook neer is gegaan. Laranlor heeft geholpen bij het gevecht tegen de groep, maar Cryovain heeft zo niks meer aan hem. Hij neemt Laranlor in zijn klauwen en vliegt terug richting de Sword Mountains. De magische voorwerpen die Laranlor bij zich dat vallen op de grond terwijl ze opstijgen.
+
+Zonder P.E.K.K.A. en Laranlor is de groep avonturiers behoorlijk verzwakt. Ze hebben de kracht van de witte draak gezien, en beseffen zich hopelijk goed dat er meer nodig is dan pijlen en simpele magie om een bedreiging van dit kaliber te kunnen verslaan.

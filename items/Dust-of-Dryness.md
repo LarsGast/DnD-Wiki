@@ -17,6 +17,8 @@ Een elemental monster dat voornamelijk bestaat uit water dat wordt blootgesteld 
 * Een dode Zand-Elf in een tombe in de Tempel van ^.^
   * Tot de grafroof van de Tempel van ^.^
 * Laranlor
-  * Vanaf de grafroof van de Tempel van ^.^ tot heden (4 snufjes)
+  * Vanaf de grafroof van de Tempel van ^.^ tot zijn dood (4 snufjes)
 * Albert Tweesteen
   * Vanaf de grafroof van de Tempel van ^.^ tot heden (1 snufje)
+* Theodas
+  * Vanaf de dood van Laranlor (4 snufjes)

@@ -14,14 +14,14 @@
   comment: 1 snufje
 - itemName: Dust of Dryness
   characterName: Laranlor Cormearil
+  current: false
+  past: true
+  comment: 5 snufjes
+- itemName: Dust of Dryness
+  characterName: Theodas
   current: true
   past: false
   comment: 4 snufjes
-- itemName: Dust of Dryness
-  characterName: Laranlor Cormearil
-  current: false
-  past: true
-  comment: 1 snufje
 
 - itemName: IJzeren Pot
   characterName: Halia Thornton
@@ -48,14 +48,18 @@
   past: true
 - itemName: Sending Stone
   characterName: Laranlor Cormearil
-  current: true
-  past: false
+  current: false
+  past: true
 - itemName: Sending Stone
   characterName: Norbus Ironrune
   current: false
   past: true
 - itemName: Sending Stone
   characterName: P.E.K.K.A.
+  current: true
+  past: false
+- itemName: Sending Stone
+  characterName: Theodas
   current: true
   past: false
 
@@ -92,5 +96,9 @@
 
 - itemName: Bloodwell Vial
   characterName: Laranlor Cormearil 
+  current: false
+  past: true
+- itemName: Bloodwell Vial
+  characterName: Theodas 
   current: true
   past: false

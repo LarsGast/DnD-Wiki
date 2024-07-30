@@ -13,4 +13,6 @@ Bovendien, wanneer je Hit Dice gooit om hit points te herstellen terwijl je het 
 
 ## Geschiedenis van bezitting
 * Laranlor
-  * Vanaf de nacht na Dwarven Excavation
+  * Vanaf de nacht na Dwarven Excavation tot zijn dood
+* Theodas
+  * Vanaf de dood van Laranlor
