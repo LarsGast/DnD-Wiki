@@ -1,8 +1,4 @@
 - itemName: Circlet of Enlarge Reduce
-  characterName: Test Karakter
-  current: true
-  past: false
-- itemName: Circlet of Enlarge Reduce
   characterName: Arikikuchiariku
   current: true
   past: false
@@ -11,10 +7,6 @@
   current: false
   past: true
 
-- itemName: Dust of Dryness
-  characterName: Test Karakter
-  current: true
-  past: false
 - itemName: Dust of Dryness
   characterName: Albert Tweesteen
   current: true
@@ -42,10 +34,6 @@
   past: true
 
 - itemName: Lab Coat (worn)
-  characterName: Test Karakter
-  current: true
-  past: false
-- itemName: Lab Coat (worn)
   characterName: Albert Tweesteen
   current: true
   past: false
@@ -54,10 +42,6 @@
   current: false
   past: true
 
-- itemName: Sending Stone
-  characterName: Test Karakter
-  current: true
-  past: false
 - itemName: Sending Stone
   characterName: Dazlyn Grayshard
   current: false
@@ -75,10 +59,6 @@
   current: true
   past: false
 
-- itemName: Staff of Average Intelligence
-  characterName: Test Karakter
-  current: false
-  past: true
 - itemName: Staff of Average Intelligence
   characterName: Adonis
   current: false
@@ -101,18 +81,10 @@
   past: true
 
 - itemName: Tia's Kompas
-  characterName: Test Karakter
-  current: false
-  past: true
-- itemName: Tia's Kompas
   characterName: Kapitein Groenbaard
   current: true
   past: false
 
-- itemName: Wind Fan
-  characterName: Test Karakter
-  current: false
-  past: true
 - itemName: Wind Fan
   characterName: Theodas
   current: true

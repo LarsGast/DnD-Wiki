@@ -1,15 +1,3 @@
-- name: Test Karakter Headshot
-  fileType: jpg
-  alt: Test Karakter hoofd
-  width: 100px
-  height: 100px
-
-- name: Test Karakter Full Body
-  fileType: jpg
-  alt: Test Karakter volledig lichaam
-  width: 200px
-  height: 300px
-
 - name: Goblin
   fileType: png
   alt: Goblin
@@ -213,12 +201,6 @@
   alt: Yulgar Lark in zijn winkel, Yulgar's Smithy
   width: 255px
   height: 438px
-
-- name: Test Locatie
-  fileType: jpg
-  alt: De hele wereld, daar heb je 'em
-  width: 1024px
-  height: 768px
 
 - name: Drakengreep
   fileType: jpg

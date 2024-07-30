@@ -3,43 +3,6 @@
 # If this is the case, the character should have the key "visible" set to false.
 # This way it does not appear in any links.
 
-# Each character should have the following structure:
-- name: Test Karakter
-  visible: false
-  index: -1
-  customLink: Test-Karakter
-  properties:
-    - name: Volledige naam
-      value: Test Karakter
-    - name: Bijnamen
-      value: Testie, TK
-    - name: Ras
-      value: Mens
-    - name: Geslacht
-      value: Alles en niks
-    - name: Leeftijd
-      value: Oneindig
-    - name: Woonplaats
-      value: Overal
-    - name: Bevindt zich op dit moment in
-      value: Achter je
-    - name: Talen
-      value: Frans
-  icons: 
-    - name: player
-    - name: quest
-    - name: shop
-    - name: tavern
-    - name: with-party
-    - name: male
-    - name: female
-    - name: non-binary
-    - name: genderfluid
-    - name: friendly
-    - name: indifferent
-    - name: hostile
-    - name: dead
-
 - name: Adonis
   visible: true
   properties:

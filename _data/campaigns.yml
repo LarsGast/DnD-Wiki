@@ -1,8 +1,3 @@
-- name: Test Campaign
-  order: -1
-  visible: false
-  isFlashback: true
-
 - name: De Redding van (Prinses) Azura
   order: 1
   visible: true

@@ -1,70 +1,3 @@
-- locationName: Test Locatie
-  characterName: Test Karakter
-- locationName: Test Locatie
-  characterName: Adonis
-- locationName: Test Locatie
-  characterName: Albert Tweesteen
-- locationName: Test Locatie
-  characterName: Amy Aria
-- locationName: Test Locatie
-  characterName: Arikikuchiariku
-- locationName: Test Locatie
-  characterName: Ash Dragonblade
-- locationName: Test Locatie
-  characterName: Azura Zingzwaard
-- locationName: Test Locatie
-  characterName: Barnaby Kraai
-- locationName: Test Locatie
-  characterName: Dazlyn Grayshard
-- locationName: Test Locatie
-  characterName: Elmar Barthen
-- locationName: Test Locatie
-  characterName: Gareth Bloodwood
-- locationName: Test Locatie
-  characterName: Gaston de Kok
-- locationName: Test Locatie
-  characterName: Grog Steenvuist
-- locationName: Test Locatie
-  characterName: Halia Thornton
-- locationName: Test Locatie
-  characterName: Harbin Wester
-- locationName: Test Locatie
-  characterName: Hugo Staalzwaard
-- locationName: Test Locatie
-  characterName: Hugo Zingzwaard
-- locationName: Test Locatie
-  characterName: Isabella Swift
-- locationName: Test Locatie
-  characterName: Kaelen Schaduwholster
-- locationName: Test Locatie
-  characterName: Kapitein Groenbaard
-- locationName: Test Locatie
-  characterName: Koning Splurt
-- locationName: Test Locatie
-  characterName: Kosharakar Coemeydus
-- locationName: Test Locatie
-  characterName: Laranlor Cormearil
-- locationName: Test Locatie
-  characterName: Linene Graywind
-- locationName: Test Locatie
-  characterName: Lushikukukanda
-- locationName: Test Locatie
-  characterName: Nettie Bettie
-- locationName: Test Locatie
-  characterName: Norbus Ironrune
-- locationName: Test Locatie
-  characterName: P.E.K.K.A.
-- locationName: Test Locatie
-  characterName: Robina the Hood
-- locationName: Test Locatie
-  characterName: Theodas
-- locationName: Test Locatie
-  characterName: Twilly
-- locationName: Test Locatie
-  characterName: Yulgar Lark
-
-- locationName: Drakengreep
-  characterName: Test Karakter
 - locationName: Drakengreep
   characterName: Barnaby Kraai
 - locationName: Drakengreep
@@ -79,14 +12,10 @@
   characterName: Kosharakar Coemeydus
 
 - locationName: Dwarven Excavation
-  characterName: Test Karakter
-- locationName: Dwarven Excavation
   characterName: Dazlyn Grayshard
 - locationName: Dwarven Excavation
   characterName: Norbus Ironrune
 
-- locationName: Falconreach
-  characterName: Test Karakter
 - locationName: Falconreach
   characterName: Amy Aria
 - locationName: Falconreach
@@ -103,8 +32,6 @@
   characterName: Yulgar Lark
 
 - locationName: Goblin Schuilplaats
-  characterName: Test Karakter
-- locationName: Goblin Schuilplaats
   characterName: Albert Tweesteen
 - locationName: Goblin Schuilplaats
   characterName: Azura Zingzwaard
@@ -113,14 +40,6 @@
 - locationName: Goblin Schuilplaats
   characterName: Nettie Bettie
 
-- locationName: Greenguard
-  characterName: Test Karakter
-
-- locationName: Magisch Centrum
-  characterName: Test Karakter
-
-- locationName: Phandalin
-  characterName: Test Karakter
 - locationName: Phandalin
   characterName: Elmar Barthen
 - locationName: Phandalin
@@ -133,17 +52,10 @@
   characterName: Linene Graywind
 
 - locationName: Surewould-bos
-  characterName: Test Karakter
-- locationName: Surewould-bos
   characterName: Robina the Hood
 - locationName: Surewould-bos
   characterName: Twilly
 
-- locationName: Tempel van ^.^
-  characterName: Test Karakter
-
-- locationName: Wraak van Koning Alden
-  characterName: Test Karakter
 - locationName: Wraak van Koning Alden
   characterName: Barnaby Kraai
 - locationName: Wraak van Koning Alden
@@ -157,7 +69,5 @@
 - locationName: Wraak van Koning Alden
   characterName: Kapitein Groenbaard
 
-- locationName: Zandzee
-  characterName: Test Karakter
 - locationName: Zandzee
   characterName: Gareth Bloodwood

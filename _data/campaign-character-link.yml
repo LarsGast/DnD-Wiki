@@ -1,70 +1,3 @@
-- campaignName: Test Campaign
-  characterName: Test Karakter
-- campaignName: Test Campaign
-  characterName: Adonis
-- campaignName: Test Campaign
-  characterName: Albert Tweesteen
-- campaignName: Test Campaign
-  characterName: Amy Aria
-- campaignName: Test Campaign
-  characterName: Arikikuchiariku
-- campaignName: Test Campaign
-  characterName: Ash Dragonblade
-- campaignName: Test Campaign
-  characterName: Azura Zingzwaard
-- campaignName: Test Campaign
-  characterName: Barnaby Kraai
-- campaignName: Test Campaign
-  characterName: Dazlyn Grayshard
-- campaignName: Test Campaign
-  characterName: Elmar Barthen
-- campaignName: Test Campaign
-  characterName: Gareth Bloodwood
-- campaignName: Test Campaign
-  characterName: Gaston de Kok
-- campaignName: Test Campaign
-  characterName: Grog Steenvuist
-- campaignName: Test Campaign
-  characterName: Halia Thornton
-- campaignName: Test Campaign
-  characterName: Harbin Wester
-- campaignName: Test Campaign
-  characterName: Hugo Staalzwaard
-- campaignName: Test Campaign
-  characterName: Hugo Zingzwaard
-- campaignName: Test Campaign
-  characterName: Isabella Swift
-- campaignName: Test Campaign
-  characterName: Kaelen Schaduwholster
-- campaignName: Test Campaign
-  characterName: Kapitein Groenbaard
-- campaignName: Test Campaign
-  characterName: Koning Splurt
-- campaignName: Test Campaign
-  characterName: Kosharakar Coemeydus
-- campaignName: Test Campaign
-  characterName: Laranlor Cormearil
-- campaignName: Test Campaign
-  characterName: Linene Graywind
-- campaignName: Test Campaign
-  characterName: Lushikukukanda
-- campaignName: Test Campaign
-  characterName: Nettie Bettie
-- campaignName: Test Campaign
-  characterName: Norbus Ironrune
-- campaignName: Test Campaign
-  characterName: P.E.K.K.A.
-- campaignName: Test Campaign
-  characterName: Robina the Hood
-- campaignName: Test Campaign
-  characterName: Theodas
-- campaignName: Test Campaign
-  characterName: Twilly
-- campaignName: Test Campaign
-  characterName: Yulgar Lark
-
-- campaignName: De Redding van (Prinses) Azura
-  characterName: Test Karakter
 - campaignName: De Redding van (Prinses) Azura
   characterName: Albert Tweesteen
 - campaignName: De Redding van (Prinses) Azura
@@ -97,8 +30,6 @@
   characterName: Yulgar Lark
 
 - campaignName: Twilly Rekruteren
-  characterName: Test Karakter
-- campaignName: Twilly Rekruteren
   characterName: Arikikuchiariku
 - campaignName: Twilly Rekruteren
   characterName: Kapitein Groenbaard
@@ -109,8 +40,6 @@
 - campaignName: Twilly Rekruteren
   characterName: Twilly
 
-- campaignName: De Legende van Kapitein Groenbaard
-  characterName: Test Karakter
 - campaignName: De Legende van Kapitein Groenbaard
   characterName: Adonis
 - campaignName: De Legende van Kapitein Groenbaard
@@ -135,9 +64,7 @@
   characterName: Theodas
 - campaignName: De Legende van Kapitein Groenbaard
   characterName: Twilly
-  
-- campaignName: De Draak van Icespire Peak
-  characterName: Test Karakter
+
 - campaignName: De Draak van Icespire Peak
   characterName: Arikikuchiariku
 - campaignName: De Draak van Icespire Peak
@@ -167,8 +94,6 @@
 - campaignName: De Draak van Icespire Peak
   characterName: Twilly
 
-- campaignName: De Grote Ontsnapping van Kapitein Groenbaard
-  characterName: Test Karakter
 - campaignName: De Grote Ontsnapping van Kapitein Groenbaard
   characterName: Barnaby Kraai
 - campaignName: De Grote Ontsnapping van Kapitein Groenbaard
