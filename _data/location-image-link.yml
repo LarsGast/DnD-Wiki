@@ -1,3 +1,12 @@
+# This file contains all links between locations and images.
+# Each entry will create a link from the speficied location to the speficied image and visa-versa.
+# The images linked to each location will be displayed in the Gallerij section of the location.
+
+# The following key-value-pairs are available for a location-image-link:
+# locationName - string - The name of the location
+# imageName - string - The name of the image
+# isHeaderImage - boolean - Whether the image should also be displayed at the top of the location page
+
 - locationName: Drakengreep
   imageName: Drakengreep
   isHeaderImage: true
