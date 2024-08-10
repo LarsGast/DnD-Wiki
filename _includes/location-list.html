@@ -72,7 +72,7 @@
         {% for location in locations %}
             {% if location.visible or site.showInvisible %}
             <li>
-                <a href="../locations/{% if location.customLink %}{{ location.customLink }}{% else %}{{ location.name | replace: ' ', '-' }}{% endif %}">
+                <a href="../locations/{% if location.customLink %}{{ location.customLink }}{% else %}{{ location.name | replace: ' ', '-' | downcase }}{% endif %}">
                     {{location.name}}
                 </a>  
             </li>
