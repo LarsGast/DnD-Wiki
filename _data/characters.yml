@@ -5,7 +5,7 @@
 
 # The following key-value-pairs are available for a character:
 # name - string - The name of the character
-# visible - boolean - If the characger should be visible and navigatable on the site
+# visible - boolean - If the character should be visible and navigatable on the site
 # customLink - string - optional - A custom link (without extension) for characters with names that create invalid links
 # properties - Array of properties - A list of identifiers to display at the top of a character page. The properties will be displayed in specified order.
 #   name - string - The name of the identifier
