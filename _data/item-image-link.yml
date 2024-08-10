@@ -1,3 +1,12 @@
+# This file contains all links between items and images.
+# Each entry will create a link from the speficied item to the speficied image and visa-versa.
+# The images linked to each item will be displayed in the Gallerij section of the item.
+
+# The following key-value-pairs are available for a item-image-link:
+# itemName - string - The name of the item
+# imageName - string - The name of the image
+# isHeaderImage - boolean - Whether the image should also be displayed at the top of the item page
+
 - itemName: Circlet of Enlarge Reduce
   imageName: Circlet of Enlarge Reduce
   isHeaderImage: true
