@@ -1,3 +1,11 @@
+# This file contains all links between characters.
+# Each entry will create a link from the speficied characters.
+# Only one entry needs to be created for link to appear in both directions.
+
+# The following key-value-pairs are available for a character-character-link:
+# firstCharacterName - string - The name of one of the characters
+# secondCharacterName - string - The name of the other character
+
 - firstCharacterName: Adonis
   secondCharacterName: Arikikuchiariku
 - firstCharacterName: Adonis
