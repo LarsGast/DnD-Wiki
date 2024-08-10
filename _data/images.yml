@@ -1,3 +1,12 @@
+# This file contains all images that have been used in all DnD campaigns on the site.
+
+# The following key-value-pairs are available for an image:
+# name - string - The name of the image file without extension
+# fileType - string - The extension of the image file
+# alt - string - The text that should appear in the alt property of the img tag
+# width - string - The width of the image. Should include units like px.
+# height - string - The height of the image. Should include units like px.
+
 - name: Goblin
   fileType: png
   alt: Goblin
