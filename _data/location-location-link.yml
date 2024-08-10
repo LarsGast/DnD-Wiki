@@ -1,3 +1,12 @@
+# This file contains all links between locations.
+# Each entry will create a link from and to the speficied locations.
+# Only one entry needs to be created for link to appear in both directions.
+
+# The following key-value-pairs are available for a location-location-link:
+# firstLocationName - string - The name of one of the locations
+# secondLocationName - string - The name of the other location
+# isSuperSubRelationship - boolean - If the first location is a super location to the second location
+
 - firstLocationName: Greenguard
   secondLocationName: Drakengreep
   isSuperSubRelationship: true
