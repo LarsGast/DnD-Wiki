@@ -18,7 +18,7 @@
 
 - name: Tia's Kompas
   visible: true
-  customLink: Tias-Kompas
+  customLink: tias-kompas
 
 - name: Wind Fan
   visible: true
