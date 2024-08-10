@@ -1,6 +1,10 @@
-# This file contains all icons that characters can have.
+# This file contains all icons that a character can have.
 # These sort of act like metadata on each character.
-# If a new one gets added, be sure to add it to the relevant characters in the _data/characters.yml
+# If a new one gets added, be sure to add it to the relevant characters in the _data/characters.yml.
+
+# The following key-value-pairs are available for an icon:
+# name - string - The name of the icon. To select in CSS to be able to show the right icon
+# description - string - The description of the icon to show on hover
 
 - name: player
   description: Speler
