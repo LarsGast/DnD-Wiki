@@ -121,3 +121,7 @@
 - locationName: Grijssteen
   imageName: Grijssteen
   isHeaderImage: true
+
+- locationName: IJzerfort
+  imageName: Grijssteen
+  isHeaderImage: true

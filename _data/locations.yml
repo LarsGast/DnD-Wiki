@@ -230,3 +230,23 @@
       value: Oorspronkelijk gesticht als een klein landbouwdorp, maar uitgegroeid tot een strategische nederzetting door constante verdediging tegen plunderaars
     - name: Cultuur
       value: Gemeenschapsgeest, handel, militair gedisciplineerd, bekend om ambachtelijke vaardigheden en kwalitatieve goederen
+
+- name: IJzerfort
+  visible: false
+  properties:
+    - name: Soort
+      value: Dorp
+    - name: Inwoners
+      value: Dorpelingen en gevechtstroepen
+    - name: Populatie
+      value: Ongeveer 500
+    - name: Geografische locatie
+      value: Diep in een oud, dicht bos
+    - name: Infrastructuur
+      value: Kristallen muren, versterkte poorten, defensieve structuren, centrale plein, woongebied, barakken, hulpbronnengebouwen
+    - name: Politiek
+      value: Geleid door Thorn de Veroveraar, met een hiërarchie van militair leiderschap
+    - name: Geschiedenis
+      value: Oorspronkelijk een kleine nederzetting, gegroeid door agressieve uitbreidingen en plunderingen van naburige dorpen
+    - name: Cultuur
+      value: Militaire discipline, kracht en strategie, focus op expansie en verdediging
