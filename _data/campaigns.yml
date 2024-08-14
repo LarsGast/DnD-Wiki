@@ -22,3 +22,8 @@
   order: 5
   visible: true
   isFlashback: true
+
+- name: Conflict van Stammen
+  order: 6
+  visible: false
+  isFlashback: false
