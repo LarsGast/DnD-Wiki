@@ -1,30 +1,6 @@
 ---
-layout: post
-title: Titel
+layout: campaign
+title: Titel van campaign
 ---
 
 ## Verhaal
-
-
----
-
-## Vorige Campaign
-* -
-
-## Oneshots Die Tijdens Deze Campaign Plaats Vinden
-* -
-
-## Oneshot Vindt Plaats Tijdens 
-* -
-
-## Volgende Campaign
-* -
-
-## Karakters
-* -
-
-## Locaties
-* -
-
-## Items
-* -

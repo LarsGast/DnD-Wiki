@@ -1,9 +1,7 @@
 ---
-layout: post
-title: Naam
+layout: item
+title: Naam van item
 ---
-
-<img src="../images/" alt="Afbeelding" width=200>
 
 ## Werking
 
@@ -12,18 +10,3 @@ title: Naam
 
 
 ## Geschiedenis van bezitting
-
-
----
-
-## Komt voor in
-* -
-
-## Gerelateerde karakters
-* -
-
-## Gerelateerde locaties
-* -
-
-## Galerij
-<img src="../images/" alt="Afbeelding" width=200>
