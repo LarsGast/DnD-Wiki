@@ -53,3 +53,7 @@
 - firstLocationName: Phandalin
   secondLocationName: Wraak van Koning Alden
   isSuperSubRelationship: true
+
+- firstLocationName: Grijssteen
+  secondLocationName: IJzerfort
+  isSuperSubRelationship: false
