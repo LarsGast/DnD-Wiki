@@ -1,5 +1,5 @@
 # This file contains all links between characters.
-# Each entry will create a link from the speficied characters.
+# Each entry will create a link from the specified characters.
 # Only one entry needs to be created for link to appear in both directions.
 
 # The following key-value-pairs are available for a character-character-link:

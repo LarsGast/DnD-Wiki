@@ -1,5 +1,5 @@
 # This file contains all links between campaigns and locations.
-# Each entry will create a link from the speficied campaign to the specified location and visa-versa.
+# Each entry will create a link from the specified campaign to the specified location and visa-versa.
 
 # The following key-value-pairs are available for a campaign-location-link:
 # campaignName - string - The name of the campaign

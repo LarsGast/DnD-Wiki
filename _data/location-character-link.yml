@@ -1,5 +1,5 @@
 # This file contains all links between locations and characters.
-# Each entry will create a link from the speficied location to the specified character and visa-versa.
+# Each entry will create a link from the specified location to the specified character and visa-versa.
 
 # The following key-value-pairs are available for a location-character-link:
 # locationName - string - The name of the location

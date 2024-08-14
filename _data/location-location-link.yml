@@ -1,5 +1,5 @@
 # This file contains all links between locations.
-# Each entry will create a link from and to the speficied locations.
+# Each entry will create a link from and to the specified locations.
 # Only one entry needs to be created for link to appear in both directions.
 
 # The following key-value-pairs are available for a location-location-link:
