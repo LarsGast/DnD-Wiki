@@ -117,3 +117,7 @@
 - locationName: Zandzee
   imageName: Reuze Aasgier
   isHeaderImage: false
+
+- locationName: Grijssteen
+  imageName: Grijssteen
+  isHeaderImage: true

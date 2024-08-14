@@ -210,3 +210,23 @@
       value: Zand, weinig begroeiing
     - name: Geschiedenis
       value: Ooit bewoond door Zand-Elven, totdat de Tarrasque 98 jaar geleden aanviel
+
+- name: Grijssteen
+  visible: false
+  properties:
+    - name: Soort
+      value: Dorp
+    - name: Inwoners
+      value: Dorpelingen en gevechtstroepen
+    - name: Populatie
+      value: Ongeveer 500
+    - name: Geografische locatie
+      value: Een vruchtbare vallei omgeven door heuvels en dichte bossen
+    - name: Infrastructuur
+      value: Centrale plein, woongebied, ambachtswijk, barakken, verdedigingstorens, hulpbronnengebouwen
+    - name: Politiek
+      value: Geleid door de dorpsleider, Eldric de Wijze, met een raad van oudere inwoners
+    - name: Geschiedenis
+      value: Oorspronkelijk gesticht als een klein landbouwdorp, maar uitgegroeid tot een strategische nederzetting door constante verdediging tegen plunderaars
+    - name: Cultuur
+      value: Gemeenschapsgeest, handel, militair gedisciplineerd, bekend om ambachtelijke vaardigheden en kwalitatieve goederen
