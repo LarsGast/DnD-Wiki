@@ -1,3 +1,10 @@
+# This file contains all links between campaigns and characters.
+# Each entry will create a link from the speficied campaign to the specified character and visa-versa.
+
+# The following key-value-pairs are available for a campaign-character-link:
+# campaignName - string - The name of the campaign
+# characterName - string - The name of the character
+
 - campaignName: De Redding van (Prinses) Azura
   characterName: Albert Tweesteen
 - campaignName: De Redding van (Prinses) Azura

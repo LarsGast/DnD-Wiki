@@ -1,3 +1,10 @@
+# This file contains all links between locations and items.
+# Each entry will create a link from the speficied location to the specified item and visa-versa.
+
+# The following key-value-pairs are available for a location-item-link:
+# locationName - string - The name of the location
+# itemName - string - The name of the item
+
 - locationName: Drakengreep
   itemName: Tia's Kompas
 

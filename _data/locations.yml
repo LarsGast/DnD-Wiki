@@ -1,3 +1,16 @@
+# This file contains all location that have appeared in all DnD campaigns on the site.
+# This file may also contain location that have not appeared in the story yet.
+# If this is the case, the location should have the key "visible" set to false.
+# This way it does not appear in any links.
+
+# The following key-value-pairs are available for a location:
+# name - string - The name of the location
+# visible - boolean - If the location should be visible and navigatable on the site
+# customLink - string - optional - A custom link (without extension) for location with names that create invalid links
+# properties - Array of properties - A list of identifiers to display at the top of a location page. The properties will be displayed in specified order.
+#   name - string - The name of the identifier
+#   value - string - The value of the identifier
+
 - name: Drakengreep
   visible: true
   properties:

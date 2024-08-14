@@ -1,3 +1,10 @@
+# This file contains all links between campaigns and items.
+# Each entry will create a link from the speficied campaign to the specified item and visa-versa.
+
+# The following key-value-pairs are available for a campaign-item-link:
+# campaignName - string - The name of the campaign
+# itemName - string - The name of the item
+
 - campaignName: De Redding van (Prinses) Azura
   itemName: Circlet of Enlarge Reduce
 - campaignName: De Redding van (Prinses) Azura

@@ -1,3 +1,12 @@
+# This file contains all links between images and characters.
+# Each entry will create a link from the speficied image to the speficied character and visa-versa.
+# The images linked to each character will be displayed in the Gallerij section of the character.
+
+# The following key-value-pairs are available for a image-character-link:
+# characterName - string - The name of the character
+# imageName - string - The name of the image
+# isHeaderImage - boolean - Whether the image should also be displayed at the top of the character page
+
 - characterName: Albert Tweesteen
   imageName: Goblin
   isHeaderImage: true
