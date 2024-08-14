@@ -42,7 +42,7 @@
 
                         {% if show %}
                             <li>
-                                <a href="../items/{% if item.customLink %}{{ item.customLink }}{% else %}{{ item.name | replace: ' ', '-' }}{% endif %}">
+                                <a href="../items/{% if item.customLink %}{{ item.customLink }}{% else %}{{ item.name | replace: ' ', '-' | downcase }}{% endif %}">
                                     {{item.name}}
                                 </a>
                                 {% if itemLink.comment %}
@@ -54,7 +54,7 @@
                 {% endfor %}
             {% else %}
                 <li>
-                    <a href="../items/{% if item.customLink %}{{ item.customLink }}{% else %}{{ item.name | replace: ' ', '-' }}{% endif %}">
+                    <a href="../items/{% if item.customLink %}{{ item.customLink }}{% else %}{{ item.name | replace: ' ', '-' | downcase }}{% endif %}">
                         {{item.name}}
                     </a>
                 </li>
