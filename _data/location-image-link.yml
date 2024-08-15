@@ -1,6 +1,6 @@
 # This file contains all links between locations and images.
 # Each entry will create a link from the specified location to the specified image and visa-versa.
-# The images linked to each location will be displayed in the Gallerij section of the location.
+# The images linked to each location will be displayed in the Galerij section of the location.
 
 # The following key-value-pairs are available for a location-image-link:
 # locationName - string - The name of the location
@@ -131,6 +131,9 @@
   isHeaderImage: true
 - locationName: Gnomengarde
   imageName: Gnomengarde Quest
+  isHeaderImage: false
+- locationName: Gnomengarde
+  imageName: Clockwork Amulet
   isHeaderImage: false
 - locationName: Gnomengarde
   imageName: Mimic

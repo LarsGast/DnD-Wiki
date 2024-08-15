@@ -35,3 +35,6 @@
 
 - name: Bloodwell Vial
   visible: true
+
+- name: Clockwork Amulet
+  visible: false
