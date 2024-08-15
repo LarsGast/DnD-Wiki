@@ -5,4 +5,4 @@ title: Naam van karakter
 
 ## Algemeen
 
-## specifieke eigenschappen
+## Specifieke eigenschappen
