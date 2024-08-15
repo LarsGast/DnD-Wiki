@@ -44,3 +44,6 @@
 
 - name: Pole of Collapsing
   visible: false
+
+- name: Wand of Pyrotechnics
+  visible: false
