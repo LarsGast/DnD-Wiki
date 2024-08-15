@@ -54,3 +54,7 @@
 - itemName: Hat of Wizardry
   imageName: Hat of Wizardry
   isHeaderImage: true
+
+- itemName: Pole of Collapsing
+  imageName: Pole of Collapsing
+  isHeaderImage: true

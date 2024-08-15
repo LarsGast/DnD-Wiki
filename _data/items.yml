@@ -41,3 +41,6 @@
 
 - name: Hat of Wizardry
   visible: false
+
+- name: Pole of Collapsing
+  visible: false
