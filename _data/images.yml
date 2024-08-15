@@ -420,3 +420,15 @@
   alt: Een vogelvlucht zicht van het dorp Grijssteen
   width: 642px
   height: 600px
+
+- name: Gnomengarde
+  fileType: png
+  alt: Een plattegrond van Gnomengarde, waar alle kamers te zien en gemarkeerd zijn
+  width: 2888px
+  height: 1838px
+
+- name: Mimic
+  fileType: jpeg
+  alt: Een mimic vermomd als een schatkist, die op het punt staat om aan te vallen
+  width: 474px
+  height: 266px

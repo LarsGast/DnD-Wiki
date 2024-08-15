@@ -57,3 +57,10 @@
 - firstLocationName: Grijssteen
   secondLocationName: IJzerfort
   isSuperSubRelationship: false
+
+- firstLocationName: Gnomengarde
+  secondLocationName: Dwarven Excavation
+  isSuperSubRelationship: false
+- firstLocationName: Gnomengarde
+  secondLocationName: Phandalin
+  isSuperSubRelationship: false

@@ -250,3 +250,23 @@
       value: Oorspronkelijk een kleine nederzetting, gegroeid door agressieve uitbreidingen en plunderingen van naburige dorpen
     - name: Cultuur
       value: Militaire discipline, kracht en strategie, focus op expansie en verdediging
+
+- name: Gnomengarde
+  visible: false
+  properties:
+    - name: Soort
+      value: Grot
+    - name: Inwoners
+      value: Kabouters
+    - name: Populatie
+      value: 20
+    - name: Geografische locatie
+      value: In de Sword Mountains
+    - name: Infrastructuur
+      value: Ingegraven in de berg
+    - name: Politiek
+      value: Konings Korboz en Gnerkli hebben het voor het zeggen
+    - name: Geschiedenis
+      value: De kabouters zijn hier gaan wonen om de waterval dat een meer vormt aan de voet van de berg
+    - name: Cultuur
+      value: Iedereen gaat goed met elkaar om

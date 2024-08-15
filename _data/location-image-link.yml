@@ -125,3 +125,13 @@
 - locationName: IJzerfort
   imageName: Grijssteen
   isHeaderImage: true
+
+- locationName: Gnomengarde
+  imageName: Gnomengarde
+  isHeaderImage: true
+- locationName: Gnomengarde
+  imageName: Gnomengarde Quest
+  isHeaderImage: false
+- locationName: Gnomengarde
+  imageName: Mimic
+  isHeaderImage: false
