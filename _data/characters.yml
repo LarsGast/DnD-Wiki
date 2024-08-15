@@ -707,3 +707,21 @@
     - name: quest
     - name: male
     - name: indifferent
+
+- name: Korboz
+  visible: false
+  properties:
+    - name: Ras
+      value: Kabouter
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen
+    - name: Bevindt zich op dit moment in
+      value: Gnomengarde
+    - name: Talen
+      value: Common, Gnomish
+  icons:
+    - name: quest
+    - name: male
+    - name: hostile
