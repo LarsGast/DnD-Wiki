@@ -50,3 +50,7 @@
 - itemName: Clockwork Amulet
   imageName: Clockwork Amulet
   isHeaderImage: true
+
+- itemName: Hat of Wizardry
+  imageName: Hat of Wizardry
+  isHeaderImage: true
