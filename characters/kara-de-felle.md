@@ -10,4 +10,6 @@ Op de trainingsgronden is Kara een onverzettelijke leider, altijd aanwezig om ha
 
 Kara de Felle staat bekend om haar harde, maar rechtvaardige leiderschap. Ze heeft een legendarische reputatie in het dorp van Grijssteen, niet alleen door haar eigen vaardigheden in de strijd, maar ook door de elite krijgers die ze opleidt. Haar naam roept ontzag en angst op bij zowel vrienden als vijanden. Kara is niet alleen een meester van de wapens, maar ook een strategisch genie, altijd bezig met de voorbereiding van haar troepen voor de volgende onvermijdelijke oorlog.
 
+Samen met haar geliefde Liora de Zachte zorgt ze ervoor dat alle troepen van Grijssteen goed voorbereid de strijd in gaan en heelhuids terug komen.
+
 Met Kara aan het roer is het leger van Grijssteen altijd klaar voor de strijd, en haar troepen weten dat ze onder haar bevel in de best mogelijke handen zijn.
