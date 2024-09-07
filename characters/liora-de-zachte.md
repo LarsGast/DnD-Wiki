@@ -12,4 +12,6 @@ Naast het Geneescentrum ligt de Magische Drankjesfabriek, een plaats waar Liora'
 
 Liora de Zachte is geliefd door iedereen in het dorp. Haar aanwezigheid is een baken van hoop in tijden van duisternis, en haar vaardigheden maken haar onmisbaar in de strijd. Hoewel ze de titel "de Zachte" draagt, is ze onverzettelijk als het gaat om het beschermen van haar bondgenoten. Haar kracht ligt in haar mededogen en haar vermogen om zelfs in de donkerste tijden licht te brengen.
 
+Samen met haar geliefde Kara de Felle zorgt ze ervoor dat alle troepen van Grijssteen goed voorbereid de strijd in gaan en heelhuids terug komen.
+
 In de chaos van de strijd is Liora een kalme, helende aanwezigheid, haar vleugels van licht omhullen de gewonden, en haar stem, zacht en geruststellend, brengt moed in de harten van hen die wankelen. Met Liora aan hun zijde weten de krijgers dat ze altijd een kans hebben om terug te keren naar het dorp, genezen en versterkt, klaar voor de volgende strijd.
