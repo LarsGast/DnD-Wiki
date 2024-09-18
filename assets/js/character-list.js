@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const uList = document.getElementsByClassName('character-list')[0];
 
-    relatedCharacters.forEach(function(character) {
+    relatedCharacters.sort((a, b) => a.name.localeCompare(b.name)).forEach(function(character) {
         let listItem = document.createElement('li');
         uList.appendChild(listItem);
 
