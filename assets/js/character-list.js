@@ -14,7 +14,8 @@ const getRelatedCharacters = function(characterName) {
     let charactersData = window.charactersData;
 
     let relatedCharacters = charactersData.filter(character => 
-        relatedCharacterNames.includes(character.name)
+        relatedCharacterNames.includes(character.name) &&
+        (character.visible != false || window.showInvisible)
     );
 
     return relatedCharacters;
