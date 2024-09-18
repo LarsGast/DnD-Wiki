@@ -37,13 +37,13 @@ layout: default
 
     <h2>Gerelateerde Locaties</h2>
     <h3>Super-locaties</h3>
-    {% include location-list.html filterType="location" filterName=page.title locationType="super" %}
+    {% include location-list.html currentObjectType="location" currentObjectName=page.title locationType="super" %}
 
     <h3>Sub-locaties</h3>
-    {% include location-list.html filterType="location" filterName=page.title locationType="sub" %}
+    {% include location-list.html currentObjectType="location" currentObjectName=page.title locationType="sub" %}
 
     <h3>Locaties in de buurt</h3>
-    {% include location-list.html filterType="location" filterName=page.title locationType="nearby" %}
+    {% include location-list.html currentObjectType="location" currentObjectName=page.title locationType="nearby" %}
     
     <h2>Items</h2>
     {% include item-list.html filterType="location" filterName=page.title %}
