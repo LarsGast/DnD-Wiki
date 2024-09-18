@@ -46,20 +46,6 @@ const getCampaignCharacterLinks = function(campaignName) {
     return relatedCharacterNames;
 }
 
-const getLocationCharacterLinks = function(locationName) {
-
-    const links = window.locationCharacterLinks;
-
-    // Get all links to this location.
-    const relatedLinks = links.filter(link => link.locationName === locationName);
-
-    // Get only the names, so we can use these to get full character objects.
-    // Remove dupes.
-    const relatedCharacterNames = relatedLinks.map(link => link.characterName);
-
-    return relatedCharacterNames;
-}
-
 const getCharacterCharacterLinks = function(characterName) {
 
     const characterLinks = window.characterCharacterLinks;
@@ -77,6 +63,20 @@ const getCharacterCharacterLinks = function(characterName) {
     
     // Remove dupes.
     relatedCharacterNames = [...new Set(relatedCharacterNames)];
+
+    return relatedCharacterNames;
+}
+
+const getLocationCharacterLinks = function(locationName) {
+
+    const links = window.locationCharacterLinks;
+
+    // Get all links to this location.
+    const relatedLinks = links.filter(link => link.locationName === locationName);
+
+    // Get only the names, so we can use these to get full character objects.
+    // Remove dupes.
+    const relatedCharacterNames = relatedLinks.map(link => link.characterName);
 
     return relatedCharacterNames;
 }
