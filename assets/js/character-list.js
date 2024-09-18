@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         uList.appendChild(listItem);
 
         let link = document.createElement('a');
-        link.href = `../characters/${character.name}`;
+        link.href = `../characters/${character.name.replace(/\s+/g, '-').toLowerCase()}`;
         listItem.appendChild(link);
 
         let summaryWrapper = document.createElement('div');
