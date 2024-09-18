@@ -554,7 +554,7 @@
       value: De Sword Mountains
     - name: Talen
       value: Common
-  customLink: PEKKA
+  customLink: pekka
   icons:
     - name: player
     - name: with-party

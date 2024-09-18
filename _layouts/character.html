@@ -33,7 +33,7 @@ layout: default
     {% include campaign-list.html filterType="character" filterName=page.title isFlashback=false %}
 
     <h2>Gerelateerde karakters</h2>
-    {% include character-list.html filterType="character" filterName=page.title %}
+    {% include character-list.html currentObjectType="character" currentObjectName=page.title %}
     
     <h2>Gerelateerde locaties</h2>
     {% include location-list.html filterType="character" filterName=page.title %}

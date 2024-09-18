@@ -1,90 +1,17 @@
-<!-- Input parameters -->
-{% assign filterType = include.filterType %}
-{% assign filterName = include.filterName %}
+<ul class="no-style-list no-style-link-group character-list"></ul>
 
-<!-- Initialize an empty array for characters -->
-{% assign characters = '' | split: ',' %}
-{% assign indexedCharacters = '' | split: ',' %}
+<script>
+    window.currentObjectName = {{ include.currentObjectName | jsonify }};
+    window.currentObjectType = {{ include.currentObjectType | jsonify }};
 
-{% if filterType == "campaign" %}
-    {% for characterLink in site.data.campaign-character-link %}
-        {% if characterLink.campaignName == filterName %}
-            {% assign character = site.data.characters | where:"name", characterLink.characterName %}
-            {% assign characters = characters | push: character %}
-        {% endif %}
-    {% endfor %}
-{% elsif filterType == "location" %}
-    {% for characterLink in site.data.location-character-link %}
-        {% if characterLink.locationName == filterName %}
-            {% assign character = site.data.characters | where:"name", characterLink.characterName %}
-            {% assign characters = characters | push: character %}
-        {% endif %}
-    {% endfor %}
-{% elsif filterType == "character" %}
-    <!-- Filtering based on related characters -->
-    {% for characterLink in site.data.character-character-link %}
+    window.charactersData = {{ site.data.characters | jsonify }};
+    window.icons = {{ site.data.icons | jsonify }};
 
-        <!-- Reset the character variable so we know if one was found -->
-        {% assign character = '' %}
+    window.campaignCharacterLinks = {{ site.data.campaign-character-link | jsonify }};
+    window.characterCharacterLinks = {{ site.data.character-character-link | jsonify }};
+    window.locationCharacterLinks = {{ site.data.location-character-link | jsonify }};
+    window.itemCharacterLinks = {{ site.data.item-character-link | jsonify }};
 
-        <!-- Filtered name could be the first in the link, or the second -->
-        {% if characterLink.firstCharacterName == filterName %}
-            {% assign character =  site.data.characters | where:"name", characterLink.secondCharacterName %}
-        {% elsif characterLink.secondCharacterName == filterName %}
-            {% assign character =  site.data.characters | where:"name", characterLink.firstCharacterName %}
-        {% endif %}
-
-        <!-- Only add a character to the list if one was found -->
-        {% if character != '' %}
-            {% if character.index %}
-                {% assign indexedCharacters = indexedCharacters | push: character %}
-            {% else %}
-                {% assign characters = characters | push: character %}
-            {% endif %}
-        {% endif %}
-    {% endfor %}
-{% elsif filterType == "item" %}
-    {% for characterLink in site.data.item-character-link %}
-        {% if characterLink.itemName == filterName %}
-            {% assign character = site.data.characters | where:"name", characterLink.characterName %}
-            {% assign characters = characters | push: character %}
-        {% endif %}
-    {% endfor %}
-{% else %}
-    {% for character in site.data.characters %}
-        {% if character.index %}
-            {% assign indexedCharacters = indexedCharacters | push: character %}
-        {% else %}
-            {% assign characters = characters | push: character %}
-        {% endif %}
-    {% endfor %}
-{% endif %}
-
-<!-- Sort alphabetically, but by index first -->
-{% assign indexedCharacters = indexedCharacters | sort_natural:"index" %}
-{% assign characters = characters | sort_natural:"name" %}
-
-<!-- Add all the characters back together -->
-{% assign characters = indexedCharacters | concat: characters %}
-
-<ul class="no-style-list no-style-link-group character-list">
-    {% for character in characters %}
-        {% if character.visible or site.showInvisible %}
-            <li>
-                <a href="../characters/{% if character.customLink %}{{ character.customLink }}{% else %}{{ character.name | replace: ' ', '-' }}{% endif %}">
-                    <div class="character-summary-wrapper">
-                        <h2>{{ character.name }}</h2>
-                        <div class="character-icons">
-                            {% for icon_name in character.icons %}
-                                {% assign icon = site.data.icons | where:"name", icon_name.name | first %}
-                                {% if icon %}
-                                    <span class="icon {{ icon.name }}" title="{{ icon.description }}"></span>
-                                {% endif %}
-                            {% endfor %}
-                        </div>
-                    </div>
-                </a>  
-            </li>
-        {% endif %}
-    {% endfor %}
-</ul>
+    window.showInvisible = {{ site.showInvisible | jsonify }};
+</script>
+<script type="module" src="{{ '/assets/js/character-list.js' | relative_url }}"></script>
