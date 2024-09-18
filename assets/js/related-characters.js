@@ -23,11 +23,27 @@ const getRelatedCharacterNames = function() {
     const currentObjectName = window.currentObjectName;
 
     switch (currentObjectType) {
+        case "campaign":
+            return getCampaignCharacterLinks(currentObjectName);
         case "character":
             return getCharacterCharacterLinks(currentObjectName);
         case "location":
             return getLocationCharacterLinks(currentObjectName);
     }
+}
+
+const getCampaignCharacterLinks = function(campaignName) {
+
+    const links = window.campaignCharacterLinks;
+
+    // Get all links to this location.
+    const relatedLinks = links.filter(link => link.campaignName === campaignName);
+
+    // Get only the names, so we can use these to get full character objects.
+    // Remove dupes.
+    const relatedCharacterNames = relatedLinks.map(link => link.characterName);
+
+    return relatedCharacterNames;
 }
 
 const getLocationCharacterLinks = function(locationName) {
