@@ -18,9 +18,11 @@ export const getCharacterLinkElement = function(character) {
  */
 const getCharacterAnchor = function(character) {
 
+    const characterLink = character.customLink ?? character.name.replace(/\s+/g, '-').toLowerCase();
+
     // To make it clickable.
     const link = document.createElement('a');
-    link.href = `../characters/${character.name.replace(/\s+/g, '-').toLowerCase()}`;
+    link.href = `../characters/${characterLink}`;
 
     link.appendChild(getCharacterSummaryWrapper(character));
 
