@@ -1,6 +1,6 @@
 /**
  * Get all related characters to the given object
- * @returns All characters that are related to the given object, as specified in _data/characters.yml
+ * @returns {object[]} All characters that are related to the given object, as specified in _data/characters.yml
  */
 export const getRelatedCharacters = function() {  
 
@@ -20,7 +20,7 @@ export const getRelatedCharacters = function() {
 
 /**
  * Get the names of all the related characters to the given object.
- * @returns Array of strings
+ * @returns {string[]}
  */
 const getRelatedCharacterNames = function() {
     const currentObjectType = window.currentObjectType;
@@ -35,13 +35,27 @@ const getRelatedCharacterNames = function() {
             return getLocationCharacterLinks(currentObjectName);
         case "item":
             return getItemCharacterLinks(currentObjectName);
+        default:
+            return getAllCharacterNames();
     }
+}
+
+/**
+ * Get the names of all the characters.
+ * @returns {string[]}
+ */
+const getAllCharacterNames = function() {
+    const charactersData = window.charactersData;
+
+    const characterNames = charactersData.map(character => character.name);
+
+    return characterNames;
 }
 
 /**
  * Get the names of every character related to the given campaign.
  * @param {object} campaignName 
- * @returns Array of strings
+ * @returns {string[]}
  */
 const getCampaignCharacterLinks = function(campaignName) {
 
@@ -59,7 +73,7 @@ const getCampaignCharacterLinks = function(campaignName) {
 /**
  * Get the names of every character related to the given character.
  * @param {object} characterName 
- * @returns Array of strings
+ * @returns {string[]}
  */
 const getCharacterCharacterLinks = function(characterName) {
 
@@ -85,7 +99,7 @@ const getCharacterCharacterLinks = function(characterName) {
 /**
  * Get the names of every character related to the given location.
  * @param {object} locationName 
- * @returns Array of strings
+ * @returns {string[]}
  */
 const getLocationCharacterLinks = function(locationName) {
 
@@ -103,7 +117,7 @@ const getLocationCharacterLinks = function(locationName) {
 /**
  * Get the names of every character related to the given item.
  * @param {object} itemName 
- * @returns Array of strings
+ * @returns {string[]}
  */
 const getItemCharacterLinks = function(itemName) {
 
