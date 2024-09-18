@@ -29,6 +29,8 @@ const getRelatedCharacterNames = function() {
             return getCharacterCharacterLinks(currentObjectName);
         case "location":
             return getLocationCharacterLinks(currentObjectName);
+        case "item":
+            return getItemCharacterLinks(currentObjectName);
     }
 }
 
@@ -73,6 +75,20 @@ const getLocationCharacterLinks = function(locationName) {
 
     // Get all links to this location.
     const relatedLinks = links.filter(link => link.locationName === locationName);
+
+    // Get only the names, so we can use these to get full character objects.
+    // Remove dupes.
+    const relatedCharacterNames = relatedLinks.map(link => link.characterName);
+
+    return relatedCharacterNames;
+}
+
+const getItemCharacterLinks = function(itemName) {
+
+    const links = window.itemCharacterLinks;
+
+    // Get all links to this location.
+    const relatedLinks = links.filter(link => link.itemName === itemName);
 
     // Get only the names, so we can use these to get full character objects.
     // Remove dupes.

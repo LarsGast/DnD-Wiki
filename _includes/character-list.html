@@ -5,8 +5,9 @@
     window.currentObjectName = {{ include.filterName | jsonify }};
     window.currentObjectType = {{ include.filterType | jsonify }};
     window.campaignCharacterLinks = {{ site.data.campaign-character-link | jsonify }};
-    window.locationCharacterLinks = {{ site.data.location-character-link | jsonify }};
     window.characterCharacterLinks = {{ site.data.character-character-link | jsonify }};
+    window.locationCharacterLinks = {{ site.data.location-character-link | jsonify }};
+    window.itemCharacterLinks = {{ site.data.item-character-link | jsonify }};
     window.charactersData = {{ site.data.characters | jsonify }};
     window.icons = {{ site.data.icons | jsonify }};
     window.showInvisible = {{ site.showInvisible | jsonify }};
