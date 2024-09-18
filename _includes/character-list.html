@@ -1,15 +1,17 @@
-<ul class="no-style-list no-style-link-group character-list">
-</ul>
+<ul class="no-style-list no-style-link-group character-list"></ul>
 
 <script>
-    window.currentObjectName = {{ include.filterName | jsonify }};
-    window.currentObjectType = {{ include.filterType | jsonify }};
+    window.currentObjectName = {{ include.currentObjectName | jsonify }};
+    window.currentObjectType = {{ include.currentObjectType | jsonify }};
+
+    window.charactersData = {{ site.data.characters | jsonify }};
+    window.icons = {{ site.data.icons | jsonify }};
+
     window.campaignCharacterLinks = {{ site.data.campaign-character-link | jsonify }};
     window.characterCharacterLinks = {{ site.data.character-character-link | jsonify }};
     window.locationCharacterLinks = {{ site.data.location-character-link | jsonify }};
     window.itemCharacterLinks = {{ site.data.item-character-link | jsonify }};
-    window.charactersData = {{ site.data.characters | jsonify }};
-    window.icons = {{ site.data.icons | jsonify }};
+
     window.showInvisible = {{ site.showInvisible | jsonify }};
 </script>
 <script type="module" src="{{ '/assets/js/character-list.js' | relative_url }}"></script>

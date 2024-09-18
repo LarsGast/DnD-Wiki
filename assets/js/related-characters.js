@@ -1,10 +1,10 @@
 /**
- * Get all related characters to the given character
- * @param {string} objectName Name of the character who we're currently viewing
- * @returns All characters that are related to the given one, as specified in _data/characters.yml
+ * Get all related characters to the given object
+ * @returns All characters that are related to the given object, as specified in _data/characters.yml
  */
 export const getRelatedCharacters = function() {  
 
+    // Get the names of the related characters.
     const relatedCharacterNames = getRelatedCharacterNames();
     
     // Get the actual character objects.
@@ -18,6 +18,10 @@ export const getRelatedCharacters = function() {
     return relatedCharacters;
 }
 
+/**
+ * Get the names of all the related characters to the given object.
+ * @returns Array of strings
+ */
 const getRelatedCharacterNames = function() {
     const currentObjectType = window.currentObjectType;
     const currentObjectName = window.currentObjectName;
@@ -34,25 +38,34 @@ const getRelatedCharacterNames = function() {
     }
 }
 
+/**
+ * Get the names of every character related to the given campaign.
+ * @param {object} campaignName 
+ * @returns Array of strings
+ */
 const getCampaignCharacterLinks = function(campaignName) {
 
     const links = window.campaignCharacterLinks;
 
-    // Get all links to this location.
+    // Get all character links to this campaign.
     const relatedLinks = links.filter(link => link.campaignName === campaignName);
 
     // Get only the names, so we can use these to get full character objects.
-    // Remove dupes.
     const relatedCharacterNames = relatedLinks.map(link => link.characterName);
 
     return relatedCharacterNames;
 }
 
+/**
+ * Get the names of every character related to the given character.
+ * @param {object} characterName 
+ * @returns Array of strings
+ */
 const getCharacterCharacterLinks = function(characterName) {
 
     const characterLinks = window.characterCharacterLinks;
 
-    // Get all links to this character.
+    // Get all character links to this character.
     const relatedCharacterLinks = characterLinks.filter(characterLink => 
         characterLink.firstCharacterName === characterName ||
         characterLink.secondCharacterName === characterName);
@@ -69,29 +82,37 @@ const getCharacterCharacterLinks = function(characterName) {
     return relatedCharacterNames;
 }
 
+/**
+ * Get the names of every character related to the given location.
+ * @param {object} locationName 
+ * @returns Array of strings
+ */
 const getLocationCharacterLinks = function(locationName) {
 
     const links = window.locationCharacterLinks;
 
-    // Get all links to this location.
+    // Get all character links to this location.
     const relatedLinks = links.filter(link => link.locationName === locationName);
 
     // Get only the names, so we can use these to get full character objects.
-    // Remove dupes.
     const relatedCharacterNames = relatedLinks.map(link => link.characterName);
 
     return relatedCharacterNames;
 }
 
+/**
+ * Get the names of every character related to the given item.
+ * @param {object} itemName 
+ * @returns Array of strings
+ */
 const getItemCharacterLinks = function(itemName) {
 
     const links = window.itemCharacterLinks;
 
-    // Get all links to this location.
+    // Get all character links to this item.
     const relatedLinks = links.filter(link => link.itemName === itemName);
 
     // Get only the names, so we can use these to get full character objects.
-    // Remove dupes.
     const relatedCharacterNames = relatedLinks.map(link => link.characterName);
 
     return relatedCharacterNames;
