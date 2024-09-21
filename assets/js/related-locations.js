@@ -94,7 +94,22 @@ const getCharacterLocationLinks = function(characterName) {
  * @returns {string[]}
  */
 const getLocationLocationLinks = function(locationName) {
-    // TODO: location-to-location links.
+
+    const links = window.locationLocationLinks;
+
+    const relatedLinks = links.filter(link => link.firstLocationName === locationName);
+    const relatedLinks2 = links.filter(link => link.secondLocationName === locationName);
+
+    const names = [];
+    relatedLinks.forEach(function(link) {
+        names.push(link.secondLocationName);
+    })
+
+    relatedLinks2.forEach(function(link) {
+        names.push(link.firstLocationName);
+    })
+
+    return names;
 }
 
 /**
