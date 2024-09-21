@@ -148,3 +148,12 @@
   characterName: Korboz 
   current: true
   past: false
+
+- itemName: Vlinder Trance
+  characterName: Liora de Zachte 
+  current: false
+  past: true
+- itemName: Vlinder Trance
+  characterName: P.E.K.K.A. 
+  current: true
+  past: false
