@@ -62,3 +62,7 @@
 - itemName: Wand of Pyrotechnics
   imageName: Wand of Pyrotechnics
   isHeaderImage: true
+
+- itemName: Vlinder Trance
+  imageName: vlinder trance
+  isHeaderImage: true
