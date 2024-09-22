@@ -6,7 +6,7 @@
 export const getCharacterLinkElement = function(character) {
     const listItem = document.createElement('li');
 
-    if (!character.visible && !window.showInvisible){
+    if (!character.visible){
         listItem.classList.add('invisible');
     }
     listItem.appendChild(getCharacterAnchor(character));
