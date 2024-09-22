@@ -69,14 +69,17 @@
     {% if locations.size == 0 %}
         <li>-</li>
     {% else %}
-        {% for location in locations %}
-            {% if location.visible or site.showInvisible %}
-            <li>
+        {% for location in locations %}       
+            {% assign className = '' %}
+            {% if location.visible %}
+            {% else %}
+                {% assign className = 'invisible' %}
+            {% endif %}
+            <li class="{{className}}">
                 <a href="../locations/{% if location.customLink %}{{ location.customLink }}{% else %}{{ location.name | replace: ' ', '-' | downcase }}{% endif %}">
                     {{location.name}}
                 </a>  
             </li>
-            {% endif %}
         {% endfor %}
     {% endif %}
 </ul>

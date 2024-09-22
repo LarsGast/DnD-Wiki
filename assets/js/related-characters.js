@@ -11,8 +11,7 @@ export const getRelatedCharacters = function() {
     // Remove invisible characters, unless we want to see them (showInvisible: true in _config.yml).
     const charactersData = window.charactersData;
     const relatedCharacters = charactersData.filter(character => 
-        relatedCharacterNames.includes(character.name) &&
-        (character.visible != false || window.showInvisible)
+        relatedCharacterNames.includes(character.name)
     );
 
     return relatedCharacters;
