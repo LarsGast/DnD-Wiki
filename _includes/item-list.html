@@ -18,47 +18,49 @@
 
 <ul class>
     {% for item in items %}
-        {% if item.visible or site.showInvisible %}
+        {% assign className = '' %}
+        {% if item.visible %}
+        {% else %}
+            {% assign className = 'invisible' %}
+        {% endif %}
+        {% if filterType %}
 
-            {% if filterType %}
+            {% assign itemLinks = itemLinkFile | where:"itemName", item.name %}
+            {% assign itemLinks = itemLinks | where:filter, filterName %}
 
-                {% assign itemLinks = itemLinkFile | where:"itemName", item.name %}
-                {% assign itemLinks = itemLinks | where:filter, filterName %}
+            {% for itemLink in itemLinks %}
+                {% if itemLink %}
 
-                {% for itemLink in itemLinks %}
-                    {% if itemLink %}
-
-                        {% assign show = false %}
-                        {% if filterType == "character" %}
-                            {% if time == "current" and itemLink.current %}
-                                {% assign show = true %}
-                            {% endif %}
-                            {% if time == "past" and itemLink.past %}
-                                {% assign show = true %}
-                            {% endif %}
-                        {% else %}
+                    {% assign show = false %}
+                    {% if filterType == "character" %}
+                        {% if time == "current" and itemLink.current %}
                             {% assign show = true %}
                         {% endif %}
-
-                        {% if show %}
-                            <li>
-                                <a href="../items/{% if item.customLink %}{{ item.customLink }}{% else %}{{ item.name | replace: ' ', '-' | downcase }}{% endif %}">
-                                    {{item.name}}
-                                </a>
-                                {% if itemLink.comment %}
-                                    ({{itemLink.comment}})
-                                {% endif %}
-                            </li>
+                        {% if time == "past" and itemLink.past %}
+                            {% assign show = true %}
                         {% endif %}
+                    {% else %}
+                        {% assign show = true %}
                     {% endif %}
-                {% endfor %}
-            {% else %}
-                <li>
-                    <a href="../items/{% if item.customLink %}{{ item.customLink }}{% else %}{{ item.name | replace: ' ', '-' | downcase }}{% endif %}">
-                        {{item.name}}
-                    </a>
-                </li>
-            {% endif %}
+
+                    {% if show %}
+                        <li class="{{className}}">
+                            <a href="../items/{% if item.customLink %}{{ item.customLink }}{% else %}{{ item.name | replace: ' ', '-' | downcase }}{% endif %}">
+                                {{item.name}}
+                            </a>
+                            {% if itemLink.comment %}
+                                ({{itemLink.comment}})
+                            {% endif %}
+                        </li>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            <li class="{{className}}">
+                <a href="../items/{% if item.customLink %}{{ item.customLink }}{% else %}{{ item.name | replace: ' ', '-' | downcase }}{% endif %}">
+                    {{item.name}}
+                </a>
+            </li>
         {% endif %}
     {% endfor %}
 </ul>

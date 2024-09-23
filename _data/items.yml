@@ -47,3 +47,6 @@
 
 - name: Wand of Pyrotechnics
   visible: false
+
+- name: Vlinder Trance
+  visible: false
