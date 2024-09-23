@@ -1,4 +1,4 @@
-import { getAllLocations } from './locations-getter.js';
+import { getLocations } from './locations-getter.js';
 import { getLocationLinkElement } from './location-list-element.js';
 
 /**
@@ -6,68 +6,94 @@ import { getLocationLinkElement } from './location-list-element.js';
  * @returns {HTMLElement[]} A list of HTML elements containing all information to create a list of locations.
  */
 export const getLocationElements = function() {
-    
-    const currentObjectType = window.currentObjectType;
 
-    if (currentObjectType === null) {
-        return getAllLocationsList();
+    const header = getHeader();
+    const body = getBody();
+
+    if (header) {
+        body.unshift(header);
     }
-    else if (currentObjectType === 'location'){
-        return getSuperSubAndNearbyLocationHeaderAndList();
+    
+    return body;
+}
+
+const getHeader = function() {
+    switch (window.currentObjectType) {
+        case null:
+            return null;
+        case 'campaign':
+            return getHeaderElement('Locaties');
+        default:
+            return getHeaderElement('Gerelateerde locaties');
+    }
+}
+
+const getHeaderElement = function(name) {
+    const header = document.createElement('h2');
+    header.textContent = name;
+
+    return header;
+}
+
+const getBody = function() {
+    if (currentObjectType === 'location'){
+        return getLocationPageElements();
     }
     else {
-        return getOtherList();
+        return getGenericPageElements();
     }
 }
 
-/**
- * Gets the unordered list of all locations.
- * @returns {HTMLElement[]} A list containing the ul element, so we can loop through it later.
- */
-const getAllLocationsList = function() {
-    const allLocations = getAllLocations();
-    return [getLocationList(allLocations)];
-}
 
-const getSuperSubAndNearbyLocationHeaderAndList = function() {
+const getLocationPageElements = function() {
 
     const elements = [];
-
-    const header = document.createElement('h2');
-    header.textContent = 'Gerelateerde Locaties';
-    elements.push(header);
 
     const headerSuper = document.createElement('h3');
     headerSuper.textContent = 'Super-locaties';
     elements.push(headerSuper);
 
-    const superLocations = getSuperLocations();
+    const superLocations = getLocations('super');
     elements.push(getLocationList(superLocations));
 
     const headerSub = document.createElement('h3');
     headerSub.textContent = 'Sub-locaties';
     elements.push(headerSub);
 
-    const subLocations = getSubLocations();
+    const subLocations = getLocations('sub');
     elements.push(getLocationList(subLocations));
 
     const headerNearby = document.createElement('h3');
     headerNearby.textContent = 'Locaties in de buurt';
     elements.push(headerNearby);
 
-    const nearbyLocations = getNearbyLocations();
+    const nearbyLocations = getLocations('nearby');
     elements.push(getLocationList(nearbyLocations));
 
     return elements;
 }
 
+const getGenericPageElements = function() {
+    const allLocations = getLocations();
+    return [getLocationList(allLocations)];
+}
+
 const getLocationList = function(locations) {
+
+    const listElement = document.createElement('ul');
+
+    if (locations.length === 0) {
+        const li = document.createElement('li');
+        li.textContent = '-';
+        listElement.appendChild(li);
+        
+        return listElement;
+    }
 
     // Sort by name.
     locations = locations.sort((a, b) => a.name.localeCompare(b.name));
 
     // Create and fill list.
-    const listElement = document.createElement('ul');
     locations.forEach(function(location) {
         const li = getLocationLinkElement(location);
         listElement.appendChild(li);

@@ -1,7 +1,7 @@
 /**
  * Get a single location link element for the list.
  * @param {object} location 
- * @returns 
+ * @returns {HTMLElement}
  */
 export const getLocationLinkElement = function(location) {
     const listItem = document.createElement('li');
@@ -14,6 +14,11 @@ export const getLocationLinkElement = function(location) {
     return listItem;
 }
 
+/**
+ * Get the anchor tag for a single location element.
+ * @param {object} location 
+ * @returns {HTMLElement}
+ */
 const getLocationAnchor = function(location) {
 
     const locationLink = location.customLink ?? location.name.replace(/\s+/g, '-').toLowerCase();

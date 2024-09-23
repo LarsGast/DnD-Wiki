@@ -1,4 +1,3 @@
-import { getRelatedLocations } from './related-locations.js';
 import { getLocationElements } from './location-list.js';
 
 document.addEventListener("DOMContentLoaded", function() {
