@@ -23,10 +23,10 @@ export const getRelatedLocations = function() {
  * @returns {string[]}
  */
 const getRelatedLocationNames = function() {
-    const currentObjectType = window.currentObjectType;
+    const layout = window.layout;
     const currentObjectName = window.currentObjectName;
 
-    switch (currentObjectType) {
+    switch (layout) {
         case "campaign":
             return getCampaignLocationLinks(currentObjectName);
         case "character":

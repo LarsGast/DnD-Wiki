@@ -18,7 +18,7 @@ export const getLocationElements = function() {
 }
 
 const getHeader = function() {
-    switch (window.currentObjectType) {
+    switch (window.layout) {
         case null:
             return null;
         case 'campaign':
@@ -36,7 +36,7 @@ const getHeaderElement = function(name) {
 }
 
 const getBody = function() {
-    if (currentObjectType === 'location'){
+    if (window.layout === 'location'){
         return getLocationPageElements();
     }
     else {

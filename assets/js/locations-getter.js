@@ -1,6 +1,6 @@
 export const getLocations = function(superSubOrNearby) {
 
-    switch(window.currentObjectType) {
+    switch(window.layout) {
         case null:
             return getAllLocations();
         case 'location':
@@ -52,10 +52,10 @@ const getLocationLocations = function(superSubOrNearby) {
 }
 
 const getLinkedLocations = function() {
-    const links = window[`${window.currentObjectType}LocationLinks`];
+    const links = window[`${window.layout}LocationLinks`];
 
     // Get all location links to this character.
-    const relatedLinks = links.filter(link => link[`${window.currentObjectType}Name`] === window.currentObjectName);
+    const relatedLinks = links.filter(link => link[`${window.layout}Name`] === window.currentObjectName);
 
     // Get only the names, so we can use these to get full location objects.
     const relatedLocationNames = relatedLinks.map(link => link.locationName);

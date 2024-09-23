@@ -22,10 +22,10 @@ export const getRelatedCharacters = function() {
  * @returns {string[]}
  */
 const getRelatedCharacterNames = function() {
-    const currentObjectType = window.currentObjectType;
+    const layout = window.layout;
     const currentObjectName = window.currentObjectName;
 
-    switch (currentObjectType) {
+    switch (layout) {
         case "campaign":
             return getCampaignCharacterLinks(currentObjectName);
         case "character":
