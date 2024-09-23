@@ -1,36 +1,18 @@
+import { getAllLocations } from './locations-getter.js';
 import { getLocationLinkElement } from './location-list-element.js';
-import { getRelatedLocations } from './related-locations.js';
 
-document.addEventListener("DOMContentLoaded", function() {
-
-    // Get all the related locations to this object.
-    // This includes all information about the character as the locations.yml file specifies.
-    // Unsorted.
-    const relatedLocations = getRelatedLocations();
-
-    create()
-    //fillList(relatedLocations);
-});
-
-const create = function() {
-    const header = document.createElement('h2');
-    header.textContent = 'Gerelateerde Locaties';
-
-    const locationElements = getLocationHeaderAndList();
-
-    const locationsDiv = document.getElementById('locations');
-
-    locationsDiv.appendChild(header);
-    locationElements.forEach(function(element) {
-        locationsDiv.appendChild(element);
-    })
-}
-
-const getLocationHeaderAndList = function() {
+/**
+ * Get all the elements (headers, lists) needed to create the locations section.
+ * @returns {HTMLElement[]} A list of HTML elements containing all information to create a list of locations.
+ */
+export const getLocationElements = function() {
     
     const currentObjectType = window.currentObjectType;
 
-    if (currentObjectType === 'location'){
+    if (currentObjectType === null) {
+        return getAllLocationsList();
+    }
+    else if (currentObjectType === 'location'){
         return getSuperSubAndNearbyLocationHeaderAndList();
     }
     else {
@@ -38,64 +20,58 @@ const getLocationHeaderAndList = function() {
     }
 }
 
+/**
+ * Gets the unordered list of all locations.
+ * @returns {HTMLElement[]} A list containing the ul element, so we can loop through it later.
+ */
+const getAllLocationsList = function() {
+    const allLocations = getAllLocations();
+    return [getLocationList(allLocations)];
+}
+
 const getSuperSubAndNearbyLocationHeaderAndList = function() {
 
     const elements = [];
+
+    const header = document.createElement('h2');
+    header.textContent = 'Gerelateerde Locaties';
+    elements.push(header);
 
     const headerSuper = document.createElement('h3');
     headerSuper.textContent = 'Super-locaties';
     elements.push(headerSuper);
 
     const superLocations = getSuperLocations();
-    const listSuper = document.createElement('ul');
-    superLocations.forEach(function(location) {
-        const li = getLocationLinkElement(location);
-        listSuper.appendChild(li);
-    });
-    elements.push(listSuper);
+    elements.push(getLocationList(superLocations));
 
     const headerSub = document.createElement('h3');
     headerSub.textContent = 'Sub-locaties';
     elements.push(headerSub);
 
     const subLocations = getSubLocations();
-    const listSub = document.createElement('ul');
-    subLocations.forEach(function(location) {
-        const li = getLocationLinkElement(location);
-        listSub.appendChild(li);
-    });
-    elements.push(listSub);
+    elements.push(getLocationList(subLocations));
 
     const headerNearby = document.createElement('h3');
     headerNearby.textContent = 'Locaties in de buurt';
     elements.push(headerNearby);
 
     const nearbyLocations = getNearbyLocations();
-    const listNearby = document.createElement('ul');
-    nearbyLocations.forEach(function(location) {
-        const li = getLocationLinkElement(location);
-        listNearby.appendChild(li);
-    });
-    elements.push(listNearby);
+    elements.push(getLocationList(nearbyLocations));
 
     return elements;
 }
 
-/**
- * Fill the list that's displayed on the page with all the related locations.
- * @param {object[]} locations 
- */
-const fillList = function(locations) {
-    
-    const locationType = window.locationType;
+const getLocationList = function(locations) {
 
     // Sort by name.
     locations = locations.sort((a, b) => a.name.localeCompare(b.name));
 
-    // Fill the page with all info required for a link to all related locations.
-    const uList = document.getElementById(`location-list`);
+    // Create and fill list.
+    const listElement = document.createElement('ul');
     locations.forEach(function(location) {
-        const listItem = getLocationLinkElement(location);
-        uList.appendChild(listItem);
+        const li = getLocationLinkElement(location);
+        listElement.appendChild(li);
     });
+
+    return listElement;
 }

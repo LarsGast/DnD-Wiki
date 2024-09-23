@@ -6,6 +6,9 @@
 export const getLocationLinkElement = function(location) {
     const listItem = document.createElement('li');
 
+    if (!location.visible){
+        listItem.classList.add('invisible');
+    }
     listItem.appendChild(getLocationAnchor(location));
 
     return listItem;
