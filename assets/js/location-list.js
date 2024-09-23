@@ -1,5 +1,5 @@
 import { getLocations } from './locations-getter.js';
-import { getLocationLinkElement } from './location-list-element.js';
+import { getListItem } from "./generic-list-element.js";
 
 /**
  * Get all the elements (headers, lists) needed to create the locations section.
@@ -95,7 +95,7 @@ const getLocationList = function(locations) {
 
     // Create and fill list.
     locations.forEach(function(location) {
-        const li = getLocationLinkElement(location);
+        const li = getListItem(location);
         listElement.appendChild(li);
     });
 

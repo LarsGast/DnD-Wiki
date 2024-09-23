@@ -1,4 +1,4 @@
-import { getCharacterLinkElement } from './character-list-element.js';
+import { getListItem } from './generic-list-element.js';
 import { getRelatedCharacters } from './related-characters.js';
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -23,7 +23,7 @@ const fillList = function(characters) {
     // Fill the page with all info required for a link to all related characters.
     const uList = document.getElementsByClassName('character-list')[0];
     characters.forEach(function(character) {
-        const listItem = getCharacterLinkElement(character);
+        const listItem = getListItem(character, 'character');
         uList.appendChild(listItem);
     });
 }
