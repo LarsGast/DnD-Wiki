@@ -45,7 +45,12 @@ const getUnPublishedList = function(objects) {
  * @returns {object[]} Sorted
  */
 const sortObjects = function(objects) {
-    return objects.sort((a, b) => a.name.localeCompare(b.name));;
+
+    if (window.listType === 'campaign'){
+        return objects.sort((a, b) => a.order - b.order);
+    }
+
+    return objects.sort((a, b) => a.name.localeCompare(b.name));
 }
 
 /**
