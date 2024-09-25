@@ -32,11 +32,9 @@ layout: default
     <h3>Heden</h3>
     {% include campaign-list.html filterType="character" filterName=page.title isFlashback=false %}
 
-    <h2>Gerelateerde karakters</h2>
-    {% include character-list.html currentObjectType="character" currentObjectName=page.title %}
+    {% include character-list.html %}
     
-    <h2>Gerelateerde locaties</h2>
-    {% include location-list.html filterType="character" filterName=page.title %}
+    {% include location-list.html %}
     
     <h2>Items</h2>
     <h3>Huidige bezittingen</h3>

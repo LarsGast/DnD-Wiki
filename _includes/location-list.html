@@ -1,85 +1,28 @@
-<!-- Input parameters -->
-{% assign filterType = include.filterType %}
-{% assign filterName = include.filterName %}
-{% assign locationType = include.locationType %}
+<div id="location-list-container"></div>
 
-<!-- Initialize an empty array for location names -->
-{% assign locations = '' | split: ',' %}
-{% assign indexedLocations = '' | split: ',' %}
+<script type="module">
+    import { fillObjectListDiv } from "{{ '/assets/js/generic-list-builder.js' | relative_url }}";
 
-{% if filterType == "campaign" %}
-    {% for campaignLocationLink in site.data.campaign-location-link %}
-        {% if campaignLocationLink.campaignName == filterName %}
-            {% assign location = site.data.locations | where:"name", campaignLocationLink.locationName | first %}
-            {% assign locations = locations | push: location %}
-        {% endif %}
-    {% endfor %}
-{% elsif filterType == "location" %}
-    {% for locationLink in site.data.location-location-link %}
-        {% if locationLink.firstLocationName == filterName %}
-            {% if locationType == "sub" and locationLink.isSuperSubRelationship %}
-                {% assign location = site.data.locations | where:"name", locationLink.secondLocationName | first %}
-                {% assign locations = locations | push: location %}
-            {% elsif locationType == "nearby" and locationLink.isSuperSubRelationship == false %}
-                {% assign location = site.data.locations | where:"name", locationLink.secondLocationName | first %}
-                {% assign locations = locations | push: location %}
-            {% endif %}
-        {% elsif locationLink.secondLocationName == filterName %}
-            {% if locationType == "super" and locationLink.isSuperSubRelationship %}
-                {% assign location = site.data.locations | where:"name", locationLink.firstLocationName | first %}
-                {% assign locations = locations | push: location %}
-            {% elsif locationType == "nearby" and locationLink.isSuperSubRelationship == false %}
-                {% assign location = site.data.locations | where:"name", locationLink.firstLocationName | first %}
-                {% assign locations = locations | push: location %}
-            {% endif %}
-        {% endif %}
-    {% endfor %}
-{% elsif filterType == "character" %}
-    {% for locationCharacterLink in site.data.location-character-link %}
-        {% if locationCharacterLink.characterName == filterName %}
-            {% assign location = site.data.locations | where:"name", locationCharacterLink.locationName | first %}
-            {% assign locations = locations | push: location %}
-        {% endif %}
-    {% endfor %}
-{% elsif filterType == "item" %}
-    {% for locationLink in site.data.location-item-link %}
-        {% if locationLink.itemName == filterName %}
-            {% assign location = site.data.locations | where:"name", locationLink.locationName | first %}
-            {% assign locations = locations | push: location %}
-        {% endif %}
-    {% endfor %}
-{% else %}
-    {% for location in site.data.locations %}
-        {% if location.index %}
-            {% assign indexedLocations = indexedLocations | push: location %}
-        {% else %}
-            {% assign locations = locations | push: location %}
-        {% endif %}
-    {% endfor %}
-{% endif %}
+    let links = null;
+    switch (window.layout) {
+        case 'campaign':
+            links = {{ site.data.campaign-location-link | jsonify }};
+            break;
+        case 'character':
+            links = {{ site.data.location-character-link | jsonify }};
+            break;
+        case 'location':
+            links = {{ site.data.location-location-link | jsonify }};
+            break;
+        case 'item':
+            links = {{ site.data.location-item-link | jsonify }};
+            break;
+    }
 
-<!-- Sort alphabetically, but by index first -->
-{% assign indexedLocations = indexedLocations | sort_natural:"index" %}
-{% assign locations = locations | sort_natural:"name" %}
-
-<!-- Add all the characters back together -->
-{% assign locations = indexedLocations | concat: locations %}
-
-<ul class>
-    {% if locations.size == 0 %}
-        <li>-</li>
-    {% else %}
-        {% for location in locations %}       
-            {% assign className = '' %}
-            {% if location.visible %}
-            {% else %}
-                {% assign className = 'invisible' %}
-            {% endif %}
-            <li class="{{className}}">
-                <a href="../locations/{% if location.customLink %}{{ location.customLink }}{% else %}{{ location.name | replace: ' ', '-' | downcase }}{% endif %}">
-                    {{location.name}}
-                </a>  
-            </li>
-        {% endfor %}
-    {% endif %}
-</ul>
+    fillObjectListDiv(
+        {{ site.data.locations | jsonify }},
+        links,
+        'location',
+        'location-list-container'
+    );
+</script>

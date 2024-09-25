@@ -19,9 +19,9 @@
 <ul class>
     {% for item in items %}
         {% assign className = '' %}
-        {% if item.visible %}
+        {% if item.published %}
         {% else %}
-            {% assign className = 'invisible' %}
+            {% assign className = 'unpublished' %}
         {% endif %}
         {% if filterType %}
 
