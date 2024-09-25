@@ -1,4 +1,4 @@
-import { getCharacterSummaryWrapper } from './character-list-element.js';
+import { getCharacterSummaryWrapper } from './character-list-element-extension.js';
 
 /**
  * Get a single object link element for the list.
