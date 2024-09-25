@@ -17,24 +17,38 @@ export const getLocationElements = function() {
     return body;
 }
 
+/**
+ * Gets a header element with text based on the layout of the page.
+ * @returns {HTMLHeadingElement | null} null for the main locations page, heading element for all other pages.
+ */
 const getHeader = function() {
     switch (window.layout) {
         case 'page':
             return null;
         case 'campaign':
-            return getHeaderElement('Locaties');
+            return getHeading2Element('Locaties');
         default:
-            return getHeaderElement('Gerelateerde locaties');
+            return getHeading2Element('Gerelateerde locaties');
     }
 }
 
-const getHeaderElement = function(name) {
+/**
+ * Gets a heading element with text based on input
+ * @param {string} textContent 
+ * @returns {HTMLHeadingElement}
+ */
+const getHeading2Element = function(textContent) {
     const header = document.createElement('h2');
-    header.textContent = name;
+    header.textContent = textContent;
 
     return header;
 }
 
+/**
+ * Gets the body of the locations list elements.
+ * The location layout should result in three lists with headings, while all other layouts should result in a single list.
+ * @returns {HTMLElement[]}
+ */
 const getBody = function() {
     if (window.layout === 'location'){
         return getLocationPageElements();
@@ -44,28 +58,25 @@ const getBody = function() {
     }
 }
 
-
+/**
+ * Gets all the elements needed for the body of the location page layout
+ * @returns {HTMLElement[]}
+ */
 const getLocationPageElements = function() {
 
     const elements = [];
 
-    const headerSuper = document.createElement('h3');
-    headerSuper.textContent = 'Super-locaties';
-    elements.push(headerSuper);
+    elements.push(getHeading3Element('Super-locaties'));
 
     const superLocations = getLocations('super');
     elements.push(getLocationList(superLocations));
 
-    const headerSub = document.createElement('h3');
-    headerSub.textContent = 'Sub-locaties';
-    elements.push(headerSub);
+    elements.push(getHeading3Element('Sub-locaties'));
 
     const subLocations = getLocations('sub');
     elements.push(getLocationList(subLocations));
-
-    const headerNearby = document.createElement('h3');
-    headerNearby.textContent = 'Locaties in de buurt';
-    elements.push(headerNearby);
+    
+    elements.push(getHeading3Element('Locaties in de buurt'));
 
     const nearbyLocations = getLocations('nearby');
     elements.push(getLocationList(nearbyLocations));
@@ -73,11 +84,31 @@ const getLocationPageElements = function() {
     return elements;
 }
 
+/**
+ * Gets an h3 element with given text content.
+ * @param {string} textContent 
+ * @returns {HTMLHeadingElement}
+ */
+const getHeading3Element = function(textContent) {
+    const header = document.createElement('h3');
+    header.textContent = textContent;
+    return header
+}
+
+/**
+ * Gets all the elements needed for the body of a non-location page layout 
+ * @returns {HTMLUListElement[]} A single UL element as a list.
+ */
 const getGenericPageElements = function() {
     const allLocations = getLocations();
     return [getLocationList(allLocations)];
 }
 
+/**
+ * Gets a list containing the given locations.
+ * @param {object[]} locations 
+ * @returns {HTMLUListElement} A list with a single dash (-) if the locations parameter is empty. Otherwise, a ul element containing links to all given locations.
+ */
 const getLocationList = function(locations) {
 
     const listElement = document.createElement('ul');

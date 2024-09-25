@@ -1,9 +1,9 @@
 import { getCharacterSummaryWrapper } from './character-list-element.js';
 
 /**
- * Get a single character link element for the list.
- * @param {object} character 
- * @returns 
+ * Get a single object link element for the list.
+ * @param {object} object campaign, character, location, or item
+ * @returns {HTMLLIElement}
  */
 export const getListItem = function(object) {
     const listItem = document.createElement('li');
@@ -17,8 +17,8 @@ export const getListItem = function(object) {
 }
 /**
  * Get the anchor tag for a single location element.
- * @param {object} location 
- * @returns {HTMLElement}
+ * @param {object} object campaign, character, location, or item 
+ * @returns {HTMLAnchorElement}
  */
 const getAnchorElement = function(object) {
 
@@ -27,6 +27,7 @@ const getAnchorElement = function(object) {
     const anchor = document.createElement('a');
     anchor.href = `../${window.listType}/${pageLink}`;
     
+    // Right now, characters have a little more styling than other objects.
     if (window.listType === 'characters') {
         anchor.appendChild(getCharacterSummaryWrapper(object));
     }

@@ -1,7 +1,7 @@
 /**
  * Get the summary div element for a link to a character.
  * @param {object} character 
- * @returns 
+ * @returns {HTMLDivElement}
  */
 export const getCharacterSummaryWrapper = function(character) {
 
@@ -18,7 +18,7 @@ export const getCharacterSummaryWrapper = function(character) {
 /**
  * Get the header element for a link to a character.
  * @param {object} character 
- * @returns 
+ * @returns {HTMLHeadingElement}
  */
 const getCharacterHeader = function(character) {
 
@@ -32,7 +32,7 @@ const getCharacterHeader = function(character) {
 /**
  * Get the icon wrapper element for a link to a character.
  * @param {object} character 
- * @returns 
+ * @returns {HTMLDivElement}
  */
 const getCharacterIconWrapper = function(character) {
 
@@ -51,7 +51,7 @@ const getCharacterIconWrapper = function(character) {
 /**
  * Get the icon span element for a link to a character.
  * @param {object} character 
- * @returns 
+ * @returns {HTMLSpanElement}
  */
 const getCharacterIconSpan = function(icon) {
 

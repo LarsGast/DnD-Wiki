@@ -1,5 +1,27 @@
+/**
+ * Get all the location objects as specified in locations.yml based on the page layout and current object.
+ * @param {string} superSubOrNearby 
+ * @returns {object[]} All locations which should be displayed on the page.
+ */
 export const getLocations = function(superSubOrNearby) {
 
+    const locationNames = getLocationNames(superSubOrNearby);   
+
+    // Get the actual location objects.
+    const locationsData = window.locationsData;
+    const locations = locationsData.filter(location => 
+        locationNames.includes(location.name)
+    );
+
+    return locations
+}
+
+/**
+ * Get all the location names based on the page layout and current object. 
+ * @param {string} superSubOrNearby 
+ * @returns 
+ */
+const getLocationNames = function(superSubOrNearby) {
     switch(window.layout) {
         case 'page':
             return getAllLocations();
@@ -10,62 +32,61 @@ export const getLocations = function(superSubOrNearby) {
     }
 }
 
+/**
+ * Gets the names of all location objects.
+ * Primarily for the locations main page.
+ * @returns {string[]}
+ */
 const getAllLocations = function() {
-    return window.locationsData;
+    return window.locationsData.map(location => location.name);
 }
 
+/**
+ * Gets the names of all locations related to the current location.
+ * These are either:
+ * - All super locations
+ * - All sub locations
+ * - All locations that are nearby
+ * @param {string} superSubOrNearby 
+ * @returns {string[]}
+ */
 const getLocationLocations = function(superSubOrNearby) {
-    const locationName = window.currentObjectName;
+    const currentLocationName = window.currentObjectName;
     const links = window.locationLocationLinks;
 
-    let locationNames = [];
-
     if (superSubOrNearby === 'super') {
-        locationNames = links
-            .filter(link => link.isSuperSubRelationship === true && link.secondLocationName === locationName)
+        return links
+            .filter(link => link.isSuperSubRelationship === true && link.secondLocationName === currentLocationName)
             .map(link => link.firstLocationName);
     }
     else if (superSubOrNearby === 'sub') {
-        locationNames = links
-            .filter(link => link.isSuperSubRelationship === true && link.firstLocationName === locationName)
+        return links
+            .filter(link => link.isSuperSubRelationship === true && link.firstLocationName === currentLocationName)
             .map(link => link.secondLocationName);
     }
     else {
         const relatedLocationsLinks = links.filter(link => link.isSuperSubRelationship === false && (
-            link.firstLocationName === locationName || 
-            link.secondLocationName === locationName));
-        locationNames = relatedLocationsLinks.map(link => link.firstLocationName).concat(relatedLocationsLinks.map(link => link.secondLocationName))
-            .filter(name => name !== locationName);
+            link.firstLocationName === currentLocationName || 
+            link.secondLocationName === currentLocationName));
+        
+        const locationNames = relatedLocationsLinks.map(link => link.firstLocationName).concat(relatedLocationsLinks.map(link => link.secondLocationName))
+            .filter(name => name !== currentLocationName);
     
         // Remove dupes.
-        locationNames = [...new Set(locationNames)];
+        return [...new Set(locationNames)];
     }
-
-    // Get the actual character objects.
-    // Remove invisible characters, unless we want to see them (showInvisible: true in _config.yml).
-    const locationsData = window.locationsData;
-    const relatedLocations = locationsData.filter(location => 
-        locationNames.includes(location.name)
-    );
-
-    return relatedLocations;
 }
 
+/**
+ * Gets the names of all location related to the current non-location object.
+ * @returns {string[]}
+ */
 const getLinkedLocations = function() {
     const links = window[`${window.layout}LocationLinks`];
 
-    // Get all location links to this character.
+    // Get all location links to this object.
     const relatedLinks = links.filter(link => link[`${window.layout}Name`] === window.currentObjectName);
 
     // Get only the names, so we can use these to get full location objects.
-    const relatedLocationNames = relatedLinks.map(link => link.locationName);
-    
-    // Get the actual character objects.
-    // Remove invisible characters, unless we want to see them (showInvisible: true in _config.yml).
-    const locationsData = window.locationsData;
-    const relatedLocations = locationsData.filter(location => 
-        relatedLocationNames.includes(location.name)
-    );
-
-    return relatedLocations;
+    return relatedLinks.map(link => link.locationName);
 }
