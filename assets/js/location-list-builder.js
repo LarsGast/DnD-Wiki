@@ -2,7 +2,7 @@ import { getLocationElements } from './location-list.js';
 
 document.addEventListener("DOMContentLoaded", function() {
     
-    window.listType = 'locations';
+    window.listType = 'location';
 
     // Get all the elements
     const locationElements = getLocationElements();

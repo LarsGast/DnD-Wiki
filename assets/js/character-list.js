@@ -4,7 +4,7 @@ import { getObjectList } from './generic-list.js';
 
 document.addEventListener("DOMContentLoaded", function() {
     
-    window.listType = 'characters';
+    window.listType = 'character';
 
     // Get all the related characters to this object.
     // This includes all information about the character as the characters.yml file specifies.

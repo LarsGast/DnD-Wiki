@@ -1,14 +1,30 @@
 <div id="character-list-container"></div>
 
-<script>
-    window.currentObjectName = {{ include.currentObjectName | jsonify }};
+<script type="module">
+    import { myFunction } from "{{ '/assets/js/generic-list-builder.js' | relative_url }}";
 
-    window.charactersData = {{ site.data.characters | jsonify }};
     window.icons = {{ site.data.icons | jsonify }};
 
-    window.campaignCharacterLinks = {{ site.data.campaign-character-link | jsonify }};
-    window.characterCharacterLinks = {{ site.data.character-character-link | jsonify }};
-    window.locationCharacterLinks = {{ site.data.location-character-link | jsonify }};
-    window.itemCharacterLinks = {{ site.data.item-character-link | jsonify }};
+    let links = null;
+    switch (window.layout) {
+        case 'campaign':
+            links = {{ site.data.campaign-character-link | jsonify }};
+            break;
+        case 'character':
+            links = {{ site.data.character-character-link | jsonify }};
+            break;
+        case 'location':
+            links = {{ site.data.location-character-link | jsonify }};
+            break;
+        case 'item':
+            links = {{ site.data.item-character-link | jsonify }};
+            break;
+    }
+
+    myFunction(
+        {{ site.data.characters | jsonify }},
+        links,
+        'character',
+        'character-list-container'
+    );
 </script>
-<script type="module" src="{{ '/assets/js/character-list.js' | relative_url }}"></script>

@@ -25,10 +25,10 @@ const getAnchorElement = function(object) {
     const pageLink = object.customLink ?? object.name.replace(/\s+/g, '-').toLowerCase();
 
     const anchor = document.createElement('a');
-    anchor.href = `../${window.listType}/${pageLink}`;
+    anchor.href = `../${window.listType}s/${pageLink}`;
     
     // Right now, characters have a little more styling than other objects.
-    if (window.listType === 'characters') {
+    if (window.listType === 'character') {
         anchor.appendChild(getCharacterSummaryWrapper(object));
     }
     else {
