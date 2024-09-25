@@ -1,4 +1,4 @@
-import { getElements } from './generic-objects-element.js';
+import { getObjectListElements } from './generic-object-list-wrapper-elements.js';
 
 export const myFunction = function(objects, links, listType, containerId) {
     window.allObjects = objects;
@@ -7,7 +7,7 @@ export const myFunction = function(objects, links, listType, containerId) {
 
     const container = document.getElementById(containerId);
 
-    const elements = getElements();
+    const elements = getObjectListElements();
 
     elements.forEach(function(element) {
         container.appendChild(element);

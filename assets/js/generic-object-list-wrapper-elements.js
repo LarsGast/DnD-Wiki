@@ -1,7 +1,12 @@
 import { getObjectList } from './generic-list.js';
 import { getObjects } from './generic-object-getter.js';
 
-export const getElements = function() {
+/**
+ * Get all elements for the objects list wrapper.
+ * This includes an h2 heading and a body.
+ * @returns {HTMLElement[]}
+ */
+export const getObjectListElements = function() {
 
     const heading = getHeading();
 
@@ -14,22 +19,36 @@ export const getElements = function() {
     return body;
 }
 
+/**
+ * Get the h2 heading for the object list wrapper.
+ * @returns {HTMLHeadingElement}
+ */
 const getHeading = function() {
+
+    // No heading for main object pages.
     if (window.layout == 'page') {
         return null;
     }
 
-    return geth2Element();
+    return getHeadingElement();
 }
 
-const geth2Element = function() {
+/**
+ * Get the h2 heading for the object list wrapper.
+ * @returns {HTMLHeadingElement}
+ */
+const getHeadingElement = function() {
     const h2Element = document.createElement('h2');
-    h2Element.textContent = geth2TextContent();
+    h2Element.textContent = getHeadingTextContent();
 
     return h2Element;
 }
 
-const geth2TextContent = function() {
+/**
+ * Get the text content for the h2 heading for the object list wrapper.
+ * @returns {string}
+ */
+const getHeadingTextContent = function() {
 
     let objectType = '';
 
@@ -48,17 +67,37 @@ const geth2TextContent = function() {
     return `Gerelateerde ${objectType}`;
 }
 
+/**
+ * Get the body of the objects list wrapper.
+ * @returns {HTMLElement[]}
+ */
 const getBody = function() {
 
+    // Location-location list has a special body to accommodate for super-, sub-, and nearby locations.
     if (window.layout === 'location' && window.listType === 'location') {
         return getLocationLocationBody()
     }
+    else {
+        // Make a list so we can loop through it later.
+        return [getGenericBody()];
+    }
+}
+
+/**
+ * Get a generic body of the objects list wrapper.
+ * @returns {HTMLDivElement}
+ */
+const getGenericBody = function() {
 
     const objects = getObjects();
 
-    return [getObjectList(objects)];
+    return getObjectList(objects);
 }
 
+/**
+ * Get a location-location body for the objects list wrapper.
+ * @returns {HTMLElement[]}
+ */
 const getLocationLocationBody = function() {
     const elements = [];
 
