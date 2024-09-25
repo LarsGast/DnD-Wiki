@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const locationElements = getLocationElements();
 
     // Add all the elements to the wrapper div.
-    const locationsDiv = document.getElementById('locations');
+    const container = document.getElementById('location-list-container');
     locationElements.forEach(function(element) {
-        locationsDiv.appendChild(element);
+        container.appendChild(element);
     })
 });

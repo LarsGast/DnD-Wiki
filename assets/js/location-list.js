@@ -1,5 +1,6 @@
 import { getLocations } from './locations-getter.js';
 import { getListItem } from "./generic-list-element.js";
+import { getObjectList } from "./generic-list.js";
 
 /**
  * Get all the elements (headers, lists) needed to create the locations section.
@@ -69,17 +70,17 @@ const getLocationPageElements = function() {
     elements.push(getHeading3Element('Super-locaties'));
 
     const superLocations = getLocations('super');
-    elements.push(getLocationList(superLocations));
+    elements.push(getObjectList(superLocations));
 
     elements.push(getHeading3Element('Sub-locaties'));
 
     const subLocations = getLocations('sub');
-    elements.push(getLocationList(subLocations));
+    elements.push(getObjectList(subLocations));
     
     elements.push(getHeading3Element('Locaties in de buurt'));
 
     const nearbyLocations = getLocations('nearby');
-    elements.push(getLocationList(nearbyLocations));
+    elements.push(getObjectList(nearbyLocations));
 
     return elements;
 }
@@ -101,34 +102,5 @@ const getHeading3Element = function(textContent) {
  */
 const getGenericPageElements = function() {
     const allLocations = getLocations();
-    return [getLocationList(allLocations)];
-}
-
-/**
- * Gets a list containing the given locations.
- * @param {object[]} locations 
- * @returns {HTMLUListElement} A list with a single dash (-) if the locations parameter is empty. Otherwise, a ul element containing links to all given locations.
- */
-const getLocationList = function(locations) {
-
-    const listElement = document.createElement('ul');
-
-    if (locations.length === 0) {
-        const li = document.createElement('li');
-        li.textContent = '-';
-        listElement.appendChild(li);
-        
-        return listElement;
-    }
-
-    // Sort by name.
-    locations = locations.sort((a, b) => a.name.localeCompare(b.name));
-
-    // Create and fill list.
-    locations.forEach(function(location) {
-        const li = getListItem(location);
-        listElement.appendChild(li);
-    });
-
-    return listElement;
+    return [getObjectList(allLocations)];
 }
