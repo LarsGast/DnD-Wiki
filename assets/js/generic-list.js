@@ -3,14 +3,40 @@ import { getListItem } from './generic-list-element.js';
 /**
  * Fill the list that's displayed on the page with all the related objects.
  * @param {object[]} objects 
- * @returns {HTMLUListElement}
+ * @returns {HTMLDivElement}
  */
 export const getObjectList = function(objects) {
 
-    // Sort the objects accordingly.
-    objects = sortObjects(objects);
+    const wrapper = document.createElement('div');
 
-    return getUlElement(objects);
+    wrapper.appendChild(getPublishedList(objects));
+    wrapper.appendChild(getUnPublishedList(objects));
+
+    return wrapper
+}
+
+/**
+ * Get a list containing all published objects.
+ * @param {object[]} objects 
+ * @returns {HTMLUListElement}
+ */
+const getPublishedList = function(objects) {
+    let publishedObjects = objects.filter(object => object.published);
+    publishedObjects = sortObjects(publishedObjects);
+    return getUlElement(publishedObjects);
+}
+
+/**
+ * Get a list containing all unpublished objects.
+ * @param {object[]} objects 
+ * @returns {HTMLUListElement}
+ */
+const getUnPublishedList = function(objects) {
+    let unPublishedObjects = objects.filter(object => !object.published);
+    unPublishedObjects = sortObjects(unPublishedObjects);
+    const ulElement = getUlElement(unPublishedObjects);
+    ulElement.classList.add('unpublished');
+    return ulElement;
 }
 
 /**

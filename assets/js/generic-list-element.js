@@ -7,10 +7,7 @@ import { getCharacterSummaryWrapper } from './character-list-element-extension.j
  */
 export const getListItem = function(object) {
     const listItem = document.createElement('li');
-
-    if (!object.published){
-        listItem.classList.add('unpublished');
-    }
+    
     listItem.appendChild(getAnchorElement(object));
 
     return listItem;
