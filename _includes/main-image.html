@@ -1,27 +1,24 @@
-<!-- Input parameters -->
-{% assign filterType = include.filterType %}
-{% assign filterName = include.filterName %}
+<script type="module">
+    import { addMainImageToPage } from "{{ '/assets/js/main-image.js' | relative_url }}";
 
-{% if filterType == "location" %}
-    {% assign imageLinks = site.data.location-image-link | where:"locationName", filterName %}
-    {% assign headerImageLink = imageLinks | where:"isHeaderImage", true | first %}
-    {% if headerImageLink %}
-        {% assign image = site.data.images | where:"name", headerImageLink.imageName | first %}
-    {% endif %}
-{% elsif filterType == "character" %}
-    {% assign imageLinks = site.data.image-character-link | where:"characterName", filterName %}
-    {% assign headerImageLink = imageLinks | where:"isHeaderImage", true | first %}
-    {% if headerImageLink %}
-        {% assign image = site.data.images | where:"name", headerImageLink.imageName | first %}
-    {% endif %}
-{% elsif filterType == "item" %}
-    {% assign imageLinks = site.data.item-image-link | where:"itemName", filterName %}
-    {% assign headerImageLink = imageLinks | where:"isHeaderImage", true | first %}
-    {% if headerImageLink %}
-        {% assign image = site.data.images | where:"name", headerImageLink.imageName | first %}
-    {% endif %}
-{% endif %}
+    let links = null;
+    switch (window.layout) {
+        case 'campaign':
+            links = {{ site.data.campaign-image-link | jsonify }};
+            break;
+        case 'character':
+            links = {{ site.data.image-character-link | jsonify }};
+            break;
+        case 'location':
+            links = {{ site.data.location-image-link | jsonify }};
+            break;
+        case 'item':
+            links = {{ site.data.item-image-link | jsonify }};
+            break;
+    }
 
-{% if image %}
-    <img src="../images/{{ image.name }}.{{ image.fileType}}" alt="{{ image.alt }}" height="{{ image.height }}" width="{{ image.width }}"/>
-{% endif %}
+    addMainImageToPage(
+        {{ site.data.images | jsonify }},
+        links
+    );
+</script>
