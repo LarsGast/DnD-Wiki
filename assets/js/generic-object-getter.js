@@ -55,13 +55,7 @@ const getObjectNamesForDifferentAsLayout = function(metadata) {
         return getCharacterItemNames(metadata);
     }
 
-    const links = window.links;
-
-    // Get all location links to this object.
-    const relatedLinks = links.filter(link => link[`${window.layout}Name`] === window.currentObjectName);
-
-    // Get only the names, so we can use these to get full location objects.
-    return relatedLinks.map(link => link[`${window.listType}Name`]);
+    return getGenericObjectNamesForDifferentAsLayout();
 }
 
 /**
@@ -75,6 +69,48 @@ const getObjectNamesForSameAsLayout = function(metadata) {
     if (window.layout === 'location') {
         return getLocationLocationNames(metadata);
     }
+
+    return getGenericObjectNamesForSameAsLayout();
+}
+
+/**
+ * Get the names of all the related objects that use a list type that is not the same as the page layout.
+ * Not all layout-listType combinations work for this.
+ * @returns {string[]}
+ */
+const getGenericObjectNamesForDifferentAsLayout = function() {
+    const links = window.links;
+
+    // Get all location links to this object.
+    const relatedLinks = links.filter(link => link[`${window.layout}Name`] === window.currentObjectName);
+
+    // Get only the names, so we can use these to get full location objects.
+    return relatedLinks.map(link => link[`${window.listType}Name`]);
+}
+
+/**
+ * Get the names of the items related to the given character.
+ * Differentiate between items currently owned by the character, and items owned by the character in the past.
+ * @param {boolean} current Wether we should get all the items currently owned by the character, or all the items owned by the character in the past
+ * @returns {string[]}
+ */
+const getCharacterItemNames = function(current) {
+
+    const links = window.links;
+
+    // Get all location links to this object.
+    const relatedLinks = links.filter(link => link[`${window.layout}Name`] === window.currentObjectName && link.current === current);
+
+    // Get only the names, so we can use these to get full location objects.
+    return relatedLinks.map(link => link[`${window.listType}Name`]);
+}
+
+/**
+ * Get the names of all the related objects that use a list type that is the same as the page layout.
+ * Not all layout-listType combinations work for this.
+ * @returns {string[]}
+ */
+const getGenericObjectNamesForSameAsLayout = function() {
 
     const links = window.links;
 
@@ -129,21 +165,4 @@ const getLocationLocationNames = function(superSubOrNearby) {
         // Remove dupes.
         return [...new Set(locationNames)];
     }
-}
-
-/**
- * Get the names of the items related to the given character.
- * Differentiate between items currently owned by the character, and items owned by the character in the past.
- * @param {boolean} current Wether we should get all the items currently owned by the character, or all the items owned by the character in the past
- * @returns {string[]}
- */
-const getCharacterItemNames = function(current) {
-
-    const links = window.links;
-
-    // Get all location links to this object.
-    const relatedLinks = links.filter(link => link[`${window.layout}Name`] === window.currentObjectName && link.current === current);
-
-    // Get only the names, so we can use these to get full location objects.
-    return relatedLinks.map(link => link[`${window.listType}Name`]);
 }
