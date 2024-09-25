@@ -1,7 +1,7 @@
 export const getLocations = function(superSubOrNearby) {
 
     switch(window.layout) {
-        case null:
+        case 'page':
             return getAllLocations();
         case 'location':
             return getLocationLocations(superSubOrNearby);

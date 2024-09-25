@@ -19,7 +19,7 @@ export const getLocationElements = function() {
 
 const getHeader = function() {
     switch (window.layout) {
-        case null:
+        case 'page':
             return null;
         case 'campaign':
             return getHeaderElement('Locaties');

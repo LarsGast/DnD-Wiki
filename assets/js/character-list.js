@@ -2,6 +2,8 @@ import { getListItem } from './generic-list-element.js';
 import { getRelatedCharacters } from './related-characters.js';
 
 document.addEventListener("DOMContentLoaded", function() {
+    
+    window.listType = 'characters';
 
     // Get all the related characters to this object.
     // This includes all information about the character as the characters.yml file specifies.
@@ -23,7 +25,7 @@ const fillList = function(characters) {
     // Fill the page with all info required for a link to all related characters.
     const uList = document.getElementsByClassName('character-list')[0];
     characters.forEach(function(character) {
-        const listItem = getListItem(character, 'character');
+        const listItem = getListItem(character);
         uList.appendChild(listItem);
     });
 }

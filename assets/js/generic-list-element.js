@@ -5,13 +5,13 @@ import { getCharacterSummaryWrapper } from './character-list-element.js';
  * @param {object} character 
  * @returns 
  */
-export const getListItem = function(object, objectType) {
+export const getListItem = function(object) {
     const listItem = document.createElement('li');
 
     if (!object.visible){
         listItem.classList.add('invisible');
     }
-    listItem.appendChild(getAnchorElement(object, objectType));
+    listItem.appendChild(getAnchorElement(object));
 
     return listItem;
 }
@@ -20,14 +20,14 @@ export const getListItem = function(object, objectType) {
  * @param {object} location 
  * @returns {HTMLElement}
  */
-const getAnchorElement = function(object, objectType) {
+const getAnchorElement = function(object) {
 
     const pageLink = object.customLink ?? object.name.replace(/\s+/g, '-').toLowerCase();
 
     const anchor = document.createElement('a');
-    anchor.href = `../${window.layout}s/${pageLink}`;
+    anchor.href = `../${window.listType}/${pageLink}`;
     
-    if (objectType === 'character') {
+    if (window.listType === 'characters') {
         anchor.appendChild(getCharacterSummaryWrapper(object));
     }
     else {
