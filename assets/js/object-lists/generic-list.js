@@ -46,7 +46,7 @@ const getUnPublishedList = function(objects) {
  */
 const sortObjects = function(objects) {
 
-    if (window.listType === 'campaign'){
+    if (window.listType === 'campaign') {
         return objects.sort((a, b) => a.order - b.order);
     }
 
@@ -109,6 +109,10 @@ const getFilledList = function(objects) {
 const addClassesToList = function(uList) {
     if (window.listType === 'character') {
         uList.classList.add('character-list');
+        uList.classList.add('no-style-list');
+        uList.classList.add('no-style-link-group');
+    }
+    if (window.listType === 'image') {
         uList.classList.add('no-style-list');
         uList.classList.add('no-style-link-group');
     }

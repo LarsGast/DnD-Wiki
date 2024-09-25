@@ -8,474 +8,553 @@
 # height - string - The height of the image in pixels.
 
 - name: Goblin
+  published: true
   fileType: png
   alt: Goblin
   width: 539
   height: 557
 
 - name: Goblin Gang
+  published: true
   fileType: png
   alt: Drie Goblins naast elkaar
   height: 219
   width: 295
 
 - name: Lab Coat (worn)
+  published: true
   fileType: png
   alt: Drie Goblins naast elkaar
   width: 500
   height: 500
 
 - name: Amy Aria
+  published: true
   fileType: png
   alt: Amy Aria in haar winkel, Amy's Potions
   width: 219
   height: 521
 
 - name: Arikikuchiariku
+  published: true
   fileType: jpg
   alt: Arikikuchiariku in piraten kleding in een drukke haven
   width: 1024
   height: 1024
 
 - name: Ash Dragonblade
+  published: true
   fileType: png
   alt: Ash Dragonblade met zijn zelf gemaakte zwaard
   width: 450
   height: 625
 
 - name: Falconreach
+  published: true
   fileType: png
   alt: De straten van Falconreach, met Ash Dragonblade en Twilly. Op de voorgrond zijn de Falconreach Herberg en Yulgar's Smithy te zien. Op de achtergrond is de Falconreach toren en de zee te zien.
   width: 1055
   height: 628
 
 - name: Azura Zingzwaard
+  published: true
   fileType: jpeg
   alt: Azura Zingzwaard
   width: 474
   height: 910
 
 - name: Barnaby Kraai
+  published: true
   fileType: png
   alt: Barnaby Kraai
   width: 500
   height: 500
 
 - name: Dazlyn Grayshard
+  published: true
   fileType: jpg
   alt: Portret van Dazlyn Grayshard, gekleed in mijnwerkers kleding
   width: 1178
   height: 1500
 
 - name: Elmar Barthen
+  published: true
   fileType: png
   alt: Portret van Elmar Barthen, gekleed voor zijn werk en met een dolk voor bescherming
   width: 282
   height: 640
 
 - name: Gaston de Kok
+  published: true
   fileType: jpg
   alt: Gaston de Kok die in chefs kleding eten aan het voorbereiden is. Zijn gespierde armen zijn goed te zien door zijn korte mouwen.
   width: 700
   height: 936
 
 - name: Grog Steenvuist
+  published: true
   fileType: png
   alt: Grog Steenvuist die klaar staat om een gevecht aan te gaan
   width: 472
   height: 464
 
 - name: Halia Thornton
+  published: true
   fileType: jpg
   alt: Portret van Halia Thornton
   width: 407
   height: 640
 
 - name: IJzeren Pot
+  published: true
   fileType: jpg
   alt: Een ordinaire ijzeren pot
   width: 2000
   height: 2000
 
 - name: Isabella Swift
+  published: true
   fileType: jpg
   alt: Isabella Swift met een uil op haar schouder en een schrijfboek in haar hand
   width: 542
   height: 767
 
 - name: Kaelen Schaduwholster
+  published: true
   fileType: png
   alt: Kaelen Schaduwholster in het donker gekleed, met een dolk op hun heup en een spreuk in hun hand 
   width: 542
   height: 767
 
 - name: Kapitein Groenbaard
+  published: true
   fileType: jpg
   alt: Kapitein Groenbaard in piraten kleding en met zijn houten poot, haak voor een hand, ooglapje, en zijn iconische groene baard
   width: 949
   height: 2048
 
 - name: Koning Splurt Lengte
+  published: true
   fileType: png
   alt: Koning Splurt naast een gewone Goblin, hij is twee keer zo lang en twee keer zo breed
   width: 582
   height: 429
 
 - name: Koning Splurt
+  published: true
   fileType: png
   alt: Koning Splurt met de Circlet of Enlarge Reduce op zijn hoofd
   width: 524
   height: 366
 
 - name: Circlet of Enlarge Reduce
+  published: true
   fileType: png
   alt: De Circlet of Enlarge Reduce. In het midden zit één grote edelsteen, en één kleine.
   width: 500
   height: 500
 
 - name: Kosharakar Coemeydus
+  published: true
   fileType: jpg
   alt: Kosharakar Coemeydus, klaar voor een gevecht. Hij is gekleed met stylen uit verschillende tijden. Hij heeft zijn staf in de hand, moderne schoenen aan, en een rode doek over zijn gezicht. Zijn ogen gloeien van magie.
   width: 1080
   height: 1510
 
 - name: Laranlor
+  published: true
   fileType: jpg
   alt: Laranlor Cormearil, als adel gekleed. Hij bereid een spreuk voor in zijn rechter hand.
   width: 1024
   height: 1024
 
 - name: Linene Graywind
+  published: true
   fileType: png
   alt: Linene Graywind die twee muntjes op gooit. Ze straalt zelfverzekerdheid en geluk uit.
   width: 850
   height: 1549
 
 - name: Lushikukukanda
+  published: true
   fileType: jpg
   alt: Lushikukukanda, de zwarte Dragonborn met een harnas aan. Imponerend kijkt hij toe hoe een gevecht uitbreekt.
   width: 1024
   height: 1024
 
 - name: Nettie Bettie
+  published: true
   fileType: png
   alt: Nettie Bettie met de Staff of Average Intelligence
   width: 407
   height: 354
 
 - name: Staff of Average Intelligence
+  published: true
   fileType: png
   alt: De Staff of Average Intelligence, gemaakt van hout
   width: 299
   height: 834
 
 - name: Norbus Ironrune
+  published: true
   fileType: jpeg
   alt: Portret van Norbus Ironrune, gekleed in mijnwerkers kleding
   width: 564
   height: 798
 
 - name: PEKKA
+  published: true
   fileType: jpg
   alt: P.E.K.K.A in gevechtspositie
   width: 1080
   height: 1256
 
 - name: Robina & Twilly
+  published: true
   fileType: png
   alt: Robina the Hood met Twilly op haar schouder
   width: 506
   height: 493
 
 - name: Robina full body
+  published: true
   fileType: png
   alt: Robina the Hood met Haar boog klaar voor gebruik
   width: 566
   height: 953
 
 - name: Theodas
+  published: true
   fileType: jpg
   alt: Theodas, die met veel ervaring rust zijn omgeving aan het scannen is
   width: 1024
   height: 1024
 
 - name: Twilly
+  published: true
   fileType: png
   alt: Twilly met hoopvolle ogen en zijn eigen stokje
   width: 533
   height: 669
 
 - name: Yulgar Lark
+  published: true
   fileType: png
   alt: Yulgar Lark in zijn winkel, Yulgar's Smithy
   width: 255
   height: 438
 
 - name: Drakengreep
+  published: true
   fileType: jpg
   alt: Het vliegende eiland Drakengreep, met één van de zwaarst bewaakte gevangenissen in Greenguard
   width: 939
   height: 939
 
 - name: Dwarven Excavation Quest
+  published: true
   fileType: png
   alt: De Dwarven Excavation Quest, die op het noticeboard in Phandalin hing
   width: 1673
   height: 2164
 
 - name: Dwarven Excavation
+  published: true
   fileType: jpg
   alt: De plattegrond van de Dwarven Excavation tempel, waar alle kamers en geheime deuren te zien zijn
   width: 2888
   height: 1838
 
 - name: Ochre Jelly
+  published: true
   fileType: png
   alt: Een Ochre Jelly (een oranje slijm monster) dat een aanvalspositie inneemt
   width: 1000
   height: 853
 
 - name: Orc
+  published: true
   fileType: jpeg
   alt: Een Orc in leren harnas
   width: 474
   height: 582
 
 - name: The Goblin Community Room
+  published: true
   fileType: png
   alt: De ruimte in de Goblin Schuilplaats waar Goblins normaal gesproken samenkomen. De tafels zijn aan de kant geschoven en de stoelen staan opgesteld alsof er een bruiloft plaats gaat vinden.
   width: 1260
   height: 1190
 
 - name: The Goblin Hangout
+  published: true
   fileType: png
   alt: De ruimte in de Goblin Schuilplaats waar Goblins kunnen relaxen. Er staan tafels waar spellen kunnen worden gespeeld en er zijn veel dozen te zien.
   width: 1820
   height: 1050
 
 - name: Magic Center Entrance
+  published: true
   fileType: jpg
   alt: De ingang van het magisch centrum met 5 stenen (water, vuur, aarde, brein, en licht) en 5 gangen
   width: 1080
   height: 952
 
 - name: Magic Center Fire Room
+  published: true
   fileType: jpg
   alt: De vuur ruimte van het magisch centrum
   width: 1052
   height: 1004
 
 - name: Magic Center Mind Room
+  published: true
   fileType: jpg
   alt: De brein ruimte van het magisch centrum
   width: 1048
   height: 840
 
 - name: Magic Center Nature Room
+  published: true
   fileType: jpg
   alt: De natuur ruimte van het magisch centrum
   width: 1160
   height: 848
 
 - name: Magic Center Sun Room
+  published: true
   fileType: jpg
   alt: De zon ruimte van het magisch centrum
   width: 1040
   height: 1036
 
 - name: Magic Center Water Room
+  published: true
   fileType: jpg
   alt: De water ruimte van het magisch centrum
   width: 920
   height: 836
 
 - name: Chess puzzle
+  published: true
   fileType: png
   alt: Een schaakpuzzel met maar één oplossing
   width: 949
   height: 949
 
 - name: Forest Battlemap
+  published: true
   fileType: jpg
   alt: Een plattegrond van de binnenste kamer van het magisch centrum
   width: 2200
   height: 1600
 
 - name: Crawling Claw
+  published: true
   fileType: jpg
   alt: Een Crawling Claw, een losse, rottende hand die zijn eigen wil heeft
   width: 626
   height: 788
 
 - name: Flying Snake
+  published: true
   fileType: jpeg
   alt: Een vliegende slang gewikkeld om de arm van een persoon
   width: 615
   height: 1000
 
 - name: Flying Sword
+  published: true
   fileType: png
   alt: Een vliegend zwaard. Lijkt precies op een gewoon zwaard
   width: 594
   height: 1000
 
 - name: Ghoul
+  published: true
   fileType: png
   alt: Een Ghoul die op een losse arm van een persoon aan her kauwen is
   width: 583
   height: 1000
 
 - name: Phandalin
+  published: true
   fileType: jpg
   alt: Een plattegrond van Phandalin, waar alle belangrijke bezienswaardigheden aan zijn gegeven
   width: 2550
   height: 1830
 
 - name: Gnomengarde Quest
+  published: true
   fileType: png
   alt: De Gnomengarde Quest, die op het noticeboard in Phandalin hing
   width: 1649
   height: 2155
 
 - name: Umbrage Hill Quest
+  published: true
   fileType: png
   alt: De Umbrage Hill Quest, die op het noticeboard in Phandalin hing
   width: 1659
   height: 2142
 
 - name: Tempel van ^.^ laatste kamer
+  published: true
   fileType: jpg
   alt: De diepste kamer van de Tempel van ^.^, waar de belangrijkste Zand-Elven zijn begraven
   width: 863
   height: 1100
 
 - name: Tempel van ^.^ trap room
+  published: true
   fileType: jpg
   alt: En kamer vol vallen in de Tempel van ^.^, met pilaren en vlammenwerpers de doorgang bewaken
   width: 1065
   height: 1600
 
 - name: Giant Scorpion
+  published: true
   fileType: jpeg
   alt: Een reuze schorpioen, met grote klauwen en een gevaarlijke angel
   width: 1065
   height: 1600
 
 - name: Airship
+  published: true
   fileType: jpg
   alt: Een luchtschip van het rijk van Greenguard van boven af
   width: 1227
   height: 1515
 
 - name: Airship Layers
+  published: true
   fileType: jpg
   alt: De verschillende lagen van een luchtschip van het rijk van Greenguard
   width: 4176
   height: 1584
 
 - name: Reuze Aasgier
+  published: true
   fileType: jpeg
   alt: Een reuze aasgier die geduldig zit te wachten op een mogelijke prooi
   width: 474
   height: 335
 
 - name: Dust of Dryness
+  published: true
   fileType: png
   alt: Een zakje met Dust of Dryness
   width: 512
   height: 487
 
 - name: Sending Stones
+  published: true
   fileType: jpeg
   alt: Twee Sending Stones, stenen met vrolijke gezichten
   width: 474
   height: 474
 
 - name: Tias Kompas
+  published: true
   fileType: png
   alt: Tia's Kompas, een kompas dat altijd wijst naar dat wat je het meest verlangd
   width: 474
   height: 243
 
 - name: Wind Fan
+  published: true
   fileType: png
   alt: Een Wind Fan, uitgeklapt waardoor de schilderingen goed te zien zijn
   width: 500
   height: 500
 
 - name: Bloodwell Vial
+  published: true
   fileType: jpg
   alt: Een Bloodwell Vial aan een kettinkje. Gouden handen houden de rode flesjes vast
   width: 736
   height: 736
 
 - name: Cryovain
+  published: true
   fileType: jpg
   alt: De jonge witte draak Cryovain, die op het punt staat om op te stijgen
   width: 1024
   height: 683
 
 - name: Grijssteen
+  published: false
   fileType: jpg
   alt: Een vogelvlucht zicht van het dorp Grijssteen
   width: 642
   height: 600
 
 - name: Gnomengarde
+  published: false
   fileType: png
   alt: Een plattegrond van Gnomengarde, waar alle kamers te zien en gemarkeerd zijn
   width: 2888
   height: 1838
 
 - name: Mimic
+  published: false
   fileType: jpeg
   alt: Een mimic vermomd als een schatkist, die op het punt staat om aan te vallen
   width: 474
   height: 266
 
 - name: Clockwork Amulet
+  published: false
   fileType: jpeg
   alt: Een koperen clockwork amulet
   width: 436
   height: 329
 
 - name: Hat of Wizardry
+  published: false
   fileType: png
   alt: Een Hat of Wizardry
   width: 296
   height: 171
 
 - name: Pole of Collapsing
+  published: false
   fileType: png
   alt: Een houten Pole of Collapsing
   width: 522
   height: 383
 
 - name: Wand of Pyrotechnics
+  published: false
   fileType: jpeg
   alt: Een Wand of Pyrotechnics
   width: 1000
   height: 1000
 
 - name: kara de felle
+  published: false
   fileType: png
   alt: Kara de Felle, in strijdkleding en met haar beroemde bijl
   width: 500
   height: 665
 
 - name: liora de zachte
+  published: false
   fileType: png
   alt: Liora de Zachte, in haar gouden jurk, gestationeerd in de lucht met behulp van haar vleugels
   width: 660
   height: 736
 
 - name: eldric de wijze
+  published: false
   fileType: png
   alt: Eldric de Wijze, met zijn boek en staf, op het punt om een spreuk uit te voeren
   width: 564
   height: 550
 
 - name: vlinder trance
+  published: false
   fileType: png
   alt: De Vlinder Trance, een ketting in de form van een vlinder, met paarse kleuren
   width: 493

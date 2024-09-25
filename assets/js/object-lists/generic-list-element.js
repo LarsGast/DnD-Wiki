@@ -1,5 +1,6 @@
 import { getCharacterSummaryWrapper } from './character-list-element-extension.js';
 import { getComment } from './character-item-list-element-extension.js';
+import { getImageElement } from './image-list-element-extension.js';
 
 /**
  * Get a single object link element for the list.
@@ -25,7 +26,7 @@ export const getListItem = function(object) {
  */
 const getAnchorElement = function(object) {
 
-    const pageLink = object.customLink ?? object.name.replace(/\s+/g, '-').toLowerCase();
+    const pageLink = getPageLink(object)
 
     const anchor = document.createElement('a');
     anchor.href = `../${window.listType}s/${pageLink}`;
@@ -34,9 +35,21 @@ const getAnchorElement = function(object) {
     if (window.listType === 'character') {
         anchor.appendChild(getCharacterSummaryWrapper(object));
     }
+    else if (window.listType === 'image'){
+        anchor.appendChild(getImageElement(object));
+    }
     else {
         anchor.textContent = object.name;
     }
 
     return anchor;
+}
+
+const getPageLink = function(object) {
+
+    if (window.listType === 'image') {
+        return `${object.name}.${object.fileType}`;
+    }
+
+    return object.customLink ?? object.name.replace(/\s+/g, '-').toLowerCase();
 }

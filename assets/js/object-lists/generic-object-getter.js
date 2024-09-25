@@ -113,12 +113,12 @@ const getCharacterItemNames = function(current) {
  * @param {boolean} header 
  * @returns {string[]}
  */
-const getObjectImageNames = function(isHeaderImage) {
+const getObjectImageNames = function(onlyHeaderImage) {
 
     const links = window.links;
 
     // Get all location links to this object.
-    const relatedLinks = links.filter(link => link[`${window.layout}Name`] === window.currentObjectName && link.isHeaderImage === isHeaderImage);
+    const relatedLinks = links.filter(link => link[`${window.layout}Name`] === window.currentObjectName && (!onlyHeaderImage || link.isHeaderImage));
 
     // Get only the names, so we can use these to get full location objects.
     return relatedLinks.map(link => link[`${window.listType}Name`]);

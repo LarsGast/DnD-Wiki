@@ -1,40 +1,28 @@
-<!-- Input parameters -->
-{% assign filterType = include.filterType %}
-{% assign filterName = include.filterName %}
+<div id="image-list-container"></div>
 
-<!-- Initialize an empty array for image names -->
-{% assign imageNames = '' | split: ',' %}
+<script type="module">
+    import { fillObjectListDiv } from "{{ '/assets/js/object-lists/generic-list-builder.js' | relative_url }}";
 
-{% if filterType == "location" %}
-    {% for imageLink in site.data.location-image-link %}
-        {% if imageLink.locationName == filterName %}
-            {% assign imageNames = imageNames | push: imageLink.imageName %}
-        {% endif %}
-    {% endfor %}
-{% elsif filterType == "character" %}
-    {% for imageLink in site.data.image-character-link %}
-        {% if imageLink.characterName == filterName %}
-            {% assign imageNames = imageNames | push: imageLink.imageName %}
-        {% endif %}
-    {% endfor %}
-{% elsif filterType == "item" %}
-    {% for imageLink in site.data.item-image-link %}
-        {% if imageLink.itemName == filterName %}
-            {% assign imageNames = imageNames | push: imageLink.imageName %}
-        {% endif %}
-    {% endfor %}
-{% else %}
-    <!-- No filtering, get all image names -->
-    {% for image in site.data.images %}
-        {% assign imageNames = imageNames | push: image.name %}
-    {% endfor %}
-{% endif %}
+    let links = null;
+    switch (window.layout) {
+        case 'campaign':
+            links = {{ site.data.campaign-image-link | jsonify }};
+            break;
+        case 'character':
+            links = {{ site.data.image-character-link | jsonify }};
+            break;
+        case 'location':
+            links = {{ site.data.location-image-link | jsonify }};
+            break;
+        case 'item':
+            links = {{ site.data.item-image-link | jsonify }};
+            break;
+    }
 
-{% if imageNames.size == 0 %}
-    -
-{% else %}
-    {% for imageName in imageNames %}
-        {% assign image = site.data.images | where:"name", imageName | first %}
-        <img src="../images/{{ image.name }}.{{ image.fileType }}" alt="{{ image.alt }}" height="{{ image.height }}" width="{{ image.width }}"/>
-    {% endfor %}
-{% endif %}
+    fillObjectListDiv(
+        {{ site.data.images | jsonify }},
+        links,
+        'image',
+        'image-list-container'
+    );
+</script>

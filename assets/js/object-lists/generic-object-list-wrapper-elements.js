@@ -81,6 +81,10 @@ const getBody = function() {
     else if (window.layout === 'character' && window.listType === 'item') {
         return getCharacterItemBody();
     }
+    // Image list has a special body to create actual image elements.
+    else if (window.listType === 'image') {
+        return [getImageBody()];
+    }
     else {
         // Make a list so we can loop through it later.
         return [getGenericBody()];
@@ -136,6 +140,17 @@ const getCharacterItemBody = function() {
     elements.push(getObjectList(pastItems));
 
     return elements;
+}
+
+/**
+ * Get a character-item body for the objects list wrapper.
+ * @returns {HTMLElement[]}
+ */
+const getImageBody = function() {
+
+    const objects = getObjects(false);
+
+    return getObjectList(objects);
 }
 
 /**
