@@ -32,9 +32,9 @@ layout: default
     <h3>Heden</h3>
     {% include campaign-list.html filterType="location" filterName=page.title isFlashback=false %}
 
-    {% include character-list.html currentObjectType="location" currentObjectName=page.title %}
+    {% include character-list.html %}
 
-    {% include location-list.html currentObjectType="location" currentObjectName=page.title locationType="super" %}
+    {% include location-list.html %}
     
     <h2>Items</h2>
     {% include item-list.html filterType="location" filterName=page.title %}

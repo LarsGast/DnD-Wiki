@@ -22,10 +22,9 @@ layout: default
 
     <hr/>
 
-    {% include character-list.html currentObjectType="campaign" currentObjectName=page.title %}
+    {% include character-list.html  %}
     
-    <h2>Locaties</h2>
-    {% include location-list.html currentObjectType="campaign" currentObjectName=page.title %}
+    {% include location-list.html  %}
     
     <h2>Items</h2>
     {% include item-list.html filterType="campaign" filterName=page.title %}

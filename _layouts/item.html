@@ -29,9 +29,9 @@ layout: default
     <h3>Heden</h3>
     {% include campaign-list.html filterType="item" filterName=page.title isFlashback=false %}
 
-    {% include character-list.html currentObjectType="item" currentObjectName=page.title %}
+    {% include character-list.html %}
     
-    {% include location-list.html currentObjectType="item" currentObjectName=page.title %}
+    {% include location-list.html %}
 
     <h2>Galerij</h2>
     {% include image-list.html filterType="item" filterName=page.title %}
