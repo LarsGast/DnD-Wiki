@@ -8,7 +8,6 @@ export const getRelatedCharacters = function() {
     const relatedCharacterNames = getRelatedCharacterNames();
     
     // Get the actual character objects.
-    // Remove invisible characters, unless we want to see them (showInvisible: true in _config.yml).
     const charactersData = window.charactersData;
     const relatedCharacters = charactersData.filter(character => 
         relatedCharacterNames.includes(character.name)

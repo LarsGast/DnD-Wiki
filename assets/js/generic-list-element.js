@@ -8,8 +8,8 @@ import { getCharacterSummaryWrapper } from './character-list-element.js';
 export const getListItem = function(object) {
     const listItem = document.createElement('li');
 
-    if (!object.visible){
-        listItem.classList.add('invisible');
+    if (!object.published){
+        listItem.classList.add('unpublished');
     }
     listItem.appendChild(getAnchorElement(object));
 

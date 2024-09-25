@@ -13,7 +13,7 @@ In Gnomengarde wonen twintig rots kabouters, waaronder koning Gnerkli en koning 
 ## Wilde magie
 Wilde magie is een soort magie die niet onder controle kan worden gehouden, en Gnomengarde is daar al lang een bron van. Wanneer een wezen ergens op de Gnomengarde-kaart een spreuk uitvoert, kan er een bijkomend effect optreden.
 
-<div class="invisible">
+<div class="unpublished">
     <h2>DM</h2>
 
     <h3>G1 Mistige beek en paddenstoel eilanden</h3>

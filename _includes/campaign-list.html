@@ -41,9 +41,9 @@
         {% for campaign in campaigns %}
             {% if campaign.isFlashback == isFlashback %}
                 {% assign className = '' %}
-                {% if campaign.visible %}
+                {% if campaign.published %}
                 {% else %}
-                    {% assign className = 'invisible' %}
+                    {% assign className = 'unpublished' %}
                 {% endif %}
                 <li class="{{className}}">
                     <a href="../campaigns/{% if campaign.customLink %}{{ campaign.customLink }}{% else %}{{ campaign.name | replace: ' ', '-' | downcase }}{% endif %}">

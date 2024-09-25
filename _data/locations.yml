@@ -1,18 +1,18 @@
 # This file contains all location that have appeared in all DnD campaigns on the site.
 # This file may also contain location that have not appeared in the story yet.
-# If this is the case, the location should have the key "visible" set to false.
+# If this is the case, the location should have the key "published" set to false.
 # This way it does not appear in any links.
 
 # The following key-value-pairs are available for a location:
 # name - string - The name of the location
-# visible - boolean - If the location should be visible and navigatable on the site
+# published - boolean - If the location should be visible and navigatable on the site
 # customLink - string - optional - A custom link (without extension) for location with names that create invalid links
 # properties - Array of properties - A list of identifiers to display at the top of a location page. The properties will be displayed in specified order.
 #   name - string - The name of the identifier
 #   value - string - The value of the identifier
 
 - name: Drakengreep
-  visible: true
+  published: true
   properties:
     - name: Soort
       value: Zwevend eiland
@@ -32,7 +32,7 @@
       value: De bewoners van het eiland, voornamelijk bewakers en gevangenen, hebben een cultuur van discipline, een strikt regime en omgaan met de uitdagingen van hun isolatie
 
 - name: Dwarven Excavation
-  visible: true
+  published: true
   properties:
     - name: Soort
       value: Tempel
@@ -46,7 +46,7 @@
       value: Ooit gebruikt als tempel van de boze god van de hebzucht, Abbathor
 
 - name: Falconreach
-  visible: true
+  published: true
   properties:
     - name: Soort
       value: Dorp
@@ -66,7 +66,7 @@
       value: Iedereen is welkom
 
 - name: Goblin Schuilplaats
-  visible: true
+  published: true
   properties:
     - name: Soort
       value: Boomhut
@@ -86,7 +86,7 @@
       value: Ieder voor zich
 
 - name: Greenguard
-  visible: true
+  published: true
   properties:
     - name: Soort
       value: Land
@@ -100,7 +100,7 @@
       value: Monarchie, met Alden Alteon als koning
 
 - name: Magisch Centrum
-  visible: true
+  published: true
   properties:
     - name: Soort
       value: Magisch gebied in een bos
@@ -120,7 +120,7 @@
       value: Bijna niemand weet van de locatie af
 
 - name: Phandalin
-  visible: true
+  published: true
   properties:
     - name: Soort
       value: Dorp
@@ -140,7 +140,7 @@
       value: Nauwe samenleving, bezoekers zijn welkom
 
 - name: Surewould-bos
-  visible: true
+  published: true
   properties:
     - name: Soort
       value: Bos
@@ -158,7 +158,7 @@
       value: Leven en laten leven
 
 - name: Tempel van ^.^
-  visible: true
+  published: true
   properties:
     - name: Soort
       value: Tempel
@@ -176,7 +176,7 @@
       value: Vreemdelingen zijn niet welkom
 
 - name: Wraak van Koning Alden
-  visible: true
+  published: true
   properties:
     - name: Soort
       value: Luchtschip
@@ -196,7 +196,7 @@
       value: Draag je eigen steentje bij en wordt naar rato beloond
 
 - name: Zandzee
-  visible: true
+  published: true
   properties:
     - name: Soort
       value: Woestijn
@@ -212,7 +212,7 @@
       value: Ooit bewoond door Zand-Elven, totdat de Tarrasque 98 jaar geleden aanviel
 
 - name: Grijssteen
-  visible: false
+  published: false
   properties:
     - name: Soort
       value: Dorp
@@ -232,7 +232,7 @@
       value: Gemeenschapsgeest, handel, militair gedisciplineerd, bekend om ambachtelijke vaardigheden en kwalitatieve goederen
 
 - name: IJzerfort
-  visible: false
+  published: false
   properties:
     - name: Soort
       value: Dorp
@@ -252,7 +252,7 @@
       value: Militaire discipline, kracht en strategie, focus op expansie en verdediging
 
 - name: Gnomengarde
-  visible: false
+  published: false
   properties:
     - name: Soort
       value: Grot
