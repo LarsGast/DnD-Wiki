@@ -1,5 +1,6 @@
 import { getListItem } from './generic-list-element.js';
 import { getRelatedCharacters } from './related-characters.js';
+import { getObjectList } from './generic-list.js';
 
 document.addEventListener("DOMContentLoaded", function() {
     
@@ -10,22 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Unsorted.
     const relatedCharacters = getRelatedCharacters();
 
-    fillList(relatedCharacters);
+    const container = document.getElementById('character-list-container');
+    container.appendChild(getObjectList(relatedCharacters));
 });
-
-/**
- * Fill the list that's displayed on the page with all the related characters.
- * @param {object[]} characters 
- */
-const fillList = function(characters) {
-
-    // Sort by name.
-    characters = characters.sort((a, b) => a.name.localeCompare(b.name));
-
-    // Fill the page with all info required for a link to all related characters.
-    const uList = document.getElementsByClassName('character-list')[0];
-    characters.forEach(function(character) {
-        const listItem = getListItem(character);
-        uList.appendChild(listItem);
-    });
-}
