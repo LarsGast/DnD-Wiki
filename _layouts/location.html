@@ -35,10 +35,6 @@ layout: default
     {% include character-list.html currentObjectType="location" currentObjectName=page.title %}
 
     {% include location-list.html currentObjectType="location" currentObjectName=page.title locationType="super" %}
-
-    {% include location-list.html currentObjectType="location" currentObjectName=page.title locationType="sub" %}
-
-    {% include location-list.html currentObjectType="location" currentObjectName=page.title locationType="nearby" %}
     
     <h2>Items</h2>
     {% include item-list.html filterType="location" filterName=page.title %}

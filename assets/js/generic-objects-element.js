@@ -49,7 +49,41 @@ const geth2TextContent = function() {
 }
 
 const getBody = function() {
+
+    if (window.layout === 'location' && window.listType === 'location') {
+        return getLocationLocationBody()
+    }
+
     const objects = getObjects();
 
     return [getObjectList(objects)];
+}
+
+const getLocationLocationBody = function() {
+    const elements = [];
+
+    elements.push(getHeading3Element('Super-locaties'));
+    const superLocations = getObjects('super');
+    elements.push(getObjectList(superLocations));
+
+    elements.push(getHeading3Element('Sub-locaties'));
+    const subLocations = getObjects('sub');
+    elements.push(getObjectList(subLocations));
+    
+    elements.push(getHeading3Element('Locaties in de buurt'));
+    const nearbyLocations = getObjects('nearby');
+    elements.push(getObjectList(nearbyLocations));
+
+    return elements;
+}
+
+/**
+ * Gets an h3 element with given text content.
+ * @param {string} textContent 
+ * @returns {HTMLHeadingElement}
+ */
+const getHeading3Element = function(textContent) {
+    const header = document.createElement('h3');
+    header.textContent = textContent;
+    return header
 }

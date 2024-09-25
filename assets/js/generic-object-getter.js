@@ -2,10 +2,10 @@
  * Get all the related objects as specified in the .yml files based on the page layout, current object, and type of list.
  * @returns {object[]}
  */
-export const getObjects = function() {
+export const getObjects = function(superSubNearby) {
 
     // Get the names of the related objects.
-    const objectNames = getObjectNames();   
+    const objectNames = getObjectNames(superSubNearby);   
 
     // Get the actual related objects.
     const relatedObjects = window.allObjects.filter(object => 
@@ -20,14 +20,14 @@ export const getObjects = function() {
  * Split between lists that are the same type as the page and lists that are a different type as the page.
  * @returns {string[]}
  */
-const getObjectNames = function() {
+const getObjectNames = function(superSubNearby) {
 
     if (window.layout === 'page') {
         return getObjectNamesForMainPages();
     }
 
     if (window.layout === window.listType) {
-        return getObjectNamesForSameAsLayout();
+        return getObjectNamesForSameAsLayout(superSubNearby);
     }
 
     return getObjectNamesForDifferentAsLayout();
@@ -62,7 +62,11 @@ const getObjectNamesForDifferentAsLayout = function() {
  * So a character list on a character's page or a location list on a location's page.
  * @returns {string[]}
  */
-const getObjectNamesForSameAsLayout = function() {
+const getObjectNamesForSameAsLayout = function(superSubNearby) {
+
+    if (window.layout === 'location') {
+        return getLocationLocationNames(superSubNearby);
+    }
 
     const links = window.links;
 
@@ -84,4 +88,31 @@ const getObjectNamesForSameAsLayout = function() {
     relatedObjectNames = [...new Set(relatedObjectNames)];
 
     return relatedObjectNames;
+}
+
+const getLocationLocationNames = function(superSubNearby) {
+    const currentLocationName = window.currentObjectName;
+    const links = window.links;
+
+    if (superSubNearby === 'super') {
+        return links
+            .filter(link => link.isSuperSubRelationship === true && link.secondLocationName === currentLocationName)
+            .map(link => link.firstLocationName);
+    }
+    else if (superSubNearby === 'sub') {
+        return links
+            .filter(link => link.isSuperSubRelationship === true && link.firstLocationName === currentLocationName)
+            .map(link => link.secondLocationName);
+    }
+    else {
+        const relatedLocationsLinks = links.filter(link => link.isSuperSubRelationship === false && (
+            link.firstLocationName === currentLocationName || 
+            link.secondLocationName === currentLocationName));
+        
+        const locationNames = relatedLocationsLinks.map(link => link.firstLocationName).concat(relatedLocationsLinks.map(link => link.secondLocationName))
+            .filter(name => name !== currentLocationName);
+    
+        // Remove dupes.
+        return [...new Set(locationNames)];
+    }
 }
