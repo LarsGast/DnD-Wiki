@@ -1,11 +1,12 @@
 /**
  * Get all the related objects as specified in the .yml files based on the page layout, current object, and type of list.
+ * @param {string | boolean} metadata Metadata that can take many different forms. This gets passed through to the functions which cast it to the right type.
  * @returns {object[]}
  */
-export const getObjects = function(superSubNearby) {
+export const getObjects = function(metadata) {
 
     // Get the names of the related objects.
-    const objectNames = getObjectNames(superSubNearby);   
+    const objectNames = getObjectNames(metadata);   
 
     // Get the actual related objects.
     const relatedObjects = window.allObjects.filter(object => 
@@ -18,19 +19,20 @@ export const getObjects = function(superSubNearby) {
 /**
  * Get the names of all the related objects based on the page layout, current object, and type of list.
  * Split between lists that are the same type as the page and lists that are a different type as the page.
+ * @param {string | boolean} metadata Metadata that can take many different forms. This gets passed through to the functions which cast it to the right type.
  * @returns {string[]}
  */
-const getObjectNames = function(superSubNearby) {
+const getObjectNames = function(metadata) {
 
     if (window.layout === 'page') {
         return getObjectNamesForMainPages();
     }
 
     if (window.layout === window.listType) {
-        return getObjectNamesForSameAsLayout(superSubNearby);
+        return getObjectNamesForSameAsLayout(metadata);
     }
 
-    return getObjectNamesForDifferentAsLayout();
+    return getObjectNamesForDifferentAsLayout(metadata);
 }
 
 /**
@@ -44,14 +46,60 @@ const getObjectNamesForMainPages = function() {
 /**
  * Get the names of all the related objects that use a list type that is not the same as the page layout.
  * So no character list on a character's page or location list on a location's page.
+ * @param {string | boolean} metadata Metadata that can take many different forms. This gets passed through to the functions which cast it to the right type.
  * @returns {string[]}
  */
-const getObjectNamesForDifferentAsLayout = function() {
+const getObjectNamesForDifferentAsLayout = function(metadata) {
+
+    if (window.layout === 'character' && window.listType === 'item') {
+        return getCharacterItemNames(metadata);
+    }
+
+    return getGenericObjectNamesForDifferentAsLayout();
+}
+
+/**
+ * Get the names of all the related objects that use a list type that is the same as the page layout.
+ * So a character list on a character's page or a location list on a location's page.
+ * @param {string | boolean} metadata Metadata that can take many different forms. This gets passed through to the functions which cast it to the right type.
+ * @returns {string[]}
+ */
+const getObjectNamesForSameAsLayout = function(metadata) {
+
+    if (window.layout === 'location') {
+        return getLocationLocationNames(metadata);
+    }
+
+    return getGenericObjectNamesForSameAsLayout();
+}
+
+/**
+ * Get the names of all the related objects that use a list type that is not the same as the page layout.
+ * Not all layout-listType combinations work for this.
+ * @returns {string[]}
+ */
+const getGenericObjectNamesForDifferentAsLayout = function() {
+    const links = window.links;
+
+    // Get all links to this object.
+    const relatedLinks = links.filter(link => link[`${window.layout}Name`] === window.currentObjectName);
+
+    // Get only the names, so we can use these to get full objects.
+    return relatedLinks.map(link => link[`${window.listType}Name`]);
+}
+
+/**
+ * Get the names of the items related to the given character.
+ * Differentiate between items currently owned by the character, and items owned by the character in the past.
+ * @param {boolean} current Wether we should get all the items currently owned by the character, or all the items owned by the character in the past
+ * @returns {string[]}
+ */
+const getCharacterItemNames = function(current) {
 
     const links = window.links;
 
     // Get all location links to this object.
-    const relatedLinks = links.filter(link => link[`${window.layout}Name`] === window.currentObjectName);
+    const relatedLinks = links.filter(link => link[`${window.layout}Name`] === window.currentObjectName && link.current === current);
 
     // Get only the names, so we can use these to get full location objects.
     return relatedLinks.map(link => link[`${window.listType}Name`]);
@@ -59,14 +107,10 @@ const getObjectNamesForDifferentAsLayout = function() {
 
 /**
  * Get the names of all the related objects that use a list type that is the same as the page layout.
- * So a character list on a character's page or a location list on a location's page.
+ * Not all layout-listType combinations work for this.
  * @returns {string[]}
  */
-const getObjectNamesForSameAsLayout = function(superSubNearby) {
-
-    if (window.layout === 'location') {
-        return getLocationLocationNames(superSubNearby);
-    }
+const getGenericObjectNamesForSameAsLayout = function() {
 
     const links = window.links;
 
@@ -90,16 +134,22 @@ const getObjectNamesForSameAsLayout = function(superSubNearby) {
     return relatedObjectNames;
 }
 
-const getLocationLocationNames = function(superSubNearby) {
+/**
+ * Get the names of the locations related to the given location.
+ * Differentiate between super-, sub-, and nearby locations.
+ * @param {string} superSubOrNearby Wether we should get all the super-, sub-, or nearby locations
+ * @returns {string[]}
+ */
+const getLocationLocationNames = function(superSubOrNearby) {
     const currentLocationName = window.currentObjectName;
     const links = window.links;
 
-    if (superSubNearby === 'super') {
+    if (superSubOrNearby === 'super') {
         return links
             .filter(link => link.isSuperSubRelationship === true && link.secondLocationName === currentLocationName)
             .map(link => link.firstLocationName);
     }
-    else if (superSubNearby === 'sub') {
+    else if (superSubOrNearby === 'sub') {
         return links
             .filter(link => link.isSuperSubRelationship === true && link.firstLocationName === currentLocationName)
             .map(link => link.secondLocationName);

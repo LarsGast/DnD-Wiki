@@ -77,6 +77,10 @@ const getBody = function() {
     if (window.layout === 'location' && window.listType === 'location') {
         return getLocationLocationBody()
     }
+    // Character-item list has a special body to accommodate for past and current items.
+    else if (window.layout === 'character' && window.listType === 'item') {
+        return getCharacterItemBody();
+    }
     else {
         // Make a list so we can loop through it later.
         return [getGenericBody()];
@@ -112,6 +116,24 @@ const getLocationLocationBody = function() {
     elements.push(getHeading3Element('Locaties in de buurt'));
     const nearbyLocations = getObjects('nearby');
     elements.push(getObjectList(nearbyLocations));
+
+    return elements;
+}
+
+/**
+ * Get a character-item body for the objects list wrapper.
+ * @returns {HTMLElement[]}
+ */
+const getCharacterItemBody = function() {
+    const elements = [];
+
+    elements.push(getHeading3Element('Huidige bezittingen'));
+    const currentItems = getObjects(true);
+    elements.push(getObjectList(currentItems));
+    
+    elements.push(getHeading3Element('Vorige bezittingen'));
+    const pastItems = getObjects(false);
+    elements.push(getObjectList(pastItems));
 
     return elements;
 }

@@ -1,4 +1,5 @@
 import { getCharacterSummaryWrapper } from './character-list-element-extension.js';
+import { getComment } from './character-item-list-element-extension.js';
 
 /**
  * Get a single object link element for the list.
@@ -9,6 +10,11 @@ export const getListItem = function(object) {
     const listItem = document.createElement('li');
     
     listItem.appendChild(getAnchorElement(object));
+
+    // Right now, items have a comment relating to the character on the character's page.
+    if (window.layout === 'character' && window.listType === 'item') {
+        listItem.appendChild(getComment(object));
+    }
 
     return listItem;
 }
