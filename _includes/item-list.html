@@ -1,66 +1,28 @@
-<!-- Input parameters -->
-{% assign filterType = include.filterType %}
-{% assign filterName = include.filterName %}
-{% assign time = include.time %}
+<div id="item-list-container"></div>
 
-{% if filterType == "campaign" %}
-    {% assign itemLinkFile = site.data.campaign-item-link %}
-{% elsif filterType == "location" %}
-    {% assign itemLinkFile = site.data.location-item-link %}
-{% elsif filterType == "character" %}
-    {% assign itemLinkFile = site.data.item-character-link %}
-{% endif %}
+<script type="module">
+    import { fillObjectListDiv } from "{{ '/assets/js/generic-list-builder.js' | relative_url }}";
 
-{% assign filter = filterType | append:"Name" %}
+    let links = null;
+    switch (window.layout) {
+        case 'campaign':
+            links = {{ site.data.campaign-item-link | jsonify }};
+            break;
+        case 'character':
+            links = {{ site.data.item-character-link | jsonify }};
+            break;
+        case 'location':
+            links = {{ site.data.location-item-link | jsonify }};
+            break;
+        case 'item':
+            links = {{ site.data.item-item-link | jsonify }};
+            break;
+    }
 
-{% assign items = site.data.items %}
-{% assign items = items | sort:"name" %}
-
-<ul class>
-    {% for item in items %}
-        {% assign className = '' %}
-        {% if item.published %}
-        {% else %}
-            {% assign className = 'unpublished' %}
-        {% endif %}
-        {% if filterType %}
-
-            {% assign itemLinks = itemLinkFile | where:"itemName", item.name %}
-            {% assign itemLinks = itemLinks | where:filter, filterName %}
-
-            {% for itemLink in itemLinks %}
-                {% if itemLink %}
-
-                    {% assign show = false %}
-                    {% if filterType == "character" %}
-                        {% if time == "current" and itemLink.current %}
-                            {% assign show = true %}
-                        {% endif %}
-                        {% if time == "past" and itemLink.past %}
-                            {% assign show = true %}
-                        {% endif %}
-                    {% else %}
-                        {% assign show = true %}
-                    {% endif %}
-
-                    {% if show %}
-                        <li class="{{className}}">
-                            <a href="../items/{% if item.customLink %}{{ item.customLink }}{% else %}{{ item.name | replace: ' ', '-' | downcase }}{% endif %}">
-                                {{item.name}}
-                            </a>
-                            {% if itemLink.comment %}
-                                ({{itemLink.comment}})
-                            {% endif %}
-                        </li>
-                    {% endif %}
-                {% endif %}
-            {% endfor %}
-        {% else %}
-            <li class="{{className}}">
-                <a href="../items/{% if item.customLink %}{{ item.customLink }}{% else %}{{ item.name | replace: ' ', '-' | downcase }}{% endif %}">
-                    {{item.name}}
-                </a>
-            </li>
-        {% endif %}
-    {% endfor %}
-</ul>
+    fillObjectListDiv(
+        {{ site.data.items | jsonify }},
+        links,
+        'item',
+        'item-list-container'
+    );
+</script>

@@ -35,12 +35,8 @@ layout: default
     {% include character-list.html %}
     
     {% include location-list.html %}
-    
-    <h2>Items</h2>
-    <h3>Huidige bezittingen</h3>
-    {% include item-list.html filterType="character" filterName=page.title time="current" %}
-    <h3>Vorige bezittingen</h3>
-    {% include item-list.html filterType="character" filterName=page.title time="past" %}
+
+    {% include item-list.html %}
 
     <h2>Galerij</h2>
     {% include image-list.html filterType="character" filterName=page.title %}
