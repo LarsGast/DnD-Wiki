@@ -22,12 +22,7 @@ layout: default
 
     <hr/>
 
-    <h2>Gerelateerde Campaigns</h2>
-    <h3>Verleden</h3>
-    {% include campaign-list.html filterType="item" filterName=page.title isFlashback=true %}
-
-    <h3>Heden</h3>
-    {% include campaign-list.html filterType="item" filterName=page.title isFlashback=false %}
+    {% include campaign-list.html  %}
 
     {% include character-list.html %}
     
