@@ -15,7 +15,7 @@
   <link rel="manifest" href="{{ "/site.webmanifest" | relative_url }}">
   <script>
     window.layout = {{ page.layout | jsonify }}
-    window.currentObjectName = {{ include.currentObjectName | jsonify }};
+    window.currentObjectName = {{ page.title | jsonify }};
   </script>
   <script type="module" src="{{ '/assets/js/generic-list-builder.js' | relative_url }}"></script>
 </head>

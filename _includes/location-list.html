@@ -1,14 +1,28 @@
 <div id="location-list-container"></div>
 
-<script>
-    window.currentObjectName = {{ include.currentObjectName | jsonify }};
+<script type="module">
+    import { myFunction } from "{{ '/assets/js/generic-list-builder.js' | relative_url }}";
 
-    window.locationsData = {{ site.data.locations | jsonify }};
-    window.locationType = {{ include.locationType | jsonify }};
+    let links = null;
+    switch (window.layout) {
+        case 'campaign':
+            links = {{ site.data.campaign-location-link | jsonify }};
+            break;
+        case 'character':
+            links = {{ site.data.location-character-link | jsonify }};
+            break;
+        case 'location':
+            links = {{ site.data.location-location-link | jsonify }};
+            break;
+        case 'item':
+            links = {{ site.data.location-item-link | jsonify }};
+            break;
+    }
 
-    window.campaignLocationLinks = {{ site.data.campaign-location-link | jsonify }};
-    window.characterLocationLinks = {{ site.data.location-character-link | jsonify }};
-    window.locationLocationLinks = {{ site.data.location-location-link | jsonify }};
-    window.itemLocationLinks = {{ site.data.location-item-link | jsonify }};
+    myFunction(
+        {{ site.data.locations | jsonify }},
+        links,
+        'location',
+        'location-list-container'
+    );
 </script>
-<script type="module" src="{{ '/assets/js/location-list-builder.js' | relative_url }}"></script>

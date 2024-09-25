@@ -22,11 +22,23 @@ export const getObjects = function() {
  */
 const getObjectNames = function() {
 
+    if (window.layout === 'page') {
+        return getObjectNamesForMainPages();
+    }
+
     if (window.layout === window.listType) {
         return getObjectNamesForSameAsLayout();
     }
 
     return getObjectNamesForDifferentAsLayout();
+}
+
+/**
+ * Get the names of all the related objects that should appear on the 'page' layout. 
+ * @returns {string[]}
+ */
+const getObjectNamesForMainPages = function() {
+    return window.allObjects.map(object => object.name);
 }
 
 /**
