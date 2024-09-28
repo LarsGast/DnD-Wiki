@@ -11,12 +11,19 @@ Kara is een imposante en formidabele krijgsvrouw, gehard door talloze veldslagen
 
 Eldric de Wijze ontvangt de avonturiers en geeft ze inspirerende woorden mee die hun zouden moeten helpen bij de overval. Zo stuurt hij ze op pad, richting het rivalendorp van IJzerfort.
 
-Onderweg worden ze misschien aangevallen door Goblins.
+<p class="unpublished">Onderweg worden ze misschien aangevallen door Goblins.</p>
 
-In IJzerfort vinden ze hun weg naar de forge, waar ze het artefact aan het maken zijn. De deur wordt bewaakt door een paar minions die zich vervelen. De groep kan ze afleiden of verslaan.
+In IJzerfort vinden ze hun weg naar de forge, waar ze het artefact aan het maken zijn. De deur wordt bewaakt door een paar minions die zich vervelen. 
+<span class="unpublished">Hoe gaat de groep hier mee om?</span>
 
-Binnen het gebouw zien ze een aantal troepen (Een wizard en een witch) die bezig zijn met het artefact. In het midden van de kamer staat een inactieve P.E.K.K.A.. Dit is niet zomaar een P.E.K.K.A., maar een Power P.E.K.K.A. met versterkte krachten. Het wordt duidelijk dat IJzerfort bezig is met hun eigen super soldaat, een verbeterde versie van de sterkste krijger die ze kennen.
+Binnen het gebouw zien ze een witch die bezig is met het artefact. In het midden van de kamer staat een inactieve P.E.K.K.A.. Dit is niet zomaar een P.E.K.K.A., maar een Power P.E.K.K.A. met versterkte krachten. Het wordt duidelijk dat IJzerfort bezig is met het maken van hun eigen super soldaat, een verbeterde versie van de sterkste krijger die ze kennen. <span class="unpublished">De witch zit helemaal in haar werk, en ziet de groep misschien niet gelijk.</span>
 
-Zodra de groep gespot is gaat er een gevecht van start. De wizard en witch brengen de P.E.K.K.A. tot leven met het artefact, maar hij is nog niet helemaal af. Het is dus een verzwakte versie van een versterkte P.E.K.K.A..
+<p class="unpublished">De groep moet ervoor zorgen dat ze het artefact zien te bemachtigen. Ik wil wel dat ze gaan vechten met de Power P.E.K.K.A., maar hoe ze met de witch dealen is aan hun.</p>
 
-Zodra dit gevecht gewonnen is, kan de groep het artefact uit de Power P.E.K.K.A. halen en meenemen naar Clashenburg, waar Liora P.E.K.K.A. weer tot leven kan brengen. Bij deze actie verkrijgt P.E.K.K.A. ook de Vlinder Trance.
+<p class="unpublished">Misschien doen de minions hier ook mee als ze niet verslagen zijn.</p>
+
+Zodra de groep gespot is gaat er een gevecht van start. De witch brengt de P.E.K.K.A. tot leven met het artefact, maar hij is nog niet helemaal af. Het is dus een verzwakte versie van een versterkte P.E.K.K.A..
+
+<p class="unpublished">Zodra dit gevecht gewonnen is, kan de groep het artefact uit de Power P.E.K.K.A. halen en meenemen naar Clashenburg, waar Liora P.E.K.K.A. weer tot leven kan brengen. Bij deze actie verkrijgt P.E.K.K.A. ook de Vlinder Trance.</p>
+
+<p class="unpublished">Vlinder trance moet waarschijnlijk aangepast worden.</p>
