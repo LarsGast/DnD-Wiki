@@ -211,7 +211,7 @@
     - name: Geschiedenis
       value: Ooit bewoond door Zand-Elven, totdat de Tarrasque 98 jaar geleden aanviel
 
-- name: Grijssteen
+- name: Clashenburg
   published: false
   properties:
     - name: Soort
