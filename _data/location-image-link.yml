@@ -119,11 +119,11 @@
   isHeaderImage: false
 
 - locationName: Clashenburg
-  imageName: Clashenburg
+  imageName: clash of clans dorp
   isHeaderImage: true
 
 - locationName: IJzerfort
-  imageName: Clashenburg
+  imageName: clash of clans dorp
   isHeaderImage: true
 
 - locationName: Gnomengarde
