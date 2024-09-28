@@ -486,3 +486,21 @@
   alt: Zyra de Duistere, in haar krijgskleding en haar staf met doodskop, klaar om aan te vallen.
   width: 487
   height: 513
+
+- name: zyra de duistere statblock
+  fileType: png
+  alt: De statblock van Zyra de Duistere
+  width: 400
+  height: 620
+
+- name: skeleton statblock
+  fileType: png
+  alt: De statblock van een statblock
+  width: 400
+  height: 400
+
+- name: power p.e.k.k.a. statblock
+  fileType: png
+  alt: De statblock van een Power P.E.K.K.A.
+  width: 400
+  height: 400
