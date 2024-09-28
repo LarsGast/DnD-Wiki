@@ -1,11 +1,11 @@
 # This file contains all characters that have appeared in all DnD campaigns on the site.
 # This file may also contain characters that have not appeared in the story yet.
-# If this is the case, the character should have the key "visible" set to false.
+# If this is the case, the character should have the key "published" set to false.
 # This way it does not appear in any links.
 
 # The following key-value-pairs are available for a character:
 # name - string - The name of the character
-# visible - boolean - If the character should be visible and navigatable on the site
+# published - boolean - If the character should be visible and navigatable on the site
 # customLink - string - optional - A custom link (without extension) for characters with names that create invalid links
 # properties - Array of properties - A list of identifiers to display at the top of a character page. The properties will be displayed in specified order.
 #   name - string - The name of the identifier
@@ -14,7 +14,7 @@
 #   name - string - The name of the icon to display
 
 - name: Adonis
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Drow
@@ -31,7 +31,7 @@
     - name: male
 
 - name: Albert Tweesteen
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Goblin
@@ -52,7 +52,7 @@
     - name: friendly
 
 - name: Amy Aria
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Mens
@@ -72,7 +72,7 @@
     - name: indifferent
 
 - name: Arikikuchiariku
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Mens
@@ -90,7 +90,7 @@
     - name: male
 
 - name: Ash Dragonblade
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Mens
@@ -110,7 +110,7 @@
     - name: indifferent
 
 - name: Azura Zingzwaard
-  visible: true
+  published: true
   properties:
     - name: Bijnaam
       value: Prinses (door Hugo Zingzwaard en Koning Splurt)
@@ -132,7 +132,7 @@
     - name: friendly
 
 - name: Barnaby Kraai
-  visible: true
+  published: true
   properties:
     - name: Bijnaam
       value: Zwartsnavel
@@ -152,7 +152,7 @@
     - name: indifferent
 
 - name: Dazlyn Grayshard
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Schild Dwerg
@@ -170,7 +170,7 @@
     - name: indifferent
 
 - name: Elmar Barthen
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Mens
@@ -190,7 +190,7 @@
     - name: indifferent
 
 - name: Gareth Bloodwood
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Mens
@@ -208,7 +208,7 @@
     - name: dead
 
 - name: Gaston de Kok
-  visible: true
+  published: true
   properties:
     - name: Bijnaam
       value: Chef Bulk (door een groep avonturiers)
@@ -230,7 +230,7 @@
     - name: indifferent
 
 - name: Grog Steenvuist
-  visible: true
+  published: true
   properties:
     - name: Bijnaam
       value: IJzerwerk
@@ -253,7 +253,7 @@
     - name: indifferent
 
 - name: Halia Thornton
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Mens
@@ -273,7 +273,7 @@
     - name: indifferent
 
 - name: Harbin Wester
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Onbekend
@@ -293,7 +293,7 @@
     - name: indifferent
 
 - name: Hugo Staalzwaard
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Mens
@@ -313,7 +313,7 @@
     - name: friendly
 
 - name: Hugo Zingzwaard
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Mens
@@ -334,7 +334,7 @@
     - name: friendly
 
 - name: Isabella Swift
-  visible: true
+  published: true
   properties:
     - name: Bijnaam
       value: Zilvermaan
@@ -357,7 +357,7 @@
     - name: indifferent
 
 - name: Kaelen Schaduwholster
-  visible: true
+  published: true
   properties:
     - name: Bijnaam
       value: Duisterster
@@ -379,7 +379,7 @@
     - name: indifferent
 
 - name: Kapitein Groenbaard
-  visible: true
+  published: true
   properties:
     - name: Volledige naam
       value: Eddie Riet
@@ -404,7 +404,7 @@
     - name: friendly
 
 - name: Koning Splurt
-  visible: true
+  published: true
   properties:
     - name: Bijnaam
       value: Koning Splurt
@@ -426,7 +426,7 @@
     - name: dead
 
 - name: Kosharakar Coemeydus
-  visible: true
+  published: true
   properties:
     - name: Bijnaam
       value: Kosha
@@ -446,7 +446,7 @@
     - name: male
 
 - name: Laranlor Cormearil
-  visible: true
+  published: true
   properties:
     - name: Bijnaam
       value: Lan
@@ -466,7 +466,7 @@
     - name: dead
 
 - name: Linene Graywind
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Mens
@@ -486,7 +486,7 @@
     - name: indifferent
 
 - name: Lushikukukanda
-  visible: true
+  published: true
   properties:
     - name: Bijnaam
       value: Kuku
@@ -506,7 +506,7 @@
     - name: male
 
 - name: Nettie Bettie
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Goblin
@@ -524,7 +524,7 @@
     - name: dead
 
 - name: Norbus Ironrune
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Schild Dwerg
@@ -542,7 +542,7 @@
     - name: dead
 
 - name: P.E.K.K.A.
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Warforged
@@ -562,7 +562,7 @@
     - name: dead
 
 - name: Robina the Hood
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Wood-Elf
@@ -582,7 +582,7 @@
     - name: friendly
 
 - name: Theodas
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: High-Elf
@@ -600,7 +600,7 @@
     - name: male
 
 - name: Twilly
-  visible: true
+  published: true
   properties:
     - name: Bijnaam
       value: Held van Falconreach
@@ -621,7 +621,7 @@
     - name: friendly
 
 - name: Yulgar Lark
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Mens
@@ -641,7 +641,7 @@
     - name: indifferent
 
 - name: Cryovain
-  visible: true
+  published: true
   properties:
     - name: Ras
       value: Jonge witte draak
@@ -655,7 +655,7 @@
     - name: hostile
 
 - name: Dabbledob
-  visible: false
+  published: false
   properties:
     - name: Ras
       value: Kabouter
@@ -673,7 +673,7 @@
     - name: indifferent
 
 - name: Fibblestib
-  visible: false
+  published: false
   properties:
     - name: Ras
       value: Kabouter
@@ -691,7 +691,7 @@
     - name: indifferent
 
 - name: Gnerkli
-  visible: false
+  published: false
   properties:
     - name: Ras
       value: Kabouter
@@ -709,7 +709,7 @@
     - name: indifferent
 
 - name: Korboz
-  visible: false
+  published: false
   properties:
     - name: Ras
       value: Kabouter
@@ -727,7 +727,7 @@
     - name: hostile
 
 - name: Kara de Felle
-  visible: false
+  published: false
   properties:
     - name: Ras
       value: Mens, Valkyrie
@@ -736,7 +736,7 @@
     - name: Leeftijd
       value: Volwassen
     - name: Bevindt zich op dit moment in
-      value: Grijssteen
+      value: Clashenburg
     - name: Talen
       value: Common
   icons:
@@ -745,7 +745,7 @@
     - name: indifferent
 
 - name: Liora de Zachte
-  visible: false
+  published: false
   properties:
     - name: Ras
       value: Mens, Healer
@@ -754,7 +754,7 @@
     - name: Leeftijd
       value: Volwassen
     - name: Bevindt zich op dit moment in
-      value: Grijssteen
+      value: Clashenburg
     - name: Talen
       value: Common
   icons:
@@ -763,7 +763,7 @@
     - name: friendly
 
 - name: Eldric de Wijze
-  visible: false
+  published: false
   properties:
     - name: Ras
       value: Mens, Grand Warden
@@ -772,7 +772,7 @@
     - name: Leeftijd
       value: Volwassen
     - name: Bevindt zich op dit moment in
-      value: Grijssteen
+      value: Clashenburg
     - name: Talen
       value: Common
   icons:

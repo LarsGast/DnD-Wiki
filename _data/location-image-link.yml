@@ -118,12 +118,12 @@
   imageName: Reuze Aasgier
   isHeaderImage: false
 
-- locationName: Grijssteen
-  imageName: Grijssteen
+- locationName: Clashenburg
+  imageName: clash of clans dorp
   isHeaderImage: true
 
 - locationName: IJzerfort
-  imageName: Grijssteen
+  imageName: clash of clans dorp
   isHeaderImage: true
 
 - locationName: Gnomengarde

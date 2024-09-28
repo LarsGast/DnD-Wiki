@@ -1,29 +1,29 @@
 - name: De Redding van (Prinses) Azura
   order: 1
-  visible: true
+  published: true
   isFlashback: false
 
 - name: Twilly Rekruteren
   order: 2
-  visible: true
+  published: true
   isFlashback: false
 
 - name: De Legende van Kapitein Groenbaard
   order: 3
-  visible: true
+  published: true
   isFlashback: false
 
 - name: De Draak van Icespire Peak
   order: 4
-  visible: true
+  published: true
   isFlashback: false
 
 - name: De Grote Ontsnapping van Kapitein Groenbaard
   order: 5
-  visible: true
+  published: true
   isFlashback: true
 
 - name: Conflict van Stammen
   order: 6
-  visible: false
+  published: false
   isFlashback: false

@@ -1,43 +1,9 @@
 /**
- * Get a single character link element for the list.
- * @param {object} character 
- * @returns 
- */
-export const getCharacterLinkElement = function(character) {
-    const listItem = document.createElement('li');
-
-    if (!character.visible){
-        listItem.classList.add('invisible');
-    }
-    listItem.appendChild(getCharacterAnchor(character));
-
-    return listItem;
-}
-
-/**
- * Get the anchor element for a link to a character.
- * @param {object} character 
- * @returns 
- */
-const getCharacterAnchor = function(character) {
-
-    const characterLink = character.customLink ?? character.name.replace(/\s+/g, '-').toLowerCase();
-
-    // To make it clickable.
-    const link = document.createElement('a');
-    link.href = `../characters/${characterLink}`;
-
-    link.appendChild(getCharacterSummaryWrapper(character));
-
-    return link;
-}
-
-/**
  * Get the summary div element for a link to a character.
  * @param {object} character 
- * @returns 
+ * @returns {HTMLDivElement}
  */
-const getCharacterSummaryWrapper = function(character) {
+export const getCharacterSummaryWrapper = function(character) {
 
     // To bundle elements
     const summaryWrapper = document.createElement('div');
@@ -52,7 +18,7 @@ const getCharacterSummaryWrapper = function(character) {
 /**
  * Get the header element for a link to a character.
  * @param {object} character 
- * @returns 
+ * @returns {HTMLHeadingElement}
  */
 const getCharacterHeader = function(character) {
 
@@ -66,7 +32,7 @@ const getCharacterHeader = function(character) {
 /**
  * Get the icon wrapper element for a link to a character.
  * @param {object} character 
- * @returns 
+ * @returns {HTMLDivElement}
  */
 const getCharacterIconWrapper = function(character) {
 
@@ -85,7 +51,7 @@ const getCharacterIconWrapper = function(character) {
 /**
  * Get the icon span element for a link to a character.
  * @param {object} character 
- * @returns 
+ * @returns {HTMLSpanElement}
  */
 const getCharacterIconSpan = function(icon) {
 

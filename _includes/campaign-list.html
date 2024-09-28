@@ -1,56 +1,28 @@
-<!-- Input parameters -->
-{% assign filterType = include.filterType %}
-{% assign filterName = include.filterName %}
-{% assign isFlashback = include.isFlashback %}
+<div id="campaign-list-container"></div>
 
-<!-- Initialize an empty array for campaigns -->
-{% assign campaigns = '' | split: ',' %}
+<script type="module">
+    import { fillObjectListDiv } from "{{ '/assets/js/generic-list-builder.js' | relative_url }}";
 
-{% if filterType == "location" %}
-    {% for campaignLocationLink in site.data.campaign-location-link %}
-        {% if campaignLocationLink.locationName == filterName %}
-            {% assign campaign = site.data.campaigns | where:"name", campaignLocationLink.campaignName | first %}
-            {% assign campaigns = campaigns | push: campaign %}
-        {% endif %}
-    {% endfor %}
-{% elsif filterType == "character" %}
-    {% for campaignCharacterLink in site.data.campaign-character-link %}
-        {% if campaignCharacterLink.characterName == filterName %}
-            {% assign campaign = site.data.campaigns | where:"name", campaignCharacterLink.campaignName | first %}
-            {% assign campaigns = campaigns | push: campaign %}
-        {% endif %}
-    {% endfor %}
-{% elsif filterType == "item" %}
-    {% for campaignLink in site.data.campaign-item-link %}
-        {% if campaignLink.itemName == filterName %}
-            {% assign campaign = site.data.campaigns | where:"name", campaignLink.campaignName | first %}
-            {% assign campaigns = campaigns | push: campaign %}
-        {% endif %}
-    {% endfor %}
-{% else %}
-    {% assign campaigns = site.data.campaigns %}
-{% endif %}
+    let links = null;
+    switch (window.layout) {
+        case 'campaign':
+            links = {{ site.data.campaign-campaign-link | jsonify }};
+            break;
+        case 'character':
+            links = {{ site.data.campaign-character-link | jsonify }};
+            break;
+        case 'location':
+            links = {{ site.data.campaign-location-link | jsonify }};
+            break;
+        case 'item':
+            links = {{ site.data.campaign-item-link | jsonify }};
+            break;
+    }
 
-<!-- Sort by order of appearance -->
-{% assign campaigns = campaigns | sort_natural:"order" %}
-
-<ul>
-    {% if campaigns.size == 0 %}
-        <li>-</li>
-    {% else %}
-        {% for campaign in campaigns %}
-            {% if campaign.isFlashback == isFlashback %}
-                {% assign className = '' %}
-                {% if campaign.visible %}
-                {% else %}
-                    {% assign className = 'invisible' %}
-                {% endif %}
-                <li class="{{className}}">
-                    <a href="../campaigns/{% if campaign.customLink %}{{ campaign.customLink }}{% else %}{{ campaign.name | replace: ' ', '-' | downcase }}{% endif %}">
-                        {{campaign.name}}
-                    </a>  
-                </li>
-            {% endif %}
-        {% endfor %}
-    {% endif %}
-</ul>
+    fillObjectListDiv(
+        {{ site.data.campaigns | jsonify }},
+        links,
+        'campaign',
+        'campaign-list-container'
+    );
+</script>

@@ -25,24 +25,13 @@ layout: default
 
     <hr/>
 
-    <h2>Gerelateerde Campaigns</h2>
-    <h3>Verleden</h3>
-    {% include campaign-list.html filterType="character" filterName=page.title isFlashback=true %}
+    {% include campaign-list.html  %}
 
-    <h3>Heden</h3>
-    {% include campaign-list.html filterType="character" filterName=page.title isFlashback=false %}
+    {% include character-list.html %}
+    
+    {% include location-list.html %}
 
-    <h2>Gerelateerde karakters</h2>
-    {% include character-list.html currentObjectType="character" currentObjectName=page.title %}
-    
-    <h2>Gerelateerde locaties</h2>
-    {% include location-list.html filterType="character" filterName=page.title %}
-    
-    <h2>Items</h2>
-    <h3>Huidige bezittingen</h3>
-    {% include item-list.html filterType="character" filterName=page.title time="current" %}
-    <h3>Vorige bezittingen</h3>
-    {% include item-list.html filterType="character" filterName=page.title time="past" %}
+    {% include item-list.html %}
 
     <h2>Galerij</h2>
     {% include image-list.html filterType="character" filterName=page.title %}
