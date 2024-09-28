@@ -1,10 +1,10 @@
 ---
 layout: item
-title: Vlinder Trance
+title: Storm Kern
 ---
 
 ## Werking
-Alleen P.E.K.K.A. kan afstemmen op Vlinder Trance (attunement).
+Alleen P.E.K.K.A. kan afstemmen op Storm Kern (attunement).
 
 Zolang je afgestemd bent op de ketting, kun je eenmaal per dag als bonusactie een doelwit markeren met een vlinder, waardoor je advantage krijgt op al je aanvallen tegen dat doelwit. Dit effect blijft maximaal 1 uur actief (concentration). Als het doelwit sterft terwijl je nog aan het concentreren bent, kun je een bonusactie gebruiken om een nieuw doelwit te kiezen.
 

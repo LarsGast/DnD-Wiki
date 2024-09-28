@@ -24,6 +24,6 @@ Binnen het gebouw zien ze een witch die bezig is met het artefact. In het midden
 
 Zodra de groep gespot is gaat er een gevecht van start. De witch brengt de P.E.K.K.A. tot leven met het artefact, maar hij is nog niet helemaal af. Het is dus een verzwakte versie van een versterkte P.E.K.K.A..
 
-<p class="unpublished">Zodra dit gevecht gewonnen is, kan de groep het artefact uit de Power P.E.K.K.A. halen en meenemen naar Clashenburg, waar Liora P.E.K.K.A. weer tot leven kan brengen. Bij deze actie verkrijgt P.E.K.K.A. ook de Vlinder Trance.</p>
+<p class="unpublished">Zodra dit gevecht gewonnen is, kan de groep het artefact uit de Power P.E.K.K.A. halen en meenemen naar Clashenburg, waar Liora P.E.K.K.A. weer tot leven kan brengen. Bij deze actie verkrijgt P.E.K.K.A. ook de Storm Kern.</p>
 
-<p class="unpublished">Vlinder trance moet waarschijnlijk aangepast worden.</p>
+<p class="unpublished">Storm Kern moet waarschijnlijk aangepast worden.</p>
