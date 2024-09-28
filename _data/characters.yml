@@ -779,3 +779,21 @@
     - name: quest
     - name: male
     - name: friendly
+
+- name: Zyra de Duistere
+  published: false
+  properties:
+    - name: Ras
+      value: Elf, Heks
+    - name: Geslacht
+      value: Vrouw
+    - name: Leeftijd
+      value: Volwassen
+    - name: Bevindt zich op dit moment in
+      value: IJzerfort
+    - name: Talen
+      value: Common, Elvish
+  icons:
+    - name: quest
+    - name: female
+    - name: hostile
