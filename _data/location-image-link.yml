@@ -125,6 +125,9 @@
 - locationName: IJzerfort
   imageName: clash of clans dorp
   isHeaderImage: true
+- locationName: IJzerfort
+  imageName: power p.e.k.k.a. statblock
+  isHeaderImage: false
 
 - locationName: Gnomengarde
   imageName: Gnomengarde

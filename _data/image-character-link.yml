@@ -151,3 +151,13 @@
 - characterName: Eldric de Wijze
   imageName: eldric de wijze
   isHeaderImage: true
+
+- characterName: Zyra de Duistere
+  imageName: zyra de duistere
+  isHeaderImage: true
+- characterName: Zyra de Duistere
+  imageName: zyra de duistere statblock
+  isHeaderImage: false
+- characterName: Zyra de Duistere
+  imageName: skeleton statblock
+  isHeaderImage: false

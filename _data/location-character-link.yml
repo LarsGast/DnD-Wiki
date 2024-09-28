@@ -15,8 +15,6 @@
   characterName: Kaelen Schaduwholster
 - locationName: Drakengreep
   characterName: Kapitein Groenbaard
-- locationName: Drakengreep
-  characterName: Kosharakar Coemeydus
 
 - locationName: Dwarven Excavation
   characterName: Dazlyn Grayshard
@@ -87,6 +85,9 @@
   characterName: Liora de Zachte
 - locationName: Clashenburg
   characterName: Eldric de Wijze
+
+- locationName: IJzerfort
+  characterName: Zyra de Duistere
 
 - locationName: Gnomengarde
   characterName: Dabbledob
