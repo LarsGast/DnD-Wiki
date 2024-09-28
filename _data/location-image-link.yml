@@ -118,12 +118,12 @@
   imageName: Reuze Aasgier
   isHeaderImage: false
 
-- locationName: Grijssteen
-  imageName: Grijssteen
+- locationName: Clashenburg
+  imageName: Clashenburg
   isHeaderImage: true
 
 - locationName: IJzerfort
-  imageName: Grijssteen
+  imageName: Clashenburg
   isHeaderImage: true
 
 - locationName: Gnomengarde
