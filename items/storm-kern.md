@@ -14,7 +14,7 @@ Alleen een P.E.K.K.A. kan afstemmen op Storm Kern (attunement). Je stemt op het 
 </i>
 
 ## Geschiedenis van bezitting
-* Liora de Zachte
+* Zyra de Duistere
   * Tot de wederopstanding van P.E.K.K.A.
 * P.E.K.K.A.
   * Vanaf zijn wederopstanding
