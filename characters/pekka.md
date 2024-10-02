@@ -11,7 +11,7 @@ Overleden na een ontmoeting met de jonge witte draak Cryovain terwijl hij met ee
 Herrezen uit de dood nadat Theodas en Kosharakar een artefact voor hem hebben gestolen dat nu als het hart van P.E.K.K.A. dient.
 
 ## Uiterlijk
-Een enorm lopen blauw en paars harnas.
+Een enorm blauw en paars harnas.
 
 ## Capaciteiten
 Zeer sterk.
