@@ -212,7 +212,7 @@
       value: Ooit bewoond door Zand-Elven, totdat de Tarrasque 98 jaar geleden aanviel
 
 - name: Clashenburg
-  published: false
+  published: true
   properties:
     - name: Soort
       value: Dorp
@@ -232,7 +232,7 @@
       value: Gemeenschapsgeest, handel, militair gedisciplineerd, bekend om ambachtelijke vaardigheden en kwalitatieve goederen
 
 - name: IJzerfort
-  published: false
+  published: true
   properties:
     - name: Soort
       value: Dorp

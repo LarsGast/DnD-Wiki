@@ -727,7 +727,7 @@
     - name: hostile
 
 - name: Kara de Felle
-  published: false
+  published: true
   properties:
     - name: Ras
       value: Mens, Valkyrie
@@ -745,7 +745,7 @@
     - name: indifferent
 
 - name: Liora de Zachte
-  published: false
+  published: true
   properties:
     - name: Ras
       value: Mens, Healer
@@ -763,7 +763,7 @@
     - name: friendly
 
 - name: Eldric de Wijze
-  published: false
+  published: true
   properties:
     - name: Ras
       value: Mens, Grand Warden
@@ -781,7 +781,7 @@
     - name: friendly
 
 - name: Zyra de Duistere
-  published: false
+  published: true
   properties:
     - name: Ras
       value: Elf, Heks
