@@ -66,3 +66,10 @@
 - itemName: Storm Kern
   imageName: storm kern
   isHeaderImage: true
+
+- itemName: Scroll of Summon Skeletons
+  imageName: spell scroll
+  isHeaderImage: true
+- itemName: Scroll of Summon Skeletons
+  imageName: skeleton statblock
+  isHeaderImage: false

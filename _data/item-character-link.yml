@@ -123,3 +123,10 @@
 - itemName: Storm Kern
   characterName: P.E.K.K.A. 
   current: true
+
+- itemName: Scroll of Summon Skeletons
+  characterName: Zyra de Duistere 
+  current: false
+- itemName: Scroll of Summon Skeletons
+  characterName: Theodas 
+  current: true
