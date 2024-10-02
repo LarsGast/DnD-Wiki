@@ -8,6 +8,8 @@ Als Warforged was P.E.K.K.A. gemaakt voor oorlog, maar aangezien de oorlog in Eb
 
 Overleden na een ontmoeting met de jonge witte draak Cryovain terwijl hij met een groep avonturiers van Phandalin naar Gnomengarde aan het reizen was.
 
+Herrezen uit de dood nadat Theodas en Kosharakar een artefact voor hem hebben gestolen dat nu als het hart van P.E.K.K.A. dient.
+
 ## Uiterlijk
 Een enorm lopen blauw en paars harnas.
 

@@ -559,7 +559,6 @@
     - name: player
     - name: with-party
     - name: male
-    - name: dead
 
 - name: Robina the Hood
   published: true
@@ -742,7 +741,7 @@
   icons:
     - name: quest
     - name: female
-    - name: indifferent
+    - name: friendly
 
 - name: Liora de Zachte
   published: true
@@ -796,4 +795,4 @@
   icons:
     - name: quest
     - name: female
-    - name: hostile
+    - name: dead
