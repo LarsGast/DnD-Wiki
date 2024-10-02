@@ -20,7 +20,7 @@ Zeer sterk.
 Onbekend.
 
 ## Hebbelijkheden
-Word snel afgeleid door vlinders.
+Wordt snel afgeleid door vlinders.
 
 ## Interactie met anderen
 Onbekend.
