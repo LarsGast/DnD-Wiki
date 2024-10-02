@@ -510,3 +510,9 @@
   alt: Een scroll met bezweringen waarmee een spreuk uitgevoerd kan worden.
   width: 640
   height: 864
+
+- name: toverstok van beperkte betovering
+  fileType: jpeg
+  alt: Een klein toverstokje, waar weinig magie van af is te voelen.
+  width: 1000
+  height: 1000

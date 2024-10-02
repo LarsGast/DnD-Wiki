@@ -73,3 +73,7 @@
 - itemName: Scroll of Summon Skeletons
   imageName: skeleton statblock
   isHeaderImage: false
+
+- itemName: Toverstok van Beperkte Betovering
+  imageName: toverstok van beperkte betovering
+  isHeaderImage: true
