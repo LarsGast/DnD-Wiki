@@ -49,4 +49,10 @@
   published: false
 
 - name: Storm Kern
-  published: false
+  published: true
+
+- name: Scroll of Summon Skeletons
+  published: true
+
+- name: Toverstok van Beperkte Betovering
+  published: true

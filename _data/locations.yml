@@ -212,7 +212,7 @@
       value: Ooit bewoond door Zand-Elven, totdat de Tarrasque 98 jaar geleden aanviel
 
 - name: Clashenburg
-  published: false
+  published: true
   properties:
     - name: Soort
       value: Dorp
@@ -232,7 +232,7 @@
       value: Gemeenschapsgeest, handel, militair gedisciplineerd, bekend om ambachtelijke vaardigheden en kwalitatieve goederen
 
 - name: IJzerfort
-  published: false
+  published: true
   properties:
     - name: Soort
       value: Dorp
@@ -245,7 +245,7 @@
     - name: Infrastructuur
       value: Kristallen muren, versterkte poorten, defensieve structuren, centrale plein, woongebied, barakken, hulpbronnengebouwen
     - name: Politiek
-      value: Geleid door Thorn de Veroveraar, met een hiërarchie van militair leiderschap
+      value: Geleid door een enkel stamhoofd, met een hiërarchie van militair leiderschap
     - name: Geschiedenis
       value: Oorspronkelijk een kleine nederzetting, gegroeid door agressieve uitbreidingen en plunderingen van naburige dorpen
     - name: Cultuur
