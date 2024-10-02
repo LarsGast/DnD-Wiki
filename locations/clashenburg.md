@@ -19,7 +19,7 @@ De ambachtswijk herbergt de werkplaatsen van smeden, timmerlieden en andere vakl
 De barakken bevinden zich aan de rand van het dorp en dienen als huisvesting en trainingsfaciliteiten voor de dorpssoldaten. De trainingsgronden zijn uitgerust met oefenpoppen, sparring-ringen en boogschietdoelen. Onder leiding van Kara de Felle worden de troepen dagelijks gedrild en voorbereid op verdediging en aanvallen.
 
 ### Hulpbronnen gebouwen
-De regio aan de rand van het dorp bevat de essentiële gebouwen voor de economische stabiliteit van Clashenburg, waaronder goudmijnen, elixirverzamelaars, en donkere elixirboren.
+De regio aan de rand van het dorp bevat de essentiële gebouwen voor de economische stabiliteit van Clashenburg, waaronder goudmijnen en elixirverzamelaars.
 
 ### Verdedigingsstructuren
 Verspreid door het dorp bevinden zich belangrijkste verdedigingsmechanismen, zoals kanonnen, boogschutterstorens, en tovenaarstorens.
