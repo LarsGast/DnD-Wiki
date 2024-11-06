@@ -6,7 +6,7 @@ title: Gnomengarde
 ## Overzicht
 Een stroom leidt bergopwaarts naar de voet van de berg, waar de erosie van de waterval een natuurlijke holte heeft uitgesleten. De brullende waterval creëert een mistwolk wanneer deze in een ondiepe waterplas stort, waarbinnen twee kleine eilandjes oprijzen die bedekt zijn met zestig centimeter hoge rode, groene en paarse paddenstoelen. Verschillende grotopeningen kijken uit op de poel vanaf rotsachtige richels, twintig tot tien meter boven de grond. De berg blokkeert het zonlicht om deze plek te bereiken.
 
-Gnomengarde heeft vijf grotingangen bovenop richels met steile, rotsachtige hellingen. Een smal voetpad loopt omhoog langs de noordoostelijke helling, waardoor het gemakkelijk is om zonder controle naar de ingang van de grot te klimmen.
+Gnomengarde heeft vijf grotingangen bovenop richels met steile, rotsachtige hellingen. Een smal voetpad loopt omhoog langs de noordoostelijke helling, waardoor het gemakkelijk is om zonder moeite naar de ingang van de grot te klimmen.
 
 In Gnomengarde wonen twintig rots kabouters, waaronder koning Gnerkli en koning Korboz.
 
