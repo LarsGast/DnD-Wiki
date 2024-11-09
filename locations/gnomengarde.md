@@ -3,15 +3,50 @@ layout: location
 title: Gnomengarde
 ---
 
+<div class="unpublished">
+    <table>
+        <caption>Wild Magic Table</caption>
+        <tr>
+            <th>Roll</th>
+            <th>Effect</th>
+        </tr>
+        <tr>
+            <td>1-6</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>7-10</td>
+            <td>The caster's skin turns a vibrant shade of blue.</td>
+        </tr>
+        <tr>
+            <td>11-14</td>
+            <td>Tiny, insubstantial motes of light circle the caster, shedding bright light in a 10-foot radius and dim light for an additional 10 feet.</td>
+        </tr>
+        <tr>
+            <td>15-17</td>
+            <td>The caster sprouts wings like those of a butterfly. The wings give the caster a flying speed of 30 feet.</td>
+        </tr>
+        <tr>
+            <td>18-19</td>
+            <td>The caster teleports up to 60 feet to a random unoccupied space of the DM's choice.</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>A whimsical effect of the DM's invention.</td>
+        </tr>
+    </table>
+    Effects duren 1 uur.
+</div>
+
 ## Overzicht
-Een stroom leidt bergopwaarts naar de voet van de berg, waar de erosie van de waterval een natuurlijke holte heeft uitgesleten. De brullende waterval creëert een mistwolk wanneer deze in een ondiepe waterplas stort, waarbinnen twee kleine eilandjes oprijzen die bedekt zijn met zestig centimeter hoge rode, groene en paarse paddenstoelen. Verschillende grotopeningen kijken uit op de poel vanaf rotsachtige richels, twintig tot tien meter boven de grond. De berg blokkeert het zonlicht om deze plek te bereiken.
+Een stroom leidt bergopwaarts naar de voet van de berg, waar de erosie van de waterval een natuurlijke holte heeft uitgesleten. De brullende waterval creëert een mistwolk wanneer deze in een ondiepe waterplas stort, waarbinnen twee kleine eilandjes oprijzen die bedekt zijn met zestig centimeter hoge rode, groene en paarse paddenstoelen. Een deel van deze paddenstoelen is volledig omhuld in ijs, iets waar de witte draak die in de bergen leeft verantwoordelijk voor is. Verschillende grotopeningen kijken uit op de poel vanaf rotsachtige richels, twintig tot tien meter boven de grond. De berg blokkeert het zonlicht om deze plek te bereiken.
 
 Gnomengarde heeft vijf grotingangen bovenop richels met steile, rotsachtige hellingen. Een smal voetpad loopt omhoog langs de noordoostelijke helling, waardoor het gemakkelijk is om zonder moeite naar de ingang van de grot te klimmen.
 
 In Gnomengarde wonen twintig rots kabouters, waaronder koning Gnerkli en koning Korboz.
 
 ## Wilde magie
-Wilde magie is een soort magie die niet onder controle kan worden gehouden, en Gnomengarde is daar al lang een bron van. Wanneer een wezen ergens op de Gnomengarde-kaart een spreuk uitvoert, kan er een bijkomend effect optreden.
+Sinds de Draak van Icespire Peak Gnomengarde heeft aangevallen zorgen de paddenstoelen op de eilandjes ervoor dat de magie in de omgeving verstoord is. Deze wilde magie zorgt ervoor dat wanneer een wezen ergens in Gnomengarde een spreuk uitvoert, er een bijkomend effect kan optreden.
 
 <div class="unpublished">
     <h2>DM</h2>
@@ -42,34 +77,89 @@ Wilde magie is een soort magie die niet onder controle kan worden gehouden, en G
     Deze kamer is hoog opgestapeld met kleine houten kratten. Elk bevat broden van groen champignonbrood en andere voedingsmiddelen die door de kabouters zijn verzameld en bewaard.
 
     <h3>G6. Vatkrabben</h3>
-    Geparkeerd in nissen in deze verder lege kamer staan twee gnomische constructies. Ze lijken allemaal op een krab met een ton als schelp, zes scharnierende metalen poten en een paar naar voren gerichte tangklauwen. Een luik aan de bovenkant van elke loop gaat open en onthult een binnen compartiment dat is uitgerust met een kleine, met leer beklede stoel omgeven door hendels, pedalen en versnellingen. De vaten zijn niet luchtdicht.
+    <p>
+        Geparkeerd in nissen in deze verder lege kamer staan twee gnomische constructies. Ze lijken allemaal op een krab met een ton als schelp, zes scharnierende metalen poten en een paar naar voren gerichte tangklauwen. Een luik aan de bovenkant van elke loop gaat open en onthult een binnen compartiment dat is uitgerust met een kleine, met leer beklede stoel omgeven door hendels, pedalen en versnellingen. De vaten zijn niet luchtdicht.
+    </p>
 
-    De kabouters bouwden deze krabachtige constructies om andere voorwerpen vast te pakken en te verplaatsen, een beetje zoals ruwe vorkheftrucks. De constructies zijn echter zo onhandig dat ze onbruikbaar zijn voor delicaat werk. Ze zijn net klein genoeg om door de 1,5 meter brede gangen van Gnomengarde te navigeren.
+    <p>
+        De kabouters bouwden deze krabachtige constructies om andere voorwerpen vast te pakken en te verplaatsen, een beetje zoals ruwe vorkheftrucks. De constructies zijn echter zo onhandig dat ze onbruikbaar zijn voor delicaat werk. Ze zijn net klein genoeg om door de 1,5 meter brede gangen van Gnomengarde te navigeren.
+    </p>
 
-    Elke vat krab is ontworpen om een enkele kleine mensachtige vast te houden, hoewel een middelgrote mensachtige er met enig ongemak in kan passen. Terwijl het wezen zich in de ton bevindt met het luik gesloten, heeft het volledige dekking tegen aanvallen van buiten het apparaat.
+    <p>
+        Elke vat krab is ontworpen om een enkele kleine mensachtige vast te houden, hoewel een middelgrote mensachtige er met enig ongemak in kan passen. Terwijl het wezen zich in de ton bevindt met het luik gesloten, heeft het volledige dekking tegen aanvallen van buiten het apparaat.
+    </p>
+
+    <p>
+        <i>
+            Each barrel crab is a Large object with AC 15, 30 hit points, a Strength score of 10, and immunity to poison and psychic damage. It is designed to hold a single Small humanoid, though a Medium humanoid can fit inside with some discomfort. While in the barrel with the hatch closed, a creature has total cover against attacks from outside the contraption. It can use its action to make the contraption scuttle across the ground at a walking speed of 15 feet or make one attack with its pincer claws.
+
+            Claws. Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 5 (2d4) piercing damage, and the target is grappled (escape DC 10).
+        </i>
+    </p>
 
     <h3>G7. Automatisch ladend kruisboog-platform</h3>
-    Aan de vloer van deze kamer is een roterend platform vastgeschroefd, uitgerust met vier zware kruisbogen die automatisch herladen. Elke kruisboog wordt geleverd met twintig bouten. Boven de kruisbogen is op een hoogte van 1,80 meter een stoel gemonteerd die is uitgerust met pedalen die ervoor zorgen dat het hele apparaat tegen de klok in draait, en met hendels die de kruisbogen herladen en afvuren.
+    <p>
+        Aan de vloer van deze kamer is een roterend platform vastgeschroefd, uitgerust met vier zware kruisbogen die automatisch herladen. Elke kruisboog wordt geleverd met twintig bouten. Boven de kruisbogen is op een hoogte van 1,80 meter een stoel gemonteerd die is uitgerust met pedalen die ervoor zorgen dat het hele apparaat tegen de klok in draait, en met hendels die de kruisbogen herladen en afvuren.
+    </p>
 
-    De uitvinder van het apparaat zit in de stoel, een kluizenaar van de rots kabouter genaamd Facktoré. Als ze vreemden ziet, besluit Facktoré het apparaat op hen uit te testen. Ze gaat pas staan als zij of haar apparaat niet meer functioneert, of als ze geen doelen meer kan zien. Omdat ze gestoord is en volledig in beslag wordt genomen door haar werk, kan ze nauwelijks een samenhangende zin aan elkaar rijgen, laat staan bezoekers adviseren waar ze heen moeten of met wie ze moeten praten.
+    <i>
+        <p>
+            This clanking, clattering contraption is a Large object with AC 13, 45 hit points, and immunity to poison and psychic damage. Every time it loses 10 hit points, one of its crossbows breaks. A creature sitting in the chair can use an action to rotate the device up to 360 degrees counterclockwise and fire up to two of its crossbows in any direction. Each crossbow makes the following attack.
+        </p>
+        <p>
+            <b>Heavy Crossbow. Ranged Weapon Attack: +5 to hit, range 50/200 ft., one target. Hit: 5 (1d10) piercing damage.</b>
+        </p>
+    </i>
+
+    <p>
+        De uitvinder van het apparaat zit in de stoel, een kluizenaar van de rots kabouter genaamd Facktoré. Ze heeft dit apparaat gemaakt om ongewenste indringers buiten te houden, maar heeft het per ongeluk zo geprogrammeerd dat het apparaat alles wat niet een gnome is aanvalt, waaronder de groep avonturiers. Zodra er niet-gnomes in de kamer komen, valt het apparaat uit zichzelf aan zonder dat Facktoré hier iets aan kan doen. Het apparaat stopt niet totdat het gevaar of het apparaat zelf verslagen is.
+    </p>
 
     <h3>G8. Mimic en Champignonwijn</h3>
     Deze kamer bevat twaalf vaten van veertig liter, geplaatst in brede nissen. Elk vat is beveiligd met een houten beugel. De vaten zijn afgetapt met houten tappen. Twee van die vaten zijn halfvol en twee zijn bijna leeg. Zeven van de acht vaten in de noordelijke en oostelijke alkoven zijn on-aangeboord en zitten vol paddenstoelwijn.
 
     <h3>G9. Kabouterwachtpost</h3>
-    Mist van de waterval dempt deze lege grot, die een 3 meter hoge rand heeft die erop uitkijkt in het zuiden. Op de rand staan twee rotskabouters: een vrouwtje genaamd Ulla en een mannetje genaamd Pog. Hun opdracht is om 'shapechangers ter plekke aan te vallen'. Omdat iedereen een shapechanger kan zijn, vallen ze iedereen aan die niet kan bewijzen dat hij is wie hij beweert te zijn.
+    <p>
+        Mist van de waterval dempt deze lege grot, die een 3 meter hoge rand heeft die erop uitkijkt in het zuiden. Op de rand staan twee rotskabouters: een vrouwtje genaamd Ulla en een mannetje genaamd Pog. Hun opdracht is om 'shapechangers ter plekke aan te vallen'. Omdat iedereen een shapechanger kan zijn, vallen ze iedereen aan die niet kan bewijzen dat hij is wie hij beweert te zijn.
+    </p>
+
+    <p>
+        Een DC 15 charisma check is genoeg om voorbij de gnomes te komen.
+    </p>
 
     <h3>G10. Draaiende messen</h3>
-    Dit gebied wordt licht verduisterd door mist van de waterval. Het grotere oostelijke deel van de kamer bevat twee snel draaiende apparaten die eruit zien als tourniquets, uitgerust met stapels lange, scherpe messen op een afstand van 30 cm van elkaar. Het noordelijke tourniquet draait tegen de klok in, terwijl het zuidelijke met de klok mee draait.
+    <p>
+        Dit gebied wordt licht verduisterd door mist van de waterval. Het grotere oostelijke deel van de kamer bevat twee snel draaiende apparaten die eruit zien als tourniquets, uitgerust met stapels lange, scherpe messen op een afstand van 30 cm van elkaar. Het noordelijke tourniquet draait tegen de klok in, terwijl het zuidelijke met de klok mee draait.
+    </p>
 
-    In de zuidelijke muur van het kleinere westelijke deel van de kamer bevindt zich een koperen hendel in de neerwaartse positie. Als deze hendel omhoog wordt trekt, stoppen de tourniquets met draaien, waardoor een veilige doorgang door de kamer mogelijk is. De rotskabouters omzeilen deze val door de mage hand te gebruiken om de hendel vanuit de oostelijke deuropening te verplaatsen.
+    <p>
+        In de zuidelijke muur van het kleinere westelijke deel van de kamer bevindt zich een koperen hendel in de neerwaartse positie. Als deze hendel omhoog wordt trekt, stoppen de tourniquets met draaien, waardoor een veilige doorgang door de kamer mogelijk is. De rotskabouters omzeilen deze val door de mage hand te gebruiken om de hendel vanuit de oostelijke deuropening te verplaatsen.
+    </p>
+    
+    <p>
+        <i>
+            Any creature that enters or starts its turn in the eastern part of the room while the blades are spinning must make a DC 15 Dexterity saving throw, taking 18 (4d8) slashing damage on a failed save, or half as much damage on a successful one.
+        </i>
+    </p>
 
     <h3>G11. Uitvindersworkshop</h3>
-    Een mannetje genaamd Fibblestib en een vrouwtje genaamd Dabbledob bevinden zich hier. Als de belangrijkste uitvinders van Gnomengarde proberen ze een uitvinding te bedenken die de waanzin van koning Korboz zal genezen. Het voorstel van Fibblestib is een ‘straal van gezond verstand’. Dabbledob vindt dat stom en wil in plaats daarvan iets bouwen dat een "dwangbuis" wordt genoemd.
+    <p>
+        Een mannetje genaamd Fibblestib en een vrouwtje genaamd Dabbledob bevinden zich hier. Als de belangrijkste uitvinders van Gnomengarde proberen ze een uitvinding te bedenken die de waanzin van koning Korboz zal genezen. Het voorstel van Fibblestib is een ‘straal van gezond verstand’. Dabbledob vindt dat stom en wil in plaats daarvan iets bouwen dat een "dwangbuis" wordt genoemd.
+    </p>
 
-    Fibblestib en Dabbledob beschouwen het mysterie van de verdwijnende kabouters van ondergeschikt belang voor hun missie om hun koningen te helpen. Ze concentreren zich op Korboz en Gnerkli met uitsluiting van al het andere, en beloven magische beloningen in ruil voor hulp.
+    <p>
+        Fibblestib en Dabbledob beschouwen het mysterie van de verdwijnende kabouters van ondergeschikt belang voor hun missie om hun koningen te helpen. Ze concentreren zich op Korboz en Gnerkli met uitsluiting van al het andere, en beloven magische beloningen in ruil voor hulp.
+    </p>
 
-    De werkplaats is volgestouwd met half voltooide gnomische uitvindingen die geen enkel doel dienen, en met werktafels bezaaid met gereedschap. Een 3 meter hoge richel kijkt uit over de kamer en is voorzien van een houten voetstuk waarop een in leer gebonden boek staat.
+    <p>
+        De werkplaats is volgestouwd met half voltooide gnomische uitvindingen die geen enkel doel dienen, en met werktafels bezaaid met gereedschap. Een 3 meter hoge richel kijkt uit over de kamer en is voorzien van een houten voetstuk waarop een in leer gebonden boek staat.
+    </p>
+
+    <p>
+        <i>
+            Treasure. The book on the pedestal is a spellbook that the rock gnomes of Gnomengarde share. Its cover describes its title as Magick of Gnomengarde (in Common and Gnomish), and it contains the wizard spells burning hands, detect magic, identify, mage armor, magic missile, shield, and sleep.
+        </i>
+    </p>
 
     <h3>G12. Kabouter-woonplaatsen</h3>
     De vloer van deze grot is bezaaid met de overblijfselen van oude kampvuren. Vier zij-grotten dienen als slaapgedeelte, met in elke grot vijf kleine houten bedjes gepropt. Acht rotskabouters slapen hier heerlijk als de personages voor het eerst arriveren, met twee kabouters in elke zij grot: Caramip, Jabby, Nyx en Quippy (vrouwtjes), en Anverth, Delebean, Pallabar en Zook (mannetjes).
@@ -83,7 +173,7 @@ Wilde magie is een soort magie die niet onder controle kan worden gehouden, en G
     Bovenop een stenen podium staan twee gedrongen tronen gemaakt van schroot en op maat gemaakt voor kabouters. Een geheime deur in de noordelijke muur verbergt een korte tunnel die naar gebied G15 leidt. Alleen de kabouterkoningen kennen deze geheime doorgang.
 
     <h3>G15. De slaapkamer van Kabouterkoningen</h3>
-    Koning Korboz heeft zichzelf en koning Gnerkli opgesloten in hun slaapkamer, waarbij hij vergeet dat er een geheime deur is die anderen kunnen vinden en gebruiken om toegang te krijgen. Alleen Korboz en Gnerkli hebben sleutels van de afgesloten hoofddeur. Als de personages op de deur kloppen of op een andere manier hun aankomst aankondigen, spreekt Korboz met hen vanuit de kamer en waarschuwt voor een "vormwisselaar" in hun midden. Korboz komt pas weer bij zinnen als de personages hem verzekeren dat het monster is gevonden en gedood. Of de mimic nu echt vermoord is of niet, het overtuigen van Korboz ervan dat hij dood is, vereist een succesvolle DC 12 Charisma (Persuasion) -check.
+    Koning Korboz heeft zichzelf en koning Gnerkli opgesloten in hun slaapkamer, waarbij hij vergeet dat er een geheime deur is die anderen kunnen vinden en gebruiken om toegang te krijgen. Alleen Korboz en Gnerkli hebben sleutels van de afgesloten hoofddeur. Als de personages op de deur kloppen of op een andere manier hun aankomst aankondigen, spreekt Korboz met hen vanuit de kamer en waarschuwt voor een "vormwisselaar" in hun midden. Korboz komt pas weer bij zinnen als de personages hem verzekeren dat het monster is gevonden en gedood. Of de mimic nu echt vermoord is of niet, het overtuigen van Korboz ervan dat hij dood is, vereist een succesvolle DC 20 Charisma (Persuasion) -check.
 
     Korboz en Gnerkli zijn kluizenaars van rotskabouters, elk met een grillige metalen kroon en een patchwork-mantel. Gnerkli wordt vastgelijmd aan een stoel en vastgehouden. Korboz heeft een fles met oplosmiddel bij zich die de lijm bij contact oplost. Hun kamer bevat alle attributen van een mooi ingerichte kabouterslaapkamer.
 
