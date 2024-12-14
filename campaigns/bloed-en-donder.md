@@ -9,15 +9,15 @@ Het is diep in de nacht. Theodas, de High-Elf van een groep avonturiers, staat o
 
 Theodas reflecteert op zijn eerdere ontmoeting met de draak. Tijdens deze confrontatie zijn twee van zijn compagnons gestorven. De groep was machteloos; ze hebben de draak geen enkele schade kunnen toebrengen. Een draak zoals deze, ook al is hij nog jong, kan immense schade aanrichten in zijn omgeving.
 
-Plots hoort Theodas een geluid in de bosjes. Het blijkt een kleine groep half-orcs te zijn. Om hun nekken hangen kettingen met vreemde symbolen. Zodra Theodas deze symbolen ziet, komt er een gevoel over hem heen van angst, woede en donder. Dit is hetzelfde symbool dat gedragen werd door de mensen die zijn dorp jaren geleden hebben verwoest.
+Plots hoort Theodas een geluid in de bosjes. Het blijkt een kleine groep Orcs te zijn. Om hun nekken hangen kettingen met vreemde symbolen. Zodra Theodas deze symbolen ziet, komt er een gevoel over hem heen van angst, woede en donder. Dit is hetzelfde symbool dat gedragen werd door de mensen die zijn dorp jaren geleden hebben verwoest.
 
 Gedachten en gevoelens die Theodas zo lang heeft weten te verstoppen, komen als een razende rivier bij hem op. Hij ziet brandende huizen en grote paniek op de straten. Hij ziet hoe er op zijn vrienden en familie wordt gejaagd en hij voelt verschrikkelijke onmacht. Hij ziet hoe de hemel is dichtgetrokken en hoe een enorme storm los barst. Het symbool om de nekken van de verwoesters is in zijn gedachten gebrand. Dit is het symbool van Bloed en Donder.
 
-De woede overmeestert Theodas en hij valt de vreemdelingen zonder na te denken aan. De commotie wekt P.E.K.K.A. en de Wakanda Panter, die Theodas te hulp schieten. De half-orcs proberen te vluchten, maar de avonturiers laten hen niet zomaar gaan.
+De woede overmeestert Theodas en hij valt de vreemdelingen zonder na te denken aan. De commotie wekt P.E.K.K.A. en de Wakanda Panter, die Theodas te hulp schieten. De Orcs proberen te vluchten, maar de avonturiers laten hen niet zomaar gaan.
 
 {Vechten enzo}
 
-De half-orcs blijken een brief bij zich te hebben, waarin een uitnodiging staat voor een bijeenkomst in de bergen van de Sword Coast. De locatie ligt niet ver van hun rustplaats en de bijeenkomst zal elk moment beginnen. Theodas, vol woede en verlangen naar wraak, grijpt de kans om de verwoesters van Bloed en Donder te berechten. P.E.K.K.A. ziet geen andere keuze en volgt hem, samen met de Wakanda Panter.
+De Orcs blijken een brief bij zich te hebben, waarin een uitnodiging staat voor een bijeenkomst in de bergen van de Sword Coast. De locatie ligt niet ver van hun rustplaats en de bijeenkomst zal elk moment beginnen. Theodas, vol woede en verlangen naar wraak, grijpt de kans om de verwoesters van Bloed en Donder te berechten. P.E.K.K.A. ziet geen andere keuze en volgt hem, samen met de Wakanda Panter.
 
 ### Heilige Macht
 
@@ -33,9 +33,9 @@ De wanden van de grot zijn versierd met haastig getekende symbolen—bliksemschi
 
 Aan één muur valt iets op. Er hangt een groot, verschroeid poster, vastgenageld met scherpe spijkers, de randen gekruld in de vochtige lucht. De poster toont een grote figuur, gehuld in donkere wolken met bliksemschichten die uit zijn handen komen. Onder het beeld staan woorden in een oud schrift, waarvan een deel verschroeid is, maar genoeg leesbaar om de naam Talos en zinnen als “de storm is onze god” en “door vernietiging worden wij wedergeboren” te ontcijferen.
 
-Naast de hoofdkamer is er een vergaderruimte, die op dit moment in gebruik is. De avonturiers zien een groep bestaande uit half-orcs, {needle/twig} blights, en één mens. De mens staat aan het midden van de tafel, met een gewaad dat lijkt op een beer om zich heen gewikkeld. Hij is aan het vertellen dat de dag van hun wederopstand nabij is. Spoedig zullen ze een wezen genaamd Gorthok the Thunder Boar tot leven roepen, een wezen dat donder en verwoesting zal brengen naar de hele Sword Coast. De groep avonturiers leert dat de draak Cryovain een bron is van stormen overal waar hij vliegt, en aanbidders van Talos van plan zijn om deze stormen te gebruiken bij het bezweren van het huisdier van de god.
+Naast de hoofdkamer is er een vergaderruimte, die op dit moment in gebruik is. De avonturiers zien een groep bestaande uit Orcs, {needle/twig} blights, en één Half-Orc. De Half-Orc staat aan het midden van de tafel, met een gewaad dat lijkt op een beer om zich heen gewikkeld. Hij is aan het vertellen dat de dag van hun wederopstand nabij is. Spoedig zullen ze een wezen genaamd Gorthok the Thunder Boar tot leven roepen, een wezen dat donder en verwoesting zal brengen naar de hele Sword Coast. De groep avonturiers leert dat de draak Cryovain een bron is van stormen overal waar hij vliegt, en aanbidders van Talos van plan zijn om deze stormen te gebruiken bij het bezweren van het huisdier van de god.
 
-Zodra de avonturiers de kamer binnenstormen om hier een stokje voor te steken, probeert de leider van de groep te vluchten door een geheime uitgang. Een aantal half-orcs en blights blijven over om de avonturiers om te leggen.
+Zodra de avonturiers de kamer binnenstormen om hier een stokje voor te steken, probeert de leider van de groep te vluchten door een geheime uitgang. Een aantal Orcs en blights blijven over om de avonturiers om te leggen.
 
 {Gevecht}
 

@@ -801,7 +801,7 @@
   published: false
   properties:
     - name: Ras
-      value: Mens
+      value: Half-Orc
     - name: Geslacht
       value: Man
     - name: Leeftijd
@@ -809,7 +809,7 @@
     - name: Bevindt zich op dit moment in
       value: de Sword Mountains
     - name: Talen
-      value: Common, Orcish
+      value: Common, Orc
   icons:
     - name: question
     - name: male
