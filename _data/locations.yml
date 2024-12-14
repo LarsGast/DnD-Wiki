@@ -270,3 +270,21 @@
       value: De kabouters zijn hier gaan wonen om de waterval dat een meer vormt aan de voet van de berg
     - name: Cultuur
       value: Iedereen gaat goed met elkaar om
+
+- name: Mountain Hollow
+  published: false
+  properties:
+    - name: Soort
+      value: Grot
+    - name: Inwoners
+      value: Geen
+    - name: Populatie
+      value: 0
+    - name: Geografische locatie
+      value: In de Sword Mountains
+    - name: Infrastructuur
+      value: Ingegraven in de berg
+    - name: Geschiedenis
+      value: Dient als vergaderplaats van de volgers van Talos
+    - name: Cultuur
+      value: Verborgen, en dat willen we zo houden
