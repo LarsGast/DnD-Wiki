@@ -64,3 +64,6 @@
 - firstLocationName: Gnomengarde
   secondLocationName: Phandalin
   isSuperSubRelationship: false
+- firstLocationName: Gnomengarde
+  secondLocationName: Mountain Hollow
+  isSuperSubRelationship: false
