@@ -161,3 +161,7 @@
 - characterName: Zyra de Duistere
   imageName: skeleton statblock
   isHeaderImage: false
+
+- characterName: Yargath
+  imageName: yargath
+  isHeaderImage: true

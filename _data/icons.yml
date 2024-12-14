@@ -18,6 +18,9 @@
 - name: tavern
   description: Heeft een herberg
 
+- name: question
+  description: Speelt een (nog) onbekende rol
+
 - name: with-party
   description: Bij de groep
 
