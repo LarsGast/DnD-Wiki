@@ -21,7 +21,7 @@ De Orcs blijken een brief bij zich te hebben, waarin een uitnodiging staat voor 
 
 ### Heilige Macht
 
-De locatie die in de brief beschreven staat blijkt een grot te zijn aan de voet van de Sword Mountains, de ingang bewaakt door {needle/twig} blights.
+De locatie die in de brief beschreven staat blijkt een grot te zijn aan de voet van de Sword Mountains, de ingang bewaakt door Needle Blights.
 
 {Door vechten of stealth komen ze binnen}
 
@@ -31,12 +31,12 @@ Eenmaal binnen is de grot klein maar functioneel. De hoofdkamer, niet veel meer 
 
 De wanden van de grot zijn versierd met haastig getekende symbolen—bliksemschichten, scherp en ruw, gekrast in de steen of geschilderd op gescheurde stukken stof en perkament. Sommige symbolen zijn simpel, andere zijn complexer, in chaotische patronen om elkaar heen gewikkeld. Af en toe zie je een symbool van een schedel, vaak met bliksemschichten die door de holle ogen trekken. De tekeningen zijn ruw, maar er is een consistent thema: macht door vernietiging, een storm van chaos. De symbolen lijken niet toe te behoren tot een specifiek clan, maar eerder tot de stilistische tekens van een geheime sekte, zonder enige zorg voor artistieke finesse.
 
-Aan één muur valt iets op. Er hangt een groot, verschroeid poster, vastgenageld met scherpe spijkers, de randen gekruld in de vochtige lucht. De poster toont een grote figuur, gehuld in donkere wolken met bliksemschichten die uit zijn handen komen. Onder het beeld staan woorden in een oud schrift, waarvan een deel verschroeid is, maar genoeg leesbaar om de naam Talos en zinnen als “de storm is onze god” en “door vernietiging worden wij wedergeboren” te ontcijferen.
+Aan één muur valt iets op. Er hangt een grote, verschroeide poster, vastgenageld met scherpe spijkers, de randen gekruld in de vochtige lucht. De poster toont een groot figuur, gehuld in donkere wolken met bliksemschichten die uit zijn handen komen. Onder het beeld staan woorden in een oud schrift, waarvan een deel verschroeid is, maar genoeg leesbaar om de naam Talos en zinnen als “de storm is onze god” en “door vernietiging worden wij wedergeboren” te ontcijferen.
 
-Naast de hoofdkamer is er een vergaderruimte, die op dit moment in gebruik is. De avonturiers zien een groep bestaande uit Orcs, {needle/twig} blights, en één Half-Orc. De Half-Orc staat aan het midden van de tafel, met een gewaad dat lijkt op een beer om zich heen gewikkeld. Hij is aan het vertellen dat de dag van hun wederopstand nabij is. Spoedig zullen ze een wezen genaamd Gorthok the Thunder Boar tot leven roepen, een wezen dat donder en verwoesting zal brengen naar de hele Sword Coast. De groep avonturiers leert dat de draak Cryovain een bron is van stormen overal waar hij vliegt, en aanbidders van Talos van plan zijn om deze stormen te gebruiken bij het bezweren van het huisdier van de god.
+Naast de hoofdkamer is er een vergaderruimte, die op dit moment in gebruik is. De avonturiers zien een groep bestaande uit een aantal Orcs en één Half-Orc. De Half-Orc Yargath staat aan het midden van de tafel, met een gewaad dat lijkt op een beer om zich heen gewikkeld. Hij is aan het vertellen dat de dag van hun wederopstand nabij is. Spoedig zullen ze een wezen genaamd Gorthok the Thunder Boar tot leven roepen, een wezen dat donder en verwoesting zal brengen naar de hele Sword Coast. De groep avonturiers leert dat de draak Cryovain een bron is van stormen overal waar hij vliegt, en aanbidders van Talos van plan zijn om deze stormen te gebruiken bij het bezweren van het huisdier van de god.
 
-Zodra de avonturiers de kamer binnenstormen om hier een stokje voor te steken, probeert de leider van de groep te vluchten door een geheime uitgang. Een aantal Orcs en blights blijven over om de avonturiers om te leggen.
+Zodra de avonturiers de kamer binnenstormen om hier een stokje voor te steken, probeert Yargath, de leider van de groep, te vluchten door een geheime uitgang. De Orcs blijven achter om de avonturiers om te leggen.
 
 {Gevecht}
 
-Na het gevecht is de leider van de groep nergens meer te bekennen. Theodas, P.E.K.K.A., en de Wakanda Panter vinden hun weg terug naar het kamp, de kennis van een groep Talos-aanhangers die Cryovain willen gebruiken om verwoesting en chaos te zaaien, bijtend in hun achterhoofd.
+Na het gevecht is Yargath nergens meer te bekennen. Theodas, P.E.K.K.A., en de Wakanda Panter vinden hun weg terug naar het kamp, de kennis van een groep Talos-aanhangers die Cryovain willen gebruiken om verwoesting en chaos te zaaien, bijtend in hun achterhoofd.
