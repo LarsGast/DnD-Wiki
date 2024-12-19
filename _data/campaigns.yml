@@ -30,5 +30,5 @@
 
 - name: Bloed en Donder
   order: 7
-  published: false
+  published: true
   isFlashback: false
