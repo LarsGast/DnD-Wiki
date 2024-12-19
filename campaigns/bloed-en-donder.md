@@ -9,21 +9,19 @@ Het is diep in de nacht. Theodas, de High-Elf van een groep avonturiers, staat o
 
 Theodas reflecteert op zijn eerdere ontmoeting met de draak. Tijdens deze confrontatie zijn twee van zijn compagnons gestorven. De groep was machteloos; ze hebben de draak geen enkele schade kunnen toebrengen. Een draak zoals deze, ook al is hij nog jong, kan immense schade aanrichten in zijn omgeving.
 
-Plots hoort Theodas een geluid in de bosjes. Het blijkt een kleine groep Orcs te zijn. Om hun nekken hangen kettingen met vreemde symbolen. Zodra Theodas deze symbolen ziet, komt er een gevoel over hem heen van angst, woede en donder. Dit is hetzelfde symbool dat gedragen werd door de mensen die zijn dorp jaren geleden hebben verwoest.
+Plots hoort Theodas een geluid in de bosjes. Het blijken een twee Orcs te zijn. Om hun nekken hangen kettingen met vreemde symbolen. Zodra Theodas deze symbolen ziet, komt er een gevoel over hem heen van angst, woede en donder. Dit is hetzelfde symbool dat gedragen werd door de mensen die zijn dorp vijf jaar geleden hebben verwoest.
 
 Gedachten en gevoelens die Theodas zo lang heeft weten te verstoppen, komen als een razende rivier bij hem op. Hij ziet brandende huizen en grote paniek op de straten. Hij ziet hoe er op zijn vrienden en familie wordt gejaagd en hij voelt verschrikkelijke onmacht. Hij ziet hoe de hemel is dichtgetrokken en hoe een enorme storm los barst. Het symbool om de nekken van de verwoesters is in zijn gedachten gebrand. Dit is het symbool van Bloed en Donder.
 
-De woede overmeestert Theodas en hij valt de vreemdelingen zonder na te denken aan. De commotie wekt P.E.K.K.A. en de Wakanda Panter, die Theodas te hulp schieten. De Orcs proberen te vluchten, maar de avonturiers laten hen niet zomaar gaan.
+De woede overmeestert Theodas en hij valt de vreemdelingen zonder na te denken aan. De commotie wekt P.E.K.K.A. en de Wakanda Panter, die Theodas te hulp schieten. De Orcs proberen te vluchten, maar de avonturiers laten hen niet zomaar gaan. Na een kort gevecht, gedreven door woede, weten de avonturiers te Orcs te doden.
 
-{Vechten enzo}
-
-De Orcs blijken een brief bij zich te hebben, waarin een uitnodiging staat voor een bijeenkomst in de bergen van de Sword Coast. De locatie ligt niet ver van hun rustplaats en de bijeenkomst zal elk moment beginnen. Theodas, vol woede en verlangen naar wraak, grijpt de kans om de verwoesters van Bloed en Donder te berechten. P.E.K.K.A. ziet geen andere keuze en volgt hem, samen met de Wakanda Panter.
+De Orcs blijken een brief bij zich te hebben, waarin een uitnodiging staat voor een bijeenkomst in de bergen van de Sword Coast. De locatie ligt niet ver van hun rustplaats vandaan en de bijeenkomst zal elk moment beginnen. Theodas, vol woede en verlangen naar wraak, grijpt de kans om de verwoesters van Bloed en Donder te berechten. P.E.K.K.A. ziet geen andere keuze en volgt hem, samen met de Wakanda Panter.
 
 ### Heilige Macht
 
-De locatie die in de brief beschreven staat blijkt een grot te zijn aan de voet van de Sword Mountains, de ingang bewaakt door Needle Blights.
+De locatie die in de brief beschreven staat blijkt een grot te zijn aan de voet van de Sword Mountains. De grot lijkt aardig verstopt, maar de verwijzingen in de brief zorgen ervoor dat de avonturiers het weten te vinden. Bij de ingang lijken twee lange menselijke wezens te staan. Bij nader inzien blijken dit Needle Blights te zijn die de wacht staan en indringers buiten moeten houden.
 
-{Door vechten of stealth komen ze binnen}
+Praten met deze Needle Blights heeft geen zin, en na een poging tot intimidatie door Theodas barst er een gevecht los. De Needle Blights blijken geen match voor de vuur magie van Theodas, de zwaarden van P.E.K.K.A., en de klauwen van de Wakanda Panter. Niemand lijkt deze commotie gehoord te hebben, en de avonturiers besluiten om naar binnen te gaan.
 
 Het pad naar binnen is smal en steil, de ruwe muren aan beide zijden drukken zich dicht tegen elkaar, alsof de berg zelf deze plek geheim wil houden. De lucht is vochtig, met een vreemde lading die het doet lijken alsof de omgeving iets verwacht. De geur van natte steen en de vage geur van brandend hout hangt in de lucht.
 
@@ -33,10 +31,12 @@ De wanden van de grot zijn versierd met haastig getekende symbolen—bliksemschi
 
 Aan één muur valt iets op. Er hangt een grote, verschroeide poster, vastgenageld met scherpe spijkers, de randen gekruld in de vochtige lucht. De poster toont een groot figuur, gehuld in donkere wolken met bliksemschichten die uit zijn handen komen. Onder het beeld staan woorden in een oud schrift, waarvan een deel verschroeid is, maar genoeg leesbaar om de naam Talos en zinnen als “de storm is onze god” en “door vernietiging worden wij wedergeboren” te ontcijferen.
 
-Naast de hoofdkamer is er een vergaderruimte, die op dit moment in gebruik is. De avonturiers zien een groep bestaande uit een aantal Orcs en één Half-Orc. De Half-Orc Yargath staat aan het midden van de tafel, met een gewaad dat lijkt op een beer om zich heen gewikkeld. Hij is aan het vertellen dat de dag van hun wederopstand nabij is. Spoedig zullen ze een wezen genaamd Gorthok the Thunder Boar tot leven roepen, een wezen dat donder en verwoesting zal brengen naar de hele Sword Coast. De groep avonturiers leert dat de draak Cryovain een bron is van stormen overal waar hij vliegt, en aanbidders van Talos van plan zijn om deze stormen te gebruiken bij het bezweren van het huisdier van de god.
+Naast de hoofdkamer is er een vergaderruimte, die op dit moment in gebruik is. De avonturiers barsten binnen zien een groep bestaande uit vier Orcs en één Half-Orc. De Half-Orc Yargath staat aan het midden van de tafel, met een gewaad dat lijkt op een beer om zich heen gewikkeld. Theodas kent deze man, al herinnert hij zich hem meer als mens, niet als Half-Orc. Yargath kijkt de avonturiers afwachtend aan, hij had hun niet verwacht. De avonturiers weten hem ervan te overtuigen dat zij volgers van Talos zijn, en dat zij mee willen doen met Yargath en zijn groep Orcs om in de naam van Talos chaos te zaaien. Yargath verwelkomt de avonturiers, hij lijkt Theodas niet te herkennen en begeleid graag nieuwe volgelingen in de weg van Talos.
 
-Zodra de avonturiers de kamer binnenstormen om hier een stokje voor te steken, probeert Yargath, de leider van de groep, te vluchten door een geheime uitgang. De Orcs blijven achter om de avonturiers om te leggen.
+Yargath gaat verder met de vergadering die bezig was. Hij is aan het vertellen dat de dag van hun wederopstand nabij is. Spoedig zullen ze een wezen genaamd Gorthok the Thunder Boar tot leven roepen, een wezen dat donder en verwoesting zal brengen naar de hele Sword Coast. De avonturiers leren dat de draak Cryovain een bron is van stormen overal waar hij vliegt, en dat aanbidders van Talos van plan zijn om deze stormen te gebruiken bij het bezweren van het huisdier van de god op een plek genaamd de "Circle of Thunder".
 
-{Gevecht}
+Na een tijdje rond Yargath de vergadering af. Nu de avonturiers informatie hebben kunnen verzamelen over het complot van de volgelingen van Talos, doet de kans zich voor om Yargath aan te vallen en om wraak te nemen voor het verwoeste dorp van Theodas. Zodra Yargath het verraad opmerkt, beveelt hij de Orc om aan te vallen, en vlucht hij zelf via een geheime doorgang in de kamer. De vier Orcs zijn samen sterk, maar Theodas, P.E.K.K.A., en de Wakanda Panter zijn sterker, en weten het gevecht te winnen.
 
-Na het gevecht is Yargath nergens meer te bekennen. Theodas, P.E.K.K.A., en de Wakanda Panter vinden hun weg terug naar het kamp, de kennis van een groep Talos-aanhangers die Cryovain willen gebruiken om verwoesting en chaos te zaaien, bijtend in hun achterhoofd.
+Na het gevecht is Yargath nergens meer te bekennen. Theodas, P.E.K.K.A., en de Wakanda Panter verzamelen wat overblijft aan informatie en vinden hun weg terug naar het kamp. De kennis van een groep Talos-aanhangers die Cryovain willen gebruiken om verwoesting en chaos te zaaien, en het feit dat één van de verwoesters van het dorp van Theodas vrij rondloopt in de Sword Mountains, zit bijtend in hun achterhoofd.
+
+De zon komt op. Voordat ze achter Yargath en zijn complot aan kunnen gaan, gaat de  naar Gnomengarde om magische voorwerpen te verzamelen om te gebruiken in de strijd tegen de witte draak van de bergen. Deze magische voorwerpen zullen wellicht ook van pas komen in de mogelijke strijd tegen de volgers van Talos.
