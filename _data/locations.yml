@@ -272,7 +272,7 @@
       value: Iedereen gaat goed met elkaar om
 
 - name: Mountain Hollow
-  published: false
+  published: true
   properties:
     - name: Soort
       value: Grot

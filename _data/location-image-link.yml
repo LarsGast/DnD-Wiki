@@ -138,3 +138,7 @@
 - locationName: Gnomengarde
   imageName: Mimic
   isHeaderImage: false
+
+- locationName: Mountain Hollow
+  imageName: mountain hollow
+  isHeaderImage: true
