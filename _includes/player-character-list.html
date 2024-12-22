@@ -3,9 +3,11 @@
 <script type="module">
     import { fillObjectListDiv } from "{{ '/assets/js/generic-list-builder.js' | relative_url }}";
 
+    window.icons = {{ site.data.icons | jsonify }};
+    
     fillObjectListDiv(
         {{ site.data.player-characters | jsonify }},
-        null,
+        {{ site.data.characters | jsonify }},
         'player-character',
         'player-character-list-container'
     );

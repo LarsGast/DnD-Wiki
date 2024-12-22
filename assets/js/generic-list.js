@@ -107,7 +107,7 @@ const getFilledList = function(objects) {
  * @param {HTMLUListElement} uList 
  */
 const addClassesToList = function(uList) {
-    if (window.listType === 'character') {
+    if (window.listType === 'character' || window.listType === 'player-character') {
         uList.classList.add('character-list');
         uList.classList.add('no-style-list');
         uList.classList.add('no-style-link-group');
