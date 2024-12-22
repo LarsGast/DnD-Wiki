@@ -13,6 +13,7 @@ Deze wiki bestaat uit de volgende pagina's:
 * [Karakters]({{ site.baseurl }}{% link Characters.md %})
 * [Locaties]({{ site.baseurl }}{% link Locations.md %})
 * [Items]({{ site.baseurl }}{% link Items.md %})
+* [PCs]({{ site.baseurl }}{% link Player-Characters.md %})
 
 In de header van elke pagina zijn deze hoofdpagina's ook te vinden. Op deze pagina's vind je een overzicht van alles wat voorgekomen is in de gespeelde avonturen op alfabetische volgorde of op chronologische volgorde. Op een pagina van een specifieke campaign, karakter, etc. zal je ook navigatie linkjes vinden naar alle gerelateerde content.
 
