@@ -42,12 +42,14 @@ const getAbilityScoresList = function() {
 
     const ul = document.createElement('ul');
 
-    ul.appendChild(getAbilityScoreListItem('STR', playerCharacterObject.strength));
-    ul.appendChild(getAbilityScoreListItem('DEX', playerCharacterObject.dexterity));
-    ul.appendChild(getAbilityScoreListItem('CON', playerCharacterObject.constitution));
-    ul.appendChild(getAbilityScoreListItem('INT', playerCharacterObject.intelligence));
-    ul.appendChild(getAbilityScoreListItem('WIS', playerCharacterObject.wisdom));
-    ul.appendChild(getAbilityScoreListItem('CHA', playerCharacterObject.charisma));
+    ul.classList.add('no-style-list');
+
+    ul.appendChild(getAbilityScoreListItem('STRENTGH', playerCharacterObject.strength));
+    ul.appendChild(getAbilityScoreListItem('DEXTERITY', playerCharacterObject.dexterity));
+    ul.appendChild(getAbilityScoreListItem('CONSTITUTION', playerCharacterObject.constitution));
+    ul.appendChild(getAbilityScoreListItem('INTELLIGENCE', playerCharacterObject.intelligence));
+    ul.appendChild(getAbilityScoreListItem('WISDOM', playerCharacterObject.wisdom));
+    ul.appendChild(getAbilityScoreListItem('CHARISMA', playerCharacterObject.charisma));
 
     return ul;
 }
@@ -62,7 +64,24 @@ const getAbilityScoreListItem = function(abilityScoreName, score) {
 
     const li = document.createElement('li');
 
-    li.textContent = `${abilityScoreName}: ${score}`;
+    li.appendChild(getSpanElement(abilityScoreName));
+    li.appendChild(getSpanElement(getAbilityScoreModifier(score)));
+    li.appendChild(getSpanElement(score));
 
     return li;
+}
+
+const getSpanElement = function(content) {
+    const span = document.createElement('span');
+
+    span.textContent = content;
+
+    return span;
+}
+
+const getAbilityScoreModifier = function(score) {
+    const normalizedScore = score - 10;
+    const modifier = Math.floor(normalizedScore / 2);
+
+    return modifier;
 }
