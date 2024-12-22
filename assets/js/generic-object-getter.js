@@ -24,10 +24,6 @@ export const getObjects = function(metadata) {
  */
 const getObjectNames = function(metadata) {
 
-    if (window.currentObjectName === 'PCs'){
-        return getObjectNamesForPcsPage();
-    }
-
     if (window.layout === 'page') {
         return getObjectNamesForMainPages();
     }

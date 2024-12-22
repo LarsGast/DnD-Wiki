@@ -46,16 +46,8 @@ const getAnchorElement = function(object) {
  */
 const getAnchorHref = function(object) {
 
+    const folder = `${window.listType}s`;
     const pageLink = object.customLink ?? object.name.replace(/\s+/g, '-').toLowerCase();
-
-    let folder;
-
-    if (window.currentObjectName === 'PCs'){
-        folder = 'player-characters';
-    }
-    else {
-        folder = `${window.listType}s`;
-    }
 
     return `../${folder}/${pageLink}`;
 }
