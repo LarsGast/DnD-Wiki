@@ -20,15 +20,13 @@ export const getListItem = function(object) {
 }
 /**
  * Get the anchor tag for a single location element.
- * @param {object} object campaign, character, location, or item 
+ * @param {object} object campaign, character, location, or item
  * @returns {HTMLAnchorElement}
  */
 const getAnchorElement = function(object) {
 
-    const pageLink = object.customLink ?? object.name.replace(/\s+/g, '-').toLowerCase();
-
     const anchor = document.createElement('a');
-    anchor.href = `../${window.listType}s/${pageLink}`;
+    anchor.href = getAnchorHref(object);
     
     // Right now, characters have a little more styling than other objects.
     if (window.listType === 'character') {
@@ -39,4 +37,25 @@ const getAnchorElement = function(object) {
     }
 
     return anchor;
+}
+
+/**
+ * Get the href property for the anchor tag of a single object element.
+ * @param {object} object campaign, character, location, or item
+ * @returns {string}
+ */
+const getAnchorHref = function(object) {
+
+    const pageLink = object.customLink ?? object.name.replace(/\s+/g, '-').toLowerCase();
+
+    let folder;
+
+    if (window.currentObjectName === 'PCs'){
+        folder = 'player-characters';
+    }
+    else {
+        folder = `${window.listType}s`;
+    }
+
+    return `../${folder}/${pageLink}`;
 }

@@ -24,7 +24,7 @@ export const getObjects = function(metadata) {
  */
 const getObjectNames = function(metadata) {
 
-    if (window.title === 'PCs'){
+    if (window.currentObjectName === 'PCs'){
         return getObjectNamesForPcsPage();
     }
 
@@ -40,11 +40,13 @@ const getObjectNames = function(metadata) {
 }
 
 /**
- * Get the names of all the related objects that should appear on the 'page' layout. 
+ * Get the names of all the related objects that should appear on the PCs main page. 
  * @returns {string[]}
  */
 const getObjectNamesForPcsPage = function() {
-    return window.allObjects.map(object => object.name);
+    return window.allObjects
+        .filter(object => object.isPlayerCharacter === true)
+        .map(object => object.name);
 }
 
 /**
@@ -52,9 +54,7 @@ const getObjectNamesForPcsPage = function() {
  * @returns {string[]}
  */
 const getObjectNamesForMainPages = function() {
-    return window.allObjects
-        .filter(object => object.isPlayerCharacter === true)
-        .map(object => object.name);
+    return window.allObjects.map(object => object.name);
 }
 
 /**
