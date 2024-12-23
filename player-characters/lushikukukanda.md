@@ -1,4 +1,4 @@
 ---
 layout: player-character
-title: Adonis
+title: Lushikukukanda
 ---

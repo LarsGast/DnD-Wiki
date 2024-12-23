@@ -9,11 +9,11 @@
 # wisdom - number - Value of the WIS ability score of the player
 # charisma - number - Value of the CHA ability score of the player
 
-- name: Adonis
+- name: Lushikukukanda
   published: true
-  strength: 7
+  strength: 12
   dexterity: 8
   constitution: 12
-  intelligence: 13
-  wisdom: 11
-  charisma: 19
+  intelligence: 14
+  wisdom: 15
+  charisma: 14
