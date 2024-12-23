@@ -44,12 +44,12 @@ const getAbilityScoresList = function() {
 
     ul.classList.add('no-style-list');
 
-    ul.appendChild(getAbilityScoreListItem('STRENTGH', playerCharacterObject.strength));
-    ul.appendChild(getAbilityScoreListItem('DEXTERITY', playerCharacterObject.dexterity));
-    ul.appendChild(getAbilityScoreListItem('CONSTITUTION', playerCharacterObject.constitution));
-    ul.appendChild(getAbilityScoreListItem('INTELLIGENCE', playerCharacterObject.intelligence));
-    ul.appendChild(getAbilityScoreListItem('WISDOM', playerCharacterObject.wisdom));
-    ul.appendChild(getAbilityScoreListItem('CHARISMA', playerCharacterObject.charisma));
+    ul.appendChild(getAbilityScoreListItem('STR', playerCharacterObject.strength));
+    ul.appendChild(getAbilityScoreListItem('DEX', playerCharacterObject.dexterity));
+    ul.appendChild(getAbilityScoreListItem('CON', playerCharacterObject.constitution));
+    ul.appendChild(getAbilityScoreListItem('INT', playerCharacterObject.intelligence));
+    ul.appendChild(getAbilityScoreListItem('WIS', playerCharacterObject.wisdom));
+    ul.appendChild(getAbilityScoreListItem('CHA', playerCharacterObject.charisma));
 
     return ul;
 }
