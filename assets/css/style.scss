@@ -221,3 +221,16 @@ img {
         }
     }
 }
+
+/* Summary styling */
+summary {   
+    h3 {
+        /* Display the h3 next to the marker (triangle) */
+        display: inline-block;
+    }
+
+    /* Marker same size as an h3*/
+    &::marker {
+        font-size: 26px;
+    }
+}
