@@ -71,6 +71,11 @@ const getAbilityScoreListItem = function(abilityScoreName, score) {
     return li;
 }
 
+/**
+ * Get a span element with given content set as textContent.
+ * @param {string} content The content to display within the span element.
+ * @returns {HTMLSpanElement}
+ */
 const getSpanElement = function(content) {
     const span = document.createElement('span');
 
@@ -79,9 +84,11 @@ const getSpanElement = function(content) {
     return span;
 }
 
+/**
+ * Get the ability score modifier from an ability score.
+ * @param {number} score
+ * @returns 
+ */
 const getAbilityScoreModifier = function(score) {
-    const normalizedScore = score - 10;
-    const modifier = Math.floor(normalizedScore / 2);
-
-    return modifier;
+    return Math.floor((score - 10) / 2);
 }
