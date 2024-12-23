@@ -1,4 +1,4 @@
-import {getAbilityScoreModifier, getProficiencyModifier} from './util.js';
+import {getAbilityScoreModifier, getProficiencyModifier, getAbbreviationOfAbility} from './util.js';
 
 /**
  * Fills the skills div on a player character page.
@@ -44,6 +44,8 @@ const getSkillsList = function() {
 
     const ul = document.createElement('ul');
 
+    ul.classList.add('no-style-list');
+
     skills.forEach(skill => {
         ul.appendChild(getSkillsListItem(skill));
     })
@@ -58,11 +60,28 @@ const getSkillsList = function() {
  */
 const getSkillsListItem = function(skill) {
 
+    const playerCharacterObject = window.currentObject;
+
     const li = document.createElement('li');
 
-    li.textContent = `${getSkillModifier(skill)} ${skill.name} (${skill.abilityName})`;
+    li.textContent = `${getSkillModifier(skill, playerCharacterObject)} ${skill.name} (${getAbbreviationOfAbility(skill.abilityName)})`;
+
+    const classes = getClassList(skill.name, playerCharacterObject);
+    classes.forEach(className => {
+        li.classList.add(className);
+    });
 
     return li;
+}
+
+const getClassList = function(skillName, playerCharacterObject) {
+    const classList = [];
+
+    if (getIsProficientInSkill(skillName, playerCharacterObject)) {
+        classList.push('proficient');
+    }
+
+    return classList;
 }
 
 /**
@@ -70,9 +89,7 @@ const getSkillsListItem = function(skill) {
  * @param {{name: string, abilityName: string}} skill
  * @returns {number}
  */
-const getSkillModifier = function(skill) {
-
-    const playerCharacterObject = window.currentObject;
+const getSkillModifier = function(skill, playerCharacterObject) {
 
     let modifier = getAbilityScoreModifier(playerCharacterObject[skill.abilityName]) + getSkillProficiencyModifier(skill.name, playerCharacterObject);
 
