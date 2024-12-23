@@ -43,7 +43,7 @@ const getGenericInfoList = function() {
     const ul = document.createElement('ul');
 
     ul.appendChild(getGenericInfoListItem('Class & Level', getClassAndLevelString(playerCharacterObject.levels)));
-    ul.appendChild(getGenericInfoListItem('Race', playerCharacterObject.race));
+    ul.appendChild(getGenericInfoListItem('Race', getRaceString(playerCharacterObject)));
     ul.appendChild(getGenericInfoListItem('Background', playerCharacterObject.background));
     ul.appendChild(getGenericInfoListItem('Alignment', playerCharacterObject.alignment));
 
@@ -66,8 +66,25 @@ const getGenericInfoListItem = function(propertyName, propertyValue) {
 }
 
 /**
+ * Get the display string for the race property
+ * @param {object} playerCharacterObject
+ * @returns {string}
+ */
+const getRaceString = function(playerCharacterObject) {
+
+    let raceString = playerCharacterObject.race;
+
+    if (playerCharacterObject.subRace) {
+        raceString += ` (${playerCharacterObject.subRace})`;
+    }
+
+    return raceString;
+}
+
+/**
  * Get the display string for the class & level property
- * @param {{className: string, level: number}[]} classes 
+ * @param {{className: string, level: number}[]} classes
+ * @returns {string}
  */
 const getClassAndLevelString = function(classes) {
     return classes

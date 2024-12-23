@@ -14,7 +14,8 @@
   levels:
     - className: Cleric
       level: 3
-  race: Black Dragonborn
+  race: Dragonborn
+  subRace: Black
   background: Folk Hero
   alignment: Chaotic Neutral
   strength: 12
