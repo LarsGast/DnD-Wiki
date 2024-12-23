@@ -11,6 +11,12 @@
 
 - name: Lushikukukanda
   published: true
+  levels:
+    - className: Cleric
+      level: 3
+  race: Black Dragonborn
+  background: Folk Hero
+  alignment: Chaotic Neutral
   strength: 12
   dexterity: 8
   constitution: 12
