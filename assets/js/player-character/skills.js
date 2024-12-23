@@ -81,6 +81,10 @@ const getClassList = function(skillName, playerCharacterObject) {
         classList.push('proficient');
     }
 
+    if (getIsExpertInSkill(skillName, playerCharacterObject)) {
+        classList.push('expert');
+    }
+
     return classList;
 }
 
@@ -107,15 +111,29 @@ const getSkillProficiencyModifier = function(skillName, playerCharacterObject) {
         return getProficiencyModifier(playerCharacterObject.levels);
     }
 
+    if (getIsExpertInSkill(skillName, playerCharacterObject)){
+        return getProficiencyModifier(playerCharacterObject.levels) * 2;
+    }
+
     return 0;
 }
 
 /**
- * Checks if the PC is proficient in the given skill
+ * Checks if the PC is proficient in the given skill.
  * @param {string} skillName 
  * @param {object} playerCharacterObject 
  * @returns {boolean}
  */
 const getIsProficientInSkill = function(skillName, playerCharacterObject) {
-    return playerCharacterObject.proficiencies.includes(skillName);
+    return playerCharacterObject.proficiencies?.includes(skillName);
+}
+
+/**
+ * Checks if the PC has expertise in the given skill.
+ * @param {string} skillName 
+ * @param {object} playerCharacterObject 
+ * @returns {boolean}
+ */
+const getIsExpertInSkill = function(skillName, playerCharacterObject) {
+    return playerCharacterObject.expertises?.includes(skillName);
 }
