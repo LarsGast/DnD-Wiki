@@ -1,3 +1,5 @@
+import {getAbilityScoreModifier} from './util.js';
+
 /**
  * Fills the ability scores div on a player character page.
  */
@@ -82,13 +84,4 @@ const getSpanElement = function(content) {
     span.textContent = content;
 
     return span;
-}
-
-/**
- * Get the ability score modifier from an ability score.
- * @param {number} score
- * @returns 
- */
-const getAbilityScoreModifier = function(score) {
-    return Math.floor((score - 10) / 2);
 }

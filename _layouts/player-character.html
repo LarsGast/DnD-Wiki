@@ -17,12 +17,14 @@ layout: default
   <script>
     const playerCharacters = {{ site.data.player-characters | jsonify }};
     window.currentObject = playerCharacters.filter(pc => pc.name === window.currentObjectName)[0];
+    window.skills = {{ site.data.skills | jsonify }};
   </script>
 
   <div class="post-content e-content" itemprop="articleBody">
     {% include player-character/generic-info.html %}
 
     {% include player-character/ability-scores.html %}
+    {% include player-character/skills.html %}
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>

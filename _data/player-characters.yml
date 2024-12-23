@@ -23,3 +23,10 @@
   intelligence: 14
   wisdom: 15
   charisma: 14
+  proficiencies: [
+    Animal Handling,
+    History,
+    Nature,
+    Persuasion,
+    Survival
+  ]
