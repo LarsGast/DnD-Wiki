@@ -47,13 +47,33 @@ export const getAbbreviationOfAbility = function(abilityName) {
 }
 
 /**
+ * Check if the PC is proficient in the given skill.
+ * @param {string} skillName 
+ * @returns {boolean}
+ */
+export const isProficientInSkill = function(skillName) {
+    const proficiencies = getPlayerCharacterProperty("proficiencies");
+    return proficiencies.includes(skillName);
+}
+
+/**
+ * Check if the PC has expertise in the given skill.
+ * @param {string} skillName 
+ * @returns {boolean}
+ */
+export const isExpertInSkill = function(skillName) {
+    const expertises = getPlayerCharacterProperty("expertises");
+    return expertises.includes(skillName);
+}
+
+/**
  * Add or remove a proficiency in a skill.
  * @param {string} skillName Name of the skill.
  * @param {boolean} add Wether the proficiency is added or removed.
  */
 export const changeProficiency = function(skillName, add) {
     saveNewProficiencies(skillName, add);
-    enableOrDisableExpertise(skillName, add);
+    enableOrDisableExpertise(skillName);
 }
 
 /**
@@ -82,12 +102,11 @@ const saveNewProficiencies = function(skillName, add) {
 /**
  * Enable or disable the expertise checkbox for the given skill based on proficiency.
  * @param {string} skillName Name of the skill.
- * @param {boolean} enable Wether the proficiency is added or removed.
  */
-const enableOrDisableExpertise = function(skillName, enable) {
+const enableOrDisableExpertise = function(skillName) {
     const expertiseCheckbox = document.getElementById(`${skillName}_e`);
 
-    if (enable === true) {
+    if (isProficientInSkill(skillName)) {
         expertiseCheckbox.disabled = false;
     }
     else {

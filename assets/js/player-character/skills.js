@@ -1,5 +1,4 @@
-import {getAbilityScoreModifier, getProficiencyModifier, getAbbreviationOfAbility, changeProficiency} from './util.js';
-import {getPlayerCharacterProperty} from '../local-storage-util.js';
+import {getAbilityScoreModifier, getProficiencyModifier, getAbbreviationOfAbility, isProficientInSkill, isExpertInSkill, changeProficiency} from './util.js';
 
 export const fillSkillsList = function(skills) {
     const ul = document.getElementById("skills-list");
@@ -95,25 +94,4 @@ const getSkillModifier = function(skill) {
     }
 
     return skillModifier;
-}
-
-/**
- * Check if the PC is proficient in the given skill.
- * @param {string} skillName 
- * @returns 
- */
-const isProficientInSkill = function(skillName) {
-    const proficiencies = getPlayerCharacterProperty("proficiencies");
-    return proficiencies.includes(skillName);
-}
-
-
-/**
- * Check if the PC has expertise in the given skill.
- * @param {string} skillName 
- * @returns 
- */
-const isExpertInSkill = function(skillName) {
-    const expertises = getPlayerCharacterProperty("expertises");
-    return expertises.includes(skillName);
 }
