@@ -1,4 +1,4 @@
-import { getPlayerCharacterProperty } from '../local-storage-util.js';
+import { getPlayerCharacterProperty, setPlayerCharacterProperty } from '../local-storage-util.js';
 
 /**
  * Get the ability score modifier from an ability score.
@@ -43,5 +43,54 @@ export const getAbbreviationOfAbility = function(abilityName) {
             return 'WIS';
         case 'charisma':
             return 'CHA';
+    }
+}
+
+/**
+ * Add or remove a proficiency in a skill.
+ * @param {string} skillName Name of the skill.
+ * @param {boolean} add Wether the proficiency is added or removed.
+ */
+export const changeProficiency = function(skillName, add) {
+    saveNewProficiencies(skillName, add);
+    enableOrDisableExpertise(skillName, add);
+}
+
+/**
+ * Save the skill proficiency to local storage.
+ * @param {string} skillName Name of the skill.
+ * @param {boolean} add Wether the proficiency is added or removed.
+ */
+const saveNewProficiencies = function(skillName, add) {
+    const proficiencies = getPlayerCharacterProperty("proficiencies");
+
+    if (add === true) {
+        if (!proficiencies.includes(skillName)) {
+            proficiencies.push(skillName);
+        }
+    }
+    else {
+        const skillIndex = proficiencies.indexOf(skillName);
+        if (skillIndex !== -1) {
+            proficiencies.splice(skillIndex, 1);
+        }
+    }
+
+    setPlayerCharacterProperty("proficiencies", proficiencies);
+}
+
+/**
+ * Enable or disable the expertise checkbox for the given skill based on proficiency.
+ * @param {string} skillName Name of the skill.
+ * @param {boolean} enable Wether the proficiency is added or removed.
+ */
+const enableOrDisableExpertise = function(skillName, enable) {
+    const expertiseCheckbox = document.getElementById(`${skillName}_e`);
+
+    if (enable === true) {
+        expertiseCheckbox.disabled = false;
+    }
+    else {
+        expertiseCheckbox.disabled = true;
     }
 }
