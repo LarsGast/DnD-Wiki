@@ -25,32 +25,32 @@ permalink: /pc-builder/
     <li id="strength">
             <span>STR</span>
             <span id="strength_m"></span>
-            <input id="strength_i"/>
+            <input id="strength_i" type="number" min="1" max="30"/>
         </li>
         <li id="dexterity">
             <span>DEX</span>
             <span id="dexterity_m"></span>
-            <input id="dexterity_i"/>
+            <input id="dexterity_i" type="number" min="1" max="30"/>
         </li>
         <li id="constitution">
             <span>CON</span>
             <span id="constitution_m"></span>
-            <input id="constitution_i"/>
+            <input id="constitution_i" type="number" min="1" max="30"/>
         </li>
         <li id="intelligence">
             <span>INT</span>
             <span id="intelligence_m"></span>
-            <input id="intelligence_i"/>
+            <input id="intelligence_i" type="number" min="1" max="30"/>
         </li>
         <li id="wisdom">
             <span>WIS</span>
             <span id="wisdom_m"></span>
-            <input id="wisdom_i"/>
+            <input id="wisdom_i" type="number" min="1" max="30"/>
         </li>
         <li id="charisma">
             <span>CHA</span>
             <span id="charisma_m"></span>
-            <input id="charisma_i"/>
+            <input id="charisma_i" type="number" min="1" max="30"/>
         </li>
     </ul>
 </section>

@@ -6,9 +6,31 @@ import { getPlayerCharacterProperty, setPlayerCharacterProperty } from '../local
  * @param {number} abilityScore 
  */
 export const changeAbilityScore = function(abilityName, abilityScore) {
+    if (abilityScore < 1 || abilityScore > 30) {
+        limitAbilityScore(abilityName, abilityScore);
+        return;
+    }
     saveAbilityScore(abilityName, abilityScore);
     updateAbilityScoreModifier(abilityName);
     updateAllSkillModifiers();
+}
+
+/**
+ * Ensure that each ability score is within 1 and 30
+ * @param {string} abilityName 
+ * @param {number} abilityScore 
+ */
+const limitAbilityScore = function(abilityName, abilityScore) {
+    const inputField = document.getElementById(`${abilityName}_i`);
+
+    if (abilityScore > 30){
+        inputField.value = 30;
+    }
+    else {
+        inputField.value = 1;
+    }
+    
+    inputField.onchange();
 }
 
 /**
