@@ -14,12 +14,9 @@ export const getPlayerCharacterProperty = function(propertyName) {
 /**
  * Set a property on the player character object in local storage.
  * @param {string} propertyName
- * @param {string} propertyValue
+ * @param {object} propertyValue
  */
 export const setPlayerCharacterProperty = function(propertyName, propertyValue) {
-    if (typeof propertyName !== "string" || typeof propertyValue !== "string") {
-        throw new Error("Both propertyName and propertyValue must be strings.");
-    }
 
     const playerCharacter = getPlayerCharacter() || {};
 
