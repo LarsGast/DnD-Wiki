@@ -1,5 +1,5 @@
 import { getPlayerCharacterProperty } from "../local-storage-util.js";
-import { isProficientInSkill, isExpertInSkill, changeProficiency, changeExpertise, getSkillModifier } from "./util.js";
+import { changeAbilityScore, isProficientInSkill, isExpertInSkill, changeProficiency, changeExpertise, getSkillModifier } from "./util.js";
 
 /**
  * Initialize all elements on the PC builder page.
@@ -39,11 +39,18 @@ const initAbilityScoreItem = function(abilityScoreItem) {
     initAbilityScoreInputField(abilityName);
 }
 
+/**
+ * Initialize the input field of the given ability.
+ * @param {string} abilityName 
+ */
 const initAbilityScoreInputField = function(abilityName) {
 
     const inputField = document.getElementById(`${abilityName}_i`);
 
     inputField.value = getPlayerCharacterProperty(abilityName);
+    inputField.onchange = function() {
+        changeAbilityScore(abilityName, this.value);
+    }
 }
 
 /**

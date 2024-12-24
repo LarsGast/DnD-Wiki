@@ -1,6 +1,24 @@
 import { getPlayerCharacterProperty, setPlayerCharacterProperty } from '../local-storage-util.js';
 
 /**
+ * Change the score of the given ability,
+ * @param {string} abilityName 
+ * @param {number} abilityScore 
+ */
+export const changeAbilityScore = function(abilityName, abilityScore) {
+    saveAbilityScore(abilityName, abilityScore);
+}
+
+/**
+ * Save the given score to the given ability.
+ * @param {string} abilityName 
+ * @param {number} abilityScore 
+ */
+const saveAbilityScore = function(abilityName, abilityScore) {
+    setPlayerCharacterProperty(abilityName, abilityScore);
+}
+
+/**
  * Get the ability score modifier from an ability score.
  * @param {string} abilityName
  * @returns {number}
