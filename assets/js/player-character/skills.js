@@ -1,4 +1,4 @@
-import {getAbilityScoreModifier, getProficiencyModifier, getAbbreviationOfAbility, isProficientInSkill, isExpertInSkill, changeProficiency} from './util.js';
+import {getAbbreviationOfAbility, isProficientInSkill, isExpertInSkill, getSkillModifier, changeProficiency} from './util.js';
 
 export const fillSkillsList = function(skills) {
     const ul = document.getElementById("skills-list");
@@ -10,14 +10,14 @@ export const fillSkillsList = function(skills) {
 
 /**
  * Get the li element for the given skill.
- * @param {*} skill 
+ * @param {object} skill 
  * @returns {HTMLLIElement}
  */
 const getSkillListItem = function(skill) {
 
     const li = document.createElement('li');
 
-    const proficiencyCheckbox = getProficiencyCheckbox(skill.name);
+    const proficiencyCheckbox = getProficiencyCheckbox(skill);
     const expertiseCheckbox = getExpertiseCheckbox(skill.name);
     const label = getSkillLabel(skill);
 
@@ -29,25 +29,25 @@ const getSkillListItem = function(skill) {
 }
 
 /**
- * Get the proficiency checkbox element for the given skill 
- * @param {string} skillName 
+ * Get the proficiency checkbox element for the given skill.
+ * @param {object} skill 
  * @returns {HTMLInputElement}
  */
-const getProficiencyCheckbox = function(skillName) {
+const getProficiencyCheckbox = function(skill) {
     const proficiencyCheckbox = document.createElement('input');
 
     proficiencyCheckbox.type = "checkbox";
-    proficiencyCheckbox.id = `${skillName}_p`;
-    proficiencyCheckbox.checked = isProficientInSkill(skillName);
+    proficiencyCheckbox.id = `${skill.name}_p`;
+    proficiencyCheckbox.checked = isProficientInSkill(skill.name);
     proficiencyCheckbox.onchange = function () {
-        changeProficiency(skillName, this.checked);
+        changeProficiency(skill, this.checked);
     };
 
     return proficiencyCheckbox;
 }
 
 /**
- * Get the expertise checkbox element for the given skill 
+ * Get the expertise checkbox element for the given skill.
  * @param {string} skillName 
  * @returns {HTMLInputElement}
  */
@@ -63,35 +63,45 @@ const getExpertiseCheckbox = function(skillName) {
 }
 
 /**
- * Get the label element for the given skill 
- * @param {*} skill 
+ * Get the label element for the given skill.
+ * @param {object} skill 
  * @returns {HTMLInputElement}
  */
 const getSkillLabel = function(skill) {
     const label = document.createElement('label');
-    label.textContent = `${getSkillModifier(skill)} ${skill.name} (${getAbbreviationOfAbility(skill.abilityName)})`;
+    
+    const modifierSpan = getModifierSpan(skill);
+    const skillNameSpan = getSkillNameSpan(skill);
+
+    label.appendChild(modifierSpan);
+    label.appendChild(skillNameSpan);
 
     return label;
 }
 
 /**
- * Get the modifier of the given skill for the PC in local storage.
- * @param {*} skill 
- * @returns {number}
+ * Get the span element for the modifier number.
+ * @param {object} skill 
+ * @returns {HTMLSpanElement}
  */
-const getSkillModifier = function(skill) {
-
-    const scoreModifier = getAbilityScoreModifier(skill.abilityName);
-    const proficiencyModifier = getProficiencyModifier();
-
-    let skillModifier = scoreModifier;
-    if (isProficientInSkill(skill.name)){
-        skillModifier + proficiencyModifier;
-    }
+const getModifierSpan = function(skill) {
+    const span = document.createElement('span');
     
-    if (isExpertInSkill(skill.name)){
-        skillModifier + proficiencyModifier;
-    }
+    span.textContent = getSkillModifier(skill);
+    span.id = `${skill.name}_m`;
 
-    return skillModifier;
+    return span;
+}
+
+/**
+ * Get the span element for the skill label name.
+ * @param {object} skill 
+ * @returns {HTMLSpanElement}
+ */
+const getSkillNameSpan = function(skill) {
+    const span = document.createElement('span');
+    
+    span.textContent = ` ${skill.name} (${getAbbreviationOfAbility(skill.abilityName)})`;
+
+    return span;
 }

@@ -67,13 +67,36 @@ export const isExpertInSkill = function(skillName) {
 }
 
 /**
+ * Get the modifier of the given skill for the PC in local storage.
+ * @param {*} skill 
+ * @returns {number}
+ */
+export const getSkillModifier = function(skill) {
+
+    const scoreModifier = getAbilityScoreModifier(skill.abilityName);
+    const proficiencyModifier = getProficiencyModifier();
+
+    let skillModifier = scoreModifier;
+    if (isProficientInSkill(skill.name)){
+        skillModifier += proficiencyModifier;
+    }
+    
+    if (isExpertInSkill(skill.name)){
+        skillModifier += proficiencyModifier;
+    }
+
+    return skillModifier;
+}
+
+/**
  * Add or remove a proficiency in a skill.
- * @param {string} skillName Name of the skill.
+ * @param {object} skill.
  * @param {boolean} add Wether the proficiency is added or removed.
  */
-export const changeProficiency = function(skillName, add) {
-    saveNewProficiencies(skillName, add);
-    enableOrDisableExpertise(skillName);
+export const changeProficiency = function(skill, add) {
+    saveNewProficiencies(skill.name, add);
+    enableOrDisableExpertise(skill.name);
+    updateSkillModifier(skill);
 }
 
 /**
@@ -112,4 +135,14 @@ const enableOrDisableExpertise = function(skillName) {
     else {
         expertiseCheckbox.disabled = true;
     }
+}
+
+/**
+ * Update the modifier for the given skill.
+ * @param {object} skill 
+ */
+const updateSkillModifier = function(skill) {
+    const span = document.getElementById(`${skill.name}_m`);
+
+    span.textContent = getSkillModifier(skill);
 }
