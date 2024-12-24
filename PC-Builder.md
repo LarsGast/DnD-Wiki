@@ -4,6 +4,10 @@ title: PC Builder
 permalink: /pc-builder/
 ---
 
+<script type="module">
+    window.skills = {{ site.data.skills | jsonify }};
+</script>
+
 <section id="generic-info-container">
     <h2>Algemeen</h2>
     <ul>
@@ -59,3 +63,8 @@ permalink: /pc-builder/
         fillSkillsList({{ site.data.skills | jsonify }});
     </script>
 </section>
+
+<script type="module">
+    import { initPage } from "{{ '/assets/js/player-character/player-character.js' | relative_url }}";
+    initPage();
+</script>

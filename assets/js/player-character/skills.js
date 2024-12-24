@@ -17,13 +17,10 @@ const getSkillListItem = function(skill) {
 
     const li = document.createElement('li');
 
-    const proficiencyCheckbox = getProficiencyCheckbox(skill);
-    const expertiseCheckbox = getExpertiseCheckbox(skill);
-    const label = getSkillLabel(skill);
-
-    li.appendChild(proficiencyCheckbox);
-    li.appendChild(expertiseCheckbox);
-    li.appendChild(label);
+    li.id = skill.name;
+    li.appendChild(getProficiencyCheckbox(skill));
+    li.appendChild(getExpertiseCheckbox(skill));
+    li.appendChild(getSkillLabel(skill));
 
     return li;
 }
@@ -34,15 +31,11 @@ const getSkillListItem = function(skill) {
  * @returns {HTMLInputElement}
  */
 const getProficiencyCheckbox = function(skill) {
+
     const proficiencyCheckbox = document.createElement('input');
 
     proficiencyCheckbox.type = "checkbox";
     proficiencyCheckbox.id = `${skill.name}_p`;
-    proficiencyCheckbox.checked = isProficientInSkill(skill.name);
-    proficiencyCheckbox.disabled = isExpertInSkill(skill.name);
-    proficiencyCheckbox.onchange = function () {
-        changeProficiency(skill, this.checked);
-    };
 
     return proficiencyCheckbox;
 }
@@ -53,15 +46,11 @@ const getProficiencyCheckbox = function(skill) {
  * @returns {HTMLInputElement}
  */
 const getExpertiseCheckbox = function(skill) {
+
     const expertiseCheckbox = document.createElement('input');
 
     expertiseCheckbox.type = "checkbox";
     expertiseCheckbox.id = `${skill.name}_e`;
-    expertiseCheckbox.checked = isExpertInSkill(skill.name);
-    expertiseCheckbox.disabled = !isProficientInSkill(skill.name);
-    expertiseCheckbox.onchange = function () {
-        changeExpertise(skill, this.checked);
-    };
 
     return expertiseCheckbox;
 }
@@ -72,13 +61,11 @@ const getExpertiseCheckbox = function(skill) {
  * @returns {HTMLInputElement}
  */
 const getSkillLabel = function(skill) {
-    const label = document.createElement('label');
-    
-    const modifierSpan = getModifierSpan(skill);
-    const skillNameSpan = getSkillNameSpan(skill);
 
-    label.appendChild(modifierSpan);
-    label.appendChild(skillNameSpan);
+    const label = document.createElement('label');
+
+    label.appendChild(getModifierSpan(skill));
+    label.appendChild(getSkillNameSpan(skill));
 
     return label;
 }
@@ -89,9 +76,9 @@ const getSkillLabel = function(skill) {
  * @returns {HTMLSpanElement}
  */
 const getModifierSpan = function(skill) {
+
     const span = document.createElement('span');
     
-    span.textContent = getSkillModifier(skill);
     span.id = `${skill.name}_m`;
 
     return span;
@@ -103,6 +90,7 @@ const getModifierSpan = function(skill) {
  * @returns {HTMLSpanElement}
  */
 const getSkillNameSpan = function(skill) {
+    
     const span = document.createElement('span');
     
     span.textContent = ` ${skill.name} (${getAbbreviationOfAbility(skill.abilityName)})`;
