@@ -37,7 +37,13 @@ const getPlayerCharacter = function() {
 
     const playerCharacterString = localStorage.getItem(PLAYER_CHARACTER_KEY);
     try {
-        cachedPlayerCharacter = playerCharacterString ? JSON.parse(playerCharacterString) : {};
+        cachedPlayerCharacter = playerCharacterString ? JSON.parse(playerCharacterString) : null;
+
+        if (cachedPlayerCharacter === null) {
+            const defaultCharacter = getDefaultPlayerCharacter();
+            savePlayerCharacter(defaultCharacter);
+        }
+
         return cachedPlayerCharacter;
     } catch (error) {
         console.error("Error parsing player character JSON:", error);
@@ -55,3 +61,29 @@ const savePlayerCharacter = function(playerCharacter) {
     const playerCharacterString = JSON.stringify(playerCharacter);
     localStorage.setItem(PLAYER_CHARACTER_KEY, playerCharacterString);
 };
+
+/**
+ * Get a player character with default values.
+ * Used to initialize the page for newcomers.
+ * @returns {object} A full object containing default values for all PC properties.
+ */
+const getDefaultPlayerCharacter = function() {
+    return {
+        name: null,
+        classes: [{
+            name: null,
+            level: null
+        }],
+        race: null,
+        background: null,
+        alignment: null,
+        strength: 10,
+        dexterity: 10,
+        constitution: 10,
+        intelligence: 10,
+        wisdom: 10,
+        charisma: 10,
+        proficiencies: [],
+        expertises: []
+    };
+}
