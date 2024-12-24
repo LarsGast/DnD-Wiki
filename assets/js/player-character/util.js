@@ -95,7 +95,7 @@ export const getSkillModifier = function(skill) {
  */
 export const changeProficiency = function(skill, add) {
     saveNewProficiencies(skill.name, add);
-    enableOrDisableExpertise(skill.name);
+    enableOrDisableExpertiseCheckbox(skill.name);
     updateSkillModifier(skill);
 }
 
@@ -106,7 +106,7 @@ export const changeProficiency = function(skill, add) {
  */
 export const changeExpertise = function(skill, add) {
     saveNewExpertises(skill.name, add);
-    enableOrDisableProficiency(skill.name);
+    enableOrDisableProficiencyCheckbox(skill.name);
     updateSkillModifier(skill);
 }
 
@@ -160,7 +160,7 @@ const saveNewExpertises = function(skillName, add) {
  * Enable or disable the expertise checkbox for the given skill based on proficiency.
  * @param {string} skillName Name of the skill.
  */
-const enableOrDisableExpertise = function(skillName) {
+const enableOrDisableExpertiseCheckbox = function(skillName) {
     const expertiseCheckbox = document.getElementById(`${skillName}_e`);
 
     if (isProficientInSkill(skillName)) {
@@ -175,7 +175,7 @@ const enableOrDisableExpertise = function(skillName) {
  * Enable or disable the proficiency checkbox for the given skill based on expertise.
  * @param {string} skillName Name of the skill.
  */
-const enableOrDisableProficiency = function(skillName) {
+const enableOrDisableProficiencyCheckbox = function(skillName) {
     const proficiencyCheckbox = document.getElementById(`${skillName}_p`);
 
     if (isExpertInSkill(skillName)) {
