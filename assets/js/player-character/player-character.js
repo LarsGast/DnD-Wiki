@@ -1,11 +1,12 @@
 import { getPlayerCharacterProperty, setPlayerCharacterProperty } from "../local-storage-util.js";
+import { getAllRaceNamesAsync } from "./api.js";
 import { changeAbilityScore, isProficientInSkill, isExpertInSkill, changeProficiency, changeExpertise, getSkillModifier, getAbilityScoreModifier } from "./util.js";
 
 /**
  * Initialize all elements on the PC builder page.
  */
-export const initPage = function() {
-    initMainProperties();
+export const initPage = async function() {
+    await initMainProperties();
     initAbilityScores();
     initSkills();
 }
@@ -13,8 +14,10 @@ export const initPage = function() {
 /**
  * Initialize all elements for the main properties on the PC builder page.
  */
-const initMainProperties = function() {
+const initMainProperties = async function() {
     initName();
+
+    await initRace();
 }
 
 /**
@@ -27,6 +30,50 @@ const initName = function() {
     nameInput.onchange = function() {
         setPlayerCharacterProperty("name", this.value);
     };
+}
+
+/**
+ * Initialize the race select element.
+ */
+const initRace = async function() {
+    const allRaceNames = await getAllRaceNamesAsync();
+
+    const select = document.getElementById("race_s");
+
+    select.appendChild(getEmptyOption());
+
+    allRaceNames.forEach(raceName => {
+        select.appendChild(getSelectOption(raceName));
+    })
+}
+
+/**
+ * Get an empty option for select elements.
+ * @returns {HTMLOptionElement}
+ */
+const getEmptyOption = function() {
+
+    const emptyOption = document.createElement('option');
+
+    emptyOption.disabled = true;
+    emptyOption.selected = true;
+    emptyOption.textContent = "-- Select an option --";
+
+    return emptyOption;
+}
+
+/**
+ * Get an option for a select element.
+ * @param {string} optionValue
+ * @returns {HTMLOptionElement} 
+ */
+const getSelectOption = function(optionValue) {
+    const option = document.createElement('option');
+
+    option.value = optionValue;
+    option.textContent = optionValue;
+
+    return option;
 }
 
 /**

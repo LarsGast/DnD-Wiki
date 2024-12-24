@@ -13,7 +13,7 @@ permalink: /pc-builder/
     <ul>
         <li><label>Name: <input id="name_i"/></label></li>
         <li><label>Class & Level: <input/></label></li>
-        <li><label>Race: <input/></label></li>
+        <li><label>Race: <select id="race_s"></select></label></li>
         <li><label>Background: <input/></label></li>
         <li><label>Alignment: <input/></label></li>
     </ul>
