@@ -214,7 +214,7 @@ const saveNewExpertises = function(skillName, add) {
         }
     }
 
-    setPlayerCharacterProperty("expertise", expertise);
+    setPlayerCharacterProperty("expertises", expertise);
 }
 
 /**
