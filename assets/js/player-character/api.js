@@ -21,6 +21,16 @@ export const getAllBackgroundNamesAsync = async function() {
 }
 
 /**
+ * Get all background names in the SRD.
+ * @returns {string[]}
+ */
+export const getAllAlignmentNamesAsync = async function() {
+    const url = `${baseUrl}/api/alignments`;
+    const json = await getApiDataAsync(url);
+    return json.results.map(result => result.name);
+}
+
+/**
  * Perform an API call and get data from https://www.dnd5eapi.co.
  * @param {string} url 
  * @returns {json}

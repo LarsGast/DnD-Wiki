@@ -11,7 +11,7 @@ permalink: /pc-builder/
         <li><label>Class & Level: <input/></label></li>
         <li><label>Race: <select id="race_s"></select></label></li>
         <li><label>Background: <select id="background_s"></select></label></li>
-        <li><label>Alignment: <input/></label></li>
+        <li><label>Alignment: <select id="alignment_s"></select></label></li>
     </ul>
 </section>
 

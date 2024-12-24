@@ -1,4 +1,4 @@
-import { getAllRaceNamesAsync, getAllBackgroundNamesAsync } from "./api.js";
+import { getAllRaceNamesAsync, getAllBackgroundNamesAsync, getAllAlignmentNamesAsync } from "./api.js";
 
 /**
  * Fill all elements in the generic info section.
@@ -6,6 +6,7 @@ import { getAllRaceNamesAsync, getAllBackgroundNamesAsync } from "./api.js";
 export const fillGenericInfoElements = async function() {
     await fillRaceSelect();
     await fillBackgroundSelect();
+    await fillAlignmentSelect();
 }
 
 /**
@@ -23,6 +24,9 @@ const fillRaceSelect = async function() {
     });
 }
 
+/**
+ * Fill the background select element.
+ */
 const fillBackgroundSelect = async function() {
     const allBackgroundNames = await getAllBackgroundNamesAsync();
 
@@ -31,6 +35,21 @@ const fillBackgroundSelect = async function() {
     select.appendChild(getEmptyOption());
 
     allBackgroundNames.forEach(backgroundName => {
+        select.appendChild(getSelectOption(backgroundName));
+    });
+}
+
+/**
+ * Fill the alignment select element.
+ */
+const fillAlignmentSelect = async function() {
+    const allAlignmentNames = await getAllAlignmentNamesAsync();
+
+    const select = document.getElementById("alignment_s");
+
+    select.appendChild(getEmptyOption());
+
+    allAlignmentNames.forEach(backgroundName => {
         select.appendChild(getSelectOption(backgroundName));
     });
 }

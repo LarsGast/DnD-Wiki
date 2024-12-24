@@ -18,6 +18,7 @@ const initMainProperties = function() {
 
     initRace();
     initBackground();
+    initAlignment();
 }
 
 /**
@@ -55,6 +56,19 @@ const initBackground = function() {
     select.value = getPlayerCharacterProperty("background");
     select.onchange = function() {
         setPlayerCharacterProperty("background", this.value);
+    }
+}
+
+/**
+ * Initialize the alignment select element.
+ */
+const initAlignment = function() {
+
+    const select = document.getElementById("alignment_s");
+
+    select.value = getPlayerCharacterProperty("alignment");
+    select.onchange = function() {
+        setPlayerCharacterProperty("alignment", this.value);
     }
 }
 
