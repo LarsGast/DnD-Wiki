@@ -4,10 +4,6 @@ title: PC Builder
 permalink: /pc-builder/
 ---
 
-<script type="module">
-    window.skills = {{ site.data.skills | jsonify }};
-</script>
-
 <section id="generic-info-container">
     <h2>Algemeen</h2>
     <ul>
@@ -17,10 +13,6 @@ permalink: /pc-builder/
         <li><label>Background: <input/></label></li>
         <li><label>Alignment: <input/></label></li>
     </ul>
-    <script type="module">
-        import { fillGenericInfoElements } from "{{ '/assets/js/player-character/generic-info.js' | relative_url }}";
-        await fillGenericInfoElements();
-    </script>
 </section>
 
 <section id="ability-scores-container">
@@ -62,13 +54,19 @@ permalink: /pc-builder/
 <section id="skills-container">
     <h2>Skills</h2>
     <ul class="no-style-list" id="skills-list"></ul>
-    <script type="module">
-        import { fillSkillsList } from "{{ '/assets/js/player-character/skills.js' | relative_url }}";
-        fillSkillsList({{ site.data.skills | jsonify }});
-    </script>
 </section>
 
 <script type="module">
+    import { fillGenericInfoElements } from "{{ '/assets/js/player-character/generic-info.js' | relative_url }}";
+    import { fillSkillsList } from "{{ '/assets/js/player-character/skills.js' | relative_url }}";
     import { initPage } from "{{ '/assets/js/player-character/player-character.js' | relative_url }}";
+
+    const genericInfoPromise = fillGenericInfoElements();
+
+    window.skills = {{ site.data.skills | jsonify }};
+
+    fillSkillsList({{ site.data.skills | jsonify }});
+
+    await genericInfoPromise;
     initPage();
 </script>

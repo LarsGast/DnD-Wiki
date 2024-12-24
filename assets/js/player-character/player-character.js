@@ -1,12 +1,11 @@
 import { getPlayerCharacterProperty, setPlayerCharacterProperty } from "../local-storage-util.js";
-import { getAllRaceNamesAsync } from "./api.js";
 import { changeAbilityScore, isProficientInSkill, isExpertInSkill, changeProficiency, changeExpertise, getSkillModifier, getAbilityScoreModifier } from "./util.js";
 
 /**
  * Initialize all elements on the PC builder page.
  */
-export const initPage = async function() {
-    await initMainProperties();
+export const initPage = function() {
+    initMainProperties();
     initAbilityScores();
     initSkills();
 }
@@ -14,10 +13,10 @@ export const initPage = async function() {
 /**
  * Initialize all elements for the main properties on the PC builder page.
  */
-const initMainProperties = async function() {
+const initMainProperties = function() {
     initName();
 
-    //await initRace();
+    initRace();
 }
 
 /**
@@ -35,16 +34,14 @@ const initName = function() {
 /**
  * Initialize the race select element.
  */
-const initRace = async function() {
-    const allRaceNames = await getAllRaceNamesAsync();
+const initRace = function() {
 
     const select = document.getElementById("race_s");
 
-    select.appendChild(getEmptyOption());
-
-    allRaceNames.forEach(raceName => {
-        select.appendChild(getSelectOption(raceName));
-    })
+    select.value = getPlayerCharacterProperty("race");
+    select.onchange = function() {
+        setPlayerCharacterProperty("race", this.value);
+    }
 }
 
 /**
