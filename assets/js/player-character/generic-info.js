@@ -1,10 +1,11 @@
-import { getAllRaceNamesAsync } from "./api.js";
+import { getAllRaceNamesAsync, getAllBackgroundNamesAsync } from "./api.js";
 
 /**
  * Fill all elements in the generic info section.
  */
 export const fillGenericInfoElements = async function() {
     await fillRaceSelect();
+    await fillBackgroundSelect();
 }
 
 /**
@@ -19,7 +20,19 @@ const fillRaceSelect = async function() {
 
     allRaceNames.forEach(raceName => {
         select.appendChild(getSelectOption(raceName));
-    })
+    });
+}
+
+const fillBackgroundSelect = async function() {
+    const allRaceNames = await getAllBackgroundNamesAsync();
+
+    const select = document.getElementById("background_s");
+
+    select.appendChild(getEmptyOption());
+
+    allRaceNames.forEach(raceName => {
+        select.appendChild(getSelectOption(raceName));
+    });
 }
 
 /**
