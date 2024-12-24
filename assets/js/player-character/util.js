@@ -90,12 +90,22 @@ export const getSkillModifier = function(skill) {
 
 /**
  * Add or remove a proficiency in a skill.
- * @param {object} skill.
+ * @param {object} skill
  * @param {boolean} add Wether the proficiency is added or removed.
  */
 export const changeProficiency = function(skill, add) {
     saveNewProficiencies(skill.name, add);
     enableOrDisableExpertise(skill.name);
+    updateSkillModifier(skill);
+}
+
+/**
+ * Add or remove a expertise in a skill.
+ * @param {object} skill
+ * @param {boolean} add Wether the expertise is added or removed.
+ */
+export const changeExpertise = function(skill, add) {
+    saveNewExpertises(skill.name, add);
     updateSkillModifier(skill);
 }
 
@@ -120,6 +130,29 @@ const saveNewProficiencies = function(skillName, add) {
     }
 
     setPlayerCharacterProperty("proficiencies", proficiencies);
+}
+
+/**
+ * Save the skill expertise to local storage.
+ * @param {string} skillName Name of the skill.
+ * @param {boolean} add Wether the expertise is added or removed.
+ */
+const saveNewExpertises = function(skillName, add) {
+    const expertise = getPlayerCharacterProperty("expertises");
+
+    if (add === true) {
+        if (!expertise.includes(skillName)) {
+            expertise.push(skillName);
+        }
+    }
+    else {
+        const skillIndex = expertise.indexOf(skillName);
+        if (skillIndex !== -1) {
+            expertise.splice(skillIndex, 1);
+        }
+    }
+
+    setPlayerCharacterProperty("expertise", expertise);
 }
 
 /**

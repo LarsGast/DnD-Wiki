@@ -1,4 +1,4 @@
-import {getAbbreviationOfAbility, isProficientInSkill, isExpertInSkill, getSkillModifier, changeProficiency} from './util.js';
+import {getAbbreviationOfAbility, isProficientInSkill, isExpertInSkill, getSkillModifier, changeProficiency, changeExpertise} from './util.js';
 
 export const fillSkillsList = function(skills) {
     const ul = document.getElementById("skills-list");
@@ -18,7 +18,7 @@ const getSkillListItem = function(skill) {
     const li = document.createElement('li');
 
     const proficiencyCheckbox = getProficiencyCheckbox(skill);
-    const expertiseCheckbox = getExpertiseCheckbox(skill.name);
+    const expertiseCheckbox = getExpertiseCheckbox(skill);
     const label = getSkillLabel(skill);
 
     li.appendChild(proficiencyCheckbox);
@@ -48,16 +48,19 @@ const getProficiencyCheckbox = function(skill) {
 
 /**
  * Get the expertise checkbox element for the given skill.
- * @param {string} skillName 
+ * @param {object} skill 
  * @returns {HTMLInputElement}
  */
-const getExpertiseCheckbox = function(skillName) {
+const getExpertiseCheckbox = function(skill) {
     const expertiseCheckbox = document.createElement('input');
 
     expertiseCheckbox.type = "checkbox";
-    expertiseCheckbox.id = `${skillName}_e`;
-    expertiseCheckbox.checked = isExpertInSkill(skillName);
-    expertiseCheckbox.disabled = !isProficientInSkill(skillName);
+    expertiseCheckbox.id = `${skill.name}_e`;
+    expertiseCheckbox.checked = isExpertInSkill(skill.name);
+    expertiseCheckbox.disabled = !isProficientInSkill(skill.name);
+    expertiseCheckbox.onchange = function () {
+        changeExpertise(skill, this.checked);
+    };
 
     return expertiseCheckbox;
 }
