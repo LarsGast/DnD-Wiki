@@ -21,36 +21,36 @@ permalink: /pc-builder/
 
 <section id="ability-scores-container">
     <h2>Ability Scores</h2>
-    <ul class="no-style-list">
-        <li>
+    <ul class="no-style-list" id="ability-scores-list">
+    <li id="strength">
             <span>STR</span>
             <span>0</span>
-            <input/>
+            <input id="strength_i"/>
         </li>
-        <li>
+        <li id="dexterity">
             <span>DEX</span>
             <span>0</span>
-            <input/>
+            <input id="dexterity_i"/>
         </li>
-        <li>
+        <li id="constitution">
             <span>CON</span>
             <span>0</span>
-            <input/>
+            <input id="constitution_i"/>
         </li>
-        <li>
+        <li id="intelligence">
             <span>INT</span>
             <span>0</span>
-            <input/>
+            <input id="intelligence_i"/>
         </li>
-        <li>
+        <li id="wisdom">
             <span>WIS</span>
             <span>0</span>
-            <input/>
+            <input id="wisdom_i"/>
         </li>
-        <li>
+        <li id="charisma">
             <span>CHA</span>
             <span>0</span>
-            <input/>
+            <input id="charisma_i"/>
         </li>
     </ul>
 </section>

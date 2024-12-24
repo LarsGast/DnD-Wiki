@@ -1,3 +1,4 @@
+import { getPlayerCharacterProperty } from "../local-storage-util.js";
 import { isProficientInSkill, isExpertInSkill, changeProficiency, changeExpertise, getSkillModifier } from "./util.js";
 
 /**
@@ -20,7 +21,29 @@ const initMainProperties = function() {
  * Initialize all elements for the ability scores on the PC builder page.
  */
 const initAbilityScores = function() {
-    
+    const abilityScoresList = document.getElementById('ability-scores-list'); 
+    const abilityScoreItems = Array.from(abilityScoresList.children);
+    abilityScoreItems.forEach(abilityScoreItem => {
+        initAbilityScoreItem(abilityScoreItem);
+    });
+}
+
+/**
+ * Initialize a single li ability score element.
+ * @param {HTMLLIElement} abilityScoreItem 
+ */
+const initAbilityScoreItem = function(abilityScoreItem) {
+
+    const abilityName = abilityScoreItem.id;
+
+    initAbilityScoreInputField(abilityName);
+}
+
+const initAbilityScoreInputField = function(abilityName) {
+
+    const inputField = document.getElementById(`${abilityName}_i`);
+
+    inputField.value = getPlayerCharacterProperty(abilityName);
 }
 
 /**
@@ -28,7 +51,7 @@ const initAbilityScores = function() {
  */
 const initSkills = function() {
     const skillsList = document.getElementById('skills-list');
-    const skillsListItems = skillsList.childNodes;
+    const skillsListItems = Array.from(skillsList.children);
     skillsListItems.forEach(skillListItem => {
         initSkillListItem(skillListItem);
     });

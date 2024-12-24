@@ -1,9 +1,9 @@
-import {getAbbreviationOfAbility, isProficientInSkill, isExpertInSkill, getSkillModifier, changeProficiency, changeExpertise} from './util.js';
+import {getAbbreviationOfAbility} from './util.js';
 
-export const fillSkillsList = function(skills) {
+export const fillSkillsList = function() {
     const ul = document.getElementById("skills-list");
 
-    skills.forEach(skill => {
+    window.skills.forEach(skill => {
         ul.appendChild(getSkillListItem(skill));
     })
 }
