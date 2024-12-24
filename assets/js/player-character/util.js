@@ -7,6 +7,8 @@ import { getPlayerCharacterProperty, setPlayerCharacterProperty } from '../local
  */
 export const changeAbilityScore = function(abilityName, abilityScore) {
     saveAbilityScore(abilityName, abilityScore);
+    updateAbilityScoreModifier(abilityName);
+    updateAllSkillModifiers();
 }
 
 /**
@@ -16,6 +18,25 @@ export const changeAbilityScore = function(abilityName, abilityScore) {
  */
 const saveAbilityScore = function(abilityName, abilityScore) {
     setPlayerCharacterProperty(abilityName, abilityScore);
+}
+
+/**
+ * Update the ability score modifier for the given ability.
+ * @param {string} abilityName 
+ */
+const updateAbilityScoreModifier = function(abilityName) {
+    const span = document.getElementById(`${abilityName}_m`);
+
+    span.textContent = getAbilityScoreModifier(abilityName);
+}
+
+/**
+ * Update all skill modifiers at once.
+ */
+const updateAllSkillModifiers = function() {
+    window.skills.forEach(skill => {
+        updateSkillModifier(skill);
+    });
 }
 
 /**
