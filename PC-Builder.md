@@ -11,7 +11,7 @@ permalink: /pc-builder/
 <section id="generic-info-container">
     <h2>Algemeen</h2>
     <ul>
-        <li><label>Name: <input/></label></li>
+        <li><label>Name: <input id="name_i"/></label></li>
         <li><label>Class & Level: <input/></label></li>
         <li><label>Race: <input/></label></li>
         <li><label>Background: <input/></label></li>

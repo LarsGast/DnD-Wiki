@@ -1,4 +1,4 @@
-import { getPlayerCharacterProperty } from "../local-storage-util.js";
+import { getPlayerCharacterProperty, setPlayerCharacterProperty } from "../local-storage-util.js";
 import { changeAbilityScore, isProficientInSkill, isExpertInSkill, changeProficiency, changeExpertise, getSkillModifier, getAbilityScoreModifier } from "./util.js";
 
 /**
@@ -14,7 +14,19 @@ export const initPage = function() {
  * Initialize all elements for the main properties on the PC builder page.
  */
 const initMainProperties = function() {
+    initName();
+}
 
+/**
+ * Initialize the name input field of the PC.
+ */
+const initName = function() {
+    const nameInput = document.getElementById('name_i');
+
+    nameInput.value = getPlayerCharacterProperty("name");
+    nameInput.onchange = function() {
+        setPlayerCharacterProperty("name", this.value);
+    };
 }
 
 /**
@@ -51,7 +63,7 @@ const initAbilityScoreInputField = function(abilityName) {
     inputField.value = getPlayerCharacterProperty(abilityName);
     inputField.onchange = function() {
         changeAbilityScore(abilityName, this.value);
-    }
+    };
 }
 
 /**
