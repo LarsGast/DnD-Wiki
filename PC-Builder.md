@@ -21,32 +21,32 @@ permalink: /pc-builder/
         <li>
             <span>STR</span>
             <span>0</span>
-            <input value=10/>
+            <input/>
         </li>
         <li>
             <span>DEX</span>
             <span>0</span>
-            <input value=10/>
+            <input/>
         </li>
         <li>
             <span>CON</span>
             <span>0</span>
-            <input value=10/>
+            <input/>
         </li>
         <li>
             <span>INT</span>
             <span>0</span>
-            <input value=10/>
+            <input/>
         </li>
         <li>
             <span>WIS</span>
             <span>0</span>
-            <input value=10/>
+            <input/>
         </li>
         <li>
             <span>CHA</span>
             <span>0</span>
-            <input value=10/>
+            <input/>
         </li>
     </ul>
 </section>
