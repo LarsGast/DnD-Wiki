@@ -39,6 +39,7 @@ const getProficiencyCheckbox = function(skill) {
     proficiencyCheckbox.type = "checkbox";
     proficiencyCheckbox.id = `${skill.name}_p`;
     proficiencyCheckbox.checked = isProficientInSkill(skill.name);
+    proficiencyCheckbox.disabled = isExpertInSkill(skill.name);
     proficiencyCheckbox.onchange = function () {
         changeProficiency(skill, this.checked);
     };
