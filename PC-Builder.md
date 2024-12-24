@@ -17,6 +17,10 @@ permalink: /pc-builder/
         <li><label>Background: <input/></label></li>
         <li><label>Alignment: <input/></label></li>
     </ul>
+    <script type="module">
+        import { fillGenericInfoElements } from "{{ '/assets/js/player-character/generic-info.js' | relative_url }}";
+        await fillGenericInfoElements();
+    </script>
 </section>
 
 <section id="ability-scores-container">

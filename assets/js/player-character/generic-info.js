@@ -1,93 +1,52 @@
-/**
- * Fills the generic info div on a player character page.
- */
-export const fillGenericInfoDiv = function() {
-    const containerDiv = document.getElementById('generic-info-container');
-    
-    const elements = getGenericInfoSectionElements();
+import { getAllRaceNamesAsync } from "./api.js";
 
-    elements.forEach(function(element) {
-        containerDiv.appendChild(element);
-    });
+/**
+ * Fill all elements in the generic info section.
+ */
+export const fillGenericInfoElements = async function() {
+    await fillRaceSelect();
 }
 
 /**
- * Gets all elements that should be put in the generic info section on a PC page.
- * @returns {HTMLElement[]}
+ * Fill the race select element.
  */
-const getGenericInfoSectionElements = function() {
-    return [
-        getHeadingElement(),
-        getGenericInfoList()
-    ];
+const fillRaceSelect = async function() {
+    const allRaceNames = await getAllRaceNamesAsync();
+
+    const select = document.getElementById("race_s");
+
+    select.appendChild(getEmptyOption());
+
+    allRaceNames.forEach(raceName => {
+        select.appendChild(getSelectOption(raceName));
+    })
 }
 
 /**
- * Gets the heading (h2) element for the generic info section.
- * @returns {HTMLHeadingElement}
+ * Get an empty option for select elements.
+ * @returns {HTMLOptionElement}
  */
-const getHeadingElement = function() {
-    const h2 = document.createElement('h2');
-    h2.textContent = "Algemeen";
+const getEmptyOption = function() {
 
-    return h2;
+    const emptyOption = document.createElement('option');
+
+    emptyOption.disabled = true;
+    emptyOption.selected = true;
+    emptyOption.textContent = "-- Select an option --";
+
+    return emptyOption;
 }
 
 /**
- * Gets the list (ul) containing all generic info of the PC.
- * @returns {HTMLUListElement}
+ * Get an option for a select element.
+ * @param {string} optionValue
+ * @returns {HTMLOptionElement} 
  */
-const getGenericInfoList = function() {
-    const playerCharacterObject = window.currentObject;
+const getSelectOption = function(optionValue) {
+    const option = document.createElement('option');
 
-    const ul = document.createElement('ul');
+    option.value = optionValue;
+    option.textContent = optionValue;
 
-    ul.appendChild(getGenericInfoListItem('Class & Level', getClassAndLevelString(playerCharacterObject.levels)));
-    ul.appendChild(getGenericInfoListItem('Race', getRaceString(playerCharacterObject)));
-    ul.appendChild(getGenericInfoListItem('Background', playerCharacterObject.background));
-    ul.appendChild(getGenericInfoListItem('Alignment', playerCharacterObject.alignment));
-
-    return ul;
-}
-
-/**
- * Gets the list item (li) element for a single ability score of a PC.
- * @param {string} propertyName
- * @param {number} propertyValue
- * @returns {HTMLLIElement}
- */
-const getGenericInfoListItem = function(propertyName, propertyValue) {
-
-    const li = document.createElement('li');
-
-    li.textContent = `${propertyName}: ${propertyValue}`;
-
-    return li;
-}
-
-/**
- * Get the display string for the race property
- * @param {object} playerCharacterObject
- * @returns {string}
- */
-const getRaceString = function(playerCharacterObject) {
-
-    let raceString = playerCharacterObject.race;
-
-    if (playerCharacterObject.subRace) {
-        raceString += ` (${playerCharacterObject.subRace})`;
-    }
-
-    return raceString;
-}
-
-/**
- * Get the display string for the class & level property
- * @param {{className: string, level: number}[]} classes
- * @returns {string}
- */
-const getClassAndLevelString = function(classes) {
-    return classes
-        .map(classObject => `${classObject.className} ${classObject.level}`)
-        .join(', ');
+    return option;
 }

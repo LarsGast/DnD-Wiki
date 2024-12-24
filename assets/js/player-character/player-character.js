@@ -17,7 +17,7 @@ export const initPage = async function() {
 const initMainProperties = async function() {
     initName();
 
-    await initRace();
+    //await initRace();
 }
 
 /**
@@ -45,35 +45,6 @@ const initRace = async function() {
     allRaceNames.forEach(raceName => {
         select.appendChild(getSelectOption(raceName));
     })
-}
-
-/**
- * Get an empty option for select elements.
- * @returns {HTMLOptionElement}
- */
-const getEmptyOption = function() {
-
-    const emptyOption = document.createElement('option');
-
-    emptyOption.disabled = true;
-    emptyOption.selected = true;
-    emptyOption.textContent = "-- Select an option --";
-
-    return emptyOption;
-}
-
-/**
- * Get an option for a select element.
- * @param {string} optionValue
- * @returns {HTMLOptionElement} 
- */
-const getSelectOption = function(optionValue) {
-    const option = document.createElement('option');
-
-    option.value = optionValue;
-    option.textContent = optionValue;
-
-    return option;
 }
 
 /**
