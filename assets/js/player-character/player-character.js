@@ -17,6 +17,7 @@ const initMainProperties = function() {
     initName();
 
     initRace();
+    initBackground();
 }
 
 /**
@@ -41,6 +42,19 @@ const initRace = function() {
     select.value = getPlayerCharacterProperty("race");
     select.onchange = function() {
         setPlayerCharacterProperty("race", this.value);
+    }
+}
+
+/**
+ * Initialize the background select element.
+ */
+const initBackground = function() {
+
+    const select = document.getElementById("background_s");
+
+    select.value = getPlayerCharacterProperty("background");
+    select.onchange = function() {
+        setPlayerCharacterProperty("background", this.value);
     }
 }
 

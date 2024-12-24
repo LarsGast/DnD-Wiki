@@ -24,14 +24,14 @@ const fillRaceSelect = async function() {
 }
 
 const fillBackgroundSelect = async function() {
-    const allRaceNames = await getAllBackgroundNamesAsync();
+    const allBackgroundNames = await getAllBackgroundNamesAsync();
 
     const select = document.getElementById("background_s");
 
     select.appendChild(getEmptyOption());
 
-    allRaceNames.forEach(raceName => {
-        select.appendChild(getSelectOption(raceName));
+    allBackgroundNames.forEach(backgroundName => {
+        select.appendChild(getSelectOption(backgroundName));
     });
 }
 
