@@ -32,7 +32,7 @@ header_pages:
   - Characters.md
   - Locations.md
   - Items.md
-  - Player-Characters.md
+  - PC-Builder.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.

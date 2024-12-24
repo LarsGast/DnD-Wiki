@@ -175,9 +175,8 @@ img {
                 border: 2px solid black;
                 border-radius: 50%;
                 width: 50%;
-                display: flex;
-                justify-content: center;
                 background-color: #fdfdfd;
+                text-align: center;
             }
         }
     }
@@ -196,28 +195,6 @@ img {
         > li {
             /* 3 columns */
             flex: 1 1 calc(33.333%);
-
-            &:not(.proficient) {
-                &::before {
-                    font-family: "Font Awesome 5 Free";
-                    content: "\f111  ";
-                }
-            }
-
-            &.proficient {
-                &::before {
-                    font-family: "Font Awesome 5 Free";
-                    content: "\f111  ";
-                    font-weight: 600;
-                }
-            }
-
-            &.expert {
-                &::before {
-                    font-family: "Font Awesome 5 Free";
-                    content: "\f192  ";
-                }
-            }
         }
     }
 }
