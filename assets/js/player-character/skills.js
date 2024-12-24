@@ -1,4 +1,4 @@
-import {getAbilityScoreModifier, getProficiencyModifier, getAbbreviationOfAbility} from './util.js';
+import {getAbilityScoreModifier, getProficiencyModifier, getAbbreviationOfAbility, changeProficiency} from './util.js';
 import {getPlayerCharacterProperty} from '../local-storage-util.js';
 
 export const fillSkillsList = function(skills) {
@@ -18,8 +18,8 @@ const getSkillListItem = function(skill) {
 
     const li = document.createElement('li');
 
-    const proficiencyCheckbox = getProficiencyCheckbox(skill);
-    const expertiseCheckbox = getExpertiseCheckbox(skill);
+    const proficiencyCheckbox = getProficiencyCheckbox(skill.name);
+    const expertiseCheckbox = getExpertiseCheckbox(skill.name);
     const label = getSkillLabel(skill);
 
     li.appendChild(proficiencyCheckbox);
@@ -31,26 +31,35 @@ const getSkillListItem = function(skill) {
 
 /**
  * Get the proficiency checkbox element for the given skill 
- * @param {*} skill 
+ * @param {string} skillName 
  * @returns {HTMLInputElement}
  */
-const getProficiencyCheckbox = function(skill) {
+const getProficiencyCheckbox = function(skillName) {
     const proficiencyCheckbox = document.createElement('input');
+
     proficiencyCheckbox.type = "checkbox";
-    proficiencyCheckbox.id = `${skill.name}_p`;
+    proficiencyCheckbox.id = `${skillName}_p`;
+    proficiencyCheckbox.checked = isProficientInSkill(skillName);
+    proficiencyCheckbox.onchange = function () {
+        changeProficiency(skillName, this.checked);
+    };
 
     return proficiencyCheckbox;
 }
 
 /**
  * Get the expertise checkbox element for the given skill 
- * @param {*} skill 
+ * @param {string} skillName 
  * @returns {HTMLInputElement}
  */
-const getExpertiseCheckbox = function(skill) {
+const getExpertiseCheckbox = function(skillName) {
     const expertiseCheckbox = document.createElement('input');
+
     expertiseCheckbox.type = "checkbox";
-    expertiseCheckbox.id = `${skill.name}_p`;
+    expertiseCheckbox.id = `${skillName}_e`;
+    expertiseCheckbox.checked = isExpertInSkill(skillName);
+    expertiseCheckbox.disabled = !isProficientInSkill(skillName);
+
     return expertiseCheckbox;
 }
 
