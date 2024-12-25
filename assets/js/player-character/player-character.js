@@ -65,6 +65,7 @@ const getClassListItem = async function() {
 
     li.appendChild(await getClassSelect());
     li.appendChild(getClassLevelInput());
+    li.appendChild(getRemoveClassButton());
 
     return li;
 }
@@ -108,6 +109,27 @@ const getClassLevelInput = function() {
     }
 
     return input;
+}
+
+/**
+ * Get a button element for removing a class.
+ * @returns 
+ */
+const getRemoveClassButton = function() {
+    const button = document.createElement('button');
+
+    button.type = "button";
+    button.textContent = "Remove class";
+
+    button.onclick = function() {
+        const parent = this.parentElement;
+        parent.remove();
+
+        changeClassSelect();
+        changeLevelInput();
+    }
+
+    return button;
 }
 
 /**
