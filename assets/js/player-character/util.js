@@ -33,6 +33,27 @@ const getClasses = function() {
 }
 
 /**
+ * Ensure that each class level is within 1 and 20.
+ */
+export const limitClassLevel = function() {
+    const classLevelList = document.getElementById('class-and-level-list');
+    const listItems = Array.from(classLevelList.children);
+
+    listItems.forEach(listItem => {
+        const inputField = listItem.getElementsByTagName('input')[0];
+
+        if (inputField.value > 20){
+            inputField.value = 20;
+            inputField.onchange();
+        }
+        else if (inputField.value < 1) {
+            inputField.value = 1;
+            inputField.onchange();
+        }
+    })
+}
+
+/**
  * Get an empty option for select elements.
  * @returns {HTMLOptionElement}
  */
