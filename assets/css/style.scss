@@ -203,8 +203,8 @@ img {
 
 /* Summary styling */
 summary {   
-    h3 {
-        /* Display the h3 next to the marker (triangle) */
+    h2, h3 {
+        /* Display the heading element next to the marker (triangle) */
         display: inline-block;
     }
 
