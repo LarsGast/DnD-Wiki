@@ -53,6 +53,9 @@ const initAddClassButton = function() {
         const classList = document.getElementById('class-and-level-list');
 
         classList.appendChild(await getClassListItem());
+
+        changeClassSelect();
+        changeLevelInput()
     }
 }
 
