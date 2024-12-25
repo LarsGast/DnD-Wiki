@@ -148,9 +148,10 @@ const initClassSelection = function() {
     }
 
     classes.forEach(async classObject => {
-        await addClassButton.onclick();
-
+        
         const classList = document.getElementById('class-and-level-list');
+        classList.appendChild(await getClassListItem());
+
         const li = classList.lastChild;
 
         const select = li.getElementsByTagName('select')[0];
