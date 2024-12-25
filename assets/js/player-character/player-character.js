@@ -39,6 +39,7 @@ const initName = function() {
  */
 const initClassAndLevel = function() {
     initAddClassButton();
+    initClassSelection();
 }
 
 /**
@@ -107,6 +108,32 @@ const getClassLevelInput = function() {
     }
 
     return input;
+}
+
+/**
+ * Build the class selection section to include local storage.
+ */
+const initClassSelection = function() {
+    const classes = getPlayerCharacterProperty("classes");
+    const addClassButton = document.getElementById('class-and-level_b');
+
+    if (classes === null || classes.length === 0){
+        addClassButton.onclick();
+        return;
+    }
+
+    classes.forEach(async classObject => {
+        await addClassButton.onclick();
+
+        const classList = document.getElementById('class-and-level-list');
+        const li = classList.lastChild;
+
+        const select = li.getElementsByTagName('select')[0];
+        select.value = classObject.name;
+
+        const input = li.getElementsByTagName('input')[0];
+        input.value = classObject.level;
+    });
 }
 
 /**
