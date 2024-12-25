@@ -157,6 +157,10 @@ export const getProficiencyModifier = function() {
 
     const classes = getPlayerCharacterProperty("classes");
 
+    if (classes == null || classes.length === 0) {
+        return 0;
+    }
+
     const totalLevel = classes.map(classObject => classObject.level).reduce((partialSum, level) => partialSum + Number(level), 0);
     return Math.ceil(totalLevel / 4) + 1;
 }
