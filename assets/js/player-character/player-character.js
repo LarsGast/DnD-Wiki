@@ -9,6 +9,7 @@ export const initPage = function() {
     initMainProperties();
     initAbilityScores();
     initSkills();
+    initNotes();
 }
 
 /**
@@ -312,4 +313,16 @@ const initSkillModifierSpan = function(skill) {
     const skillModifierSpan = document.getElementById(`${skill.name}_m`);
 
     skillModifierSpan.textContent = getSkillModifier(skill);
+}
+
+/**
+ * Initialize notes section.
+ */
+const initNotes = function() {
+    const textArea = document.getElementById('notes');
+
+    textArea.value = getPlayerCharacterProperty("notes") ?? '';
+    textArea.onchange = function() {
+        setPlayerCharacterProperty("notes", this.value);
+    };
 }

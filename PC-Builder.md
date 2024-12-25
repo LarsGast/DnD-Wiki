@@ -59,6 +59,11 @@ permalink: /pc-builder/
     <ul class="no-style-list" id="skills-list"></ul>
 </section>
 
+<section id="notes-container">
+    <h2>Notes</h2>
+    <textarea id="notes"></textarea>
+</section>
+
 <script type="module">
     import { fillGenericInfoElements } from "{{ '/assets/js/player-character/generic-info.js' | relative_url }}";
     import { fillSkillsList } from "{{ '/assets/js/player-character/skills.js' | relative_url }}";

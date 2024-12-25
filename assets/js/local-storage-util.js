@@ -78,6 +78,7 @@ const getDefaultPlayerCharacter = function() {
         wisdom: 10,
         charisma: 10,
         proficiencies: [],
-        expertises: []
+        expertises: [],
+        notes: null
     };
 }
