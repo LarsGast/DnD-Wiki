@@ -1,4 +1,4 @@
-import {getAbbreviationOfAbility} from './util.js';
+import {getAbbreviationOfAbility} from '../util.js';
 
 export const fillSkillsList = function() {
     const ul = document.getElementById("skills-list");

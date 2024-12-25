@@ -65,9 +65,9 @@ permalink: /pc-builder/
 </section>
 
 <script type="module">
-    import { fillGenericInfoElements } from "{{ '/assets/js/player-character/generic-info.js' | relative_url }}";
-    import { fillSkillsList } from "{{ '/assets/js/player-character/skills.js' | relative_url }}";
-    import { initPage } from "{{ '/assets/js/player-character/init-page.js' | relative_url }}";
+    import { fillGenericInfoElements } from "{{ '/assets/js/player-character/build/generic-info.js' | relative_url }}";
+    import { fillSkillsList } from "{{ '/assets/js/player-character/build/skills.js' | relative_url }}";
+    import { initPage } from "{{ '/assets/js/player-character/init/init-page.js' | relative_url }}";
 
     const genericInfoPromise = fillGenericInfoElements();
 

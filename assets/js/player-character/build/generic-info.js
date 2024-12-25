@@ -1,5 +1,5 @@
-import { getAllRaceNamesAsync, getAllBackgroundNamesAsync, getAllAlignmentNamesAsync } from "./api.js";
-import { getEmptyOption, getSelectOption } from "./util.js";
+import { getAllRaceNamesAsync, getAllBackgroundNamesAsync, getAllAlignmentNamesAsync } from "../api.js";
+import { getEmptyOption, getSelectOption } from "../util.js";
 
 /**
  * Fill all elements in the generic info section.

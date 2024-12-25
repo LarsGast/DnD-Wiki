@@ -1,6 +1,6 @@
-import { getPlayerCharacterProperty, setPlayerCharacterProperty } from "../local-storage-util.js";
-import { getAllClassNamesAsync } from "./api.js";
-import { changeClassSelect, changeAbilityScore, isProficientInSkill, isExpertInSkill, changeProficiency, changeExpertise, getSkillModifier, getAbilityScoreModifier, getEmptyOption, getSelectOption, changeLevelInput } from "./util.js";
+import { getPlayerCharacterProperty, setPlayerCharacterProperty } from "../../local-storage-util.js";
+import { getAllClassNamesAsync } from "../api.js";
+import { changeClassSelect, changeAbilityScore, isProficientInSkill, isExpertInSkill, changeProficiency, changeExpertise, getSkillModifier, getAbilityScoreModifier, getEmptyOption, getSelectOption, changeLevelInput } from "../util.js";
 
 /**
  * Initialize all elements on the PC builder page.
