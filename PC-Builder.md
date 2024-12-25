@@ -8,7 +8,10 @@ permalink: /pc-builder/
     <h2>Algemeen</h2>
     <ul>
         <li><label>Name: <input id="name_i"/></label></li>
-        <li><label>Class & Level: <input/></label></li>
+        <li>
+            <label>Class & Level: </label><button id="class-and-level_b" type="button">Add class</button>
+            <ul id="class-and-level-list"></ul>
+        </li>
         <li><label>Race: <select id="race_s"></select></label></li>
         <li><label>Background: <select id="background_s"></select></label></li>
         <li><label>Alignment: <select id="alignment_s"></select></label></li>

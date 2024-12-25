@@ -1,6 +1,16 @@
 const baseUrl = 'https://www.dnd5eapi.co';
 
 /**
+ * Get all class names in the SRD.
+ * @returns {string[]}
+ */
+export const getAllClassNamesAsync = async function() {
+    const url = `${baseUrl}/api/classes`;
+    const json = await getApiDataAsync(url);
+    return json.results.map(result => result.name);
+}
+
+/**
  * Get all race names in the SRD.
  * @returns {string[]}
  */

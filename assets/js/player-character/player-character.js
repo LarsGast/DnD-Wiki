@@ -1,5 +1,6 @@
 import { getPlayerCharacterProperty, setPlayerCharacterProperty } from "../local-storage-util.js";
-import { changeAbilityScore, isProficientInSkill, isExpertInSkill, changeProficiency, changeExpertise, getSkillModifier, getAbilityScoreModifier } from "./util.js";
+import { getAllClassNamesAsync } from "./api.js";
+import { changeClassSelect, changeAbilityScore, isProficientInSkill, isExpertInSkill, changeProficiency, changeExpertise, getSkillModifier, getAbilityScoreModifier, getEmptyOption, getSelectOption, changeLevelInput } from "./util.js";
 
 /**
  * Initialize all elements on the PC builder page.
@@ -15,7 +16,7 @@ export const initPage = function() {
  */
 const initMainProperties = function() {
     initName();
-
+    initClassAndLevel();
     initRace();
     initBackground();
     initAlignment();
@@ -31,6 +32,81 @@ const initName = function() {
     nameInput.onchange = function() {
         setPlayerCharacterProperty("name", this.value);
     };
+}
+
+/**
+ * Init the class and level property.
+ */
+const initClassAndLevel = function() {
+    initAddClassButton();
+}
+
+/**
+ * Init the "Add class" button.
+ */
+const initAddClassButton = function() {
+
+    const button = document.getElementById('class-and-level_b');
+
+    button.onclick = async function() {
+        const classList = document.getElementById('class-and-level-list');
+
+        classList.appendChild(await getClassListItem());
+    }
+}
+
+/**
+ * Get an li element for the class-and-level list.
+ * @returns {HTMLLIElement}
+ */
+const getClassListItem = async function() {
+    const li = document.createElement('li');
+
+    li.appendChild(await getClassSelect());
+    li.appendChild(getClassLevelInput());
+
+    return li;
+}
+
+/**
+ * Get a select element for the class-and-level list.
+ * @returns {HTMLSelectElement}
+ */
+const getClassSelect = async function() {
+    const allClassNames = await getAllClassNamesAsync();
+
+    const select = document.createElement('select');
+
+    select.appendChild(getEmptyOption());
+
+    allClassNames.forEach(className => {
+        select.appendChild(getSelectOption(className));
+    });
+
+    select.onchange = function() {
+        changeClassSelect();
+    }
+
+    return select;
+}
+
+/**
+ * Get an input element for the class-and-level list.
+ * @returns {HTMLInputElement}
+ */
+const getClassLevelInput = function() {
+    const input = document.createElement('input');
+
+    input.type = "number";
+    input.min = "1";
+    input.max = "20";
+    input.value = "1";
+
+    input.onchange = function() {
+        changeLevelInput();
+    }
+
+    return input;
 }
 
 /**

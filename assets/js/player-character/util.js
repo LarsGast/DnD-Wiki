@@ -1,6 +1,53 @@
 import { getPlayerCharacterProperty, setPlayerCharacterProperty } from '../local-storage-util.js';
 
 /**
+ * Handle the change of a class select element.
+ */
+export const changeClassSelect = function() {
+    updateClasses();
+}
+
+/**
+ * Handle the change of a class level input.
+ */
+export const changeLevelInput = function() {
+    updateClasses();
+    updateAllSkillModifiers();
+}
+
+/**
+ * Update the classes of the PC in local storage.
+ */
+const updateClasses = function() {
+    const classes = getClasses();
+    setPlayerCharacterProperty('classes', classes);
+}
+
+/**
+ * Get all selected class objects for the PC.
+ * @returns {{class: string, level: number}[]}
+ */
+const getClasses = function() {
+    const classAndLevelList = document.getElementById('class-and-level-list');
+    const classAndLevelListItems = Array.from(classAndLevelList.children);
+
+    let classes = [];
+    classAndLevelListItems.forEach(li => {
+        const select = li.getElementsByTagName('select')[0];
+        const input = li.getElementsByTagName('input')[0];
+
+        const classObject = {
+            name: select.value,
+            level: input.value
+        };
+
+        classes.push(classObject);
+    })
+
+    return classes;
+}
+
+/**
  * Get an empty option for select elements.
  * @returns {HTMLOptionElement}
  */
@@ -30,7 +77,7 @@ export const getSelectOption = function(optionValue) {
 }
 
 /**
- * Change the score of the given ability,
+ * Change the score of the given ability.
  * @param {string} abilityName 
  * @param {number} abilityScore 
  */
@@ -45,7 +92,7 @@ export const changeAbilityScore = function(abilityName, abilityScore) {
 }
 
 /**
- * Ensure that each ability score is within 1 and 30
+ * Ensure that each ability score is within 1 and 30.
  * @param {string} abilityName 
  * @param {number} abilityScore 
  */
