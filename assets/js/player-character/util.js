@@ -1,6 +1,35 @@
 import { getPlayerCharacterProperty, setPlayerCharacterProperty } from '../local-storage-util.js';
 
 /**
+ * Get an empty option for select elements.
+ * @returns {HTMLOptionElement}
+ */
+export const getEmptyOption = function() {
+
+    const emptyOption = document.createElement('option');
+
+    emptyOption.disabled = true;
+    emptyOption.selected = true;
+    emptyOption.textContent = "-- Select an option --";
+
+    return emptyOption;
+}
+
+/**
+ * Get an option for a select element.
+ * @param {string} optionValue
+ * @returns {HTMLOptionElement} 
+ */
+export const getSelectOption = function(optionValue) {
+    const option = document.createElement('option');
+
+    option.value = optionValue;
+    option.textContent = optionValue;
+
+    return option;
+}
+
+/**
  * Change the score of the given ability,
  * @param {string} abilityName 
  * @param {number} abilityScore 

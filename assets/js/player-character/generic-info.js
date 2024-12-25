@@ -1,4 +1,5 @@
 import { getAllRaceNamesAsync, getAllBackgroundNamesAsync, getAllAlignmentNamesAsync } from "./api.js";
+import { getEmptyOption, getSelectOption } from "./util.js";
 
 /**
  * Fill all elements in the generic info section.
@@ -52,33 +53,4 @@ const fillAlignmentSelect = async function() {
     allAlignmentNames.forEach(backgroundName => {
         select.appendChild(getSelectOption(backgroundName));
     });
-}
-
-/**
- * Get an empty option for select elements.
- * @returns {HTMLOptionElement}
- */
-const getEmptyOption = function() {
-
-    const emptyOption = document.createElement('option');
-
-    emptyOption.disabled = true;
-    emptyOption.selected = true;
-    emptyOption.textContent = "-- Select an option --";
-
-    return emptyOption;
-}
-
-/**
- * Get an option for a select element.
- * @param {string} optionValue
- * @returns {HTMLOptionElement} 
- */
-const getSelectOption = function(optionValue) {
-    const option = document.createElement('option');
-
-    option.value = optionValue;
-    option.textContent = optionValue;
-
-    return option;
 }
