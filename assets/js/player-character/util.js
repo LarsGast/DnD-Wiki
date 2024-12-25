@@ -1,24 +1,9 @@
 import { getPlayerCharacterProperty, setPlayerCharacterProperty } from '../local-storage-util.js';
 
 /**
- * Handle the change of a class select element.
- */
-export const changeClassSelect = function() {
-    updateClasses();
-}
-
-/**
- * Handle the change of a class level input.
- */
-export const changeLevelInput = function() {
-    updateClasses();
-    updateAllSkillModifiers();
-}
-
-/**
  * Update the classes of the PC in local storage.
  */
-const updateClasses = function() {
+export const updateClasses = function() {
     const classes = getClasses();
     setPlayerCharacterProperty('classes', classes);
 }
@@ -77,26 +62,11 @@ export const getSelectOption = function(optionValue) {
 }
 
 /**
- * Change the score of the given ability.
- * @param {string} abilityName 
- * @param {number} abilityScore 
- */
-export const changeAbilityScore = function(abilityName, abilityScore) {
-    if (abilityScore < 1 || abilityScore > 30) {
-        limitAbilityScore(abilityName, abilityScore);
-        return;
-    }
-    saveAbilityScore(abilityName, abilityScore);
-    updateAbilityScoreModifier(abilityName);
-    updateAllSkillModifiers();
-}
-
-/**
  * Ensure that each ability score is within 1 and 30.
  * @param {string} abilityName 
  * @param {number} abilityScore 
  */
-const limitAbilityScore = function(abilityName, abilityScore) {
+export const limitAbilityScore = function(abilityName, abilityScore) {
     const inputField = document.getElementById(`${abilityName}_i`);
 
     if (abilityScore > 30){
@@ -112,17 +82,18 @@ const limitAbilityScore = function(abilityName, abilityScore) {
 /**
  * Save the given score to the given ability.
  * @param {string} abilityName 
- * @param {number} abilityScore 
  */
-const saveAbilityScore = function(abilityName, abilityScore) {
-    setPlayerCharacterProperty(abilityName, abilityScore);
+export const saveAbilityScore = function(abilityName) {
+    const abilityScore = document.getElementById(`${abilityName}_i`);
+
+    setPlayerCharacterProperty(abilityName, abilityScore.value);
 }
 
 /**
  * Update the ability score modifier for the given ability.
  * @param {string} abilityName 
  */
-const updateAbilityScoreModifier = function(abilityName) {
+export const updateAbilityScoreModifier = function(abilityName) {
     const span = document.getElementById(`${abilityName}_m`);
 
     span.textContent = getAbilityScoreModifier(abilityName);
@@ -131,7 +102,7 @@ const updateAbilityScoreModifier = function(abilityName) {
 /**
  * Update all skill modifiers at once.
  */
-const updateAllSkillModifiers = function() {
+export const updateAllSkillModifiers = function() {
     window.skills.forEach(skill => {
         updateSkillModifier(skill);
     });
@@ -230,33 +201,11 @@ export const getSkillModifier = function(skill) {
 }
 
 /**
- * Add or remove a proficiency in a skill.
- * @param {object} skill
- * @param {boolean} add Wether the proficiency is added or removed.
- */
-export const changeProficiency = function(skill, add) {
-    saveNewProficiencies(skill.name, add);
-    enableOrDisableExpertiseCheckbox(skill.name);
-    updateSkillModifier(skill);
-}
-
-/**
- * Add or remove a expertise in a skill.
- * @param {object} skill
- * @param {boolean} add Wether the expertise is added or removed.
- */
-export const changeExpertise = function(skill, add) {
-    saveNewExpertises(skill.name, add);
-    enableOrDisableProficiencyCheckbox(skill.name);
-    updateSkillModifier(skill);
-}
-
-/**
  * Save the skill proficiency to local storage.
  * @param {string} skillName Name of the skill.
  * @param {boolean} add Wether the proficiency is added or removed.
  */
-const saveNewProficiencies = function(skillName, add) {
+export const saveNewProficiencies = function(skillName, add) {
     const proficiencies = getPlayerCharacterProperty("proficiencies");
 
     if (add === true) {
@@ -279,7 +228,7 @@ const saveNewProficiencies = function(skillName, add) {
  * @param {string} skillName Name of the skill.
  * @param {boolean} add Wether the expertise is added or removed.
  */
-const saveNewExpertises = function(skillName, add) {
+export const saveNewExpertises = function(skillName, add) {
     const expertise = getPlayerCharacterProperty("expertises");
 
     if (add === true) {
@@ -301,7 +250,7 @@ const saveNewExpertises = function(skillName, add) {
  * Enable or disable the expertise checkbox for the given skill based on proficiency.
  * @param {string} skillName Name of the skill.
  */
-const enableOrDisableExpertiseCheckbox = function(skillName) {
+export const enableOrDisableExpertiseCheckbox = function(skillName) {
     const expertiseCheckbox = document.getElementById(`${skillName}_e`);
 
     if (isProficientInSkill(skillName)) {
@@ -316,7 +265,7 @@ const enableOrDisableExpertiseCheckbox = function(skillName) {
  * Enable or disable the proficiency checkbox for the given skill based on expertise.
  * @param {string} skillName Name of the skill.
  */
-const enableOrDisableProficiencyCheckbox = function(skillName) {
+export const enableOrDisableProficiencyCheckbox = function(skillName) {
     const proficiencyCheckbox = document.getElementById(`${skillName}_p`);
 
     if (isExpertInSkill(skillName)) {
@@ -331,7 +280,7 @@ const enableOrDisableProficiencyCheckbox = function(skillName) {
  * Update the modifier for the given skill.
  * @param {object} skill 
  */
-const updateSkillModifier = function(skill) {
+export const updateSkillModifier = function(skill) {
     const span = document.getElementById(`${skill.name}_m`);
 
     span.textContent = getSkillModifier(skill);

@@ -1,5 +1,5 @@
 import { getPlayerCharacterProperty } from "../../local-storage-util.js";
-import { changeAbilityScore, getAbilityScoreModifier } from "../util.js";
+import { getAbilityScoreModifier, limitAbilityScore, saveAbilityScore, updateAbilityScoreModifier, updateAllSkillModifiers } from "../util.js";
 
 /**
  * Initialize all elements for the ability scores on the PC builder page.
@@ -36,6 +36,21 @@ const initAbilityScoreInputField = function(abilityName) {
     inputField.onchange = function() {
         changeAbilityScore(abilityName, this.value);
     };
+}
+
+/**
+ * Change the score of the given ability.
+ * @param {string} abilityName 
+ * @param {number} abilityScore 
+ */
+const changeAbilityScore = function(abilityName, abilityScore) {
+    if (abilityScore < 1 || abilityScore > 30) {
+        limitAbilityScore(abilityName, abilityScore);
+        return;
+    }
+    saveAbilityScore(abilityName);
+    updateAbilityScoreModifier(abilityName);
+    updateAllSkillModifiers();
 }
 
 /**
