@@ -18,7 +18,7 @@ export const getPlayerCharacterProperty = function(propertyName) {
  */
 export const setPlayerCharacterProperty = function(propertyName, propertyValue) {
 
-    const playerCharacter = getPlayerCharacter() || {};
+    const playerCharacter = getPlayerCharacter();
 
     playerCharacter[propertyName] = propertyValue;
 
@@ -67,10 +67,7 @@ const savePlayerCharacter = function(playerCharacter) {
 const getDefaultPlayerCharacter = function() {
     return {
         name: null,
-        classes: [{
-            name: null,
-            level: null
-        }],
+        classes: [],
         race: null,
         background: null,
         alignment: null,
