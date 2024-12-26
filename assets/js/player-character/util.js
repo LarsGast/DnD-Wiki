@@ -306,3 +306,47 @@ export const updateSkillModifier = function(skill) {
 
     span.textContent = getSkillModifier(skill);
 }
+
+/**
+ * Get the proficiency checkbox element for the given skill or equipment.
+ * @param {string} proficiencyName 
+ * @returns {HTMLInputElement}
+ */
+export const getProficiencyCheckbox = function(proficiencyName) {
+
+    const proficiencyCheckbox = document.createElement('input');
+
+    proficiencyCheckbox.type = "checkbox";
+    proficiencyCheckbox.id = `${proficiencyName}_p`;
+
+    return proficiencyCheckbox;
+}
+
+/**
+ * Get the expertise checkbox element for the given skill or equipment.
+ * @param {string} proficiencyName 
+ * @returns {HTMLInputElement}
+ */
+export const getExpertiseCheckbox = function(proficiencyName) {
+
+    const expertiseCheckbox = document.createElement('input');
+
+    expertiseCheckbox.type = "checkbox";
+    expertiseCheckbox.id = `${proficiencyName}_e`;
+
+    return expertiseCheckbox;
+}
+
+/**
+ * Get the span element for the proficiency modifier number for the given skill or equipment.
+ * @param {string} proficiencyName 
+ * @returns {HTMLSpanElement}
+ */
+export const getProficiencyModifierSpan = function(proficiencyName) {
+
+    const span = document.createElement('span');
+    
+    span.id = `${proficiencyName}_m`;
+
+    return span;
+}
