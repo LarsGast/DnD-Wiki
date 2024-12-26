@@ -120,16 +120,11 @@ permalink: /pc-builder/
 </section>
 
 <script type="module">
-    import { fillGenericInfoElements } from "{{ '/assets/js/player-character/build/generic-info.js' | relative_url }}";
-    import { fillSkillsList } from "{{ '/assets/js/player-character/build/skills.js' | relative_url }}";
+    import { buildPage } from "{{ '/assets/js/player-character/build/build-page.js' | relative_url }}";
     import { initPage } from "{{ '/assets/js/player-character/init/init-page.js' | relative_url }}";
 
-    const genericInfoPromise = fillGenericInfoElements();
-
     window.skills = {{ site.data.skills | jsonify }};
-
-    fillSkillsList({{ site.data.skills | jsonify }});
-
-    await genericInfoPromise;
+    
+    await buildPage();
     initPage();
 </script>
