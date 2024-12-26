@@ -90,7 +90,9 @@ permalink: /pc-builder/
         </li>
         <li id="hit-points">
             Hit points
-            <input id="hit-points-current_i" type="number" value="30"/>/<input id="hit-points-max_i" type="number" value="30"/>
+            <div>
+                <input id="hit-points-current_i" type="number" value="30"/>/<input id="hit-points-max_i" type="number" value="30"/>
+            </div>
         </li>
         <li id="temporary-hit-points">
             Temporary hit points
@@ -98,14 +100,18 @@ permalink: /pc-builder/
         </li>
         <li id="death-saves">
             Death saves
-            Successes
-            <input id="death-saves-success_1" type="checkbox"/>
-            <input id="death-saves-success_2" type="checkbox"/>
-            <input id="death-saves-success_3" type="checkbox"/>
-            Failures
-            <input id="death-saves-failure_1" type="checkbox"/>
-            <input id="death-saves-failure_2" type="checkbox"/>
-            <input id="death-saves-failure_3" type="checkbox"/>
+            <div>
+                S
+                <input id="death-saves-success_1" type="checkbox"/>
+                <input id="death-saves-success_2" type="checkbox"/>
+                <input id="death-saves-success_3" type="checkbox"/>
+            </div>
+            <div>
+                F
+                <input id="death-saves-failure_1" type="checkbox"/>
+                <input id="death-saves-failure_2" type="checkbox"/>
+                <input id="death-saves-failure_3" type="checkbox"/>
+            </div>
         </li>
     </ul>
 </section>
