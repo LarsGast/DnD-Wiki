@@ -1,3 +1,4 @@
+import { buildEquipmentProficiencies } from "./build-equipment-proficiencies.js";
 import { fillGenericInfoElements } from "./generic-info.js";
 import { fillSkillsList } from "./skills.js";
 
@@ -8,4 +9,5 @@ import { fillSkillsList } from "./skills.js";
 export const buildPage = async function() {
     await fillGenericInfoElements();
     fillSkillsList();
+    await buildEquipmentProficiencies();
 }

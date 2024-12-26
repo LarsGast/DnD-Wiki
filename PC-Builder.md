@@ -111,7 +111,15 @@ permalink: /pc-builder/
 
 <section id="skills-container">
     <h2>Skills</h2>
-    <ul class="no-style-list" id="skills-list"></ul>
+    <ul class="no-style-list proficiencies-list" id="skills-list"></ul>
+</section>
+
+<section id="equipment-proficiencies-container">
+    <h2>Equipment proficiencies</h2>
+    <h3>Weapons</h3>
+    <ul class="no-style-list proficiencies-list" id="weapon-proficiencies-list"></ul>
+    <h3>Armor</h3>
+    <ul class="no-style-list proficiencies-list" id="armor-proficiencies-list"></ul>
 </section>
 
 <section id="notes-container">
@@ -124,7 +132,7 @@ permalink: /pc-builder/
     import { initPage } from "{{ '/assets/js/player-character/init/init-page.js' | relative_url }}";
 
     window.skills = {{ site.data.skills | jsonify }};
-    
+
     await buildPage();
     initPage();
 </script>

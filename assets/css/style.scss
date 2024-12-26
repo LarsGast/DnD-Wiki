@@ -182,21 +182,31 @@ img {
     }
 }
 
-/* Skills section for PC page */
-#skills-container {
-    ul {
-        column-count: 3;
+/* Proficiencies list for PC page */
+.proficiencies-list {
+    column-count: 3;
 
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
 
-        @media screen and (max-width: 740px) {
-            column-count: 2;
-        }
+    @media screen and (max-width: 740px) {
+        column-count: 2;
+    }
 
-        @media screen and (max-width: 510px) {
-            column-count: 1;
+    @media screen and (max-width: 510px) {
+        column-count: 1;
+    }
+}
+
+#equipment-proficiencies-container {
+    > ul {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+       
+        ul {
+            margin-left: 20px;
         }
     }
 }
