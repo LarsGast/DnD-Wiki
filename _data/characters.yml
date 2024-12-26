@@ -6,7 +6,6 @@
 # The following key-value-pairs are available for a character:
 # name - string - The name of the character
 # published - boolean - If the character should be visible and navigatable on the site
-# isPlayerCharacter - boolean - If the character is a player character. If true, this characer will be displayed on the PCs page
 # customLink - string - optional - A custom link (without extension) for characters with names that create invalid links
 # properties - Array of properties - A list of identifiers to display at the top of a character page. The properties will be displayed in specified order.
 #   name - string - The name of the identifier
@@ -16,7 +15,6 @@
 
 - name: Adonis
   published: true
-  isPlayerCharacter: true
   properties:
     - name: Ras
       value: Drow
@@ -34,7 +32,6 @@
 
 - name: Albert Tweesteen
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Goblin
@@ -56,7 +53,6 @@
 
 - name: Amy Aria
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Mens
@@ -77,7 +73,6 @@
 
 - name: Arikikuchiariku
   published: true
-  isPlayerCharacter: true
   properties:
     - name: Ras
       value: Mens
@@ -96,7 +91,6 @@
 
 - name: Ash Dragonblade
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Mens
@@ -117,7 +111,6 @@
 
 - name: Azura Zingzwaard
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Bijnaam
       value: Prinses (door Hugo Zingzwaard en Koning Splurt)
@@ -140,7 +133,6 @@
 
 - name: Barnaby Kraai
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Bijnaam
       value: Zwartsnavel
@@ -161,7 +153,6 @@
 
 - name: Dazlyn Grayshard
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Schild Dwerg
@@ -180,7 +171,6 @@
 
 - name: Elmar Barthen
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Mens
@@ -201,7 +191,6 @@
 
 - name: Gareth Bloodwood
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Mens
@@ -220,7 +209,6 @@
 
 - name: Gaston de Kok
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Bijnaam
       value: Chef Bulk (door een groep avonturiers)
@@ -243,7 +231,6 @@
 
 - name: Grog Steenvuist
   published: true
-  isPlayerCharacter: true
   properties:
     - name: Bijnaam
       value: IJzerwerk
@@ -267,7 +254,6 @@
 
 - name: Halia Thornton
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Mens
@@ -288,7 +274,6 @@
 
 - name: Harbin Wester
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Onbekend
@@ -309,7 +294,6 @@
 
 - name: Hugo Staalzwaard
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Mens
@@ -330,7 +314,6 @@
 
 - name: Hugo Zingzwaard
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Mens
@@ -352,7 +335,6 @@
 
 - name: Isabella Swift
   published: true
-  isPlayerCharacter: true
   properties:
     - name: Bijnaam
       value: Zilvermaan
@@ -376,7 +358,6 @@
 
 - name: Kaelen Schaduwholster
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Bijnaam
       value: Duisterster
@@ -399,7 +380,6 @@
 
 - name: Kapitein Groenbaard
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Volledige naam
       value: Eddie Riet
@@ -425,7 +405,6 @@
 
 - name: Koning Splurt
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Bijnaam
       value: Koning Splurt
@@ -448,7 +427,6 @@
 
 - name: Kosharakar Coemeydus
   published: true
-  isPlayerCharacter: true
   properties:
     - name: Bijnaam
       value: Kosha
@@ -469,7 +447,6 @@
 
 - name: Laranlor Cormearil
   published: true
-  isPlayerCharacter: true
   properties:
     - name: Bijnaam
       value: Lan
@@ -490,7 +467,6 @@
 
 - name: Linene Graywind
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Mens
@@ -511,7 +487,6 @@
 
 - name: Lushikukukanda
   published: true
-  isPlayerCharacter: true
   properties:
     - name: Bijnaam
       value: Kuku
@@ -532,7 +507,6 @@
 
 - name: Nettie Bettie
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Goblin
@@ -551,7 +525,6 @@
 
 - name: Norbus Ironrune
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Schild Dwerg
@@ -570,7 +543,6 @@
 
 - name: P.E.K.K.A.
   published: true
-  isPlayerCharacter: true
   properties:
     - name: Ras
       value: Warforged
@@ -590,7 +562,6 @@
 
 - name: Robina the Hood
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Wood-Elf
@@ -611,7 +582,6 @@
 
 - name: Theodas
   published: true
-  isPlayerCharacter: true
   properties:
     - name: Ras
       value: High-Elf
@@ -630,7 +600,6 @@
 
 - name: Twilly
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Bijnaam
       value: Held van Falconreach
@@ -652,7 +621,6 @@
 
 - name: Yulgar Lark
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Mens
@@ -673,7 +641,6 @@
 
 - name: Cryovain
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Jonge witte draak
@@ -688,7 +655,6 @@
 
 - name: Dabbledob
   published: false
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Kabouter
@@ -707,7 +673,6 @@
 
 - name: Fibblestib
   published: false
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Kabouter
@@ -726,7 +691,6 @@
 
 - name: Gnerkli
   published: false
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Kabouter
@@ -745,7 +709,6 @@
 
 - name: Korboz
   published: false
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Kabouter
@@ -764,7 +727,6 @@
 
 - name: Kara de Felle
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Mens, Valkyrie
@@ -783,7 +745,6 @@
 
 - name: Liora de Zachte
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Mens, Healer
@@ -802,7 +763,6 @@
 
 - name: Eldric de Wijze
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Mens, Grand Warden
@@ -821,7 +781,6 @@
 
 - name: Zyra de Duistere
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Elf, Heks
@@ -840,7 +799,6 @@
 
 - name: Yargath
   published: true
-  isPlayerCharacter: false
   properties:
     - name: Ras
       value: Half-Orc
