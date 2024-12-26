@@ -32,10 +32,6 @@ const getAnchorElement = function(object) {
     if (window.listType === 'character') {
         anchor.appendChild(getCharacterSummaryWrapper(object));
     }
-    else if (window.listType === 'player-character') {
-        const characterObject = window.links.filter(character => character.name === object.name)[0];
-        anchor.appendChild(getCharacterSummaryWrapper(characterObject));
-    }
     else {
         anchor.textContent = object.name;
     }

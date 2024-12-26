@@ -36,16 +36,6 @@ const getObjectNames = function(metadata) {
 }
 
 /**
- * Get the names of all the related objects that should appear on the PCs main page. 
- * @returns {string[]}
- */
-const getObjectNamesForPcsPage = function() {
-    return window.allObjects
-        .filter(object => object.isPlayerCharacter === true)
-        .map(object => object.name);
-}
-
-/**
  * Get the names of all the related objects that should appear on the 'page' layout. 
  * @returns {string[]}
  */
