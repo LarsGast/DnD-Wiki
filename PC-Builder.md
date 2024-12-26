@@ -73,10 +73,47 @@ permalink: /pc-builder/
     </ul>
 </section>
 
+<section id="combat-stats-container">
+    <h2>Combat</h2>
+    <ul class="no-style-list block-info-list" id="combat-stats-list">
+        <li id="armor-class">
+            Armor class
+            <span id="armor-class_s">10</span>
+        </li>
+        <li id="initiative">
+            Initiative
+            <span id="initiative_s">2</span> 
+        </li>
+        <li id="speed">
+            Speed
+            <span id="speed_s">30</span> 
+        </li>
+        <li id="hit-points">
+            Hit points
+            <input id="hit-points-current_i" type="number" value="30"/>/<input id="hit-points-max_i" type="number" value="30"/>
+        </li>
+        <li id="temporary-hit-points">
+            Temporary hit points
+            <input id="temporary-hit-points_i" type="number" value="0"/>
+        </li>
+        <li id="death-saves">
+            Death saves
+            Successes
+            <input id="death-saves-success_1" type="checkbox"/>
+            <input id="death-saves-success_2" type="checkbox"/>
+            <input id="death-saves-success_3" type="checkbox"/>
+            Failures
+            <input id="death-saves-failure_1" type="checkbox"/>
+            <input id="death-saves-failure_2" type="checkbox"/>
+            <input id="death-saves-failure_3" type="checkbox"/>
+        </li>
+    </ul>
+</section>
+
 <section id="ability-scores-container">
     <h2>Ability Scores</h2>
-    <ul class="no-style-list" id="ability-scores-list">
-    <li id="strength">
+    <ul class="no-style-list block-info-list" id="ability-scores-list">
+        <li id="strength">
             <span>STR</span>
             <span id="strength_m"></span>
             <input id="strength_i" type="number" min="1" max="30"/>

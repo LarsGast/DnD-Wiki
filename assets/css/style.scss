@@ -143,30 +143,36 @@ img {
     }
 }
 
+/* Info displayed in small blocks */
+.block-info-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+
+    > li {
+        display: flex;
+        flex-direction: column;
+
+        width: 100px;
+        height: 80px;
+        padding: 5px;
+
+        border: 2px solid black;
+        border-radius: 10px;
+
+        align-items: center;
+    }
+}
+
 /* Abilityscores for player character page */
 #ability-scores-container {
 
     padding-bottom: 20px;
 
     ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px 10px;
 
         > li {
-            display: flex;
-            flex-direction: column;
-
-            width: 100px;
-            height: 80px;
-            padding: 5px;
-
-            border: 2px solid black;
-            border-radius: 10px;
-
-            align-items: center;
-
             :nth-child(2) {
                 font-size: 2rem;
             }
