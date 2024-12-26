@@ -166,6 +166,36 @@ img {
     }
 }
 
+/* Combat stats for PC Builder page */
+#combat-stats-container {
+    span {
+        font-size: 2rem;
+    }
+
+    #hit-points {
+
+        > div {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    #death-saves {
+        > div {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    input {
+        width: 40px;
+    }
+}
+
 /* Abilityscores for player character page */
 #ability-scores-container {
 
