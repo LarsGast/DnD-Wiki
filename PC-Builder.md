@@ -21,7 +21,7 @@ permalink: /pc-builder/
         </p>
         <h3>DnD API</h3>
         <p>
-            Voor class, race, background, en alignment wordt de <a href="https://www.dnd5eapi.co/" target="_blank">DnD 5e API</a> gebruikt. Deze API bevat alle gratis content van D&D 5e. Dit is een subset van het <abbr title="Player's Handbook">PHB</abbr>, wat inhoud dat niet alle content hier beschikbaar is. Er zijn op dit moment geen plannen om dit uit te breiden, omdat je dan met copyright law bezig bent.
+            Voor class, race, background, en alignment wordt de <a href="https://www.dnd5eapi.co/" target="_blank">DnD 5e API</a> gebruikt. Deze API bevat alle gratis content van D&D 5e, <a href="https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf" target="_blank">de <abbr title="Systems Reference Document">SRD</abbr></a>. Dit is een subset van het <abbr title="Player's Handbook">PHB</abbr>, wat inhoud dat niet alle content hier beschikbaar is (dit bevat bijvoorbeeld maar 1 background). Er zijn op dit moment geen plannen om dit uit te breiden, omdat je dan met copyright law bezig bent.
         </p>
         <h3>Geplande componenten</h3>
         <p>
@@ -34,6 +34,7 @@ permalink: /pc-builder/
             <li>Race features</li>
             <li>Class features</li>
             <li>Spell casting</li>
+            <li>Talen</li>
             <li>
                 Inventory, onderverdeeld in
                 <ul>
