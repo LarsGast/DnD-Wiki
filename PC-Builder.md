@@ -77,7 +77,7 @@ permalink: /pc-builder/
         </li>
         <li id="initiative">
             Initiative
-            <span id="initiative_s">2</span> 
+            <span id="initiative_s"></span> 
         </li>
         <li id="speed">
             Speed

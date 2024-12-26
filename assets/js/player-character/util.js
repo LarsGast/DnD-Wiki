@@ -83,6 +83,25 @@ export const getSelectOption = function(optionValue) {
 }
 
 /**
+ * Update the initiative modifier element to reflect current initiative.
+ */
+export const updateInitiativeModifier = function() {
+    const span = document.getElementById('initiative_s');
+
+    span.textContent = getInitiativeModifier();
+}
+
+/**
+ * Get the current initiative modifier of the PC.
+ * @returns {number} DEX mod + extra modifiers.
+ */
+const getInitiativeModifier = function() {
+    const dexterityScoreModifier = getAbilityScoreModifier("dexterity");
+
+    return dexterityScoreModifier;
+}
+
+/**
  * Ensure that each ability score is within 1 and 30.
  * @param {string} abilityName 
  * @param {number} abilityScore 
