@@ -113,6 +113,9 @@
 - characterName: P.E.K.K.A.
   imageName: PEKKA
   isHeaderImage: true
+- characterName: P.E.K.K.A.
+  imageName: kerst pekka
+  isHeaderImage: false
 
 - characterName: Robina the Hood
   imageName: Robina full body
