@@ -549,7 +549,7 @@
     - name: Geslacht
       value: Man
     - name: Leeftijd
-      value: Volwassen, overleden
+      value: Volwassen
     - name: Bevindt zich op dit moment in
       value: De Sword Mountains
     - name: Talen
@@ -787,7 +787,7 @@
     - name: Geslacht
       value: Vrouw
     - name: Leeftijd
-      value: Volwassen
+      value: Volwassen, overleden
     - name: Bevindt zich op dit moment in
       value: IJzerfort
     - name: Talen
