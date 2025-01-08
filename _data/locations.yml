@@ -252,7 +252,7 @@
       value: Militaire discipline, kracht en strategie, focus op expansie en verdediging
 
 - name: Gnomengarde
-  published: false
+  published: true
   properties:
     - name: Soort
       value: Grot

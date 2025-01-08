@@ -37,16 +37,16 @@
   published: true
 
 - name: Clockwork Amulet
-  published: false
+  published: true
 
 - name: Hat of Wizardry
-  published: false
+  published: true
 
 - name: Pole of Collapsing
-  published: false
+  published: true
 
 - name: Wand of Pyrotechnics
-  published: false
+  published: true
 
 - name: Storm Kern
   published: true

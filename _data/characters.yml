@@ -654,7 +654,7 @@
     - name: hostile
 
 - name: Dabbledob
-  published: false
+  published: true
   properties:
     - name: Ras
       value: Kabouter
@@ -672,7 +672,7 @@
     - name: indifferent
 
 - name: Fibblestib
-  published: false
+  published: true
   properties:
     - name: Ras
       value: Kabouter
@@ -690,7 +690,7 @@
     - name: indifferent
 
 - name: Gnerkli
-  published: false
+  published: true
   properties:
     - name: Ras
       value: Kabouter
@@ -708,7 +708,7 @@
     - name: indifferent
 
 - name: Korboz
-  published: false
+  published: true
   properties:
     - name: Ras
       value: Kabouter
