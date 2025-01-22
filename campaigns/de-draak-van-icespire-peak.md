@@ -26,7 +26,7 @@ De laatste opdracht die er hangt heet "Umbrage Hill". Dit is een locatie waar ee
 
 De avonturiers kiezen ervoor om Dwarven Excavation als eerste op te pakken en gaan richting de ruïnes.
 
-### Dwarven Excavation
+### Dwarven Excavation quest
 
 Tijdens de tocht van Phandalin naar Dwarven Excavation zien de avonturiers in de verte de beruchte witte draak vliegen. Na een tijdje in rondjes te hebben gevlogen, duikt hij naar beneden en pakt een beest in zijn klauwen, vermoedelijk voedsel. Vervolgens vliegt hij weer richting de top van de Sword Mountains waar hij vermoedelijk rust.
 
@@ -72,3 +72,22 @@ Uiteindelijk gebruikt Theodas een sterkere versie van Magic Missile om de laatst
 Op dat moment realiseert de draak zich dat Laranlor ook neer is gegaan. Laranlor heeft geholpen bij het gevecht tegen de groep, maar Cryovain heeft zo niks meer aan hem. Hij neemt Laranlor in zijn klauwen en vliegt terug richting de Sword Mountains. De magische voorwerpen die Laranlor bij zich dat vallen op de grond terwijl ze opstijgen.
 
 Zonder P.E.K.K.A. en Laranlor is de groep avonturiers behoorlijk verzwakt. Ze hebben de kracht van de witte draak gezien, en beseffen zich hopelijk goed dat er meer nodig is dan pijlen en simpele magie om een bedreiging van dit kaliber te kunnen verslaan.
+
+### Het herrijzen van P.E.K.K.A. en het verleden van Theodas
+
+Zie <a href="./conflict-van-stammen">Conflict van Stammen</a> en <a href="./bloed-en-donder">Bloed en Donder</a>.
+
+### Gnomengarde quest
+Nu P.E.K.K.A. weer herrezen is besluit de groep avonturiers hun missie voort te zetten richting Gnomengarde, een klein koninkrijk van Gnomes die gevorderd zijn in het uitvinden van magische voorwerpen. Mogelijk bezitten deze Gnomes voorwerpen die kunnen helpen in de strijd tegen de formidabele witte draak van de bergen.
+
+Gnomengarde is een kleine gemeenschap die gevestigd is in een aantal grotten in de Sword Mountains. Het heeft twee koningen die aan het hoofd staan, maar in Gnomengarde wordt iedereen als gelijke gezien. De grotten van Gnomengarde bevinden zich rond een inham met waterval en een paar kleine eilandjes. Meerdere ingangen kijken uit op het water aangezien ze ongeveer 10 meter verhoogd zijn. Op de eilandjes die in het water liggen groeien enorme magische paddenstoelen die de Gnomes van Gnomengarde gebruiken om brood, wijn, en olie mee te maken.
+
+Bij de aankomst wordt de groep direct geconfronteerd met het feit dat de draak Cryovain hier heeft aangevallen. De paddenstoelen op de eilanden zijn deels bevroren en er lijken vreemde effecten vanaf te spatten. De magie in de regio is duidelijk verstoord.
+
+De groep ziet ook een mensachtige kat, een Tabaxi, die de omgeving van Gnomengarde lijkt te verkennen. Ze leren dat deze Tabaxi een professor is, en dat hij op dit moment onderzoek aan het doen is.
+
+Geïnteresseerd in de paddenstoelen, besluit de groep door de rivier te klauteren om zo een kijkje te nemen. Zodra iemand een paddenstoel aanraakt, loopt wilde magie zijn koers en zorgt voor een willekeurig magisch effect dat effect heeft op degene die de paddenstoel aanraakt. Blauwe huid, kleine lichtballen om de persoon heen, en vilder vleugels zijn een aantal van deze effecten.
+
+Dichtbij de eilanden waar de groep zich op bevind vloeit een razende waterval. Naast deze waterval zijn twee heuvels met ingangen naar Gnomengarde, gescheiden door een loopbrug. Theodas en P.E.K.K.A. vinden hun weg op deze heuvel, terwijl Arikikuchiariku door de rivier wordt weggesleept en de professor richting een andere ingang gaat. Theodas en P.E.K.K.A. komen in de grotten twee Gnomes tegen die te wacht staan en klaar zijn om aan te vallen. Ze zeggen dat niemand er langs mag, en aangezien de groep van de verkeerde kant komt hebben ze weinig geduld. Een gevecht barst los waar P.E.K.K.A. bijna neer gaat. Uiteindelijk weet de groep de Gnomes op het nippertje te verslaan. Arikikuchiariku is inmiddels samen met de Wakanda Panter ook bij de waterval naar boven geklommen. Om hun misdaden te verbergen besluiten ze dat de Wakanda Panter de lichamen van de dode Gnomes zal opeten.
+
+Ondertussen is de professor bij een andere ingang naar binnen geklommen dat uit komt bij een soort slaapkamer waar meerdere Gnomes aan het slapen zijn. Hij bevraagd een Gnome die hierdoor wakker is geworden en hem doorverwijst naar de uitvindersworkshop, te moe om zich te realiseren dat de professor net bij een heuvel van 10 meter naar boven is geklommen om bij een soort achterdeur Gnomengarde binnen te komen. In de uitvindersworkshop komt de professor Fibblestib en Dabbledob tegen, die vel aan het discussiëren zijn. Ze hebben het over een "Sanity Ray" en een "Straightjacket" om één van hun koningen weer bij het gezond verstand te brengen. Zodra de professor hun ondervraagt vertellen ze dat één van de koningen van Gnomengarde, Korboz, een beetje door is gedraaid. Hij denkt namelijk dat er een shapechanger in Gnomengarde rondloopt, maar niemand anders heeft dit gezien. Fibblestib en Dabbledob denken dat Korboz paranoïde is geworden door de aanval van de draak, ongeveer een week geleden. Ze bieden de groep een aantal magische items aan als ze hun koning weer bij zinnen kunnen brengen. De professor accepteert dit en haalt samen met Dabbledob
