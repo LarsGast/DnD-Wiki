@@ -288,3 +288,21 @@
       value: Dient als vergaderplaats van de volgers van Talos
     - name: Cultuur
       value: Verborgen, en dat willen we zo houden
+
+- name: Butterskull Ranch
+  published: false
+  properties:
+    - name: Soort
+      value: Boerderij
+    - name: Inwoners
+      value: Alfonse Kalazorn
+    - name: Populatie
+      value: 1
+    - name: Geografische locatie
+      value: 5 mijl ten oosten van Conyberry
+    - name: Infrastructuur
+      value: Grote velden en een aantal boerderij gebouwen
+    - name: Geschiedenis
+      value: Jaren geleden opgezet door Alfonse Kalazorn. Recentelijk aangevallen door Orcs.
+    - name: Cultuur
+      value: Eerlijk werk
