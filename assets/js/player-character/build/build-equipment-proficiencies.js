@@ -9,7 +9,7 @@ export const buildEquipmentProficiencies = async function() {
 }
 
 /**
- * Fill the weapon proficiencies list.
+ * Fill the weapon proficiencies container.
  */
 const fillWeaponProficienciesList = async function() {
     const div = document.getElementById('weapon-proficiencies-container');
@@ -20,6 +20,12 @@ const fillWeaponProficienciesList = async function() {
     div.appendChild(getProficienciesContainer("Martial Ranged", await getAllMartialRangedWeaponNamesAsync()));
 }
 
+/**
+ * Get a single proficiencies container div for displaying a group of proficiencies.
+ * @param {string} title To display above the list as an h4 element.
+ * @param {string[]} itemNames The list of names that contains each proficiency that the container should house.
+ * @returns {HTMLDivElement}
+ */
 const getProficienciesContainer = function(title, itemNames) {
     const div = document.createElement('div');
 
@@ -29,6 +35,11 @@ const getProficienciesContainer = function(title, itemNames) {
     return div
 }
 
+/**
+ * Get the header for the proficiencies container.
+ * @param {string} title 
+ * @returns {HTMLHeadingElement}
+ */
 const getProficienciesContainerHeader = function(title) {
     const h4 = document.createElement('h4');
 
@@ -37,45 +48,16 @@ const getProficienciesContainerHeader = function(title) {
     return h4;
 }
 
+/**
+ * Gets the body of a proficiencies container.
+ * @param {string[]} itemNames 
+ * @returns {HTMLUListElement}
+ */
 const getProficienciesContainerBody = function(itemNames) {
     const ul = document.createElement('ul');
 
     ul.classList.add('no-style-list');
     ul.classList.add('proficiencies-list');
-
-    itemNames.forEach(itemName => {
-        ul.appendChild(getProficiencyItem(itemName));
-    })
-
-    return ul;
-}
-
-/**
- * Get a ul element containing all weapons of given title
- * @param {string} title 
- * @param {string[]} itemNames 
- * @returns {HTMLLIElement}
- */
-const getListItem = function(title, itemNames) {
-    const li = document.createElement('li');
-
-    li.appendChild(getProficiencyCheckbox(title));
-    li.appendChild(getEquipmentLabel(title));
-    li.appendChild(getSubList(itemNames));
-
-    return li;
-}
-
-/**
- * Get a sub list containing all given items.
- * @param {string[]} itemNames 
- * @returns {HTMLUListElement}
- */
-const getSubList = function(itemNames) {
-
-    const ul = document.createElement('ul');
-
-    ul.classList.add('no-style-list');
 
     itemNames.forEach(itemName => {
         ul.appendChild(getProficiencyItem(itemName));
