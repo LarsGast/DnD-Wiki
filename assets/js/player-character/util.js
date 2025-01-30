@@ -185,7 +185,7 @@ export const getAbbreviationOfAbility = function(abilityName) {
  * @returns {boolean}
  */
 export const isProficientInSkill = function(skillName) {
-    const proficiencies = getPlayerCharacterProperty("proficiencies");
+    const proficiencies = getPlayerCharacterProperty("proficiencies") || [];
     return proficiencies.includes(skillName);
 }
 
@@ -195,7 +195,7 @@ export const isProficientInSkill = function(skillName) {
  * @returns {boolean}
  */
 export const isExpertInSkill = function(skillName) {
-    const expertises = getPlayerCharacterProperty("expertises");
+    const expertises = getPlayerCharacterProperty("expertises") || [];
     return expertises.includes(skillName);
 }
 
@@ -227,7 +227,7 @@ export const getSkillModifier = function(skill) {
  * @param {boolean} add Wether the proficiency is added or removed.
  */
 export const saveNewSkillProficiencies = function(skillName, add) {
-    const proficiencies = getPlayerCharacterProperty("proficiencies");
+    const proficiencies = getPlayerCharacterProperty("proficiencies") || [];
 
     if (add === true) {
         if (!proficiencies.includes(skillName)) {
@@ -250,7 +250,7 @@ export const saveNewSkillProficiencies = function(skillName, add) {
  * @param {boolean} add Wether the expertise is added or removed.
  */
 export const saveNewSkillExpertises = function(skillName, add) {
-    const expertise = getPlayerCharacterProperty("expertises");
+    const expertise = getPlayerCharacterProperty("expertises") || [];
 
     if (add === true) {
         if (!expertise.includes(skillName)) {
