@@ -81,6 +81,46 @@ export const getAllMartialRangedWeaponNamesAsync = async function() {
 }
 
 /**
+ * Get all light armor names in the SRD.
+ * @returns {string[]}
+ */
+export const getAllLightArmorNamesAsync = async function() {
+    const url = `${baseUrl}/api/equipment-categories/light-armor`;
+    const json = await getApiDataAsync(url);
+    return json.equipment.map(result => result.name);
+}
+
+/**
+ * Get all medium armor names in the SRD.
+ * @returns {string[]}
+ */
+export const getAllMediumArmorNamesAsync = async function() {
+    const url = `${baseUrl}/api/equipment-categories/medium-armor`;
+    const json = await getApiDataAsync(url);
+    return json.equipment.map(result => result.name);
+}
+
+/**
+ * Get all heavy armor names in the SRD.
+ * @returns {string[]}
+ */
+export const getAllHeavyArmorNamesAsync = async function() {
+    const url = `${baseUrl}/api/equipment-categories/heavy-armor`;
+    const json = await getApiDataAsync(url);
+    return json.equipment.map(result => result.name);
+}
+
+/**
+ * Get all shield names in the SRD.
+ * @returns {string[]}
+ */
+export const getAllShieldNamesAsync = async function() {
+    const url = `${baseUrl}/api/equipment-categories/shields`;
+    const json = await getApiDataAsync(url);
+    return json.equipment.map(result => result.name);
+}
+
+/**
  * Perform an API call and get data from https://www.dnd5eapi.co.
  * @param {string} url 
  * @returns {json}

@@ -119,7 +119,7 @@ permalink: /pc-builder/
     <h3>Weapons</h3>
     <div id="weapon-proficiencies-container"></div>
     <h3>Armor</h3>
-    <ul class="no-style-list proficiencies-list" id="armor-proficiencies-list"></ul>
+    <div id="armor-proficiencies-container"></div>
 </section>
 
 <section id="notes-container">

@@ -1,4 +1,13 @@
-import { getAllSimpleMeleeWeaponNamesAsync, getAllMartialMeleeWeaponNamesAsync, getAllSimpleRangedWeaponNamesAsync, getAllMartialRangedWeaponNamesAsync } from "../api.js";
+import { 
+    getAllSimpleMeleeWeaponNamesAsync, 
+    getAllMartialMeleeWeaponNamesAsync, 
+    getAllSimpleRangedWeaponNamesAsync, 
+    getAllMartialRangedWeaponNamesAsync, 
+    getAllLightArmorNamesAsync,
+    getAllMediumArmorNamesAsync,
+    getAllHeavyArmorNamesAsync,
+    getAllShieldNamesAsync
+} from "../api.js";
 import { getProficiencyCheckbox } from "../util.js";
 
 /**
@@ -6,6 +15,7 @@ import { getProficiencyCheckbox } from "../util.js";
  */
 export const buildEquipmentProficiencies = async function() {
     await fillWeaponProficienciesList();
+    await fillArmorProficienciesList();
 }
 
 /**
@@ -18,6 +28,18 @@ const fillWeaponProficienciesList = async function() {
     div.appendChild(getProficienciesContainer("Martial Melee", await getAllMartialMeleeWeaponNamesAsync()));
     div.appendChild(getProficienciesContainer("Simple Ranged", await getAllSimpleRangedWeaponNamesAsync()));
     div.appendChild(getProficienciesContainer("Martial Ranged", await getAllMartialRangedWeaponNamesAsync()));
+}
+
+/**
+ * Fill the armor proficiencies container.
+ */
+const fillArmorProficienciesList = async function() {
+    const div = document.getElementById('armor-proficiencies-container');
+
+    div.appendChild(getProficienciesContainer("Light", await getAllLightArmorNamesAsync()));
+    div.appendChild(getProficienciesContainer("Medium", await getAllMediumArmorNamesAsync()));
+    div.appendChild(getProficienciesContainer("Heavy", await getAllHeavyArmorNamesAsync()));
+    div.appendChild(getProficienciesContainer("Shields", await getAllShieldNamesAsync()));
 }
 
 /**
@@ -58,12 +80,28 @@ const getProficienciesContainerBody = function(itemNames) {
 
     ul.classList.add('no-style-list');
     ul.classList.add('proficiencies-list');
+    ul.classList.add(getNumberOfColumnsClassName(itemNames));
 
     itemNames.forEach(itemName => {
         ul.appendChild(getProficiencyItem(itemName));
     })
 
     return ul;
+}
+
+/**
+ * Get the appropriate "number of columns" class name.
+ * @param {string[]} itemNames 
+ * @returns {string}
+ */
+const getNumberOfColumnsClassName = function(itemNames) {
+    if (itemNames.length >= 9) {
+        return 'three-columns-list';
+    }
+
+    if (itemNames.length >= 4) {
+        return 'two-columns-list';
+    }
 }
 
 /**
