@@ -26,6 +26,7 @@ img {
 .no-style-list {
     list-style-type: none;
     margin: 0;
+    margin-bottom: 15px;
 }
 
 .no-style-link-group {
@@ -145,8 +146,6 @@ img {
 
 /* Abilityscores for player character page */
 #ability-scores-container {
-
-    padding-bottom: 20px;
 
     ul {
         display: flex;
