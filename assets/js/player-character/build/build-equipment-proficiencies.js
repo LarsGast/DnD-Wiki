@@ -127,6 +127,7 @@ const getEquipmentLabel = function(equipmentName) {
     const label = document.createElement('label');
 
     label.textContent = equipmentName;
+    label.htmlFor = getProficiencyCheckbox(equipmentName).id;
 
     return label;
 }
