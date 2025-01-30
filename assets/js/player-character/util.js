@@ -200,6 +200,16 @@ export const isExpertInSkill = function(skillName) {
 }
 
 /**
+ * Check if the PC is proficient in the given weapon.
+ * @param {string} weaponName 
+ * @returns {boolean}
+ */
+export const isProficientInWeapon = function(weaponName) {
+    const proficiencies = getPlayerCharacterProperty("weapon_proficiencies") || [];
+    return proficiencies.includes(weaponName);
+}
+
+/**
  * Get the modifier of the given skill for the PC in local storage.
  * @param {*} skill 
  * @returns {number}
@@ -305,6 +315,29 @@ export const updateSkillModifier = function(skill) {
     const span = document.getElementById(`${skill.name}_m`);
 
     span.textContent = getSkillModifier(skill);
+}
+
+/**
+ * Save the weapon proficiency to local storage.
+ * @param {string} weaponName Name of the weapon.
+ * @param {boolean} add Wether the proficiency is added or removed.
+ */
+export const saveNewWeaponProficiencies = function(weaponName, add) {
+    const weaponProficiencies = getPlayerCharacterProperty("weapon_proficiencies") || [];
+
+    if (add === true) {
+        if (!weaponProficiencies.includes(weaponName)) {
+            weaponProficiencies.push(weaponName);
+        }
+    }
+    else {
+        const skillIndex = weaponProficiencies.indexOf(weaponName);
+        if (skillIndex !== -1) {
+            weaponProficiencies.splice(skillIndex, 1);
+        }
+    }
+
+    setPlayerCharacterProperty("weapon_proficiencies", weaponProficiencies);
 }
 
 /**
