@@ -226,7 +226,7 @@ export const getSkillModifier = function(skill) {
  * @param {string} skillName Name of the skill.
  * @param {boolean} add Wether the proficiency is added or removed.
  */
-export const saveNewProficiencies = function(skillName, add) {
+export const saveNewSkillProficiencies = function(skillName, add) {
     const proficiencies = getPlayerCharacterProperty("proficiencies");
 
     if (add === true) {
@@ -249,7 +249,7 @@ export const saveNewProficiencies = function(skillName, add) {
  * @param {string} skillName Name of the skill.
  * @param {boolean} add Wether the expertise is added or removed.
  */
-export const saveNewExpertises = function(skillName, add) {
+export const saveNewSkillExpertises = function(skillName, add) {
     const expertise = getPlayerCharacterProperty("expertises");
 
     if (add === true) {
