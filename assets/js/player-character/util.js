@@ -210,6 +210,16 @@ export const isProficientInWeapon = function(weaponName) {
 }
 
 /**
+ * Check if the PC is proficient in the given armor.
+ * @param {string} armorName 
+ * @returns {boolean}
+ */
+export const isProficientInArmor = function(armorName) {
+    const proficiencies = getPlayerCharacterProperty("armor_proficiencies") || [];
+    return proficiencies.includes(armorName);
+}
+
+/**
  * Get the modifier of the given skill for the PC in local storage.
  * @param {*} skill 
  * @returns {number}
@@ -338,6 +348,29 @@ export const saveNewWeaponProficiencies = function(weaponName, add) {
     }
 
     setPlayerCharacterProperty("weapon_proficiencies", weaponProficiencies);
+}
+
+/**
+ * Save the armor proficiency to local storage.
+ * @param {string} armorName Name of the armor.
+ * @param {boolean} add Wether the proficiency is added or removed.
+ */
+export const saveNewArmorProficiencies = function(armorName, add) {
+    const armorProficiencies = getPlayerCharacterProperty("armor_proficiencies") || [];
+
+    if (add === true) {
+        if (!armorProficiencies.includes(armorName)) {
+            armorProficiencies.push(armorName);
+        }
+    }
+    else {
+        const skillIndex = armorProficiencies.indexOf(armorName);
+        if (skillIndex !== -1) {
+            armorProficiencies.splice(skillIndex, 1);
+        }
+    }
+
+    setPlayerCharacterProperty("armor_proficiencies", armorProficiencies);
 }
 
 /**

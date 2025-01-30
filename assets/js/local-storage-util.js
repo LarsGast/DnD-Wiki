@@ -80,6 +80,7 @@ const getDefaultPlayerCharacter = function() {
         proficiencies: [],
         expertises: [],
         weapon_proficiencies: [],
+        armor_proficiencies: [],
         notes: null
     };
 }
