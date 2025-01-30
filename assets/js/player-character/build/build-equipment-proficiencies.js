@@ -12,24 +12,42 @@ export const buildEquipmentProficiencies = async function() {
  * Fill the weapon proficiencies list.
  */
 const fillWeaponProficienciesList = async function() {
-    const ul = document.getElementById('weapon-proficiencies-list');
+    const div = document.getElementById('weapon-proficiencies-container');
 
-    ul.appendChild(getListItem("Simple Melee Weapons", await getAllSimpleMeleeWeaponNamesAsync()));
-    ul.appendChild(getListItem("Martial Melee Weapons", await getAllMartialMeleeWeaponNamesAsync()));
-    ul.appendChild(await getRangedListItem());
+    div.appendChild(getProficienciesContainer("Simple Melee", await getAllSimpleMeleeWeaponNamesAsync()));
+    div.appendChild(getProficienciesContainer("Martial Melee", await getAllMartialMeleeWeaponNamesAsync()));
+    div.appendChild(getProficienciesContainer("Simple Ranged", await getAllSimpleRangedWeaponNamesAsync()));
+    div.appendChild(getProficienciesContainer("Martial Ranged", await getAllMartialRangedWeaponNamesAsync()));
 }
 
-/**
- * Get the list item for both simple and martial ranges weapons.
- * @returns {HTMLDivElement}
- */
-const getRangedListItem = async function() {
+const getProficienciesContainer = function(title, itemNames) {
     const div = document.createElement('div');
 
-    div.appendChild(getListItem("Simple Ranged Weapons", await getAllSimpleRangedWeaponNamesAsync()));
-    div.appendChild(getListItem("Martial Ranged Weapons", await getAllMartialRangedWeaponNamesAsync()));
+    div.appendChild(getProficienciesContainerHeader(title));
+    div.appendChild(getProficienciesContainerBody(itemNames));
 
-    return div;
+    return div
+}
+
+const getProficienciesContainerHeader = function(title) {
+    const h4 = document.createElement('h4');
+
+    h4.textContent = title;
+
+    return h4;
+}
+
+const getProficienciesContainerBody = function(itemNames) {
+    const ul = document.createElement('ul');
+
+    ul.classList.add('no-style-list');
+    ul.classList.add('proficiencies-list');
+
+    itemNames.forEach(itemName => {
+        ul.appendChild(getProficiencyItem(itemName));
+    })
+
+    return ul;
 }
 
 /**

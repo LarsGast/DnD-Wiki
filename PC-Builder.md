@@ -117,7 +117,7 @@ permalink: /pc-builder/
 <section id="equipment-proficiencies-container">
     <h2>Equipment proficiencies</h2>
     <h3>Weapons</h3>
-    <ul class="no-style-list proficiencies-list" id="weapon-proficiencies-list"></ul>
+    <div id="weapon-proficiencies-container"></div>
     <h3>Armor</h3>
     <ul class="no-style-list proficiencies-list" id="armor-proficiencies-list"></ul>
 </section>

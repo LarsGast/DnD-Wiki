@@ -198,18 +198,6 @@ img {
     }
 }
 
-#equipment-proficiencies-container {
-    > ul {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-       
-        ul {
-            margin-left: 20px;
-        }
-    }
-}
-
 /* Summary styling */
 summary {   
     h2, h3 {
