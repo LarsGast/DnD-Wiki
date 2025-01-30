@@ -183,19 +183,28 @@ img {
 
 /* Proficiencies list for PC page */
 .proficiencies-list {
-    column-count: 3;
-
     border: 2px solid black;
     border-radius: 10px;
     padding: 5px;
 
+    /* Override .three-columns-list and .two-columns-list below */
+    @media screen and (max-width: 510px) {
+        column-count: 1 !important;
+    }
+}
+
+/* For displaying three columns */
+.three-columns-list {
+    column-count: 3;
+
     @media screen and (max-width: 740px) {
         column-count: 2;
     }
+}
 
-    @media screen and (max-width: 510px) {
-        column-count: 1;
-    }
+/* For displaying two columns */
+.two-columns-list {
+    column-count: 2;
 }
 
 /* Summary styling */

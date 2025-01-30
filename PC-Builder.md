@@ -111,7 +111,7 @@ permalink: /pc-builder/
 
 <section id="skills-container">
     <h2>Skills</h2>
-    <ul class="no-style-list proficiencies-list" id="skills-list"></ul>
+    <ul class="no-style-list proficiencies-list three-columns-list" id="skills-list"></ul>
 </section>
 
 <section id="equipment-proficiencies-container">
