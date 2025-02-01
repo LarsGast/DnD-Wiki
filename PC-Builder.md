@@ -126,7 +126,7 @@ permalink: /pc-builder/
 <section id="inventory-container">
     <h2>Inventory</h2>
     <h3>Weapons</h3>
-    <button id="add-weapon-button" type="button">Add weapon</button>
+    <button id="add-weapon-button" type="button" disabled>Add weapon</button>
     <select id="weapon-select"></select>
     <table id="weapons-table">
         <thead>

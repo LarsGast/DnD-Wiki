@@ -5,7 +5,21 @@ import { getAbilityScoreModifier, getProficiencyModifier, isProficientInWeapon }
  * Init the weapons section of the inventory.
  */
 export const initWeapons = function() {
+    initWeaponSelect();
     initAddWeaponButton();
+}
+
+/**
+ * Initialize the weapon select dropdown.
+ */
+const initWeaponSelect = function() {
+    const weaponSelect = document.getElementById('weapon-select');
+
+    // Enable the "Add weapon" button once the user has actually chosen a weapon.
+    weaponSelect.onchange = () => {
+        const addWeaponButton = document.getElementById('add-weapon-button');
+        addWeaponButton.disabled = false;
+    }
 }
 
 /**
@@ -19,6 +33,10 @@ const initAddWeaponButton = function() {
         const weapon = await getEquipmentObjectAsync(weaponSelect.value);
 
         addWeaponRow(weapon);
+
+        // Disable button until a weapon is chosen again.
+        addWeaponButton.disabled = true;
+        weaponSelect.value = "empty" ;
     };
 }
 
