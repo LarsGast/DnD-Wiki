@@ -157,5 +157,5 @@ permalink: /pc-builder/
     window.skills = {{ site.data.skills | jsonify }};
 
     await buildPage();
-    initPage();
+    await initPage();
 </script>

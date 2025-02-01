@@ -8,11 +8,11 @@ import { initSkills } from "./init-skills.js";
 /**
  * Initialize all elements on the PC builder page.
  */
-export const initPage = function() {
+export const initPage = async function() {
     initMainProperties();
     initAbilityScores();
     initSkills();
     initEquipmentProficiencies();
-    initInventory();
+    await initInventory();
     initNotes();
 }

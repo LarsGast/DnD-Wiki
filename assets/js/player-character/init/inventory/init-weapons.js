@@ -1,13 +1,28 @@
-import { setPlayerCharacterProperty } from "../../../local-storage-util.js";
+import { getPlayerCharacterProperty, setPlayerCharacterProperty } from "../../../local-storage-util.js";
 import { getEquipmentObjectAsync } from "../../api.js";
 import { getAbilityScoreModifier, getProficiencyModifier, isProficientInWeapon } from "../../util.js";
 
 /**
  * Init the weapons section of the inventory.
  */
-export const initWeapons = function() {
+export const initWeapons = async function() {
+    await initWeaponTable();
     initWeaponSelect();
     initAddWeaponButton();
+}
+
+/**
+ * Initialize the weapon inventory table and fill it with the saved weapons.
+ */
+const initWeaponTable = async function() {
+
+    const weapons = getPlayerCharacterProperty("inventory_weapons") || [];
+
+    for (const weapon of weapons) {
+        const weaponFromApi = await getEquipmentObjectAsync(weapon.index);
+
+        addWeaponRow(weaponFromApi, weapon.ability);
+    }
 }
 
 /**
@@ -63,30 +78,30 @@ const initAddWeaponButton = function() {
         // Disable button until a weapon is chosen again.
         addWeaponButton.disabled = true;
         weaponSelect.value = "empty" ;
+
+        saveWeaponInventory();
     };
 }
 
-const addWeaponRow = function(weapon) {
+const addWeaponRow = function(weapon, ability = null) {
     const weaponsTable = document.getElementById('weapons-table');
     const weaponsTableBody = weaponsTable.querySelector('tbody');
 
-    const row = getNewRow(weapon);
+    const row = getNewRow(weapon, ability);
 
     weaponsTableBody.appendChild(row);
-
-    saveWeaponInventory();
 }
 
 /**
  * Get a new row for the weapons table.
  * @returns {HTMLTableRowElement}
  */
-const getNewRow = function(weapon) {
+const getNewRow = function(weapon, ability = null) {
     const tr = document.createElement('tr');
 
     tr.dataset.index = weapon.index;
     tr.appendChild(getNewNameCell(weapon));
-    tr.appendChild(getNewAbilityCell(weapon));
+    tr.appendChild(getNewAbilityCell(weapon, ability));
     tr.appendChild(getNewAttackBonusCell(weapon));
     tr.appendChild(getNewDamageCell(weapon));
     tr.appendChild(getNewDamageTypeCell(weapon));
@@ -112,7 +127,7 @@ const getNewNameCell = function(weapon) {
  * Get a new cell for the "Ability" column.
  * @returns {HTMLTableCellElement}
  */
-const getNewAbilityCell = function(weapon) {
+const getNewAbilityCell = function(weapon, ability = null) {
     const td = getNewCell("ability");
 
     const abilities = getWeaponAbilities(weapon);
@@ -131,6 +146,11 @@ const getNewAbilityCell = function(weapon) {
     
         select.appendChild(strengthOption);
         select.appendChild(dexterityOption);
+
+        // If given, set the value of the dropdown.
+        if (ability) {
+            select.value = ability;
+        }
 
         select.onchange = () => {
             saveWeaponInventory();
