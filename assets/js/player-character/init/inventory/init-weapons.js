@@ -23,9 +23,31 @@ export const updateAllWeaponModifiers = function() {
     });
 }
 
+/**
+ * Update a single row in the weapons table.
+ * @param {HTMLTableRowElement} row 
+ */
 const updateWeaponRow = function(row) {
     updateAttackBonusCell(row);
     updateDamageCell(row);
+}
+
+/**
+ * Save the entire weapons inventory table to local storage.
+ */
+const saveWeaponInventory = function() {
+    
+    const weaponsTable = document.getElementById('weapons-table');
+    const weaponsTableBody = weaponsTable.querySelector('tbody');
+
+    const weapons = Array.from(weaponsTableBody.rows).map(row => {
+        return {
+            index: row.dataset.index,
+            ability: getAbility(row)
+        };
+    })
+
+    setPlayerCharacterProperty("inventory_weapons", weapons);
 }
 
 /**
@@ -37,7 +59,6 @@ const initWeaponTable = async function() {
 
     for (const weapon of weapons) {
         const weaponFromApi = await getEquipmentObjectAsync(weapon.index);
-
         addWeaponRow(weaponFromApi, weapon.ability);
     }
 }
@@ -53,31 +74,6 @@ const initWeaponSelect = function() {
         const addWeaponButton = document.getElementById('add-weapon-button');
         addWeaponButton.disabled = false;
     }
-}
-
-/**
- * Save the entire weapons inventory table to local storage.
- */
-const saveWeaponInventory = function() {
-    
-    const weaponsTable = document.getElementById('weapons-table');
-    const weaponsTableBody = weaponsTable.querySelector('tbody');
-
-    const weapons = Array.from(weaponsTableBody.rows).map(row => {
-        const weapon = {
-            index: row.dataset.index
-        };
-
-        // We don't need to save the ability if there is no ambiguity.
-        const abilitySelect = row.querySelector('select');
-        if (abilitySelect){
-            weapon.ability = abilitySelect.value
-        }
-
-        return weapon;
-    })
-
-    setPlayerCharacterProperty("inventory_weapons", weapons);
 }
 
 /**
@@ -100,18 +96,27 @@ const initAddWeaponButton = function() {
     };
 }
 
+/**
+ * Add a weapon row to the weapons table.
+ * @param {object} weapon Full weapon object.
+ * @param {string} ability Optional parameter. Required for building the initial table from storage. Used to specify the value of a dropdown.
+ */
 const addWeaponRow = function(weapon, ability = null) {
-    const weaponsTable = document.getElementById('weapons-table');
-    const weaponsTableBody = weaponsTable.querySelector('tbody');
 
     const row = getNewRow(weapon, ability);
 
+    const weaponsTable = document.getElementById('weapons-table');
+    const weaponsTableBody = weaponsTable.querySelector('tbody');
     weaponsTableBody.appendChild(row);
+
+    // Initial update to show the correct values on load.
     updateWeaponRow(row);
 }
 
 /**
  * Get a new row for the weapons table.
+ * @param {object} weapon Full weapon object.
+ * @param {string} ability Optional parameter. Required for building the initial table from storage. Used to specify the value of a dropdown.
  * @returns {HTMLTableRowElement}
  */
 const getNewRow = function(weapon, ability = null) {
@@ -131,6 +136,7 @@ const getNewRow = function(weapon, ability = null) {
 
 /**
  * Get a new cell for the "Name" column.
+ * @param {object} weapon Full weapon object.
  * @returns {HTMLTableCellElement}
  */
 const getNewNameCell = function(weapon) {
@@ -143,6 +149,8 @@ const getNewNameCell = function(weapon) {
 
 /**
  * Get a new cell for the "Ability" column.
+ * @param {object} weapon Full weapon object.
+ * @param {string} ability Optional parameter. Required for building the initial table from storage. Used to specify the value of a dropdown.
  * @returns {HTMLTableCellElement}
  */
 const getNewAbilityCell = function(weapon, ability = null) {
@@ -152,6 +160,8 @@ const getNewAbilityCell = function(weapon, ability = null) {
 
     if (abilities.length > 1) {
         
+        // Weapons can use STR, DEX, or both.
+        // In case of both, let the user specify which they want to use.
         const select = document.createElement('select');
 
         const strengthOption = document.createElement('option');
@@ -179,6 +189,7 @@ const getNewAbilityCell = function(weapon, ability = null) {
     
         td.appendChild(select);
     }
+    // There can only be one element in the list here.
     else if (abilities.includes("strength")) {
         const span = document.createElement('span');
 
@@ -187,6 +198,7 @@ const getNewAbilityCell = function(weapon, ability = null) {
 
         td.appendChild(span);
     }
+    // There can only be one element in the list here, and since it is not STR, it is DEX.
     else {
         const span = document.createElement('span');
 
@@ -201,10 +213,10 @@ const getNewAbilityCell = function(weapon, ability = null) {
 
 /**
  * Get a new cell for the "Attack bonus" column.
- * @returns {HTMLTableCellElement}
+ * @returns {HTMLTableCellElement} Empty. Will get filled in another function.
  */
 
-const getNewAttackBonusCell = function(weapon, ability = null) {
+const getNewAttackBonusCell = function() {
     const td = getNewCell("attack-bonus");
 
     return td;
@@ -212,7 +224,8 @@ const getNewAttackBonusCell = function(weapon, ability = null) {
 
 /**
  * Get a new cell for the "Damage" column.
- * @returns {HTMLTableCellElement}
+ * @param {object} weapon Full weapon object.
+ * @returns {HTMLTableCellElement} Empty textContent. Will get filled in another function.
  */
 const getNewDamageCell = function(weapon) {
     const td = getNewCell("damage");
@@ -224,6 +237,7 @@ const getNewDamageCell = function(weapon) {
 
 /**
  * Get a new cell for the "Damage type" column.
+ * @param {object} weapon Full weapon object.
  * @returns {HTMLTableCellElement}
  */
 const getNewDamageTypeCell = function(weapon) {
@@ -236,6 +250,7 @@ const getNewDamageTypeCell = function(weapon) {
 
 /**
  * Get a new cell for the "Range" column.
+ * @param {object} weapon Full weapon object.
  * @returns {HTMLTableCellElement}
  */
 const getNewRangeCell = function(weapon) {
@@ -243,6 +258,7 @@ const getNewRangeCell = function(weapon) {
 
     let rangeText = weapon.range.normal;
 
+    // Specify a short and long range for ranged weapons.
     if (weapon.range.long) {
         rangeText += ` / ${weapon.range.long}`;
     }
@@ -254,6 +270,7 @@ const getNewRangeCell = function(weapon) {
 
 /**
  * Get a new cell for the "Buttons" column.
+ * @param {object} weapon Full weapon object.
  * @returns {HTMLTableCellElement}
  */
 const getNewButtonsCell = function() {
@@ -287,6 +304,11 @@ const getNewCell = function(headerName) {
     return td;
 }
 
+/**
+ * Get all possible abilities this weapon could use according to the SRD.
+ * @param {object} weapon Full weapon object.
+ * @returns {string[]} Either ["strength"], ["dexterity"], or ["strength", "dexterity"].
+ */
 const getWeaponAbilities = function(weapon) {
 
     if (weapon.weapon_range === "Ranged") {
