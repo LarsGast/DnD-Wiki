@@ -126,18 +126,22 @@ permalink: /pc-builder/
 <section id="inventory-container">
     <h2>Inventory</h2>
     <h3>Weapons</h3>
-    <button type="button">Add weapon</button>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Proficient</th>
-            <th>Ability</th>
-            <th>Attack Bonus</th>
-            <th>Damage</th>
-            <th>Damage type</th>
-            <th>Range</th>
-            <th>Description</th>
-        </tr>
+    <button id="add-weapon-button" type="button">Add weapon</button>
+    <table id="weapons-table">
+        <thead>
+            <tr>
+                <th id="weapon_name">Name</th>
+                <th id="weapon_proficient">Proficient</th>
+                <th id="weapon_ability">Ability</th>
+                <th id="weapon_attack-bonus">Attack bonus</th>
+                <th id="weapon_damage">Damage</th>
+                <th id="weapon_damage-type">Damage type</th>
+                <th id="weapon_range">Range</th>
+                <th id="weapon_buttons">Buttons</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
     </table>
 </section>
 
