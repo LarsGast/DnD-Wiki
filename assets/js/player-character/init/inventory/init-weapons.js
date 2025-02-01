@@ -284,40 +284,59 @@ const getWeaponAbilities = function(weapon) {
     return ["strength"];
 }
 
+/**
+ * Update the Attack bonus column of a row.
+ * @param {HTMLTableRowElement} row 
+ */
 const updateAttackBonus = function(row) {
+    const attackBonusCell = row.querySelector('[headers="weapon_attack-bonus"]');
 
-    const ability = getAbility(row);
-
-    const abilityModifier = getAbilityScoreModifier(ability);
-
+    // Set the value of the attack bonus.
     const weaponNameCell = row.querySelector('[headers="weapon_name"]');
-    const isProficient = isProficientInWeapon(weaponNameCell.textContent);
-
-    let attackBonus = abilityModifier;
-    if (isProficient) {
-        attackBonus += getProficiencyModifier();
-    }
-
-    const attackBonusSpan = document.createElement('span');
-    attackBonusSpan.textContent = attackBonus;
+    attackBonusCell.textContent = getAttackBonus(weaponNameCell.textContent, getAbility(row));
 
     // Add a plus sign to the number to make is more expressive and clear that it is a positive modifier.
-    if (attackBonus > 0) {
-        attackBonusSpan.classList.add('expressive-positive-number');
+    attackBonusCell.removeAttribute('class');
+    if (attackBonusCell.textContent > 0) {
+        attackBonusCell.classList.add('expressive-positive-number');
     }
-    
-    const attackBonusCell = row.querySelector('[headers="weapon_attack-bonus"]');
-    attackBonusCell.replaceChildren(attackBonusSpan);
 }
 
+/**
+ * Get the attack bonus value of the given weapon using the given ability.
+ * @param {string} weaponName As in local storage.
+ * @param {string} ability Ability identifier. Lower case full word.
+ * @returns {number}
+ */
+const getAttackBonus = function(weaponName, ability) {
+    const abilityModifier = getAbilityScoreModifier(ability);
+    const isProficient = isProficientInWeapon(weaponName);
+
+    if (isProficient === false) {
+        return abilityModifier;
+    }
+
+    return abilityModifier + getProficiencyModifier();
+}
+
+/**
+ * Get the chosen ability used for this weapon.
+ * If there is only 1 possible ability (e.g. Longsword), it will get it from a span element.
+ * If there are more possible abilities (e.g. Dagger), it will get it from a select element.
+ * @param {HTMLTableRowElement} row 
+ * @returns {string} Ability identifier. Lower case full word.
+ */
 const getAbility = function(row) {
     const abilityCell = row.querySelector('[headers="weapon_ability"]');
 
+    // 1 possible ability.
     const span = abilityCell.querySelector('span');
     if (span) {
         return span.dataset.ability;
     }
 
+    // Multiple possible abilities.
+    // User input or default.
     const select = abilityCell.querySelector('select');
     return select.value;
 }
