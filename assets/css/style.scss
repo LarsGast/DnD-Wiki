@@ -230,6 +230,7 @@ summary {
     }
 }
 
+/* For adding a plus (+) sign to positive numbers without editing the value itself */
 .expressive-positive-number {
     &::before {
         content: "+";
