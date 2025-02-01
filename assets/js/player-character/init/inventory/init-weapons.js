@@ -1,3 +1,4 @@
+import { setPlayerCharacterProperty } from "../../../local-storage-util.js";
 import { getEquipmentObjectAsync } from "../../api.js";
 import { getAbilityScoreModifier, getProficiencyModifier, isProficientInWeapon } from "../../util.js";
 
@@ -20,6 +21,31 @@ const initWeaponSelect = function() {
         const addWeaponButton = document.getElementById('add-weapon-button');
         addWeaponButton.disabled = false;
     }
+}
+
+/**
+ * Save the entire weapons inventory table to local storage.
+ */
+const saveWeaponInventory = function() {
+    
+    const weaponsTable = document.getElementById('weapons-table');
+    const weaponsTableBody = weaponsTable.querySelector('tbody');
+
+    const weapons = Array.from(weaponsTableBody.rows).map(row => {
+        const weapon = {
+            index: row.dataset.index
+        };
+
+        // We don't need to save the ability if there is no ambiguity.
+        const abilitySelect = row.querySelector('select');
+        if (abilitySelect){
+            weapon.ability = abilitySelect.value
+        }
+
+        return weapon;
+    })
+
+    setPlayerCharacterProperty("inventory_weapons", weapons);
 }
 
 /**
@@ -47,6 +73,8 @@ const addWeaponRow = function(weapon) {
     const row = getNewRow(weapon);
 
     weaponsTableBody.appendChild(row);
+
+    saveWeaponInventory();
 }
 
 /**
@@ -56,6 +84,7 @@ const addWeaponRow = function(weapon) {
 const getNewRow = function(weapon) {
     const tr = document.createElement('tr');
 
+    tr.dataset.index = weapon.index;
     tr.appendChild(getNewNameCell(weapon));
     tr.appendChild(getNewAbilityCell(weapon));
     tr.appendChild(getNewAttackBonusCell(weapon));
@@ -102,6 +131,10 @@ const getNewAbilityCell = function(weapon) {
     
         select.appendChild(strengthOption);
         select.appendChild(dexterityOption);
+
+        select.onchange = () => {
+            saveWeaponInventory();
+        }
     
         td.appendChild(select);
     }
@@ -210,6 +243,7 @@ const getNewButtonsCell = function() {
     deleteButton.onclick = () => {
         const row = deleteButton.closest('tr');
         row.remove();
+        saveWeaponInventory();
     }
 
     td.appendChild(deleteButton);
