@@ -90,6 +90,8 @@ const addWeaponRow = function(weapon, ability = null) {
     const row = getNewRow(weapon, ability);
 
     weaponsTableBody.appendChild(row);
+
+    updateAttackBonus(row);
 }
 
 /**
@@ -102,8 +104,8 @@ const getNewRow = function(weapon, ability = null) {
     tr.dataset.index = weapon.index;
     tr.appendChild(getNewNameCell(weapon));
     tr.appendChild(getNewAbilityCell(weapon, ability));
-    tr.appendChild(getNewAttackBonusCell(weapon));
-    tr.appendChild(getNewDamageCell(weapon));
+    tr.appendChild(getNewAttackBonusCell(weapon, ability));
+    tr.appendChild(getNewDamageCell(weapon, ability));
     tr.appendChild(getNewDamageTypeCell(weapon));
     tr.appendChild(getNewRangeCell(weapon));
     tr.appendChild(getNewButtonsCell(weapon));
@@ -154,15 +156,28 @@ const getNewAbilityCell = function(weapon, ability = null) {
 
         select.onchange = () => {
             saveWeaponInventory();
+
+            const row = select.closest('tr');
+            updateAttackBonus(row);
         }
     
         td.appendChild(select);
     }
     else if (abilities.includes("strength")) {
-        td.textContent = "STR";
+        const span = document.createElement('span');
+
+        span.textContent = "STR";
+        span.dataset.ability = "strength";
+
+        td.appendChild(span);
     }
     else {
-        td.textContent = "DEX";
+        const span = document.createElement('span');
+
+        span.textContent = "DEX";
+        span.dataset.ability = "dexterity";
+
+        td.appendChild(span);
     }
 
     return td;
@@ -173,36 +188,8 @@ const getNewAbilityCell = function(weapon, ability = null) {
  * @returns {HTMLTableCellElement}
  */
 
-const getNewAttackBonusCell = function(weapon) {
+const getNewAttackBonusCell = function(weapon, ability = null) {
     const td = getNewCell("attack-bonus");
-
-    let abilityModifier = 0;
-
-    const abilities = getWeaponAbilities(weapon);
-    if (abilities.includes("strength")) {
-        abilityModifier = getAbilityScoreModifier("strength");
-    }
-    else {
-        abilityModifier = getAbilityScoreModifier("dexterity");
-    }
-
-    const isProficient = isProficientInWeapon(weapon.name);
-    const proficiencyBonus = getProficiencyModifier();
-
-    let attackBonus = abilityModifier;
-    if (isProficient){
-        attackBonus += proficiencyBonus
-    }
-
-    if (attackBonus === 0) {
-        td.textContent = 0;
-    }
-    else if (attackBonus > 0) {
-        td.textContent = `+${attackBonus}`;
-    }
-    else {
-        td.textContent = attackBonus;
-    }
 
     return td;
 }
@@ -295,4 +282,42 @@ const getWeaponAbilities = function(weapon) {
     }
 
     return ["strength"];
+}
+
+const updateAttackBonus = function(row) {
+
+    const ability = getAbility(row);
+
+    const abilityModifier = getAbilityScoreModifier(ability);
+
+    const weaponNameCell = row.querySelector('[headers="weapon_name"]');
+    const isProficient = isProficientInWeapon(weaponNameCell.textContent);
+
+    let attackBonus = abilityModifier;
+    if (isProficient) {
+        attackBonus += getProficiencyModifier();
+    }
+
+    const attackBonusSpan = document.createElement('span');
+    attackBonusSpan.textContent = attackBonus;
+
+    // Add a plus sign to the number to make is more expressive and clear that it is a positive modifier.
+    if (attackBonus > 0) {
+        attackBonusSpan.classList.add('expressive-positive-number');
+    }
+    
+    const attackBonusCell = row.querySelector('[headers="weapon_attack-bonus"]');
+    attackBonusCell.replaceChildren(attackBonusSpan);
+}
+
+const getAbility = function(row) {
+    const abilityCell = row.querySelector('[headers="weapon_ability"]');
+
+    const span = abilityCell.querySelector('span');
+    if (span) {
+        return span.dataset.ability;
+    }
+
+    const select = abilityCell.querySelector('select');
+    return select.value;
 }

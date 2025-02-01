@@ -220,6 +220,12 @@ summary {
     }
 }
 
+.expressive-positive-number {
+    &::before {
+        content: "+";
+    }
+}
+
 #notes {
     width: 100%;
     height: 200px;
