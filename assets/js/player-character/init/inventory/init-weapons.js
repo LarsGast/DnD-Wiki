@@ -207,6 +207,11 @@ const getNewButtonsCell = function() {
     deleteButton.type = "button";
     deleteButton.textContent = "Delete";
 
+    deleteButton.onclick = () => {
+        const row = deleteButton.closest('tr');
+        row.remove();
+    }
+
     td.appendChild(deleteButton);
 
     return td;
