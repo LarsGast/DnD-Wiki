@@ -128,21 +128,23 @@ permalink: /pc-builder/
     <h3>Weapons</h3>
     <button id="add-weapon-button" type="button" disabled>Add weapon</button>
     <select id="weapon-select"></select>
-    <table id="weapons-table">
-        <thead>
-            <tr>
-                <th id="weapon_name">Name</th>
-                <th id="weapon_ability">Ability</th>
-                <th id="weapon_attack-bonus">Attack bonus</th>
-                <th id="weapon_damage">Damage</th>
-                <th id="weapon_damage-type">Damage type</th>
-                <th id="weapon_range">Range</th>
-                <th id="weapon_buttons">Buttons</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+    <div class="table-container">
+        <table id="weapons-table">
+            <thead>
+                <tr>
+                    <th id="weapon_name">Name</th>
+                    <th id="weapon_ability">Ability</th>
+                    <th id="weapon_attack-bonus">Attack bonus</th>
+                    <th id="weapon_damage">Damage</th>
+                    <th id="weapon_damage-type">Damage type</th>
+                    <th id="weapon_range">Range</th>
+                    <th id="weapon_buttons">Buttons</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
 </section>
 
 <section id="notes-container">

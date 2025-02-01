@@ -23,6 +23,16 @@ img {
     object-fit: contain;
 }
 
+// Make tables scrollable horizontally.
+.table-container {
+    overflow-x: auto;
+}
+
+// Remove margin set by Jekyll Minima.
+table {
+    margin-bottom: 0;
+}
+
 .no-style-list {
     list-style-type: none;
     margin: 0;
