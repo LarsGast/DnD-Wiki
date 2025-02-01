@@ -12,6 +12,23 @@ export const initWeapons = async function() {
 }
 
 /**
+ * Update all weapon modifiers at once.
+ */
+export const updateAllWeaponModifiers = function() {
+    const weaponsTable = document.getElementById('weapons-table');
+    const weaponsTableBody = weaponsTable.querySelector('tbody');
+
+    Array.from(weaponsTableBody.rows).forEach(row => {
+        updateWeaponRow(row);
+    });
+}
+
+const updateWeaponRow = function(row) {
+    updateAttackBonusCell(row);
+    updateDamageCell(row);
+}
+
+/**
  * Initialize the weapon inventory table and fill it with the saved weapons.
  */
 const initWeaponTable = async function() {
@@ -90,9 +107,7 @@ const addWeaponRow = function(weapon, ability = null) {
     const row = getNewRow(weapon, ability);
 
     weaponsTableBody.appendChild(row);
-
-    updateAttackBonusCell(row);
-    updateDamageCell(row);
+    updateWeaponRow(row);
 }
 
 /**
@@ -159,8 +174,7 @@ const getNewAbilityCell = function(weapon, ability = null) {
             saveWeaponInventory();
 
             const row = select.closest('tr');
-            updateAttackBonusCell(row);
-            updateDamageCell(row);
+            updateWeaponRow(row);
         }
     
         td.appendChild(select);
