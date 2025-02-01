@@ -1,3 +1,6 @@
+import { getEquipmentObjectAsync } from "../../api.js";
+import { getAbilityScoreModifier, getProficiencyModifier, isProficientInWeapon } from "../../util.js";
+
 /**
  * Init the weapons section of the inventory.
  */
@@ -11,31 +14,37 @@ export const initWeapons = function() {
 const initAddWeaponButton = function() {
     const addWeaponButton = document.getElementById('add-weapon-button');
 
-    addWeaponButton.onclick = () => {
-        const weaponsTable = document.getElementById('weapons-table');
-        const weaponsTableBody = weaponsTable.querySelector('tbody');
+    addWeaponButton.onclick = async () => {
+        const weaponSelect = document.getElementById('weapon-select');
+        const weapon = await getEquipmentObjectAsync(weaponSelect.value);
 
-        const row = getNewRow();
-
-        weaponsTableBody.appendChild(row);
+        addWeaponRow(weapon);
     };
+}
+
+const addWeaponRow = function(weapon) {
+    const weaponsTable = document.getElementById('weapons-table');
+    const weaponsTableBody = weaponsTable.querySelector('tbody');
+
+    const row = getNewRow(weapon);
+
+    weaponsTableBody.appendChild(row);
 }
 
 /**
  * Get a new row for the weapons table.
  * @returns {HTMLTableRowElement}
  */
-const getNewRow = function() {
+const getNewRow = function(weapon) {
     const tr = document.createElement('tr');
 
-    tr.appendChild(getNewNameCell());
-    tr.appendChild(getNewProficientCell());
-    tr.appendChild(getNewAbilityCell());
-    tr.appendChild(getNewAttackBonusCell());
-    tr.appendChild(getNewDamageCell());
-    tr.appendChild(getNewDamageTypeCell());
-    tr.appendChild(getNewRangeCell());
-    tr.appendChild(getNewButtonsCell());
+    tr.appendChild(getNewNameCell(weapon));
+    tr.appendChild(getNewAbilityCell(weapon));
+    tr.appendChild(getNewAttackBonusCell(weapon));
+    tr.appendChild(getNewDamageCell(weapon));
+    tr.appendChild(getNewDamageTypeCell(weapon));
+    tr.appendChild(getNewRangeCell(weapon));
+    tr.appendChild(getNewButtonsCell(weapon));
 
     return tr;
 }
@@ -44,27 +53,10 @@ const getNewRow = function() {
  * Get a new cell for the "Name" column.
  * @returns {HTMLTableCellElement}
  */
-const getNewNameCell = function() {
+const getNewNameCell = function(weapon) {
     const td = getNewCell("name");
 
-    const input = document.createElement('input');
-
-    td.appendChild(input);
-
-    return td;
-}
-
-/**
- * Get a new cell for the "Proficient" column.
- * @returns {HTMLTableCellElement}
- */
-const getNewProficientCell = function() {
-    const td = getNewCell("proficient");
-
-    const input = document.createElement('input');
-    input.type = "checkbox";
-    
-    td.appendChild(input);
+    td.textContent = weapon.name;
 
     return td;
 }
@@ -73,23 +65,34 @@ const getNewProficientCell = function() {
  * Get a new cell for the "Ability" column.
  * @returns {HTMLTableCellElement}
  */
-const getNewAbilityCell = function() {
+const getNewAbilityCell = function(weapon) {
     const td = getNewCell("ability");
 
-    const select = document.createElement('select');
+    const abilities = getWeaponAbilities(weapon);
 
-    const strengthOption = document.createElement('option');
-    strengthOption.value = "strength";
-    strengthOption.textContent = "STR";
+    if (abilities.length > 1) {
+        
+        const select = document.createElement('select');
+
+        const strengthOption = document.createElement('option');
+        strengthOption.value = "strength";
+        strengthOption.textContent = "STR";
+        
+        const dexterityOption = document.createElement('option');
+        dexterityOption.value = "dexterity";
+        dexterityOption.textContent = "DEX";
     
-    const dexterityOption = document.createElement('option');
-    dexterityOption.value = "dexterity";
-    dexterityOption.textContent = "DEX";
-
-    select.appendChild(strengthOption);
-    select.appendChild(dexterityOption);
-
-    td.appendChild(select);
+        select.appendChild(strengthOption);
+        select.appendChild(dexterityOption);
+    
+        td.appendChild(select);
+    }
+    else if (abilities.includes("strength")) {
+        td.textContent = "STR";
+    }
+    else {
+        td.textContent = "DEX";
+    }
 
     return td;
 }
@@ -99,8 +102,36 @@ const getNewAbilityCell = function() {
  * @returns {HTMLTableCellElement}
  */
 
-const getNewAttackBonusCell = function() {
+const getNewAttackBonusCell = function(weapon) {
     const td = getNewCell("attack-bonus");
+
+    let abilityModifier = 0;
+
+    const abilities = getWeaponAbilities(weapon);
+    if (abilities.includes("strength")) {
+        abilityModifier = getAbilityScoreModifier("strength");
+    }
+    else {
+        abilityModifier = getAbilityScoreModifier("dexterity");
+    }
+
+    const isProficient = isProficientInWeapon(weapon.name);
+    const proficiencyBonus = getProficiencyModifier();
+
+    let attackBonus = abilityModifier;
+    if (isProficient){
+        attackBonus += proficiencyBonus
+    }
+
+    if (attackBonus === 0) {
+        td.textContent = 0;
+    }
+    else if (attackBonus > 0) {
+        td.textContent = `+${attackBonus}`;
+    }
+    else {
+        td.textContent = attackBonus;
+    }
 
     return td;
 }
@@ -109,42 +140,10 @@ const getNewAttackBonusCell = function() {
  * Get a new cell for the "Damage" column.
  * @returns {HTMLTableCellElement}
  */
-const getNewDamageCell = function() {
+const getNewDamageCell = function(weapon) {
     const td = getNewCell("damage");
 
-    const diceAmountInput = document.createElement('input');
-    diceAmountInput.type = "number";
-
-    const diceSelect = document.createElement('select');
-
-    const d4Option = document.createElement('option');
-    d4Option.value = "d4";
-    d4Option.textContent = "d4";
-
-    const d6Option = document.createElement('option');
-    d6Option.value = "d6";
-    d6Option.textContent = "d6";
-
-    const d8Option = document.createElement('option');
-    d8Option.value = "d8";
-    d8Option.textContent = "d8";
-
-    const d10Option = document.createElement('option');
-    d10Option.value = "d10";
-    d10Option.textContent = "d10";
-
-    const d12Option = document.createElement('option');
-    d12Option.value = "d12";
-    d12Option.textContent = "d12";
-
-    diceSelect.appendChild(d4Option);
-    diceSelect.appendChild(d6Option);
-    diceSelect.appendChild(d8Option);
-    diceSelect.appendChild(d10Option);
-    diceSelect.appendChild(d12Option);
-
-    td.appendChild(diceAmountInput);
-    td.appendChild(diceSelect);
+    td.textContent = weapon.damage.damage_dice;
 
     return td;
 }
@@ -153,12 +152,10 @@ const getNewDamageCell = function() {
  * Get a new cell for the "Damage type" column.
  * @returns {HTMLTableCellElement}
  */
-const getNewDamageTypeCell = function() {
+const getNewDamageTypeCell = function(weapon) {
     const td = getNewCell("damage-type");
 
-    const select = document.createElement('select');
-
-    td.appendChild(select);
+    td.textContent = weapon.damage.damage_type.name;
 
     return td;
 }
@@ -167,12 +164,16 @@ const getNewDamageTypeCell = function() {
  * Get a new cell for the "Range" column.
  * @returns {HTMLTableCellElement}
  */
-const getNewRangeCell = function() {
+const getNewRangeCell = function(weapon) {
     const td = getNewCell("range");
 
-    const input = document.createElement('input');
+    let rangeText = weapon.range.normal;
 
-    td.appendChild(input);
+    if (weapon.range.long) {
+        rangeText += ` / ${weapon.range.long}`;
+    }
+
+    td.textContent = rangeText;
 
     return td;
 }
@@ -188,12 +189,7 @@ const getNewButtonsCell = function() {
     deleteButton.type = "button";
     deleteButton.textContent = "Delete";
 
-    const importButton = document.createElement('button');
-    importButton.type = "button";
-    importButton.textContent = "Import";
-
     td.appendChild(deleteButton);
-    td.appendChild(importButton);
 
     return td;
 }
@@ -209,4 +205,17 @@ const getNewCell = function(headerName) {
     td.headers = `weapon_${headerName}`;
 
     return td;
+}
+
+const getWeaponAbilities = function(weapon) {
+
+    if (weapon.weapon_range === "Ranged") {
+        return ["dexterity"];
+    }
+
+    if (weapon.properties.some(prop => prop.index === "finesse")) {
+        return ["strength", "dexterity"];
+    }
+
+    return ["strength"];
 }

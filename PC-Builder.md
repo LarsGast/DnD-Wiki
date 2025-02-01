@@ -127,11 +127,11 @@ permalink: /pc-builder/
     <h2>Inventory</h2>
     <h3>Weapons</h3>
     <button id="add-weapon-button" type="button">Add weapon</button>
+    <select id="weapon-select"></select>
     <table id="weapons-table">
         <thead>
             <tr>
                 <th id="weapon_name">Name</th>
-                <th id="weapon_proficient">Proficient</th>
                 <th id="weapon_ability">Ability</th>
                 <th id="weapon_attack-bonus">Attack bonus</th>
                 <th id="weapon_damage">Damage</th>
