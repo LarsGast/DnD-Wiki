@@ -123,6 +123,24 @@ permalink: /pc-builder/
     </details>
 </section>
 
+<section id="inventory-container">
+    <h2>Inventory</h2>
+    <h3>Weapons</h3>
+    <button type="button">Add weapon</button>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Proficient</th>
+            <th>Ability</th>
+            <th>Attack Bonus</th>
+            <th>Damage</th>
+            <th>Damage type</th>
+            <th>Range</th>
+            <th>Description</th>
+        </tr>
+    </table>
+</section>
+
 <section id="notes-container">
     <h2>Notes</h2>
     <textarea id="notes"></textarea>
