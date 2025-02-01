@@ -91,7 +91,8 @@ const addWeaponRow = function(weapon, ability = null) {
 
     weaponsTableBody.appendChild(row);
 
-    updateAttackBonus(row);
+    updateAttackBonusCell(row);
+    updateDamageCell(row);
 }
 
 /**
@@ -158,7 +159,8 @@ const getNewAbilityCell = function(weapon, ability = null) {
             saveWeaponInventory();
 
             const row = select.closest('tr');
-            updateAttackBonus(row);
+            updateAttackBonusCell(row);
+            updateDamageCell(row);
         }
     
         td.appendChild(select);
@@ -201,7 +203,7 @@ const getNewAttackBonusCell = function(weapon, ability = null) {
 const getNewDamageCell = function(weapon) {
     const td = getNewCell("damage");
 
-    td.textContent = weapon.damage.damage_dice;
+    td.dataset.dice = weapon.damage.damage_dice;
 
     return td;
 }
@@ -288,7 +290,7 @@ const getWeaponAbilities = function(weapon) {
  * Update the Attack bonus column of a row.
  * @param {HTMLTableRowElement} row 
  */
-const updateAttackBonus = function(row) {
+const updateAttackBonusCell = function(row) {
     const attackBonusCell = row.querySelector('[headers="weapon_attack-bonus"]');
 
     // Set the value of the attack bonus.
@@ -317,6 +319,18 @@ const getAttackBonus = function(weaponName, ability) {
     }
 
     return abilityModifier + getProficiencyModifier();
+}
+
+/**
+ * Update the Damage column of a row.
+ * @param {HTMLTableRowElement} row 
+ */
+const updateDamageCell = function(row) {
+
+    const damageCell = row.querySelector('[headers="weapon_damage"]');
+    damageCell.dataset.damageBonus = getAbilityScoreModifier(getAbility(row));
+
+    damageCell.textContent = `${damageCell.dataset.dice}${damageCell.dataset.damageBonus >= 0 ? '+' : ''}${damageCell.dataset.damageBonus}`;
 }
 
 /**
