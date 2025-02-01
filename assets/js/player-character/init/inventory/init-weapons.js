@@ -47,6 +47,10 @@ const getNewRow = function() {
 const getNewNameCell = function() {
     const td = getNewCell("name");
 
+    const input = document.createElement('input');
+
+    td.appendChild(input);
+
     return td;
 }
 
@@ -57,6 +61,11 @@ const getNewNameCell = function() {
 const getNewProficientCell = function() {
     const td = getNewCell("proficient");
 
+    const input = document.createElement('input');
+    input.type = "checkbox";
+    
+    td.appendChild(input);
+
     return td;
 }
 
@@ -66,6 +75,21 @@ const getNewProficientCell = function() {
  */
 const getNewAbilityCell = function() {
     const td = getNewCell("ability");
+
+    const select = document.createElement('select');
+
+    const strengthOption = document.createElement('option');
+    strengthOption.value = "strength";
+    strengthOption.textContent = "STR";
+    
+    const dexterityOption = document.createElement('option');
+    dexterityOption.value = "dexterity";
+    dexterityOption.textContent = "DEX";
+
+    select.appendChild(strengthOption);
+    select.appendChild(dexterityOption);
+
+    td.appendChild(select);
 
     return td;
 }
@@ -88,6 +112,40 @@ const getNewAttackBonusCell = function() {
 const getNewDamageCell = function() {
     const td = getNewCell("damage");
 
+    const diceAmountInput = document.createElement('input');
+    diceAmountInput.type = "number";
+
+    const diceSelect = document.createElement('select');
+
+    const d4Option = document.createElement('option');
+    d4Option.value = "d4";
+    d4Option.textContent = "d4";
+
+    const d6Option = document.createElement('option');
+    d6Option.value = "d6";
+    d6Option.textContent = "d6";
+
+    const d8Option = document.createElement('option');
+    d8Option.value = "d8";
+    d8Option.textContent = "d8";
+
+    const d10Option = document.createElement('option');
+    d10Option.value = "d10";
+    d10Option.textContent = "d10";
+
+    const d12Option = document.createElement('option');
+    d12Option.value = "d12";
+    d12Option.textContent = "d12";
+
+    diceSelect.appendChild(d4Option);
+    diceSelect.appendChild(d6Option);
+    diceSelect.appendChild(d8Option);
+    diceSelect.appendChild(d10Option);
+    diceSelect.appendChild(d12Option);
+
+    td.appendChild(diceAmountInput);
+    td.appendChild(diceSelect);
+
     return td;
 }
 
@@ -97,6 +155,10 @@ const getNewDamageCell = function() {
  */
 const getNewDamageTypeCell = function() {
     const td = getNewCell("damage-type");
+
+    const select = document.createElement('select');
+
+    td.appendChild(select);
 
     return td;
 }
@@ -108,6 +170,10 @@ const getNewDamageTypeCell = function() {
 const getNewRangeCell = function() {
     const td = getNewCell("range");
 
+    const input = document.createElement('input');
+
+    td.appendChild(input);
+
     return td;
 }
 
@@ -117,6 +183,17 @@ const getNewRangeCell = function() {
  */
 const getNewButtonsCell = function() {
     const td = getNewCell("weapon_buttons");
+
+    const deleteButton = document.createElement('button');
+    deleteButton.type = "button";
+    deleteButton.textContent = "Delete";
+
+    const importButton = document.createElement('button');
+    importButton.type = "button";
+    importButton.textContent = "Import";
+
+    td.appendChild(deleteButton);
+    td.appendChild(importButton);
 
     return td;
 }
