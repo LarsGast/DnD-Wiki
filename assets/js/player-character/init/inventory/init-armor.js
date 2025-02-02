@@ -1,3 +1,4 @@
+import { setPlayerCharacterProperty } from "../../../local-storage-util.js";
 import { getEquipmentObjectAsync } from "../../api.js";
 
 /**
@@ -6,6 +7,23 @@ import { getEquipmentObjectAsync } from "../../api.js";
 export const initArmor = async function() {
     initArmorSelect();
     initAddArmorButton();
+}
+
+/**
+ * Save the entire armor inventory table to local storage.
+ */
+const saveArmorInventory = function() {
+    
+    const armorTable = document.getElementById('armor-table');
+    const armorTableBody = armorTable.querySelector('tbody');
+
+    const armors = Array.from(armorTableBody.rows).map(row => {
+        return {
+            index: row.dataset.index
+        };
+    })
+
+    setPlayerCharacterProperty("inventory_armor", armors);
 }
 
 /**
@@ -37,7 +55,7 @@ const initAddArmorButton = function() {
         addArmorButton.disabled = true;
         armorSelect.value = "empty" ;
 
-        //saveArmorInventory();
+        saveArmorInventory();
     };
 }
 
@@ -191,7 +209,7 @@ const getNewButtonsCell = function() {
     deleteButton.onclick = () => {
         const row = deleteButton.closest('tr');
         row.remove();
-        //saveArmorInventory();
+        saveArmorInventory();
     }
 
     td.appendChild(deleteButton);
@@ -207,7 +225,7 @@ const getNewButtonsCell = function() {
 const getNewCell = function(headerName) {
     const td = document.createElement('td');
 
-    td.headers = `weapon_${headerName}`;
+    td.headers = `armor_${headerName}`;
 
     return td;
 }
