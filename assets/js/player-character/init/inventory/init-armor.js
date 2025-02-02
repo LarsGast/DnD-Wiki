@@ -12,6 +12,26 @@ export const initArmor = async function() {
 }
 
 /**
+ * Update all armor modifiers at once.
+ */
+export const updateAllArmorModifiersAsync = async function() {
+    const armorTable = document.getElementById('armor-table');
+    const armorTableBody = armorTable.querySelector('tbody');
+
+    for (const row of Array.from(armorTableBody.rows)) {
+        await updateArmorRow(row);
+    }
+}
+
+/**
+ * Update a single row in the armor table.
+ * @param {HTMLTableRowElement} row 
+ */
+const updateArmorRow = async function(row) {
+    await updateEffectiveArmorClassCell(row);
+}
+
+/**
  * Save the entire armor inventory table to local storage.
  */
 const saveArmorInventory = function() {
@@ -87,7 +107,7 @@ const addArmorRow = function(armor, ability = null) {
     armorTableBody.appendChild(row);
 
     // Initial update to show the correct values on load.
-    //updateArmorRow(row);
+    updateArmorRow(row);
 }
 
 /**
@@ -188,12 +208,10 @@ const getNewArmorClassCell = function(armor) {
 /**
  * Get a new cell for the "Effective armor class" column.
  * @param {object} armor Full armor object.
- * @returns {HTMLTableCellElement}
+ * @returns {HTMLTableCellElement} Empty. Will get filled in another function.
  */
 const getNewEffectiveArmorClassCell = function(armor) {
     const td = getNewCell("effective-armor-class");
-
-    td.textContent = armor.armor_class.base + getArmorModifier(armor);
 
     return td;
 }
@@ -235,22 +253,36 @@ const getNewCell = function(headerName) {
 }
 
 /**
+ * Update the Effective armor class column of a row.
+ * @param {HTMLTableRowElement} row 
+ */
+const updateEffectiveArmorClassCell = async function(row) {
+    const effectiveArmorClassCell = row.querySelector('[headers="armor_effective-armor-class"]');
+
+    const armor = await getEquipmentObjectAsync(row.dataset.index);
+
+    effectiveArmorClassCell.textContent = armor.armor_class.base + getArmorModifier(armor);
+}
+
+/**
  * Get the modifier for the given armor.
  * @param {object} armor Full armor object.
- * @returns 
+ * @returns {number}
  */
 const getArmorModifier = function(armor) {
 
+    // No DEX modifier.
     if (armor.armor_class.dex_bonus === false) {
         return 0;
     }
 
     const dexterityModifier = getAbilityScoreModifier("dexterity");
 
-    // If there is a max, make sure to not assign a modifier higher than the max.
+    // Max DEX modifier.
     if (armor.armor_class.max_bonus && dexterityModifier > armor.armor_class.max_bonus) {
         return armor.armor_class.max_bonus;
     }
 
+    // No limit DEX modifier.
     return dexterityModifier;
 }
