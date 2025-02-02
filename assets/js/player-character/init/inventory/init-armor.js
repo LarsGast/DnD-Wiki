@@ -1,5 +1,6 @@
 import { getPlayerCharacterProperty, setPlayerCharacterProperty } from "../../../local-storage-util.js";
 import { getEquipmentObjectAsync } from "../../api.js";
+import { getAbilityScoreModifier } from "../../util.js";
 
 /**
  * Init the armor section of the inventory.
@@ -192,17 +193,7 @@ const getNewArmorClassCell = function(armor) {
 const getNewEffectiveArmorClassCell = function(armor) {
     const td = getNewCell("effective-armor-class");
 
-    let textContent = armor.armor_class.base;
-
-    if (armor.armor_class.dex_bonus === true) {
-        textContent += " + DEX";
-
-        if (armor.armor_class.max_bonus) {
-            textContent += ` (max ${armor.armor_class.max_bonus})`;
-        }
-    }
-
-    td.textContent = textContent;
+    td.textContent = armor.armor_class.base + getArmorModifier(armor);
 
     return td;
 }
@@ -241,4 +232,25 @@ const getNewCell = function(headerName) {
     td.headers = `armor_${headerName}`;
 
     return td;
+}
+
+/**
+ * Get the modifier for the given armor.
+ * @param {object} armor Full armor object.
+ * @returns 
+ */
+const getArmorModifier = function(armor) {
+
+    if (armor.armor_class.dex_bonus === false) {
+        return 0;
+    }
+
+    const dexterityModifier = getAbilityScoreModifier("dexterity");
+
+    // If there is a max, make sure to not assign a modifier higher than the max.
+    if (armor.armor_class.max_bonus && dexterityModifier > armor.armor_class.max_bonus) {
+        return armor.armor_class.max_bonus;
+    }
+
+    return dexterityModifier;
 }
