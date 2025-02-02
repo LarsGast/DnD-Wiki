@@ -1,10 +1,11 @@
-import { setPlayerCharacterProperty } from "../../../local-storage-util.js";
+import { getPlayerCharacterProperty, setPlayerCharacterProperty } from "../../../local-storage-util.js";
 import { getEquipmentObjectAsync } from "../../api.js";
 
 /**
  * Init the armor section of the inventory.
  */
 export const initArmor = async function() {
+    await initArmorTable();
     initArmorSelect();
     initAddArmorButton();
 }
@@ -24,6 +25,18 @@ const saveArmorInventory = function() {
     })
 
     setPlayerCharacterProperty("inventory_armor", armors);
+}
+
+/**
+ * Initialize the armor inventory table and fill it with the saved armor.
+ */
+const initArmorTable = async function() {
+
+    const armors = getPlayerCharacterProperty("inventory_armor") || [];
+    for (const armor of armors) {
+        const armorFromApi = await getEquipmentObjectAsync(armor.index);
+        addArmorRow(armorFromApi);
+    }
 }
 
 /**
