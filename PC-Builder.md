@@ -146,6 +146,25 @@ permalink: /pc-builder/
                 </tbody>
             </table>
         </div>
+        <h3>Armor</h3>
+        <button id="add-armor-button" type="button" disabled>Add armor</button>
+        <select id="armor-select"></select>
+        <div class="table-container">
+            <table id="armor-table">
+                <thead>
+                    <tr>
+                        <th id="armor_name">Name</th>
+                        <th id="armor_type">Type</th>
+                        <th id="armor_strength-requirement">STR req</th>
+                        <th id="armor_disadvantage-on-stealth">Disadv. on stealth</th>
+                        <th id="armor_armor-class">Armor class</th>
+                        <th id="armor_effective-armor-class">Eff. AC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
     </details>
 </section>
 
