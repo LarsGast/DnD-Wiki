@@ -82,6 +82,7 @@ const getDefaultPlayerCharacter = function() {
         weapon_proficiencies: [],
         armor_proficiencies: [],
         inventory_weapons: [],
+        inventory_armor: [],
         notes: null
     };
 }
