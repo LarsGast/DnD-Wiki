@@ -164,7 +164,7 @@ const getNewTypeCell = function(armor) {
 const getNewStrengthRequirementCell = function(armor) {
     const td = getNewCell("strength-requirement");
 
-    td.textContent = armor.str_minimum;
+    td.textContent = armor.str_minimum == 0 ? "-" : armor.str_minimum;
 
     return td;
 }
@@ -177,7 +177,7 @@ const getNewStrengthRequirementCell = function(armor) {
 const getNewDisadvantageOnStealthCell = function(armor) {
     const td = getNewCell("disadvantage-on-stealth");
 
-    td.textContent = armor.stealth_disadvantage;
+    td.textContent = armor.stealth_disadvantage ? "Disadvantage" : "-";
 
     return td;
 }

@@ -155,8 +155,8 @@ permalink: /pc-builder/
                     <tr>
                         <th id="armor_name">Name</th>
                         <th id="armor_type">Type</th>
-                        <th id="armor_strength-requirement">Minimum Strength</th>
-                        <th id="armor_disadvantage-on-stealth">Disadvantage on stealth</th>
+                        <th id="armor_strength-requirement">Strength</th>
+                        <th id="armor_disadvantage-on-stealth">Stealth</th>
                         <th id="armor_armor-class">Armor class</th>
                         <th id="armor_effective-armor-class">Effective armor class</th>
                         <th id="armor_buttons">Buttons</th>
