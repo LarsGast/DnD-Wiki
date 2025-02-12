@@ -17,7 +17,6 @@ const initExportFunctionality = function() {
 
     initExportDialogOpenButton(dialog);
     initDialogCloseButton(dialog);
-    initExportCopyButton(dialog);
     initExportDownloadButton(dialog);
 }
 
@@ -68,27 +67,6 @@ const initImportDialogOpenButton = function(dialog) {
 
     button.onclick = () => {
         dialog.showModal();
-    }
-}
-
-/**
- * Initialize the copy button in the export dialog.
- * @param {HTMLDialogElement} dialog 
- */
-const initExportCopyButton = function(dialog) {
-    const copyButton = dialog.querySelector('.copy');
-
-    copyButton.onclick = async () => {
-        const textArea = dialog.querySelector('textarea');
-
-        await navigator.clipboard.writeText(textArea.value);
-        
-        // Flash effect to indicate copy to clipboard has been done.
-        textArea.style.backgroundColor = '#d3d3d3'; // Light grey
-
-        setTimeout(() => {
-            textArea.style.backgroundColor = '';
-        }, 200);
     }
 }
 

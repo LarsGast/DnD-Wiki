@@ -184,7 +184,6 @@ permalink: /pc-builder/
             <h2>Export PC</h2>
             <p>Use this window to copy or download all information needed to build the PC Builder page. You can use this feature to save backups, move characters between devices, and more.</p>
             <div>
-                <button class="copy" type="button">Copy to Clipboard</button>
                 <button class="download" type="button">Download</button>
                 <label for="export-preview">Preview</label>
             </div>
