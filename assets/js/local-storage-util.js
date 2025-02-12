@@ -8,7 +8,15 @@ let cachedPlayerCharacter = null;
  */
 export const getPlayerCharacterProperty = function(propertyName) {
     const playerCharacter = getPlayerCharacter();
-    return playerCharacter[propertyName];
+    const property = playerCharacter[propertyName];
+
+    if (property) {
+        return property;
+    }
+
+    // Return the default value for the property if none is found.
+    const defaultCharacter = getDefaultPlayerCharacter();
+    return defaultCharacter[propertyName];
 };
 
 /**

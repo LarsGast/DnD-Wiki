@@ -55,7 +55,7 @@ const saveWeaponInventory = function() {
  */
 const initWeaponTable = async function() {
 
-    const weapons = getPlayerCharacterProperty("inventory_weapons") || [];
+    const weapons = getPlayerCharacterProperty("inventory_weapons");
 
     for (const weapon of weapons) {
         const weaponFromApi = await getEquipmentObjectAsync(weapon.index);

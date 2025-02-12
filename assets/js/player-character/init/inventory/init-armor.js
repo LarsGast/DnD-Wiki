@@ -53,7 +53,7 @@ const saveArmorInventory = function() {
  */
 const initArmorTable = async function() {
 
-    const armors = getPlayerCharacterProperty("inventory_armor") || [];
+    const armors = getPlayerCharacterProperty("inventory_armor");
     for (const armor of armors) {
         const armorFromApi = await getEquipmentObjectAsync(armor.index);
         addArmorRow(armorFromApi);
