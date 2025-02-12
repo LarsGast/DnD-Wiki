@@ -176,6 +176,10 @@ dialog {
         cursor: pointer;
     }
 
+    .copy {
+        align-self: start;
+    }
+
     /* Textarea within the modal content. */
     /* To display the export and import data. */
     textarea {
