@@ -186,8 +186,9 @@ permalink: /pc-builder/
             <div>
                 <button class="copy" type="button">Copy to Clipboard</button>
                 <button class="download" type="button">Download</button>
+                <label for="export-preview">Preview</label>
             </div>
-            <textarea></textarea>
+            <textarea id="export-preview" disabled></textarea>
         </div>
     </dialog>
     <dialog id="import-dialog">
@@ -196,9 +197,12 @@ permalink: /pc-builder/
             <h2>Import PC</h2>
             <p>Use this window to import all information needed to build the PC Builder page. Only the data provided by an export should be used while importing. Using anything else may result in loss of data. Create a backup of the current data by exporting it before importing new data to prevent overwriting existing data.</p>
             <p>Select a JSON file below, then press the <code>Import</code> button to import the data.</p>
-            <input class="load" type="file"/>
-            <button class="import" type="button">Import</button>
-            <textarea></textarea>
+            <div>
+                <button class="import" type="button" disabled>Import</button>
+                <input class="load" type="file"/>
+                <label for="import-preview">Preview</label>
+            </div>
+            <textarea id="import-preview" disabled></textarea>
         </div>
     </dialog>
 </div>

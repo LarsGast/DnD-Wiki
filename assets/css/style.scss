@@ -191,6 +191,11 @@ dialog {
             align-self: start;
         }
 
+        /* "Preview" label */
+        label {
+            float: right;
+        }
+
         /* Textarea within the modal content. */
         /* To display the export and import data. */
         textarea {

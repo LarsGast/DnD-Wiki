@@ -139,17 +139,20 @@ const initLoadFileForImportButton = function(dialog) {
 
     loadFileInput.onchange = (e) => {
         const reader = new FileReader();
-        
+
         reader.readAsText(e.target.files[0]);
         reader.onload = (readerEvent) => {
             const textArea = dialog.querySelector('textarea');
+            const importButton = dialog.querySelector('.import');
 
             try {
                 var content = JSON.parse(readerEvent.target.result);
                 textArea.value = JSON.stringify(content, null, 2);
+                importButton.removeAttribute("disabled");
             }
             catch {
                 textArea.value = "Could not load file. Make sure you selected the .json file provided by the export.";
+                importButton.setAttribute("disabled", "disabled");
             }
         }
     }
