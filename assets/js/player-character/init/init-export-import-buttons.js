@@ -1,11 +1,24 @@
-import { getPlayerCharacter, getPlayerCharacterProperty, savePlayerCharacter } from "../../local-storage-util.js";
+import { getDefaultPlayerCharacter, getPlayerCharacter, getPlayerCharacterProperty, savePlayerCharacter } from "../../local-storage-util.js";
 
 /**
  * Initialize all export and import functionality.
  */
 export const initExportImportButtons = function() {
+    initResetFunctionality();
     initExportFunctionality();
     initImportFunctionality();
+}
+
+/**
+ * Initialize reset functionality.
+ */
+const initResetFunctionality = function() {
+
+    const dialog = document.getElementById('reset-dialog');
+
+    initResetDialogOpenButton(dialog);
+    initDialogCloseButton(dialog);
+    initResetButton(dialog);
 }
 
 /**
@@ -42,6 +55,31 @@ const initDialogCloseButton = function(dialog) {
 
     closeButton.onclick = () => {
         dialog.close();
+    }
+}
+
+/**
+ * Initialize the reset dialog open button.
+ * @param {HTMLDialogElement} dialog 
+ */
+const initResetDialogOpenButton = function(dialog) {
+    const button = document.getElementById("reset-button");
+
+    button.onclick = () => {
+        dialog.showModal();
+    }
+}
+
+/**
+ * Initialize the reset PC button.
+ * @param {HTMLDialogElement} dialog 
+ */
+const initResetButton = function(dialog) {
+    const closeButton = dialog.querySelector('.reset');
+
+    closeButton.onclick = () => {
+        savePlayerCharacter(getDefaultPlayerCharacter());
+        window.location.reload();
     }
 }
 

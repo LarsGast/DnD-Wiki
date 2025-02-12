@@ -78,7 +78,7 @@ export const savePlayerCharacter = function(playerCharacter) {
  * Used to initialize the page for newcomers.
  * @returns {Object} A full object containing default values for all PC properties.
  */
-const getDefaultPlayerCharacter = function() {
+export const getDefaultPlayerCharacter = function() {
     return {
         name: null,
         classes: [],

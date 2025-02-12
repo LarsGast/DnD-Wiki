@@ -178,6 +178,15 @@ permalink: /pc-builder/
 </section>
 
 <div id="dialogs">
+    <dialog id="reset-dialog">
+        <div class="dialog-content">
+            <button class="close" type="button">Close</button>
+            <h2>Reset PC</h2>
+            <p>By resetting the PC, you will set the page to the same state it was when you loaded the page for the first time. All data will be removed and default values will be assigned to each property.</p>
+            <p><strong>Warning: resetting the page will remove all data. Export the data first to create a backup if you do not want to lose any data.</strong></p>
+            <button class="reset" type="button">Reset</button>
+        </div>
+    </dialog>
     <dialog id="export-dialog">
         <div class="dialog-content">
             <button class="close" type="button">Close</button>
