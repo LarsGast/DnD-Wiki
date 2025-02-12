@@ -1,69 +1,54 @@
 import { getPlayerCharacter } from "../../local-storage-util.js";
-import { showModal } from "../util.js";
 
 /**
- * Initialize all export and import buttons functionality.
+ * Initialize all export and import functionality.
  */
 export const initExportImportButtons = function() {
-    initExportButton();
+    initExportFunctionality();
 }
 
 /**
- * Initialize the export button.
+ * Initialize export button functionality.
  */
-const initExportButton = function() {
+const initExportFunctionality = function() {
+
+    const dialog = document.getElementById('export-dialog');
+
+    initExportDialogOpenButton(dialog);
+    initExportDialogCloseButton(dialog);
+}
+
+/**
+ * Initialize the export dialog open button.
+ * @param {HTMLDialogElement} dialog 
+ */
+const initExportDialogOpenButton = function(dialog) {
     const button = document.getElementById("export-button");
 
     button.onclick = () => {
-        showModal(getExportModalContent());
+        fillExportTextarea(dialog);
+        dialog.showModal();
     }
 }
 
 /**
- * Get all HTML elements needed for the export button modal.
- * @returns {HTMLElement[]}
+ * Initialize the export dialog close button.
+ * @param {HTMLDialogElement} dialog 
  */
-const getExportModalContent = function() {
-    return [
-        getExportModalTitle(), 
-        getExportModalMessage(), 
-        getExportModalTextarea()
-    ];
+const initExportDialogCloseButton = function(dialog) {
+    const closeButton = dialog.querySelector('button');
+
+    closeButton.onclick = () => {
+        dialog.close();
+    }
 }
 
 /**
- * Get the title element for the export modal.
- * @returns {HTMLHeadingElement}
+ * Fill the textarea of the export PC dialog with a stringified JSON of the PC information.
+ * @param {HTMLDialogElement} dialog 
  */
-const getExportModalTitle = function() {
-    const h2 = document.createElement('h2');
-
-    h2.textContent = "Export PC";
-
-    return h2;
-}
-
-/**
- * Get the message element for the export modal.
- * @returns {HTMLParagraphElement}
- */
-const getExportModalMessage = function() {
-    const p = document.createElement('p');
-
-    p.textContent = "Export your PC here!";
-
-    return p;
-}
-
-/**
- * Get the textarea for the export modal to display the entire PC for exporting.
- * Includes the stringified JSON of the PC.
- * @returns {HTMLTextAreaElement}
- */
-const getExportModalTextarea = function() {
-    const textArea = document.createElement('textarea');
+const fillExportTextarea = function(dialog) {
+    const textArea = dialog.querySelector('textarea');
 
     textArea.textContent = JSON.stringify(getPlayerCharacter(), null, 2);
-
-    return textArea;
 }

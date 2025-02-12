@@ -177,6 +177,15 @@ permalink: /pc-builder/
     <textarea id="notes"></textarea>
 </section>
 
+<div id="dialogs">
+    <dialog id="export-dialog">
+        <button type="button" class="close">close</button>
+        <h2>Export PC</h2>
+        <p>Export your PC here!</p>
+        <textarea></textarea>
+    </dialog>
+</div>
+
 <script type="module">
     import { buildPage } from "{{ '/assets/js/player-character/build/build-page.js' | relative_url }}";
     import { initPage } from "{{ '/assets/js/player-character/init/init-page.js' | relative_url }}";
