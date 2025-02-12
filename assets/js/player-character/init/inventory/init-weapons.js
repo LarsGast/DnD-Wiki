@@ -90,7 +90,7 @@ const initAddWeaponButton = function() {
 
         // Disable button until a weapon is chosen again.
         addWeaponButton.disabled = true;
-        weaponSelect.value = "empty" ;
+        weaponSelect.value = null ;
 
         saveWeaponInventory();
     };

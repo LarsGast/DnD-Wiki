@@ -87,7 +87,7 @@ const initAddArmorButton = function() {
 
         // Disable button until a armor is chosen again.
         addArmorButton.disabled = true;
-        armorSelect.value = "empty" ;
+        armorSelect.value = null;
 
         saveArmorInventory();
     };
