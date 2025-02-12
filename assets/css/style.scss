@@ -157,42 +157,49 @@ table {
 /* Styling dialogs (modals, popups) */
 dialog {
 
-    // To dynamically grow the textarea within.
-    display: flex;
-    flex-direction: column;
-
     // Generic styling
     height: 50vh;
     width: 80%;
     max-width: calc(0.8 * (800px - (30px * 2)));
 
-    /* Close button for the modal */
-    .close {
+    /* Wrapper for all content within a dialog element. */
+    .dialog-content {
 
-        // To put it in the top right position of the modal content.
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
-    }
+        height: 100%;
+        width: 100%;
 
-    /* Other buttons in the dialog */
-    .copy,
-    .download {
+        // To dynamically grow the textarea within.
+        display: flex;
+        flex-direction: column;
 
-        // Prevent stretching caused by flex.
-        align-self: start;
-    }
+        /* Close button for the modal */
+        .close {
 
-    /* Textarea within the modal content. */
-    /* To display the export and import data. */
-    textarea {
+            // To put it in the top right position of the modal content.
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
 
-        // To grow to the size of the modal content.
-        flex-grow: 1;
+        /* Other buttons in the dialog */
+        .copy,
+        .download {
 
-        // For clipboard copy feedback UI
-        transition: background-color 0.2s ease;
+            // Prevent stretching caused by flex.
+            align-self: start;
+        }
+
+        /* Textarea within the modal content. */
+        /* To display the export and import data. */
+        textarea {
+
+            // To grow to the size of the modal content.
+            flex-grow: 1;
+
+            // For clipboard copy feedback UI
+            transition: background-color 0.2s ease;
+        }
     }
 }
 
