@@ -190,6 +190,9 @@ dialog {
 
         // To grow to the size of the modal content.
         flex-grow: 1;
+
+        // For clipboard copy feedback UI
+        transition: background-color 0.2s ease;
     }
 }
 

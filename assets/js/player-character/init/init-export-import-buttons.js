@@ -56,12 +56,13 @@ const initExportCopyButton = function(dialog) {
         const textArea = dialog.querySelector('textarea');
 
         await navigator.clipboard.writeText(textArea.value);
+        
+        // Flash effect to indicate copy to clipboard has been done.
+        textArea.style.backgroundColor = '#d3d3d3'; // Light grey
 
-        copyButton.textContent = "Copied!";
-
-        setTimeout(() =>  {
-            copyButton.textContent = 'Copy to Clipboard'
-        }, 2000);
+        setTimeout(() => {
+            textArea.style.backgroundColor = '';
+        }, 200);
     }
 }
 
