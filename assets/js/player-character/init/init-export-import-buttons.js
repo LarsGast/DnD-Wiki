@@ -30,6 +30,7 @@ const initImportFunctionality = function() {
 
     initImportDialogOpenButton(dialog);
     initDialogCloseButton(dialog);
+    initLoadFileForImportButton(dialog);
     initImportButton(dialog);
 }
 
@@ -127,6 +128,31 @@ const fillExportTextarea = function(dialog) {
     const textArea = dialog.querySelector('textarea');
 
     textArea.value = JSON.stringify(getPlayerCharacter(), null, 2);
+}
+
+/**
+ * Initialize the Load File button for importing JSON files.
+ * @param {HTMLDialogElement} dialog 
+ */
+const initLoadFileForImportButton = function(dialog) {
+    const loadFileInput = dialog.querySelector('.load');
+
+    loadFileInput.onchange = (e) => {
+        const reader = new FileReader();
+        
+        reader.readAsText(e.target.files[0]);
+        reader.onload = (readerEvent) => {
+            const textArea = dialog.querySelector('textarea');
+
+            try {
+                var content = JSON.parse(readerEvent.target.result);
+                textArea.value = JSON.stringify(content, null, 2);
+            }
+            catch {
+                textArea.value = "Could not load file. Make sure you selected the .json file provided by the export.";
+            }
+        }
+    }
 }
 
 /**

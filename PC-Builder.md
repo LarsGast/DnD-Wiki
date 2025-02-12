@@ -195,7 +195,9 @@ permalink: /pc-builder/
             <button class="close" type="button">Close</button>
             <h2>Import PC</h2>
             <p>Use this window to import all information needed to build the PC Builder page. Only the data provided by an export should be used while importing. Using anything else may result in loss of data. Create a backup of the current data by exporting it before importing new data to prevent overwriting existing data.</p>
-            <button class="import">Import</button>
+            <p>Select a JSON file below, then press the <code>Import</code> button to import the data.</p>
+            <input class="load" type="file"/>
+            <button class="import" type="button">Import</button>
             <textarea></textarea>
         </div>
     </dialog>
