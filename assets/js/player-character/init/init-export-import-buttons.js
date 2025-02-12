@@ -99,10 +99,12 @@ const initExportDownloadButton = function(dialog) {
     const downloadButton = dialog.querySelector('.download');
 
     downloadButton.onclick = async () => {
-        const textArea = dialog.querySelector('textarea');
 
         // Create the blob and url for download.
-        const blob = new Blob([textArea.value], { type: 'application/json' });
+        const blob = new Blob(
+            [JSON.stringify(getPlayerCharacter(), null, 2)],
+            { type: 'application/json' }
+        );
         const url = URL.createObjectURL(blob);
     
         // You cannot provide a file as download with a <button> element alone, you need an <a> element.
