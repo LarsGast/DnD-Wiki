@@ -182,7 +182,10 @@ permalink: /pc-builder/
         <button class="close" type="button">Close</button>
         <h2>Export PC</h2>
         <p>Export your PC here!</p>
-        <button class="copy" type="button">Copy to Clipboard</button>
+        <div>
+            <button class="copy" type="button">Copy to Clipboard</button>
+            <button class="download" type="button">Download</button>
+        </div>
         <textarea></textarea>
     </dialog>
 </div>

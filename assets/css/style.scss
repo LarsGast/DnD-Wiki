@@ -176,7 +176,11 @@ dialog {
         cursor: pointer;
     }
 
-    .copy {
+    /* Other buttons in the dialog */
+    .copy,
+    .download {
+
+        // Prevent stretching caused by flex.
         align-self: start;
     }
 

@@ -1,4 +1,4 @@
-import { getPlayerCharacter } from "../../local-storage-util.js";
+import { getPlayerCharacter, getPlayerCharacterProperty } from "../../local-storage-util.js";
 
 /**
  * Initialize all export and import functionality.
@@ -17,6 +17,7 @@ const initExportFunctionality = function() {
     initExportDialogOpenButton(dialog);
     initExportDialogCloseButton(dialog);
     initExportCopyButton(dialog);
+    initExportDownloadButton(dialog);
 }
 
 /**
@@ -61,6 +62,32 @@ const initExportCopyButton = function(dialog) {
         setTimeout(() =>  {
             copyButton.textContent = 'Copy to Clipboard'
         }, 2000);
+    }
+}
+
+/**
+ * Initialize the download button in the export dialog.
+ * @param {HTMLDialogElement} dialog 
+ */
+const initExportDownloadButton = function(dialog) {
+    const downloadButton = dialog.querySelector('.download');
+
+    downloadButton.onclick = async () => {
+        const textArea = dialog.querySelector('textarea');
+
+        // Create the blob and url for download.
+        const blob = new Blob([textArea.value], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+    
+        // You cannot provide a file as download with a <button> element alone, you need an <a> element.
+        // That's why we create an anchor tag and trigger a click here.
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${getPlayerCharacterProperty('name')}.json`;
+        a.click();
+
+        // Release memory to prevent potential memory leaks.
+        URL.revokeObjectURL(url);
     }
 }
 
