@@ -1,10 +1,11 @@
-import { getPlayerCharacter, getPlayerCharacterProperty } from "../../local-storage-util.js";
+import { getPlayerCharacter, getPlayerCharacterProperty, savePlayerCharacter } from "../../local-storage-util.js";
 
 /**
  * Initialize all export and import functionality.
  */
 export const initExportImportButtons = function() {
     initExportFunctionality();
+    initImportFunctionality();
 }
 
 /**
@@ -15,9 +16,33 @@ const initExportFunctionality = function() {
     const dialog = document.getElementById('export-dialog');
 
     initExportDialogOpenButton(dialog);
-    initExportDialogCloseButton(dialog);
+    initDialogCloseButton(dialog);
     initExportCopyButton(dialog);
     initExportDownloadButton(dialog);
+}
+
+/**
+ * Initialize import button functionality.
+ */
+const initImportFunctionality = function() {
+
+    const dialog = document.getElementById('import-dialog');
+
+    initImportDialogOpenButton(dialog);
+    initDialogCloseButton(dialog);
+    initImportButton(dialog);
+}
+
+/**
+ * Initialize the dialog close button.
+ * @param {HTMLDialogElement} dialog 
+ */
+const initDialogCloseButton = function(dialog) {
+    const closeButton = dialog.querySelector('.close');
+
+    closeButton.onclick = () => {
+        dialog.close();
+    }
 }
 
 /**
@@ -34,14 +59,14 @@ const initExportDialogOpenButton = function(dialog) {
 }
 
 /**
- * Initialize the export dialog close button.
+ * Initialize the import dialog open button.
  * @param {HTMLDialogElement} dialog 
  */
-const initExportDialogCloseButton = function(dialog) {
-    const closeButton = dialog.querySelector('.close');
+const initImportDialogOpenButton = function(dialog) {
+    const button = document.getElementById("import-button");
 
-    closeButton.onclick = () => {
-        dialog.close();
+    button.onclick = () => {
+        dialog.showModal();
     }
 }
 
@@ -100,4 +125,19 @@ const fillExportTextarea = function(dialog) {
     const textArea = dialog.querySelector('textarea');
 
     textArea.value = JSON.stringify(getPlayerCharacter(), null, 2);
+}
+
+/**
+ * Initialize the import button.
+ * This sets the PC as described and reloads the page to commit changes.
+ * @param {HTMLDialogElement} dialog 
+ */
+const initImportButton = function(dialog) {
+    const importButton = dialog.querySelector('.import');
+
+    importButton.onclick = () => {
+        const textArea = dialog.querySelector('textarea');
+        savePlayerCharacter(JSON.parse(textArea.value));
+        window.location.reload();
+    }
 }

@@ -184,7 +184,8 @@ dialog {
 
         /* Other buttons in the dialog */
         .copy,
-        .download {
+        .download,
+        .import {
 
             // Prevent stretching caused by flex.
             align-self: start;
