@@ -179,9 +179,10 @@ permalink: /pc-builder/
 
 <div id="dialogs">
     <dialog id="export-dialog">
-        <button type="button" class="close">close</button>
+        <button class="close" type="button">Close</button>
         <h2>Export PC</h2>
         <p>Export your PC here!</p>
+        <button class="copy" type="button">Copy to Clipboard</button>
         <textarea></textarea>
     </dialog>
 </div>

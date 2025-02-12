@@ -16,6 +16,7 @@ const initExportFunctionality = function() {
 
     initExportDialogOpenButton(dialog);
     initExportDialogCloseButton(dialog);
+    initExportCopyButton(dialog);
 }
 
 /**
@@ -36,10 +37,30 @@ const initExportDialogOpenButton = function(dialog) {
  * @param {HTMLDialogElement} dialog 
  */
 const initExportDialogCloseButton = function(dialog) {
-    const closeButton = dialog.querySelector('button');
+    const closeButton = dialog.querySelector('.close');
 
     closeButton.onclick = () => {
         dialog.close();
+    }
+}
+
+/**
+ * Initialize the copy button in the export dialog.
+ * @param {HTMLDialogElement} dialog 
+ */
+const initExportCopyButton = function(dialog) {
+    const copyButton = dialog.querySelector('.copy');
+
+    copyButton.onclick = async () => {
+        const textArea = dialog.querySelector('textarea');
+
+        await navigator.clipboard.writeText(textArea.value);
+
+        copyButton.textContent = "Copied!";
+
+        setTimeout(() =>  {
+            copyButton.textContent = 'Copy to Clipboard'
+        }, 2000);
     }
 }
 
@@ -50,5 +71,5 @@ const initExportDialogCloseButton = function(dialog) {
 const fillExportTextarea = function(dialog) {
     const textArea = dialog.querySelector('textarea');
 
-    textArea.textContent = JSON.stringify(getPlayerCharacter(), null, 2);
+    textArea.value = JSON.stringify(getPlayerCharacter(), null, 2);
 }
