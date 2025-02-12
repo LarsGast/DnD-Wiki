@@ -1,6 +1,72 @@
 import { getPlayerCharacterProperty, setPlayerCharacterProperty } from '../local-storage-util.js';
 
 /**
+ * Create and show a modal element for a popup that requires full-screen focus.
+ * @param {HTMLElement[]} content All elements except the `close` button to display in the modal. 
+ */
+export const showModal = function(content) {
+    document.body.appendChild(getNewModal(content));
+}
+
+/**
+ * Create a new modal div with given content.
+ * This covers the entire screen, the modal content is the box that is brought to the users attention.
+ * @param {HTMLElement[]} content All elements except the `close` button to display in the modal. 
+ * @returns {HTMLDivElement} Full `modal` element.
+ */
+const getNewModal = function(content) {
+    const modal = document.createElement('div');
+
+    modal.id = "modal";
+    modal.appendChild(getModalContent(content));
+
+    return modal;
+}
+
+/**
+ * Create the content to be shown in a modal.
+ * This is the box that is brought to the users attention.
+ * @param {HTMLElement[]} content All elements except the `close` button to display in the modal. 
+ * @returns {HTMLDivElement} Full `modal content` element.
+ */
+const getModalContent = function(content) {
+    const modalContent = document.createElement('div');
+
+    modalContent.id = "modal-content";
+
+    // Add standard elements.
+    for (const element of getStandardModalContentElements()) {
+        modalContent.appendChild(element);
+    }
+
+    // Add specified elements.
+    for (const element of content) {
+        modalContent.appendChild(element);
+    }
+
+    return modalContent;
+}
+
+/**
+ * Get all the standard elements that should be displayed in a modal content.
+ * @returns {HTMLElement[]}
+ */
+const getStandardModalContentElements = function() {
+    const closeButton = document.createElement('button');
+
+    closeButton.type = 'button';
+    closeButton.classList.add('close');
+    closeButton.textContent = "close";
+    closeButton.onclick = () => {
+        const modal = document.getElementById('modal');
+
+        modal.remove();
+    }
+
+    return [closeButton];
+}
+
+/**
  * Update the classes of the PC in local storage.
  */
 export const updateClasses = function() {

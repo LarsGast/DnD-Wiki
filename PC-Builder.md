@@ -52,9 +52,9 @@ permalink: /pc-builder/
 </section>
 
 <section id="export-import-container">
-    <button type="button">Reset</button>
-    <button type="button">Export</button>
-    <button type="button">Import</button>
+    <button id="reset-button" type="button">Reset</button>
+    <button id="export-button" type="button">Export</button>
+    <button id="import-button" type="button">Import</button>
 </section>
 
 <section id="generic-info-container">

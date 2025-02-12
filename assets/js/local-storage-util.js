@@ -29,7 +29,7 @@ export const setPlayerCharacterProperty = function(propertyName, propertyValue) 
  * Get the player character object from local storage.
  * @returns {Object} Full character object.
  */
-const getPlayerCharacter = function() {
+export const getPlayerCharacter = function() {
     if (cachedPlayerCharacter !== null) return cachedPlayerCharacter;
 
     const playerCharacterString = localStorage.getItem(PLAYER_CHARACTER_KEY);
