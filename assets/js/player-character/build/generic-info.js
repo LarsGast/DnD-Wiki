@@ -1,4 +1,4 @@
-import { getAllBackgroundNamesAsync, getAllAlignmentNamesAsync, getApiResultsAsync, ApiCategory } from "../api.js";
+import { getAllAlignmentNamesAsync, getApiResultsAsync, ApiCategory } from "../api.js";
 import { getEmptyOption, getSelectOption } from "../util.js";
 
 /**
@@ -29,14 +29,14 @@ const fillRaceSelect = async function() {
  * Fill the background select element.
  */
 const fillBackgroundSelect = async function() {
-    const allBackgroundNames = await getAllBackgroundNamesAsync();
+    const allBackgrounds = await getApiResultsAsync(ApiCategory.Backgrounds);
 
     const select = document.getElementById("background_s");
 
     select.appendChild(getEmptyOption());
 
-    allBackgroundNames.forEach(backgroundName => {
-        select.appendChild(getSelectOption(backgroundName));
+    allBackgrounds.results.forEach(background => {
+        select.appendChild(getSelectOption(background.name, background.index));
     });
 }
 
