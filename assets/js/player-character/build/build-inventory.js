@@ -20,7 +20,7 @@ const buildWeaponSelect = async function() {
     select.appendChild(await getSelectOptionGroup("Simple Melee", EquipmentCategoryIndex.SimpleMeleeWeapons));
     select.appendChild(await getSelectOptionGroup("Martial Melee", EquipmentCategoryIndex.MartialMeleeWeapons));
     select.appendChild(await getSelectOptionGroup("Simple Ranged", EquipmentCategoryIndex.SimpleRangedWeapons));
-    select.appendChild(await getSelectOptionGroup("Martial Ranged", EquipmentCategoryIndex.MartialMeleeWeapons));
+    select.appendChild(await getSelectOptionGroup("Martial Ranged", EquipmentCategoryIndex.MartialRangedWeapons));
 }
 
 /**
