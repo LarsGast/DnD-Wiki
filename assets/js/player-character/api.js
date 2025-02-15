@@ -1,3 +1,5 @@
+import { addToCache, getFromCache } from "../cache.js";
+
 const baseUrl = 'https://www.dnd5eapi.co/api';
 
 /**
@@ -58,21 +60,33 @@ export class EquipmentCategoryIndex {
 /**
  * Call the SRD API and return the results.
  * @param {ApiCategory} apiCategory Category or endpoint of the resource.
- * @param {string} index Identifier of the resource.
+ * @param {string} index Identifier of the resource (optional).
  * @returns {Promise<JSON>} Full object as specified in the SRD API specifications.
  */
 export const getApiResultsAsync = async function(apiCategory, index = null) {
 
+    // Craft the URL string bases on the given parameters.
+    // index?.name is not undefined if it is an enum-like class.
     let indexString = index?.name ?? index ?? '';
-
     const url = `${baseUrl}/${apiCategory.name}/${indexString}`;
-    return await getApiDataAsync(url);
+
+    // Check the cache first.
+    const cachedData = getFromCache(url);
+    if (cachedData) {
+        return cachedData;
+    }
+
+    // If cache isn't hit, call the API and add the results to the cache.
+    const data = await getApiDataAsync(url);
+    addToCache(url, data);
+
+    return data;
 }
 
 /**
  * Perform an API call and get data from https://www.dnd5eapi.co.
  * @param {string} url 
- * @returns {json}
+ * @returns {Promise<JSON>}
  */
 const getApiDataAsync = async function(url) {
 
