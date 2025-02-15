@@ -128,9 +128,11 @@ export const updateAbilityScoreModifier = function(abilityIndex) {
  */
 export const updateAllSkillModifiers = async function() {
     const skills = await getApiResultsAsync(ApiCategory.Skills);
-    skills.results.forEach(skill => {
+
+    for (const skillInfo of skills.results) {
+        const skill = await getApiResultsAsync(ApiCategory.Skills, skillInfo.index);
         updateSkillModifier(skill);
-    });
+    }
 }
 
 /**
@@ -203,20 +205,20 @@ export const isProficientInArmor = function(armorName) {
 
 /**
  * Get the modifier of the given skill for the PC in local storage.
- * @param {*} skill 
+ * @param {JSON} skill 
  * @returns {number}
  */
 export const getSkillModifier = function(skill) {
 
-    const scoreModifier = getAbilityScoreModifier(skill.abilityIndex);
+    const scoreModifier = getAbilityScoreModifier(skill.ability_score.index);
     const proficiencyModifier = getProficiencyModifier();
 
     let skillModifier = scoreModifier;
-    if (isProficientInSkill(skill.name)){
+    if (isProficientInSkill(skill.index)){
         skillModifier += proficiencyModifier;
     }
     
-    if (isExpertInSkill(skill.name)){
+    if (isExpertInSkill(skill.index)){
         skillModifier += proficiencyModifier;
     }
 
