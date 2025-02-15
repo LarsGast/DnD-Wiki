@@ -70,16 +70,6 @@ export const getApiResultsAsync = async function(apiCategory, index = null) {
 }
 
 /**
- * Get all race names in the SRD.
- * @returns {string[]}
- */
-export const getAllRaceNamesAsync = async function() {
-    const url = `${baseUrl}/races`;
-    const json = await getApiDataAsync(url);
-    return json.results.map(result => result.name);
-}
-
-/**
  * Get all background names in the SRD.
  * @returns {string[]}
  */

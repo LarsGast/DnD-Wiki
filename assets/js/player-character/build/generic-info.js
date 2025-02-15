@@ -1,4 +1,4 @@
-import { getAllRaceNamesAsync, getAllBackgroundNamesAsync, getAllAlignmentNamesAsync } from "../api.js";
+import { getAllBackgroundNamesAsync, getAllAlignmentNamesAsync, getApiResultsAsync, ApiCategory } from "../api.js";
 import { getEmptyOption, getSelectOption } from "../util.js";
 
 /**
@@ -14,14 +14,14 @@ export const fillGenericInfoElements = async function() {
  * Fill the race select element.
  */
 const fillRaceSelect = async function() {
-    const allRaceNames = await getAllRaceNamesAsync();
+    const allRaces = await getApiResultsAsync(ApiCategory.Races);
 
     const select = document.getElementById("race_s");
 
     select.appendChild(getEmptyOption());
 
-    allRaceNames.forEach(raceName => {
-        select.appendChild(getSelectOption(raceName));
+    allRaces.results.forEach(race => {
+        select.appendChild(getSelectOption(race.name, race.index));
     });
 }
 
