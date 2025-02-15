@@ -1,4 +1,4 @@
-import { getAllAlignmentNamesAsync, getApiResultsAsync, ApiCategory } from "../api.js";
+import { getApiResultsAsync, ApiCategory } from "../api.js";
 import { getEmptyOption, getSelectOption } from "../util.js";
 
 /**
@@ -44,13 +44,13 @@ const fillBackgroundSelect = async function() {
  * Fill the alignment select element.
  */
 const fillAlignmentSelect = async function() {
-    const allAlignmentNames = await getAllAlignmentNamesAsync();
+    const allAlignments = await getApiResultsAsync(ApiCategory.Alignments);
 
     const select = document.getElementById("alignment_s");
 
     select.appendChild(getEmptyOption());
 
-    allAlignmentNames.forEach(backgroundName => {
-        select.appendChild(getSelectOption(backgroundName));
+    allAlignments.results.forEach(alignment => {
+        select.appendChild(getSelectOption(alignment.name, alignment.index));
     });
 }

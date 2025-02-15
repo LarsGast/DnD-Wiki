@@ -70,16 +70,6 @@ export const getApiResultsAsync = async function(apiCategory, index = null) {
 }
 
 /**
- * Get all background names in the SRD.
- * @returns {string[]}
- */
-export const getAllAlignmentNamesAsync = async function() {
-    const url = `${baseUrl}/alignments`;
-    const json = await getApiDataAsync(url);
-    return json.results.map(result => result.name);
-}
-
-/**
  * Get all simple melee weapon names in the SRD.
  * @returns {string[]}
  */
