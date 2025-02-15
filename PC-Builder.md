@@ -221,8 +221,6 @@ permalink: /pc-builder/
     import { buildPage } from "{{ '/assets/js/player-character/build/build-page.js' | relative_url }}";
     import { initPage } from "{{ '/assets/js/player-character/init/init-page.js' | relative_url }}";
 
-    window.skills = {{ site.data.skills | jsonify }};
-
     await buildPage();
     await initPage();
 </script>
