@@ -1,11 +1,11 @@
-const baseUrl = 'https://www.dnd5eapi.co';
+const baseUrl = 'https://www.dnd5eapi.co/api';
 
 /**
  * Get all class names in the SRD.
  * @returns {string[]}
  */
 export const getAllClassNamesAsync = async function() {
-    const url = `${baseUrl}/api/classes`;
+    const url = `${baseUrl}/classes`;
     const json = await getApiDataAsync(url);
     return json.results.map(result => result.name);
 }
@@ -15,7 +15,7 @@ export const getAllClassNamesAsync = async function() {
  * @returns {string[]}
  */
 export const getAllRaceNamesAsync = async function() {
-    const url = `${baseUrl}/api/races`;
+    const url = `${baseUrl}/races`;
     const json = await getApiDataAsync(url);
     return json.results.map(result => result.name);
 }
@@ -25,7 +25,7 @@ export const getAllRaceNamesAsync = async function() {
  * @returns {string[]}
  */
 export const getAllBackgroundNamesAsync = async function() {
-    const url = `${baseUrl}/api/backgrounds`;
+    const url = `${baseUrl}/backgrounds`;
     const json = await getApiDataAsync(url);
     return json.results.map(result => result.name);
 }
@@ -35,7 +35,7 @@ export const getAllBackgroundNamesAsync = async function() {
  * @returns {string[]}
  */
 export const getAllAlignmentNamesAsync = async function() {
-    const url = `${baseUrl}/api/alignments`;
+    const url = `${baseUrl}/alignments`;
     const json = await getApiDataAsync(url);
     return json.results.map(result => result.name);
 }
@@ -45,7 +45,7 @@ export const getAllAlignmentNamesAsync = async function() {
  * @returns {object[]}
  */
 export const getAllSimpleMeleeWeaponsAsync = async function() {
-    const url = `${baseUrl}/api/equipment-categories/simple-melee-weapons`;
+    const url = `${baseUrl}/equipment-categories/simple-melee-weapons`;
     const json = await getApiDataAsync(url);
     return json.equipment;
 }
@@ -55,7 +55,7 @@ export const getAllSimpleMeleeWeaponsAsync = async function() {
  * @returns {string[]}
  */
 export const getAllSimpleMeleeWeaponNamesAsync = async function() {
-    const url = `${baseUrl}/api/equipment-categories/simple-melee-weapons`;
+    const url = `${baseUrl}/equipment-categories/simple-melee-weapons`;
     const json = await getApiDataAsync(url);
     return json.equipment.map(result => result.name);
 }
@@ -65,7 +65,7 @@ export const getAllSimpleMeleeWeaponNamesAsync = async function() {
  * @returns {object[]}
  */
 export const getAllMartialMeleeWeaponsAsync = async function() {
-    const url = `${baseUrl}/api/equipment-categories/martial-melee-weapons`;
+    const url = `${baseUrl}/equipment-categories/martial-melee-weapons`;
     const json = await getApiDataAsync(url);
     return json.equipment;
 }
@@ -75,7 +75,7 @@ export const getAllMartialMeleeWeaponsAsync = async function() {
  * @returns {string[]}
  */
 export const getAllMartialMeleeWeaponNamesAsync = async function() {
-    const url = `${baseUrl}/api/equipment-categories/martial-melee-weapons`;
+    const url = `${baseUrl}/equipment-categories/martial-melee-weapons`;
     const json = await getApiDataAsync(url);
     return json.equipment.map(result => result.name);
 }
@@ -85,7 +85,7 @@ export const getAllMartialMeleeWeaponNamesAsync = async function() {
  * @returns {object[]}
  */
 export const getAllSimpleRangedWeaponsAsync = async function() {
-    const url = `${baseUrl}/api/equipment-categories/simple-ranged-weapons`;
+    const url = `${baseUrl}/equipment-categories/simple-ranged-weapons`;
     const json = await getApiDataAsync(url);
     return json.equipment;
 }
@@ -95,7 +95,7 @@ export const getAllSimpleRangedWeaponsAsync = async function() {
  * @returns {string[]}
  */
 export const getAllSimpleRangedWeaponNamesAsync = async function() {
-    const url = `${baseUrl}/api/equipment-categories/simple-ranged-weapons`;
+    const url = `${baseUrl}/equipment-categories/simple-ranged-weapons`;
     const json = await getApiDataAsync(url);
     return json.equipment.map(result => result.name);
 }
@@ -105,7 +105,7 @@ export const getAllSimpleRangedWeaponNamesAsync = async function() {
  * @returns {object[]}
  */
 export const getAllMartialRangedWeaponsAsync = async function() {
-    const url = `${baseUrl}/api/equipment-categories/martial-ranged-weapons`;
+    const url = `${baseUrl}/equipment-categories/martial-ranged-weapons`;
     const json = await getApiDataAsync(url);
     return json.equipment;
 }
@@ -115,7 +115,7 @@ export const getAllMartialRangedWeaponsAsync = async function() {
  * @returns {string[]}
  */
 export const getAllMartialRangedWeaponNamesAsync = async function() {
-    const url = `${baseUrl}/api/equipment-categories/martial-ranged-weapons`;
+    const url = `${baseUrl}/equipment-categories/martial-ranged-weapons`;
     const json = await getApiDataAsync(url);
     return json.equipment.map(result => result.name);
 }
@@ -125,7 +125,7 @@ export const getAllMartialRangedWeaponNamesAsync = async function() {
  * @returns {string[]}
  */
 export const getAllLightArmorAsync = async function() {
-    const url = `${baseUrl}/api/equipment-categories/light-armor`;
+    const url = `${baseUrl}/equipment-categories/light-armor`;
     const json = await getApiDataAsync(url);
     return json.equipment;
 }
@@ -135,7 +135,7 @@ export const getAllLightArmorAsync = async function() {
  * @returns {string[]}
  */
 export const getAllLightArmorNamesAsync = async function() {
-    const url = `${baseUrl}/api/equipment-categories/light-armor`;
+    const url = `${baseUrl}/equipment-categories/light-armor`;
     const json = await getApiDataAsync(url);
     return json.equipment.map(result => result.name);
 }
@@ -145,7 +145,7 @@ export const getAllLightArmorNamesAsync = async function() {
  * @returns {string[]}
  */
 export const getAllMediumArmorAsync = async function() {
-    const url = `${baseUrl}/api/equipment-categories/medium-armor`;
+    const url = `${baseUrl}/equipment-categories/medium-armor`;
     const json = await getApiDataAsync(url);
     return json.equipment;
 }
@@ -155,7 +155,7 @@ export const getAllMediumArmorAsync = async function() {
  * @returns {string[]}
  */
 export const getAllMediumArmorNamesAsync = async function() {
-    const url = `${baseUrl}/api/equipment-categories/medium-armor`;
+    const url = `${baseUrl}/equipment-categories/medium-armor`;
     const json = await getApiDataAsync(url);
     return json.equipment.map(result => result.name);
 }
@@ -165,7 +165,7 @@ export const getAllMediumArmorNamesAsync = async function() {
  * @returns {string[]}
  */
 export const getAllHeavyArmorAsync = async function() {
-    const url = `${baseUrl}/api/equipment-categories/heavy-armor`;
+    const url = `${baseUrl}/equipment-categories/heavy-armor`;
     const json = await getApiDataAsync(url);
     return json.equipment;
 }
@@ -175,7 +175,7 @@ export const getAllHeavyArmorAsync = async function() {
  * @returns {string[]}
  */
 export const getAllHeavyArmorNamesAsync = async function() {
-    const url = `${baseUrl}/api/equipment-categories/heavy-armor`;
+    const url = `${baseUrl}/equipment-categories/heavy-armor`;
     const json = await getApiDataAsync(url);
     return json.equipment.map(result => result.name);
 }
@@ -185,7 +185,7 @@ export const getAllHeavyArmorNamesAsync = async function() {
  * @returns {string[]}
  */
 export const getAllShieldNamesAsync = async function() {
-    const url = `${baseUrl}/api/equipment-categories/shields`;
+    const url = `${baseUrl}/equipment-categories/shields`;
     const json = await getApiDataAsync(url);
     return json.equipment.map(result => result.name);
 }
@@ -196,7 +196,7 @@ export const getAllShieldNamesAsync = async function() {
  * @returns {object} Full JSON object of the equipment piece.
  */
 export const getEquipmentObjectAsync = async function(equipmentIndex) {
-    const url = `${baseUrl}/api/equipment/${equipmentIndex}`;
+    const url = `${baseUrl}/equipment/${equipmentIndex}`;
     const json = await getApiDataAsync(url);
     return json;
 }
