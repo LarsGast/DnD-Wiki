@@ -1,4 +1,4 @@
-import { getAllHeavyArmorAsync, getAllLightArmorAsync, getAllMartialMeleeWeaponsAsync, getAllMartialRangedWeaponsAsync, getAllMediumArmorAsync, getAllSimpleMeleeWeaponsAsync, getAllSimpleRangedWeaponsAsync } from "../api.js";
+import { ApiCategory, EquipmentCategoryIndex, getApiResultsAsync } from "../api.js";
 import { getEmptyOption } from "../util.js";
 
 /**
@@ -17,10 +17,10 @@ const buildWeaponSelect = async function() {
     const select = document.getElementById('weapon-select');
 
     select.appendChild(getEmptyOption());
-    select.appendChild(getSelectOptionGroup("Simple Melee", await getAllSimpleMeleeWeaponsAsync()));
-    select.appendChild(getSelectOptionGroup("Martial Melee", await getAllMartialMeleeWeaponsAsync()));
-    select.appendChild(getSelectOptionGroup("Simple Ranged", await getAllSimpleRangedWeaponsAsync()));
-    select.appendChild(getSelectOptionGroup("Martial Ranged", await getAllMartialRangedWeaponsAsync()));
+    select.appendChild(getSelectOptionGroup("Simple Melee", (await getApiResultsAsync(ApiCategory.EquipmentCategories, EquipmentCategoryIndex.SimpleMeleeWeapons)).equipment));
+    select.appendChild(getSelectOptionGroup("Martial Melee", (await getApiResultsAsync(ApiCategory.EquipmentCategories, EquipmentCategoryIndex.MartialMeleeWeapons)).equipment));
+    select.appendChild(getSelectOptionGroup("Simple Ranged", (await getApiResultsAsync(ApiCategory.EquipmentCategories, EquipmentCategoryIndex.SimpleRangedWeapons)).equipment));
+    select.appendChild(getSelectOptionGroup("Martial Ranged", (await getApiResultsAsync(ApiCategory.EquipmentCategories, EquipmentCategoryIndex.MartialRangedWeapons)).equipment));
 }
 
 /**
@@ -31,9 +31,9 @@ const buildArmorSelect = async function() {
     const select = document.getElementById('armor-select');
 
     select.appendChild(getEmptyOption());
-    select.appendChild(getSelectOptionGroup("Light", await getAllLightArmorAsync()));
-    select.appendChild(getSelectOptionGroup("Medium", await getAllMediumArmorAsync()));
-    select.appendChild(getSelectOptionGroup("Heavy", await getAllHeavyArmorAsync()));
+    select.appendChild(getSelectOptionGroup("Light", (await getApiResultsAsync(ApiCategory.EquipmentCategories, EquipmentCategoryIndex.LightArmor)).equipment));
+    select.appendChild(getSelectOptionGroup("Medium", (await getApiResultsAsync(ApiCategory.EquipmentCategories, EquipmentCategoryIndex.MediumArmor)).equipment));
+    select.appendChild(getSelectOptionGroup("Heavy", (await getApiResultsAsync(ApiCategory.EquipmentCategories, EquipmentCategoryIndex.HeavyArmor)).equipment));
 }
 
 /**
