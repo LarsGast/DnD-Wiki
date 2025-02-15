@@ -87,11 +87,11 @@ export const getSelectOption = function(optionText, optionValue) {
 
 /**
  * Ensure that each ability score is within 1 and 30.
- * @param {string} abilityName 
+ * @param {string} abilityIndex 
  * @param {number} abilityScore 
  */
-export const limitAbilityScore = function(abilityName, abilityScore) {
-    const inputField = document.getElementById(`${abilityName}_i`);
+export const limitAbilityScore = function(abilityIndex, abilityScore) {
+    const inputField = document.getElementById(`${abilityIndex}_i`);
 
     if (abilityScore > 30){
         inputField.value = 30;
@@ -105,22 +105,22 @@ export const limitAbilityScore = function(abilityName, abilityScore) {
 
 /**
  * Save the given score to the given ability.
- * @param {string} abilityName 
+ * @param {string} abilityIndex 
  */
-export const saveAbilityScore = function(abilityName) {
-    const abilityScore = document.getElementById(`${abilityName}_i`);
+export const saveAbilityScore = function(abilityIndex) {
+    const abilityScore = document.getElementById(`${abilityIndex}_i`);
 
-    setPlayerCharacterProperty(abilityName, abilityScore.value);
+    setPlayerCharacterProperty(abilityIndex, abilityScore.value);
 }
 
 /**
  * Update the ability score modifier for the given ability.
- * @param {string} abilityName 
+ * @param {string} abilityIndex 
  */
-export const updateAbilityScoreModifier = function(abilityName) {
-    const span = document.getElementById(`${abilityName}_m`);
+export const updateAbilityScoreModifier = function(abilityIndex) {
+    const span = document.getElementById(`${abilityIndex}_m`);
 
-    span.textContent = getAbilityScoreModifier(abilityName);
+    span.textContent = getAbilityScoreModifier(abilityIndex);
 }
 
 /**
@@ -135,12 +135,12 @@ export const updateAllSkillModifiers = async function() {
 
 /**
  * Get the ability score modifier from an ability score.
- * @param {string} abilityName
+ * @param {string} abilityIndex
  * @returns {number}
  */
-export const getAbilityScoreModifier = function(abilityName) {
+export const getAbilityScoreModifier = function(abilityIndex) {
 
-    const abilityScore = getPlayerCharacterProperty(abilityName);
+    const abilityScore = getPlayerCharacterProperty(abilityIndex);
 
     return Math.floor((abilityScore - 10) / 2);
 }
@@ -208,7 +208,7 @@ export const isProficientInArmor = function(armorName) {
  */
 export const getSkillModifier = function(skill) {
 
-    const scoreModifier = getAbilityScoreModifier(skill.abilityName);
+    const scoreModifier = getAbilityScoreModifier(skill.abilityIndex);
     const proficiencyModifier = getProficiencyModifier();
 
     let skillModifier = scoreModifier;
