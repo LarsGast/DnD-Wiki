@@ -22,7 +22,7 @@ const getClasses = function() {
         const input = li.getElementsByTagName('input')[0];
 
         const classObject = {
-            name: select.value,
+            index: select.value,
             level: input.value
         };
 
@@ -71,14 +71,15 @@ export const getEmptyOption = function() {
 
 /**
  * Get an option for a select element.
- * @param {string} optionValue
+ * @param {string} optionText Text that the user sees.
+ * @param {string} optionValue Hidden value/ identifier of the option.
  * @returns {HTMLOptionElement} 
  */
-export const getSelectOption = function(optionValue) {
+export const getSelectOption = function(optionText, optionValue) {
     const option = document.createElement('option');
 
-    option.value = optionValue;
-    option.textContent = optionValue;
+    option.textContent = optionText;
+    option.value = optionValue ?? optionText;
 
     return option;
 }

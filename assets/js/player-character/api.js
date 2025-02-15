@@ -61,22 +61,12 @@ export class EquipmentCategoryIndex {
  * @param {string} index Identifier of the resource.
  * @returns {Promise<JSON>} Full object as specified in the SRD API specifications.
  */
-export const getApiResultsAsync = async function(apiCategory, index) {
+export const getApiResultsAsync = async function(apiCategory, index = null) {
 
-    let indexString = index.name ?? index;
+    let indexString = index?.name ?? index ?? '';
 
     const url = `${baseUrl}/${apiCategory.name}/${indexString}`;
     return await getApiDataAsync(url);
-}
-
-/**
- * Get all class names in the SRD.
- * @returns {string[]}
- */
-export const getAllClassNamesAsync = async function() {
-    const url = `${baseUrl}/classes`;
-    const json = await getApiDataAsync(url);
-    return json.results.map(result => result.name);
 }
 
 /**
