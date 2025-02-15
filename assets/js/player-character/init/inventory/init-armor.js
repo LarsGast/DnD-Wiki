@@ -290,7 +290,7 @@ const getArmorModifier = function(armor) {
         return 0;
     }
 
-    const dexterityModifier = getAbilityScoreModifier("dexterity");
+    const dexterityModifier = getAbilityScoreModifier("dex");
 
     // Max DEX modifier.
     if (armor.armor_class.max_bonus && dexterityModifier > armor.armor_class.max_bonus) {
