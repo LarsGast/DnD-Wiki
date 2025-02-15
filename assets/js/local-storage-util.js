@@ -8,13 +8,21 @@ let cachedPlayerCharacter = null;
  */
 export const getPlayerCharacterProperty = function(propertyName) {
     const playerCharacter = getPlayerCharacter();
-    return playerCharacter[propertyName];
+    const property = playerCharacter[propertyName];
+
+    if (property) {
+        return property;
+    }
+
+    // Return the default value for the property if none is found.
+    const defaultCharacter = getDefaultPlayerCharacter();
+    return defaultCharacter[propertyName];
 };
 
 /**
  * Set a property on the player character object in local storage.
  * @param {string} propertyName
- * @param {object} propertyValue
+ * @param {Object} propertyValue
  */
 export const setPlayerCharacterProperty = function(propertyName, propertyValue) {
 
@@ -29,7 +37,7 @@ export const setPlayerCharacterProperty = function(propertyName, propertyValue) 
  * Get the player character object from local storage.
  * @returns {Object} Full character object.
  */
-const getPlayerCharacter = function() {
+export const getPlayerCharacter = function() {
     if (cachedPlayerCharacter !== null) return cachedPlayerCharacter;
 
     const playerCharacterString = localStorage.getItem(PLAYER_CHARACTER_KEY);
@@ -44,27 +52,33 @@ const getPlayerCharacter = function() {
         return cachedPlayerCharacter;
     } catch (error) {
         console.error("Error parsing player character JSON:", error);
-        cachedPlayerCharacter = {};
-        return cachedPlayerCharacter;
+        return {};
     }
 };
 
 /**
  * Save the player character object to local storage.
- * @param {Object} playerCharacter
+ * @param {Object} playerCharacter PC as JSON.
  */
-const savePlayerCharacter = function(playerCharacter) {
-    cachedPlayerCharacter = playerCharacter;
-    const playerCharacterString = JSON.stringify(playerCharacter);
-    localStorage.setItem(PLAYER_CHARACTER_KEY, playerCharacterString);
+export const savePlayerCharacter = function(playerCharacter) {
+
+    try {
+        const playerCharacterString = JSON.stringify(playerCharacter);
+        localStorage.setItem(PLAYER_CHARACTER_KEY, playerCharacterString);
+        cachedPlayerCharacter = playerCharacter;
+    }
+    catch (error) {
+        console.error("Error while saving Player Character:", error);
+        console.log("Player Character JSON:", playerCharacter);
+    }
 };
 
 /**
  * Get a player character with default values.
  * Used to initialize the page for newcomers.
- * @returns {object} A full object containing default values for all PC properties.
+ * @returns {Object} A full object containing default values for all PC properties.
  */
-const getDefaultPlayerCharacter = function() {
+export const getDefaultPlayerCharacter = function() {
     return {
         name: null,
         classes: [],
