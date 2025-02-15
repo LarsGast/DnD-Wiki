@@ -377,15 +377,15 @@ export const saveNewArmorProficiencies = function(armorName, add) {
 
 /**
  * Get the proficiency checkbox element for the given skill or equipment.
- * @param {string} proficiencyName 
+ * @param {string} proficiencyIndex 
  * @returns {HTMLInputElement}
  */
-export const getProficiencyCheckbox = function(proficiencyName) {
+export const getProficiencyCheckbox = function(proficiencyIndex) {
 
     const proficiencyCheckbox = document.createElement('input');
 
     proficiencyCheckbox.type = "checkbox";
-    proficiencyCheckbox.id = `${proficiencyName}_p`;
+    proficiencyCheckbox.id = `${proficiencyIndex}_p`;
 
     return proficiencyCheckbox;
 }
