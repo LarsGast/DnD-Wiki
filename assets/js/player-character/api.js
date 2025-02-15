@@ -236,17 +236,6 @@ export const getAllShieldNamesAsync = async function() {
 }
 
 /**
- * Get a single equipment object from the SRD.
- * @param {string} equipmentIndex Name as specified as index in the API.
- * @returns {object} Full JSON object of the equipment piece.
- */
-export const getEquipmentObjectAsync = async function(equipmentIndex) {
-    const url = `${baseUrl}/equipment/${equipmentIndex}`;
-    const json = await getApiDataAsync(url);
-    return json;
-}
-
-/**
  * Perform an API call and get data from https://www.dnd5eapi.co.
  * @param {string} url 
  * @returns {json}

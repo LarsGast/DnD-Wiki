@@ -1,5 +1,5 @@
 import { getPlayerCharacterProperty, setPlayerCharacterProperty } from "../../../local-storage-util.js";
-import { getEquipmentObjectAsync } from "../../api.js";
+import { ApiCategory, getApiResultsAsync } from "../../api.js";
 import { getAbilityScoreModifier, getProficiencyModifier, isProficientInWeapon } from "../../util.js";
 
 /**
@@ -57,8 +57,8 @@ const initWeaponTable = async function() {
 
     const weapons = getPlayerCharacterProperty("inventory_weapons");
 
-    for (const weapon of weapons) {
-        const weaponFromApi = await getEquipmentObjectAsync(weapon.index);
+    for (const weapon of weapons) {        
+        const weaponFromApi = await getApiResultsAsync(ApiCategory.Equipment, weapon.index);
         addWeaponRow(weaponFromApi, weapon.ability);
     }
 }
@@ -84,7 +84,7 @@ const initAddWeaponButton = function() {
 
     addWeaponButton.onclick = async () => {
         const weaponSelect = document.getElementById('weapon-select');
-        const weapon = await getEquipmentObjectAsync(weaponSelect.value);
+        const weapon = await getApiResultsAsync(ApiCategory.Equipment, weaponSelect.value);
 
         addWeaponRow(weapon);
 
