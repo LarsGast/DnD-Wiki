@@ -63,6 +63,8 @@ export const getPlayerCharacter = function() {
 export const savePlayerCharacter = function(playerCharacter) {
 
     try {
+        playerCharacter.last_edit = new Date();
+
         const playerCharacterString = JSON.stringify(playerCharacter);
         localStorage.setItem(PLAYER_CHARACTER_KEY, playerCharacterString);
         cachedPlayerCharacter = playerCharacter;
@@ -97,6 +99,7 @@ export const getDefaultPlayerCharacter = function() {
         armor_proficiencies: [],
         inventory_weapons: [],
         inventory_armor: [],
-        notes: null
+        notes: null,
+        last_edit: new Date()
     };
 }

@@ -218,9 +218,11 @@ permalink: /pc-builder/
 </div>
 
 <script type="module">
+    import { updateCharacter } from "{{ '/assets/js/player-character/update-character.js' | relative_url }}";
     import { buildPage } from "{{ '/assets/js/player-character/build/build-page.js' | relative_url }}";
     import { initPage } from "{{ '/assets/js/player-character/init/init-page.js' | relative_url }}";
 
+    updateCharacter();
     await buildPage();
     await initPage();
 </script>
