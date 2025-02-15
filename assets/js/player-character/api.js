@@ -1,6 +1,51 @@
 const baseUrl = 'https://www.dnd5eapi.co/api';
 
 /**
+ * Enum-like class that holds all endpoints of the SRD API.
+ */
+export class ApiCategory {
+    static AbilityScores = new ApiCategory("ability-scores");
+    static Alignments = new ApiCategory("alignments");
+    static Backgrounds = new ApiCategory("backgrounds");
+    static Classes = new ApiCategory("classes");
+    static Conditions = new ApiCategory("conditions");
+    static DamageTypes = new ApiCategory("damage-types");
+    static Equipment = new ApiCategory("equipment");
+    static EquipmentCategories = new ApiCategory("equipment-categories");
+    static Feats = new ApiCategory("feats");
+    static Features = new ApiCategory("features");
+    static Languages = new ApiCategory("languages");
+    static MagicItems = new ApiCategory("magic-items");
+    static MagicSchools = new ApiCategory("magic-schools");
+    static Monsters = new ApiCategory("monsters");
+    static Proficiencies = new ApiCategory("proficiencies");
+    static Races = new ApiCategory("races");
+    static RuleSections = new ApiCategory("rule-sections");
+    static Rules = new ApiCategory("rules");
+    static Skills = new ApiCategory("skills");
+    static Spells = new ApiCategory("spells");
+    static Subclasses = new ApiCategory("subclasses");
+    static Subraces = new ApiCategory("subraces");
+    static Traits = new ApiCategory("traits");
+    static WeaponProperties = new ApiCategory("weapon-properties");
+
+    constructor(name) {
+        this.name = name
+    }
+}
+
+/**
+ * Call the SRD API and return the results.
+ * @param {ApiCategory} apiCategory Category or endpoint of the resource.
+ * @param {string} index Identifier of the resource.
+ * @returns {JSON} Full object as specified in the SRD API specifications.
+ */
+export const getApiResultsAsync = async function(apiCategory, index) {
+    const url = `${baseUrl}/${apiCategory.name}/${index}`;
+    return await getApiDataAsync(url);
+}
+
+/**
  * Get all class names in the SRD.
  * @returns {string[]}
  */
