@@ -93,12 +93,12 @@ const getRemoveClassButton = function() {
     button.type = "button";
     button.textContent = "Remove class";
 
-    button.onclick = function() {
+    button.onclick = async function() {
         const parent = this.parentElement;
         parent.remove();
 
         changeClassSelect();
-        changeLevelInput();
+        await changeLevelInput();
     }
 
     return button;
@@ -141,9 +141,9 @@ const changeClassSelect = function() {
 /**
  * Handle the change of a class level input.
  */
-const changeLevelInput = function() {
+const changeLevelInput = async function() {
     limitClassLevel();
     updateClasses();
-    updateAllSkillModifiers();
+    await updateAllSkillModifiers();
     updateAllWeaponModifiers();
 }

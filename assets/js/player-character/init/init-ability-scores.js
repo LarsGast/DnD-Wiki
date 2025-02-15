@@ -52,7 +52,7 @@ const changeAbilityScore = async function(abilityName, abilityScore) {
     }
     saveAbilityScore(abilityName);
     updateAbilityScoreModifier(abilityName);
-    updateAllSkillModifiers();
+    await updateAllSkillModifiers();
     updateAllWeaponModifiers();
     await updateAllArmorModifiersAsync();
 }

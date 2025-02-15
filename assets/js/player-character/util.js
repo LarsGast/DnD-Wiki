@@ -1,4 +1,5 @@
 import { getPlayerCharacterProperty, setPlayerCharacterProperty } from '../local-storage-util.js';
+import { ApiCategory, getApiResultsAsync } from './api.js';
 
 /**
  * Update the classes of the PC in local storage.
@@ -125,8 +126,9 @@ export const updateAbilityScoreModifier = function(abilityName) {
 /**
  * Update all skill modifiers at once.
  */
-export const updateAllSkillModifiers = function() {
-    window.skills.forEach(skill => {
+export const updateAllSkillModifiers = async function() {
+    const skills = await getApiResultsAsync(ApiCategory.Skills);
+    skills.results.forEach(skill => {
         updateSkillModifier(skill);
     });
 }
@@ -161,22 +163,22 @@ export const getProficiencyModifier = function() {
 
 /**
  * Check if the PC is proficient in the given skill.
- * @param {string} skillName 
+ * @param {string} skillIndex 
  * @returns {boolean}
  */
-export const isProficientInSkill = function(skillName) {
+export const isProficientInSkill = function(skillIndex) {
     const proficiencies = getPlayerCharacterProperty("proficiencies");
-    return proficiencies.includes(skillName);
+    return proficiencies.includes(skillIndex);
 }
 
 /**
  * Check if the PC has expertise in the given skill.
- * @param {string} skillName 
+ * @param {string} skillIndex 
  * @returns {boolean}
  */
-export const isExpertInSkill = function(skillName) {
+export const isExpertInSkill = function(skillIndex) {
     const expertises = getPlayerCharacterProperty("expertises");
-    return expertises.includes(skillName);
+    return expertises.includes(skillIndex);
 }
 
 /**
@@ -223,21 +225,21 @@ export const getSkillModifier = function(skill) {
 
 /**
  * Save the skill proficiency to local storage.
- * @param {string} skillName Name of the skill.
+ * @param {string} skillIndex Name of the skill.
  * @param {boolean} add Wether the proficiency is added or removed.
  */
-export const saveNewSkillProficiencies = function(skillName, add) {
+export const saveNewSkillProficiencies = function(skillIndex, add) {
     const proficiencies = getPlayerCharacterProperty("proficiencies");
 
     if (add === true) {
-        if (!proficiencies.includes(skillName)) {
-            proficiencies.push(skillName);
+        if (!proficiencies.includes(skillIndex)) {
+            proficiencies.push(skillIndex);
         }
     }
     else {
-        const skillIndex = proficiencies.indexOf(skillName);
-        if (skillIndex !== -1) {
-            proficiencies.splice(skillIndex, 1);
+        const skillArrayIndex = proficiencies.indexOf(skillIndex);
+        if (skillArrayIndex !== -1) {
+            proficiencies.splice(skillArrayIndex, 1);
         }
     }
 
@@ -246,21 +248,21 @@ export const saveNewSkillProficiencies = function(skillName, add) {
 
 /**
  * Save the skill expertise to local storage.
- * @param {string} skillName Name of the skill.
+ * @param {string} skillIndex Name of the skill.
  * @param {boolean} add Wether the expertise is added or removed.
  */
-export const saveNewSkillExpertises = function(skillName, add) {
+export const saveNewSkillExpertises = function(skillIndex, add) {
     const expertise = getPlayerCharacterProperty("expertises");
 
     if (add === true) {
-        if (!expertise.includes(skillName)) {
-            expertise.push(skillName);
+        if (!expertise.includes(skillIndex)) {
+            expertise.push(skillIndex);
         }
     }
     else {
-        const skillIndex = expertise.indexOf(skillName);
-        if (skillIndex !== -1) {
-            expertise.splice(skillIndex, 1);
+        const skillArrayIndex = expertise.indexOf(skillIndex);
+        if (skillArrayIndex !== -1) {
+            expertise.splice(skillArrayIndex, 1);
         }
     }
 
@@ -269,12 +271,12 @@ export const saveNewSkillExpertises = function(skillName, add) {
 
 /**
  * Enable or disable the expertise checkbox for the given skill based on proficiency.
- * @param {string} skillName Name of the skill.
+ * @param {string} skillIndex Name of the skill.
  */
-export const enableOrDisableExpertiseCheckbox = function(skillName) {
-    const expertiseCheckbox = document.getElementById(`${skillName}_e`);
+export const enableOrDisableExpertiseCheckbox = function(skillIndex) {
+    const expertiseCheckbox = document.getElementById(`${skillIndex}_e`);
 
-    if (isProficientInSkill(skillName)) {
+    if (isProficientInSkill(skillIndex)) {
         expertiseCheckbox.disabled = false;
     }
     else {
@@ -284,12 +286,12 @@ export const enableOrDisableExpertiseCheckbox = function(skillName) {
 
 /**
  * Enable or disable the proficiency checkbox for the given skill based on expertise.
- * @param {string} skillName Name of the skill.
+ * @param {string} skillIndex Name of the skill.
  */
-export const enableOrDisableProficiencyCheckbox = function(skillName) {
-    const proficiencyCheckbox = document.getElementById(`${skillName}_p`);
+export const enableOrDisableProficiencyCheckbox = function(skillIndex) {
+    const proficiencyCheckbox = document.getElementById(`${skillIndex}_p`);
 
-    if (isExpertInSkill(skillName)) {
+    if (isExpertInSkill(skillIndex)) {
         proficiencyCheckbox.disabled = true;
     }
     else {
@@ -302,7 +304,7 @@ export const enableOrDisableProficiencyCheckbox = function(skillName) {
  * @param {object} skill 
  */
 export const updateSkillModifier = function(skill) {
-    const span = document.getElementById(`${skill.name}_m`);
+    const span = document.getElementById(`${skill.index}_m`);
 
     span.textContent = getSkillModifier(skill);
 }
@@ -385,14 +387,14 @@ export const getExpertiseCheckbox = function(expertiseIndex) {
 
 /**
  * Get the span element for the proficiency modifier number for the given skill or equipment.
- * @param {string} proficiencyName 
+ * @param {string} proficiencyIndex 
  * @returns {HTMLSpanElement}
  */
-export const getProficiencyModifierSpan = function(proficiencyName) {
+export const getProficiencyModifierSpan = function(proficiencyIndex) {
 
     const span = document.createElement('span');
     
-    span.id = `${proficiencyName}_m`;
+    span.id = `${proficiencyIndex}_m`;
 
     return span;
 }
