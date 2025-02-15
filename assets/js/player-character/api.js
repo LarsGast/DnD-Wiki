@@ -35,13 +35,37 @@ export class ApiCategory {
 }
 
 /**
+ * Enum-like class that holds certain indexes of equipment categories in the SRD API.
+ * Does not include everything (yet).
+ */
+export class EquipmentCategoryIndex {
+    static HeavyArmor = new EquipmentCategoryIndex("heavy-armor");
+    static MediumArmor = new EquipmentCategoryIndex("medium-armor");
+    static LightArmor = new EquipmentCategoryIndex("light-armor");
+    static Shields = new EquipmentCategoryIndex("shields");
+
+    static SimpleMeleeWeapons = new EquipmentCategoryIndex("simple-melee-weapons");
+    static MartialMeleeWeapons = new EquipmentCategoryIndex("martial-melee-weapons");
+
+    static SimpleRangedWeapons = new EquipmentCategoryIndex("simple-ranged-weapons");
+    static MartialRangedWeapons = new EquipmentCategoryIndex("martial-ranged-weapons");
+
+    constructor(name) {
+        this.name = name
+    }
+}
+
+/**
  * Call the SRD API and return the results.
  * @param {ApiCategory} apiCategory Category or endpoint of the resource.
  * @param {string} index Identifier of the resource.
- * @returns {JSON} Full object as specified in the SRD API specifications.
+ * @returns {Promise<JSON>} Full object as specified in the SRD API specifications.
  */
 export const getApiResultsAsync = async function(apiCategory, index) {
-    const url = `${baseUrl}/${apiCategory.name}/${index}`;
+
+    let indexString = index.name ?? index;
+
+    const url = `${baseUrl}/${apiCategory.name}/${indexString}`;
     return await getApiDataAsync(url);
 }
 
