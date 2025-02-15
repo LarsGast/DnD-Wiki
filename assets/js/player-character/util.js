@@ -160,28 +160,6 @@ export const getProficiencyModifier = function() {
 }
 
 /**
- * Get the abbreviated name of an ability.
- * @param {string} abilityName 
- * @returns {string} 3 letter abbreviation.
- */
-export const getAbbreviationOfAbility = function(abilityName) {
-    switch(abilityName){
-        case 'strength':
-            return 'STR';
-        case 'dexterity':
-            return 'DEX';
-        case 'constitution':
-            return 'CON';
-        case 'intelligence':
-            return 'INT';
-        case 'wisdom':
-            return 'WIS';
-        case 'charisma':
-            return 'CHA';
-    }
-}
-
-/**
  * Check if the PC is proficient in the given skill.
  * @param {string} skillName 
  * @returns {boolean}
@@ -392,15 +370,15 @@ export const getProficiencyCheckbox = function(proficiencyIndex) {
 
 /**
  * Get the expertise checkbox element for the given skill or equipment.
- * @param {string} proficiencyName 
+ * @param {string} expertiseIndex 
  * @returns {HTMLInputElement}
  */
-export const getExpertiseCheckbox = function(proficiencyName) {
+export const getExpertiseCheckbox = function(expertiseIndex) {
 
     const expertiseCheckbox = document.createElement('input');
 
     expertiseCheckbox.type = "checkbox";
-    expertiseCheckbox.id = `${proficiencyName}_e`;
+    expertiseCheckbox.id = `${expertiseIndex}_e`;
 
     return expertiseCheckbox;
 }

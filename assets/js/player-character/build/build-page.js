@@ -9,7 +9,7 @@ import { buildSkills } from "./build-skills.js";
  */
 export const buildPage = async function() {
     await fillGenericInfoElements();
-    buildSkills();
+    await buildSkills();
     await buildEquipmentProficiencies();
     await buildInventory();
 }

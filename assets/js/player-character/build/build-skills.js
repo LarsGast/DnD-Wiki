@@ -1,59 +1,63 @@
-import {getAbbreviationOfAbility, getExpertiseCheckbox, getProficiencyCheckbox, getProficiencyModifierSpan} from '../util.js';
+import { ApiCategory, getApiResultsAsync } from '../api.js';
+import { getExpertiseCheckbox, getProficiencyCheckbox, getProficiencyModifierSpan} from '../util.js';
 
-export const buildSkills = function() {
-    fillSkillList();
+export const buildSkills = async function() {
+    await fillSkillList();
 }
 
-const fillSkillList = function() {
+const fillSkillList = async function() {
     const ul = document.getElementById("skills-list");
 
-    window.skills.forEach(skill => {
-        ul.appendChild(getSkillListItem(skill));
-    })
+    const skills = await getApiResultsAsync(ApiCategory.Skills);
+
+    for (const skill of skills.results) {
+        ul.appendChild(await getSkillListItem(skill.index));
+    }
 }
 
 /**
  * Get the li element for the given skill.
- * @param {object} skill 
- * @returns {HTMLLIElement}
+ * @param {string} skillIndex 
+ * @returns {Promise<HTMLLIElement>}
  */
-const getSkillListItem = function(skill) {
+const getSkillListItem = async function(skillIndex) {
 
     const li = document.createElement('li');
 
-    li.id = skill.name;
-    li.appendChild(getProficiencyCheckbox(skill.name));
-    li.appendChild(getExpertiseCheckbox(skill.name));
-    li.appendChild(getSkillLabel(skill));
+    li.id = skillIndex;
+    li.appendChild(getProficiencyCheckbox(skillIndex));
+    li.appendChild(getExpertiseCheckbox(skillIndex));
+    li.appendChild(await getSkillLabel(skillIndex));
 
     return li;
 }
 
 /**
  * Get the label element for the given skill.
- * @param {object} skill 
- * @returns {HTMLInputElement}
+ * @param {string} skillIndex 
+ * @returns {Promise<HTMLInputElement>}
  */
-const getSkillLabel = function(skill) {
+const getSkillLabel = async function(skillIndex) {
 
     const label = document.createElement('label');
 
-    label.appendChild(getProficiencyModifierSpan(skill.name));
-    label.appendChild(getSkillNameSpan(skill));
+    label.appendChild(getProficiencyModifierSpan(skillIndex));
+    label.appendChild(await getSkillNameSpan(skillIndex));
 
     return label;
 }
 
 /**
  * Get the span element for the skill label name.
- * @param {object} skill 
- * @returns {HTMLSpanElement}
+ * @param {string} skillIndex 
+ * @returns {Promise<HTMLSpanElement>}
  */
-const getSkillNameSpan = function(skill) {
-    
+const getSkillNameSpan = async function(skillIndex) {
     const span = document.createElement('span');
+
+    const skill = await getApiResultsAsync(ApiCategory.Skills, skillIndex);
     
-    span.textContent = ` ${skill.name} (${getAbbreviationOfAbility(skill.abilityName)})`;
+    span.textContent = ` ${skill.name} (${skill.ability_score.name})`;
 
     return span;
 }
