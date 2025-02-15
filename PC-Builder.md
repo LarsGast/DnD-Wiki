@@ -191,7 +191,8 @@ permalink: /pc-builder/
         <div class="dialog-content">
             <button class="close" type="button">Close</button>
             <h2>Export PC</h2>
-            <p>Use this window to copy or download all information needed to build the PC Builder page. You can use this feature to save backups, move characters between devices, and more.</p>
+            <p>Use this window to download all information needed to build the PC Builder page. You can use this feature to save backups, move characters between devices, and more.</p>
+            <p>Use the <code>Import</code> button to import the information into the page using the resulting JSON file from this export.</p>
             <div>
                 <button class="download" type="button">Download</button>
                 <label for="export-preview">Preview</label>
