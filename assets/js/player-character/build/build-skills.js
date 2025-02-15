@@ -1,6 +1,10 @@
 import {getAbbreviationOfAbility, getExpertiseCheckbox, getProficiencyCheckbox, getProficiencyModifierSpan} from '../util.js';
 
-export const fillSkillsList = function() {
+export const buildSkills = function() {
+    fillSkillList();
+}
+
+const fillSkillList = function() {
     const ul = document.getElementById("skills-list");
 
     window.skills.forEach(skill => {
