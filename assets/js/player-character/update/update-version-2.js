@@ -7,7 +7,7 @@
  * - Abilityscores are now saved as the lower case 3-letter abbreviation instead of the full word
  * @param {JSON} playerCharacter Full JSON character to perform the update on
  */
-export const update_2025_02_15 = function(playerCharacter) {
+export const update_version_2 = function(playerCharacter) {
     updateClasses(playerCharacter);
     updateRace(playerCharacter);
     updateBackground(playerCharacter);

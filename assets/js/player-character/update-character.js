@@ -1,5 +1,5 @@
 import { getPlayerCharacter, savePlayerCharacter } from "../local-storage-util.js";
-import { update_2025_02_15 } from "./update/2025-02-15.js";
+import { update_version_2 } from "./update/update-version-2.js";
 
 /**
  * Update an old player character object to a new version.
@@ -15,9 +15,9 @@ export const updateCharacter = function(playerCharacter = undefined) {
     let hasChanges = false;
 
     // Update if needed.
-    // TODO: More specific date, not just day, but also time of the release.
-    if (!playerCharacter.last_edit || playerCharacter.last_edit < new Date("2025-02-15")) {
-        update_2025_02_15(playerCharacter);
+    if (!playerCharacter.version || playerCharacter.version < 2) {
+        update_version_2(playerCharacter);
+        playerCharacter.version = 2;
         hasChanges = true;
     }
 
