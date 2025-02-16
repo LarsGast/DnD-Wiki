@@ -1,3 +1,5 @@
+import { getPlayerCharacterProperty } from "../../local-storage-util.js";
+
 /**
  * Update a character from before 2025-02-15 to right after. Read the individual functions for more specific information.
  * This update includes:
@@ -27,7 +29,7 @@ export const update_2025_02_15 = function(playerCharacter) {
  * @param {JSON} playerCharacter Full JSON character to perform the update on
  */
 const updateClasses = function(playerCharacter) {
-    playerCharacter.classes = playerCharacter.classes.map(classObject => {
+    playerCharacter.classes = getPlayerCharacterProperty("classes").map(classObject => {
         return updateClass(classObject);
     });
 }
@@ -50,7 +52,7 @@ const updateClass = function(oldClass) {
  * @param {JSON} playerCharacter Full JSON character to perform the update on
  */
 const updateRace = function(playerCharacter) {
-    playerCharacter.race = toKebabCase(playerCharacter.race);
+    playerCharacter.race = toKebabCase(getPlayerCharacterProperty("race"));
 }
 
 /**
@@ -59,7 +61,7 @@ const updateRace = function(playerCharacter) {
  * @param {JSON} playerCharacter Full JSON character to perform the update on
  */
 const updateBackground = function(playerCharacter) {
-    playerCharacter.background = toKebabCase(playerCharacter.background);
+    playerCharacter.background = toKebabCase(getPlayerCharacterProperty("background"));
 }
 
 /**
@@ -68,7 +70,7 @@ const updateBackground = function(playerCharacter) {
  * @param {JSON} playerCharacter Full JSON character to perform the update on
  */
 const updateAlignment = function(playerCharacter) {
-    playerCharacter.alignment = toKebabCase(playerCharacter.alignment);
+    playerCharacter.alignment = toKebabCase(getPlayerCharacterProperty("alignment"));
 }
 
 /**
@@ -77,12 +79,12 @@ const updateAlignment = function(playerCharacter) {
  * @param {JSON} playerCharacter Full JSON character to perform the update on
  */
 const updateAbilityScores = function(playerCharacter) {
-    playerCharacter.str = playerCharacter.strength;
-    playerCharacter.dex = playerCharacter.dexterity;
-    playerCharacter.con = playerCharacter.constitution;
-    playerCharacter.int = playerCharacter.intelligence;
-    playerCharacter.wis = playerCharacter.wisdom;
-    playerCharacter.cha = playerCharacter.charisma;
+    playerCharacter.str = getPlayerCharacterProperty("strength");
+    playerCharacter.dex = getPlayerCharacterProperty("dexterity");
+    playerCharacter.con = getPlayerCharacterProperty("constitution");
+    playerCharacter.int = getPlayerCharacterProperty("intelligence");
+    playerCharacter.wis = getPlayerCharacterProperty("wisdom");
+    playerCharacter.cha = getPlayerCharacterProperty("charisma");
 
     delete playerCharacter.strength;
     delete playerCharacter.dexterity;
@@ -98,7 +100,7 @@ const updateAbilityScores = function(playerCharacter) {
  * @param {JSON} playerCharacter Full JSON character to perform the update on
  */
 const updateProficiencies = function(playerCharacter) {
-    playerCharacter.proficiencies = playerCharacter.proficiencies.map(proficiency => {
+    playerCharacter.proficiencies = getPlayerCharacterProperty("proficiencies").map(proficiency => {
         return toKebabCase(proficiency);
     });
 }
@@ -109,7 +111,7 @@ const updateProficiencies = function(playerCharacter) {
  * @param {JSON} playerCharacter Full JSON character to perform the update on
  */
 const updateExpertises = function(playerCharacter) {
-    playerCharacter.expertises = playerCharacter.expertises.map(expertise => {
+    playerCharacter.expertises = getPlayerCharacterProperty("expertises").map(expertise => {
         return toKebabCase(expertise);
     });
 }
@@ -120,7 +122,7 @@ const updateExpertises = function(playerCharacter) {
  * @param {JSON} playerCharacter Full JSON character to perform the update on
  */
 const updateWeaponProficiencies = function(playerCharacter) {
-    playerCharacter.weapon_proficiencies = playerCharacter.weapon_proficiencies.map(proficiency => {
+    playerCharacter.weapon_proficiencies = getPlayerCharacterProperty("weapon_proficiencies").map(proficiency => {
         return toKebabCase(proficiency);
     });
 }
@@ -131,7 +133,7 @@ const updateWeaponProficiencies = function(playerCharacter) {
  * @param {JSON} playerCharacter Full JSON character to perform the update on
  */
 const updateArmorProficiencies = function(playerCharacter) {
-    playerCharacter.armor_proficiencies = playerCharacter.armor_proficiencies.map(proficiency => {
+    playerCharacter.armor_proficiencies = getPlayerCharacterProperty("armor_proficiencies").map(proficiency => {
         return toKebabCase(proficiency);
     });
 }
@@ -142,7 +144,7 @@ const updateArmorProficiencies = function(playerCharacter) {
  * @param {JSON} playerCharacter Full JSON character to perform the update on
  */
 const updateWeaponInventory = function(playerCharacter) {
-    playerCharacter.inventory_weapons = playerCharacter.inventory_weapons.map(proficiency => {
+    playerCharacter.inventory_weapons = getPlayerCharacterProperty("inventory_weapons").map(proficiency => {
         return updateWeapon(proficiency);
     });
 }
