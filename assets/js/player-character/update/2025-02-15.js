@@ -179,6 +179,12 @@ const getShortAbility = function(longAbility) {
  * @returns {string} Kebab-case string.
  */
 const toKebabCase = function(str) {
+
+    // To handle PC's with that aren't complete yet.
+    if (!str) {
+        return null;
+    }
+
     return str
         // Remove comma's
         .replace(/,/g, '')
