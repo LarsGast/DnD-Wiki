@@ -1,5 +1,5 @@
 /**
- * Update a character from before 2025-02-15 to right after. Read the individual functions for more specific information.
+ * Update a character from version 1 to version 2. Read the individual functions for more specific information.
  * This update includes:
  * - A revision of the API data stored
  *   - Indexes as specified in the 5e API are now stored instead of names
