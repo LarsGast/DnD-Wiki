@@ -1,6 +1,12 @@
 const PLAYER_CHARACTER_KEY = "playerCharacter";
 
 /**
+ * The current latest version of the PC object.
+ * This should be updated whenever a breaking change is performed on the PC object blueprint.
+ */
+export const LATEST_PLAYER_CHARACTER_VERSION_NUMBER = 3;
+
+/**
  * Contains all information of a character needed to build the PC-Builder page.
  */
 export class PlayerCharacter {
@@ -139,7 +145,7 @@ export class PlayerCharacter {
      * Notes that the user has filled in.
      * @type {string}
      */
-    notes;
+    notes = "";
 
     /**
      * Version number of the character.
@@ -210,7 +216,7 @@ export class PlayerCharacter {
 
         // Set the version to the current one.
         // Update this value if a breaking change occurs.
-        playerCharacter.version = 2;
+        playerCharacter.version = LATEST_PLAYER_CHARACTER_VERSION_NUMBER;
 
         return playerCharacter;
     }

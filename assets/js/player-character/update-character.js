@@ -1,11 +1,6 @@
-import { PlayerCharacter } from "./objects/PlayerCharacter.js";
+import { LATEST_PLAYER_CHARACTER_VERSION_NUMBER, PlayerCharacter } from "./objects/PlayerCharacter.js";
 import { update_version_2 } from "./update/update-version-2.js";
-
-/**
- * The current latest version of the PC blueprint.
- * This should be updated whenever a breaking change is performed on the PC blueprint.
- */
-const LATEST_VERSION_NUMBER = 2;
+import { update_version_3 } from "./update/update-version-3.js";
 
 /**
  * Update an old player character object to a new version.
@@ -22,7 +17,7 @@ export const updateCharacter = function(playerCharacter) {
     }
 
     // If we don't need to update, don't update.
-    if (playerCharacter.version === LATEST_VERSION_NUMBER) {
+    if (playerCharacter.version === LATEST_PLAYER_CHARACTER_VERSION_NUMBER) {
         return;
     }
 
@@ -30,6 +25,12 @@ export const updateCharacter = function(playerCharacter) {
     if (playerCharacter.version === 1) {
         update_version_2(playerCharacter);
         playerCharacter.version = 2;
+    }
+    
+    // Version 2 -> version 3.
+    if (playerCharacter.version === 2) {
+        update_version_3(playerCharacter);
+        playerCharacter.version = 3;
     }
 
     // Clean the JSON object to remove unused properties and add missing properties.
