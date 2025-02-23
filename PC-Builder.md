@@ -179,8 +179,6 @@ permalink: /pc-builder/
         <summary><h2>Race features: <span id="race_name"></span></h2></summary>
         <h3>Ability Bonuses</h3>
         <ul id="race_ability_bonuses"></ul>
-        <h3>Proficiencies</h3>
-        <ul id="race_starting_proficiencies"></ul>
         <h3>Speed</h3>
         <p id="race_speed"></p>
         <h3>Alignment</h3>
@@ -193,6 +191,18 @@ permalink: /pc-builder/
         <p id="race_languages"></p>
         <h3>Traits</h3>
         <div id="race_traits"></div>
+    </details>
+</section>
+
+<section id="subrace-features">
+    <details open>
+        <summary><h2>Subrace features: <span id="subrace_name"></span></h2></summary>
+        <h3>Description</h3>
+        <p id="subrace_description"></p>
+        <h3>Ability Bonuses</h3>
+        <ul id="subrace_ability_bonuses"></ul>
+        <h3>Traits</h3>
+        <div id="subrace_traits"></div>
     </details>
 </section>
 
