@@ -10,7 +10,7 @@ import { initRace, initSubRace } from "./main-properties/init-race.js";
 export const initMainProperties = async function() {
     initName();
     initClassAndLevel();
-    initRace();
+    await initRace();
     await initSubRace();
     initBackground();
     initAlignment();

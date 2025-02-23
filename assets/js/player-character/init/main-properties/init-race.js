@@ -5,7 +5,9 @@ import { getEmptyOption, getSelectOption } from "../../util.js";
 /**
  * Initialize the race select element.
  */
-export const initRace = function() {
+export const initRace = async function() {
+
+    await updateRaceFeaturesSection();
 
     const select = document.getElementById("race_s");
 
@@ -19,8 +21,8 @@ export const initRace = function() {
 }
 
 export const initSubRace = async function() {
-
     await updateSubraceSelection();
+    await updateSubraceFeaturesSection();
 
     const select = document.getElementById("subrace_s");
 
