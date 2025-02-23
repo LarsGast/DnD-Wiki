@@ -3,6 +3,8 @@ import { ApiCategory, getApiResultsAsync } from "../../api.js";
 import { getEmptyOption, getSelectOption } from "../../util.js";
 import { updateRaceFeaturesSection } from "../init-race-features.js";
 import { updateSubraceFeaturesSection } from "../init-subrace-features.js";
+import { Race } from "../../objects/Race.js";
+import { ApiObjectInfo } from "../../objects/ApiObjectInfo.js";
 
 /**
  * Initialize the race select element.
@@ -57,12 +59,12 @@ const updateSubraceSelection = async function() {
 
 /**
  * Get all subraces available for the current race.
- * @returns {JSON[]} Empty array if a race does not have any subraces.
+ * @returns {Promise<ApiObjectInfo[]>} Empty array if a race does not have any subraces.
  */
 const getAllSubraces = async function() {
 
     const raceIndex = globalPlayerCharacter.race;
-    const race = await getApiResultsAsync(ApiCategory.Races, raceIndex);
+    const race = await Race.getAsync(raceIndex);
 
     if (!race.subraces || race.subraces.length === 0) {
         return [];

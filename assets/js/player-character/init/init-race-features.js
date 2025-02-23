@@ -1,5 +1,6 @@
 import { globalPlayerCharacter } from "../objects/PlayerCharacter.js";
 import { ApiCategory, getApiResultsAsync } from "../api.js";
+import { Race } from "../objects/Race.js";
 
 /**
  * Update the race features section based on the current race.
@@ -14,7 +15,7 @@ export const updateRaceFeaturesSection = async function() {
         return;
     }
 
-    const race = await getApiResultsAsync(ApiCategory.Races, raceIndex);
+    const race = await Race.getAsync(raceIndex);
 
     setRaceName(race);
     setAbilityBonuses(race);
@@ -28,7 +29,7 @@ export const updateRaceFeaturesSection = async function() {
 
 /**
  * Sets the name of the race.
- * @param {JSON} race Full race object as per the SRD API.
+ * @param {Race} race
  */
 const setRaceName = function(race) {
     const span = document.getElementById("race_name");
@@ -38,7 +39,7 @@ const setRaceName = function(race) {
 
 /**
  * Sets the ability bonuses of the race.
- * @param {JSON} race Full race object as per the SRD API.
+ * @param {Race} race
  */
 const setAbilityBonuses = function(race) {
     const ul = document.getElementById("race_ability_bonuses");
@@ -55,7 +56,7 @@ const setAbilityBonuses = function(race) {
 
 /**
  * Sets the speed of the race.
- * @param {JSON} race Full race object as per the SRD API.
+ * @param {Race} race
  */
 const setSpeed = function(race) {
     const p = document.getElementById("race_speed");
@@ -65,7 +66,7 @@ const setSpeed = function(race) {
 
 /**
  * Sets the alignement of the race.
- * @param {JSON} race Full race object as per the SRD API.
+ * @param {Race} race
  */
 const setAlignment = function(race) {
     const p = document.getElementById("race_alignment");
@@ -75,7 +76,7 @@ const setAlignment = function(race) {
 
 /**
  * Sets the age of the race.
- * @param {JSON} race Full race object as per the SRD API.
+ * @param {Race} race
  */
 const setAge = function(race) {
     const p = document.getElementById("race_age");
@@ -85,7 +86,7 @@ const setAge = function(race) {
 
 /**
  * Sets the size of the race.
- * @param {JSON} race Full race object as per the SRD API.
+ * @param {Race} race
  */
 const setSize = function(race) {
     const p = document.getElementById("race_size");
@@ -95,7 +96,7 @@ const setSize = function(race) {
 
 /**
  * Sets the languages of the race.
- * @param {JSON} race Full race object as per the SRD API.
+ * @param {Race} race
  */
 const setLanguages = function(race) {
     const p = document.getElementById("race_languages");
@@ -105,7 +106,7 @@ const setLanguages = function(race) {
 
 /**
  * Sets the traits of the race.
- * @param {JSON} race Full race object as per the SRD API.
+ * @param {Race} race
  */
 const setTraits = async function(race) {
     const div = document.getElementById("race_traits");
