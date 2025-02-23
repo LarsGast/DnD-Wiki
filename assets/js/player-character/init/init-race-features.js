@@ -1,4 +1,4 @@
-import { getPlayerCharacterProperty } from "../../local-storage-util.js";
+import { globalPlayerCharacter } from "../objects/PlayerCharacter.js";
 import { ApiCategory, getApiResultsAsync } from "../api.js";
 
 /**
@@ -7,7 +7,7 @@ import { ApiCategory, getApiResultsAsync } from "../api.js";
  */
 export const updateRaceFeaturesSection = async function() {
 
-    const raceIndex = getPlayerCharacterProperty("race");
+    const raceIndex = globalPlayerCharacter.race;
 
     // If the user has not picked a race yet, there is nothing to set.
     if (!raceIndex) {

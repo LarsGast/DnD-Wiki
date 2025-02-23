@@ -1,4 +1,4 @@
-import { getPlayerCharacterProperty, setPlayerCharacterProperty } from "../../../local-storage-util.js";
+import { globalPlayerCharacter } from "../../objects/PlayerCharacter.js";
 import { ApiCategory, getApiResultsAsync } from "../../api.js";
 import { getAbilityScoreModifier } from "../../util.js";
 
@@ -45,7 +45,7 @@ const saveArmorInventory = function() {
         };
     })
 
-    setPlayerCharacterProperty("inventory_armor", armors);
+    globalPlayerCharacter.setProperty("inventory_armor", armors);
 }
 
 /**
@@ -53,7 +53,7 @@ const saveArmorInventory = function() {
  */
 const initArmorTable = async function() {
 
-    const armors = getPlayerCharacterProperty("inventory_armor");
+    const armors = globalPlayerCharacter.inventoryArmor;
     for (const armor of armors) {
         const armorFromApi = await getApiResultsAsync(ApiCategory.Equipment, armor.index);
         addArmorRow(armorFromApi);

@@ -1,4 +1,4 @@
-import { getPlayerCharacterProperty } from "../../local-storage-util.js";
+import { globalPlayerCharacter } from "../objects/PlayerCharacter.js";
 import { ApiCategory, getApiResultsAsync } from "../api.js";
 
 /**
@@ -7,7 +7,7 @@ import { ApiCategory, getApiResultsAsync } from "../api.js";
  */
 export const updateSubraceFeaturesSection = async function() {
 
-    const subRaceIndex = getPlayerCharacterProperty("subrace");
+    const subRaceIndex = globalPlayerCharacter.subrace;
     const section = document.getElementById('subrace-features');
 
     // If the user has not picked a subrace yet, or there is no available subrace to pick, there is nothing to set.

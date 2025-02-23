@@ -1,4 +1,4 @@
-import { getPlayerCharacterProperty, setPlayerCharacterProperty } from "../../../local-storage-util.js";
+import { globalPlayerCharacter } from "../../objects/PlayerCharacter.js";
 import { ApiCategory, getApiResultsAsync } from "../../api.js";
 import { getEmptyOption, getSelectOption } from "../../util.js";
 import { updateRaceFeaturesSection } from "../init-race-features.js";
@@ -13,11 +13,11 @@ export const initRace = async function() {
 
     const select = document.getElementById("race_s");
 
-    select.value = getPlayerCharacterProperty("race");
+    select.value = globalPlayerCharacter.race;
     select.onchange = async function() {
-        setPlayerCharacterProperty("race", this.value);
+        globalPlayerCharacter.setProperty("race", this.value);
         await updateSubraceSelection();
-        setPlayerCharacterProperty("subrace", null);
+        globalPlayerCharacter.setProperty("subrace", null);
         await updateRaceFeaturesSection();
         await updateSubraceFeaturesSection();
     }
@@ -32,9 +32,9 @@ export const initSubRace = async function() {
 
     const select = document.getElementById("subrace_s");
 
-    select.value = getPlayerCharacterProperty("subrace");
+    select.value = globalPlayerCharacter.subrace;
     select.onchange = async function() {
-        setPlayerCharacterProperty("subrace", this.value);
+        globalPlayerCharacter.setProperty("subrace", this.value);
         await updateSubraceFeaturesSection();
     }
 }
@@ -61,7 +61,7 @@ const updateSubraceSelection = async function() {
  */
 const getAllSubraces = async function() {
 
-    const raceIndex = getPlayerCharacterProperty("race");
+    const raceIndex = globalPlayerCharacter.race;
     const race = await getApiResultsAsync(ApiCategory.Races, raceIndex);
 
     if (!race.subraces || race.subraces.length === 0) {

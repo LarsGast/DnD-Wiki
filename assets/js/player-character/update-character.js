@@ -1,4 +1,4 @@
-import { getDefaultPlayerCharacter } from "../local-storage-util.js";
+import { PlayerCharacter } from "./objects/PlayerCharacter.js";
 import { update_version_2 } from "./update/update-version-2.js";
 
 /**
@@ -43,7 +43,7 @@ export const updateCharacter = function(playerCharacter) {
  * @param {JSON} playerCharacter 
  */
 const cleanPlayerCharacter = function(playerCharacter) {
-    const defaultCharacter = getDefaultPlayerCharacter();
+    const defaultCharacter = PlayerCharacter.getDefault();
 
     // Remove unwanted keys
     for (const key in playerCharacter) {

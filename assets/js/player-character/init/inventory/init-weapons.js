@@ -1,4 +1,4 @@
-import { getPlayerCharacterProperty, setPlayerCharacterProperty } from "../../../local-storage-util.js";
+import { globalPlayerCharacter } from "../../objects/PlayerCharacter.js";
 import { ApiCategory, getApiResultsAsync } from "../../api.js";
 import { getAbilityScoreModifier, getProficiencyModifier, isProficientInWeapon } from "../../util.js";
 
@@ -47,7 +47,7 @@ const saveWeaponInventory = function() {
         };
     })
 
-    setPlayerCharacterProperty("inventory_weapons", weapons);
+    globalPlayerCharacter.setProperty("inventory_weapons", weapons);
 }
 
 /**
@@ -55,7 +55,7 @@ const saveWeaponInventory = function() {
  */
 const initWeaponTable = async function() {
 
-    const weapons = getPlayerCharacterProperty("inventory_weapons");
+    const weapons = globalPlayerCharacter.inventoryWeapons;
 
     for (const weapon of weapons) {        
         const weaponFromApi = await getApiResultsAsync(ApiCategory.Equipment, weapon.index);
