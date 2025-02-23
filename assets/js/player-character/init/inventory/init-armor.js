@@ -45,7 +45,7 @@ const saveArmorInventory = function() {
         };
     })
 
-    globalPlayerCharacter.setProperty("inventory_armor", armors);
+    globalPlayerCharacter.setProperty("inventoryArmor", armors);
 }
 
 /**

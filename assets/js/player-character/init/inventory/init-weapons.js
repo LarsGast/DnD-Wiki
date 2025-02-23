@@ -47,7 +47,7 @@ const saveWeaponInventory = function() {
         };
     })
 
-    globalPlayerCharacter.setProperty("inventory_weapons", weapons);
+    globalPlayerCharacter.setProperty("inventoryWeapons", weapons);
 }
 
 /**
