@@ -11,7 +11,7 @@ const LATEST_VERSION_NUMBER = 2;
  * Update an old player character object to a new version.
  * This function should be able to convert a PC from any old version to any newer version.
  * Expand this function whenever a breaking change is performed on the PC blueprint.
- * @param {JSON} playerCharacter Full JSON object of the character.
+ * @param {PlayerCharacter} playerCharacter
  */
 export const updateCharacter = function(playerCharacter) {
 
@@ -38,9 +38,9 @@ export const updateCharacter = function(playerCharacter) {
 }
 
 /**
- * Clean the PC JSON so it EXACTLY has the properties needed for the PC-Builder page.
+ * Clean the PC so it EXACTLY has the properties needed for the PC-Builder page.
  * This is always based on the current version of the PC blueprint.
- * @param {JSON} playerCharacter 
+ * @param {PlayerCharacter} playerCharacter 
  */
 const cleanPlayerCharacter = function(playerCharacter) {
     const defaultCharacter = PlayerCharacter.getDefault();
