@@ -1,5 +1,6 @@
 import { getPlayerCharacterProperty, setPlayerCharacterProperty } from "../../../local-storage-util.js";
 import { ApiCategory, getApiResultsAsync } from "../../api.js";
+import { getEmptyOption, getSelectOption } from "../../util.js";
 
 /**
  * Initialize the race select element.
@@ -11,13 +12,42 @@ export const initRace = function() {
     select.value = getPlayerCharacterProperty("race");
     select.onchange = async function() {
         setPlayerCharacterProperty("race", this.value);
-        await updateRaceFeaturesSection(this.value);
+        await updateRaceFeaturesSection();
+        await updateSubraceSelection();
     }
 }
 
-const updateRaceFeaturesSection = async function(raceIndex) {
+export const initSubRace = async function() {
 
-    const race = await getApiResultsAsync(ApiCategory.Races, raceIndex);
+    await updateSubraceSelection();
+
+    const select = document.getElementById("subrace_s");
+
+    select.value = getPlayerCharacterProperty("subrace");
+    select.onchange = async function() {
+        setPlayerCharacterProperty("subrace", this.value);
+        await updateRaceFeaturesSection();
+    }
+}
+
+const updateSubraceSelection = async function() {
+    const race = await getApiResultsAsync(ApiCategory.Races, getPlayerCharacterProperty("race"));
+
+    const select = document.getElementById("subrace_s");
+    select.replaceChildren();
+
+    select.appendChild(getEmptyOption());
+
+    race.subraces.forEach(subrace => {
+        select.appendChild(getSelectOption(subrace.name, subrace.index));
+    });
+
+    setPlayerCharacterProperty("subrace", null);
+}
+
+const updateRaceFeaturesSection = async function() {
+
+    const race = await getApiResultsAsync(ApiCategory.Races, getPlayerCharacterProperty("race"));
 
     setRaceFeaturesProperty(race, "name");
     setRaceFeaturesAbilityBonuses(race);

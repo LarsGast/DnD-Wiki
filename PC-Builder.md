@@ -65,6 +65,7 @@ permalink: /pc-builder/
             <ul id="class-and-level-list"></ul>
         </li>
         <li><label>Race: <select id="race_s"></select></label></li>
+        <li><label>Subrace: <select id="subrace_s"></select></label></li>
         <li><label>Background: <select id="background_s"></select></label></li>
         <li><label>Alignment: <select id="alignment_s"></select></label></li>
     </ul>

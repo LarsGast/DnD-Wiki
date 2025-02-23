@@ -83,6 +83,7 @@ export const getDefaultPlayerCharacter = function() {
         name: null,
         classes: [],
         race: null,
+        subrace: null,
         background: null,
         alignment: null,
         str: 10,
