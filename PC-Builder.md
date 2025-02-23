@@ -177,9 +177,9 @@ permalink: /pc-builder/
     <details open>
         <summary><h2>Race features: <span id="race_name"></span></h2></summary>
         <h3>Ability Bonuses</h3>
-        <p id="race_ability_bonuses"></p>
+        <ul id="race_ability_bonuses"></ul>
         <h3>Proficiencies</h3>
-        <p id="race_starting_proficiencies"></p>
+        <ul id="race_starting_proficiencies"></ul>
         <h3>Speed</h3>
         <p id="race_speed"></p>
         <h3>Alignment</h3>

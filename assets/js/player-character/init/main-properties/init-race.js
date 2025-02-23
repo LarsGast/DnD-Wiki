@@ -37,15 +37,38 @@ const setRaceFeaturesProperty = function(race, propertyName) {
 }
 
 const setRaceFeaturesAbilityBonuses = function(race) {
-    const p = document.getElementById("race_ability_bonuses");
+    const ul = document.getElementById("race_ability_bonuses");
+    ul.replaceChildren();
 
-    p.textContent = race.ability_bonuses.map(ab => `${ab.ability_score.name}+${ab.bonus}`).join(", ") + ".";
+    for (const abilityBonus of race.ability_bonuses) {
+        const li = document.createElement('li');
+
+        li.textContent = `${abilityBonus.ability_score.name} + ${abilityBonus.bonus}`;
+
+        ul.appendChild(li);
+    }
 }
 
 const setRaceFeatureStartingProficiencies = function(race) {
-    const p = document.getElementById("race_starting_proficiencies");
+    const ul = document.getElementById("race_starting_proficiencies");
+    ul.replaceChildren();
 
-    p.textContent = race.starting_proficiencies.map(p => p.name).join(", ") + ".";
+    if (race.starting_proficiencies.length === 0) {
+        const li = document.createElement('li');
+
+        li.textContent = "none";
+
+        ul.appendChild(li);
+        return;
+    }
+
+    for (const proficiency of race.starting_proficiencies) {
+        const li = document.createElement('li');
+
+        li.textContent = proficiency.name;
+
+        ul.appendChild(li);
+    }
 }
 
 const setRaceFeaturesSize = function(race) {
