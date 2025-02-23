@@ -123,15 +123,15 @@ export class PlayerCharacter {
 
     /**
      * All weapons in the inventory of the character.
-     * Each item matches the "index" property in the 5e API.
-     * @type {string[]}
+     * Each item.index matches the "index" property in the 5e API.
+     * @type {object[]}
      */
     inventoryWeapons = [];
 
     /**
      * All armor in the inventory of the character.
-     * Each item matches the "index" property in the 5e API.
-     * @type {string[]}
+     * Each item.index matches the "index" property in the 5e API.
+     * @type {object[]}
      */
     inventoryArmor = [];
 
