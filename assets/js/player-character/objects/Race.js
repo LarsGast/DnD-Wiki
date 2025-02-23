@@ -1,5 +1,6 @@
 import { ApiCategory, getApiResultsAsync } from "../api.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
+import { Trait } from "./Trait.js";
 
 export class Race extends ApiObjectInfo {
 
@@ -79,6 +80,20 @@ export class Race extends ApiObjectInfo {
      */
     static async getAsync(index) {
         return new Race(await getApiResultsAsync(ApiCategory.Races, index));
+    }
+
+    /**
+     * Get the full object of all traits linked to this race.
+     * @returns {Promise<Trait[]>}
+     */
+    async getAllTraitsAsync() {
+        const traits = [];
+
+        for (const traitInfo of this.traits) {
+            traits.push(await Trait.getAsync(traitInfo.index));
+        }
+
+        return traits;
     }
 }
 

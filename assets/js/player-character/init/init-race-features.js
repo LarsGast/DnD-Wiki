@@ -1,6 +1,6 @@
 import { globalPlayerCharacter } from "../objects/PlayerCharacter.js";
-import { ApiCategory, getApiResultsAsync } from "../api.js";
 import { Race } from "../objects/Race.js";
+import { Trait } from "../objects/Trait.js";
 
 /**
  * Update the race features section based on the current race.
@@ -112,8 +112,9 @@ const setTraits = async function(race) {
     const div = document.getElementById("race_traits");
     div.replaceChildren();
 
-    for (const traitInfo of race.traits) {
-        const trait = await getApiResultsAsync(ApiCategory.Traits, traitInfo.index);
+    const allTraits = await race.getAllTraitsAsync();
+
+    for (const trait of allTraits) {
         div.appendChild(getRaceTraitHeading(trait));
         div.appendChild(getRaceTraitDescription(trait));
     }
@@ -121,7 +122,7 @@ const setTraits = async function(race) {
 
 /**
  * Gets the heading of the given trait.
- * @param {JSON} trait Full trait object as per the SRD API.
+ * @param {Trait} trait
  * @returns {HTMLHeadingElement}
  */
 const getRaceTraitHeading = function(trait) {
@@ -134,7 +135,7 @@ const getRaceTraitHeading = function(trait) {
 
 /**
  * Gets the description of the given trait.
- * @param {JSON} trait Full trait object as per the SRD API.
+ * @param {Trait} trait
  * @returns {HTMLParagraphElement}
  */
 const getRaceTraitDescription = function(trait) {
