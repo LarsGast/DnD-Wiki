@@ -331,7 +331,7 @@ export const saveNewWeaponProficiencies = function(weaponName, add) {
         }
     }
 
-    globalPlayerCharacter.setProperty("weapon_proficiencies", weaponProficiencies);
+    globalPlayerCharacter.setProperty("weaponProficiencies", weaponProficiencies);
 }
 
 /**
@@ -354,7 +354,7 @@ export const saveNewArmorProficiencies = function(armorName, add) {
         }
     }
 
-    globalPlayerCharacter.setProperty("armor_proficiencies", armorProficiencies);
+    globalPlayerCharacter.setProperty("armorProficiencies", armorProficiencies);
 }
 
 /**
