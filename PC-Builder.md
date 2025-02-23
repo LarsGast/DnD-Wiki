@@ -175,7 +175,7 @@ permalink: /pc-builder/
 </section>
 
 <section id="race-features">
-    <details open>
+    <details>
         <summary><h2>Race features (<span id="race_name">choose race</span>)</h2></summary>
         <h3>Ability Bonuses</h3>
         <ul id="race_ability_bonuses"></ul>
@@ -195,7 +195,7 @@ permalink: /pc-builder/
 </section>
 
 <section id="subrace-features">
-    <details open>
+    <details>
         <summary><h2>Subrace features (<span id="subrace_name"></span>)</h2></summary>
         <h3>Description</h3>
         <p id="subrace_description"></p>
