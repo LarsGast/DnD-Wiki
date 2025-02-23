@@ -1,4 +1,5 @@
 import { ApiCategory, getApiResultsAsync } from "../api.js";
+import { AbilityBonus } from "./AbilityBonus.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
 import { Trait } from "./Trait.js";
 
@@ -95,22 +96,4 @@ export class Race extends ApiObjectInfo {
 
         return traits;
     }
-}
-
-/**
- * Has information about the bonuses to abilities a race can have.
- */
-class AbilityBonus {
-
-    /**
-     * Ability score that the bonus gets applied to.
-     * @type {ApiObjectInfo}
-     */
-    ability_score;
-
-    /**
-     * The height of the bonus.
-     * @type {number}
-     */
-    bonus;
 }
