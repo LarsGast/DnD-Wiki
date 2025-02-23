@@ -14,9 +14,10 @@ export const initRace = async function() {
     select.value = getPlayerCharacterProperty("race");
     select.onchange = async function() {
         setPlayerCharacterProperty("race", this.value);
-        await updateRaceFeaturesSection();
         await updateSubraceSelection();
         setPlayerCharacterProperty("subrace", null);
+        await updateRaceFeaturesSection();
+        await updateSubraceFeaturesSection();
     }
 }
 
@@ -62,7 +63,17 @@ const updateRaceFeaturesSection = async function() {
 
 const updateSubraceFeaturesSection = async function() {
 
-    const subrace = await getApiResultsAsync(ApiCategory.Subraces, getPlayerCharacterProperty("subrace"));
+    const subRaceIndex = getPlayerCharacterProperty("subrace");
+    const section = document.getElementById('subrace-features');
+
+    if (!subRaceIndex) {
+        section.style.display = "none";
+        return;
+    }
+        
+    section.style.display = "block";
+
+    const subrace = await getApiResultsAsync(ApiCategory.Subraces, subRaceIndex);
 
     setSubraceFeaturesProperty(subrace, "name");
     setSubraceDescriptionProperty(subrace);
