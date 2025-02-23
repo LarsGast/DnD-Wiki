@@ -35,12 +35,18 @@ export const initSubRace = async function() {
 }
 
 const updateSubraceSelection = async function() {
-    const race = await getApiResultsAsync(ApiCategory.Races, getPlayerCharacterProperty("race"));
 
     const select = document.getElementById("subrace_s");
     select.replaceChildren();
 
     select.appendChild(getEmptyOption());
+
+    const raceIndex = getPlayerCharacterProperty("race")
+    if (!raceIndex) {
+        return;
+    }
+
+    const race = await getApiResultsAsync(ApiCategory.Races, raceIndex);
 
     race.subraces.forEach(subrace => {
         select.appendChild(getSelectOption(subrace.name, subrace.index));
@@ -49,7 +55,13 @@ const updateSubraceSelection = async function() {
 
 const updateRaceFeaturesSection = async function() {
 
-    const race = await getApiResultsAsync(ApiCategory.Races, getPlayerCharacterProperty("race"));
+    const raceIndex = getPlayerCharacterProperty("race")
+
+    if (!raceIndex) {
+        return;
+    }
+
+    const race = await getApiResultsAsync(ApiCategory.Races, raceIndex);
 
     setRaceFeaturesProperty(race, "name");
     setRaceFeaturesAbilityBonuses(race);
@@ -70,7 +82,7 @@ const updateSubraceFeaturesSection = async function() {
         section.style.display = "none";
         return;
     }
-        
+    
     section.style.display = "block";
 
     const subrace = await getApiResultsAsync(ApiCategory.Subraces, subRaceIndex);
