@@ -836,3 +836,25 @@
     - name: quest
     - name: male
     - name: hostile
+
+- name: Kapitein Kaalbaard
+  published: false
+  properties:
+    - name: Volledige naam
+      value: Jan Borstham
+    - name: Bijnaam
+      value: Kapitein Kaalbaard
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 35-40
+    - name: Bevindt zich op dit moment in
+      value: Onbekend
+    - name: Talen
+      value: Common
+  icons:
+    - name: quest
+    - name: male
+    - name: hostile
