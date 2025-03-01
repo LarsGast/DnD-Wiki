@@ -814,3 +814,25 @@
     - name: question
     - name: male
     - name: hostile
+
+- name: Kapitein Snorbaard
+  published: false
+  properties:
+    - name: Volledige naam
+      value: Ben Geelgoud
+    - name: Bijnaam
+      value: Kapitein Snorbaard
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: 35-40
+    - name: Bevindt zich op dit moment in
+      value: Onbekend
+    - name: Talen
+      value: Common, Elfs
+  icons:
+    - name: quest
+    - name: male
+    - name: hostile
