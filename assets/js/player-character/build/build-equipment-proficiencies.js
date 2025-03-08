@@ -1,4 +1,5 @@
 import { ApiCategory, getApiResultsAsync, EquipmentCategoryIndex } from "../api.js";
+import { EquipmentCategory } from "../objects/EquipmentCategory.js";
 import { getProficiencyCheckbox } from "../util.js";
 
 /**
@@ -69,7 +70,7 @@ const getProficienciesContainerHeader = function(title) {
 const getProficienciesContainerBody = async function(equipmentCategoryIndex) {
     const ul = document.createElement('ul');
 
-    const results = await getApiResultsAsync(ApiCategory.EquipmentCategories, equipmentCategoryIndex);
+    const results = await EquipmentCategory.getAsync(equipmentCategoryIndex);
 
     ul.classList.add('no-style-list');
     ul.classList.add('proficiencies-list');
