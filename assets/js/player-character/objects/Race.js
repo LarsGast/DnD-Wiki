@@ -82,12 +82,6 @@ export class Race extends ApiBaseObject {
      * @returns {Promise<Trait[]>}
      */
     async getAllTraitsAsync() {
-        const traits = [];
-
-        for (const traitInfo of this.traits) {
-            traits.push(await Trait.getAsync(traitInfo.index));
-        }
-
-        return traits;
+        return Promise.all(this.traits.map(traitInfo => Trait.getAsync(traitInfo.index)));
     }
 }

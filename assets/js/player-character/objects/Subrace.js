@@ -65,12 +65,6 @@ export class Subrace extends ApiBaseObject {
      * @returns {Promise<Trait[]>}
      */
     async getAllTraitsAsync() {
-        const traits = [];
-
-        for (const traitInfo of this.racial_traits) {
-            traits.push(await Trait.getAsync(traitInfo.index));
-        }
-
-        return traits;
+        return Promise.all(this.racial_traits.map(traitInfo => Trait.getAsync(traitInfo.index)));
     }
 }
