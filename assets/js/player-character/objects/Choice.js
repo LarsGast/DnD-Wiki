@@ -13,7 +13,7 @@ export class Choice {
     
     /**
      * The type of object that is being chosen.
-     * Examples: proficiencies, languages .
+     * Examples: proficiencies, languages.
      * @type {string}
      */
     type;
@@ -38,7 +38,22 @@ class ChoiceFrom {
     option_set_type;
 
     /**
+     * A URL leading to all options.
+     * undefined if option_set_type is not resource_list_url.
+     * @type {string}
+     */
+    resource_list_url;
+
+    /**
+     * Object with information about the equipment category of the choice.
+     * undefined if option_set_type is not equipment_category.
+     * @type {string}
+     */
+    equipment_category;
+
+    /**
      * The options to choose from.
+     * undefined if option_set_type is not options.
      * @type {ChoiceOption[]}
      */
     options;

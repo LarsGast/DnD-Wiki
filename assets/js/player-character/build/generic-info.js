@@ -1,4 +1,5 @@
 import { getApiResultsAsync, ApiCategory } from "../api.js";
+import { Background } from "../objects/Background.js";
 import { Race } from "../objects/Race.js";
 import { getEmptyOption, getSelectOption } from "../util.js";
 
@@ -30,7 +31,7 @@ const fillRaceSelect = async function() {
  * Fill the background select element.
  */
 const fillBackgroundSelect = async function() {
-    const allBackgrounds = await getApiResultsAsync(ApiCategory.Backgrounds);
+    const allBackgrounds = await Background.getAll();
 
     const select = document.getElementById("background_s");
 

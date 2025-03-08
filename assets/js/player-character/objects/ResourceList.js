@@ -12,7 +12,7 @@ export class ResourceList {
     /**
      * Information about the each resource.
      * Not the full resource, but includes the index, name, and url to the resource.
-     * @type {ApiObjectInfo}
+     * @type {ApiObjectInfo[]}
      */
     results;
 }
