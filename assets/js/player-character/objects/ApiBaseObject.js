@@ -1,5 +1,6 @@
 import { ApiCategory, getApiResultsAsync } from "../api.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
+import { ResourceList } from "./ResourceList.js";
 
 export class ApiBaseObject extends ApiObjectInfo {
 
