@@ -205,7 +205,7 @@ export const isProficientInArmor = function(armorName) {
 
 /**
  * Get the modifier of the given skill for the PC in local storage.
- * @param {JSON} skill 
+ * @param {Skill} skill
  * @returns {number}
  */
 export const getSkillModifier = function(skill) {
@@ -303,7 +303,7 @@ export const enableOrDisableProficiencyCheckbox = function(skillIndex) {
 
 /**
  * Update the modifier for the given skill.
- * @param {object} skill 
+ * @param {Skill} skill
  */
 export const updateSkillModifier = function(skill) {
     const span = document.getElementById(`${skill.index}_m`);

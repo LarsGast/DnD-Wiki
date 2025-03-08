@@ -1,4 +1,5 @@
-import { ApiCategory, getApiResultsAsync, EquipmentCategoryIndex } from "../api.js";
+import { EquipmentCategoryIndex } from "../api.js";
+import { ApiObjectInfo } from "../objects/ApiObjectInfo.js";
 import { EquipmentCategory } from "../objects/EquipmentCategory.js";
 import { getProficiencyCheckbox } from "../util.js";
 
@@ -100,7 +101,7 @@ const getNumberOfColumnsClassName = function(listLength) {
 
 /**
  * Get a single li item to indicate proficiency.
- * @param {JSON} equipment Full equipment object from the SRD API.
+ * @param {ApiObjectInfo} equipment Full equipment object from the SRD API.
  * @returns {HTMLLIElement}
  */
 const getProficiencyItem = function(equipment) {

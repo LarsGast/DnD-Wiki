@@ -1,5 +1,4 @@
 import { globalPlayerCharacter } from "../../objects/PlayerCharacter.js";
-import { ApiCategory, getApiResultsAsync } from "../../api.js";
 import { getAbilityScoreModifier } from "../../util.js";
 import { Armor } from "../../objects/equipment/Armor.js";
 
@@ -96,7 +95,7 @@ const initAddArmorButton = function() {
 
 /**
  * Add a armor row to the armor table.
- * @param {object} armor Full armor object.
+ * @param {Armor} armor Full armor object.
  * @param {string} ability Optional parameter. Required for building the initial table from storage. Used to specify the value of a dropdown.
  */
 const addArmorRow = function(armor, ability = null) {
@@ -113,7 +112,7 @@ const addArmorRow = function(armor, ability = null) {
 
 /**
  * Get a new row for the armor table.
- * @param {object} armor Full armor object.
+ * @param {Armor} armor Full armor object.
  * @returns {HTMLTableRowElement}
  */
 const getNewRow = function(armor) {
@@ -134,7 +133,7 @@ const getNewRow = function(armor) {
 
 /**
  * Get a new cell for the "Name" column.
- * @param {object} armor Full armor object.
+ * @param {Armor} armor Full armor object.
  * @returns {HTMLTableCellElement}
  */
 const getNewNameCell = function(armor) {
@@ -147,7 +146,7 @@ const getNewNameCell = function(armor) {
 
 /**
  * Get a new cell for the "Type" column.
- * @param {object} armor Full armor object.
+ * @param {Armor} armor Full armor object.
  * @returns {HTMLTableCellElement}
  */
 const getNewTypeCell = function(armor) {
@@ -160,7 +159,7 @@ const getNewTypeCell = function(armor) {
 
 /**
  * Get a new cell for the "Minimum Strength" column.
- * @param {object} armor Full armor object.
+ * @param {Armor} armor Full armor object.
  * @returns {HTMLTableCellElement}
  */
 const getNewStrengthRequirementCell = function(armor) {
@@ -173,7 +172,7 @@ const getNewStrengthRequirementCell = function(armor) {
 
 /**
  * Get a new cell for the "Disadvantage on stealth" column.
- * @param {object} armor Full armor object.
+ * @param {Armor} armor Full armor object.
  * @returns {HTMLTableCellElement}
  */
 const getNewDisadvantageOnStealthCell = function(armor) {
@@ -186,7 +185,7 @@ const getNewDisadvantageOnStealthCell = function(armor) {
 
 /**
  * Get a new cell for the "Armor class" column.
- * @param {object} armor Full armor object.
+ * @param {Armor} armor Full armor object.
  * @returns {HTMLTableCellElement}
  */
 const getNewArmorClassCell = function(armor) {
@@ -209,7 +208,7 @@ const getNewArmorClassCell = function(armor) {
 
 /**
  * Get a new cell for the "Effective armor class" column.
- * @param {object} armor Full armor object.
+ * @param {Armor} armor Full armor object.
  * @returns {HTMLTableCellElement} Empty. Will get filled in another function.
  */
 const getNewEffectiveArmorClassCell = function(armor) {
@@ -220,7 +219,7 @@ const getNewEffectiveArmorClassCell = function(armor) {
 
 /**
  * Get a new cell for the "Weight" column.
- * @param {object} armor Full armor object.
+ * @param {Armor} armor Full armor object.
  * @returns {HTMLTableCellElement}
  */
 const getNewWeightCell = function(armor) {
@@ -233,7 +232,7 @@ const getNewWeightCell = function(armor) {
 
 /**
  * Get a new cell for the "Buttons" column.
- * @param {object} armor Full armor object.
+ * @param {Armor} armor Full armor object.
  * @returns {HTMLTableCellElement}
  */
 const getNewButtonsCell = function() {
@@ -281,7 +280,7 @@ const updateEffectiveArmorClassCell = async function(row) {
 
 /**
  * Get the modifier for the given armor.
- * @param {object} armor Full armor object.
+ * @param {Armor} armor Full armor object.
  * @returns {number}
  */
 const getArmorModifier = function(armor) {

@@ -37,7 +37,7 @@ const initSkillListItem = async function(skillListItem) {
 
 /**
  * Initialize the proficiency checkbox of a skill item.
- * @param {object} skill 
+ * @param {Skill} skill 
  */
 const initProficiencyCheckbox = function(skill) {
 
@@ -52,7 +52,7 @@ const initProficiencyCheckbox = function(skill) {
 
 /**
  * Add or remove a proficiency in a skill.
- * @param {object} skill
+ * @param {Skill} skill
  * @param {boolean} add Wether the proficiency is added or removed.
  */
 const changeProficiency = function(skill, add) {
@@ -63,7 +63,7 @@ const changeProficiency = function(skill, add) {
 
 /**
  * Initialize the expertise checkbox of a skill item.
- * @param {object} skill 
+ * @param {Skill} skill
  */
 const initExpertiseCheckbox = function(skill) {
 
@@ -78,7 +78,7 @@ const initExpertiseCheckbox = function(skill) {
 
 /**
  * Add or remove a expertise in a skill.
- * @param {object} skill
+ * @param {Skill} skill
  * @param {boolean} add Wether the expertise is added or removed.
  */
 const changeExpertise = function(skill, add) {
@@ -89,7 +89,7 @@ const changeExpertise = function(skill, add) {
 
 /**
  * Initialize the modifier span of a skill item.
- * @param {object} skill 
+ * @param {Skill} skill
  */
 const initSkillModifierSpan = function(skill) {
 
