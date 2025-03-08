@@ -34,15 +34,6 @@ export class Armor extends Equipment {
         super(data);
         Object.assign(this, data);
     }
-    
-    /**
-     * Get a single armor from the 5e SRD API.
-     * @param {string} index Index as specified in the API.
-     * @returns {Promise<Armor>}
-     */
-    static async getAsync(index) {
-        return await super.getAsync(index);
-    }
 }
 
 /**

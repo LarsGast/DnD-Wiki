@@ -55,15 +55,6 @@ export class Weapon extends Equipment {
         super(data);
         Object.assign(this, data);
     }
-    
-    /**
-     * Get a single weapon from the 5e SRD API.
-     * @param {string} index Index as specified in the API.
-     * @returns {Promise<Weapon>}
-     */
-    static async getAsync(index) {
-        return await super.getAsync(index);
-    }
 }
 
 class Damage {
