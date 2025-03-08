@@ -1,4 +1,4 @@
-import { getApiResultsAsync, ApiCategory } from "../api.js";
+import { Alignment } from "../objects/Alignment.js";
 import { Background } from "../objects/Background.js";
 import { Race } from "../objects/Race.js";
 import { getEmptyOption, getSelectOption } from "../util.js";
@@ -46,7 +46,7 @@ const fillBackgroundSelect = async function() {
  * Fill the alignment select element.
  */
 const fillAlignmentSelect = async function() {
-    const allAlignments = await getApiResultsAsync(ApiCategory.Alignments);
+    const allAlignments = await Alignment.getAll();
 
     const select = document.getElementById("alignment_s");
 
