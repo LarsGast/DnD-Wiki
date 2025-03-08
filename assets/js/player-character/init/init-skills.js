@@ -1,4 +1,4 @@
-import { ApiCategory, getApiResultsAsync } from "../api.js";
+import { Skill } from "../objects/Skill.js";
 import { 
     isProficientInSkill,
     isExpertInSkill,
@@ -28,7 +28,7 @@ export const initSkills = async function() {
  */
 const initSkillListItem = async function(skillListItem) {
 
-    const skill = await getApiResultsAsync(ApiCategory.Skills, skillListItem.id)
+    const skill = await Skill.getAsync(skillListItem.id)
 
     initProficiencyCheckbox(skill);
     initExpertiseCheckbox(skill);

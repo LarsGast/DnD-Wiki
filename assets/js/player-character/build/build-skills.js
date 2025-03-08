@@ -1,4 +1,5 @@
 import { ApiCategory, getApiResultsAsync } from '../api.js';
+import { Skill } from '../objects/Skill.js';
 import { getExpertiseCheckbox, getProficiencyCheckbox, getProficiencyModifierSpan} from '../util.js';
 
 export const buildSkills = async function() {
@@ -55,7 +56,7 @@ const getSkillLabel = async function(skillIndex) {
 const getSkillNameSpan = async function(skillIndex) {
     const span = document.createElement('span');
 
-    const skill = await getApiResultsAsync(ApiCategory.Skills, skillIndex);
+    const skill = await Skill.getAsync(skillIndex);
     
     span.textContent = ` ${skill.name} (${skill.ability_score.name})`;
 
