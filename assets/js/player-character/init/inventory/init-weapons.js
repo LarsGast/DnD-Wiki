@@ -1,6 +1,7 @@
 import { globalPlayerCharacter } from "../../objects/PlayerCharacter.js";
 import { ApiCategory, getApiResultsAsync } from "../../api.js";
 import { getAbilityScoreModifier, getProficiencyModifier, isProficientInWeapon } from "../../util.js";
+import { Weapon } from "../../objects/equipment/Weapon.js";
 
 /**
  * Init the weapons section of the inventory.
@@ -58,7 +59,7 @@ const initWeaponTable = async function() {
     const weapons = globalPlayerCharacter.inventoryWeapons;
 
     for (const weapon of weapons) {        
-        const weaponFromApi = await getApiResultsAsync(ApiCategory.Equipment, weapon.index);
+        const weaponFromApi = await Weapon.getAsync(weapon.index);
         addWeaponRow(weaponFromApi, weapon.ability);
     }
 }
@@ -84,7 +85,7 @@ const initAddWeaponButton = function() {
 
     addWeaponButton.onclick = async () => {
         const weaponSelect = document.getElementById('weapon-select');
-        const weapon = await getApiResultsAsync(ApiCategory.Equipment, weaponSelect.value);
+        const weapon = await Weapon.getAsync(weaponSelect.value);
 
         addWeaponRow(weapon);
 

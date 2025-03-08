@@ -1,6 +1,7 @@
 import { globalPlayerCharacter } from "../../objects/PlayerCharacter.js";
 import { ApiCategory, getApiResultsAsync } from "../../api.js";
 import { getAbilityScoreModifier } from "../../util.js";
+import { Armor } from "../../objects/equipment/Armor.js";
 
 /**
  * Init the armor section of the inventory.
@@ -55,7 +56,7 @@ const initArmorTable = async function() {
 
     const armors = globalPlayerCharacter.inventoryArmor;
     for (const armor of armors) {
-        const armorFromApi = await getApiResultsAsync(ApiCategory.Equipment, armor.index);
+        const armorFromApi = await Armor.getAsync(armor.index);
         addArmorRow(armorFromApi);
     }
 }
@@ -81,7 +82,7 @@ const initAddArmorButton = function() {
 
     addArmorButton.onclick = async () => {
         const armorSelect = document.getElementById('armor-select');
-        const armor = await getApiResultsAsync(ApiCategory.Equipment, armorSelect.value);
+        const armor = await Armor.getAsync(armorSelect.value);
 
         addArmorRow(armor);
 
@@ -273,7 +274,7 @@ const getNewCell = function(headerName) {
 const updateEffectiveArmorClassCell = async function(row) {
     const effectiveArmorClassCell = row.querySelector('[headers="armor_effective-armor-class"]');
 
-    const armor = await getApiResultsAsync(ApiCategory.Equipment, row.dataset.index);
+    const armor = await Armor.getAsync(row.dataset.index);
 
     effectiveArmorClassCell.textContent = armor.armor_class.base + getArmorModifier(armor);
 }
