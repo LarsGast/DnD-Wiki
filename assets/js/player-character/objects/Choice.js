@@ -6,6 +6,12 @@ import { ApiObjectInfo } from "./ApiObjectInfo.js";
 export class Choice {
     
     /**
+     * Description of the choice to be made.
+     * @type {string}
+     */
+    desc;
+    
+    /**
      * How many of the choices can be chosen.
      * @type {number}
      */

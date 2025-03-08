@@ -1,7 +1,7 @@
 import { globalPlayerCharacter } from "../../objects/PlayerCharacter.js";
-import { ApiCategory, getApiResultsAsync } from "../../api.js"
 import { getEmptyOption, getSelectOption, limitClassLevel, updateAllSkillModifiers, updateClasses } from "../../util.js";
 import { updateAllWeaponModifiers } from "../inventory/init-weapons.js";
+import { Class } from "../../objects/Class.js";
 
 /**
  * Init the class and level property.
@@ -47,7 +47,7 @@ const getClassListItem = async function() {
  * @returns {HTMLSelectElement}
  */
 const getClassSelect = async function() {
-    const allClasses = await getApiResultsAsync(ApiCategory.Classes);
+    const allClasses = await Class.getAll();
 
     const select = document.createElement('select');
 

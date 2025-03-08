@@ -1,6 +1,7 @@
 import { ApiCategory, getApiResultsAsync } from "../api.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
 import { Choice } from "./Choice.js";
+import { Feature } from "./Feature.js";
 import { ResourceList } from "./ResourceList.js";
 
 export class Background extends ApiObjectInfo {
@@ -84,9 +85,4 @@ export class Background extends ApiObjectInfo {
     static async getAll() {
         return await getApiResultsAsync(ApiCategory.Backgrounds);
     }
-}
-
-class Feature {
-    name;
-    desc;
 }
