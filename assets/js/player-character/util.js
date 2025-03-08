@@ -1,5 +1,4 @@
 import { globalPlayerCharacter } from './objects/PlayerCharacter.js';
-import { ApiCategory, getApiResultsAsync } from './api.js';
 import { Skill } from './objects/Skill.js';
 
 /**
@@ -128,7 +127,7 @@ export const updateAbilityScoreModifier = function(abilityIndex) {
  * Update all skill modifiers at once.
  */
 export const updateAllSkillModifiers = async function() {
-    const skills = await getApiResultsAsync(ApiCategory.Skills);
+    const skills = await Skill.getAll();
 
     for (const skillInfo of skills.results) {
         const skill = await Skill.getAsync(skillInfo.index);

@@ -1,5 +1,6 @@
 import { ApiCategory, getApiResultsAsync } from "../api.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
+import { ResourceList } from "./ResourceList.js";
 
 export class Trait extends ApiObjectInfo {
 
@@ -63,5 +64,13 @@ export class Trait extends ApiObjectInfo {
      */
     static async getAsync(index) {
         return new Trait(await getApiResultsAsync(ApiCategory.Traits, index));
+    }
+
+    /**
+     * Get a all traits from the 5e SRD API.
+     * @returns {Promise<ResourceList>}
+     */
+    static async getAll() {
+        return await getApiResultsAsync(ApiCategory.Traits);
     }
 }

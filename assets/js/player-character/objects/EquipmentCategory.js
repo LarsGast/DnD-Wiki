@@ -1,5 +1,6 @@
 import { ApiCategory, getApiResultsAsync } from "../api.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
+import { ResourceList } from "./ResourceList.js";
 
 export class EquipmentCategory extends ApiObjectInfo {
 
@@ -25,5 +26,13 @@ export class EquipmentCategory extends ApiObjectInfo {
      */
     static async getAsync(index) {
         return new EquipmentCategory(await getApiResultsAsync(ApiCategory.EquipmentCategories, index));
+    }
+
+    /**
+     * Get a all equipment categories from the 5e SRD API.
+     * @returns {Promise<ResourceList>}
+     */
+    static async getAll() {
+        return await getApiResultsAsync(ApiCategory.EquipmentCategories);
     }
 }

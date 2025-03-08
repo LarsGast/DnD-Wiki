@@ -1,4 +1,3 @@
-import { ApiCategory, getApiResultsAsync } from '../api.js';
 import { Skill } from '../objects/Skill.js';
 import { getExpertiseCheckbox, getProficiencyCheckbox, getProficiencyModifierSpan} from '../util.js';
 
@@ -9,7 +8,7 @@ export const buildSkills = async function() {
 const fillSkillList = async function() {
     const ul = document.getElementById("skills-list");
 
-    const skills = await getApiResultsAsync(ApiCategory.Skills);
+    const skills = await Skill.getAll();
 
     for (const skill of skills.results) {
         ul.appendChild(await getSkillListItem(skill.index));

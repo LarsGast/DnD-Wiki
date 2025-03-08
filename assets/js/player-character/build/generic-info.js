@@ -1,4 +1,5 @@
 import { getApiResultsAsync, ApiCategory } from "../api.js";
+import { Race } from "../objects/Race.js";
 import { getEmptyOption, getSelectOption } from "../util.js";
 
 /**
@@ -14,7 +15,7 @@ export const fillGenericInfoElements = async function() {
  * Fill the race select element.
  */
 const fillRaceSelect = async function() {
-    const allRaces = await getApiResultsAsync(ApiCategory.Races);
+    const allRaces = await Race.getAll();
 
     const select = document.getElementById("race_s");
 

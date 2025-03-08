@@ -1,6 +1,7 @@
 import { ApiCategory, getApiResultsAsync } from "../api.js";
 import { AbilityBonus } from "./AbilityBonus.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
+import { ResourceList } from "./ResourceList.js";
 import { Trait } from "./Trait.js";
 
 export class Race extends ApiObjectInfo {
@@ -81,6 +82,14 @@ export class Race extends ApiObjectInfo {
      */
     static async getAsync(index) {
         return new Race(await getApiResultsAsync(ApiCategory.Races, index));
+    }
+
+    /**
+     * Get a all races from the 5e SRD API.
+     * @returns {Promise<ResourceList>}
+     */
+    static async getAll() {
+        return await getApiResultsAsync(ApiCategory.Races);
     }
 
     /**
