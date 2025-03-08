@@ -101,7 +101,7 @@ const getNumberOfColumnsClassName = function(listLength) {
 
 /**
  * Get a single li item to indicate proficiency.
- * @param {ApiObjectInfo} equipment Full equipment object from the SRD API.
+ * @param {ApiObjectInfo} equipment Equipment information object from the SRD API.
  * @returns {HTMLLIElement}
  */
 const getProficiencyItem = function(equipment) {
