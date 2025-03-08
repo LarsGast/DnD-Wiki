@@ -1,8 +1,10 @@
-import { ApiCategory, getApiResultsAsync } from "../api.js";
+import { ApiCategory } from "../api.js";
+import { ApiBaseObject } from "./ApiBaseObject.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
-import { ResourceList } from "./ResourceList.js";
 
-export class Skill extends ApiObjectInfo {
+export class Skill extends ApiBaseObject {
+
+    static apiCategory = ApiCategory.Skills;
 
     /**
      * Flavor description of the skill.
@@ -23,22 +25,5 @@ export class Skill extends ApiObjectInfo {
     constructor(data) {
         super(data);
         Object.assign(this, data);
-    }
-
-    /**
-     * Get a single skill from the 5e SRD API.
-     * @param {string} index Index as specified in the API.
-     * @returns {Promise<Skill>}
-     */
-    static async getAsync(index) {
-        return new Skill(await getApiResultsAsync(ApiCategory.Skills, index));
-    }
-
-    /**
-     * Get a all skills from the 5e SRD API.
-     * @returns {Promise<ResourceList>}
-     */
-    static async getAll() {
-        return await getApiResultsAsync(ApiCategory.Skills);
     }
 }

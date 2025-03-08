@@ -47,7 +47,7 @@ const getClassListItem = async function() {
  * @returns {HTMLSelectElement}
  */
 const getClassSelect = async function() {
-    const allClasses = await Class.getAll();
+    const allClasses = await Class.getAllAsync();
 
     const select = document.createElement('select');
 

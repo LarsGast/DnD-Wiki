@@ -1,11 +1,13 @@
 import { ApiCategory, getApiResultsAsync } from "../api.js";
 import { AbilityBonus } from "./AbilityBonus.js";
+import { ApiBaseObject } from "./ApiBaseObject.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
 import { Choice } from "./Choice.js";
-import { ResourceList } from "./ResourceList.js";
 import { Trait } from "./Trait.js";
 
-export class Subrace extends ApiObjectInfo {
+export class Subrace extends ApiBaseObject {
+
+    static apiCategory = ApiCategory.Subraces;
 
     /**
      * Flavor description of the subrace.
@@ -56,23 +58,6 @@ export class Subrace extends ApiObjectInfo {
     constructor(data) {
         super(data);
         Object.assign(this, data);
-    }
-
-    /**
-     * Get a single subrace from the 5e SRD API.
-     * @param {string} index Index as specified in the API.
-     * @returns {Promise<Subrace>}
-     */
-    static async getAsync(index) {
-        return new Subrace(await getApiResultsAsync(ApiCategory.Subraces, index));
-    }
-
-    /**
-     * Get a all subraces from the 5e SRD API.
-     * @returns {Promise<ResourceList>}
-     */
-    static async getAll() {
-        return await getApiResultsAsync(ApiCategory.Subraces);
     }
 
     /**

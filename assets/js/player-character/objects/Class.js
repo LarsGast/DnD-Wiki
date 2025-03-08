@@ -1,10 +1,12 @@
 import { ApiCategory, getApiResultsAsync } from "../api.js";
+import { ApiBaseObject } from "./ApiBaseObject.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
 import { Choice } from "./Choice.js";
 import { Feature } from "./Feature.js";
-import { ResourceList } from "./ResourceList.js";
 
-export class Class extends ApiObjectInfo {
+export class Class extends ApiBaseObject {
+
+    static apiCategory = ApiCategory.Classes;
 
     /**
      * Hit die of the class. (ex: 12 == 1d12).
@@ -79,23 +81,6 @@ export class Class extends ApiObjectInfo {
     constructor(data) {
         super(data);
         Object.assign(this, data);
-    }
-
-    /**
-     * Get a single class from the 5e SRD API.
-     * @param {string} index Index as specified in the API.
-     * @returns {Promise<Class>}
-     */
-    static async getAsync(index) {
-        return new Class(await getApiResultsAsync(ApiCategory.Classes, index));
-    }
-
-    /**
-     * Get a all classes from the 5e SRD API.
-     * @returns {Promise<ResourceList>}
-     */
-    static async getAll() {
-        return await getApiResultsAsync(ApiCategory.Classes);
     }
 }
 

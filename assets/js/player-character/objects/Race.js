@@ -1,10 +1,12 @@
-import { ApiCategory, getApiResultsAsync } from "../api.js";
+import { ApiCategory } from "../api.js";
 import { AbilityBonus } from "./AbilityBonus.js";
+import { ApiBaseObject } from "./ApiBaseObject.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
-import { ResourceList } from "./ResourceList.js";
 import { Trait } from "./Trait.js";
 
-export class Race extends ApiObjectInfo {
+export class Race extends ApiBaseObject {
+
+    static apiCategory = ApiCategory.Races;
 
     /**
      * Speed of the race in feet per round.
@@ -73,23 +75,6 @@ export class Race extends ApiObjectInfo {
     constructor(data) {
         super(data);
         Object.assign(this, data);
-    }
-
-    /**
-     * Get a single race from the 5e SRD API.
-     * @param {string} index Index as specified in the API.
-     * @returns {Promise<Race>}
-     */
-    static async getAsync(index) {
-        return new Race(await getApiResultsAsync(ApiCategory.Races, index));
-    }
-
-    /**
-     * Get a all races from the 5e SRD API.
-     * @returns {Promise<ResourceList>}
-     */
-    static async getAll() {
-        return await getApiResultsAsync(ApiCategory.Races);
     }
 
     /**

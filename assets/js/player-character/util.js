@@ -127,7 +127,7 @@ export const updateAbilityScoreModifier = function(abilityIndex) {
  * Update all skill modifiers at once.
  */
 export const updateAllSkillModifiers = async function() {
-    const skills = await Skill.getAll();
+    const skills = await Skill.getAllAsync();
 
     for (const skillInfo of skills.results) {
         const skill = await Skill.getAsync(skillInfo.index);

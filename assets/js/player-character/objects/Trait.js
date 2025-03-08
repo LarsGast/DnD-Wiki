@@ -1,8 +1,10 @@
-import { ApiCategory, getApiResultsAsync } from "../api.js";
+import { ApiCategory } from "../api.js";
+import { ApiBaseObject } from "./ApiBaseObject.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
-import { ResourceList } from "./ResourceList.js";
 
-export class Trait extends ApiObjectInfo {
+export class Trait extends ApiBaseObject {
+
+    static apiCategory = ApiCategory.Traits;
 
     /**
      * Description of the trait.
@@ -55,22 +57,5 @@ export class Trait extends ApiObjectInfo {
     constructor(data) {
         super(data);
         Object.assign(this, data);
-    }
-
-    /**
-     * Get a single trait from the 5e SRD API.
-     * @param {string} index Index as specified in the API.
-     * @returns {Promise<Trait>}
-     */
-    static async getAsync(index) {
-        return new Trait(await getApiResultsAsync(ApiCategory.Traits, index));
-    }
-
-    /**
-     * Get a all traits from the 5e SRD API.
-     * @returns {Promise<ResourceList>}
-     */
-    static async getAll() {
-        return await getApiResultsAsync(ApiCategory.Traits);
     }
 }

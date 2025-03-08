@@ -1,8 +1,10 @@
-import { ApiCategory, getApiResultsAsync } from "../api.js";
+import { ApiCategory } from "../api.js";
+import { ApiBaseObject } from "./ApiBaseObject.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
-import { ResourceList } from "./ResourceList.js";
 
-export class EquipmentCategory extends ApiObjectInfo {
+export class EquipmentCategory extends ApiBaseObject {
+
+    static apiCategory = ApiCategory.EquipmentCategories;
 
     /**
      * All equipments that fall under this category.
@@ -17,22 +19,5 @@ export class EquipmentCategory extends ApiObjectInfo {
     constructor(data) {
         super(data);
         Object.assign(this, data);
-    }
-
-    /**
-     * Get a single equipment category from the 5e SRD API.
-     * @param {string} index Index as specified in the API.
-     * @returns {Promise<EquipmentCategory>}
-     */
-    static async getAsync(index) {
-        return new EquipmentCategory(await getApiResultsAsync(ApiCategory.EquipmentCategories, index));
-    }
-
-    /**
-     * Get a all equipment categories from the 5e SRD API.
-     * @returns {Promise<ResourceList>}
-     */
-    static async getAll() {
-        return await getApiResultsAsync(ApiCategory.EquipmentCategories);
     }
 }

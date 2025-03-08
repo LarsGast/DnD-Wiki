@@ -1,7 +1,9 @@
-import { ApiCategory, getApiResultsAsync } from "../api.js";
-import { ApiObjectInfo } from "./ApiObjectInfo.js";
+import { ApiCategory } from "../api.js";
+import { ApiBaseObject } from "./ApiBaseObject.js";
 
-export class Alignment extends ApiObjectInfo {
+export class Alignment extends ApiBaseObject {
+
+    static apiCategory = ApiCategory.Alignments;
 
     /**
      * Abbreviation/initials/acronym for the alignment.
@@ -22,22 +24,5 @@ export class Alignment extends ApiObjectInfo {
     constructor(data) {
         super(data);
         Object.assign(this, data);
-    }
-
-    /**
-     * Get a single alignments from the 5e SRD API.
-     * @param {string} index Index as specified in the API.
-     * @returns {Promise<Alignment>}
-     */
-    static async getAsync(index) {
-        return new Alignment(await getApiResultsAsync(ApiCategory.Alignments, index));
-    }
-
-    /**
-     * Get a all alignments from the 5e SRD API.
-     * @returns {Promise<ResourceList>}
-     */
-    static async getAll() {
-        return await getApiResultsAsync(ApiCategory.Alignments);
     }
 }

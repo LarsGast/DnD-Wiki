@@ -1,10 +1,12 @@
 import { ApiCategory, getApiResultsAsync } from "../api.js";
+import { ApiBaseObject } from "./ApiBaseObject.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
 import { Choice } from "./Choice.js";
 import { Feature } from "./Feature.js";
-import { ResourceList } from "./ResourceList.js";
 
-export class Background extends ApiObjectInfo {
+export class Background extends ApiBaseObject {
+
+    static apiCategory = ApiCategory.Backgrounds;
 
     /**
      * Starting proficiencies for all new characters of this background.
@@ -67,22 +69,5 @@ export class Background extends ApiObjectInfo {
     constructor(data) {
         super(data);
         Object.assign(this, data);
-    }
-
-    /**
-     * Get a single background from the 5e SRD API.
-     * @param {string} index Index as specified in the API.
-     * @returns {Promise<Background>}
-     */
-    static async getAsync(index) {
-        return new Background(await getApiResultsAsync(ApiCategory.Backgrounds, index));
-    }
-
-    /**
-     * Get a all backgrounds from the 5e SRD API.
-     * @returns {Promise<ResourceList>}
-     */
-    static async getAll() {
-        return await getApiResultsAsync(ApiCategory.Backgrounds);
     }
 }

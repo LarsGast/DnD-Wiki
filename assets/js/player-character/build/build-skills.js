@@ -8,7 +8,7 @@ export const buildSkills = async function() {
 const fillSkillList = async function() {
     const ul = document.getElementById("skills-list");
 
-    const skills = await Skill.getAll();
+    const skills = await Skill.getAllAsync();
 
     for (const skill of skills.results) {
         ul.appendChild(await getSkillListItem(skill.index));

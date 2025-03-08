@@ -16,7 +16,7 @@ export const fillGenericInfoElements = async function() {
  * Fill the race select element.
  */
 const fillRaceSelect = async function() {
-    const allRaces = await Race.getAll();
+    const allRaces = await Race.getAllAsync();
 
     const select = document.getElementById("race_s");
 
@@ -31,7 +31,7 @@ const fillRaceSelect = async function() {
  * Fill the background select element.
  */
 const fillBackgroundSelect = async function() {
-    const allBackgrounds = await Background.getAll();
+    const allBackgrounds = await Background.getAllAsync();
 
     const select = document.getElementById("background_s");
 
@@ -46,7 +46,7 @@ const fillBackgroundSelect = async function() {
  * Fill the alignment select element.
  */
 const fillAlignmentSelect = async function() {
-    const allAlignments = await Alignment.getAll();
+    const allAlignments = await Alignment.getAllAsync();
 
     const select = document.getElementById("alignment_s");
 
