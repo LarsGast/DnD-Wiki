@@ -1,10 +1,9 @@
 import { globalPlayerCharacter } from "../../objects/PlayerCharacter.js";
-import { ApiCategory, getApiResultsAsync } from "../../api.js";
 import { getEmptyOption, getSelectOption } from "../../util.js";
 import { updateRaceFeaturesSection } from "../init-race-features.js";
 import { updateSubraceFeaturesSection } from "../init-subrace-features.js";
-import { Race } from "../../objects/Race.js";
-import { ApiObjectInfo } from "../../objects/ApiObjectInfo.js";
+import { Race } from "../../objects/api/resources/Race.js";
+import { ApiObjectInfo } from "../../objects/api/resources/ApiObjectInfo.js";
 
 /**
  * Initialize the race select element.

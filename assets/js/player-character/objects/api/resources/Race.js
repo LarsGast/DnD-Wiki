@@ -1,5 +1,5 @@
-import { ApiCategory } from "../api.js";
-import { AbilityBonus } from "./AbilityBonus.js";
+import { ApiCategory } from "../../../api.js";
+import { AbilityBonus } from "../helpers/AbilityBonus.js"
 import { ApiBaseObject } from "./ApiBaseObject.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
 import { Trait } from "./Trait.js";

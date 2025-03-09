@@ -1,8 +1,8 @@
-import { ApiCategory, getApiResultsAsync } from "../api.js";
-import { AbilityBonus } from "./AbilityBonus.js";
+import { ApiCategory } from "../../../api.js";
+import { AbilityBonus } from "../helpers/AbilityBonus.js";
 import { ApiBaseObject } from "./ApiBaseObject.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
-import { Choice } from "./Choice.js";
+import { Choice } from "../helpers/Choice.js";
 import { Trait } from "./Trait.js";
 
 export class Subrace extends ApiBaseObject {

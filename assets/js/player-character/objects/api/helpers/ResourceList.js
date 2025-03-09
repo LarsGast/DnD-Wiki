@@ -1,4 +1,4 @@
-import { ApiObjectInfo } from "./ApiObjectInfo.js";
+import { ApiObjectInfo } from "../resources/ApiObjectInfo.js";
 
 export class ResourceList {
 

@@ -1,8 +1,8 @@
-import { ApiCategory, getApiResultsAsync } from "../api.js";
+import { ApiCategory } from "../../../api.js";
 import { ApiBaseObject } from "./ApiBaseObject.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
-import { Choice } from "./Choice.js";
-import { Feature } from "./Feature.js";
+import { Choice } from "../helpers/Choice.js";
+import { Feature } from "../helpers/Feature.js";
 
 export class Background extends ApiBaseObject {
 

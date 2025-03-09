@@ -1,4 +1,4 @@
-import { Skill } from '../objects/Skill.js';
+import { Skill } from '../objects/api/resources/Skill.js'
 import { getExpertiseCheckbox, getProficiencyCheckbox, getProficiencyModifierSpan} from '../util.js';
 
 export const buildSkills = async function() {

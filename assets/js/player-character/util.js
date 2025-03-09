@@ -1,5 +1,5 @@
 import { globalPlayerCharacter } from './objects/PlayerCharacter.js';
-import { Skill } from './objects/Skill.js';
+import { Skill } from './objects/api/resources/Skill.js';
 
 /**
  * Update the classes of the PC in local storage.

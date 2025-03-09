@@ -1,6 +1,6 @@
 import { globalPlayerCharacter } from "../objects/PlayerCharacter.js";
-import { Subrace } from "../objects/Subrace.js";
-import { Trait } from "../objects/Trait.js";
+import { Subrace } from "../objects/api/resources/Subrace.js";
+import { Trait } from "../objects/api/resources/Trait.js";
 
 /**
  * Update the subrace features section based on the current subrace.

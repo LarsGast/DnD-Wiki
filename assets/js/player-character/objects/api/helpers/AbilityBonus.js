@@ -1,4 +1,4 @@
-import { ApiObjectInfo } from "./ApiObjectInfo.js";
+import { ApiObjectInfo } from "../resources/ApiObjectInfo.js";
 
 /**
  * Has information about the bonuses to abilities a race can have.

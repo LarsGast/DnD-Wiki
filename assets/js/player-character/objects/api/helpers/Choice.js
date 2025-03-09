@@ -1,4 +1,4 @@
-import { ApiObjectInfo } from "./ApiObjectInfo.js";
+import { ApiObjectInfo } from "../resources/ApiObjectInfo.js";
 
 /**
  * Object for storing information about a choice the player is given when gaining a new feature.

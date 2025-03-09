@@ -1,6 +1,6 @@
 import { globalPlayerCharacter } from "../../objects/PlayerCharacter.js";
 import { getAbilityScoreModifier, getProficiencyModifier, isProficientInWeapon } from "../../util.js";
-import { Weapon } from "../../objects/equipment/Weapon.js";
+import { Weapon } from "../../objects/api/resources/equipment/Weapon.js";
 
 /**
  * Init the weapons section of the inventory.

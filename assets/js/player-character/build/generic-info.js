@@ -1,6 +1,6 @@
-import { Alignment } from "../objects/Alignment.js";
-import { Background } from "../objects/Background.js";
-import { Race } from "../objects/Race.js";
+import { Alignment } from "../objects/api/resources/Alignment.js";
+import { Background } from "../objects/api/resources/Background.js";
+import { Race } from "../objects/api/resources/Race.js";
 import { getEmptyOption, getSelectOption } from "../util.js";
 
 /**

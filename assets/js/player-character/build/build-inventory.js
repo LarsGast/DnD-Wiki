@@ -1,5 +1,5 @@
-import { ApiCategory, EquipmentCategoryIndex, getApiResultsAsync } from "../api.js";
-import { EquipmentCategory } from "../objects/EquipmentCategory.js";
+import { EquipmentCategoryIndex } from "../api.js";
+import { EquipmentCategory } from "../objects/api/resources/EquipmentCategory.js";
 import { getEmptyOption } from "../util.js";
 
 /**

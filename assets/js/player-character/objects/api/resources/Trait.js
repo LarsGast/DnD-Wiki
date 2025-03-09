@@ -1,4 +1,4 @@
-import { ApiCategory } from "../api.js";
+import { ApiCategory } from "../../../api.js";
 import { ApiBaseObject } from "./ApiBaseObject.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
 

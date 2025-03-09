@@ -1,6 +1,6 @@
 import { EquipmentCategoryIndex } from "../api.js";
-import { ApiObjectInfo } from "../objects/ApiObjectInfo.js";
-import { EquipmentCategory } from "../objects/EquipmentCategory.js";
+import { ApiObjectInfo } from "../objects/api/resources/ApiObjectInfo.js";
+import { EquipmentCategory } from "../objects/api/resources/EquipmentCategory.js";
 import { getProficiencyCheckbox } from "../util.js";
 
 /**

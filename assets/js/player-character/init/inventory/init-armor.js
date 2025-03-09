@@ -1,6 +1,6 @@
 import { globalPlayerCharacter } from "../../objects/PlayerCharacter.js";
 import { getAbilityScoreModifier } from "../../util.js";
-import { Armor } from "../../objects/equipment/Armor.js";
+import { Armor } from "../../objects/api/resources/equipment/Armor.js";
 
 /**
  * Init the armor section of the inventory.

@@ -1,6 +1,6 @@
 import { globalPlayerCharacter } from "../objects/PlayerCharacter.js";
-import { Race } from "../objects/Race.js";
-import { Trait } from "../objects/Trait.js";
+import { Race } from "../objects/api/resources/Race.js";
+import { Trait } from "../objects/api/resources/Trait.js";
 
 /**
  * Update the race features section based on the current race.

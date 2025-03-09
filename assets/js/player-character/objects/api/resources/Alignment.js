@@ -1,4 +1,4 @@
-import { ApiCategory } from "../api.js";
+import { ApiCategory } from "../../../api.js";
 import { ApiBaseObject } from "./ApiBaseObject.js";
 
 export class Alignment extends ApiBaseObject {
