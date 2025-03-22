@@ -2,6 +2,7 @@ import { updateCharacter } from "./update-character.js";
 import { buildPage } from "./build/build-page.js";
 import { initPage } from "./init/init-page.js"
 import { globalPlayerCharacter } from "./objects/PlayerCharacter.js";
+import "./objects/ProficiencyBonusDisplay.js"
 
 /**
  * Starting point for all JavaScript code for the PC-Builder page.
