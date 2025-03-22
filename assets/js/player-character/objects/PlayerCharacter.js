@@ -21,7 +21,7 @@ export class PlayerCharacter {
      * All chosen classes of the character.
      * Empty array if none are chosen yet.
      * Each item matches the "index" property in the 5e API.
-     * @type {string[]}
+     * @type {object[]}
      */
     classes = [];
 

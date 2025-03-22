@@ -2,6 +2,7 @@ import { globalPlayerCharacter } from "../../objects/PlayerCharacter.js";
 import { getEmptyOption, getSelectOption, limitClassLevel, updateAllSkillModifiers, updateClasses } from "../../util.js";
 import { updateAllWeaponModifiers } from "../inventory/init-weapons.js";
 import { Class } from "../../objects/api/resources/Class.js";
+import { ClassLevelInput } from "../../objects/ClassLevelInput.js";
 
 /**
  * Init the class and level property.
@@ -20,11 +21,9 @@ const initAddClassButton = function() {
 
     button.onclick = async function() {
         const classList = document.getElementById('class-and-level-list');
-
-        classList.appendChild(await getClassListItem());
-
-        changeClassSelect();
-        changeLevelInput()
+        const li = document.createElement('li');
+        li.appendChild(new ClassLevelInput());
+        classList.appendChild(li);
     }
 }
 
@@ -116,18 +115,16 @@ const initClassSelection = function() {
         return;
     }
 
+    const classList = document.getElementById('class-and-level-list');
+
     classes.forEach(async classObject => {
-        
-        const classList = document.getElementById('class-and-level-list');
-        classList.appendChild(await getClassListItem());
+        const li = document.createElement('li');
 
-        const li = classList.lastChild;
+        const classLevelInput = new ClassLevelInput(classObject.index, classObject.level);
 
-        const select = li.getElementsByTagName('select')[0];
-        select.value = classObject.index;
+        li.appendChild(classLevelInput);
 
-        const input = li.getElementsByTagName('input')[0];
-        input.value = classObject.level;
+        classList.appendChild(li);
     });
 }
 
