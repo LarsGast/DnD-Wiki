@@ -220,6 +220,12 @@ export class PlayerCharacter {
 
         return playerCharacter;
     }
+
+    getAbilityModifier(ability) {
+        const abilityScore = this[ability];
+
+        return Math.floor((abilityScore - 10) / 2);
+    }
 }
 
 /**

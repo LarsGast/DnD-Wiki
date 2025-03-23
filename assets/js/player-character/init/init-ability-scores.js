@@ -7,11 +7,11 @@ import { updateAllWeaponModifiers } from "./inventory/init-weapons.js";
  * Initialize all elements for the ability scores on the PC builder page.
  */
 export const initAbilityScores = function() {
-    const abilityScoresList = document.getElementById('ability-scores-list'); 
-    const abilityScoreItems = Array.from(abilityScoresList.children);
-    abilityScoreItems.forEach(abilityScoreItem => {
-        initAbilityScoreItem(abilityScoreItem);
-    });
+    // const abilityScoresList = document.getElementById('ability-scores-list'); 
+    // const abilityScoreItems = Array.from(abilityScoresList.children);
+    // abilityScoreItems.forEach(abilityScoreItem => {
+    //     initAbilityScoreItem(abilityScoreItem);
+    // });
 }
 
 /**

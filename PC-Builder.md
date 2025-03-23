@@ -74,35 +74,23 @@ permalink: /pc-builder/
 <section id="ability-scores-container">
     <h2>Ability Scores</h2>
     <ul class="no-style-list" id="ability-scores-list">
-        <li id="str">
-            <span>STR</span>
-            <span id="str_m"></span>
-            <input id="str_i" type="number" min="1" max="30"/>
+        <li>
+            <ability-score-display ability="str"></ability-score-display>
         </li>
-        <li id="dex">
-            <span>DEX</span>
-            <span id="dex_m"></span>
-            <input id="dex_i" type="number" min="1" max="30"/>
+        <li>
+            <ability-score-display ability="dex"></ability-score-display>
         </li>
-        <li id="con">
-            <span>CON</span>
-            <span id="con_m"></span>
-            <input id="con_i" type="number" min="1" max="30"/>
+        <li>
+            <ability-score-display ability="con"></ability-score-display>
         </li>
-        <li id="int">
-            <span>INT</span>
-            <span id="int_m"></span>
-            <input id="int_i" type="number" min="1" max="30"/>
+        <li>
+            <ability-score-display ability="int"></ability-score-display>
         </li>
-        <li id="wis">
-            <span>WIS</span>
-            <span id="wis_m"></span>
-            <input id="wis_i" type="number" min="1" max="30"/>
+        <li>
+            <ability-score-display ability="wis"></ability-score-display>
         </li>
-        <li id="cha">
-            <span>CHA</span>
-            <span id="cha_m"></span>
-            <input id="cha_i" type="number" min="1" max="30"/>
+        <li>
+            <ability-score-display ability="cha"></ability-score-display>
         </li>
     </ul>
 </section>
