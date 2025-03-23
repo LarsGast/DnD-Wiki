@@ -1,6 +1,8 @@
 import { EquipmentCategoryIndex } from "../api.js";
 import { ApiObjectInfo } from "../objects/api/resources/ApiObjectInfo.js";
 import { EquipmentCategory } from "../objects/api/resources/EquipmentCategory.js";
+import { ArmorProficiencyDisplay } from "../objects/ArmorProficiencyDisplay.js";
+import { WeaponProficiencyDisplay } from "../objects/WeaponProficiencyDisplay.js";
 import { getProficiencyCheckbox } from "../util.js";
 
 /**
@@ -17,10 +19,10 @@ export const buildEquipmentProficiencies = async function() {
 const fillWeaponProficienciesList = async function() {
     const div = document.getElementById('weapon-proficiencies-container');
 
-    div.appendChild(await getProficienciesContainer("Simple Melee", EquipmentCategoryIndex.SimpleMeleeWeapons));
-    div.appendChild(await getProficienciesContainer("Martial Melee", EquipmentCategoryIndex.MartialMeleeWeapons));
-    div.appendChild(await getProficienciesContainer("Simple Ranged", EquipmentCategoryIndex.SimpleRangedWeapons));
-    div.appendChild(await getProficienciesContainer("Martial Ranged", EquipmentCategoryIndex.MartialRangedWeapons));
+    div.appendChild(await getProficienciesContainer("Simple Melee", EquipmentCategoryIndex.SimpleMeleeWeapons, true));
+    div.appendChild(await getProficienciesContainer("Martial Melee", EquipmentCategoryIndex.MartialMeleeWeapons, true));
+    div.appendChild(await getProficienciesContainer("Simple Ranged", EquipmentCategoryIndex.SimpleRangedWeapons, true));
+    div.appendChild(await getProficienciesContainer("Martial Ranged", EquipmentCategoryIndex.MartialRangedWeapons, true));
 }
 
 /**
@@ -29,23 +31,24 @@ const fillWeaponProficienciesList = async function() {
 const fillArmorProficienciesList = async function() {
     const div = document.getElementById('armor-proficiencies-container');
 
-    div.appendChild(await getProficienciesContainer("Light", EquipmentCategoryIndex.LightArmor));
-    div.appendChild(await getProficienciesContainer("Medium", EquipmentCategoryIndex.MediumArmor));
-    div.appendChild(await getProficienciesContainer("Heavy", EquipmentCategoryIndex.HeavyArmor));
-    div.appendChild(await getProficienciesContainer("Shields", EquipmentCategoryIndex.Shields));
+    div.appendChild(await getProficienciesContainer("Light", EquipmentCategoryIndex.LightArmor, false));
+    div.appendChild(await getProficienciesContainer("Medium", EquipmentCategoryIndex.MediumArmor, false));
+    div.appendChild(await getProficienciesContainer("Heavy", EquipmentCategoryIndex.HeavyArmor, false));
+    div.appendChild(await getProficienciesContainer("Shields", EquipmentCategoryIndex.Shields, false));
 }
 
 /**
  * Get a single proficiencies container div for displaying a group of proficiencies.
  * @param {string} title To display above the list as an h4 element.
  * @param {EquipmentCategoryIndex} equipmentCategoryIndex The index of the category, for getting data from the API.
+ * @param {boolean} isForWeapon
  * @returns {Promise<HTMLDivElement>}
  */
-const getProficienciesContainer = async function(title, equipmentCategoryIndex) {
+const getProficienciesContainer = async function(title, equipmentCategoryIndex, isForWeapon) {
     const div = document.createElement('div');
 
     div.appendChild(getProficienciesContainerHeader(title));
-    div.appendChild(await getProficienciesContainerBody(equipmentCategoryIndex));
+    div.appendChild(await getProficienciesContainerBody(equipmentCategoryIndex, isForWeapon));
 
     return div
 }
@@ -66,9 +69,10 @@ const getProficienciesContainerHeader = function(title) {
 /**
  * Gets the body of a proficiencies container.
  * @param {EquipmentCategoryIndex} equipmentCategoryIndex The index of the category, for getting data from the API.
+ * @param {boolean} isForWeapon
  * @returns {Promise<HTMLUListElement>}
  */
-const getProficienciesContainerBody = async function(equipmentCategoryIndex) {
+const getProficienciesContainerBody = async function(equipmentCategoryIndex, isForWeapon) {
     const ul = document.createElement('ul');
 
     const results = await EquipmentCategory.getAsync(equipmentCategoryIndex);
@@ -78,7 +82,7 @@ const getProficienciesContainerBody = async function(equipmentCategoryIndex) {
     ul.classList.add(getNumberOfColumnsClassName(results.equipment.length));
 
     results.equipment.forEach(equipment => {
-        ul.appendChild(getProficiencyItem(equipment));
+        ul.appendChild(getProficiencyItem(equipment, isForWeapon));
     })
 
     return ul;
@@ -102,13 +106,21 @@ const getNumberOfColumnsClassName = function(listLength) {
 /**
  * Get a single li item to indicate proficiency.
  * @param {ApiObjectInfo} equipment Equipment information object from the SRD API.
+ * @param {boolean} isForWeapon
  * @returns {HTMLLIElement}
  */
-const getProficiencyItem = function(equipment) {
+const getProficiencyItem = function(equipment, isForWeapon) {
     const li = document.createElement('li');
 
-    li.appendChild(getProficiencyCheckbox(equipment.index));
-    li.appendChild(getEquipmentLabel(equipment.name, equipment.index));
+    if (isForWeapon) {
+        li.appendChild(new WeaponProficiencyDisplay(equipment));
+    }
+    else {
+        li.appendChild(new ArmorProficiencyDisplay(equipment));
+    }
+
+    // li.appendChild(getProficiencyCheckbox(equipment.index));
+    // li.appendChild(getEquipmentLabel(equipment.name, equipment.index));
 
     return li;
 }

@@ -304,6 +304,58 @@ export class PlayerCharacter {
 
         this.setProperty("expertises", expertises);
     }
+
+    isProficientInWeapon(weaponIndex) {
+        return this.weaponProficiencies.includes(weaponIndex);
+    }
+
+    addProficiencyInWeapon(weaponIndex) {
+        if (this.isProficientInWeapon(weaponIndex)) {
+            return;
+        }
+
+        const weaponProficiencies = this.weaponProficiencies;
+        weaponProficiencies.push(weaponIndex);
+
+        this.setProperty("weaponProficiencies", weaponProficiencies);
+    }
+
+    removeProficiencyInWeapon(weaponIndex) {
+        if (!this.isProficientInWeapon(weaponIndex)) {
+            return;
+        }
+
+        let weaponProficiencies = this.weaponProficiencies;
+        weaponProficiencies = weaponProficiencies.filter(weapon => weapon !== weaponIndex);
+
+        this.setProperty("weaponProficiencies", weaponProficiencies);
+    }
+
+    isProficientInArmor(armorIndex) {
+        return this.armorProficiencies.includes(armorIndex);
+    }
+
+    addProficiencyInArmor(armorIndex) {
+        if (this.isProficientInArmor(armorIndex)) {
+            return;
+        }
+
+        const armorProficiencies = this.armorProficiencies;
+        armorProficiencies.push(armorIndex);
+
+        this.setProperty("armorProficiencies", armorProficiencies);
+    }
+
+    removeProficiencyInArmor(armorIndex) {
+        if (!this.isProficientInArmor(armorIndex)) {
+            return;
+        }
+
+        let armorProficiencies = this.armorProficiencies;
+        armorProficiencies = armorProficiencies.filter(armor => armor !== armorIndex);
+
+        this.setProperty("armorProficiencies", armorProficiencies);
+    }
 }
 
 /**

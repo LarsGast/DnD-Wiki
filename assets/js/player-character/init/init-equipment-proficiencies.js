@@ -5,8 +5,8 @@ import { updateAllWeaponModifiers } from "./inventory/init-weapons.js";
  * Initialize all elements for the equipment proficiencies on the PC builder page.
  */
 export const initEquipmentProficiencies = function() {
-    initWeaponProficiencies();
-    initArmorProficiencies();
+    // initWeaponProficiencies();
+    // initArmorProficiencies();
 }
 
 /**
