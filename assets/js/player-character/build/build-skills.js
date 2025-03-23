@@ -1,4 +1,5 @@
 import { Skill } from '../objects/api/resources/Skill.js'
+import { SkillDisplay } from '../objects/SkillDisplay.js';
 import { getExpertiseCheckbox, getProficiencyCheckbox, getProficiencyModifierSpan} from '../util.js';
 
 export const buildSkills = async function() {
@@ -21,13 +22,12 @@ const fillSkillList = async function() {
  * @returns {Promise<HTMLLIElement>}
  */
 const getSkillListItem = async function(skillIndex) {
+    
+    const skill = await Skill.getAsync(skillIndex);
 
     const li = document.createElement('li');
 
-    li.id = skillIndex;
-    li.appendChild(getProficiencyCheckbox(skillIndex));
-    li.appendChild(getExpertiseCheckbox(skillIndex));
-    li.appendChild(await getSkillLabel(skillIndex));
+    li.appendChild(new SkillDisplay(skill));
 
     return li;
 }

@@ -221,10 +221,88 @@ export class PlayerCharacter {
         return playerCharacter;
     }
 
+    getProficiencyBonus() {
+        const totalLevel = this.classes.reduce((sum, cls) => sum + (cls.level || 0), 0);
+        
+        let bonus = 2;
+        if (totalLevel >= 5 && totalLevel <= 8) bonus = 3;
+        else if (totalLevel >= 9 && totalLevel <= 12) bonus = 4;
+        else if (totalLevel >= 13 && totalLevel <= 16) bonus = 5;
+        else if (totalLevel >= 17) bonus = 6;
+
+        return bonus;
+    }
+
     getAbilityModifier(ability) {
         const abilityScore = this[ability];
 
         return Math.floor((abilityScore - 10) / 2);
+    }
+
+    getSkillModifier(skill) {
+        let skillModifier = this.getAbilityModifier(skill.ability_score.index);
+
+        if (this.isProficientInSkill(skill.index)) {
+            skillModifier += this.getProficiencyBonus();
+        }
+
+        if (this.isExpertInSkill(skill.index)) {
+            skillModifier += this.getProficiencyBonus();
+        }
+
+        return skillModifier;
+    }
+
+    isProficientInSkill(skillIndex) {
+        return this.proficiencies.includes(skillIndex);
+    }
+
+    isExpertInSkill(skillIndex) {
+        return this.expertises.includes(skillIndex);
+    }
+
+    addProficiencyInSkill(skillIndex) {
+        if (this.isProficientInSkill(skillIndex)) {
+            return;
+        }
+
+        const proficiencies = this.proficiencies;
+        proficiencies.push(skillIndex);
+
+        this.setProperty("proficiencies", proficiencies);
+    }
+
+    removeProficiencyInSkill(skillIndex) {
+        if (!this.isProficientInSkill(skillIndex)) {
+            return;
+        }
+
+        let proficiencies = this.proficiencies;
+        proficiencies = proficiencies.filter(skill => skill !== skillIndex);
+
+        this.setProperty("proficiencies", proficiencies);
+    }
+
+    addExpertiseInSkill(skillIndex) {
+        if (this.isExpertInSkill(skillIndex)) {
+            return;
+        }
+
+        const expertises = this.expertises;
+        expertises.push(skillIndex);
+
+        this.setProperty("expertises", expertises);
+    }
+
+    removeExpertiseInSkill(skillIndex) {
+        if (!this.isExpertInSkill(skillIndex)) {
+            return;
+        }
+
+        let expertises = this.expertises;
+        expertises = expertises.filter(skill => skill !== skillIndex);
+
+        this.setProperty("expertises", expertises);
     }
 }
 

@@ -14,12 +14,12 @@ import {
  * Initialize all elements for the skills on the PC builder page.
  */
 export const initSkills = async function() {
-    const skillsList = document.getElementById('skills-list');
-    const skillsListItems = Array.from(skillsList.children);
+    // const skillsList = document.getElementById('skills-list');
+    // const skillsListItems = Array.from(skillsList.children);
 
-    for (const skillListItem of skillsListItems) {
-        await initSkillListItem(skillListItem);
-    }
+    // for (const skillListItem of skillsListItems) {
+    //     await initSkillListItem(skillListItem);
+    // }
 }
 
 /**

@@ -19,10 +19,21 @@ export class AbilityScoreModifierDisplay extends HTMLElement {
     disconnectedCallback() {
         document.removeEventListener("abilityScoreChanged", this._updateHandler);
     }
+  
+    handleChange() {
+
+        document.dispatchEvent(new CustomEvent("abilityScoreModifierChanged", {
+            detail: { 
+                ability: this.ability 
+            },
+            bubbles: true
+        }));
+    }
     
     updateDisplay(event) {
         if (!event || event.detail.ability === this.ability) {
             this.textContent = globalPlayerCharacter.getAbilityModifier(this.ability);
+            this.handleChange();
         }
     }
 }
