@@ -2,14 +2,14 @@ import { EquipmentCategoryIndex } from "../api.js";
 import { ApiObjectInfo } from "../objects/api/resources/ApiObjectInfo.js";
 import { EquipmentCategory } from "../objects/api/resources/EquipmentCategory.js";
 import { ArmorProficiencyDisplay } from "../objects/custom-elements/equipment-proficiencies/ArmorProficiencyDisplay.js";
-import { getProficiencyCheckbox } from "../util.js";
+import { WeaponProficiencyDisplay } from "../objects/custom-elements/equipment-proficiencies/WeaponProficiencyDisplay.js";
 
 /**
  * Buil the equipment proficiencies lists.
  */
 export const buildEquipmentProficiencies = async function() {
-    // await fillWeaponProficienciesList();
-    // await fillArmorProficienciesList();
+    await fillWeaponProficienciesList();
+    await fillArmorProficienciesList();
 }
 
 /**
@@ -118,23 +118,5 @@ const getProficiencyItem = function(equipment, isForWeapon) {
         li.appendChild(new ArmorProficiencyDisplay(equipment));
     }
 
-    // li.appendChild(getProficiencyCheckbox(equipment.index));
-    // li.appendChild(getEquipmentLabel(equipment.name, equipment.index));
-
     return li;
-}
-
-/**
- * Get the label element that belongs to the given equipment.
- * @param {string} equipmentName 
- * @param {string} checkboxIndex 
- * @returns {HTMLLabelElement}
- */
-const getEquipmentLabel = function(equipmentName, checkboxIndex) {
-    const label = document.createElement('label');
-
-    label.textContent = equipmentName;
-    label.htmlFor = getProficiencyCheckbox(checkboxIndex).id;
-
-    return label;
 }

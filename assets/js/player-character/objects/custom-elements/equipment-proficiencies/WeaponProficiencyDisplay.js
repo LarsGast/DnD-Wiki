@@ -1,4 +1,4 @@
-import { Weapon } from "./api/resources/equipment/Weapon.js";
+import { Weapon } from "../../api/resources/equipment/Weapon.js";
 import { WeaponProficiencyCheckbox } from "./WeaponProficiencyCheckbox.js";
 
 export class WeaponProficiencyDisplay extends HTMLElement {
