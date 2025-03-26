@@ -33,6 +33,7 @@ export class Armor extends Equipment {
     constructor(data) {
         super(data);
         Object.assign(this, data);
+        this.armor_class = new ArmorClass(this.armor_class);
     }
 }
 
@@ -59,4 +60,43 @@ class ArmorClass {
      * @type {number}
      */
     max_bonus;
+
+    /**
+     * Constructor.
+     * @param {JSON} data Full object as specified in the 5e SRD API.
+     */
+    constructor(data) {
+        Object.assign(this, data);
+    }
+
+    getDisplayString() {
+        let displayString = this.base;
+
+        if (this.dex_bonus) {
+            displayString += ' + DEX';
+
+            if (this.max_bonus) {
+                displayString += ` (max ${this.max_bonus})`;
+            }
+        }
+
+        return displayString;
+    }
+
+    getEffectiveArmorClass(dexModifier) {
+        let armorClass = this.base;
+
+        if (this.dex_bonus) {
+
+            let bonusFromDex = dexModifier;
+
+            if (this.max_bonus && dexModifier > this.max_bonus) {
+                bonusFromDex = this.max_bonus;
+            }
+
+            armorClass += bonusFromDex;
+        }
+
+        return armorClass;
+    }
 }

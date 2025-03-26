@@ -123,9 +123,11 @@ permalink: /pc-builder/
             <inventory-weapon-table id="weapons-table"></inventory-weapon-table>
         </div>
         <h3>Armor</h3>
-        <button id="add-armor-button" type="button" disabled>Add armor</button>
-        <select id="armor-select"></select>
+        <inventory-armor-add-input></inventory-armor-add-input>
         <div class="table-container">
+            <inventory-armor-table id="armor-table"></inventory-armor-table>
+        </div>
+        <!-- <div class="table-container">
             <table id="armor-table">
                 <thead>
                     <tr>
@@ -142,7 +144,7 @@ permalink: /pc-builder/
                 <tbody>
                 </tbody>
             </table>
-        </div>
+        </div> -->
     </details>
 </section>
 

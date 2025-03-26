@@ -396,6 +396,24 @@ export class PlayerCharacter {
     
         this.setProperty("inventoryWeapons", inventoryWeapons);
     }
+
+    addArmorToInventory(armorIndex) {
+        const inventoryArmor = this.inventoryArmor;
+        
+        inventoryArmor.push({
+            index: armorIndex
+        })
+    
+        this.setProperty("inventoryArmor", inventoryArmor);
+    }
+
+    removeArmorFromInventory(index) {
+        const inventoryArmor = this.inventoryArmor;
+
+        inventoryArmor.splice(index, 1);
+    
+        this.setProperty("inventoryArmor", inventoryArmor);
+    }
 }
 
 /**

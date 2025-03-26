@@ -6,9 +6,9 @@ import { Armor } from "../../objects/api/resources/equipment/Armor.js";
  * Init the armor section of the inventory.
  */
 export const initArmor = async function() {
-    await initArmorTable();
-    initArmorSelect();
-    initAddArmorButton();
+    // await initArmorTable();
+    // initArmorSelect();
+    // initAddArmorButton();
 }
 
 /**
