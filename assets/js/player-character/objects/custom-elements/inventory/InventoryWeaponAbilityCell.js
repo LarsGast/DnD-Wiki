@@ -1,6 +1,6 @@
-import { Weapon } from "./api/resources/equipment/Weapon.js";
-import { getSelectOption } from "../util.js"
-import { globalPlayerCharacter } from "./PlayerCharacter.js";
+import { Weapon } from "../../api/resources/equipment/Weapon.js";
+import { getSelectOption } from "../../../util.js"
+import { globalPlayerCharacter } from "../../PlayerCharacter.js";
 
 export class InventoryWeaponAbilityCell extends HTMLTableCellElement {
     /**

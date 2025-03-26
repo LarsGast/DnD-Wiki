@@ -1,6 +1,6 @@
-import { Armor } from "./api/resources/equipment/Armor.js";
+import { Armor } from "../../api/resources/equipment/Armor.js";
 import { InventoryArmorRow } from "./InventoryArmorRow.js";
-import { globalPlayerCharacter } from "./PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../PlayerCharacter.js";
 
 export class InventoryArmorTable extends HTMLElement {
 

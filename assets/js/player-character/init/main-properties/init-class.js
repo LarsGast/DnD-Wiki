@@ -2,7 +2,7 @@ import { globalPlayerCharacter } from "../../objects/PlayerCharacter.js";
 import { getEmptyOption, getSelectOption, limitClassLevel, updateAllSkillModifiers, updateClasses } from "../../util.js";
 import { updateAllWeaponModifiers } from "../inventory/init-weapons.js";
 import { Class } from "../../objects/api/resources/Class.js";
-import { ClassLevelInput } from "../../objects/ClassLevelInput.js";
+import { ClassLevelInput } from "../../objects/custom-elements/generic-info/ClassLevelInput.js";
 
 /**
  * Init the class and level property.

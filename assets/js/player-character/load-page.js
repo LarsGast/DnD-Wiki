@@ -2,12 +2,11 @@ import { updateCharacter } from "./update-character.js";
 import { buildPage } from "./build/build-page.js";
 import { initPage } from "./init/init-page.js"
 import { globalPlayerCharacter } from "./objects/PlayerCharacter.js";
-import "./objects/ProficiencyBonusDisplay.js";
-import "./objects/AbilityScoreDisplay.js";
-import "./objects/InventoryWeaponAddInput.js";
-import "./objects/InventoryWeaponTable.js";
-import "./objects/InventoryArmorAddInput.js";
-import "./objects/InventoryArmorTable.js";
+import "./objects/custom-elements/ability-score/AbilityScoreDisplay.js";
+import "./objects/custom-elements/inventory/InventoryWeaponAddInput.js";
+import "./objects/custom-elements/inventory/InventoryWeaponTable.js";
+import "./objects/custom-elements/inventory/InventoryArmorAddInput.js";
+import "./objects/custom-elements/inventory/InventoryArmorTable.js";
 
 /**
  * Starting point for all JavaScript code for the PC-Builder page.

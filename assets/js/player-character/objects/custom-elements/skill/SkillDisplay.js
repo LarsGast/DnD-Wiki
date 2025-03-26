@@ -1,7 +1,7 @@
-import { Skill } from "./api/resources/Skill.js";
-import { SkillExpertiseCheckbox } from "./SkillExpertiseCheckbox.js";
+import { Skill } from "../../api/resources/Skill.js";
 import { SkillModifierDisplay } from "./SkillModifierDisplay.js";
 import { SkillProficiencyCheckbox } from "./SkillProficiencyCheckbox.js";
+import { SkillExpertiseCheckbox } from "./SkillExpertiseCheckbox.js";
 
 export class SkillDisplay extends HTMLElement {
 

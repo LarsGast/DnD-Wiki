@@ -1,5 +1,5 @@
-import { Skill } from "./api/resources/Skill.js";
-import { globalPlayerCharacter } from "./PlayerCharacter.js";
+import { Skill } from "../../api/resources/Skill.js";
+import { globalPlayerCharacter } from "../../PlayerCharacter.js";
 
 export class SkillModifierDisplay extends HTMLElement {
     /**

@@ -1,5 +1,5 @@
-import { Armor } from "./api/resources/equipment/Armor.js";
-import { globalPlayerCharacter } from "./PlayerCharacter.js";
+import { Armor } from "../../api/resources/equipment/Armor.js";
+import { globalPlayerCharacter } from "../../PlayerCharacter.js";
 
 export class InventoryArmorEffectiveArmorClassCell extends HTMLTableCellElement {
     /**

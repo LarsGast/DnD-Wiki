@@ -1,7 +1,7 @@
 // class-level-input.js
-import { getEmptyOption } from "../util.js";
-import { globalPlayerCharacter } from "./PlayerCharacter.js";
-import { Class } from "./api/resources/Class.js";
+import { getEmptyOption } from "../../../util.js";
+import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { Class } from "../../api/resources/Class.js";
 
 export class ClassLevelInput extends HTMLElement {
     constructor(classIndex, level) {

@@ -1,4 +1,4 @@
-import { Armor } from "./api/resources/equipment/Armor.js";
+import { Armor } from "../../api/resources/equipment/Armor.js";
 import { InventoryArmorButtonsCell } from "./InventoryArmorButtonsCell.js";
 import { InventoryArmorEffectiveArmorClassCell } from "./InventoryArmorEffectiveArmorClassCell.js";
 

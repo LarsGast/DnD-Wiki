@@ -1,5 +1,5 @@
-import { Weapon } from "./api/resources/equipment/Weapon.js";
-import { globalPlayerCharacter } from "./PlayerCharacter.js";
+import { Weapon } from "../../api/resources/equipment/Weapon.js";
+import { globalPlayerCharacter } from "../../PlayerCharacter.js";
 
 export class InventoryDamageCell extends HTMLTableCellElement {
     /**

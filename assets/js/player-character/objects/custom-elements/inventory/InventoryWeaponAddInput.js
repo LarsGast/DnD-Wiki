@@ -1,8 +1,8 @@
-import { EquipmentCategoryIndex } from "../api.js";
-import { getEmptyOption } from "../util.js";
-import { globalPlayerCharacter } from "./PlayerCharacter.js";
-import { EquipmentCategory } from "./api/resources/EquipmentCategory.js";
-import { Weapon } from "./api/resources/equipment/Weapon.js";
+import { EquipmentCategoryIndex } from "../../../api.js";
+import { getEmptyOption } from "../../../util.js";
+import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { EquipmentCategory } from "../../api/resources/EquipmentCategory.js";
+import { Weapon } from "../../api/resources/equipment/Weapon.js";
 
 export class InventoryWeaponAddInput extends HTMLElement {
 

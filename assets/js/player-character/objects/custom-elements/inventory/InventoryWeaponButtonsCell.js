@@ -1,4 +1,4 @@
-import { globalPlayerCharacter } from "./PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../PlayerCharacter.js";
 
 export class InventoryWeaponButtonsCell extends HTMLTableCellElement {
     /**

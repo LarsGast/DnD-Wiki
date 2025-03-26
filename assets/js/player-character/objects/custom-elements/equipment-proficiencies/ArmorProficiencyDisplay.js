@@ -1,4 +1,4 @@
-import { Armor } from "./api/resources/equipment/Armor.js";
+import { Armor } from "../../api/resources/equipment/Armor.js";
 import { ArmorProficiencyCheckbox } from "./ArmorProficiencyCheckbox.js";
 
 export class ArmorProficiencyDisplay extends HTMLElement {

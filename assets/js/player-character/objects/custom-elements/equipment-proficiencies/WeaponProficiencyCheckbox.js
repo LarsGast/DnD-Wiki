@@ -1,4 +1,5 @@
-import { globalPlayerCharacter } from "./PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+
 
 export class WeaponProficiencyCheckbox extends HTMLInputElement {
 
