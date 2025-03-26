@@ -356,6 +356,46 @@ export class PlayerCharacter {
 
         this.setProperty("armorProficiencies", armorProficiencies);
     }
+
+    editWeaponAbility(index, ability) {
+        if (index > this.inventoryWeapons.length) {
+            return;
+        }
+
+        const inventoryWeapons = this.inventoryWeapons;
+        inventoryWeapons[index].ability = ability;
+
+        this.setProperty("inventoryWeapons", inventoryWeapons);
+    }
+
+    getWeaponAttackBonus(weaponIndex, ability) {
+        let attackBonus = this.getAbilityModifier(ability);
+
+        if (this.isProficientInWeapon(weaponIndex)) {
+            attackBonus += this.getProficiencyBonus();
+        }
+
+        return attackBonus;
+    }
+
+    addWeaponToInventory(weaponIndex, ability) {
+        const inventoryWeapons = this.inventoryWeapons;
+        
+        inventoryWeapons.push({
+            index: weaponIndex,
+            ability: ability
+        })
+    
+        this.setProperty("inventoryWeapons", inventoryWeapons);
+    }
+
+    removeWeaponFromInventory(index) {
+        const inventoryWeapons = this.inventoryWeapons;
+
+        inventoryWeapons.splice(index, 1);
+    
+        this.setProperty("inventoryWeapons", inventoryWeapons);
+    }
 }
 
 /**

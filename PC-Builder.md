@@ -115,28 +115,12 @@ permalink: /pc-builder/
 </section>
 
 <section id="inventory-container">
-    <details>
+    <details open>
         <summary><h2>Inventory</h2></summary>
         <h3>Weapons</h3>
-        <button id="add-weapon-button" type="button" disabled>Add weapon</button>
-        <select id="weapon-select"></select>
+        <inventory-weapon-add-input></inventory-weapon-add-input>
         <div class="table-container">
-            <table id="weapons-table">
-                <thead>
-                    <tr>
-                        <th id="weapon_name">Name</th>
-                        <th id="weapon_ability">Ability</th>
-                        <th id="weapon_attack-bonus">Attack bonus</th>
-                        <th id="weapon_damage">Damage</th>
-                        <th id="weapon_damage-type">Damage type</th>
-                        <th id="weapon_range">Range</th>
-                        <th id="weapon_weight">Weight</th>
-                        <th id="weapon_buttons">Buttons</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+            <inventory-weapon-table id="weapons-table"></inventory-weapon-table>
         </div>
         <h3>Armor</h3>
         <button id="add-armor-button" type="button" disabled>Add armor</button>

@@ -6,7 +6,7 @@ import { getEmptyOption } from "../util.js";
  * Build the inventory section.
  */
 export const buildInventory = async function() {
-    await buildWeaponSelect();
+    //await buildWeaponSelect();
     await buildArmorSelect();
 }
 

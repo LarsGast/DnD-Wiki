@@ -24,6 +24,6 @@ export class ProficiencyBonusDisplay extends HTMLElement {
 
         document.dispatchEvent(new Event("proficiencyBonusChanged"));
     }
-  }
+}
   
-  customElements.define("proficiency-bonus-display", ProficiencyBonusDisplay);
+customElements.define("proficiency-bonus-display", ProficiencyBonusDisplay);

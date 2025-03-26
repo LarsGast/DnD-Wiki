@@ -55,6 +55,18 @@ export class Weapon extends Equipment {
         super(data);
         Object.assign(this, data);
     }
+
+    hasMultipleAbilities() {
+        return this.properties.some(property => property.index === "finesse");
+    }
+
+    getStandardAbility() {
+        if (this.weapon_range === "Melee") {
+            return "str";
+        }
+
+        return "dex";
+    }
 }
 
 class Damage {

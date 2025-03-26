@@ -1,14 +1,15 @@
 import { globalPlayerCharacter } from "../../objects/PlayerCharacter.js";
 import { getAbilityScoreModifier, getProficiencyModifier, isProficientInWeapon } from "../../util.js";
 import { Weapon } from "../../objects/api/resources/equipment/Weapon.js";
+import { InventoryWeaponRow } from "../../objects/InventoryWeaponRow.js";
 
 /**
  * Init the weapons section of the inventory.
  */
 export const initWeapons = async function() {
-    await initWeaponTable();
-    initWeaponSelect();
-    initAddWeaponButton();
+    //await initWeaponTable();
+    //initWeaponSelect();
+    //initAddWeaponButton();
 }
 
 /**
@@ -103,14 +104,14 @@ const initAddWeaponButton = function() {
  */
 const addWeaponRow = function(weapon, ability = null) {
 
-    const row = getNewRow(weapon, ability);
+    const row = new InventoryWeaponRow(weapon);
 
     const weaponsTable = document.getElementById('weapons-table');
     const weaponsTableBody = weaponsTable.querySelector('tbody');
     weaponsTableBody.appendChild(row);
 
     // Initial update to show the correct values on load.
-    updateWeaponRow(row);
+    //updateWeaponRow(row);
 }
 
 /**
