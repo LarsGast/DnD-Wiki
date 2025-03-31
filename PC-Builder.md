@@ -149,23 +149,7 @@ permalink: /pc-builder/
 </section>
 
 <section id="race-features">
-    <details>
-        <summary><h2>Race features (<span id="race_name">choose race</span>)</h2></summary>
-        <h3>Ability Bonuses</h3>
-        <ul id="race_ability_bonuses"></ul>
-        <h3>Speed</h3>
-        <p id="race_speed"></p>
-        <h3>Alignment</h3>
-        <p id="race_alignment"></p>
-        <h3>Age</h3>
-        <p id="race_age"></p>
-        <h3>Size</h3>
-        <p id="race_size"></p>
-        <h3>Languages</h3>
-        <p id="race_languages"></p>
-        <h3>Traits</h3>
-        <div id="race_traits"></div>
-    </details>
+    <details is="race-features-display"></details>
 </section>
 
 <section id="subrace-features">
