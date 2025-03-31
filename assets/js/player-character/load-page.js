@@ -10,6 +10,7 @@ import "./objects/custom-elements/inventory/InventoryArmorTable.js";
 import "./objects/custom-elements/generic-info/ProficiencyBonusDisplay.js";
 import "./objects/custom-elements/equipment-proficiencies/ArmorProficiencyDisplay.js";
 import "./objects/custom-elements/equipment-proficiencies/WeaponProficiencyDisplay.js";
+import "./objects/custom-elements/generic-info/RaceInput.js";
 
 /**
  * Starting point for all JavaScript code for the PC-Builder page.

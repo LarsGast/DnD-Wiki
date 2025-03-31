@@ -10,18 +10,18 @@ import { ApiObjectInfo } from "../../objects/api/resources/ApiObjectInfo.js";
  */
 export const initRace = async function() {
 
-    await updateRaceFeaturesSection();
+    // await updateRaceFeaturesSection();
 
-    const select = document.getElementById("race_s");
+    // const select = document.getElementById("race_s");
 
-    select.value = globalPlayerCharacter.race;
-    select.onchange = async function() {
-        globalPlayerCharacter.setProperty("race", this.value);
-        await updateSubraceSelection();
-        globalPlayerCharacter.setProperty("subrace", null);
-        await updateRaceFeaturesSection();
-        await updateSubraceFeaturesSection();
-    }
+    // select.value = globalPlayerCharacter.race;
+    // select.onchange = async function() {
+    //     globalPlayerCharacter.setProperty("race", this.value);
+    //     await updateSubraceSelection();
+    //     globalPlayerCharacter.setProperty("subrace", null);
+    //     await updateRaceFeaturesSection();
+    //     await updateSubraceFeaturesSection();
+    // }
 }
 
 /**

@@ -7,7 +7,7 @@ import { getEmptyOption, getSelectOption } from "../util.js";
  * Fill all elements in the generic info section.
  */
 export const fillGenericInfoElements = async function() {
-    await fillRaceSelect();
+    //await fillRaceSelect();
     await fillBackgroundSelect();
     await fillAlignmentSelect();
 }
