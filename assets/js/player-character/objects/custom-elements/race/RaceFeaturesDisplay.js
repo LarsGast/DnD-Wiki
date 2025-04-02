@@ -52,12 +52,12 @@ export class RaceFeaturesDisplay extends HTMLDetailsElement {
 
     async updateRaceFeaturesDisplay() {
 
-       if (!globalPlayerCharacter.race) {
-           this.style.display = "none";
-           return;
-       }
-       
-       this.style.display = "block";
+        if (!globalPlayerCharacter.race) {
+            this.style.display = "none";
+            return;
+        }
+        
+        this.style.display = "block";
         this.race = await Race.getAsync(globalPlayerCharacter.race);
 
         this.replaceChildren();

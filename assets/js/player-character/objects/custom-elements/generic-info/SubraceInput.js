@@ -14,7 +14,7 @@ export class SubraceInput extends HTMLSelectElement {
         // Update immediately.
         await this.updateDisplay();
         // Listen for global updates.
-        this._updateHandler = () => this.updateDisplay();
+        this._updateHandler = (event) => this.updateDisplay(event);
         document.addEventListener("raceUpdated", this._updateHandler);
     }
     
@@ -22,25 +22,34 @@ export class SubraceInput extends HTMLSelectElement {
         document.removeEventListener("raceUpdated", this._updateHandler);
     }
 
-    async updateDisplay() {
-        const race = await Race.getAsync(globalPlayerCharacter.race);
+    /**
+     * 
+     * @param {Event} event 
+     */
+    async updateDisplay(event) {
 
         this.replaceChildren();
 
         this.appendChild(getEmptyOption());
 
-        if (race.subraces) {
+        if (globalPlayerCharacter.race) {
+            const race = await Race.getAsync(globalPlayerCharacter.race);
             for (const subrace of race.subraces) {
                 this.appendChild(getSelectOption(subrace.name, subrace.index));
             }
         }
 
-        this.value = globalPlayerCharacter.subrace;
+        if (event) {
+            this.handleChange();
+        }
+        else {
+            this.value = globalPlayerCharacter.subrace;
+        }
     }
 
     handleChange() {
 
-        globalPlayerCharacter.setProperty('subrace', this.value);
+        globalPlayerCharacter.setProperty('subrace', this.value == "null" ? null : this.value);
 
         document.dispatchEvent(new Event("subraceUpdated"));
     }
