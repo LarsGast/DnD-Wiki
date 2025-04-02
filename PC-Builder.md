@@ -115,7 +115,7 @@ permalink: /pc-builder/
 </section>
 
 <section id="inventory-container">
-    <details open>
+    <details>
         <summary><h2>Inventory</h2></summary>
         <h3>Weapons</h3>
         <inventory-weapon-add-input></inventory-weapon-add-input>
@@ -127,24 +127,6 @@ permalink: /pc-builder/
         <div class="table-container">
             <inventory-armor-table id="armor-table"></inventory-armor-table>
         </div>
-        <!-- <div class="table-container">
-            <table id="armor-table">
-                <thead>
-                    <tr>
-                        <th id="armor_name">Name</th>
-                        <th id="armor_type">Type</th>
-                        <th id="armor_strength-requirement">Strength</th>
-                        <th id="armor_disadvantage-on-stealth">Stealth</th>
-                        <th id="armor_armor-class">Armor class</th>
-                        <th id="armor_effective-armor-class">Effective armor class</th>
-                        <th id="armor_weight">Weight</th>
-                        <th id="armor_buttons">Buttons</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-        </div> -->
     </details>
 </section>
 
