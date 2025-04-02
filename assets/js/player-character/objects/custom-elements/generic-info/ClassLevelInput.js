@@ -103,9 +103,12 @@ export class ClassLevelInput extends HTMLElement {
             // Assuming each element’s shadow DOM contains the select and input as first children.
             const select = el.querySelector("select");
             const input = el.querySelector("input");
-            if (select.value) {
+
+            const value = select.value == "null" ? null : select.value;
+
+            if (value) {
                 classes.push({
-                    index: select.value,
+                    index: value,
                     level: parseInt(input.value, 10)
                 });
             }
