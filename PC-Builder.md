@@ -66,7 +66,7 @@ permalink: /pc-builder/
         <li><label>Race: <select is="race-input"></select></label></li>
         <li><label>Subrace: <select is="subrace-input"></select></label></li>
         <li><label>Background: <select is="background-input"></select></label></li>
-        <li><label>Alignment: <select id="alignment_s"></select></label></li>
+        <li><label>Alignment: <select is="alignment-input"></select></label></li>
         <li>Proficiency bonus: <proficiency-bonus-display id="proficiency-bonus"></proficiency-bonus-display></li>
     </ul>
 </section>

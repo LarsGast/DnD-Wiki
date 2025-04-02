@@ -5,10 +5,10 @@ import { globalPlayerCharacter } from "../../objects/PlayerCharacter.js";
  */
 export const initAlignment = function() {
 
-    const select = document.getElementById("alignment_s");
+    // const select = document.getElementById("alignment_s");
 
-    select.value = globalPlayerCharacter.alignment;
-    select.onchange = function() {
-        globalPlayerCharacter.setProperty("alignment", this.value);
-    }
+    // select.value = globalPlayerCharacter.alignment;
+    // select.onchange = function() {
+    //     globalPlayerCharacter.setProperty("alignment", this.value);
+    // }
 }
