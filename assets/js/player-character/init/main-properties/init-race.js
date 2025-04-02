@@ -28,16 +28,16 @@ export const initRace = async function() {
  * Initialize the subrace select element.
  */
 export const initSubRace = async function() {
-    await updateSubraceSelection();
-    await updateSubraceFeaturesSection();
+    // await updateSubraceSelection();
+    // await updateSubraceFeaturesSection();
 
-    const select = document.getElementById("subrace_s");
+    // const select = document.getElementById("subrace_s");
 
-    select.value = globalPlayerCharacter.subrace;
-    select.onchange = async function() {
-        globalPlayerCharacter.setProperty("subrace", this.value);
-        await updateSubraceFeaturesSection();
-    }
+    // select.value = globalPlayerCharacter.subrace;
+    // select.onchange = async function() {
+    //     globalPlayerCharacter.setProperty("subrace", this.value);
+    //     await updateSubraceFeaturesSection();
+    // }
 }
 
 /**

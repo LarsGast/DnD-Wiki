@@ -12,6 +12,8 @@ import "./objects/custom-elements/equipment-proficiencies/ArmorProficiencyDispla
 import "./objects/custom-elements/equipment-proficiencies/WeaponProficiencyDisplay.js";
 import "./objects/custom-elements/generic-info/RaceInput.js";
 import "./objects/custom-elements/race/RaceFeaturesDisplay.js";
+import "./objects/custom-elements/generic-info/SubraceInput.js";
+import "./objects/custom-elements/subrace/SubraceFeaturesDisplay.js";
 
 /**
  * Starting point for all JavaScript code for the PC-Builder page.

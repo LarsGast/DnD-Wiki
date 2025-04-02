@@ -2,6 +2,7 @@ import { ApiCategory } from "../../../api.js";
 import { AbilityBonus } from "../helpers/AbilityBonus.js"
 import { ApiBaseObject } from "./ApiBaseObject.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
+import { Subrace } from "./Subrace.js";
 import { Trait } from "./Trait.js";
 
 export class Race extends ApiBaseObject {
@@ -83,5 +84,13 @@ export class Race extends ApiBaseObject {
      */
     async getAllTraitsAsync() {
         return Promise.all(this.traits.map(traitInfo => Trait.getAsync(traitInfo.index)));
+    }
+
+    /**
+     * Get the full object of all subraces linked to this race.
+     * @returns {Promise<Trait[]>}
+     */
+    async getAllSubracesAsync() {
+        return Promise.all(this.subraces.map(subraceInfo => Subrace.getAsync(subraceInfo.index)));
     }
 }

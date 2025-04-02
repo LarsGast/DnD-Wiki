@@ -8,23 +8,23 @@ import { Trait } from "../objects/api/resources/Trait.js";
  */
 export const updateSubraceFeaturesSection = async function() {
 
-    const subRaceIndex = globalPlayerCharacter.subrace;
-    const section = document.getElementById('subrace-features');
+    // const subRaceIndex = globalPlayerCharacter.subrace;
+    // const section = document.getElementById('subrace-features');
 
-    // If the user has not picked a subrace yet, or there is no available subrace to pick, there is nothing to set.
-    if (!subRaceIndex) {
-        section.style.display = "none";
-        return;
-    }
+    // // If the user has not picked a subrace yet, or there is no available subrace to pick, there is nothing to set.
+    // if (!subRaceIndex) {
+    //     section.style.display = "none";
+    //     return;
+    // }
     
-    section.style.display = "block";
+    // section.style.display = "block";
 
-    const subrace = await Subrace.getAsync(subRaceIndex);
+    // const subrace = await Subrace.getAsync(subRaceIndex);
 
-    setSubraceName(subrace);
-    setDescription(subrace);
-    setAbilityBonuses(subrace);
-    setTraits(subrace);
+    // setSubraceName(subrace);
+    // setDescription(subrace);
+    // setAbilityBonuses(subrace);
+    // setTraits(subrace);
 }
 
 /**

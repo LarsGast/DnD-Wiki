@@ -1,7 +1,8 @@
 import { Race } from "../../api/resources/Race.js";
+import { Subrace } from "../../api/resources/Subrace.js";
 import { globalPlayerCharacter } from "../../PlayerCharacter.js";
 
-export class RaceFeaturesDisplay extends HTMLDetailsElement {
+export class SubraceFeaturesDisplay extends HTMLDetailsElement {
 
     constructor() {
         super();
@@ -12,16 +13,16 @@ export class RaceFeaturesDisplay extends HTMLDetailsElement {
         this.updateDisplay();
         // Listen for global updates.
         this._updateHandler = (event) => this.updateDisplay(event);
-        document.addEventListener("raceUpdated", this._updateHandler);
+        document.addEventListener("subraceUpdated", this._updateHandler);
     }
     
     disconnectedCallback() {
-        document.removeEventListener("raceUpdated", this._updateHandler);
+        document.removeEventListener("subraceUpdated", this._updateHandler);
     }
 
     async updateDisplay(event) {
         if (this.getShouldUpdate(event)) {
-            await this.updateRaceFeaturesDisplay();
+            await this.updateSubraceFeaturesDisplay();
         }
     }
 
@@ -31,7 +32,7 @@ export class RaceFeaturesDisplay extends HTMLDetailsElement {
      */
     getShouldUpdate(event) {
         return !event || 
-            (event.type === "raceUpdated");
+            (event.type === "subraceUpdated");
     }
 
     getHeading(title) {
@@ -50,39 +51,28 @@ export class RaceFeaturesDisplay extends HTMLDetailsElement {
         return p;
     }
 
-    async updateRaceFeaturesDisplay() {
+    async updateSubraceFeaturesDisplay() {
 
-       if (!globalPlayerCharacter.race) {
-           this.style.display = "none";
-           return;
-       }
-       
-       this.style.display = "block";
-        this.race = await Race.getAsync(globalPlayerCharacter.race);
+        if (!globalPlayerCharacter.subrace) {
+            this.style.display = "none";
+            return;
+        }
+        
+        this.style.display = "block";
+        
+        this.subrace = await Subrace.getAsync(globalPlayerCharacter.subrace);
 
         this.replaceChildren();
 
         this.appendChild(this.getSectionHeading());
 
+        this.appendChild(this.getHeading("Description"));
+        this.appendChild(this.getParagraph(this.subrace.desc));
+
         this.appendChild(this.getHeading("Ability Bonuses"));
         this.appendChild(this.getAbilityBonusBody());
-
-        this.appendChild(this.getHeading("Speed"));
-        this.appendChild(this.getParagraph(this.race.speed));
         
-        this.appendChild(this.getHeading("Alignment"));
-        this.appendChild(this.getParagraph(this.race.alignment));
-        
-        this.appendChild(this.getHeading("Age"));
-        this.appendChild(this.getParagraph(this.race.age));
-        
-        this.appendChild(this.getHeading("Size"));
-        this.appendChild(this.getParagraph(this.race.size_description));
-        
-        this.appendChild(this.getHeading("Languages"));
-        this.appendChild(this.getParagraph(this.race.language_desc));
-        
-        const traits = await this.race.getAllTraitsAsync();
+        const traits = await this.subrace.getAllTraitsAsync();
         if (traits.length > 0) {
             this.appendChild(this.getTraitsSection(traits));
         }
@@ -93,25 +83,25 @@ export class RaceFeaturesDisplay extends HTMLDetailsElement {
 
         const heading = document.createElement('h2');
 
-        heading.textContent = `Race features (${this.getRaceName()})`;
+        heading.textContent = `Subrace features (${this.getSubraceName()})`;
 
         summary.appendChild(heading);
 
         return summary;
     }
 
-    getRaceName() {
-        if (this.race) {
-            return this.race.name;
+    getSubraceName() {
+        if (this.subrace) {
+            return this.subrace.name;
         }
 
-        return "choose race";
+        return "choose subrace";
     }
 
     getAbilityBonusBody() {
         const ul = document.createElement('ul');
 
-        for (const abilityBonus of this.race.ability_bonuses) {
+        for (const abilityBonus of this.subrace.ability_bonuses) {
             const li = document.createElement('li');
 
             li.textContent = `${abilityBonus.ability_score.name} + ${abilityBonus.bonus}`;
@@ -148,4 +138,4 @@ export class RaceFeaturesDisplay extends HTMLDetailsElement {
     }
 }
 
-customElements.define('race-features-display', RaceFeaturesDisplay, { extends: 'details' });
+customElements.define('subrace-features-display', SubraceFeaturesDisplay, { extends: 'details' });

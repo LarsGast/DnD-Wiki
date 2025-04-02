@@ -8,23 +8,23 @@ import { Trait } from "../objects/api/resources/Trait.js";
  */
 export const updateRaceFeaturesSection = async function() {
 
-    const raceIndex = globalPlayerCharacter.race;
+    // const raceIndex = globalPlayerCharacter.race;
 
-    // If the user has not picked a race yet, there is nothing to set.
-    if (!raceIndex) {
-        return;
-    }
+    // // If the user has not picked a race yet, there is nothing to set.
+    // if (!raceIndex) {
+    //     return;
+    // }
 
-    const race = await Race.getAsync(raceIndex);
+    // const race = await Race.getAsync(raceIndex);
 
-    setRaceName(race);
-    setAbilityBonuses(race);
-    setSpeed(race);
-    setAlignment(race);
-    setAge(race);
-    setSize(race);
-    setLanguages(race);
-    await setTraits(race);
+    // setRaceName(race);
+    // setAbilityBonuses(race);
+    // setSpeed(race);
+    // setAlignment(race);
+    // setAge(race);
+    // setSize(race);
+    // setLanguages(race);
+    // await setTraits(race);
 }
 
 /**

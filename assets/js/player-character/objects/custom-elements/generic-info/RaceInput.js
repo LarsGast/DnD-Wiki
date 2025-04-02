@@ -25,6 +25,7 @@ export class RaceInput extends HTMLSelectElement {
     handleChange() {
 
         globalPlayerCharacter.setProperty('race', this.value);
+        globalPlayerCharacter.setProperty('subrace', null);
 
         document.dispatchEvent(new Event("raceUpdated"));
     }

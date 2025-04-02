@@ -64,7 +64,7 @@ permalink: /pc-builder/
             <ul id="class-and-level-list"></ul>
         </li>
         <li><label>Race: <select is="race-input"></select></label></li>
-        <li><label>Subrace: <select id="subrace_s"></select></label></li>
+        <li><label>Subrace: <select is="subrace-input"></select></label></li>
         <li><label>Background: <select id="background_s"></select></label></li>
         <li><label>Alignment: <select id="alignment_s"></select></label></li>
         <li>Proficiency bonus: <proficiency-bonus-display id="proficiency-bonus"></proficiency-bonus-display></li>
@@ -153,15 +153,7 @@ permalink: /pc-builder/
 </section>
 
 <section id="subrace-features">
-    <details>
-        <summary><h2>Subrace features (<span id="subrace_name"></span>)</h2></summary>
-        <h3>Description</h3>
-        <p id="subrace_description"></p>
-        <h3>Ability Bonuses</h3>
-        <ul id="subrace_ability_bonuses"></ul>
-        <h3>Traits</h3>
-        <div id="subrace_traits"></div>
-    </details>
+    <details is="subrace-features-display"></details>
 </section>
 
 <section id="notes-container">
