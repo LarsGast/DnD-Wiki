@@ -158,7 +158,7 @@ permalink: /pc-builder/
 
 <section id="notes-container">
     <h2>Notes</h2>
-    <textarea id="notes"></textarea>
+    <textarea is="notes-textarea"></textarea>
 </section>
 
 <div id="dialogs">
