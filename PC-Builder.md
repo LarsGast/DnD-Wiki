@@ -58,7 +58,7 @@ permalink: /pc-builder/
 <section id="generic-info-container">
     <h2>Algemeen</h2>
     <ul>
-        <li><label>Name: <input id="name_i"/></label></li>
+        <li><label>Name: <input is="name-input"/></label></li>
         <li>
             <label>Class & Level: </label><button id="class-and-level_b" type="button">Add class</button>
             <ul id="class-and-level-list"></ul>
