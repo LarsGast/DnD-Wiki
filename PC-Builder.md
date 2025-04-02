@@ -67,7 +67,7 @@ permalink: /pc-builder/
         <li><label>Subrace: <select is="subrace-input"></select></label></li>
         <li><label>Background: <select is="background-input"></select></label></li>
         <li><label>Alignment: <select is="alignment-input"></select></label></li>
-        <li>Proficiency bonus: <proficiency-bonus-display id="proficiency-bonus"></proficiency-bonus-display></li>
+        <li>Proficiency bonus: <proficiency-bonus-display></proficiency-bonus-display></li>
     </ul>
 </section>
 
@@ -120,12 +120,12 @@ permalink: /pc-builder/
         <h3>Weapons</h3>
         <inventory-weapon-add-input></inventory-weapon-add-input>
         <div class="table-container">
-            <inventory-weapon-table id="weapons-table"></inventory-weapon-table>
+            <inventory-weapon-table></inventory-weapon-table>
         </div>
         <h3>Armor</h3>
         <inventory-armor-add-input></inventory-armor-add-input>
         <div class="table-container">
-            <inventory-armor-table id="armor-table"></inventory-armor-table>
+            <inventory-armor-table></inventory-armor-table>
         </div>
     </details>
 </section>
