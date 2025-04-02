@@ -14,6 +14,7 @@ import "./objects/custom-elements/generic-info/RaceInput.js";
 import "./objects/custom-elements/race/RaceFeaturesDisplay.js";
 import "./objects/custom-elements/generic-info/SubraceInput.js";
 import "./objects/custom-elements/subrace/SubraceFeaturesDisplay.js";
+import "./objects/custom-elements/generic-info/BackgroundInput.js";
 
 /**
  * Starting point for all JavaScript code for the PC-Builder page.

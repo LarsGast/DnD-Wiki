@@ -8,7 +8,7 @@ import { getEmptyOption, getSelectOption } from "../util.js";
  */
 export const fillGenericInfoElements = async function() {
     //await fillRaceSelect();
-    await fillBackgroundSelect();
+    // await fillBackgroundSelect();
     await fillAlignmentSelect();
 }
 

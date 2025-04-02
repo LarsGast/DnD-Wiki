@@ -5,10 +5,10 @@ import { globalPlayerCharacter } from "../../objects/PlayerCharacter.js";
  */
 export const initBackground = function() {
 
-    const select = document.getElementById("background_s");
+    // const select = document.getElementById("background_s");
 
-    select.value = globalPlayerCharacter.background;
-    select.onchange = function() {
-        globalPlayerCharacter.setProperty("background", this.value);
-    }
+    // select.value = globalPlayerCharacter.background;
+    // select.onchange = function() {
+    //     globalPlayerCharacter.setProperty("background", this.value);
+    // }
 }
