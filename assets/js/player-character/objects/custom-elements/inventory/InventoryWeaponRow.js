@@ -32,7 +32,7 @@ export class InventoryWeaponRow extends HTMLTableRowElement {
 
         this.damageTypeCell = document.createElement('td');
         this.damageTypeCell.headers = 'weapon_damage-type';
-        this.damageTypeCell.textContent = this.weapon.damage.damage_type.name;
+        this.damageTypeCell.textContent = this.weapon.damage?.damage_type.name;
 
         this.rangeCell = document.createElement('td');
         this.rangeCell.headers = 'weapon_range';

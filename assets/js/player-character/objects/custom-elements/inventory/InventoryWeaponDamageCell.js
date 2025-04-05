@@ -14,7 +14,7 @@ export class InventoryDamageCell extends HTMLTableCellElement {
 
         this.damageBonusSpan = document.createElement('span');
 
-        this.appendChild(document.createTextNode(this.weapon.damage.damage_dice));
+        this.appendChild(document.createTextNode(this.weapon.damage?.damage_dice ?? ''));
         this.appendChild(this.damageBonusSpan);
     }
 
@@ -37,7 +37,7 @@ export class InventoryDamageCell extends HTMLTableCellElement {
             const damageBonusValue = this.getDamageBonusValue();
             this.damageBonusSpan.textContent = damageBonusValue;
 
-            if (damageBonusValue >= 0) {
+            if (damageBonusValue && damageBonusValue >= 0) {
                 this.damageBonusSpan.classList.add("expressive-positive-number");
             }
             else {
@@ -61,6 +61,10 @@ export class InventoryDamageCell extends HTMLTableCellElement {
 
     getDamageBonusValue() {
         const inventoryWeapon = globalPlayerCharacter.inventoryWeapons[this.rowIndex];
+
+        if (!this.weapon.damage) {
+            return null;
+        }
 
         return globalPlayerCharacter.getAbilityModifier(inventoryWeapon.ability);
     }
