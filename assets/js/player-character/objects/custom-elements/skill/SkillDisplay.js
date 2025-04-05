@@ -3,7 +3,7 @@ import { SkillModifierDisplay } from "./SkillModifierDisplay.js";
 import { SkillProficiencyCheckbox } from "./SkillProficiencyCheckbox.js";
 import { SkillExpertiseCheckbox } from "./SkillExpertiseCheckbox.js";
 
-export class SkillDisplay extends HTMLElement {
+export class SkillDisplay extends HTMLLIElement {
 
     /**
      * 
@@ -27,4 +27,4 @@ export class SkillDisplay extends HTMLElement {
     }
 }
 
-customElements.define('skill-display', SkillDisplay);
+customElements.define('skill-display', SkillDisplay, { extends: 'li' });

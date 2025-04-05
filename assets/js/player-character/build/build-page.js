@@ -1,4 +1,3 @@
-import { buildSkills } from "./build-skills.js";
 import { buildEquipmentProficiencies } from "./build-equipment-proficiencies.js";
 
 /**
@@ -6,6 +5,5 @@ import { buildEquipmentProficiencies } from "./build-equipment-proficiencies.js"
  * This means filling all elements with necessary data and such.
  */
 export const buildPage = async function() {
-    await buildSkills();
     await buildEquipmentProficiencies();
 }

@@ -19,6 +19,7 @@ import "./objects/custom-elements/generic-info/AlignmentInput.js";
 import "./objects/custom-elements/generic-info/NameInput.js";
 import "./objects/custom-elements/notes/NotesTextArea.js";
 import "./objects/custom-elements/generic-info/ClassLevelSection.js";
+import "./objects/custom-elements/skill/SkillsList.js";
 
 /**
  * Starting point for all JavaScript code for the PC-Builder page.
