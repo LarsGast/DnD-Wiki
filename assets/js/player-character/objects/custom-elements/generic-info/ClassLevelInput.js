@@ -1,9 +1,8 @@
 // class-level-input.js
 import { getEmptyOption } from "../../../util.js";
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
 import { Class } from "../../api/resources/Class.js";
 
-export class ClassLevelInput extends HTMLElement {
+export class ClassLevelInput extends HTMLLIElement {
     constructor(classIndex, level) {
         super();
 
@@ -29,30 +28,13 @@ export class ClassLevelInput extends HTMLElement {
         this.appendChild(this.deleteButton);
 
         // Bind event handlers.
-        this.classSelect.onchange = () => this.handleChange();
-        this.levelInput.onchange = () => this.handleChange();
-        this.deleteButton.onclick = () => {
-            const parentLi = this.closest("li");
-            if (parentLi) {
-                parentLi.remove();
-            }
-            this.handleChange();
-        }
+        this.classSelect.onchange = () => this.handleClassChange();
+        this.levelInput.onchange = () => this.handleLevelChange();
+        this.deleteButton.onclick = () => this.handleDelete();
     }
 
-    connectedCallback() {
-        this.loadOptions();
-
-        if(!this.classIndex) {
-            this.handleChange();
-        }
-
-        this._updateHandler = () => this.updateDisplay();
-        document.addEventListener("classesUpdated", this._updateHandler);
-    }
-    
-    disconnectedCallback() {
-        document.removeEventListener("classesUpdated", this._updateHandler);
+    async connectedCallback() {
+        await this.loadOptions();
     }
 
     async loadOptions() {
@@ -74,50 +56,28 @@ export class ClassLevelInput extends HTMLElement {
         this.levelInput.value = this.level ?? 1;
     }
   
-    handleChange() {
-        // Here you might update the globalPlayerCharacter.classes array by re-querying
-        // all <class-level-input> instances on the page.
-        this.saveClasses();
-
-        // Trigger a global event to signal that the PC has updated.
-        document.dispatchEvent(new Event("classesUpdated"));
+    handleClassChange() {
+        document.dispatchEvent(new Event("classChanged"));
     }
-    
-    updateDisplay() {
+
+    handleLevelChange() {
         
         if (this.levelInput.value > 20) {
             this.levelInput.value = 20;
-            this.levelInput.dispatchEvent(new Event('change'));
         }
 
         if (this.levelInput.value < 1) {
             this.levelInput.value = 1;
-            this.levelInput.dispatchEvent(new Event('change'));
         }
+
+        document.dispatchEvent(new Event("classLevelChanged"));
     }
 
-    saveClasses() {
-        const classInputs = document.querySelectorAll("class-level-input");
-        let classes = [];
-        classInputs.forEach((el) => {
-            // Assuming each element’s shadow DOM contains the select and input as first children.
-            const select = el.querySelector("select");
-            const input = el.querySelector("input");
-
-            const value = select.value == "null" ? null : select.value;
-
-            if (value) {
-                classes.push({
-                    index: value,
-                    level: parseInt(input.value, 10)
-                });
-            }
-        });
-        
-        // Save updated PC.
-        globalPlayerCharacter.setProperty('classes', classes);
+    handleDelete() {
+        this.remove();
+        document.dispatchEvent(new Event("classDeleted"));
     }
 }
 
 // Register the custom element.
-customElements.define("class-level-input", ClassLevelInput);
+customElements.define("class-level-input", ClassLevelInput, { extends: 'li' });

@@ -60,8 +60,7 @@ permalink: /pc-builder/
     <ul>
         <li><label>Name: <input is="name-input"/></label></li>
         <li>
-            <label>Class & Level: </label><button id="class-and-level_b" type="button">Add class</button>
-            <ul id="class-and-level-list"></ul>
+            <label>Class & Level: </label><class-level-section></class-level-section>
         </li>
         <li><label>Race: <select is="race-input"></select></label></li>
         <li><label>Subrace: <select is="subrace-input"></select></label></li>

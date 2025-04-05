@@ -10,11 +10,11 @@ export class ProficiencyBonusDisplay extends HTMLElement {
         this.updateDisplay();
         // Listen for global updates.
         this._updateHandler = () => this.updateDisplay();
-        document.addEventListener("classesUpdated", this._updateHandler);
+        document.addEventListener("classesChanged", this._updateHandler);
     }
     
     disconnectedCallback() {
-        document.removeEventListener("classesUpdated", this._updateHandler);
+        document.removeEventListener("classesChanged", this._updateHandler);
     }
     
     updateDisplay() {
