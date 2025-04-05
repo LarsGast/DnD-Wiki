@@ -63,7 +63,7 @@ export class ClassLevelSection extends HTMLElement {
             if (value) {
                 classes.push({
                     index: value,
-                    level: parseInt(input.value, 10)
+                    level: parseInt(input.value)
                 });
             }
         });

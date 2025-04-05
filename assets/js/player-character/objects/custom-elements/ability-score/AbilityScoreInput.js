@@ -23,7 +23,7 @@ export class AbilityScoreInput extends HTMLInputElement {
   
     handleChange() {
         
-        globalPlayerCharacter.setProperty(this.ability, this.value);
+        globalPlayerCharacter.setProperty(this.ability, parseInt(this.value));
 
         document.dispatchEvent(new CustomEvent("abilityScoreChanged", {
             detail: { 

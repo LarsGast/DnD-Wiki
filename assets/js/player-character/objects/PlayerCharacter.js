@@ -227,14 +227,8 @@ export class PlayerCharacter {
 
     getProficiencyBonus() {
         const totalLevel = this.classes.reduce((sum, cls) => sum + (cls.level || 0), 0);
-        
-        let bonus = 2;
-        if (totalLevel >= 5 && totalLevel <= 8) bonus = 3;
-        else if (totalLevel >= 9 && totalLevel <= 12) bonus = 4;
-        else if (totalLevel >= 13 && totalLevel <= 16) bonus = 5;
-        else if (totalLevel >= 17) bonus = 6;
 
-        return bonus;
+        return Math.ceil(totalLevel / 4) + 1;
     }
 
     getAbilityModifier(ability) {
