@@ -54,18 +54,13 @@ export class ClassLevelSection extends HTMLElement {
     saveClasses() {
         let classes = [];
         this.classLevelList.childNodes.forEach((el) => {
-            // Assuming each element’s shadow DOM contains the select and input as first children.
             const select = el.querySelector("select");
             const input = el.querySelector("input");
 
-            const value = select.value == "null" ? null : select.value;
-
-            if (value) {
-                classes.push({
-                    index: value,
-                    level: parseInt(input.value)
-                });
-            }
+            classes.push({
+                index: select.value,
+                level: parseInt(input.value)
+            });
         });
         
         // Save updated PC.

@@ -38,12 +38,12 @@ export class ClassLevelInput extends HTMLLIElement {
     }
 
     async loadOptions() {
-        // Load the available classes.
-        const allClasses = await Class.getAllAsync();
         
         // Add an empty option.
         this.classSelect.appendChild(getEmptyOption());
-        
+
+        // Load the available classes.
+        const allClasses = await Class.getAllAsync();
         allClasses.results.forEach((cls) => {
             const option = document.createElement("option");
             option.value = cls.index;
