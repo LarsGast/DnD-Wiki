@@ -104,11 +104,25 @@ permalink: /pc-builder/
         <summary><h2>Equipment proficiencies</h2></summary>
         <details>
             <summary><h3>Weapons</h3></summary>
-            <div id="weapon-proficiencies-container"></div>
+            <h4>Simple Melee</h4>
+            <ul is="equipment-proficiencies-list" isArmor="false" equipmentCategoryIndex="simple-melee-weapons"></ul>
+            <h4>Martial Melee</h4>
+            <ul is="equipment-proficiencies-list" isArmor="false" equipmentCategoryIndex="martial-melee-weapons"></ul>
+            <h4>Simple Ranged</h4>
+            <ul is="equipment-proficiencies-list" isArmor="false" equipmentCategoryIndex="simple-ranged-weapons"></ul>
+            <h4>Martial Ranged</h4>
+            <ul is="equipment-proficiencies-list" isArmor="false" equipmentCategoryIndex="martial-ranged-weapons"></ul>
         </details>
         <details>
             <summary><h3>Armor</h3></summary>
-            <div id="armor-proficiencies-container"></div>
+            <h4>Light</h4>
+            <ul is="equipment-proficiencies-list" isArmor="true" equipmentCategoryIndex="light-armor"></ul>
+            <h4>Medium</h4>
+            <ul is="equipment-proficiencies-list" isArmor="true" equipmentCategoryIndex="medium-armor"></ul>
+            <h4>Heavy</h4>
+            <ul is="equipment-proficiencies-list" isArmor="true" equipmentCategoryIndex="heavy-armor"></ul>
+            <h4>Shields</h4>
+            <ul is="equipment-proficiencies-list" isArmor="true" equipmentCategoryIndex="shields"></ul>
         </details>
     </details>
 </section>

@@ -1,7 +1,7 @@
 import { Armor } from "../../api/resources/equipment/Armor.js";
 import { ArmorProficiencyCheckbox } from "./ArmorProficiencyCheckbox.js";
 
-export class ArmorProficiencyDisplay extends HTMLElement {
+export class ArmorProficiencyDisplay extends HTMLLIElement {
 
     /**
      * 
@@ -22,4 +22,4 @@ export class ArmorProficiencyDisplay extends HTMLElement {
     }
 }
 
-customElements.define('armor-proficiency-display', ArmorProficiencyDisplay);
+customElements.define('armor-proficiency-display', ArmorProficiencyDisplay, { extends: 'li' });

@@ -1,7 +1,7 @@
 import { Weapon } from "../../api/resources/equipment/Weapon.js";
 import { WeaponProficiencyCheckbox } from "./WeaponProficiencyCheckbox.js";
 
-export class WeaponProficiencyDisplay extends HTMLElement {
+export class WeaponProficiencyDisplay extends HTMLLIElement {
 
     /**
      * 
@@ -22,4 +22,4 @@ export class WeaponProficiencyDisplay extends HTMLElement {
     }
 }
 
-customElements.define('weapon-proficiency-display', WeaponProficiencyDisplay);
+customElements.define('weapon-proficiency-display', WeaponProficiencyDisplay, { extends: 'li' });
