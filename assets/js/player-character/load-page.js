@@ -1,36 +1,11 @@
 import { updateCharacter } from "./update-character.js";
 import { globalPlayerCharacter } from "./objects/PlayerCharacter.js";
-import "./objects/custom-elements/ability-score/AbilityScoreDisplay.js";
-import "./objects/custom-elements/inventory/InventoryWeaponAddInput.js";
-import "./objects/custom-elements/inventory/InventoryWeaponTable.js";
-import "./objects/custom-elements/inventory/InventoryArmorAddInput.js";
-import "./objects/custom-elements/inventory/InventoryArmorTable.js";
-import "./objects/custom-elements/generic-info/ProficiencyBonusDisplay.js";
-import "./objects/custom-elements/equipment-proficiencies/ArmorProficiencyDisplay.js";
-import "./objects/custom-elements/equipment-proficiencies/WeaponProficiencyDisplay.js";
-import "./objects/custom-elements/generic-info/RaceInput.js";
-import "./objects/custom-elements/race/RaceFeaturesDisplay.js";
-import "./objects/custom-elements/generic-info/SubraceInput.js";
-import "./objects/custom-elements/subrace/SubraceFeaturesDisplay.js";
-import "./objects/custom-elements/generic-info/BackgroundInput.js";
-import "./objects/custom-elements/generic-info/AlignmentInput.js";
-import "./objects/custom-elements/generic-info/NameInput.js";
-import "./objects/custom-elements/notes/NotesTextArea.js";
-import "./objects/custom-elements/generic-info/ClassLevelSection.js";
-import "./objects/custom-elements/skill/SkillsList.js";
-import "./objects/custom-elements/equipment-proficiencies/WeaponProficienciesList.js";
-import "./objects/custom-elements/dialogs/CharacterResetButton.js";
-import "./objects/custom-elements/dialogs/CharacterResetDialog.js";
-import "./objects/custom-elements/dialogs/CharacterExportButton.js";
-import "./objects/custom-elements/dialogs/CharacterExportDialog.js";
-import "./objects/custom-elements/dialogs/CharacterImportButton.js";
-import "./objects/custom-elements/dialogs/CharacterImportDialog.js";
 
 /**
  * Starting point for all JavaScript code for the PC-Builder page.
  * This one function should bring the page to a functioning state.
  */
-export const loadPage = async function() {
+export const loadPage = function() {
 
     // Update the current PC to the latest version so the data and inputs know how to interact with each other.
     updateCharacterToLatestVersion();

@@ -164,5 +164,7 @@ permalink: /pc-builder/
 
 <script type="module">
     import { loadPage } from "{{ '/assets/js/player-character/load-page.js' | relative_url }}";
-    await loadPage();
+    loadPage();
 </script>
+
+<script type="module" src="{{ '/assets/js/player-character/import-custom-elements.js' | relative_url }}"></script>
