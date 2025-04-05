@@ -160,7 +160,7 @@ dialog {
     // Generic styling
     width: 80%;
     max-width: calc(0.8 * (800px - (30px * 2)));
-    &:not(#reset-dialog) {
+    &:not([is="character-reset-dialog"]) {
         height: 50vh;
     }
 

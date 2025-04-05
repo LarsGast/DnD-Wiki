@@ -1,5 +1,4 @@
 import { updateCharacter } from "./update-character.js";
-import { initPage } from "./init/init-page.js"
 import { globalPlayerCharacter } from "./objects/PlayerCharacter.js";
 import "./objects/custom-elements/ability-score/AbilityScoreDisplay.js";
 import "./objects/custom-elements/inventory/InventoryWeaponAddInput.js";
@@ -20,6 +19,12 @@ import "./objects/custom-elements/notes/NotesTextArea.js";
 import "./objects/custom-elements/generic-info/ClassLevelSection.js";
 import "./objects/custom-elements/skill/SkillsList.js";
 import "./objects/custom-elements/equipment-proficiencies/WeaponProficienciesList.js";
+import "./objects/custom-elements/dialogs/CharacterResetButton.js";
+import "./objects/custom-elements/dialogs/CharacterResetDialog.js";
+import "./objects/custom-elements/dialogs/CharacterExportButton.js";
+import "./objects/custom-elements/dialogs/CharacterExportDialog.js";
+import "./objects/custom-elements/dialogs/CharacterImportButton.js";
+import "./objects/custom-elements/dialogs/CharacterImportDialog.js";
 
 /**
  * Starting point for all JavaScript code for the PC-Builder page.
@@ -29,9 +34,6 @@ export const loadPage = async function() {
 
     // Update the current PC to the latest version so the data and inputs know how to interact with each other.
     updateCharacterToLatestVersion();
-
-    // Initialize all elements that appear on the page.
-    await initPage()
 }
 
 /**

@@ -221,6 +221,10 @@ export class PlayerCharacter {
         return playerCharacter;
     }
 
+    reset() {
+        PlayerCharacter.getDefault().save();
+    }
+
     getProficiencyBonus() {
         const totalLevel = this.classes.reduce((sum, cls) => sum + (cls.level || 0), 0);
         
