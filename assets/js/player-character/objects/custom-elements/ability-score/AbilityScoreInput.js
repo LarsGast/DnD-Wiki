@@ -45,7 +45,7 @@ export class AbilityScoreInput extends HTMLInputElement {
         globalPlayerCharacter.setProperty(this.ability, parseInt(this.value));
 
         // Dispatch an event signaling that the ability score has changed.
-        document.dispatchEvent(new CustomEvent("abilityScoreInputChanged", {
+        document.dispatchEvent(new CustomEvent("abilityScoreChanged", {
             detail: { 
                 ability: this.ability 
             },
