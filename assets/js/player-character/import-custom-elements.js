@@ -16,7 +16,7 @@ import "./objects/custom-elements/generic-info/NameInput.js";
 import "./objects/custom-elements/notes/NotesTextArea.js";
 import "./objects/custom-elements/generic-info/ClassLevelSection.js";
 import "./objects/custom-elements/skill/SkillsList.js";
-import "./objects/custom-elements/equipment-proficiencies/WeaponProficienciesList.js";
+import "./objects/custom-elements/equipment-proficiencies/EquipmentProficienciesList.js";
 import "./objects/custom-elements/dialogs/CharacterResetButton.js";
 import "./objects/custom-elements/dialogs/CharacterResetDialog.js";
 import "./objects/custom-elements/dialogs/CharacterExportButton.js";

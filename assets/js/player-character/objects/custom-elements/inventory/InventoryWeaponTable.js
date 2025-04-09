@@ -2,16 +2,21 @@ import { Weapon } from "../../api/resources/equipment/Weapon.js";
 import { InventoryWeaponRow } from "./InventoryWeaponRow.js";
 import { globalPlayerCharacter } from "../../PlayerCharacter.js";
 
+/**
+ * Custom element that displays a table of inventory weapons.
+ * Extends HTMLElement.
+ *
+ * This element builds a table with a header and body. The header defines columns for various weapon properties (name, ability, attack bonus, damage, etc.).
+ * The body is populated with InventoryWeaponRow elements constructed from the global player's inventory.
+ *
+ * The table listens for "inventoryWeaponAdded" and "inventoryWeaponDeleted" events to refresh its content.
+ */
 export class InventoryWeaponTable extends HTMLElement {
-
-    /**
-     *
-     */
     constructor() {
         super();
 
+        // Create the table header.
         this.tableHead = document.createElement('thead');
-
         const tr = document.createElement('tr');
         
         const nameHead = document.createElement('th');
@@ -46,6 +51,7 @@ export class InventoryWeaponTable extends HTMLElement {
         buttonsHead.id = "weapon_buttons";
         buttonsHead.textContent = "Buttons";
 
+        // Append header cells to the header row.
         tr.appendChild(nameHead);
         tr.appendChild(abilityHead);
         tr.appendChild(attackBonusHead);
@@ -57,53 +63,67 @@ export class InventoryWeaponTable extends HTMLElement {
 
         this.tableHead.appendChild(tr);
 
+        // Create the table body.
         this.tableBody = document.createElement('tbody');
 
+        // Create the table and add the header and body.
         this.table = document.createElement('table');
-
         this.table.appendChild(this.tableHead);
         this.table.appendChild(this.tableBody);
 
+        // Append the table to this element.
         this.appendChild(this.table);
     }
 
+    /**
+     * Called when the element is connected to the DOM.
+     * Updates the table display immediately and registers event listeners for weapon inventory updates.
+     */
     connectedCallback() {
-        // Update immediately.
         this.updateDisplay();
-        // Listen for global updates.
+
         this._updateHandler = (event) => this.updateDisplay(event);
         document.addEventListener("inventoryWeaponAdded", this._updateHandler);
         document.addEventListener("inventoryWeaponDeleted", this._updateHandler);
     }
     
+    /**
+     * Called when the element is disconnected from the DOM.
+     * Removes event listeners to avoid memory leaks.
+     */
     disconnectedCallback() {
         document.removeEventListener("inventoryWeaponAdded", this._updateHandler);
         document.removeEventListener("inventoryWeaponDeleted", this._updateHandler);
     }
 
+    /**
+     * Updates the table body by repopulating it with the current inventory weapons.
+     * @param {CustomEvent} event An optional event that triggers the update.
+     */
     async updateDisplay(event) {
         if (this.shouldUpdateDisplay(event)) {
             const tableBody = this.table.querySelector('tbody');
             tableBody.replaceChildren();
 
+            // Create a row for each weapon currently in the global inventory.
             for (const inventoryWeapon of globalPlayerCharacter.inventoryWeapons) {
                 const weapon = await Weapon.getAsync(inventoryWeapon.index);
-
                 tableBody.appendChild(new InventoryWeaponRow(weapon));
             }
         }
     }
 
     /**
-     * 
-     * @param {CustomEvent} event 
+     * Determines whether the table should be updated based on the triggering event.
+     * @param {CustomEvent} event The event to evaluate.
+     * @returns {boolean} True if the table should be refreshed; otherwise false.
      */
     shouldUpdateDisplay(event) {
-
         return !event ||
-            (event.type === "inventoryWeaponAdded") ||
-            (event.type === "inventoryWeaponDeleted");
+            event.type === "inventoryWeaponAdded" ||
+            event.type === "inventoryWeaponDeleted";
     }
 }
 
+// Register the custom element.
 customElements.define("inventory-weapon-table", InventoryWeaponTable);
