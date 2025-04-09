@@ -220,38 +220,35 @@ dialog {
 }
 
 /* Abilityscores for player character page */
-#ability-scores-container {
+.ability-scores-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px 10px;
 
-    ul {
+    ability-score-display {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px 10px;
+        flex-direction: column;
 
-        ability-score-display {
-            display: flex;
-            flex-direction: column;
+        width: 100px;
+        height: 80px;
+        padding: 5px;
 
-            width: 100px;
-            height: 80px;
-            padding: 5px;
+        border: 2px solid black;
+        border-radius: 10px;
 
+        align-items: center;
+
+        :nth-child(2) {
+            font-size: 2rem;
+        }
+
+        :last-child {
             border: 2px solid black;
-            border-radius: 10px;
-
-            align-items: center;
-
-            :nth-child(2) {
-                font-size: 2rem;
-            }
-
-            :last-child {
-                border: 2px solid black;
-                border-radius: 50%;
-                width: 50%;
-                background-color: #fdfdfd;
-                text-align: center;
-            }
+            border-radius: 50%;
+            width: 50%;
+            background-color: #fdfdfd;
+            text-align: center;
         }
     }
 }

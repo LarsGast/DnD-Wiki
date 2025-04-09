@@ -49,13 +49,13 @@ permalink: /pc-builder/
     </details>
 </section>
 
-<section id="export-import-container">
+<section>
     <button is="character-reset-button"></button>
     <button is="character-export-button"></button>
     <button is="character-import-button"></button>
 </section>
 
-<section id="generic-info-container">
+<section>
     <h2>Algemeen</h2>
     <ul>
         <li><label>Name: <input is="name-input"/></label></li>
@@ -66,13 +66,13 @@ permalink: /pc-builder/
         <li><label>Subrace: <select is="subrace-input"></select></label></li>
         <li><label>Background: <select is="background-input"></select></label></li>
         <li><label>Alignment: <select is="alignment-input"></select></label></li>
-        <li>Proficiency bonus: <proficiency-bonus-display></proficiency-bonus-display></li>
+        <li>Proficiency bonus: <proficiency-bonus-display/></proficiency-bonus-display></li>
     </ul>
 </section>
 
-<section id="ability-scores-container">
+<section>
     <h2>Ability Scores</h2>
-    <ul class="no-style-list" id="ability-scores-list">
+    <ul class="no-style-list ability-scores-list">
         <li>
             <ability-score-display ability="str"></ability-score-display>
         </li>
@@ -94,12 +94,12 @@ permalink: /pc-builder/
     </ul>
 </section>
 
-<section id="skills-container">
+<section>
     <h2>Skills</h2>
     <ul is="skills-list"></ul>
 </section>
 
-<section id="equipment-proficiencies-container">
+<section>
     <details>
         <summary><h2>Equipment proficiencies</h2></summary>
         <details>
@@ -127,7 +127,7 @@ permalink: /pc-builder/
     </details>
 </section>
 
-<section id="inventory-container">
+<section>
     <details>
         <summary><h2>Inventory</h2></summary>
         <h3>Weapons</h3>
@@ -143,20 +143,20 @@ permalink: /pc-builder/
     </details>
 </section>
 
-<section id="race-features">
+<section>
     <details is="race-features-display"></details>
 </section>
 
-<section id="subrace-features">
+<section>
     <details is="subrace-features-display"></details>
 </section>
 
-<section id="notes-container">
+<section>
     <h2>Notes</h2>
     <textarea is="notes-textarea"></textarea>
 </section>
 
-<div id="dialogs">
+<div>
     <dialog is="character-reset-dialog"></dialog>
     <dialog is="character-export-dialog"></dialog>
     <dialog is="character-import-dialog"></dialog>
