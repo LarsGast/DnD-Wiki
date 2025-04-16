@@ -1,3 +1,4 @@
+import { getElementWithTextContent } from "../../../util.js";
 import { Choice } from "../../api/helpers/Choice.js";
 import { Feature } from "../../api/helpers/Feature.js";
 import { Class } from "../../api/resources/Class.js";
@@ -71,17 +72,6 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
     }
 
     /**
-     * Creates and returns a paragraph element containing the body text.
-     * @param {string} body The text content.
-     * @returns {HTMLElement} The paragraph element.
-     */
-    getParagraph(body) {
-        const p = document.createElement('p');
-        p.textContent = body;
-        return p;
-    }
-
-    /**
      * Asynchronously updates the display with the class's features.
      * Hides the element if no class is selected.
      */
@@ -104,8 +94,8 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
         this.appendChild(this.getSectionHeading());
 
         // Display ability bonuses.
-        this.appendChild(this.getHeading("Hit Die"));
-        this.appendChild(this.getParagraph(`d${this.class.hit_die}`));
+        this.appendChild(getElementWithTextContent("h3", "Hit Die"));
+        this.appendChild(getElementWithTextContent("p", `d${this.class.hit_die}`));
 
         // Display speed.
         this.appendChild(this.getHeading("Proficiencies"));
@@ -123,11 +113,11 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
         const ul = document.createElement('ul');
 
         for (const choiceObject of this.class.proficiency_choices) {
-            ul.appendChild(this.getListItem(choiceObject.desc));
+            ul.appendChild(getElementWithTextContent("li", choiceObject.desc));
         }
 
         for (const obj of this.class.proficiencies) {
-            ul.appendChild(this.getListItem(obj.name));
+            ul.appendChild(getElementWithTextContent("li", obj.name));
         }
 
         return ul;
@@ -137,11 +127,11 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
         const ul = document.createElement('ul');
 
         for (const choiceObject of this.class.starting_equipment_options) {
-            ul.appendChild(this.getListItem(choiceObject.desc));
+            ul.appendChild(getElementWithTextContent("li", choiceObject.desc));
         }
 
         for (const startingEquipment of this.class.starting_equipment) {
-            ul.appendChild(this.getListItem(`${startingEquipment.quantity}x ${startingEquipment.equipment.name}`));
+            ul.appendChild(getElementWithTextContent("li", `${startingEquipment.quantity}x ${startingEquipment.equipment.name}`));
         }
 
         return ul;
@@ -164,7 +154,7 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
 
         const section = document.createElement('section');
 
-        section.appendChild(this.getHeading4(`Level ${levelNumber}`));
+        section.appendChild(getElementWithTextContent("h4", `Level ${levelNumber}`));
 
         for (const feature of await levelObject.getAllFeaturesAsync()) {
             section.appendChild(await this.getFeatureSection(feature));
@@ -181,10 +171,10 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
 
         const section = document.createElement('section');
 
-        section.appendChild(this.getHeading5(feature.name));
+        section.appendChild(getElementWithTextContent("h5", feature.name));
 
         for (const paragraph of feature.desc) {
-            section.appendChild(this.getParagraph(paragraph));
+            section.appendChild(getElementWithTextContent("p", paragraph));
         }
 
         if (feature.feature_specific) {
@@ -205,22 +195,14 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
 
         for (const option of choice.from.options) {
             const subfeature = await Feature.getAsync(option.item.index);
-            div.appendChild(this.getHeading6(subfeature.name));
+            div.appendChild(getElementWithTextContent("h6", subfeature.name));
             
             for (const paragraph of subfeature.desc) {
-                div.appendChild(this.getParagraph(paragraph));
+                div.appendChild(getElementWithTextContent("p", paragraph));
             }
         }
 
         return div;
-    }
-
-    getListItem(context) {
-        const li = document.createElement('li');
-
-        li.textContent = context;
-
-        return li;
     }
 
     /**
@@ -230,11 +212,7 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
     getSectionHeading() {
         const summary = document.createElement('summary');
 
-        const heading = document.createElement('h2');
-
-        heading.textContent = `Class features (${this.getClassName()} ${this.level})`;
-
-        summary.appendChild(heading);
+        summary.appendChild(getElementWithTextContent("h2", `Class features (${this.getClassName()} ${this.level})`));
 
         return summary;
     }
@@ -248,39 +226,6 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
     }
 
     /**
-     * Creates and returns a level-5 heading element for a trait.
-     * @param {string} title The trait title.
-     * @returns {HTMLElement} The heading element.
-     */
-    getHeading5(title) {
-        const heading = document.createElement('h5');
-        heading.textContent = title;
-        return heading;
-    }
-
-    /**
-     * Creates and returns a level-5 heading element for a trait.
-     * @param {string} title The trait title.
-     * @returns {HTMLElement} The heading element.
-     */
-    getHeading6(title) {
-        const heading = document.createElement('h6');
-        heading.textContent = title;
-        return heading;
-    }
-
-    /**
-     * Creates and returns a level-4 heading element for a trait.
-     * @param {string} title The trait title.
-     * @returns {HTMLElement} The heading element.
-     */
-    getHeading4(title) {
-        const heading = document.createElement('h4');
-        heading.textContent = title;
-        return heading;
-    }
-
-    /**
      * Constructs a section element for class traits.
      * @param {Array} traits An array of trait objects.
      * @returns {HTMLElement} The section element containing trait headings and descriptions.
@@ -291,9 +236,9 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
         traitsSection.appendChild(this.getHeading("Traits"));
 
         for (const trait of traits) {
-            traitsSection.appendChild(this.getHeading4(trait.name));
+            traitsSection.appendChild(getElementWithTextContent("h4", trait.name));
             for (const traitDesc of trait.desc) {
-                traitsSection.appendChild(this.getParagraph(traitDesc));
+                traitsSection.appendChild(getElementWithTextContent("p", traitDesc));
             }
         }
 
