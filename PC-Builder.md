@@ -152,6 +152,10 @@ permalink: /pc-builder/
 </section>
 
 <section>
+    <details is="class-features-display"></details>
+</section>
+
+<section>
     <h2>Notes</h2>
     <textarea is="notes-textarea"></textarea>
 </section>

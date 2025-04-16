@@ -23,3 +23,4 @@ import "./objects/custom-elements/dialogs/CharacterExportButton.js";
 import "./objects/custom-elements/dialogs/CharacterExportDialog.js";
 import "./objects/custom-elements/dialogs/CharacterImportButton.js";
 import "./objects/custom-elements/dialogs/CharacterImportDialog.js";
+import "./objects/custom-elements/class/ClassFeaturesDisplay.js";
