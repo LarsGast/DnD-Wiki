@@ -2,7 +2,6 @@ import { getElementWithTextContent } from "../../../util.js";
 import { Choice } from "../../api/helpers/Choice.js";
 import { Feature } from "../../api/helpers/Feature.js";
 import { Class } from "../../api/resources/Class.js";
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
 
 /**
  * Custom details element that displays the features of the selected class.
@@ -13,87 +12,40 @@ import { globalPlayerCharacter } from "../../PlayerCharacter.js";
  */
 export class ClassFeaturesDisplay extends HTMLDetailsElement {
 
-    constructor() {
+    constructor(classLevelInfo) {
         super();
-        
-        this.open = true;
+
+        this.classLevelInfo = classLevelInfo;
     }
-    
+
     /**
      * Called when the element is connected to the DOM.
-     * Immediately updates the display and starts listening for class changes.
+     * Immediately updates the display.
      */
-    connectedCallback() {
-        // Update display immediately upon being added to the DOM.
-        this.updateDisplay();
+    async connectedCallback() {
+        this.class = await Class.getAsync(this.classLevelInfo.index);
 
-        // Save a reference to the event handler so it can be removed later.
-        this._updateHandler = (event) => this.updateDisplay(event);
-        document.addEventListener("classesChanged", this._updateHandler);
-    }
-    
-    /**
-     * Called when the element is disconnected from the DOM.
-     * Cleans up the event listener.
-     */
-    disconnectedCallback() {
-        document.removeEventListener("classesChanged", this._updateHandler);
-    }
-
-    /**
-     * Asynchronously updates the class features display if an update is warranted.
-     * @param {CustomEvent} event An optional event that triggers the update.
-     */
-    async updateDisplay(event) {
-        if (this.getShouldUpdate(event)) {
-            await this.updateClassFeaturesDisplay();
-        }
-    }
-
-    /**
-     * Determines if the display should be updated based on the triggering event.
-     * @param {CustomEvent} event The event that triggered the update.
-     * @returns {boolean} True if the display should update.
-     */
-    getShouldUpdate(event) {
-        return !event || (event.type === "classesChanged");
+        await this.updateClassFeaturesDisplay();
     }
 
     /**
      * Asynchronously updates the display with the current class's features.
-     * Hides the element if no class is selected.
      */
     async updateClassFeaturesDisplay() {
-        // If no class information is present, hide this element.
-        if (!globalPlayerCharacter.classes || globalPlayerCharacter.classes.length === 0) {
-            this.style.display = "none";
-            return;
-        }
-        
-        this.style.display = "block";
-
-        // Fetch the class data for the first (or primary) class.
-        this.class = await Class.getAsync(globalPlayerCharacter.classes[0].index);
-
-        // Also retrieve the character's level in that class.
-        this.level = globalPlayerCharacter.classes[0].level;
-
-        // Clear any existing content in the details element.
-        this.replaceChildren();
 
         // Append the section heading (includes class name and level).
         this.appendChild(this.getSectionHeading());
 
         // Display the hit die information.
-        this.appendChild(getElementWithTextContent("h3", "Hit Die"));
+        this.appendChild(getElementWithTextContent("h4", "Hit Die"));
         this.appendChild(getElementWithTextContent("p", `d${this.class.hit_die}`));
 
         // Display the proficiencies section.
-        this.appendChild(getElementWithTextContent("h3", "Proficiencies"));
+        this.appendChild(getElementWithTextContent("h4", "Proficiencies"));
         this.appendChild(this.getProficienciesSection());
         
         // Display starting equipment.
-        this.appendChild(getElementWithTextContent("h3", "Starting Equipment"));
+        this.appendChild(getElementWithTextContent("h4", "Starting Equipment"));
         this.appendChild(this.getStartingEquipmentSection());
         
         // Display level-specific features.
@@ -103,11 +55,11 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
     /**
      * Constructs and returns the section heading element.
      * The heading includes the class name and character level.
-     * @returns {HTMLElement} A summary element containing an h2 heading.
+     * @returns {HTMLElement} A summary element containing an h3 heading.
      */
     getSectionHeading() {
         const summary = document.createElement('summary');
-        summary.appendChild(getElementWithTextContent("h2", `Class features (${this.class.name} ${this.level})`));
+        summary.appendChild(getElementWithTextContent("h3", `${this.class.name} ${this.classLevelInfo.level}`));
         return summary;
     }
 
@@ -160,10 +112,10 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
     async getLevelsSection() {
         const fragment = document.createDocumentFragment();
 
-        fragment.appendChild(getElementWithTextContent("h3", "Levels"));
+        fragment.appendChild(getElementWithTextContent("h4", "Levels"));
 
         // For each level up to the current level, add its features.
-        for (let levelNumber = 1; levelNumber <= this.level; levelNumber++) {
+        for (let levelNumber = 1; levelNumber <= this.classLevelInfo.level; levelNumber++) {
             fragment.appendChild(await this.getLevelSection(levelNumber));
         }
 
@@ -178,7 +130,7 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
     async getLevelSection(levelNumber) {
 
         const fragment = document.createDocumentFragment();
-        fragment.appendChild(getElementWithTextContent("h4", `Level ${levelNumber}`));
+        fragment.appendChild(getElementWithTextContent("h5", `Level ${levelNumber}`));
         
         // Fetch level-specific data for this class.
         const levelObject = await this.class.getLevelAsync(levelNumber);
@@ -201,7 +153,7 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
         const fragment = document.createDocumentFragment();
 
         // Add feature name as a header.
-        fragment.appendChild(getElementWithTextContent("h5", feature.name));
+        fragment.appendChild(getElementWithTextContent("h6", feature.name));
 
         // Add each paragraph in the feature description.
         for (const paragraph of feature.desc) {

@@ -152,7 +152,7 @@ permalink: /pc-builder/
 </section>
 
 <section>
-    <details is="class-features-display"></details>
+    <details is="classes-features-display"></details>
 </section>
 
 <section>
