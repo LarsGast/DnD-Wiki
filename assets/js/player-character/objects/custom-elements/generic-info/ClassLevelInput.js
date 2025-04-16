@@ -73,7 +73,7 @@ export class ClassLevelInput extends HTMLLIElement {
      */
     async loadOptions() {
         await this.loadClassOptions();
-        await this.loadSubclassOptions(this.classIndex);
+        await this.loadSubclassOptions();
     }
 
     async loadClassOptions() {
@@ -92,13 +92,15 @@ export class ClassLevelInput extends HTMLLIElement {
         this.levelInput.value = this.level ?? 1;
     }
 
-    async loadSubclassOptions(classIndex) {
+    async loadSubclassOptions() {
+
+        this.subclassSelect.replaceChildren();
 
         // Add an empty option first.
         this.subclassSelect.appendChild(getEmptyOption());
 
         // Retrieve all available subclasses.
-        const chosenClass = await Class.getAsync(classIndex);
+        const chosenClass = await Class.getAsync(this.classIndex);
         for (const subclassInfo of chosenClass.subclasses) {
             this.subclassSelect.appendChild(getSelectOption(subclassInfo.name, subclassInfo.index));
         }
@@ -111,7 +113,10 @@ export class ClassLevelInput extends HTMLLIElement {
      * Event handler for when the class selection changes.
      * Dispatches a "classChanged" event.
      */
-    handleClassChange() {
+    async handleClassChange() {
+        this.classIndex = this.classSelect.value;
+        this.subclassIndex = null;
+        await this.loadSubclassOptions();
         document.dispatchEvent(new Event("classChanged"));
     }
   
