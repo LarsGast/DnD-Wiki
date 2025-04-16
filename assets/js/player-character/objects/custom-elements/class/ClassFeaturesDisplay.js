@@ -220,22 +220,25 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
      * Asynchronously constructs a section for a choice.
      * It retrieves each subfeature from the choice options and displays its name and description.
      * @param {Choice} choice The choice object from feature_specific.
-     * @returns {Promise<DocumentFragment>} A fragment containing the choice details.
+     * @returns {Promise<HTMLUListElement>} A ul containing the choice details.
      */
     async getChoiceSection(choice) {
-        const fragment = document.createDocumentFragment();
+        const ul = document.createElement("ul");
 
         // For each option provided by the choice, fetch the subfeature and display it.
         for (const option of choice.from.options) {
             const subfeature = await Feature.getAsync(option.item.index);
-            fragment.appendChild(getElementWithTextContent("h6", subfeature.name));
+            
+            const li = getElementWithTextContent("li", `${subfeature.name}. `);
             
             for (const paragraph of subfeature.desc) {
-                fragment.appendChild(getElementWithTextContent("p", paragraph));
+                li.textContent += paragraph;
             }
+
+            ul.appendChild(li);
         }
 
-        return fragment;
+        return ul;
     }
 }
 
