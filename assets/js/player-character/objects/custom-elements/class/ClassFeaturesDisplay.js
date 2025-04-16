@@ -154,88 +154,88 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
     }
 
     /**
-     * Creates and returns a section element that includes level details from level 1 to the current level.
-     * @returns {Promise<HTMLElement>} A section element with level features.
+     * Creates and returns a fragment that includes level details from level 1 to the current level.
+     * @returns {Promise<DocumentFragment>} A fragment with level features.
      */
     async getLevelsSection() {
-        const section = document.createElement('section');
+        const fragment = document.createDocumentFragment();
 
-        section.appendChild(getElementWithTextContent("h3", "Levels"));
+        fragment.appendChild(getElementWithTextContent("h3", "Levels"));
 
         // For each level up to the current level, add its features.
         for (let levelNumber = 1; levelNumber <= this.level; levelNumber++) {
-            section.appendChild(await this.getLevelSection(levelNumber));
+            fragment.appendChild(await this.getLevelSection(levelNumber));
         }
 
-        return section;
+        return fragment;
     }
 
     /**
      * Asynchronously retrieves and constructs the display section for a given level.
      * @param {number} levelNumber The level number to create the section for.
-     * @returns {Promise<HTMLElement>} A section element detailing features for that level.
+     * @returns {Promise<DocumentFragment>} A fragment detailing features for that level.
      */
     async getLevelSection(levelNumber) {
 
-        const section = document.createElement('section');
-        section.appendChild(getElementWithTextContent("h4", `Level ${levelNumber}`));
+        const fragment = document.createDocumentFragment();
+        fragment.appendChild(getElementWithTextContent("h4", `Level ${levelNumber}`));
         
         // Fetch level-specific data for this class.
         const levelObject = await this.class.getLevelAsync(levelNumber);
 
         // For each feature at this level, add the feature section.
         for (const feature of await levelObject.getAllFeaturesAsync()) {
-            section.appendChild(await this.getFeatureSection(feature));
+            fragment.appendChild(await this.getFeatureSection(feature));
         }
 
-        return section;
+        return fragment;
     }
 
     /**
-     * Asynchronously constructs and returns a section element for a given feature.
+     * Asynchronously constructs and returns a fragment for a given feature.
      * The section includes the feature's name, description, and any subfeature options.
      * @param {Feature} feature The feature object.
-     * @returns {Promise<HTMLElement>} A section element describing the feature.
+     * @returns {Promise<DocumentFragment>} A fragment describing the feature.
      */
     async getFeatureSection(feature) {
-        const section = document.createElement('section');
+        const fragment = document.createDocumentFragment();
 
         // Add feature name as a header.
-        section.appendChild(getElementWithTextContent("h5", feature.name));
+        fragment.appendChild(getElementWithTextContent("h5", feature.name));
 
         // Add each paragraph in the feature description.
         for (const paragraph of feature.desc) {
-            section.appendChild(getElementWithTextContent("p", paragraph));
+            fragment.appendChild(getElementWithTextContent("p", paragraph));
         }
 
         // If there are feature-specific details (like subfeature options), add them.
         if (feature.feature_specific && feature.feature_specific.subfeature_options) {
-            section.appendChild(await this.getChoiceSection(feature.feature_specific.subfeature_options));
+            fragment.appendChild(await this.getChoiceSection(feature.feature_specific.subfeature_options));
         }
 
-        return section;
+        return fragment;
     }
 
     /**
      * Asynchronously constructs a section for a choice.
      * It retrieves each subfeature from the choice options and displays its name and description.
      * @param {Choice} choice The choice object from feature_specific.
-     * @returns {Promise<HTMLDivElement>} A div element containing the choice details.
+     * @returns {Promise<DocumentFragment>} A fragment containing the choice details.
      */
     async getChoiceSection(choice) {
-        const div = document.createElement('div');
+        const fragment = document.createDocumentFragment();
 
         // For each option provided by the choice, fetch the subfeature and display it.
         for (const option of choice.from.options) {
             const subfeature = await Feature.getAsync(option.item.index);
-            div.appendChild(getElementWithTextContent("h6", subfeature.name));
+            fragment.appendChild(getElementWithTextContent("h6", subfeature.name));
             
             for (const paragraph of subfeature.desc) {
-                div.appendChild(getElementWithTextContent("p", paragraph));
+                fragment.appendChild(getElementWithTextContent("p", paragraph));
             }
         }
 
-        return div;
+        return fragment;
     }
 }
 
