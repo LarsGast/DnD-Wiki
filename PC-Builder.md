@@ -30,7 +30,6 @@ permalink: /pc-builder/
         <ul>
             <li>HP, AC, initiative, en speed</li>
             <li>Saving throws</li>
-            <li>Class features</li>
             <li>Spell casting</li>
             <li>Talen</li>
             <li>
