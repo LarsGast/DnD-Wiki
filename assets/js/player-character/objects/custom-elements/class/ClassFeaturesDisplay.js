@@ -54,7 +54,7 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
         
         // Display the subclass.
         if (this.subclass) {
-            this.appendChild(await this.getSubclassSection());
+            this.appendChild(this.getSubclassSection());
         }
         
         // Display level-specific features.
@@ -121,7 +121,11 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
         return ul;
     }
 
-    async getSubclassSection() {
+    /**
+     * Creates and returns a fragment that includes the chosen subclass description
+     * @returns {DocumentFragment} A fragment with subclass description.
+     */
+    getSubclassSection() {
 
         const fragment = document.createDocumentFragment();
 
@@ -169,6 +173,7 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
             fragment.appendChild(await this.getFeatureSection(feature));
         }
 
+        // If a subclass is chosen, display the features the subclass gets for the given level.
         if (this.subclass) {
             const subclassFeatures = await this.subclass.getFeaturesForLevelAsync(levelNumber);
             for (const feature of subclassFeatures) {

@@ -6,14 +6,34 @@ export class Subclass extends ApiBaseObject {
 
     static apiCategory = ApiCategory.Subclasses;
 
+    /**
+     * Description of the resource.
+     * @type {string[]}
+     */
     desc;
 
+    /**
+     * Class that the subclass belongs to.
+     * @type {ApiBaseObject}
+     */
     class;
 
+    /**
+     * Lore-friendly flavor text for a classes respective subclass.
+     * @type {string}
+     */
     subclass_flavor;
 
+    /**
+     * Resource url that shows the subclass level progression.
+     * @type {string[]}
+     */
     subclass_levels;
 
+    /**
+     * Subclass specific spells.
+     * @type {object[]}
+     */
     spells;
 
     /**
@@ -26,7 +46,7 @@ export class Subclass extends ApiBaseObject {
     }
 
     /**
-     * 
+     * Get all features of the subclass at the given level.
      * @param {number} level
      * @returns {Promise<Feature[]>} 
      */
