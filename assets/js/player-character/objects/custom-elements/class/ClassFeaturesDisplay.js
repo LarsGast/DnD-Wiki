@@ -68,7 +68,14 @@ export class ClassFeaturesDisplay extends HTMLDetailsElement {
      */
     getSectionHeading() {
         const summary = document.createElement('summary');
-        summary.appendChild(getElementWithTextContent("h3", `${this.class.name} ${this.classLevelInfo.level}`));
+
+        let summaryTitle = `${this.class.name} ${this.classLevelInfo.level}`;
+        if (this.subclass) {
+            summaryTitle += ` (${this.subclass.name})`;
+        }
+
+        summary.appendChild(getElementWithTextContent("h3", summaryTitle));
+
         return summary;
     }
 
