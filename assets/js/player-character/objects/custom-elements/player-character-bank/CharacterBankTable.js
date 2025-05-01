@@ -1,29 +1,50 @@
 import { getElementWithTextContent } from "../../../util.js";
-import { PlayerCharacterBankEntry } from "../../PlayerCharacterBank.js";
+import { PlayerCharacterBank, PlayerCharacterBankEntry } from "../../PlayerCharacterBank.js";
 import { CharacterExportButton } from "./CharacterExportButton.js";
 import { CharacterDeleteButton } from "./CharacterDeleteButton.js";
 import { CharacterSelectButton } from "./CharacterSelectButton.js";
+import { globalPlayerCharacterBank } from "../../../load-page.js";
 
 export class CharacterBankTable extends HTMLTableElement {
 
     /**
      *
-     * @param {PlayerCharacterBankEntry[]} playerCharacters
      * @param {boolean} isForCurrentCharacter
      */
-    constructor(playerCharacters, isForCurrentCharacter) {
+    constructor(isForCurrentCharacter) {
         super();
 
-        this.playerCharacters = playerCharacters;
         this.isForCurrentCharacter = isForCurrentCharacter;
         
         this.caption = getElementWithTextContent("caption", isForCurrentCharacter ? "Selected character" : "Character storage");
         this.tableHeading = this.getTableHeading();
-        this.tableBody = this.getTableBody();
+        this.tableBody = document.createElement('tbody');
 
         this.appendChild(this.caption);
         this.appendChild(this.tableHeading);
         this.appendChild(this.tableBody);
+    }
+
+    /**
+     * Called when the element is connected to the DOM.
+     * Listens for events to update the body of the table.
+     */
+    connectedCallback() {
+
+        // Fill body on create.
+        this.updateTableBody();
+
+        // Fill body on event.
+        this._updateHandler = () => this.updateTableBody();
+        document.addEventListener("playerCharacterDeleted", this._updateHandler);
+    }
+    
+    /**
+     * Called when the element is disconnected from the DOM.
+     * Removes the event listeners.
+     */
+    disconnectedCallback() {
+        document.removeEventListener("playerCharacterDeleted", this._updateHandler);
     }
 
     getTableHeading() {
@@ -44,16 +65,24 @@ export class CharacterBankTable extends HTMLTableElement {
     /**
      * 
      */
-    getTableBody() {
-        const body = document.createElement('tbody');
+    updateTableBody() {
+        this.tableBody.replaceChildren();
 
-        const sortedCharacters = this.playerCharacters.sort((a, b) => b.lastEdit - a.lastEdit);
+        const playerCharacters = this.getPlayerCharactersForTable();
 
+        const sortedCharacters = playerCharacters.sort((a, b) => b.lastEdit - a.lastEdit);
         for (const playerCharacter of sortedCharacters) {
-            body.appendChild(this.getTableRow(playerCharacter));
+            this.tableBody.appendChild(this.getTableRow(playerCharacter));
         }
+    }
 
-        return body;
+    getPlayerCharactersForTable() {
+        if (this.isForCurrentCharacter) {
+            return [globalPlayerCharacterBank.getActivePlayerCharacter()];
+        }
+        else {
+            return globalPlayerCharacterBank.getInactivePlayerCharacters();
+        }
     }
 
     /**

@@ -86,7 +86,9 @@ export class CharacterDeleteDialog extends HTMLDialogElement {
         globalPlayerCharacterBank.removeCharacterFromBank(this.characterId);
         globalPlayerCharacterBank.save();
 
-        window.location.reload();
+        this.close();
+
+        document.dispatchEvent(new Event("playerCharacterDeleted"));
     }
   
     /**

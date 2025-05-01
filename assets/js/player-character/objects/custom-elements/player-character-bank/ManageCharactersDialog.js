@@ -75,8 +75,8 @@ export class ManageCharactersDialog extends HTMLDialogElement {
     showDialog() {
 
         // Rebuild the tables displaying information about the character(s).
-        this.currentCharacterTableContainer.replaceChildren(new CharacterBankTable([globalPlayerCharacterBank.getActivePlayerCharacter()], true));
-        this.bankedCharactersTableContainer.replaceChildren(new CharacterBankTable(globalPlayerCharacterBank.getInactivePlayerCharacters(), false));
+        this.currentCharacterTableContainer.replaceChildren(new CharacterBankTable(true));
+        this.bankedCharactersTableContainer.replaceChildren(new CharacterBankTable(false));
 
         this.showModal();
     }
