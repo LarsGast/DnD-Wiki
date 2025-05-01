@@ -52,6 +52,7 @@ permalink: /pc-builder/
     <button is="character-reset-button"></button>
     <button is="character-export-button"></button>
     <button is="character-import-button"></button>
+    <button is="manage-characters-button"></button>
 </section>
 
 <section>
@@ -163,6 +164,7 @@ permalink: /pc-builder/
     <dialog is="character-reset-dialog"></dialog>
     <dialog is="character-export-dialog"></dialog>
     <dialog is="character-import-dialog"></dialog>
+    <dialog is="manage-characters-dialog"></dialog>
 </div>
 
 <script type="module">

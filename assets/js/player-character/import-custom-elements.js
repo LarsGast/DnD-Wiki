@@ -24,4 +24,5 @@ import "./objects/custom-elements/dialogs/CharacterExportDialog.js";
 import "./objects/custom-elements/dialogs/CharacterImportButton.js";
 import "./objects/custom-elements/dialogs/CharacterImportDialog.js";
 import "./objects/custom-elements/class/ClassesFeaturesDisplay.js";
-import "./objects/custom-elements/class/ClassFeaturesDisplay.js";
+import "./objects/custom-elements/player-character-bank/ManageCharactersDialog.js";
+import "./objects/custom-elements/player-character-bank/ManageCharactersButton.js";
