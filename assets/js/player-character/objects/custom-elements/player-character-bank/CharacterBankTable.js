@@ -62,7 +62,7 @@ export class CharacterBankTable extends HTMLTableElement {
 
         const playerCharacter = playerCharacterEntry.playerCharacter;
 
-        row.appendChild(this.getButtonsRow());
+        row.appendChild(this.getButtonsRow(playerCharacterEntry));
         row.appendChild(getElementWithTextContent('td', playerCharacter.name));
         row.appendChild(getElementWithTextContent('td', this.getCsv(playerCharacter.race, playerCharacter.subrace)));
         row.appendChild(getElementWithTextContent('td', playerCharacter.classes.map(classObject => this.getCsv(classObject.index, classObject.level))));
@@ -70,11 +70,15 @@ export class CharacterBankTable extends HTMLTableElement {
         return row;
     }
 
-    getButtonsRow() {
+    /**
+     * 
+     * @param {PlayerCharacterBankEntry} playerCharacterEntry 
+     */
+    getButtonsRow(playerCharacterEntry) {
 
         const td = document.createElement('td');
 
-        td.appendChild(new CharacterExportButton());
+        td.appendChild(new CharacterExportButton(playerCharacterEntry.id));
 
         if (!this.isForCurrentCharacter) {
             td.appendChild(new CharacterResetButton());
