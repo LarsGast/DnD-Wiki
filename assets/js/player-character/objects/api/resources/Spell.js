@@ -1,6 +1,9 @@
+import { ApiCategory } from "../../../api.js";
 import { ApiBaseObject } from "./ApiBaseObject.js";
 
 export class Spell extends ApiBaseObject {
+
+    static apiCategory = ApiCategory.Spells;
 
     /**
      * Description of the resource.
@@ -58,7 +61,7 @@ export class Spell extends ApiBaseObject {
 
     /**
      * How long it takes for the spell to activate.
-     * @type {boolean}
+     * @type {string}
      */
     casting_time;
 

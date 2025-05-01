@@ -25,3 +25,4 @@ import "./objects/custom-elements/dialogs/CharacterImportButton.js";
 import "./objects/custom-elements/dialogs/CharacterImportDialog.js";
 import "./objects/custom-elements/class/ClassesFeaturesDisplay.js";
 import "./objects/custom-elements/class/ClassFeaturesDisplay.js";
+import "./objects/custom-elements/spells/SpellDisplay.js";

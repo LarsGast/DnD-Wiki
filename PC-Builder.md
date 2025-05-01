@@ -155,6 +155,10 @@ permalink: /pc-builder/
 </section>
 
 <section>
+    <spell-display></spell-display>
+</section>
+
+<section>
     <h2>Notes</h2>
     <textarea is="notes-textarea"></textarea>
 </section>
