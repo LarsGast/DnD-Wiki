@@ -16,10 +16,10 @@ export class ManageCharactersButton extends HTMLButtonElement {
     }
     
     /**
-     * Handles the button click and dispatches a "characterResetButtonClicked" event.
+     * Handles the button click and dispatches a "manageCharactersButtonClicked" event.
      */
     handleClick() {
-        document.dispatchEvent(new Event('characterResetButtonClicked'));
+        document.dispatchEvent(new Event('manageCharactersButtonClicked'));
     }
 }
 
