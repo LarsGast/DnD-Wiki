@@ -119,6 +119,8 @@ export class CharacterExportDialog extends HTMLDialogElement {
         a.click();
 
         URL.revokeObjectURL(url);
+
+        this.close();
     }
   
     /**
