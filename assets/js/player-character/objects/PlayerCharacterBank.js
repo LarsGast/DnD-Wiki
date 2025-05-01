@@ -128,6 +128,10 @@ export class PlayerCharacterBank {
         this.save();
     }
 
+    removeCharacterFromBank(id) {
+        this.playerCharacterBankEntries = this.playerCharacterBankEntries.filter(entry => entry.id != id);
+    }
+
     getCharacterById(id) {
         return this.playerCharacterBankEntries.find(entry => entry.id === id);
     }

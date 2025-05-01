@@ -1,4 +1,4 @@
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { globalPlayerCharacterBank } from "../../PlayerCharacterBank.js";
 
 /**
  * Custom HTML element for displaying the Character Reset Dialog.
@@ -58,7 +58,7 @@ export class CharacterResetDialog extends HTMLDialogElement {
      * Registers an event listener for "characterResetButtonClicked".
      */
     connectedCallback() {
-        this._updateHandler = () => this.showDialog();
+        this._updateHandler = (event) => this.showDialog(event);
         document.addEventListener("characterResetButtonClicked", this._updateHandler);
     }
     
@@ -72,8 +72,12 @@ export class CharacterResetDialog extends HTMLDialogElement {
 
     /**
      * Opens the dialog.
+     * @param {CustomEvent} event 
      */
-    showDialog() {
+    showDialog(event) {
+
+        this.characterId = event.detail.characterId;
+
         this.showModal();
     }
   
@@ -81,7 +85,9 @@ export class CharacterResetDialog extends HTMLDialogElement {
      * Handles reset button clicks. Resets the global character and reloads the page.
      */
     handleResetButtonClick() {
-        globalPlayerCharacter.reset();
+        globalPlayerCharacterBank.removeCharacterFromBank(this.characterId);
+
+        globalPlayerCharacterBank.save();
         
         // Reload the page to update all elements with default values.
         window.location.reload();

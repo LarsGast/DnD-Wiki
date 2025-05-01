@@ -81,7 +81,7 @@ export class CharacterBankTable extends HTMLTableElement {
         td.appendChild(new CharacterExportButton(playerCharacterEntry.id));
 
         if (!this.isForCurrentCharacter) {
-            td.appendChild(new CharacterResetButton());
+            td.appendChild(new CharacterResetButton(playerCharacterEntry.id));
         }
 
         return td;

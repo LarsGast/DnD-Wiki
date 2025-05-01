@@ -4,12 +4,13 @@
  */
 export class CharacterResetButton extends HTMLButtonElement {
     
-    constructor() {
+    constructor(characterId) {
         super();
         
         // Set type and text.
+        this.characterId = characterId;
         this.type = 'button';
-        this.textContent = "Reset";
+        this.textContent = "Delete";
 
         // Bind click event to trigger the reset dialog.
         this.onclick = () => this.handleClick();
@@ -19,7 +20,12 @@ export class CharacterResetButton extends HTMLButtonElement {
      * Handles the button click and dispatches a "characterResetButtonClicked" event.
      */
     handleClick() {
-        document.dispatchEvent(new Event('characterResetButtonClicked'));
+        document.dispatchEvent(new CustomEvent("characterResetButtonClicked", {
+            detail: { 
+                characterId: this.characterId 
+            },
+            bubbles: true
+        }));
     }
 }
 
