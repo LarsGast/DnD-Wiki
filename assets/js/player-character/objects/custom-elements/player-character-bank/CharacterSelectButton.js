@@ -1,7 +1,7 @@
 import { globalPlayerCharacterBank } from "../../../load-page.js";
 
 /**
- * Custom HTML element for displaying and handling the button to open the Character Select Dialog.
+ * Custom HTML element for handling the button to switch between characters.
  * Extends HTMLButtonElement.
  */
 export class CharacterSelectButton extends HTMLButtonElement {
@@ -20,6 +20,7 @@ export class CharacterSelectButton extends HTMLButtonElement {
     
     /**
      * Handles the button click.
+     * Sets the selected character to be active and reloads the page to display the new information.
      */
     handleClick() {
         globalPlayerCharacterBank.setActiveCharacter(this.characterId);
