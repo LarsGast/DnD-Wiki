@@ -47,7 +47,9 @@ export class CharacterBankTable extends HTMLTableElement {
     getTableBody() {
         const body = document.createElement('tbody');
 
-        for (const playerCharacter of this.playerCharacters) {
+        const sortedCharacters = this.playerCharacters.sort((a, b) => b.lastEdited - a.lastEdited);
+
+        for (const playerCharacter of sortedCharacters) {
             body.appendChild(this.getTableRow(playerCharacter));
         }
 
