@@ -112,11 +112,14 @@ export class CharacterBankTable extends HTMLTableElement {
 
         const td = document.createElement('td');
 
+        if (!this.isForCurrentCharacter) {
+            td.appendChild(new CharacterSelectButton(playerCharacterEntry.id));
+        }
+
         td.appendChild(new CharacterExportButton(playerCharacterEntry.id));
 
         if (!this.isForCurrentCharacter) {
             td.appendChild(new CharacterDeleteButton(playerCharacterEntry.id));
-            td.appendChild(new CharacterSelectButton(playerCharacterEntry.id));
         }
 
         return td;
