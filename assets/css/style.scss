@@ -192,17 +192,7 @@ dialog {
             cursor: pointer;
         }
 
-        /* Other buttons in the dialog */
-        .reset,
-        .copy,
-        .download,
-        .import {
-
-            // Prevent stretching caused by flex.
-            align-self: start;
-        }
-
-        .reset {
+        .delete {
 
             // As a warning.
             background-color: red;
