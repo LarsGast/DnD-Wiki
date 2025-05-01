@@ -34,7 +34,7 @@ export class PlayerCharacterBankEntry {
     /**
      * @type {Date}
      */
-    lastEdited = new Date();
+    lastEdit = new Date();
 
     /**
      * Constructs a new PlayerCharacterBankEntry instance.
@@ -45,7 +45,7 @@ export class PlayerCharacterBankEntry {
         Object.assign(this, data);
 
         this.playerCharacter = new PlayerCharacter(this.playerCharacter);
-        this.lastEdited = new Date(this.lastEdited);
+        this.lastEdit = new Date(this.lastEdit);
     }
 }
 
@@ -128,15 +128,16 @@ export class PlayerCharacterBank {
         }
 
         currentCharacter.playerCharacter = playerCharacter;
-        currentCharacter.lastEdited = new Date();
 
         this.save();
     }
 
     setActiveCharacter(id) {
-        this.playerCharacterBankEntries.forEach(entry => entry.isActive = false);
 
-        console.log(id);
+        const currentActiveCharacter = this.getActivePlayerCharacter();
+        currentActiveCharacter.lastEdit = new Date();
+
+        this.playerCharacterBankEntries.forEach(entry => entry.isActive = false);
 
         const entry = this.getCharacterById(id);
         entry.isActive = true;
