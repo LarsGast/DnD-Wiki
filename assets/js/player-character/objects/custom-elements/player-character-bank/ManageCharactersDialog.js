@@ -1,7 +1,7 @@
 import { getElementWithTextContent } from "../../../util.js"
 import { CharacterBankTable } from "./CharacterBankTable.js";
 import { CharacterImportButton } from "./CharacterImportButton.js"
-import { globalPlayerCharacterBank } from "../../../load-page.js";
+import { NewCharacterButton } from "./NewCharacterButton.js";
 
 /**
  * Custom HTML element for displaying the saved characters in storage.
@@ -24,6 +24,9 @@ export class ManageCharactersDialog extends HTMLDialogElement {
         // User friendly description.
         this.firstParagraph = getElementWithTextContent("p", "Manage your characters by changing the selected character, exporting a character, deleting a character, and importing a new character.");
 
+        // New character button.
+        this.createNewCharacterButton = new NewCharacterButton();
+
         // Import button.
         this.importButton = new CharacterImportButton();
 
@@ -44,6 +47,7 @@ export class ManageCharactersDialog extends HTMLDialogElement {
 
         this.dialogContent.appendChild(this.heading);
         this.dialogContent.appendChild(this.firstParagraph);
+        this.dialogContent.appendChild(this.createNewCharacterButton);
         this.dialogContent.appendChild(this.importButton);
         this.dialogContent.appendChild(this.currentCharacterTableContainer);
         this.dialogContent.appendChild(this.bankedCharactersTableContainer);

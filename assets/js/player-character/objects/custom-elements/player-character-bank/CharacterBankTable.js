@@ -36,8 +36,9 @@ export class CharacterBankTable extends HTMLTableElement {
 
         // Fill body on event.
         this._updateHandler = () => this.updateTableBody();
-        document.addEventListener("playerCharacterDeleted", this._updateHandler);
+        document.addEventListener("newCharacterCreated", this._updateHandler);
         document.addEventListener("characterImported", this._updateHandler);
+        document.addEventListener("playerCharacterDeleted", this._updateHandler);
     }
     
     /**
@@ -45,8 +46,9 @@ export class CharacterBankTable extends HTMLTableElement {
      * Removes the event listeners.
      */
     disconnectedCallback() {
-        document.removeEventListener("playerCharacterDeleted", this._updateHandler);
+        document.removeEventListener("newCharacterCreated", this._updateHandler);
         document.removeEventListener("characterImported", this._updateHandler);
+        document.removeEventListener("playerCharacterDeleted", this._updateHandler);
     }
 
     getTableHeading() {
