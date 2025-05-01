@@ -6,12 +6,54 @@ import { PlayerCharacter } from "./PlayerCharacter.js";
  */
 const PLAYER_CHARACTER_BANK_KEY = "playerCharacterBank";
 
+/**
+ * The current latest version of the PC object.
+ * This should be updated whenever a breaking change is performed on the PC object blueprint.
+ * @constant {number}
+ */
+export const LATEST_PLAYER_CHARACTER_BANK_VERSION_NUMBER = 1;
+
+export class PlayerCharacterBankEntry {
+
+    /**
+     * UUID.
+     * @type {string}
+     */
+    id = self.crypto.randomUUID();;
+
+    /**
+     * @type {boolean}
+     */
+    isActive = false;
+
+    /**
+     * @type {PlayerCharacter}
+     */
+    playerCharacter;
+
+    /**
+     * @type {Date}
+     */
+    lastEdited = new Date();
+
+    /**
+     * Constructs a new PlayerCharacterBankEntry instance.
+     * If data is provided, properties are assigned from it.
+     * @param {JSON} data Optional initial data for the character bank entry.
+     */
+    constructor(data = {}) {
+        Object.assign(this, data);
+    }
+}
+
 export class PlayerCharacterBank {
 
     /**
      * @type {PlayerCharacterBankEntry[]}
      */
     playerCharacterBankEntries = [];
+
+    version;
 
     /**
      * Constructs a new PlayerCharacterBank instance.
@@ -29,8 +71,8 @@ export class PlayerCharacterBank {
             // If no stored PC is found, create a new default one.
             // Should only occur if the user visits the site for the very first time.
             if (!playerCharactersAsString) {
-                const defaultBank = new PlayerCharacterBank();
-                defaultBank.addNewCharacter(PlayerCharacter.getDefault());
+                const defaultBank = PlayerCharacterBank.getDefault();
+                defaultBank.save();
                 return defaultBank;
             }
 
@@ -42,6 +84,15 @@ export class PlayerCharacterBank {
             console.error("Error parsing player character bank JSON:", error);
             return new PlayerCharacterBank();
         }
+    }
+
+    static getDefault() {
+        const defaultBank = new PlayerCharacterBank();
+
+        defaultBank.addNewCharacter(PlayerCharacter.getDefault());
+        defaultBank.version = LATEST_PLAYER_CHARACTER_BANK_VERSION_NUMBER;
+
+        return defaultBank;
     }
 
     save() {
@@ -56,6 +107,10 @@ export class PlayerCharacterBank {
         const bankEntry = new PlayerCharacterBankEntry();
 
         bankEntry.playerCharacter = playerCharacter;
+
+        if (this.playerCharacterBankEntries.length === 0) {
+            bankEntry.isActive = true;
+        }
 
         this.playerCharacterBankEntries.push(bankEntry);
 
@@ -100,36 +155,3 @@ export class PlayerCharacterBank {
  * @type {PlayerCharacterBank}
  */
 export const globalPlayerCharacterBank = PlayerCharacterBank.load();
-
-class PlayerCharacterBankEntry {
-
-    /**
-     * UUID.
-     * @type {string}
-     */
-    id = self.crypto.randomUUID();;
-
-    /**
-     * @type {boolean}
-     */
-    isActive = false;
-
-    /**
-     * @type {PlayerCharacter}
-     */
-    playerCharacter;
-
-    /**
-     * @type {Date}
-     */
-    lastEdited = new Date();
-
-    /**
-     * Constructs a new PlayerCharacterBankEntry instance.
-     * If data is provided, properties are assigned from it.
-     * @param {JSON} data Optional initial data for the character bank entry.
-     */
-    constructor(data = {}) {
-        Object.assign(this, data);
-    }
-}

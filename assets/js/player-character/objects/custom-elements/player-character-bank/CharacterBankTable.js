@@ -1,5 +1,5 @@
 import { getElementWithTextContent } from "../../../util.js";
-import { PlayerCharacter } from "../../PlayerCharacter.js";
+import { PlayerCharacterBankEntry } from "../../PlayerCharacterBank.js";
 import { CharacterExportButton } from "../dialogs/CharacterExportButton.js";
 import { CharacterResetButton } from "../dialogs/CharacterResetButton.js";
 
@@ -7,7 +7,7 @@ export class CharacterBankTable extends HTMLTableElement {
 
     /**
      *
-     * @param {PlayerCharacter[]} playerCharacters
+     * @param {PlayerCharacterBankEntry[]} playerCharacters
      * @param {boolean} isForCurrentCharacter
      */
     constructor(playerCharacters, isForCurrentCharacter) {
@@ -55,10 +55,12 @@ export class CharacterBankTable extends HTMLTableElement {
 
     /**
      * 
-     * @param {PlayerCharacter} playerCharacter 
+     * @param {PlayerCharacterBankEntry} playerCharacterEntry 
      */
-    getTableRow(playerCharacter) {
+    getTableRow(playerCharacterEntry) {
         const row = document.createElement('tr');
+
+        const playerCharacter = playerCharacterEntry.playerCharacter;
 
         row.appendChild(this.getButtonsRow());
         row.appendChild(getElementWithTextContent('td', playerCharacter.name));

@@ -1,7 +1,7 @@
 import { getElementWithTextContent } from "../../../util.js"
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
 import { CharacterBankTable } from "./CharacterBankTable.js";
 import { CharacterImportButton } from "../dialogs/CharacterImportButton.js"
+import { globalPlayerCharacterBank } from "../../PlayerCharacterBank.js";
 
 export class ManageCharactersDialog extends HTMLDialogElement {
     /**
@@ -67,8 +67,8 @@ export class ManageCharactersDialog extends HTMLDialogElement {
 
         // Rebuild the tables displaying information about the character(s).
         // TODO: implement being able to have mutltiple characters and add them here second.
-        this.currentCharacterTableContainer.replaceChildren(new CharacterBankTable([globalPlayerCharacter], true));
-        this.bankedCharactersTableContainer.replaceChildren(new CharacterBankTable([], false));
+        this.currentCharacterTableContainer.replaceChildren(new CharacterBankTable([globalPlayerCharacterBank.getActivePlayerCharacter()], true));
+        this.bankedCharactersTableContainer.replaceChildren(new CharacterBankTable(globalPlayerCharacterBank.getInactivePlayerCharacters(), false));
 
         this.showModal();
     }
