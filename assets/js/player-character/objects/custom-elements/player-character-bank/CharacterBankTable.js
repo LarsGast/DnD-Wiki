@@ -1,7 +1,7 @@
 import { getElementWithTextContent } from "../../../util.js";
 import { PlayerCharacterBankEntry } from "../../PlayerCharacterBank.js";
-import { CharacterExportButton } from "../dialogs/CharacterExportButton.js";
-import { CharacterResetButton } from "../dialogs/CharacterResetButton.js";
+import { CharacterExportButton } from "./CharacterExportButton.js";
+import { CharacterResetButton } from "./CharacterResetButton.js";
 
 export class CharacterBankTable extends HTMLTableElement {
 

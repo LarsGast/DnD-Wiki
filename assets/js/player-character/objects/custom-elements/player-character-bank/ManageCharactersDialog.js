@@ -1,6 +1,6 @@
 import { getElementWithTextContent } from "../../../util.js"
 import { CharacterBankTable } from "./CharacterBankTable.js";
-import { CharacterImportButton } from "../dialogs/CharacterImportButton.js"
+import { CharacterImportButton } from "./CharacterImportButton.js"
 import { globalPlayerCharacterBank } from "../../PlayerCharacterBank.js";
 
 export class ManageCharactersDialog extends HTMLDialogElement {
