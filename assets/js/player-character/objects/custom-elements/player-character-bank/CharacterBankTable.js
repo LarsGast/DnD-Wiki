@@ -2,6 +2,7 @@ import { getElementWithTextContent } from "../../../util.js";
 import { PlayerCharacterBankEntry } from "../../PlayerCharacterBank.js";
 import { CharacterExportButton } from "./CharacterExportButton.js";
 import { CharacterResetButton } from "./CharacterResetButton.js";
+import { CharacterSelectButton } from "./CharacterSelectButton.js";
 
 export class CharacterBankTable extends HTMLTableElement {
 
@@ -82,6 +83,7 @@ export class CharacterBankTable extends HTMLTableElement {
 
         if (!this.isForCurrentCharacter) {
             td.appendChild(new CharacterResetButton(playerCharacterEntry.id));
+            td.appendChild(new CharacterSelectButton(playerCharacterEntry.id));
         }
 
         return td;

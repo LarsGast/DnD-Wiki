@@ -30,11 +30,11 @@ const updateCharacterBankToLatestVersion = function() {
 const updateCharacterToLatestVersion = function() {
 
     // Update the PC currently saved in localStorage.
-    updateCharacter(globalPlayerCharacter);
+    //updateCharacter(globalPlayerCharacter);
 
     // Save the PC, wether it has changes or not.
     // We don't need to check for changes. Saving is cheap and the extra logic will only bring complexity.
-    globalPlayerCharacter.save();
+    //globalPlayerCharacter.save();
 
     for (const characterBankEntry of globalPlayerCharacterBank.playerCharacterBankEntries) {
         updateCharacter(characterBankEntry.playerCharacter);

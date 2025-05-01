@@ -128,6 +128,15 @@ export class PlayerCharacterBank {
         this.save();
     }
 
+    setActiveCharacter(id) {
+        this.playerCharacterBankEntries.forEach(entry => entry.isActive = false);
+
+        console.log(id);
+
+        const entry = this.getCharacterById(id);
+        entry.isActive = true;
+    }
+
     removeCharacterFromBank(id) {
         this.playerCharacterBankEntries = this.playerCharacterBankEntries.filter(entry => entry.id != id);
     }

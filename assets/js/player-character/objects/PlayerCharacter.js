@@ -202,6 +202,9 @@ export class PlayerCharacter {
      */
     static load() {
         try {
+
+            return globalPlayerCharacterBank.getActivePlayerCharacter().playerCharacter;
+
             const playerCharacterAsString = localStorage.getItem(PLAYER_CHARACTER_KEY);
 
             // If no stored PC is found, create a new default one.
