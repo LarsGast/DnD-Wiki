@@ -1,6 +1,6 @@
 import { Weapon } from "../../api/resources/equipment/Weapon.js";
 import { InventoryWeaponRow } from "./InventoryWeaponRow.js";
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../../load-page.js";
 
 /**
  * Custom element that displays a table of inventory weapons.

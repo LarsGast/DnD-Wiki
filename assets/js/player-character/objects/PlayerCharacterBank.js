@@ -43,6 +43,9 @@ export class PlayerCharacterBankEntry {
      */
     constructor(data = {}) {
         Object.assign(this, data);
+
+        this.playerCharacter = new PlayerCharacter(this.playerCharacter);
+        this.lastEdited = new Date(this.lastEdited);
     }
 }
 
@@ -62,6 +65,8 @@ export class PlayerCharacterBank {
      */
     constructor(data = {}) {
         Object.assign(this, data);
+
+        this.playerCharacterBankEntries = this.playerCharacterBankEntries.map(entry => new PlayerCharacterBankEntry(entry));
     }
 
     static load() {
@@ -115,15 +120,15 @@ export class PlayerCharacterBank {
         this.playerCharacterBankEntries.push(bankEntry);
     }
 
-    saveExistingCharacter(id, playerCharacter) {
-        const existingCharacter = this.getCharacterById(id);
+    saveActiveCharacter(playerCharacter) {
+        const currentCharacter = this.getActivePlayerCharacter();
 
-        if (!existingCharacter) {
-            throw new Error(`No character found with given ID: ${id}`);
+        if (!currentCharacter) {
+            throw new Error("No active character found");
         }
 
-        existingCharacter.playerCharacter = playerCharacter;
-        existingCharacter.lastEdited = new Date();
+        currentCharacter.playerCharacter = playerCharacter;
+        currentCharacter.lastEdited = new Date();
 
         this.save();
     }
@@ -159,10 +164,3 @@ export class PlayerCharacterBank {
         return this.playerCharacterBankEntries.filter(entry => !entry.isActive);
     }
 }
-
-/**
- * Global singleton instance containing all PC information.
- * Loaded from localStorage; if no saved data exists, defaults are provided.
- * @type {PlayerCharacterBank}
- */
-export const globalPlayerCharacterBank = PlayerCharacterBank.load();

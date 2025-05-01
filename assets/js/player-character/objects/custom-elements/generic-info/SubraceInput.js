@@ -1,5 +1,5 @@
 import { getEmptyOption, getSelectOption } from "../../../util.js";
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../../load-page.js";
 import { Race } from "../../api/resources/Race.js";
 
 /**

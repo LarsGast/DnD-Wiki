@@ -1,6 +1,6 @@
 import { Weapon } from "../../api/resources/equipment/Weapon.js";
 import { getSelectOption } from "../../../util.js";
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../../load-page.js";
 
 /**
  * Custom table cell element that displays or allows selection of the ability used for weapon attacks.

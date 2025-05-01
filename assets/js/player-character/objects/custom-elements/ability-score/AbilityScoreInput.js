@@ -1,4 +1,4 @@
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../../load-page.js";
 
 /**
  * Custom input element for editing an ability score.

@@ -1,4 +1,4 @@
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../../load-page.js";
 
 /**
  * Custom table cell element that displays the calculated attack bonus for a weapon.

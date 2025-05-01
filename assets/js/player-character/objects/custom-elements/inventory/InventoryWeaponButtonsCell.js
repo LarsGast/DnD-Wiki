@@ -1,4 +1,4 @@
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../../load-page.js";
 
 /**
  * Custom table cell element that contains action buttons for a weapon entry.

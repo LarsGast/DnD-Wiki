@@ -1,6 +1,6 @@
 import { Race } from "../../api/resources/Race.js";
 import { getEmptyOption, getSelectOption } from "../../../util.js";
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../../load-page.js";
 
 /**
  * Custom select element for choosing a race.

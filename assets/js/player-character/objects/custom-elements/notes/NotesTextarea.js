@@ -1,4 +1,4 @@
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../../load-page.js";
 
 /**
  * Custom HTML element for displaying and handling a textarea for character notes.

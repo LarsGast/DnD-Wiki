@@ -1,6 +1,6 @@
 import { Armor } from "../../api/resources/equipment/Armor.js";
 import { InventoryArmorRow } from "./InventoryArmorRow.js";
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../../load-page.js";
 
 /**
  * Custom element for displaying the inventory armor table.

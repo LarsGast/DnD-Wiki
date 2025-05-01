@@ -1,5 +1,5 @@
 import { Weapon } from "../../api/resources/equipment/Weapon.js";
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../../load-page.js";
 
 /**
  * Custom table cell element that displays the damage dice and damage bonus of a weapon.

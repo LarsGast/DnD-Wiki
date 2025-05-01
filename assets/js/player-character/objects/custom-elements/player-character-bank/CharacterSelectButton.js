@@ -1,4 +1,4 @@
-import { globalPlayerCharacterBank } from "../../PlayerCharacterBank.js";
+import { globalPlayerCharacterBank } from "../../../load-page.js";
 
 /**
  * Custom HTML element for displaying and handling the button to open the Character Select Dialog.

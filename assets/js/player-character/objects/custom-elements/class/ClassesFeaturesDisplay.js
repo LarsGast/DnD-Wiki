@@ -1,5 +1,5 @@
 import { getElementWithTextContent } from "../../../util.js";
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../../load-page.js";
 import { ClassFeaturesDisplay } from "./ClassFeaturesDisplay.js";
 
 /**

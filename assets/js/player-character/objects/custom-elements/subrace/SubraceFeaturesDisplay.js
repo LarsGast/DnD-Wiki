@@ -1,6 +1,6 @@
 import { Race } from "../../api/resources/Race.js";
 import { Subrace } from "../../api/resources/Subrace.js";
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../../load-page.js";
 
 /**
  * Custom details element that displays the features of the selected subrace.

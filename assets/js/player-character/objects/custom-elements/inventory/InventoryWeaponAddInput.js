@@ -1,6 +1,6 @@
 import { EquipmentCategoryIndex } from "../../../api.js";
 import { getEmptyOption, getSelectOption } from "../../../util.js";
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../../load-page.js";
 import { EquipmentCategory } from "../../api/resources/EquipmentCategory.js";
 import { Weapon } from "../../api/resources/equipment/Weapon.js";
 

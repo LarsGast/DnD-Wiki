@@ -1,4 +1,4 @@
-import { globalPlayerCharacterBank } from "../../PlayerCharacterBank.js";
+import { globalPlayerCharacterBank } from "../../../load-page.js";
 
 /**
  * Custom HTML element for displaying the Character Reset Dialog.

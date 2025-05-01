@@ -1,5 +1,5 @@
 import { Armor } from "../../api/resources/equipment/Armor.js";
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../../load-page.js";
 
 /**
  * Custom table cell element that displays an armor's effective armor class.

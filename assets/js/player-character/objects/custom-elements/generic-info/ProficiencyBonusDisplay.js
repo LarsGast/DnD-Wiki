@@ -1,4 +1,4 @@
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../../load-page.js";
 
 /**
  * Custom element for displaying the proficiency bonus.

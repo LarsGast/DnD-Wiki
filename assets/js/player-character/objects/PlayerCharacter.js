@@ -1,5 +1,5 @@
 import { Skill } from "../objects/api/resources/Skill.js";
-import { globalPlayerCharacterBank } from "./PlayerCharacterBank.js";
+import { globalPlayerCharacterBank } from "../load-page.js";
 
 /**
  * Key used for saving and loading the player character from localStorage.
@@ -189,7 +189,7 @@ export class PlayerCharacter {
     save() {
         try {
             localStorage.setItem(PLAYER_CHARACTER_KEY, JSON.stringify(this));
-            globalPlayerCharacterBank.saveExistingCharacter(globalPlayerCharacterBank.getActivePlayerCharacter().id, this);
+            globalPlayerCharacterBank.saveActiveCharacter(this);
         } catch (error) {
             console.error("Error while saving Player Character:", error);
         }
@@ -202,22 +202,7 @@ export class PlayerCharacter {
      */
     static load() {
         try {
-
             return globalPlayerCharacterBank.getActivePlayerCharacter().playerCharacter;
-
-            const playerCharacterAsString = localStorage.getItem(PLAYER_CHARACTER_KEY);
-
-            // If no stored PC is found, create a new default one.
-            // Should only occur if the user visits the site for the very first time.
-            if (!playerCharacterAsString) {
-                const defaultCharacter = PlayerCharacter.getDefault();
-                defaultCharacter.save();
-                return defaultCharacter;
-            }
-
-            const playerCharacterAsJson = JSON.parse(playerCharacterAsString);
-
-            return new PlayerCharacter(playerCharacterAsJson);
         }
         catch (error) {
             console.error("Error parsing player character JSON:", error);
@@ -514,10 +499,3 @@ export class PlayerCharacter {
         this.setProperty("inventoryArmor", inventoryArmor);
     }
 }
-
-/**
- * Global singleton instance containing all PC information.
- * Loaded from localStorage; if no saved data exists, defaults are provided.
- * @type {PlayerCharacter}
- */
-export const globalPlayerCharacter = PlayerCharacter.load();

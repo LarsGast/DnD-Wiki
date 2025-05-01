@@ -1,5 +1,5 @@
 import { Armor } from "../../api/resources/equipment/Armor.js";
-import { globalPlayerCharacter } from "../../PlayerCharacter.js";
+import { globalPlayerCharacter } from "../../../load-page.js";
 
 /**
  * Custom checkbox element representing an armor proficiency toggle.
