@@ -49,8 +49,6 @@ permalink: /pc-builder/
 </section>
 
 <section>
-    <button is="character-reset-button"></button>
-    <button is="character-export-button"></button>
     <button is="manage-characters-button"></button>
 </section>
 

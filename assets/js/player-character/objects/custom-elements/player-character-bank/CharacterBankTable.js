@@ -1,18 +1,24 @@
 import { getElementWithTextContent } from "../../../util.js";
 import { PlayerCharacter } from "../../PlayerCharacter.js";
+import { CharacterExportButton } from "../dialogs/CharacterExportButton.js";
+import { CharacterResetButton } from "../dialogs/CharacterResetButton.js";
 
 export class CharacterBankTable extends HTMLTableElement {
 
     /**
      *
      * @param {PlayerCharacter[]} playerCharacters
+     * @param {boolean} isForCurrentCharacter
      */
     constructor(playerCharacters, isForCurrentCharacter) {
         super();
+
+        this.playerCharacters = playerCharacters;
+        this.isForCurrentCharacter = isForCurrentCharacter;
         
         this.caption = getElementWithTextContent("caption", isForCurrentCharacter ? "Selected character" : "Character storage");
         this.tableHeading = this.getTableHeading();
-        this.tableBody = this.getTableBody(playerCharacters);
+        this.tableBody = this.getTableBody();
 
         this.appendChild(this.caption);
         this.appendChild(this.tableHeading);
@@ -36,12 +42,11 @@ export class CharacterBankTable extends HTMLTableElement {
 
     /**
      * 
-     * @param {PlayerCharacter[]} playerCharacters 
      */
-    getTableBody(playerCharacters) {
+    getTableBody() {
         const body = document.createElement('tbody');
 
-        for (const playerCharacter of playerCharacters) {
+        for (const playerCharacter of this.playerCharacters) {
             body.appendChild(this.getTableRow(playerCharacter));
         }
 
@@ -55,12 +60,25 @@ export class CharacterBankTable extends HTMLTableElement {
     getTableRow(playerCharacter) {
         const row = document.createElement('tr');
 
-        row.appendChild(getElementWithTextContent('td', "Here be buttons"));
+        row.appendChild(this.getButtonsRow());
         row.appendChild(getElementWithTextContent('td', playerCharacter.name));
         row.appendChild(getElementWithTextContent('td', this.getCsv(playerCharacter.race, playerCharacter.subrace)));
         row.appendChild(getElementWithTextContent('td', playerCharacter.classes.map(classObject => this.getCsv(classObject.index, classObject.level))));
 
         return row;
+    }
+
+    getButtonsRow() {
+
+        const td = document.createElement('td');
+
+        td.appendChild(new CharacterExportButton());
+
+        if (!this.isForCurrentCharacter) {
+            td.appendChild(new CharacterResetButton());
+        }
+
+        return td;
     }
 
     getCsv(str1, str2) {
