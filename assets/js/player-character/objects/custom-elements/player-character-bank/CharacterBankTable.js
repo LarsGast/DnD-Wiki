@@ -7,12 +7,14 @@ export class CharacterBankTable extends HTMLTableElement {
      *
      * @param {PlayerCharacter[]} playerCharacters
      */
-    constructor(playerCharacters) {
+    constructor(playerCharacters, isForCurrentCharacter) {
         super();
         
+        this.caption = getElementWithTextContent("caption", isForCurrentCharacter ? "Selected character" : "Character storage");
         this.tableHeading = this.getTableHeading();
         this.tableBody = this.getTableBody(playerCharacters);
 
+        this.appendChild(this.caption);
         this.appendChild(this.tableHeading);
         this.appendChild(this.tableBody);
     }
