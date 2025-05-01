@@ -113,8 +113,6 @@ export class PlayerCharacterBank {
         }
 
         this.playerCharacterBankEntries.push(bankEntry);
-
-        this.save();
     }
 
     saveExistingCharacter(id, playerCharacter) {

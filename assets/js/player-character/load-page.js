@@ -15,8 +15,11 @@ export const loadPage = function() {
 }
 
 const updateCharacterBankToLatestVersion = function() {
-    globalPlayerCharacterBank.playerCharacterBankEntries = [];
-    globalPlayerCharacterBank.addNewCharacter(globalPlayerCharacter);
+
+    if (false) {
+        globalPlayerCharacterBank.playerCharacterBankEntries = [];
+        globalPlayerCharacterBank.addNewCharacter(globalPlayerCharacter);
+    }
 
     globalPlayerCharacter.save();
 }
@@ -32,4 +35,10 @@ const updateCharacterToLatestVersion = function() {
     // Save the PC, wether it has changes or not.
     // We don't need to check for changes. Saving is cheap and the extra logic will only bring complexity.
     globalPlayerCharacter.save();
+
+    for (const characterBankEntry of globalPlayerCharacterBank.playerCharacterBankEntries) {
+        updateCharacter(characterBankEntry.playerCharacter);
+    }
+
+    globalPlayerCharacterBank.save();
 }
