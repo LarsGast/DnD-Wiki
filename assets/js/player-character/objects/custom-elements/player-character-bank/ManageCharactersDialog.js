@@ -1,6 +1,7 @@
 import { getElementWithTextContent } from "../../../util.js"
 import { globalPlayerCharacter } from "../../PlayerCharacter.js";
 import { CharacterBankTable } from "./CharacterBankTable.js";
+import { CharacterImportButton } from "../dialogs/CharacterImportButton.js"
 
 export class ManageCharactersDialog extends HTMLDialogElement {
     /**
@@ -17,6 +18,8 @@ export class ManageCharactersDialog extends HTMLDialogElement {
         this.heading = getElementWithTextContent("h2", "Manage characters");
 
         this.description = getElementWithTextContent("p", "Manage your characters by changing the selected character, exporting a character, deleting a character, and importing a new character.")
+
+        this.importButton = new CharacterImportButton();
 
         // Create the tables that show all the characters.
         // These will be filled in showDialog();
@@ -35,6 +38,7 @@ export class ManageCharactersDialog extends HTMLDialogElement {
 
         this.dialogContent.appendChild(this.heading);
         this.dialogContent.appendChild(this.description);
+        this.dialogContent.appendChild(this.importButton);
         this.dialogContent.appendChild(this.currentCharacterTableContainer);
         this.dialogContent.appendChild(this.bankedCharactersTableContainer);
         this.dialogContent.appendChild(this.closeButton);
