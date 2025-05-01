@@ -3,10 +3,14 @@ import { CharacterBankTable } from "./CharacterBankTable.js";
 import { CharacterImportButton } from "./CharacterImportButton.js"
 import { globalPlayerCharacterBank } from "../../../load-page.js";
 
+/**
+ * Custom HTML element for displaying the saved characters in storage.
+ * Extends HTMLDialogElement.
+ *
+ * The dialog shows the user all their characters (active and inactive) and lets them switch, export, import, and delete.
+ */
 export class ManageCharactersDialog extends HTMLDialogElement {
-    /**
-     *
-     */
+    
     constructor() {
         super();
         
@@ -17,11 +21,13 @@ export class ManageCharactersDialog extends HTMLDialogElement {
         // Create a heading for the dialog.
         this.heading = getElementWithTextContent("h2", "Manage characters");
 
-        this.description = getElementWithTextContent("p", "Manage your characters by changing the selected character, exporting a character, deleting a character, and importing a new character.")
+        // User friendly description.
+        this.firstParagraph = getElementWithTextContent("p", "Manage your characters by changing the selected character, exporting a character, deleting a character, and importing a new character.");
 
+        // Import button.
         this.importButton = new CharacterImportButton();
 
-        // Create the tables that show all the characters.
+        // Create the containers that hold the tables that show information about the characters.
         // These will be filled in showDialog();
         this.currentCharacterTableContainer = document.createElement('div');
         this.currentCharacterTableContainer.className = "table-container";
@@ -37,7 +43,7 @@ export class ManageCharactersDialog extends HTMLDialogElement {
         this.closeButton.onclick = () => this.handleCloseButtonClick();
 
         this.dialogContent.appendChild(this.heading);
-        this.dialogContent.appendChild(this.description);
+        this.dialogContent.appendChild(this.firstParagraph);
         this.dialogContent.appendChild(this.importButton);
         this.dialogContent.appendChild(this.currentCharacterTableContainer);
         this.dialogContent.appendChild(this.bankedCharactersTableContainer);
@@ -63,10 +69,12 @@ export class ManageCharactersDialog extends HTMLDialogElement {
         document.removeEventListener("manageCharactersButtonClicked", this._updateHandler);
     }
 
+    /**
+     * Builds and opens the dialog.
+     */
     showDialog() {
 
         // Rebuild the tables displaying information about the character(s).
-        // TODO: implement being able to have mutltiple characters and add them here second.
         this.currentCharacterTableContainer.replaceChildren(new CharacterBankTable([globalPlayerCharacterBank.getActivePlayerCharacter()], true));
         this.bankedCharactersTableContainer.replaceChildren(new CharacterBankTable(globalPlayerCharacterBank.getInactivePlayerCharacters(), false));
 
