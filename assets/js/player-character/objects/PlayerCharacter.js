@@ -1,4 +1,5 @@
 import { Skill } from "../objects/api/resources/Skill.js";
+import { globalPlayerCharacterBank } from "./PlayerCharacterBank.js";
 
 /**
  * Key used for saving and loading the player character from localStorage.
@@ -188,6 +189,7 @@ export class PlayerCharacter {
     save() {
         try {
             localStorage.setItem(PLAYER_CHARACTER_KEY, JSON.stringify(this));
+            globalPlayerCharacterBank.saveExistingCharacter(globalPlayerCharacterBank.getActivePlayerCharacter().id, this);
         } catch (error) {
             console.error("Error while saving Player Character:", error);
         }

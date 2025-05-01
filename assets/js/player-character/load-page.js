@@ -1,5 +1,6 @@
 import { updateCharacter } from "./update-character.js";
 import { globalPlayerCharacter } from "./objects/PlayerCharacter.js";
+import { globalPlayerCharacterBank } from "./objects/PlayerCharacterBank.js";
 
 /**
  * Starting point for all JavaScript code for the PC-Builder page.
@@ -7,8 +8,17 @@ import { globalPlayerCharacter } from "./objects/PlayerCharacter.js";
  */
 export const loadPage = function() {
 
+    updateCharacterBankToLatestVersion();
+
     // Update the current PC to the latest version so the data and inputs know how to interact with each other.
     updateCharacterToLatestVersion();
+}
+
+const updateCharacterBankToLatestVersion = function() {
+    globalPlayerCharacterBank.playerCharacterBankEntries = [];
+    globalPlayerCharacterBank.addNewCharacter(globalPlayerCharacter);
+
+    globalPlayerCharacter.save();
 }
 
 /**
