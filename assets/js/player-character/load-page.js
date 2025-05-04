@@ -16,7 +16,7 @@ export const globals = {
 
     /**
      * The current active PC.
-     * Part of the player bank, this variable can have it's properties changed an can be saved.
+     * Part of the player bank, this variable can have it's properties changed by reference and will be saved if the bank is saved.
      * @type {PlayerCharacter}
      */
     get activePlayerCharacter() {
@@ -72,7 +72,7 @@ const removeLegacyPlayerCharacterFromLocalStorage = function() {
 }
 
 /**
- * If changes have occurred in the JSON definition of the PC, old versions need to be brought up to date.
+ * If changes have occurred in the JSON definition of the PC or the PC bank, old versions need to be brought up to date.
  */
 const updatePlayerBank = function() {
 
@@ -81,7 +81,7 @@ const updatePlayerBank = function() {
         updateCharacter(characterBankEntry.playerCharacter);
     }
 
-    // Save the PCs, wether they has changes or not.
+    // Save the PCs, wether they have changes or not.
     // We don't need to check for changes. Saving is cheap and the extra logic will only bring complexity.
     globals.playerCharacterBank.save();
 }
