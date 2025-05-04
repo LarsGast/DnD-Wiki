@@ -5,6 +5,10 @@ import { CharacterDeleteButton } from "./CharacterDeleteButton.js";
 import { CharacterSelectButton } from "./CharacterSelectButton.js";
 import { globalPlayerCharacterBank } from "../../../load-page.js";
 import { PlayerCharacter } from "../../PlayerCharacter.js";
+import { Race } from "../../api/resources/Race.js";
+import { Subrace } from "../../api/resources/Subrace.js";
+import { Class } from "../../api/resources/Class.js";
+import { Subclass } from "../../api/resources/Subclass.js";
 
 export class CharacterBankTable extends HTMLTableElement {
 
@@ -31,7 +35,7 @@ export class CharacterBankTable extends HTMLTableElement {
      * Listens for events to update the body of the table.
      */
     connectedCallback() {
-        this._updateHandler = () => this.updateTableBody();
+        this._updateHandler = async () => await this.updateTableBody();
         document.addEventListener("manageCharactersDialogOpened", this._updateHandler);
 
         if (!this.isForCurrentCharacter) {
@@ -70,14 +74,14 @@ export class CharacterBankTable extends HTMLTableElement {
     /**
      * 
      */
-    updateTableBody() {
+    async updateTableBody() {
         this.tableBody.replaceChildren();
 
         const playerCharacters = this.getPlayerCharactersForTable();
 
         const sortedCharacters = playerCharacters.sort((a, b) => b.lastEdit - a.lastEdit);
         for (const playerCharacter of sortedCharacters) {
-            this.tableBody.appendChild(this.getTableRow(playerCharacter));
+            this.tableBody.appendChild(await this.getTableRow(playerCharacter));
         }
     }
 
@@ -94,15 +98,15 @@ export class CharacterBankTable extends HTMLTableElement {
      * 
      * @param {PlayerCharacterBankEntry} playerCharacterEntry 
      */
-    getTableRow(playerCharacterEntry) {
+    async getTableRow(playerCharacterEntry) {
         const row = document.createElement('tr');
 
         const playerCharacter = playerCharacterEntry.playerCharacter;
 
         row.appendChild(this.getButtonsRow(playerCharacterEntry));
         row.appendChild(getElementWithTextContent('td', playerCharacter.name));
-        row.appendChild(getElementWithTextContent('td', this.getRaceSubraceColumnValue(playerCharacter)));
-        row.appendChild(getElementWithTextContent('td', this.getClassLevelColumnValue(playerCharacter)));
+        row.appendChild(getElementWithTextContent('td', await this.getRaceSubraceColumnValue(playerCharacter)));
+        row.appendChild(getElementWithTextContent('td', await this.getClassLevelColumnValue(playerCharacter)));
 
         return row;
     }
@@ -132,14 +136,17 @@ export class CharacterBankTable extends HTMLTableElement {
      * 
      * @param {PlayerCharacter} playerCharacter 
      */
-    getRaceSubraceColumnValue(playerCharacter) {
+    async getRaceSubraceColumnValue(playerCharacter) {
         if (!playerCharacter.race) {
             return 'Not selected';
         }
 
-        let value = playerCharacter.race;
+        const race = await Race.getAsync(playerCharacter.race);
+
+        let value = race.name;
         if (playerCharacter.subrace) {
-            value += `, ${playerCharacter.subrace}`;
+            const subrace = await Subrace.getAsync(playerCharacter.subrace);
+            value += `, ${subrace.name}`;
         }
 
         return value;
@@ -149,24 +156,29 @@ export class CharacterBankTable extends HTMLTableElement {
      * 
      * @param {PlayerCharacter} playerCharacter 
      */
-    getClassLevelColumnValue(playerCharacter) {
+    async getClassLevelColumnValue(playerCharacter) {
 
         if (playerCharacter.classes.length === 0) {
             return "Not selected";
         }
 
-        return playerCharacter.classes.map(classObject => this.getClassSubclassLevelValue(classObject)).join(', ');
+        const values = await Promise.all(playerCharacter.classes.map(classObject => this.getClassSubclassLevelValue(classObject)));
+
+        return values.join(', ');
     }
 
     /**
      * 
      * @param {object} classObject 
      */
-    getClassSubclassLevelValue(classObject) {
+    async getClassSubclassLevelValue(classObject) {
 
-        let value = `${classObject.index} ${classObject.level}`;
+        const classApiObject = await Class.getAsync(classObject.index);
+
+        let value = `${classApiObject.name} ${classObject.level}`;
         if (classObject.subclass) {
-            value += ` (${classObject.subclass})`;
+            const subclass = await Subclass.getAsync(classObject.subclass);
+            value += ` (${subclass.name})`;
         }
 
         return value;

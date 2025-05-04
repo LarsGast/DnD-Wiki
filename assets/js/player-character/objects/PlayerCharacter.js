@@ -1,5 +1,6 @@
 import { Skill } from "../objects/api/resources/Skill.js";
 import { globalPlayerCharacterBank } from "../load-page.js";
+import { Race } from "./api/resources/Race.js";
 
 /**
  * Key used for saving and loading the player character from localStorage.
