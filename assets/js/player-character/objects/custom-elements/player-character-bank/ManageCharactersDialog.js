@@ -23,6 +23,8 @@ export class ManageCharactersDialog extends HTMLDialogElement {
 
         // User friendly description.
         this.firstParagraph = getElementWithTextContent("p", "Manage your characters by changing the selected character, exporting a character, deleting a character, and importing a new character.");
+        this.secondParagraph = getElementWithTextContent("p", "Characters are automatically saved as you go, so you can safely switch between characters without the risk of losing data.");
+        this.thirdParagraph = getElementWithTextContent("p", "When you create a new character, it will appear in the \"Character storage\" table below.");
 
         // New character button.
         this.createNewCharacterButton = new NewCharacterButton();
@@ -48,6 +50,8 @@ export class ManageCharactersDialog extends HTMLDialogElement {
 
         this.dialogContent.appendChild(this.heading);
         this.dialogContent.appendChild(this.firstParagraph);
+        this.dialogContent.appendChild(this.secondParagraph);
+        this.dialogContent.appendChild(this.thirdParagraph);
         this.dialogContent.appendChild(this.createNewCharacterButton);
         this.dialogContent.appendChild(this.importButton);
         this.dialogContent.appendChild(this.currentCharacterTableContainer);
