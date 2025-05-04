@@ -16,6 +16,13 @@ const PLAYER_CHARACTER_BANK_KEY = "playerCharacterBank";
 export const LATEST_PLAYER_CHARACTER_BANK_VERSION_NUMBER = 1;
 
 /**
+ * The current latest version of the PC bank entry object.
+ * This should be updated whenever a breaking change is performed on the PC bank entry object specification.
+ * @constant {number}
+ */
+export const LATEST_PLAYER_CHARACTER_BANK_ENTRY_VERSION_NUMBER = 1;
+
+/**
  * Object for storing information about a playerCharacter in the PlayerCharacterBank.
  * Each PC gets their own PlayerCharacterBankEntry, and all of them are put in localStorage under the same key.
  */
@@ -51,6 +58,14 @@ export class PlayerCharacterBankEntry {
      * @type {Date}
      */
     lastEdit = new Date();
+
+    /**
+     * Version number of the player bank entry.
+     * Used to upgrade the bank entries when breaking changes in the data specification occur.
+     * Default 1, which might be upgraded on page load.
+     * @type {number}
+     */
+    version = 1;
 
     /**
      * Constructs a new PlayerCharacterBankEntry instance.
@@ -178,6 +193,8 @@ export class PlayerCharacterBank {
         if (this.playerCharacterBankEntries.length === 0) {
             bankEntry.isActive = true;
         }
+        
+        bankEntry.version = LATEST_PLAYER_CHARACTER_BANK_ENTRY_VERSION_NUMBER;
 
         this.playerCharacterBankEntries.push(bankEntry);
     }
