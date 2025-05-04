@@ -1,12 +1,5 @@
 import { Skill } from "../objects/api/resources/Skill.js";
 import { globalPlayerCharacterBank } from "../load-page.js";
-import { Race } from "./api/resources/Race.js";
-
-/**
- * Key used for saving and loading the player character from localStorage.
- * @constant {string}
- */
-const PLAYER_CHARACTER_KEY = "playerCharacter";
 
 /**
  * The current latest version of the PC object.
@@ -189,7 +182,6 @@ export class PlayerCharacter {
      */
     save() {
         try {
-            localStorage.setItem(PLAYER_CHARACTER_KEY, JSON.stringify(this));
             globalPlayerCharacterBank.saveActiveCharacter(this);
         } catch (error) {
             console.error("Error while saving Player Character:", error);

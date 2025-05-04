@@ -108,6 +108,10 @@ export class PlayerCharacterBank {
             console.error("Error while saving player character bank:", error);
         }
     }
+    
+    empty() {
+        this.playerCharacterBankEntries = [];
+    }
 
     addNewCharacter(playerCharacter) {
 
