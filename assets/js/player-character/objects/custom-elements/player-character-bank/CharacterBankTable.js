@@ -10,23 +10,29 @@ import { Subrace } from "../../api/resources/Subrace.js";
 import { Class } from "../../api/resources/Class.js";
 import { Subclass } from "../../api/resources/Subclass.js";
 
+/**
+ * Custom HTML element for displaying active and inactive characters stored in the PlayerCharacterBank.
+ * Extends HTMLTableElement.
+ */
 export class CharacterBankTable extends HTMLTableElement {
 
     /**
-     *
-     * @param {boolean} isForCurrentCharacter
+     * Built the non-changing HTML.
+     * @param {boolean} isForActiveCharacter Wether the table shows the active characters, or all inactive characters.
      */
-    constructor(isForCurrentCharacter) {
+    constructor(isForActiveCharacter) {
         super();
 
-        this.isForCurrentCharacter = isForCurrentCharacter;
+        this.isForCurrentCharacter = isForActiveCharacter;
         
-        this.caption = getElementWithTextContent("caption", isForCurrentCharacter ? "Selected character" : "Character storage");
-        this.tableHeading = this.getTableHeading();
+        this.caption = getElementWithTextContent("caption", isForActiveCharacter ? "Selected character" : "Character storage");
+        this.tableHead = this.getTableHead();
+
+        // Empty body, will be filled on events.
         this.tableBody = document.createElement('tbody');
 
         this.appendChild(this.caption);
-        this.appendChild(this.tableHeading);
+        this.appendChild(this.tableHead);
         this.appendChild(this.tableBody);
     }
 
@@ -35,7 +41,8 @@ export class CharacterBankTable extends HTMLTableElement {
      * Listens for events to update the body of the table.
      */
     connectedCallback() {
-        this._updateHandler = async () => await this.updateTableBody();
+        this._updateHandler = async () => await this.updateTableBodyAsync();
+
         document.addEventListener("manageCharactersDialogOpened", this._updateHandler);
 
         if (!this.isForCurrentCharacter) {
@@ -56,7 +63,11 @@ export class CharacterBankTable extends HTMLTableElement {
         document.removeEventListener("playerCharacterDeleted", this._updateHandler);
     }
 
-    getTableHeading() {
+    /**
+     * Get the head with column names for the table.
+     * @returns {HTMLTableSectionElement}
+     */
+    getTableHead() {
         const heading = document.createElement("thead");
 
         const row = document.createElement('tr');
@@ -72,19 +83,24 @@ export class CharacterBankTable extends HTMLTableElement {
     }
 
     /**
-     * 
+     * Asynchronously updates the body of the table to have the current data of the characters in storage.
      */
-    async updateTableBody() {
+    async updateTableBodyAsync() {
         this.tableBody.replaceChildren();
 
         const playerCharacters = this.getPlayerCharactersForTable();
 
+        // Sort them from last edited -> first edited, so the most used PCs are generally at the top.
         const sortedCharacters = playerCharacters.sort((a, b) => b.lastEdit - a.lastEdit);
         for (const playerCharacter of sortedCharacters) {
-            this.tableBody.appendChild(await this.getTableRow(playerCharacter));
+            this.tableBody.appendChild(await this.getTableRowAsync(playerCharacter));
         }
     }
 
+    /**
+     * Get all characters that need to be displayed in the table.
+     * @returns {PlayerCharacterBankEntry[]} Array that either contains only thew active PC or all inactive PCs.
+     */
     getPlayerCharactersForTable() {
         if (this.isForCurrentCharacter) {
             return [globals.playerCharacterBank.getActivePlayerCharacterBankEntry()];
@@ -96,35 +112,41 @@ export class CharacterBankTable extends HTMLTableElement {
 
     /**
      * 
-     * @param {PlayerCharacterBankEntry} playerCharacterEntry 
+     * Asynchronously builds a single row for the table containing PC information.
+     * @param {PlayerCharacterBankEntry} playerCharacterEntry
+     * @returns {HTMLTableRowElement}
      */
-    async getTableRow(playerCharacterEntry) {
+    async getTableRowAsync(playerCharacterEntry) {
         const row = document.createElement('tr');
 
         const playerCharacter = playerCharacterEntry.playerCharacter;
 
-        row.appendChild(this.getButtonsRow(playerCharacterEntry));
+        row.appendChild(this.getButtonsColumnValue(playerCharacterEntry));
         row.appendChild(getElementWithTextContent('td', playerCharacter.name));
-        row.appendChild(getElementWithTextContent('td', await this.getRaceSubraceColumnValue(playerCharacter)));
-        row.appendChild(getElementWithTextContent('td', await this.getClassLevelColumnValue(playerCharacter)));
+        row.appendChild(getElementWithTextContent('td', await this.getRaceSubraceColumnValueAsync(playerCharacter)));
+        row.appendChild(getElementWithTextContent('td', await this.getClassLevelColumnValueAsync(playerCharacter)));
 
         return row;
     }
 
     /**
-     * 
-     * @param {PlayerCharacterBankEntry} playerCharacterEntry 
+     * Get the data for the buttons column for the given PC.
+     * @param {PlayerCharacterBankEntry} playerCharacterEntry
+     * @returns {HTMLTableCellElement}
      */
-    getButtonsRow(playerCharacterEntry) {
+    getButtonsColumnValue(playerCharacterEntry) {
 
         const td = document.createElement('td');
 
+        // Only inactive PCs can be made active.
         if (!this.isForCurrentCharacter) {
             td.appendChild(new CharacterSelectButton(playerCharacterEntry.id));
         }
 
+        // All PCs can be exported.
         td.appendChild(new CharacterExportButton(playerCharacterEntry.id));
 
+        // Only inactive PCs can be deleted to remove ambiguity for the developer.
         if (!this.isForCurrentCharacter) {
             td.appendChild(new CharacterDeleteButton(playerCharacterEntry.id));
         }
@@ -133,18 +155,21 @@ export class CharacterBankTable extends HTMLTableElement {
     }
 
     /**
-     * 
-     * @param {PlayerCharacter} playerCharacter 
+     * Get the data for the race and subrace column for the given PC.
+     * @param {PlayerCharacter} playerCharacter
+     * @returns {string} Ex "Dwarf, Hill Dwarf", "Dragonborn" etc.
      */
-    async getRaceSubraceColumnValue(playerCharacter) {
+    async getRaceSubraceColumnValueAsync(playerCharacter) {
         if (!playerCharacter.race) {
             return 'Not selected';
         }
 
+        // Get the actual race from the API to get the display name.
         const race = await Race.getAsync(playerCharacter.race);
 
         let value = race.name;
         if (playerCharacter.subrace) {
+            // Get the actual subrace from the API to get the display name.
             const subrace = await Subrace.getAsync(playerCharacter.subrace);
             value += `, ${subrace.name}`;
         }
@@ -153,10 +178,11 @@ export class CharacterBankTable extends HTMLTableElement {
     }
 
     /**
-     * 
-     * @param {PlayerCharacter} playerCharacter 
+     * Get the data for the class, subclass, and level column for the given PC.
+     * @param {PlayerCharacter} playerCharacter
+     * @returns {string} Ex "Barbarian 5 (Berserker), Bard 3 (Lore), Paladin 1".
      */
-    async getClassLevelColumnValue(playerCharacter) {
+    async getClassLevelColumnValueAsync(playerCharacter) {
 
         if (playerCharacter.classes.length === 0) {
             return "Not selected";
@@ -168,15 +194,18 @@ export class CharacterBankTable extends HTMLTableElement {
     }
 
     /**
-     * 
+     * Get the display string of a single class object to display in the Classes column.
      * @param {object} classObject 
+     * @returns {string} Ex "Barbarian 5 (Berserker)", "Paladin 1", etc.
      */
     async getClassSubclassLevelValue(classObject) {
 
+        // Get the actual class from the API to get the display name.
         const classApiObject = await Class.getAsync(classObject.index);
 
         let value = `${classApiObject.name} ${classObject.level}`;
         if (classObject.subclass) {
+            // Get the actual subclass from the API to get the display name.
             const subclass = await Subclass.getAsync(classObject.subclass);
             value += ` (${subclass.name})`;
         }
