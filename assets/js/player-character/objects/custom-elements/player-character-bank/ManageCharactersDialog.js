@@ -31,12 +31,13 @@ export class ManageCharactersDialog extends HTMLDialogElement {
         this.importButton = new CharacterImportButton();
 
         // Create the containers that hold the tables that show information about the characters.
-        // These will be filled in showDialog();
         this.currentCharacterTableContainer = document.createElement('div');
         this.currentCharacterTableContainer.className = "table-container";
+        this.currentCharacterTableContainer.appendChild(new CharacterBankTable(true));
 
         this.bankedCharactersTableContainer = document.createElement('div');
         this.bankedCharactersTableContainer.className = "table-container";
+        this.bankedCharactersTableContainer.appendChild(new CharacterBankTable(false));
 
         // Close button.
         this.closeButton = document.createElement('button');
@@ -74,15 +75,12 @@ export class ManageCharactersDialog extends HTMLDialogElement {
     }
 
     /**
-     * Builds and opens the dialog.
+     * Opens the dialog and fires off an event to let the page know it is opened.
      */
     showDialog() {
-
-        // Rebuild the tables displaying information about the character(s).
-        this.currentCharacterTableContainer.replaceChildren(new CharacterBankTable(true));
-        this.bankedCharactersTableContainer.replaceChildren(new CharacterBankTable(false));
-
         this.showModal();
+
+        document.dispatchEvent(new Event('manageCharactersDialogOpened'));
     }
   
     /**

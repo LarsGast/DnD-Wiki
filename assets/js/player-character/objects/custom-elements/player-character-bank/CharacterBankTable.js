@@ -1,5 +1,5 @@
 import { getElementWithTextContent } from "../../../util.js";
-import { PlayerCharacterBank, PlayerCharacterBankEntry } from "../../PlayerCharacterBank.js";
+import { PlayerCharacterBankEntry } from "../../PlayerCharacterBank.js";
 import { CharacterExportButton } from "./CharacterExportButton.js";
 import { CharacterDeleteButton } from "./CharacterDeleteButton.js";
 import { CharacterSelectButton } from "./CharacterSelectButton.js";
@@ -31,12 +31,8 @@ export class CharacterBankTable extends HTMLTableElement {
      * Listens for events to update the body of the table.
      */
     connectedCallback() {
-
-        // Fill body on create.
-        this.updateTableBody();
-
-        // Fill body on event.
         this._updateHandler = () => this.updateTableBody();
+        document.addEventListener("manageCharactersDialogOpened", this._updateHandler);
         document.addEventListener("newCharacterCreated", this._updateHandler);
         document.addEventListener("characterImported", this._updateHandler);
         document.addEventListener("playerCharacterDeleted", this._updateHandler);
@@ -47,6 +43,7 @@ export class CharacterBankTable extends HTMLTableElement {
      * Removes the event listeners.
      */
     disconnectedCallback() {
+        document.removeEventListener("manageCharactersDialogOpened", this._updateHandler);
         document.removeEventListener("newCharacterCreated", this._updateHandler);
         document.removeEventListener("characterImported", this._updateHandler);
         document.removeEventListener("playerCharacterDeleted", this._updateHandler);
