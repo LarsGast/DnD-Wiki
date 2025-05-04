@@ -33,9 +33,12 @@ export class CharacterBankTable extends HTMLTableElement {
     connectedCallback() {
         this._updateHandler = () => this.updateTableBody();
         document.addEventListener("manageCharactersDialogOpened", this._updateHandler);
-        document.addEventListener("newCharacterCreated", this._updateHandler);
-        document.addEventListener("characterImported", this._updateHandler);
-        document.addEventListener("playerCharacterDeleted", this._updateHandler);
+
+        if (!this.isForCurrentCharacter) {
+            document.addEventListener("newCharacterCreated", this._updateHandler);
+            document.addEventListener("characterImported", this._updateHandler);
+            document.addEventListener("playerCharacterDeleted", this._updateHandler);
+        }
     }
     
     /**
