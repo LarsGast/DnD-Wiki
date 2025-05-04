@@ -58,8 +58,8 @@ export class CharacterBankTable extends HTMLTableElement {
 
         row.appendChild(getElementWithTextContent("th", "Buttons"));
         row.appendChild(getElementWithTextContent("th", "Name"));
-        row.appendChild(getElementWithTextContent("th", this.getCsv("Race", "subcrace")));
-        row.appendChild(getElementWithTextContent("th", this.getCsv("Class", "level")));
+        row.appendChild(getElementWithTextContent("th", "Race"));
+        row.appendChild(getElementWithTextContent("th", "Classes"));
 
         heading.appendChild(row);
 
