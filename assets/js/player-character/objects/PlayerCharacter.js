@@ -167,40 +167,19 @@ export class PlayerCharacter {
     }
 
     /**
-     * Sets a property value on the character and immediately saves the character.
+     * Sets a property value on the character and immediately saves the character (if it exists within the player bank).
      * @param {string} propertyName The name of the property to update.
      * @param {any} propertyValue The new value for the property.
      */
     setProperty(propertyName, propertyValue) {
         this[propertyName] = propertyValue;
-        this.save();
-    }
-    
-    /**
-     * Saves the character object into localStorage.
-     * Catches and logs any errors during saving.
-     */
-    save() {
-        try {
-            globals.playerCharacterBank.saveActiveCharacter();
-        } catch (error) {
-            console.error("Error while saving Player Character:", error);
-        }
-    }
 
-    /**
-     * Loads the character from localStorage.
-     * If no saved character exists, returns a default character.
-     * @returns {PlayerCharacter} The loaded or default character instance.
-     */
-    static load() {
-        try {
-            return globals.playerCharacterBank.getActivePlayerCharacterBankEntry().playerCharacter;
-        }
-        catch (error) {
-            console.error("Error parsing player character JSON:", error);
-            return new PlayerCharacter();
-        }
+        // Save the player bank.
+        // If the PlayerCharacter exists within the player character bank and is edited by reference, it will be saved to localStorage.
+        // If the PlayerCharacter does not exist within the bank, the bank will be saved without the PC.
+        // globals.playerCharacter always exists within the bank, and will thus be saved correctly.
+        // If you want to save a PlayerCharacter that is not in the bank, add it to the bank first and then save the bank.
+        globals.playerCharacterBank.save();
     }
 
     /**
@@ -214,13 +193,6 @@ export class PlayerCharacter {
         playerCharacter.version = LATEST_PLAYER_CHARACTER_VERSION_NUMBER;
 
         return playerCharacter;
-    }
-
-    /**
-     * Resets the character by saving a default character to localStorage.
-     */
-    reset() {
-        PlayerCharacter.getDefault().save();
     }
 
     /**

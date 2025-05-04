@@ -156,7 +156,7 @@ export class PlayerCharacterBank {
     }
 
     /**
-     * Saves the character bank object into localStorage.
+     * Saves the character bank object into localStorage to persist the data over multiple browser sessions.
      * Catches and logs any errors during saving.
      */
     save() {
@@ -197,22 +197,6 @@ export class PlayerCharacterBank {
         bankEntry.version = LATEST_PLAYER_CHARACTER_BANK_ENTRY_VERSION_NUMBER;
 
         this.playerCharacterBankEntries.push(bankEntry);
-    }
-
-    /**
-     * Save the PC that is currently active.
-     * This is the globals.playerCharacter that gets edited when the user works on it.
-     */
-    saveActiveCharacter() {
-        const currentCharacterEntry = this.getActivePlayerCharacterBankEntry();
-
-        if (!currentCharacterEntry) {
-            throw new Error("No active character found");
-        }
-
-        currentCharacterEntry.playerCharacter = globals.playerCharacter;
-
-        this.save();
     }
 
     /**
