@@ -1,4 +1,3 @@
-import { globals } from "../load-page.js";
 import { updateCharacter } from "../update-character.js";
 import { PlayerCharacter } from "./PlayerCharacter.js";
 
@@ -205,7 +204,7 @@ export class PlayerCharacterBank {
      */
     setActiveCharacter(id) {
 
-        // Since we put the old active character into storage, we will set the net lastEdit date.
+        // Since we put the old active character into storage, we will set the new lastEdit date.
         const oldActiveCharacterEntry = this.getActivePlayerCharacterBankEntry();
         oldActiveCharacterEntry.lastEdit = new Date();
         oldActiveCharacterEntry.isActive = false;
