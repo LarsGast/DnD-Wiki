@@ -99,4 +99,4 @@ export class CharacterDeleteDialog extends HTMLDialogElement {
     }
 }
 
-customElements.define('character-reset-dialog', CharacterDeleteDialog, { extends: 'dialog' });
+customElements.define('character-delete-dialog', CharacterDeleteDialog, { extends: 'dialog' });
