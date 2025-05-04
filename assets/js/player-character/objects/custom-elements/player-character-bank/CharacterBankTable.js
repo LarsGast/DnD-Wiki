@@ -4,6 +4,7 @@ import { CharacterExportButton } from "./CharacterExportButton.js";
 import { CharacterDeleteButton } from "./CharacterDeleteButton.js";
 import { CharacterSelectButton } from "./CharacterSelectButton.js";
 import { globalPlayerCharacterBank } from "../../../load-page.js";
+import { PlayerCharacter } from "../../PlayerCharacter.js";
 
 export class CharacterBankTable extends HTMLTableElement {
 
@@ -100,8 +101,8 @@ export class CharacterBankTable extends HTMLTableElement {
 
         row.appendChild(this.getButtonsRow(playerCharacterEntry));
         row.appendChild(getElementWithTextContent('td', playerCharacter.name));
-        row.appendChild(getElementWithTextContent('td', this.getCsv(playerCharacter.race, playerCharacter.subrace)));
-        row.appendChild(getElementWithTextContent('td', playerCharacter.classes.map(classObject => this.getCsv(classObject.index, classObject.level))));
+        row.appendChild(getElementWithTextContent('td', this.getRaceSubraceColumnValue(playerCharacter)));
+        row.appendChild(getElementWithTextContent('td', this.getClassLevelColumnValue(playerCharacter)));
 
         return row;
     }
@@ -127,8 +128,43 @@ export class CharacterBankTable extends HTMLTableElement {
         return td;
     }
 
-    getCsv(str1, str2) {
-        return `${str1}, ${str2}`;
+    /**
+     * 
+     * @param {PlayerCharacter} playerCharacter 
+     */
+    getRaceSubraceColumnValue(playerCharacter) {
+        if (!playerCharacter.race) {
+            return '';
+        }
+
+        let value = playerCharacter.race;
+        if (playerCharacter.subrace) {
+            value += `, ${playerCharacter.subrace}`;
+        }
+
+        return value;
+    }
+
+    /**
+     * 
+     * @param {PlayerCharacter} playerCharacter 
+     */
+    getClassLevelColumnValue(playerCharacter) {
+        return playerCharacter.classes.map(classObject => this.getClassSubclassLevelValue(classObject)).join(', ');
+    }
+
+    /**
+     * 
+     * @param {object} classObject 
+     */
+    getClassSubclassLevelValue(classObject) {
+
+        let value = `${classObject.index} ${classObject.level}`;
+        if (classObject.subclass) {
+            value += ` (${classObject.subclass})`;
+        }
+
+        return value;
     }
 }
 
