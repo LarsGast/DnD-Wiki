@@ -87,10 +87,10 @@ export class CharacterBankTable extends HTMLTableElement {
 
     getPlayerCharactersForTable() {
         if (this.isForCurrentCharacter) {
-            return [globalPlayerCharacterBank.getActivePlayerCharacter()];
+            return [globalPlayerCharacterBank.getActivePlayerCharacterBankEntry()];
         }
         else {
-            return globalPlayerCharacterBank.getInactivePlayerCharacters();
+            return globalPlayerCharacterBank.getInactivePlayerCharacterBankEntries();
         }
     }
 

@@ -57,7 +57,7 @@ const removeLegacyPlayerCharacterFromLocalStorage = function() {
  */
 const updatePlayerBank = function() {
 
-    // Update all PC's currently saved in localStorage.
+    // Update all PCs currently saved in localStorage.
     for (const characterBankEntry of globalPlayerCharacterBank.playerCharacterBankEntries) {
         updateCharacter(characterBankEntry.playerCharacter);
     }

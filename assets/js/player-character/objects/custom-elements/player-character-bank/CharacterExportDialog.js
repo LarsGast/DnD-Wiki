@@ -91,7 +91,7 @@ export class CharacterExportDialog extends HTMLDialogElement {
      */
     showDialog(event) {
 
-        this.playerCharacter = globalPlayerCharacterBank.getCharacterById(event.detail.characterId).playerCharacter;
+        this.playerCharacter = globalPlayerCharacterBank.getCharacterBankEntryById(event.detail.characterId).playerCharacter;
         
         // Display the current global PC as formatted JSON.
         this.previewTextarea.value = JSON.stringify(this.playerCharacter, null, 2);

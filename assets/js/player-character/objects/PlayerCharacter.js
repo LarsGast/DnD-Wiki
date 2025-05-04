@@ -182,7 +182,7 @@ export class PlayerCharacter {
      */
     save() {
         try {
-            globalPlayerCharacterBank.saveActiveCharacter(this);
+            globalPlayerCharacterBank.saveActiveCharacter();
         } catch (error) {
             console.error("Error while saving Player Character:", error);
         }
@@ -195,7 +195,7 @@ export class PlayerCharacter {
      */
     static load() {
         try {
-            return globalPlayerCharacterBank.getActivePlayerCharacter().playerCharacter;
+            return globalPlayerCharacterBank.getActivePlayerCharacterBankEntry().playerCharacter;
         }
         catch (error) {
             console.error("Error parsing player character JSON:", error);
