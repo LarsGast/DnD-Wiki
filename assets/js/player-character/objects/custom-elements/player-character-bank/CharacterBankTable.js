@@ -131,7 +131,7 @@ export class CharacterBankTable extends HTMLTableElement {
      */
     getRaceSubraceColumnValue(playerCharacter) {
         if (!playerCharacter.race) {
-            return '';
+            return 'Not selected';
         }
 
         let value = playerCharacter.race;
@@ -147,6 +147,11 @@ export class CharacterBankTable extends HTMLTableElement {
      * @param {PlayerCharacter} playerCharacter 
      */
     getClassLevelColumnValue(playerCharacter) {
+
+        if (playerCharacter.classes.length === 0) {
+            return "Not selected";
+        }
+
         return playerCharacter.classes.map(classObject => this.getClassSubclassLevelValue(classObject)).join(', ');
     }
 

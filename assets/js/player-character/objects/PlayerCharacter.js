@@ -22,9 +22,9 @@ export class PlayerCharacter {
 
     /**
      * Name of the character.
-     * @type {string|null}
+     * @type {string}
      */
-    name = null;
+    name = "New character";
 
     /**
      * All chosen classes of the character.
