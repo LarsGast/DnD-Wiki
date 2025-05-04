@@ -175,12 +175,16 @@ dialog {
     /* Wrapper for all content within a dialog element. */
     .dialog-content {
 
-        height: 100%;
-        width: 100%;
+        /* The manage characters dialog contains more complex elements that do not work well together with set heights and flexbox. */
+        &:not(.manage-characters-dialog-content) {
 
-        // To dynamically grow the textarea within.
-        display: flex;
-        flex-direction: column;
+            height: 100%;
+            width: 100%;
+    
+            // To dynamically grow the textarea within.
+            display: flex;
+            flex-direction: column;
+        }
 
         /* Close button for the modal */
         .close {
