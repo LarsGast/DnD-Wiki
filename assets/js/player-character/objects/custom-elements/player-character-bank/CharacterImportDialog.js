@@ -1,5 +1,5 @@
 import { PlayerCharacter } from "../../PlayerCharacter.js";
-import { globalPlayerCharacterBank } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 
 /**
  * Custom HTML element for displaying the Character Import Dialog.
@@ -141,8 +141,8 @@ export class CharacterImportDialog extends HTMLDialogElement {
 
         // Create a new PlayerCharacter from the JSON data.
         const playerCharacter = new PlayerCharacter(JSON.parse(this.previewTextarea.value));
-        globalPlayerCharacterBank.addNewCharacter(playerCharacter);
-        globalPlayerCharacterBank.save();
+        globals.playerCharacterBank.addNewCharacter(playerCharacter);
+        globals.playerCharacterBank.save();
 
         this.close();
 

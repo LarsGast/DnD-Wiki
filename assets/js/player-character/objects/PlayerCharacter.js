@@ -1,5 +1,5 @@
 import { Skill } from "../objects/api/resources/Skill.js";
-import { globalPlayerCharacterBank } from "../load-page.js";
+import { globals } from "../load-page.js";
 
 /**
  * The current latest version of the PC object.
@@ -182,7 +182,7 @@ export class PlayerCharacter {
      */
     save() {
         try {
-            globalPlayerCharacterBank.saveActiveCharacter();
+            globals.playerCharacterBank.saveActiveCharacter();
         } catch (error) {
             console.error("Error while saving Player Character:", error);
         }
@@ -195,7 +195,7 @@ export class PlayerCharacter {
      */
     static load() {
         try {
-            return globalPlayerCharacterBank.getActivePlayerCharacterBankEntry().playerCharacter;
+            return globals.playerCharacterBank.getActivePlayerCharacterBankEntry().playerCharacter;
         }
         catch (error) {
             console.error("Error parsing player character JSON:", error);

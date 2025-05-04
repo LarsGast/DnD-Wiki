@@ -1,4 +1,4 @@
-import { globalPlayerCharacterBank } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 
 /**
  * Custom HTML element for displaying the Character Delete Dialog.
@@ -83,8 +83,8 @@ export class CharacterDeleteDialog extends HTMLDialogElement {
      */
     handleDeleteButtonClick() {
 
-        globalPlayerCharacterBank.removeCharacterFromBank(this.characterId);
-        globalPlayerCharacterBank.save();
+        globals.playerCharacterBank.removeCharacterFromBank(this.characterId);
+        globals.playerCharacterBank.save();
 
         this.close();
 

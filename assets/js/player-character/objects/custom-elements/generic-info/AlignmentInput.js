@@ -1,6 +1,6 @@
 import { Alignment } from "../../api/resources/Alignment.js";
 import { getEmptyOption, getSelectOption } from "../../../util.js";
-import { globalPlayerCharacter } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 
 /**
  * Custom select element for choosing an alignment.
@@ -36,7 +36,7 @@ export class AlignmentInput extends HTMLSelectElement {
         }
 
         // Set the select value to the global PC's current alignment.
-        this.value = globalPlayerCharacter.alignment;
+        this.value = globals.playerCharacter.alignment;
     }
 
     /**
@@ -44,7 +44,7 @@ export class AlignmentInput extends HTMLSelectElement {
      * Updates the global PC's alignment and dispatches an "alignmentUpdated" event.
      */
     handleChange() {
-        globalPlayerCharacter.setProperty('alignment', this.value);
+        globals.playerCharacter.setProperty('alignment', this.value);
         document.dispatchEvent(new Event("alignmentUpdated"));
     }
 }

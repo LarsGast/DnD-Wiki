@@ -1,4 +1,4 @@
-import { globalPlayerCharacterBank } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 
 /**
  * Custom HTML element for displaying the Character Export Dialog.
@@ -91,7 +91,7 @@ export class CharacterExportDialog extends HTMLDialogElement {
      */
     showDialog(event) {
 
-        this.playerCharacter = globalPlayerCharacterBank.getCharacterBankEntryById(event.detail.characterId).playerCharacter;
+        this.playerCharacter = globals.playerCharacterBank.getCharacterBankEntryById(event.detail.characterId).playerCharacter;
         
         // Display the current global PC as formatted JSON.
         this.previewTextarea.value = JSON.stringify(this.playerCharacter, null, 2);

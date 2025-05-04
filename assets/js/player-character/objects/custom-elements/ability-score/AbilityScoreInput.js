@@ -1,4 +1,4 @@
-import { globalPlayerCharacter } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 
 /**
  * Custom input element for editing an ability score.
@@ -25,7 +25,7 @@ export class AbilityScoreInput extends HTMLInputElement {
         this.max = 30;
 
         // Initialize the input value from the global PC's current ability score.
-        this.value = globalPlayerCharacter[this.ability];
+        this.value = globals.playerCharacter[this.ability];
 
         // Bind the change handler to react on user input changes.
         this.onchange = () => this.handleChange();
@@ -42,7 +42,7 @@ export class AbilityScoreInput extends HTMLInputElement {
         this.limitScore();
         
         // Update the PC's ability score (convert input value to an integer).
-        globalPlayerCharacter.setProperty(this.ability, parseInt(this.value));
+        globals.playerCharacter.setProperty(this.ability, parseInt(this.value));
 
         // Dispatch an event signaling that the ability score has changed.
         document.dispatchEvent(new CustomEvent("abilityScoreChanged", {

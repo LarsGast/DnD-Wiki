@@ -2,8 +2,27 @@ import { updateCharacter } from "./update-character.js";
 import { PlayerCharacterBank } from "./objects/PlayerCharacterBank.js";
 import { PlayerCharacter } from "./objects/PlayerCharacter.js";
 
-export const globalPlayerCharacterBank = PlayerCharacterBank.load();
-export const globalPlayerCharacter = PlayerCharacter.load();
+/**
+ * A set of global variables to be used all across the codebase.
+ */
+export const globals = {
+
+    /**
+     * Global singleton of the player character bank.
+     * This includes all PCs, both active and inactive.
+     * @type {PlayerCharacterBank}
+     */
+    playerCharacterBank: PlayerCharacterBank.load(),
+
+    /**
+     * The current active PC.
+     * Part of the player bank, this variable can have it's properties changed an can be saved.
+     * @type {PlayerCharacter}
+     */
+    get playerCharacter() {
+        return this.playerCharacterBank.getActivePlayerCharacterBankEntry().playerCharacter;
+    }
+}
 
 /**
  * Starting point for all JavaScript code for the PC-Builder page.
@@ -42,9 +61,9 @@ const removeLegacyPlayerCharacterFromLocalStorage = function() {
 
         // We know that the user only has the default character in the bank at this point.
         // Replace the default character with their own character.
-        globalPlayerCharacterBank.empty();
-        globalPlayerCharacterBank.addNewCharacter(playerCharacter);
-        globalPlayerCharacterBank.save();
+        globals.playerCharacterBank.empty();
+        globals.playerCharacterBank.addNewCharacter(playerCharacter);
+        globals.playerCharacterBank.save();
 
         // Remove the old localStorage item.
         // This data is not recoverable.
@@ -58,11 +77,11 @@ const removeLegacyPlayerCharacterFromLocalStorage = function() {
 const updatePlayerBank = function() {
 
     // Update all PCs currently saved in localStorage.
-    for (const characterBankEntry of globalPlayerCharacterBank.playerCharacterBankEntries) {
+    for (const characterBankEntry of globals.playerCharacterBank.playerCharacterBankEntries) {
         updateCharacter(characterBankEntry.playerCharacter);
     }
 
     // Save the PCs, wether they has changes or not.
     // We don't need to check for changes. Saving is cheap and the extra logic will only bring complexity.
-    globalPlayerCharacterBank.save();
+    globals.playerCharacterBank.save();
 }

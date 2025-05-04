@@ -1,4 +1,4 @@
-import { globalPlayerCharacterBank } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 import { PlayerCharacter } from "../../PlayerCharacter.js";
 
 /**
@@ -22,8 +22,8 @@ export class NewCharacterButton extends HTMLButtonElement {
      * Handles the button click.
      */
     handleClick() {
-        globalPlayerCharacterBank.addNewCharacter(PlayerCharacter.getDefault());
-        globalPlayerCharacterBank.save();
+        globals.playerCharacterBank.addNewCharacter(PlayerCharacter.getDefault());
+        globals.playerCharacterBank.save();
 
         document.dispatchEvent(new Event("newCharacterCreated"));
     }

@@ -1,5 +1,5 @@
 import { Weapon } from "../../api/resources/equipment/Weapon.js";
-import { globalPlayerCharacter } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 
 /**
  * Custom checkbox element representing a weapon proficiency toggle.
@@ -24,7 +24,7 @@ export class WeaponProficiencyCheckbox extends HTMLInputElement {
         this.type = "checkbox";
 
         // Determine initial state from the global PC's proficiencies.
-        this.checked = globalPlayerCharacter.isProficientInWeapon(this.weapon.index);
+        this.checked = globals.playerCharacter.isProficientInWeapon(this.weapon.index);
 
         // Bind the change handler to update weapon proficiency.
         this.onclick = () => this.handleChange();
@@ -39,9 +39,9 @@ export class WeaponProficiencyCheckbox extends HTMLInputElement {
 
         // Update proficiencies.
         if (this.checked) {
-            globalPlayerCharacter.addProficiencyInWeapon(this.weapon.index);
+            globals.playerCharacter.addProficiencyInWeapon(this.weapon.index);
         } else {
-            globalPlayerCharacter.removeProficiencyInWeapon(this.weapon.index);
+            globals.playerCharacter.removeProficiencyInWeapon(this.weapon.index);
         }
 
         // Dispatch a custom event to signal the change in weapon proficiency.

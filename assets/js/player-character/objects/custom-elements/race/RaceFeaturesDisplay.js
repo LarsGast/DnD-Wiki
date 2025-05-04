@@ -1,5 +1,5 @@
 import { Race } from "../../api/resources/Race.js";
-import { globalPlayerCharacter } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 
 /**
  * Custom details element that displays the features of the selected race.
@@ -84,13 +84,13 @@ export class RaceFeaturesDisplay extends HTMLDetailsElement {
     async updateRaceFeaturesDisplay() {
 
         // No race selected - hide the element.
-        if (!globalPlayerCharacter.race) {
+        if (!globals.playerCharacter.race) {
             this.style.display = "none";
             return;
         }
         
         this.style.display = "block";
-        this.race = await Race.getAsync(globalPlayerCharacter.race);
+        this.race = await Race.getAsync(globals.playerCharacter.race);
 
         // Clear any existing content.
         this.replaceChildren();

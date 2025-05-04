@@ -1,4 +1,4 @@
-import { globalPlayerCharacter } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 import { ClassLevelInput } from "./ClassLevelInput.js";
 
 /**
@@ -36,8 +36,8 @@ export class ClassLevelSection extends HTMLElement {
      * Registers event listeners to track changes.
      */
     connectedCallback() {
-        if (globalPlayerCharacter.classes.length > 0) {
-            for (const classLevel of globalPlayerCharacter.classes) {
+        if (globals.playerCharacter.classes.length > 0) {
+            for (const classLevel of globals.playerCharacter.classes) {
                 const classLevelInput = new ClassLevelInput(classLevel.index, classLevel.subclass, classLevel.level);
                 this.classLevelList.appendChild(classLevelInput);
             }
@@ -110,7 +110,7 @@ export class ClassLevelSection extends HTMLElement {
         });
         
         // Save the updated classes to the global player character.
-        globalPlayerCharacter.setProperty('classes', classes);
+        globals.playerCharacter.setProperty('classes', classes);
         document.dispatchEvent(new Event("classesChanged"));
     }
 }

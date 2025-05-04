@@ -1,6 +1,6 @@
 import { EquipmentCategoryIndex } from "../../../api.js";
 import { getEmptyOption, getSelectOption } from "../../../util.js";
-import { globalPlayerCharacter } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 import { EquipmentCategory } from "../../api/resources/EquipmentCategory.js";
 import { Armor } from "../../api/resources/equipment/Armor.js";
 
@@ -91,7 +91,7 @@ export class InventoryArmorAddInput extends HTMLElement {
         const armor = await Armor.getAsync(armorIndex);
 
         // Add the armor to the global player's inventory.
-        globalPlayerCharacter.addArmorToInventory(armor.index);
+        globals.playerCharacter.addArmorToInventory(armor.index);
 
         // Notify listeners that armor has been added.
         document.dispatchEvent(new Event("inventoryArmorAdded"));

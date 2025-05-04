@@ -1,4 +1,4 @@
-import { globalPlayerCharacterBank } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 
 /**
  * Custom HTML element for handling the button to switch between characters.
@@ -23,8 +23,8 @@ export class CharacterSelectButton extends HTMLButtonElement {
      * Sets the selected character to be active and reloads the page to display the new information.
      */
     handleClick() {
-        globalPlayerCharacterBank.setActiveCharacter(this.characterId);
-        globalPlayerCharacterBank.save();
+        globals.playerCharacterBank.setActiveCharacter(this.characterId);
+        globals.playerCharacterBank.save();
         
         window.location.reload();
     }

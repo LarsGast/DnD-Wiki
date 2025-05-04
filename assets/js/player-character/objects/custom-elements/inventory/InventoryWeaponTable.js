@@ -1,6 +1,6 @@
 import { Weapon } from "../../api/resources/equipment/Weapon.js";
 import { InventoryWeaponRow } from "./InventoryWeaponRow.js";
-import { globalPlayerCharacter } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 
 /**
  * Custom element that displays a table of inventory weapons.
@@ -106,7 +106,7 @@ export class InventoryWeaponTable extends HTMLElement {
             tableBody.replaceChildren();
 
             // Create a row for each weapon currently in the global inventory.
-            for (const inventoryWeapon of globalPlayerCharacter.inventoryWeapons) {
+            for (const inventoryWeapon of globals.playerCharacter.inventoryWeapons) {
                 const weapon = await Weapon.getAsync(inventoryWeapon.index);
                 tableBody.appendChild(new InventoryWeaponRow(weapon));
             }

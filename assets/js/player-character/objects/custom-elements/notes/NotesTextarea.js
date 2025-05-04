@@ -1,4 +1,4 @@
-import { globalPlayerCharacter } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 
 /**
  * Custom HTML element for displaying and handling a textarea for character notes.
@@ -11,7 +11,7 @@ export class NotesTextarea extends HTMLTextAreaElement {
         super();
 
         // Set initial value from the PC's notes.
-        this.value = globalPlayerCharacter.notes;
+        this.value = globals.playerCharacter.notes;
 
         // Bind the onchange event to update the notes.
         this.onchange = () => this.handleChange();
@@ -21,7 +21,7 @@ export class NotesTextarea extends HTMLTextAreaElement {
      * Handles changes to the textarea by updating the global notes and dispatching a "notesChanged" event.
      */
     handleChange() {
-        globalPlayerCharacter.setProperty('notes', this.value);
+        globals.playerCharacter.setProperty('notes', this.value);
         
         document.dispatchEvent(new Event("notesChanged"));
     }

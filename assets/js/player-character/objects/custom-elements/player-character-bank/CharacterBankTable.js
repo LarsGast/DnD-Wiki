@@ -3,7 +3,7 @@ import { PlayerCharacterBankEntry } from "../../PlayerCharacterBank.js";
 import { CharacterExportButton } from "./CharacterExportButton.js";
 import { CharacterDeleteButton } from "./CharacterDeleteButton.js";
 import { CharacterSelectButton } from "./CharacterSelectButton.js";
-import { globalPlayerCharacterBank } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 import { PlayerCharacter } from "../../PlayerCharacter.js";
 import { Race } from "../../api/resources/Race.js";
 import { Subrace } from "../../api/resources/Subrace.js";
@@ -87,10 +87,10 @@ export class CharacterBankTable extends HTMLTableElement {
 
     getPlayerCharactersForTable() {
         if (this.isForCurrentCharacter) {
-            return [globalPlayerCharacterBank.getActivePlayerCharacterBankEntry()];
+            return [globals.playerCharacterBank.getActivePlayerCharacterBankEntry()];
         }
         else {
-            return globalPlayerCharacterBank.getInactivePlayerCharacterBankEntries();
+            return globals.playerCharacterBank.getInactivePlayerCharacterBankEntries();
         }
     }
 

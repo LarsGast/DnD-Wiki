@@ -1,6 +1,6 @@
 import { Weapon } from "../../api/resources/equipment/Weapon.js";
 import { getSelectOption } from "../../../util.js";
-import { globalPlayerCharacter } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 
 /**
  * Custom table cell element that displays or allows selection of the ability used for weapon attacks.
@@ -52,7 +52,7 @@ export class InventoryWeaponAbilityCell extends HTMLTableCellElement {
      * Updates the global player's inventory weapon entry with the new ability, and dispatches a custom "inventoryWeaponAbilityChanged" event with details.
      */
     handleChange() {
-        globalPlayerCharacter.editWeaponAbility(this.rowIndex, this.select.value);
+        globals.playerCharacter.editWeaponAbility(this.rowIndex, this.select.value);
 
         document.dispatchEvent(new CustomEvent("inventoryWeaponAbilityChanged", {
             detail: { 
@@ -67,7 +67,7 @@ export class InventoryWeaponAbilityCell extends HTMLTableCellElement {
      * @returns {string} The current ability value (e.g., "str" or "dex").
      */
     getDefaultAbility() {
-        const inventoryWeapon = globalPlayerCharacter.inventoryWeapons[this.rowIndex];
+        const inventoryWeapon = globals.playerCharacter.inventoryWeapons[this.rowIndex];
         return inventoryWeapon.ability;
     }
 }

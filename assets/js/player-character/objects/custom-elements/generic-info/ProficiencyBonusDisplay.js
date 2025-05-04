@@ -1,4 +1,4 @@
-import { globalPlayerCharacter } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 
 /**
  * Custom element for displaying the proficiency bonus.
@@ -42,7 +42,7 @@ export class ProficiencyBonusDisplay extends HTMLElement {
     updateDisplay() {
 
         // Update the element's text with the current proficiency bonus.
-        this.textContent = globalPlayerCharacter.getProficiencyBonus();
+        this.textContent = globals.playerCharacter.getProficiencyBonus();
         
         // Dispatch an event to indicate the bonus has been updated.
         document.dispatchEvent(new Event("proficiencyBonusChanged"));

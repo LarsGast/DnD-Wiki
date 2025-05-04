@@ -1,4 +1,4 @@
-import { globalPlayerCharacter } from "../load-page.js";
+import { globals } from "../load-page.js";
 import { updateCharacter } from "../update-character.js";
 import { PlayerCharacter } from "./PlayerCharacter.js";
 
@@ -193,7 +193,7 @@ export class PlayerCharacterBank {
         if (this.playerCharacterBankEntries.length === 0) {
             bankEntry.isActive = true;
         }
-        
+
         bankEntry.version = LATEST_PLAYER_CHARACTER_BANK_ENTRY_VERSION_NUMBER;
 
         this.playerCharacterBankEntries.push(bankEntry);
@@ -201,7 +201,7 @@ export class PlayerCharacterBank {
 
     /**
      * Save the PC that is currently active.
-     * This is the globalPlayerCharacter that gets edited when the user works on it.
+     * This is the globals.playerCharacter that gets edited when the user works on it.
      */
     saveActiveCharacter() {
         const currentCharacterEntry = this.getActivePlayerCharacterBankEntry();
@@ -210,7 +210,7 @@ export class PlayerCharacterBank {
             throw new Error("No active character found");
         }
 
-        currentCharacterEntry.playerCharacter = globalPlayerCharacter;
+        currentCharacterEntry.playerCharacter = globals.playerCharacter;
 
         this.save();
     }

@@ -1,5 +1,5 @@
 import { getEmptyOption, getSelectOption } from "../../../util.js";
-import { globalPlayerCharacter } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 import { Race } from "../../api/resources/Race.js";
 
 /**
@@ -54,8 +54,8 @@ export class SubraceInput extends HTMLSelectElement {
         this.appendChild(getEmptyOption());
 
         // If a race has been selected, load its subraces.
-        if (globalPlayerCharacter.race) {
-            const race = await Race.getAsync(globalPlayerCharacter.race);
+        if (globals.playerCharacter.race) {
+            const race = await Race.getAsync(globals.playerCharacter.race);
             for (const subrace of race.subraces) {
                 this.appendChild(getSelectOption(subrace.name, subrace.index));
             }
@@ -67,7 +67,7 @@ export class SubraceInput extends HTMLSelectElement {
             this.handleChange();
         } else {
             // Otherwise, set the value to the current global subrace.
-            this.value = globalPlayerCharacter.subrace;
+            this.value = globals.playerCharacter.subrace;
         }
     }
 
@@ -76,7 +76,7 @@ export class SubraceInput extends HTMLSelectElement {
      * Updates the PC's subrace and dispatches a "subraceUpdated" event.
      */
     handleChange() {
-        globalPlayerCharacter.setProperty('subrace', this.value == "null" ? null : this.value);
+        globals.playerCharacter.setProperty('subrace', this.value == "null" ? null : this.value);
         document.dispatchEvent(new Event("subraceUpdated"));
     }
 }

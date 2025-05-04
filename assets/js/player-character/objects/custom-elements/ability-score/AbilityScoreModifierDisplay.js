@@ -1,4 +1,4 @@
-import { globalPlayerCharacter } from "../../../load-page.js";
+import { globals } from "../../../load-page.js";
 
 /**
  * Custom element for displaying the modifier calculated from an ability score.
@@ -58,7 +58,7 @@ export class AbilityScoreModifierDisplay extends HTMLElement {
         if (!event || event.detail.ability === this.ability) {
             
             // Retrieve and display the ability modifier from the global player character.
-            this.textContent = globalPlayerCharacter.getAbilityModifier(this.ability);
+            this.textContent = globals.playerCharacter.getAbilityModifier(this.ability);
             this.handleChange();
         }
     }
