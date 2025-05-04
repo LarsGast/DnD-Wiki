@@ -4,7 +4,7 @@ import { globals } from "../../../load-page.js";
  * Custom HTML element for displaying and handling a textarea for character notes.
  * Extends HTMLTextAreaElement.
  *
- * On change, it updates the global PC's notes and dispatches an event to notify listeners.
+ * On change, it updates the active PC's notes and dispatches an event to notify listeners.
  */
 export class NotesTextarea extends HTMLTextAreaElement {
     constructor() {

@@ -5,7 +5,7 @@ import { globals } from "../../../load-page.js";
  * Custom details element that displays the features of the selected race.
  * Extends HTMLDetailsElement.
  *
- * This element updates its display whenever the global PC's race changes.
+ * This element updates its display whenever the active PC's race changes.
  * It shows sections for ability bonuses, speed, alignment, age, size, languages, and any available traits.
  */
 export class RaceFeaturesDisplay extends HTMLDetailsElement {

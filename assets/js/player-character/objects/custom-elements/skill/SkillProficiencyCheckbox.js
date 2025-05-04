@@ -20,7 +20,7 @@ export class SkillProficiencyCheckbox extends HTMLInputElement {
         this.skill = skill;
         this.type = "checkbox";
 
-        // Initialize based on the global PC's proficiency state.
+        // Initialize based on the active PC's proficiency state.
         this.checked = globals.activePlayerCharacter.isProficientInSkill(this.skill.index);
 
         // Bind click event handler.

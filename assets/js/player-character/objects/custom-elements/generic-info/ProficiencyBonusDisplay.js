@@ -4,7 +4,7 @@ import { globals } from "../../../load-page.js";
  * Custom element for displaying the proficiency bonus.
  * Extends the built-in HTMLElement.
  *
- * This element displays the proficiency bonus based on the global PC's class & level data.
+ * This element displays the proficiency bonus based on the active PC's class & level data.
  * It updates automatically when the "classesChanged" event is dispatched.
  */
 export class ProficiencyBonusDisplay extends HTMLElement {

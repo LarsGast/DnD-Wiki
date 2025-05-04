@@ -10,7 +10,7 @@ import { Weapon } from "../../api/resources/equipment/Weapon.js";
  *
  * The element contains a select dropdown populated with weapon options grouped by category and a button to add the selected weapon. 
  * When a valid option is selected, the button is enabled. 
- * On clicking, the selected weapon is retrieved, added to the global PC's inventory (using its standard ability), and an "inventoryWeaponAdded" event is dispatched.
+ * On clicking, the selected weapon is retrieved, added to the active PC's inventory (using its standard ability), and an "inventoryWeaponAdded" event is dispatched.
  */
 export class InventoryWeaponAddInput extends HTMLElement {
 

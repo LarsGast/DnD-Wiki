@@ -5,7 +5,7 @@ import { globals } from "../../../load-page.js";
  * Custom input element (checkbox) for toggling skill expertise.
  * Extends HTMLInputElement.
  *
- * On change, it updates the global PC's expertise state for the skill and dispatches a "skillExpertiseChanged" event.
+ * On change, it updates the active PC's expertise state for the skill and dispatches a "skillExpertiseChanged" event.
  */
 export class SkillExpertiseCheckbox extends HTMLInputElement {
 

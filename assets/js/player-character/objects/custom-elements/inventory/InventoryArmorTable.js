@@ -7,7 +7,7 @@ import { globals } from "../../../load-page.js";
  * Extends HTMLElement.
  *
  * This element constructs a table consisting of a header and a body.
- * The header defines columns for armor properties while the body is populated with InventoryArmorRow elements based on the global PC's inventory.
+ * The header defines columns for armor properties while the body is populated with InventoryArmorRow elements based on the active PC's inventory.
  * It listens for "inventoryArmorAdded" and "inventoryArmorDeleted" events to refresh its content.
  */
 export class InventoryArmorTable extends HTMLElement {

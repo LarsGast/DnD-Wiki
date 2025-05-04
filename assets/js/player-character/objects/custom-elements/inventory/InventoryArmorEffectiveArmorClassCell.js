@@ -65,7 +65,7 @@ export class InventoryArmorEffectiveArmorClassCell extends HTMLTableCellElement 
     }
 
     /**
-     * Calculates and returns the effective armor class using the global player's dexterity modifier.
+     * Calculates and returns the effective armor class using the active player's dexterity modifier.
      * @returns {number} The effective armor class value.
      */
     getEffectiveArmorClassValue() {

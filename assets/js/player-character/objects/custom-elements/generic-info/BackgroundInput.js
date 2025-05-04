@@ -35,7 +35,7 @@ export class BackgroundInput extends HTMLSelectElement {
             this.appendChild(getSelectOption(background.name, background.index));
         }
 
-        // Set the current value from the global player's data.
+        // Set the current value from the active player's data.
         this.value = globals.activePlayerCharacter.background;
     }
 

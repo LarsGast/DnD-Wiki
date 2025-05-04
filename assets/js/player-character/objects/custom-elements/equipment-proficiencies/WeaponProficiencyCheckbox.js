@@ -23,7 +23,7 @@ export class WeaponProficiencyCheckbox extends HTMLInputElement {
         // Set the checkbox type.
         this.type = "checkbox";
 
-        // Determine initial state from the global PC's proficiencies.
+        // Determine initial state from the active PC's proficiencies.
         this.checked = globals.activePlayerCharacter.isProficientInWeapon(this.weapon.index);
 
         // Bind the change handler to update weapon proficiency.
@@ -33,7 +33,7 @@ export class WeaponProficiencyCheckbox extends HTMLInputElement {
     /**
      * Event handler for checkbox state changes.
      *
-     * Updates the global player character's weapon proficiency based on checkbox state and dispatches a custom event.
+     * Updates the active player character's weapon proficiency based on checkbox state and dispatches a custom event.
      */
     handleChange() {
 

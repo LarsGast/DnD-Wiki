@@ -7,7 +7,7 @@ import { globals } from "../../../load-page.js";
  * Extends HTMLElement.
  *
  * This element builds a table with a header and body. The header defines columns for various weapon properties (name, ability, attack bonus, damage, etc.).
- * The body is populated with InventoryWeaponRow elements constructed from the global player's inventory.
+ * The body is populated with InventoryWeaponRow elements constructed from the active player's inventory.
  *
  * The table listens for "inventoryWeaponAdded" and "inventoryWeaponDeleted" events to refresh its content.
  */
