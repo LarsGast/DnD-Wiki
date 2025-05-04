@@ -1,3 +1,4 @@
+import { updateCharacter } from "../update-character.js";
 import { PlayerCharacter } from "./PlayerCharacter.js";
 
 /**
@@ -109,6 +110,9 @@ export class PlayerCharacterBank {
     }
 
     addNewCharacter(playerCharacter) {
+
+        updateCharacter(playerCharacter);
+
         const bankEntry = new PlayerCharacterBankEntry();
 
         bankEntry.playerCharacter = playerCharacter;
