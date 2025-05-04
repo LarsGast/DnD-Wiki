@@ -87,10 +87,25 @@ export class ClassLevelSection extends HTMLElement {
         this.classLevelList.childNodes.forEach((el) => {
             const selects = el.querySelectorAll("select");
             const input = el.querySelector("input");
+
+            const index = selects[0].value;
+            let subclass = selects[1].value;
+            const level = parseInt(input.value);
+
+            // Only save data if the user has actually chosen a class.
+            if (!index || index === "null") {
+                return;
+            }
+
+            // The "-- Select an option --" option has a value of "null", which we do not want to save.
+            if (subclass === "null") {
+                subclass = undefined;
+            }
+
             classes.push({
-                index: selects[0].value,
-                subclass: selects[1].value,
-                level: parseInt(input.value)
+                index: index,
+                subclass: subclass,
+                level: level
             });
         });
         
