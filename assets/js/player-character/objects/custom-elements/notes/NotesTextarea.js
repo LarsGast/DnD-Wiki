@@ -11,7 +11,7 @@ export class NotesTextarea extends HTMLTextAreaElement {
         super();
 
         // Set initial value from the PC's notes.
-        this.value = globals.playerCharacter.notes;
+        this.value = globals.activePlayerCharacter.notes;
 
         // Bind the onchange event to update the notes.
         this.onchange = () => this.handleChange();
@@ -21,7 +21,7 @@ export class NotesTextarea extends HTMLTextAreaElement {
      * Handles changes to the textarea by updating the global notes and dispatching a "notesChanged" event.
      */
     handleChange() {
-        globals.playerCharacter.setProperty('notes', this.value);
+        globals.activePlayerCharacter.setProperty('notes', this.value);
         
         document.dispatchEvent(new Event("notesChanged"));
     }

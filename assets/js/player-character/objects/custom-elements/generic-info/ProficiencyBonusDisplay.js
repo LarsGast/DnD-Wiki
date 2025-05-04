@@ -42,7 +42,7 @@ export class ProficiencyBonusDisplay extends HTMLElement {
     updateDisplay() {
 
         // Update the element's text with the current proficiency bonus.
-        this.textContent = globals.playerCharacter.getProficiencyBonus();
+        this.textContent = globals.activePlayerCharacter.getProficiencyBonus();
         
         // Dispatch an event to indicate the bonus has been updated.
         document.dispatchEvent(new Event("proficiencyBonusChanged"));

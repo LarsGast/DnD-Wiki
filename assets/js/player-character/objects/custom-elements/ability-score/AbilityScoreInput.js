@@ -25,7 +25,7 @@ export class AbilityScoreInput extends HTMLInputElement {
         this.max = 30;
 
         // Initialize the input value from the global PC's current ability score.
-        this.value = globals.playerCharacter[this.ability];
+        this.value = globals.activePlayerCharacter[this.ability];
 
         // Bind the change handler to react on user input changes.
         this.onchange = () => this.handleChange();
@@ -42,7 +42,7 @@ export class AbilityScoreInput extends HTMLInputElement {
         this.limitScore();
         
         // Update the PC's ability score (convert input value to an integer).
-        globals.playerCharacter.setProperty(this.ability, parseInt(this.value));
+        globals.activePlayerCharacter.setProperty(this.ability, parseInt(this.value));
 
         // Dispatch an event signaling that the ability score has changed.
         document.dispatchEvent(new CustomEvent("abilityScoreChanged", {

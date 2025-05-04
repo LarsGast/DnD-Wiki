@@ -84,13 +84,13 @@ export class RaceFeaturesDisplay extends HTMLDetailsElement {
     async updateRaceFeaturesDisplay() {
 
         // No race selected - hide the element.
-        if (!globals.playerCharacter.race) {
+        if (!globals.activePlayerCharacter.race) {
             this.style.display = "none";
             return;
         }
         
         this.style.display = "block";
-        this.race = await Race.getAsync(globals.playerCharacter.race);
+        this.race = await Race.getAsync(globals.activePlayerCharacter.race);
 
         // Clear any existing content.
         this.replaceChildren();

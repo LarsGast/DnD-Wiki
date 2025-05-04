@@ -36,7 +36,7 @@ export class InventoryWeaponButtonsCell extends HTMLTableCellElement {
      * Removes the weapon from the global inventory and dispatches an "inventoryWeaponDeleted" event.
      */
     deleteRow() {
-        globals.playerCharacter.removeWeaponFromInventory(this.rowIndex);
+        globals.activePlayerCharacter.removeWeaponFromInventory(this.rowIndex);
         document.dispatchEvent(new Event("inventoryWeaponDeleted"));
     }
 }

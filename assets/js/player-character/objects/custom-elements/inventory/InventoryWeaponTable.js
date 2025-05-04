@@ -106,7 +106,7 @@ export class InventoryWeaponTable extends HTMLElement {
             tableBody.replaceChildren();
 
             // Create a row for each weapon currently in the global inventory.
-            for (const inventoryWeapon of globals.playerCharacter.inventoryWeapons) {
+            for (const inventoryWeapon of globals.activePlayerCharacter.inventoryWeapons) {
                 const weapon = await Weapon.getAsync(inventoryWeapon.index);
                 tableBody.appendChild(new InventoryWeaponRow(weapon));
             }

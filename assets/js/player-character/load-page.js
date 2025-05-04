@@ -19,7 +19,7 @@ export const globals = {
      * Part of the player bank, this variable can have it's properties changed an can be saved.
      * @type {PlayerCharacter}
      */
-    get playerCharacter() {
+    get activePlayerCharacter() {
         return this.playerCharacterBank.getActivePlayerCharacterBankEntry().playerCharacter;
     }
 }

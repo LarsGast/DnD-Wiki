@@ -91,7 +91,7 @@ export class InventoryArmorAddInput extends HTMLElement {
         const armor = await Armor.getAsync(armorIndex);
 
         // Add the armor to the global player's inventory.
-        globals.playerCharacter.addArmorToInventory(armor.index);
+        globals.activePlayerCharacter.addArmorToInventory(armor.index);
 
         // Notify listeners that armor has been added.
         document.dispatchEvent(new Event("inventoryArmorAdded"));

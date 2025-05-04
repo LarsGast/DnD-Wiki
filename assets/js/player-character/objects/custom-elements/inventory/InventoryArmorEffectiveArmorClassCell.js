@@ -69,7 +69,7 @@ export class InventoryArmorEffectiveArmorClassCell extends HTMLTableCellElement 
      * @returns {number} The effective armor class value.
      */
     getEffectiveArmorClassValue() {
-        return this.armor.armor_class.getEffectiveArmorClass(globals.playerCharacter.getAbilityModifier("dex"));
+        return this.armor.armor_class.getEffectiveArmorClass(globals.activePlayerCharacter.getAbilityModifier("dex"));
     }
 }
 

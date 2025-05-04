@@ -36,7 +36,7 @@ export class RaceInput extends HTMLSelectElement {
         }
 
         // Set the value to the current PC's race.
-        this.value = globals.playerCharacter.race;
+        this.value = globals.activePlayerCharacter.race;
     }
 
     /**
@@ -44,7 +44,7 @@ export class RaceInput extends HTMLSelectElement {
      * Updates the PC's race and dispatches a "raceUpdated" event.
      */
     handleChange() {
-        globals.playerCharacter.setProperty('race', this.value);
+        globals.activePlayerCharacter.setProperty('race', this.value);
         document.dispatchEvent(new Event("raceUpdated"));
     }
 }

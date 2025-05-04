@@ -24,7 +24,7 @@ export class ArmorProficiencyCheckbox extends HTMLInputElement {
         this.type = "checkbox";
 
         // Initialize the checked state based on PC's current proficiency.
-        this.checked = globals.playerCharacter.isProficientInArmor(this.armor.index);
+        this.checked = globals.activePlayerCharacter.isProficientInArmor(this.armor.index);
 
         // Bind the handleChange method to the click event.
         this.onclick = () => this.handleChange();
@@ -39,9 +39,9 @@ export class ArmorProficiencyCheckbox extends HTMLInputElement {
 
         // Update proficiencies.
         if (this.checked) {
-            globals.playerCharacter.addProficiencyInArmor(this.armor.index);
+            globals.activePlayerCharacter.addProficiencyInArmor(this.armor.index);
         } else {
-            globals.playerCharacter.removeProficiencyInArmor(this.armor.index);
+            globals.activePlayerCharacter.removeProficiencyInArmor(this.armor.index);
         }
 
         // Dispatch a custom event to notify that the armor proficiency has changed.

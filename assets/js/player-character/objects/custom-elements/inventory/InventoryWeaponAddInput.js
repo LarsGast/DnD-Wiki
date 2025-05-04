@@ -91,7 +91,7 @@ export class InventoryWeaponAddInput extends HTMLElement {
         const weapon = await Weapon.getAsync(weaponIndex);
 
         // Add the weapon to the PC's inventory using its standard ability.
-        globals.playerCharacter.addWeaponToInventory(weapon.index, weapon.getStandardAbility());
+        globals.activePlayerCharacter.addWeaponToInventory(weapon.index, weapon.getStandardAbility());
 
         // Notify that a new weapon has been added.
         document.dispatchEvent(new Event("inventoryWeaponAdded"));

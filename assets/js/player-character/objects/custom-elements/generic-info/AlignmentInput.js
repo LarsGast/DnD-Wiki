@@ -36,7 +36,7 @@ export class AlignmentInput extends HTMLSelectElement {
         }
 
         // Set the select value to the global PC's current alignment.
-        this.value = globals.playerCharacter.alignment;
+        this.value = globals.activePlayerCharacter.alignment;
     }
 
     /**
@@ -44,7 +44,7 @@ export class AlignmentInput extends HTMLSelectElement {
      * Updates the global PC's alignment and dispatches an "alignmentUpdated" event.
      */
     handleChange() {
-        globals.playerCharacter.setProperty('alignment', this.value);
+        globals.activePlayerCharacter.setProperty('alignment', this.value);
         document.dispatchEvent(new Event("alignmentUpdated"));
     }
 }

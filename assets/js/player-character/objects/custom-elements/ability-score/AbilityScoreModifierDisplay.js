@@ -58,7 +58,7 @@ export class AbilityScoreModifierDisplay extends HTMLElement {
         if (!event || event.detail.ability === this.ability) {
             
             // Retrieve and display the ability modifier from the global player character.
-            this.textContent = globals.playerCharacter.getAbilityModifier(this.ability);
+            this.textContent = globals.activePlayerCharacter.getAbilityModifier(this.ability);
             this.handleChange();
         }
     }

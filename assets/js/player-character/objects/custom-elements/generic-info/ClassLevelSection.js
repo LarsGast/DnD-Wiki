@@ -36,8 +36,8 @@ export class ClassLevelSection extends HTMLElement {
      * Registers event listeners to track changes.
      */
     connectedCallback() {
-        if (globals.playerCharacter.classes.length > 0) {
-            for (const classLevel of globals.playerCharacter.classes) {
+        if (globals.activePlayerCharacter.classes.length > 0) {
+            for (const classLevel of globals.activePlayerCharacter.classes) {
                 const classLevelInput = new ClassLevelInput(classLevel.index, classLevel.subclass, classLevel.level);
                 this.classLevelList.appendChild(classLevelInput);
             }
@@ -110,7 +110,7 @@ export class ClassLevelSection extends HTMLElement {
         });
         
         // Save the updated classes to the global player character.
-        globals.playerCharacter.setProperty('classes', classes);
+        globals.activePlayerCharacter.setProperty('classes', classes);
         document.dispatchEvent(new Event("classesChanged"));
     }
 }

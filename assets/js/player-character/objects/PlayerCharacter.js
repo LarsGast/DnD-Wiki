@@ -177,7 +177,7 @@ export class PlayerCharacter {
         // Save the player bank.
         // If the PlayerCharacter exists within the player character bank and is edited by reference, it will be saved to localStorage.
         // If the PlayerCharacter does not exist within the bank, the bank will be saved without the PC.
-        // globals.playerCharacter always exists within the bank, and will thus be saved correctly.
+        // globals.activePlayerCharacter always exists within the bank, and will thus be saved correctly.
         // If you want to save a PlayerCharacter that is not in the bank, add it to the bank first and then save the bank.
         globals.playerCharacterBank.save();
     }

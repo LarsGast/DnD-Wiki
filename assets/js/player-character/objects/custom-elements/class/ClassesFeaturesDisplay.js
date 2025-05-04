@@ -61,9 +61,9 @@ export class ClassesFeaturesDisplay extends HTMLDetailsElement {
     async updateClassFeaturesDisplay() {
 
         // If no class information is present, hide this element.
-        if (!globals.playerCharacter.classes || 
-            globals.playerCharacter.classes.length === 0 ||
-            !globals.playerCharacter.classes.some(classLevel => classLevel.index != 'null')
+        if (!globals.activePlayerCharacter.classes || 
+            globals.activePlayerCharacter.classes.length === 0 ||
+            !globals.activePlayerCharacter.classes.some(classLevel => classLevel.index != 'null')
         ) {
             this.style.display = "none";
             return;
@@ -77,7 +77,7 @@ export class ClassesFeaturesDisplay extends HTMLDetailsElement {
         this.appendChild(this.getSectionHeading());
 
         // Add the class features of each class the PC is a part of.
-        for (const classLevelInfo of globals.playerCharacter.classes) {
+        for (const classLevelInfo of globals.activePlayerCharacter.classes) {
             this.appendChild(new ClassFeaturesDisplay(classLevelInfo));
         }
     }

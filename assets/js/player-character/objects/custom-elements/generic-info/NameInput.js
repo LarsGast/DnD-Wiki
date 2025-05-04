@@ -14,7 +14,7 @@ export class NameInput extends HTMLInputElement {
         this.type = 'text';
 
         // Initialize the value with the global PC's name.
-        this.value = globals.playerCharacter.name;
+        this.value = globals.activePlayerCharacter.name;
 
         // Bind the change event.
         this.onchange = () => this.handleChange();
@@ -25,7 +25,7 @@ export class NameInput extends HTMLInputElement {
      * Updates the PC's name and dispatches a "nameChanged" event.
      */
     handleChange() {
-        globals.playerCharacter.setProperty('name', this.value);
+        globals.activePlayerCharacter.setProperty('name', this.value);
         document.dispatchEvent(new Event("nameChanged"));
     }
 }

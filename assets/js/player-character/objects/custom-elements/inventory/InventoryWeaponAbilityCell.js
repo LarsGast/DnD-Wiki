@@ -52,7 +52,7 @@ export class InventoryWeaponAbilityCell extends HTMLTableCellElement {
      * Updates the global player's inventory weapon entry with the new ability, and dispatches a custom "inventoryWeaponAbilityChanged" event with details.
      */
     handleChange() {
-        globals.playerCharacter.editWeaponAbility(this.rowIndex, this.select.value);
+        globals.activePlayerCharacter.editWeaponAbility(this.rowIndex, this.select.value);
 
         document.dispatchEvent(new CustomEvent("inventoryWeaponAbilityChanged", {
             detail: { 
@@ -67,7 +67,7 @@ export class InventoryWeaponAbilityCell extends HTMLTableCellElement {
      * @returns {string} The current ability value (e.g., "str" or "dex").
      */
     getDefaultAbility() {
-        const inventoryWeapon = globals.playerCharacter.inventoryWeapons[this.rowIndex];
+        const inventoryWeapon = globals.activePlayerCharacter.inventoryWeapons[this.rowIndex];
         return inventoryWeapon.ability;
     }
 }

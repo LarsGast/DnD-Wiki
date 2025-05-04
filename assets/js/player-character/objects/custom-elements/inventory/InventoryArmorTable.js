@@ -110,7 +110,7 @@ export class InventoryArmorTable extends HTMLElement {
             tableBody.replaceChildren();
 
             // For each armor in the inventory, create a new row and append it.
-            for (const inventoryArmor of globals.playerCharacter.inventoryArmor) {
+            for (const inventoryArmor of globals.activePlayerCharacter.inventoryArmor) {
                 const armor = await Armor.getAsync(inventoryArmor.index);
                 tableBody.appendChild(new InventoryArmorRow(armor));
             }

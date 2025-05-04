@@ -11,7 +11,7 @@ export class InventoryArmorButtonsCell extends HTMLTableCellElement {
     /**
      * Creates an instance of InventoryArmorButtonsCell.
      * @param {Armor} armor The armor object.
-     * @param {number} rowIndex The row index in the table (used to identify the inventory entry). Points to the same object in the globals.playerCharacter.inventoryArmor array.
+     * @param {number} rowIndex The row index in the table (used to identify the inventory entry). Points to the same object in the globals.activePlayerCharacter.inventoryArmor array.
      */
     constructor(armor, rowIndex) {
         super();
@@ -34,7 +34,7 @@ export class InventoryArmorButtonsCell extends HTMLTableCellElement {
      * Deletes the row by removing the corresponding armor from the inventory and dispatching an "inventoryArmorDeleted" event.
      */
     deleteRow() {
-        globals.playerCharacter.removeArmorFromInventory(this.rowIndex);
+        globals.activePlayerCharacter.removeArmorFromInventory(this.rowIndex);
         document.dispatchEvent(new Event("inventoryArmorDeleted"));
     }
 }

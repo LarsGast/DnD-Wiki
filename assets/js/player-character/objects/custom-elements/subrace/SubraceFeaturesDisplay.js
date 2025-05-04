@@ -80,13 +80,13 @@ export class SubraceFeaturesDisplay extends HTMLDetailsElement {
      * Hides the element if no subrace is selected.
      */
     async updateSubraceFeaturesDisplay() {
-        if (!globals.playerCharacter.subrace) {
+        if (!globals.activePlayerCharacter.subrace) {
             this.style.display = "none";
             return;
         }
         
         this.style.display = "block";
-        this.subrace = await Subrace.getAsync(globals.playerCharacter.subrace);
+        this.subrace = await Subrace.getAsync(globals.activePlayerCharacter.subrace);
 
         // Clear current contents.
         this.replaceChildren();

@@ -36,7 +36,7 @@ export class BackgroundInput extends HTMLSelectElement {
         }
 
         // Set the current value from the global player's data.
-        this.value = globals.playerCharacter.background;
+        this.value = globals.activePlayerCharacter.background;
     }
 
     /**
@@ -44,7 +44,7 @@ export class BackgroundInput extends HTMLSelectElement {
      * Updates the player's background and dispatches a "backgroundUpdated" event.
      */
     handleChange() {
-        globals.playerCharacter.setProperty('background', this.value);
+        globals.activePlayerCharacter.setProperty('background', this.value);
         document.dispatchEvent(new Event("backgroundUpdated"));
     }
 }

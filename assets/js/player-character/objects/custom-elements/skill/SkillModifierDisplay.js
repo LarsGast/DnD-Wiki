@@ -60,7 +60,7 @@ export class SkillModifierDisplay extends HTMLElement {
      * Dispatches a "skillModifierChanged" event.
      */
     updateSkillModifier() {
-        this.textContent = globals.playerCharacter.getSkillModifier(this.skill);
+        this.textContent = globals.activePlayerCharacter.getSkillModifier(this.skill);
         
         document.dispatchEvent(new CustomEvent("skillModifierChanged", {
             detail: { skill: this.skill.index },
