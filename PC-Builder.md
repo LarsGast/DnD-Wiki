@@ -50,6 +50,7 @@ permalink: /pc-builder/
 
 <section>
     <button is="manage-characters-button"></button>
+    <button is="manage-custom-objects-button"></button>
 </section>
 
 <section>
