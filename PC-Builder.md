@@ -159,6 +159,7 @@ permalink: /pc-builder/
 </section>
 
 <div>
+    <dialog is="manage-custom-objects-dialog"></dialog>
     <dialog is="manage-characters-dialog"></dialog>
     <dialog is="character-import-dialog"></dialog>
     <dialog is="character-export-dialog"></dialog>

@@ -27,3 +27,4 @@ import "./objects/custom-elements/class/ClassesFeaturesDisplay.js";
 import "./objects/custom-elements/player-character-bank/ManageCharactersDialog.js";
 import "./objects/custom-elements/player-character-bank/ManageCharactersButton.js";
 import "./objects/custom-elements/custom-objects/ManageCustomObjectButton.js";
+import "./objects/custom-elements/custom-objects/ManageCustomObjectsDialog.js";
