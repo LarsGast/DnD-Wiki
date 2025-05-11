@@ -2,6 +2,7 @@ export class ApiObjectInfo {
 
     /**
      * Unique identifier in the 5e SRD API.
+     * UUID for custom objects.
      * @type {string}
      */
     index;
