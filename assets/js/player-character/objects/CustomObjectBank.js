@@ -1,4 +1,4 @@
-import { ApiObjectInfo } from "./api/resources/ApiObjectInfo";
+import { ApiObjectInfo } from "./api/resources/ApiObjectInfo.js";
 
 /**
  * Key used for saving and loading the custom object bank from localStorage.
@@ -50,7 +50,7 @@ export class CustomObjectBank {
     /**
      * Loads the object bank from localStorage.
      * If no saved bank exists, returns a default bank.
-     * @returns {PlayerCharacterBank} The loaded or default bank instance.
+     * @returns {CustomObjectBank} The loaded or default bank instance.
      */
     static load() {
         try {

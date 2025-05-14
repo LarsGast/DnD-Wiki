@@ -1,5 +1,6 @@
 import { getElementWithTextContent } from "../../../util.js";
 import { CustomObjectTable } from "./CustomObjectTable.js";
+import { NewCustomObjectButton } from "./NewCustomObjectButton.js";
 
 /**
  * Custom HTML element for displaying the saved custom objects in storage.
@@ -23,7 +24,7 @@ export class ManageCustomObjectsDialog extends HTMLDialogElement {
         this.firstParagraph = getElementWithTextContent("p", "Since this page only has access to the SRD, the class, subclass, race, background, etc that you want to add to your characters might not be available. Thats why, in this menu, you can create your own objects.");
         
         // New custom object button.
-        this.createNewCustomObject = document.createTextNode("New");
+        this.createNewCustomObject = new NewCustomObjectButton();
 
         // Import button.
         this.importButton = document.createTextNode("Import");

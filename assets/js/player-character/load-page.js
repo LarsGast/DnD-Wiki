@@ -1,6 +1,7 @@
 import { updateCharacter } from "./update-character.js";
 import { PlayerCharacterBank } from "./objects/PlayerCharacterBank.js";
 import { PlayerCharacter } from "./objects/PlayerCharacter.js";
+import { CustomObjectBank } from "./objects/CustomObjectBank.js";
 
 /**
  * A set of global variables to be used all across the codebase.
@@ -13,6 +14,14 @@ export const globals = {
      * @type {PlayerCharacterBank}
      */
     playerCharacterBank: PlayerCharacterBank.load(),
+
+
+    /**
+     * Global singleton of the player character bank.
+     * This includes all PCs, both active and inactive.
+     * @type {CustomObjectBank}
+     */
+    customObjectBank: CustomObjectBank.load(),
 
     /**
      * The current active PC.

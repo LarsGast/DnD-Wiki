@@ -26,4 +26,13 @@ export class ApiObjectInfo {
     constructor(data) {
         Object.assign(this, data);
     }
+
+    static getDefault() {
+        const obj = new this();
+
+        obj.index = self.crypto.randomUUID();
+        obj.name = "New Custom Object";
+    
+        return obj;
+    }
 }
