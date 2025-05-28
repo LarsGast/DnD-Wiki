@@ -1,3 +1,4 @@
+import { globals } from "../../../load-page.js";
 import { getElementWithTextContent } from "../../../util.js";
 
 export class CustomObjectTable extends HTMLTableElement {
@@ -10,11 +11,33 @@ export class CustomObjectTable extends HTMLTableElement {
         
         this.tableCaption = getElementWithTextContent("caption", "Custom objects");
         this.tableHead = this.getTableHead();
-        this.tableBody = this.getTableBody();
+
+        // Empty body, will be filled on events.
+        this.tableBody = document.createElement('tbody');
 
         this.appendChild(this.tableCaption);
         this.appendChild(this.tableHead);
         this.appendChild(this.tableBody);
+    }
+
+    /**
+     * Called when the element is connected to the DOM.
+     * Listens for events to update the body of the table.
+     */
+    connectedCallback() {
+        this._updateHandler = async () => this.updateTableBody();
+
+        document.addEventListener("manageCustomObjectsDialogOpened", this._updateHandler);
+        document.addEventListener("newCustomObjectCreated", this._updateHandler);
+    }
+    
+    /**
+     * Called when the element is disconnected from the DOM.
+     * Removes the event listeners.
+     */
+    disconnectedCallback() {
+        document.removeEventListener("manageCustomObjectsDialogOpened", this._updateHandler);
+        document.removeEventListener("newCustomObjectCreated", this._updateHandler);
     }
 
     getTableHead() {
@@ -31,16 +54,17 @@ export class CustomObjectTable extends HTMLTableElement {
         return head;
     }
 
-    getTableBody() {
-        const body = document.createElement('tbody');
+    updateTableBody() {
+        this.tableBody.replaceChildren();
 
-        const customObjects = [{name: "test", type: "test"}];
+        const customObjectEntry = globals.customObjectBank.customObjectBankEntries;
 
-        for (const customObject of customObjects) {
-            body.appendChild(this.getTableBodyRow(customObject));
+        // Sort them from last edited -> first edited, so the most used custom objects are generally at the top.
+        const sortedEntries = customObjectEntry.sort((a, b) => b.lastEdit - a.lastEdit);
+
+        for (const entry of sortedEntries) {
+            this.tableBody.appendChild(this.getTableBodyRow(entry.customObject));
         }
-
-        return body;
     }
 
     getTableBodyRow(customObject) {

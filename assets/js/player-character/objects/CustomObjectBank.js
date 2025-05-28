@@ -115,24 +115,31 @@ export class CustomObjectBank {
 
     /**
      * Removes a single custom object from the bank.
-     * @param {`${string}-${string}-${string}-${string}-${string}`} index UUID.
+     * @param {`${string}-${string}-${string}-${string}-${string}`} id UUID.
      */
-    removeCustomObjectFromBank(index) {
-        this.customObjectBankEntries = this.customObjectBankEntries.filter(entry => entry.customObject.index != index);
+    removeCustomObjectFromBank(id) {
+        this.customObjectBankEntries = this.customObjectBankEntries.filter(entry => entry.id != id);
     }
 
     /**
-     * Get a CustomObjectBankEntry by index.
-     * @param {`${string}-${string}-${string}-${string}-${string}`} index UUID.
+     * Get a CustomObjectBankEntry by ID.
+     * @param {`${string}-${string}-${string}-${string}-${string}`} id UUID.
      * @returns {CustomObjectBankEntry}
      */
-    getCustomObjectBankEntryByIndex(index) {
-        return this.customObjectBankEntries.find(entry => entry.customObject.index === index);
+    getCustomObjectBankEntryByIndex(id) {
+        return this.customObjectBankEntries.find(entry => entry.id === id);
     }
 
 }
 
 export class CustomObjectBankEntry {
+
+    /**
+     * ID of the entry.
+     * Different from the generated UUID in ApiObjectInfo, as that ID is for managing items in the DOM, and this ID is for managing objects in storage.
+     * @type {`${string}-${string}-${string}-${string}-${string}`} UUID
+     */
+    id = self.crypto.randomUUID();
 
     /**
      * All data required for a custom object.
