@@ -28,3 +28,5 @@ import "./objects/custom-elements/player-character-bank/ManageCharactersDialog.j
 import "./objects/custom-elements/player-character-bank/ManageCharactersButton.js";
 import "./objects/custom-elements/custom-objects/ManageCustomObjectButton.js";
 import "./objects/custom-elements/custom-objects/ManageCustomObjectsDialog.js";
+import "./objects/custom-elements/custom-objects/CustomObjectDeleteButton.js";
+import "./objects/custom-elements/custom-objects/CustomObjectDeleteDialog.js";

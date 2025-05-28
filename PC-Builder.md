@@ -164,6 +164,7 @@ permalink: /pc-builder/
     <dialog is="character-import-dialog"></dialog>
     <dialog is="character-export-dialog"></dialog>
     <dialog is="character-delete-dialog"></dialog>
+    <dialog is="custom-object-delete-dialog"></dialog>
 </div>
 
 <script type="module">

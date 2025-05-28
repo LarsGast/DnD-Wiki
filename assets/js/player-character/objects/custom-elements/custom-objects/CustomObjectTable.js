@@ -1,5 +1,7 @@
 import { globals } from "../../../load-page.js";
 import { getElementWithTextContent } from "../../../util.js";
+import { CustomObjectBankEntry } from "../../CustomObjectBank.js";
+import { CustomObjectDeleteButton } from "./CustomObjectDeleteButton.js";
 
 export class CustomObjectTable extends HTMLTableElement {
 
@@ -29,6 +31,7 @@ export class CustomObjectTable extends HTMLTableElement {
 
         document.addEventListener("manageCustomObjectsDialogOpened", this._updateHandler);
         document.addEventListener("newCustomObjectCreated", this._updateHandler);
+        document.addEventListener("customObjectDeleted", this._updateHandler);
     }
     
     /**
@@ -38,6 +41,7 @@ export class CustomObjectTable extends HTMLTableElement {
     disconnectedCallback() {
         document.removeEventListener("manageCustomObjectsDialogOpened", this._updateHandler);
         document.removeEventListener("newCustomObjectCreated", this._updateHandler);
+        document.removeEventListener("customObjectDeleted", this._updateHandler);
     }
 
     getTableHead() {
@@ -63,25 +67,35 @@ export class CustomObjectTable extends HTMLTableElement {
         const sortedEntries = customObjectEntry.sort((a, b) => b.lastEdit - a.lastEdit);
 
         for (const entry of sortedEntries) {
-            this.tableBody.appendChild(this.getTableBodyRow(entry.customObject));
+            this.tableBody.appendChild(this.getTableBodyRow(entry));
         }
     }
 
-    getTableBodyRow(customObject) {
+    /**
+     * 
+     * @param {CustomObjectBankEntry} entry 
+     * @returns 
+     */
+    getTableBodyRow(entry) {
 
         const row = document.createElement('tr');
 
-        row.appendChild(this.getButtonsColumnValue(customObject));
-        row.appendChild(getElementWithTextContent('td', customObject.name));
-        row.appendChild(getElementWithTextContent('td', customObject.type));
+        row.appendChild(this.getButtonsColumnValue(entry));
+        row.appendChild(getElementWithTextContent('td', entry.customObject.name));
+        row.appendChild(getElementWithTextContent('td', entry.customObject.type));
 
         return row;
     }
 
-    getButtonsColumnValue(customObject) {
+    /**
+     * 
+     * @param {CustomObjectBankEntry} entry 
+     * @returns 
+     */
+    getButtonsColumnValue(entry) {
         const td = document.createElement('td');
 
-        td.appendChild(document.createTextNode("Edit"));
+        td.appendChild(new CustomObjectDeleteButton(entry.id));
         td.appendChild(document.createTextNode("Export"));
         td.appendChild(document.createTextNode("Delete"));
 
