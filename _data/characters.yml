@@ -876,3 +876,21 @@
     - name: quest
     - name: female
     - name: indifferent
+
+- name: Ander
+  published: false
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Jong volwassen
+    - name: Bevindt zich op dit moment in
+      value: Onbekend
+    - name: Talen
+      value: Common
+  icons:
+    - name: quest
+    - name: male
+    - name: indifferent
