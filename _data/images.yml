@@ -546,3 +546,9 @@
   alt: Een portret van Thistle
   width: 594
   height: 803
+
+- name: ander
+  fileType: jpg
+  alt: Een portret van Ander
+  width: 474
+  height: 575
