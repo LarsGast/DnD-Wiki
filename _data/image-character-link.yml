@@ -172,3 +172,7 @@
 - characterName: Kapitein Snorbaard
   imageName: kapitein snorbaard
   isHeaderImage: true
+
+- characterName: Thistle
+  imageName: thistle
+  isHeaderImage: true

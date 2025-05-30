@@ -540,3 +540,9 @@
   alt: Een portret van Kapitein Snorbaard
   width: 1024
   height: 1024
+
+- name: thistle
+  fileType: png
+  alt: Een portret van Thistle
+  width: 594
+  height: 803
