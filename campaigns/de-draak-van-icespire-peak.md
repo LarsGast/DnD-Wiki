@@ -72,3 +72,15 @@ Uiteindelijk gebruikt Theodas een sterkere versie van Magic Missile om de laatst
 Op dat moment realiseert de draak zich dat Laranlor ook neer is gegaan. Laranlor heeft geholpen bij het gevecht tegen de groep, maar Cryovain heeft zo niks meer aan hem. Hij neemt Laranlor in zijn klauwen en vliegt terug richting de Sword Mountains. De magische voorwerpen die Laranlor bij zich dat vallen op de grond terwijl ze opstijgen.
 
 Zonder P.E.K.K.A. en Laranlor is de groep avonturiers behoorlijk verzwakt. Ze hebben de kracht van de witte draak gezien, en beseffen zich hopelijk goed dat er meer nodig is dan pijlen en simpele magie om een bedreiging van dit kaliber te kunnen verslaan.
+
+### Gnomengarde
+TBA
+
+### Umbrage Hill
+TBA
+
+### Butterskull Ranch
+TBA
+
+### Mountain's Toe
+TBA
