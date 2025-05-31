@@ -82,5 +82,16 @@ TBA
 ### Butterskull Ranch
 TBA
 
-### Mountain's Toe
+### Mountain's Toe Gold Mine
 TBA
+
+-
+
+In de ochtend maken de avonturiers hun klaar om terug te gaan naar de mijn.
+
+### De verwoesting van Phandalin
+Zodra de avonturiers terugkomen na hun missie om Don-Jon Raskin naar de Mountain's Toe Gold Mine te brengen, zien ze dat Phandalin een enorme aanval van de witte draak Cryovain heeft doorstaan. Sneeuw en ijs ligt verspreid over de grond en de daken van de huizen in Phandalin, dorpelingen zijn paniekerig aan het voorbereiden om te vertrekken, en er hangt een sterk gevoel van verlies en verdriet in de lucht.
+
+In het dorpsplein staan Hugo Staalzwaard, Linene Graywind, Halia Thornton, Thistle, en de bemanning van Kapitein Groenbaard een felle discussie te voeren. De bemanning van Groenbaard wil achter de draak aan, omdat ze gezien hebben dat de draak Groenbaard heeft meegenomen. Linene, met een huilende Thistle onder haar arm, gaat hier fel tegenin en zegt dat het hele dorp juist zo snel mogelijk moet evacueren, aangezien niemand weet wanneer de draak weer zal aanvallen. Halia blijft tactisch en berekend, en stelt voor dat iedereen eerst tot rust moet komen voordat er een te grote beslissing wordt gemaakt. Ze benoemd de belangen van het dorp: iedereen moet veilig zijn en de draak moet geveld worden, maar wel op een manier waar garantie voor gegeven kan worden.
+
+Zodra de avonturiers in de buurt komen spreekt Hugo ze aan, en vertelt hij wat er zojuist gebeurd is. De groep leert dat de witte draak Cryovain Phandalin heeft aangevallen, en dat iedereen moeite heeft om hier mee om te gaan. Hij vraagt de avonturiers, die inmiddels lokale helden zijn geworden, om hulp.
