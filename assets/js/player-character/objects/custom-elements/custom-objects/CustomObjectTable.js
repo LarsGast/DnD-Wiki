@@ -2,6 +2,7 @@ import { globals } from "../../../load-page.js";
 import { getElementWithTextContent } from "../../../util.js";
 import { CustomObjectBankEntry } from "../../CustomObjectBank.js";
 import { CustomObjectDeleteButton } from "./CustomObjectDeleteButton.js";
+import { CustomObjectEditButton } from "./CustomObjectEditButton.js";
 
 export class CustomObjectTable extends HTMLTableElement {
 
@@ -95,6 +96,7 @@ export class CustomObjectTable extends HTMLTableElement {
     getButtonsColumnValue(entry) {
         const td = document.createElement('td');
 
+        td.appendChild(new CustomObjectEditButton(entry.id));
         td.appendChild(new CustomObjectDeleteButton(entry.id));
         td.appendChild(document.createTextNode("Export"));
         td.appendChild(document.createTextNode("Delete"));
