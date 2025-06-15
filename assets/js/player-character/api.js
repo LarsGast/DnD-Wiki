@@ -32,7 +32,16 @@ export class ApiCategory {
     static WeaponProperties = new ApiCategory("weapon-properties");
 
     constructor(name) {
+
+        /** @type {string} */
         this.name = name
+    }
+
+    get displayName() {
+        return this.name
+            .split("-")
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(" ");
     }
 }
 
