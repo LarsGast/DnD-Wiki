@@ -1,15 +1,8 @@
-import { ApiCategory, getApiResultsAsync } from "../../../api.js";
+import { getApiResultsAsync } from "../../../api.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
 import { ResourceList } from "../helpers/ResourceList.js";
 
 export class ApiBaseObject extends ApiObjectInfo {
-
-    /**
-     * Enum-like value that holds the endpoints of given class.
-     * Must be implemented in every class that extends ApiBaseObject.
-     * @type {ApiCategory}
-     */
-    static apiCategory;
 
     /**
      * Constructor.

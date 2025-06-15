@@ -1,4 +1,13 @@
+import { ApiCategory } from "../../../api.js";
+
 export class ApiObjectInfo {
+
+    /**
+     * Enum-like value that holds the endpoints of given class.
+     * Must be implemented in every class that extends ApiBaseObject.
+     * @type {ApiCategory}
+     */
+    static apiCategory;
 
     /**
      * Unique identifier in the 5e SRD API.
@@ -34,5 +43,9 @@ export class ApiObjectInfo {
         obj.name = "New Custom Object";
     
         return obj;
+    }
+
+    get apiCategory() {
+        return this.constructor.apiCategory;
     }
 }
