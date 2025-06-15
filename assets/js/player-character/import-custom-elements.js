@@ -30,3 +30,4 @@ import "./objects/custom-elements/custom-objects/ManageCustomObjectButton.js";
 import "./objects/custom-elements/custom-objects/ManageCustomObjectsDialog.js";
 import "./objects/custom-elements/custom-objects/CustomObjectDeleteButton.js";
 import "./objects/custom-elements/custom-objects/CustomObjectDeleteDialog.js";
+import "./objects/custom-elements/custom-objects/CustomObjectForm.js";
