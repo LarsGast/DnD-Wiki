@@ -20,7 +20,7 @@ export class CustomObjectEditButton extends HTMLButtonElement {
      * Handles the button click and dispatches a "customObjectEditButtonClicked" event.
      */
     handleClick() {
-        
+        window.location.href = `/pc-builder/custom-object/?id=${this.customObjectId}`;
     }
 }
 
