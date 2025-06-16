@@ -1,5 +1,6 @@
 import { getElementWithTextContent } from "../../../util.js";
 import { CustomObjectTable } from "./CustomObjectTable.js";
+import { CustomObjectTypeSelect } from "./CustomObjectTypeSelect.js";
 import { NewCustomObjectButton } from "./NewCustomObjectButton.js";
 
 /**
@@ -24,6 +25,7 @@ export class ManageCustomObjectsDialog extends HTMLDialogElement {
         this.firstParagraph = getElementWithTextContent("p", "Since this page only has access to the SRD, the class, subclass, race, background, etc that you want to add to your characters might not be available. Thats why, in this menu, you can create your own objects.");
         
         // New custom object button.
+        this.customObjectTypeSelect = new CustomObjectTypeSelect();
         this.createNewCustomObject = new NewCustomObjectButton();
 
         // Import button.
@@ -42,6 +44,7 @@ export class ManageCustomObjectsDialog extends HTMLDialogElement {
 
         this.dialogContent.appendChild(this.heading);
         this.dialogContent.appendChild(this.firstParagraph);
+        this.dialogContent.appendChild(this.customObjectTypeSelect);
         this.dialogContent.appendChild(this.createNewCustomObject);
         this.dialogContent.appendChild(this.importButton);
         this.dialogContent.appendChild(this.customObjectTableContainer);
