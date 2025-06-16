@@ -40,47 +40,13 @@ export class CustomObjectForm extends HTMLFormElement {
         const fragment = document.createDocumentFragment();
 
         fragment.appendChild(this.getNameInputSection());
-        fragment.appendChild(this.getTypeSelectSection());
+        fragment.appendChild(this.getObjectSpecificElements());
 
         return fragment;
     }
 
     getNameInputSection() {
         return this.getInputSection("Name", 'name', this.customObject.name);
-    }
-
-    getTypeSelectSection() {
-        const label = document.createElement('label');
-        label.textContent = "Type";
-
-        const select = document.createElement('select');
-        select.appendChild(getEmptyOption());
-        select.appendChild(this.getTypeSelectOptions());
-        select.value = this.customObject.apiCategory?.name ?? null;
-
-        const fragment = document.createDocumentFragment();
-
-        fragment.appendChild(label);
-        fragment.appendChild(select);
-
-        return fragment;
-    }
-
-    getTypeSelectOptions() {
-        const fragment = document.createDocumentFragment();
-
-        fragment.appendChild(this.getTypeSelectOption(ApiCategory.Classes));
-        fragment.appendChild(this.getTypeSelectOption(ApiCategory.Races));
-
-        return fragment;
-    }
-
-    /**
-     * 
-     * @param {ApiCategory} apiCategory 
-     */
-    getTypeSelectOption(apiCategory) {
-        return getSelectOption(apiCategory.singularName, apiCategory.name);
     }
 
     getInputSection(labelText, id, defaultValue) {
