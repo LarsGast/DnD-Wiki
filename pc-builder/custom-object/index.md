@@ -5,11 +5,9 @@ title: Custom PC object
 
 On this page, you can build your own custom objects. A custom object in this instance is a collection of data points that describe homebrew DnD content, such as classes, magic items, spells, and more. You can use this page to insert your own homebrew content as you see fit. You can also use this page to insert official DnD content that you own that is not in the SRD. This way, you can create any character that you would normally be able to create on a paper character sheet.
 
-<h2>Form</h2>
+<h2 is="custom-object-form-heading"></h2>
 
-<form is="custom-object-form">
-<p>Form here...</p>
-</form>
+<form is="custom-object-form"></form>
 
 <script type="module">
     import { loadPage } from "{{ '/assets/js/player-character/load-page.js' | relative_url }}";
