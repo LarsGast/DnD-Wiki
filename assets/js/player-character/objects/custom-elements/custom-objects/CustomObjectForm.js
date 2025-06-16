@@ -2,6 +2,8 @@ import { ApiCategory } from "../../../api.js";
 import { globals } from "../../../load-page.js";
 import { getEmptyOption, getSelectOption } from "../../../util.js";
 import { ApiObjectInfo } from "../../api/resources/ApiObjectInfo.js";
+import { CustomObjectBankEntry } from "../../CustomObjectBank.js";
+import { RaceFormElements } from "./forms/RaceFormElements.js";
 
 export class CustomObjectForm extends HTMLFormElement {
 
@@ -11,8 +13,12 @@ export class CustomObjectForm extends HTMLFormElement {
     constructor() {
         super();
         
+        /** @type {CustomObjectBankEntry} */
+        this.customObjectEntry = this.getCustomObject();
+
         /** @type {ApiObjectInfo} */
-        this.customObject = this.getCustomObject();
+        this.customObject = this.customObjectEntry.customObject;
+
         this.appendChild(this.getFormBody());
     }
 
@@ -23,12 +29,9 @@ export class CustomObjectForm extends HTMLFormElement {
     getCustomObject() {
         const params = new URLSearchParams(window.location.search);
         const id = params.get('id');
-        const customObjectEntry = globals.customObjectBank.getCustomObjectBankEntryByIndex(id);
-
-        return customObjectEntry.customObject;
+        return globals.customObjectBank.getCustomObjectBankEntryByIndex(id);
     }
 
-    
     /**
      * 
      * @returns {DocumentFragment}
