@@ -102,12 +102,14 @@ export class CustomObjectBank {
     /**
      * Adds a single custom object to the bank.
      * @param {ApiObjectInfo} customObject 
+     * @param {string} apiCategoryName 
      */
-    addNewCustomObject(customObject) {
+    addNewCustomObject(customObject, apiCategoryName) {
 
         const bankEntry = new CustomObjectBankEntry();
 
         bankEntry.customObject = customObject;
+        bankEntry.apiCategoryName = apiCategoryName;
         bankEntry.version = LATEST_CUSTOM_OBJECT_BANK_ENTRY_VERSION_NUMBER;
 
         this.customObjectBankEntries.push(bankEntry);
@@ -146,6 +148,11 @@ export class CustomObjectBankEntry {
      * @type {ApiObjectInfo}
      */
     customObject;
+
+    /**
+     * @type {string}
+     */
+    apiCategoryName;
 
     /**
      * Date and time of the last time the custom object was edited.
