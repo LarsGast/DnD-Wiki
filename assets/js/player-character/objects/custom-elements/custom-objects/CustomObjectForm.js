@@ -1,6 +1,6 @@
 import { ApiCategory } from "../../../api.js";
 import { globals } from "../../../load-page.js";
-import { getSelectOption } from "../../../util.js";
+import { getEmptyOption, getSelectOption } from "../../../util.js";
 import { ApiObjectInfo } from "../../api/resources/ApiObjectInfo.js";
 
 export class CustomObjectForm extends HTMLFormElement {
@@ -51,8 +51,9 @@ export class CustomObjectForm extends HTMLFormElement {
         label.textContent = "Type";
 
         const select = document.createElement('select');
-        select.value = this.customObject.apiCategory?.name;
+        select.appendChild(getEmptyOption());
         select.appendChild(this.getTypeSelectOptions());
+        select.value = this.customObject.apiCategory?.name ?? null;
 
         const fragment = document.createDocumentFragment();
 
@@ -76,7 +77,7 @@ export class CustomObjectForm extends HTMLFormElement {
      * @param {ApiCategory} apiCategory 
      */
     getTypeSelectOption(apiCategory) {
-        return getSelectOption(apiCategory.displayName, apiCategory.name);
+        return getSelectOption(apiCategory.singularName, apiCategory.name);
     }
 
     getInputSection(labelText, id, defaultValue) {
