@@ -66,6 +66,13 @@ export class CustomObjectForm extends HTMLFormElement {
         return fragment;
     }
 
+    getObjectSpecificElements() {
+        if (this.customObjectEntry.apiCategoryName === ApiCategory.Races.name) {
+            return new RaceFormElements(this.customObject);
+        }
+
+        return null;
+    }
 }
 
 customElements.define('custom-object-form', CustomObjectForm, { extends: 'form' });
