@@ -1,3 +1,4 @@
+import { ApiCategory } from "../../../api.js";
 import { globals } from "../../../load-page.js";
 import { getElementWithTextContent } from "../../../util.js";
 import { CustomObjectBankEntry } from "../../CustomObjectBank.js";
@@ -83,7 +84,7 @@ export class CustomObjectTable extends HTMLTableElement {
 
         row.appendChild(this.getButtonsColumnValue(entry));
         row.appendChild(getElementWithTextContent('td', entry.customObject.name));
-        row.appendChild(getElementWithTextContent('td', entry.customObject.type));
+        row.appendChild(getElementWithTextContent('td', new ApiCategory(entry.apiCategoryName).getSingularName()));
 
         return row;
     }
