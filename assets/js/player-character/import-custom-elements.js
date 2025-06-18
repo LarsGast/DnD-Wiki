@@ -30,5 +30,5 @@ import "./objects/custom-elements/custom-objects/ManageCustomObjectButton.js";
 import "./objects/custom-elements/custom-objects/ManageCustomObjectsDialog.js";
 import "./objects/custom-elements/custom-objects/CustomObjectDeleteButton.js";
 import "./objects/custom-elements/custom-objects/CustomObjectDeleteDialog.js";
-import "./objects/custom-elements/custom-objects/CustomObjectForm.js";
-import "./objects/custom-elements/custom-objects/CustomObjectFormHeading.js";
+import "./custom-objects/objects/custom-elements/RaceFormElements.js";
+import "./custom-objects/objects/custom-elements/CustomObjectFormHeading.js"

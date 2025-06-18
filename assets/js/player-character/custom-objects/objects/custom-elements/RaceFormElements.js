@@ -1,6 +1,6 @@
-import { Race } from "../../../api/resources/Race.js";
+import { Race } from "../../../objects/api/resources/Race.js";
 
-export class RaceFormElements extends HTMLElement {
+export class CustomRaceForm extends HTMLFormElement {
     /**
      *
      */
@@ -16,6 +16,7 @@ export class RaceFormElements extends HTMLElement {
     getFormBody() {
         const fragment = document.createDocumentFragment();
 
+        fragment.appendChild(this.getInput("Name", 'name', this.race.name, false));
         fragment.appendChild(this.getInput("Speed", 'speed', this.race.speed, true));
         fragment.appendChild(this.getInput("Age", 'age', this.race.age, false));
         fragment.appendChild(this.getInput("Alignment", 'alignment', this.race.alignment, false));
@@ -45,4 +46,4 @@ export class RaceFormElements extends HTMLElement {
     }
 }
 
-customElements.define('race-form-elements', RaceFormElements);
+customElements.define('custom-race-form', CustomRaceForm, { extends: 'form' });

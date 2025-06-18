@@ -7,11 +7,11 @@ On this page, you can build your own custom objects. A custom object in this ins
 
 <h2 is="custom-object-form-heading"></h2>
 
-<form is="custom-object-form"></form>
-
 <script type="module">
     import { loadPage } from "{{ '/assets/js/player-character/load-page.js' | relative_url }}";
     loadPage();
 </script>
 
 <script type="module" src="{{ '/assets/js/player-character/import-custom-elements.js' | relative_url }}"></script>
+
+<script type="module" src="{{ '/assets/js/player-character/custom-objects/load-form.js' | relative_url }}"></script>
