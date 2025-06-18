@@ -1,5 +1,6 @@
 import { ApiCategory } from "../../../api.js";
 import { AbilityBonus } from "../helpers/AbilityBonus.js"
+import { Choice } from "../helpers/Choice.js";
 import { ApiBaseObject } from "./ApiBaseObject.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
 import { Subrace } from "./Subrace.js";
@@ -50,6 +51,18 @@ export class Race extends ApiBaseObject {
      * @type {ApiObjectInfo[]}
      */
     starting_proficiencies;
+
+    /**
+     * If applicable, a choice in starting proficiencies that the player can make choosing this race.
+     * @type {Choice}
+     */
+    starting_proficiency_options;
+
+    /**
+     * Starting languages for all new characters of this race.
+     * @type {ApiObjectInfo[]}
+     */
+    languages;
 
     /**
      * Flavor description of the languages known by the race.
