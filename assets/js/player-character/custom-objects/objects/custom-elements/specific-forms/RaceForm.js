@@ -1,5 +1,6 @@
 import { Race } from "../../../../objects/api/resources/Race.js";
 import { CustomObjectBaseForm } from "../CustomObjectBaseForm.js";
+import { AbilityBonusesSection } from "../helpers/AbilityBonusesSection.js";
 
 export class RaceForm extends CustomObjectBaseForm {
     /**
@@ -18,6 +19,7 @@ export class RaceForm extends CustomObjectBaseForm {
         const fragment = document.createDocumentFragment();
 
         fragment.appendChild(this.getInput("Speed", 'speed', this.race.speed, true));
+        fragment.appendChild(new AbilityBonusesSection(this.race));
         fragment.appendChild(this.getTextarea("Age", 'age', this.race.age));
         fragment.appendChild(this.getTextarea("Alignment", 'alignment', this.race.alignment));
         fragment.appendChild(this.getInput("Size", 'size', this.race.size, false));
