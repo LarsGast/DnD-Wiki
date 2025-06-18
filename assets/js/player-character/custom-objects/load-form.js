@@ -1,5 +1,5 @@
 import { ApiCategory } from "../api.js";
-import { globals } from "../load-page.js";
+import { globals } from "../load-globals.js";
 import { CustomRaceForm } from "./objects/custom-elements/RaceFormElements.js";
 
 const params = new URLSearchParams(window.location.search);

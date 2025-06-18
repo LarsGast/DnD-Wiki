@@ -3,7 +3,7 @@ import { PlayerCharacterBankEntry } from "../../PlayerCharacterBank.js";
 import { CharacterExportButton } from "./CharacterExportButton.js";
 import { CharacterDeleteButton } from "./CharacterDeleteButton.js";
 import { CharacterSelectButton } from "./CharacterSelectButton.js";
-import { globals } from "../../../load-page.js";
+import { globals } from "../../../load-globals.js";
 import { PlayerCharacter } from "../../PlayerCharacter.js";
 import { Race } from "../../api/resources/Race.js";
 import { Subrace } from "../../api/resources/Subrace.js";

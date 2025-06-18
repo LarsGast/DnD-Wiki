@@ -167,6 +167,8 @@ permalink: /pc-builder/
     <dialog is="custom-object-delete-dialog"></dialog>
 </div>
 
+<script type="module" src="{{ '/assets/js/player-character/load-globals.js' | relative_url }}"></script>
+
 <script type="module">
     import { loadPage } from "{{ '/assets/js/player-character/load-page.js' | relative_url }}";
     loadPage();

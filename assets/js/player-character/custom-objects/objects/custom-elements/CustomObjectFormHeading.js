@@ -1,5 +1,5 @@
 import { ApiCategory } from "../../../api.js";
-import { globals } from "../../../load-page.js";
+import { globals } from "../../../load-globals.js";
 import { CustomObjectBankEntry } from "../../../objects/CustomObjectBank.js"
 
 export class CustomObjectFormHeading extends HTMLHeadingElement {

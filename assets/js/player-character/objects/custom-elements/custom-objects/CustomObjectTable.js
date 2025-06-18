@@ -1,5 +1,5 @@
 import { ApiCategory } from "../../../api.js";
-import { globals } from "../../../load-page.js";
+import { globals } from "../../../load-globals.js";
 import { getElementWithTextContent } from "../../../util.js";
 import { CustomObjectBankEntry } from "../../CustomObjectBank.js";
 import { CustomObjectDeleteButton } from "./CustomObjectDeleteButton.js";
