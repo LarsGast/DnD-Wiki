@@ -1,6 +1,6 @@
-import { Race } from "../../../objects/api/resources/Race.js";
+import { Race } from "../../../../objects/api/resources/Race.js";
 
-export class CustomRaceForm extends HTMLFormElement {
+export class RaceForm extends HTMLFormElement {
     /**
      *
      */
@@ -63,4 +63,4 @@ export class CustomRaceForm extends HTMLFormElement {
     }
 }
 
-customElements.define('custom-race-form', CustomRaceForm, { extends: 'form' });
+customElements.define('race-form', RaceForm, { extends: 'form' });
