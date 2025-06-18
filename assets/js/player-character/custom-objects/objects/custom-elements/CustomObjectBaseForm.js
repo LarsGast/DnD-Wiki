@@ -12,6 +12,19 @@ export class CustomObjectBaseForm extends HTMLFormElement {
         this.appendChild(this.getInput("Name", "name", globals.activeCustomObjectEntry.customObject.name, false));        
     }
 
+    connectedCallback() {
+        this.appendChild(this.getSaveButton());
+    }
+
+    getSaveButton() {
+        const button = document.createElement('button');
+        
+        button.type = 'submit';
+        button.textContent = 'Save';
+
+        return button;
+    }
+
     getInput(labelText, id, defaultValue, isNumberInput) {
         const label = document.createElement('label');
         label.textContent = labelText;

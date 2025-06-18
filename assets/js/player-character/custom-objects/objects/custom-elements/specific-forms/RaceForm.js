@@ -21,6 +21,8 @@ export class RaceForm extends CustomObjectBaseForm {
 
     async connectedCallback() {
         this.appendChild(await this.getFormBody());
+
+        super.connectedCallback();
     }
 
     async getFormBody() {
