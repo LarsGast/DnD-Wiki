@@ -1,4 +1,6 @@
+import { ApiCategory } from "../api.js";
 import { ApiObjectInfo } from "./api/resources/ApiObjectInfo.js";
+import { Race } from "./api/resources/Race.js";
 
 /**
  * Key used for saving and loading the custom object bank from localStorage.
@@ -180,7 +182,14 @@ export class CustomObjectBankEntry {
         Object.assign(this, data);
 
         // Initialize objects.
-        this.customObject = new ApiObjectInfo(this.customObject);
+        this.customObject = this.getCustomObject();
         this.lastEdit = new Date(this.lastEdit);
+    }
+
+    getCustomObject() {
+        switch (this.apiCategoryName) {
+            case ApiCategory.Races.name: return new Race(this.customObject);
+            default: return new ApiObjectInfo(this.customObject);
+        }
     }
 }
