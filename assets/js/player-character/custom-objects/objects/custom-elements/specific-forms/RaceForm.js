@@ -22,7 +22,7 @@ export class RaceForm extends CustomObjectBaseForm {
         fragment.appendChild(new AbilityBonusesSection(this.race));
         fragment.appendChild(this.getTextarea("Age", 'age', this.race.age));
         fragment.appendChild(this.getTextarea("Alignment", 'alignment', this.race.alignment));
-        fragment.appendChild(this.getInput("Size", 'size', this.race.size, false));
+        fragment.appendChild(this.getSelect("Size", "size", this.race.size, ["Tiny", "Small", "Medium", "Large", "Huge", "Gargantuan"]));
         fragment.appendChild(this.getTextarea("Size description", 'size-description', this.race.size_description));
         fragment.appendChild(this.getTextarea("Language description", 'language-description', this.race.language_desc));
 

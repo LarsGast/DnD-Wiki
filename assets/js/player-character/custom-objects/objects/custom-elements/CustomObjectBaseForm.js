@@ -1,4 +1,5 @@
 import { globals } from "../../../load-globals.js";
+import { getEmptyOption, getSelectOption } from "../../../util.js";
 
 export class CustomObjectBaseForm extends HTMLFormElement {
 
@@ -42,6 +43,30 @@ export class CustomObjectBaseForm extends HTMLFormElement {
 
         fragment.appendChild(label);
         fragment.appendChild(textArea);
+
+        return fragment;
+    }
+
+    getSelect(labelText, id, defaultValue, options) {
+
+        const label = document.createElement('label');
+        label.textContent = labelText;
+        label.htmlFor = `custom-object-${id}`;
+
+        const select = document.createElement('select');
+
+        select.appendChild(getEmptyOption());
+
+        for (const option of options) {
+            select.appendChild(getSelectOption(option));
+        }
+
+        select.value = defaultValue ?? null;
+
+        const fragment = document.createDocumentFragment();
+
+        fragment.appendChild(label);
+        fragment.appendChild(select);
 
         return fragment;
     }
