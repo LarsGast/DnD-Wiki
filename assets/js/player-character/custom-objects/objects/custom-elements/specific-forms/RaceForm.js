@@ -1,6 +1,8 @@
 import { Race } from "../../../../objects/api/resources/Race.js";
+import { Trait } from "../../../../objects/api/resources/Trait.js";
 import { CustomObjectBaseForm } from "../CustomObjectBaseForm.js";
 import { AbilityBonusesSection } from "../helpers/AbilityBonusesSection.js";
+import { LinkedObjectsSection } from "../helpers/LinkedObjectsSection.js";
 
 export class RaceForm extends CustomObjectBaseForm {
     /**
@@ -11,11 +13,13 @@ export class RaceForm extends CustomObjectBaseForm {
         
         /** @type {Race} */
         this.race = raceElement;
-
-        this.appendChild(this.getFormBody());
     }
 
-    getFormBody() {
+    async connectedCallback() {
+        this.appendChild(await this.getFormBody());
+    }
+
+    async getFormBody() {
         const fragment = document.createDocumentFragment();
 
         fragment.appendChild(this.getInput("Speed", 'speed', this.race.speed, true));
@@ -25,6 +29,7 @@ export class RaceForm extends CustomObjectBaseForm {
         fragment.appendChild(this.getSelect("Size", "size", this.race.size, ["Tiny", "Small", "Medium", "Large", "Huge", "Gargantuan"]));
         fragment.appendChild(this.getTextarea("Size description", 'size-description', this.race.size_description));
         fragment.appendChild(this.getTextarea("Language description", 'language-description', this.race.language_desc));
+        fragment.appendChild(new LinkedObjectsSection("Traits", (await Trait.getAllAsync()).results, this.race.traits));
 
         return fragment;
     }
