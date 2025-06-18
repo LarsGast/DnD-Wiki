@@ -1,6 +1,7 @@
 import { Language } from "../../../../objects/api/resources/Language.js";
 import { Proficiency } from "../../../../objects/api/resources/Proficiency.js";
 import { Race } from "../../../../objects/api/resources/Race.js";
+import { Subrace } from "../../../../objects/api/resources/Subrace.js";
 import { Trait } from "../../../../objects/api/resources/Trait.js";
 import { CustomObjectBaseForm } from "../CustomObjectBaseForm.js";
 import { AbilityBonusesSection } from "../helpers/AbilityBonusesSection.js";
@@ -34,6 +35,7 @@ export class RaceForm extends CustomObjectBaseForm {
         fragment.appendChild(new LinkedObjectsSection("Languages", (await Language.getAllAsync()).results, this.race.languages));
         fragment.appendChild(this.getTextarea("Language description", 'language-description', this.race.language_desc));
         fragment.appendChild(new LinkedObjectsSection("Traits", (await Trait.getAllAsync()).results, this.race.traits));
+        fragment.appendChild(new LinkedObjectsSection("Subraces", (await Subrace.getAllAsync()).results, this.race.subraces));
 
         return fragment;
     }
