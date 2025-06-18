@@ -56,7 +56,7 @@ export class Race extends ApiBaseObject {
      * If applicable, a choice in starting proficiencies that the player can make choosing this race.
      * @type {Choice}
      */
-    starting_proficiency_options;
+    starting_proficiency_options = new Choice();
 
     /**
      * Starting languages for all new characters of this race.

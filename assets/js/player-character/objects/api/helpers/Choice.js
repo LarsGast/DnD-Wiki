@@ -9,7 +9,7 @@ export class Choice {
      * Description of the choice to be made.
      * @type {string}
      */
-    desc;
+    desc = '';
     
     /**
      * How many of the choices can be chosen.
@@ -22,13 +22,13 @@ export class Choice {
      * Examples: proficiencies, languages.
      * @type {string}
      */
-    type;
+    type = '';
     
     /**
      * The options to choose from.
      * @type {OptionSet}
      */
-    from;
+    from = new OptionSet();
 }
 
 /**
@@ -62,7 +62,7 @@ class OptionSet {
      * undefined if option_set_type is not options_array.
      * @type {Option[]}
      */
-    options;
+    options = [];
 }
 
 /**
@@ -114,7 +114,7 @@ class Option {
      * Reference to the object in the API of the actual choice.
      * @type {ApiObjectInfo}
      */
-    item;
+    item = new ApiObjectInfo();
 
     /**
      * The name of the action, according to its `name` attribute.
@@ -138,13 +138,13 @@ class Option {
      * An array of Option objects. All of them must be taken if the option is chosen.
      * @type {Option[]}
      */
-    items;
+    items = [];
 
     /**
      * The Choice to resolve.
      * @type {Choice}
      */
-    choice;
+    choice = new Choice();
 
     /**
      * The string.
@@ -162,19 +162,19 @@ class Option {
      *  A list of alignments of those who might follow the ideal.
      * @type {ApiObjectInfo[]}
      */
-    alignments;
+    alignments = [];
 
     /**
      * Thing being referenced.
      * @type {ApiObjectInfo}
      */
-    of;
+    of = new ApiObjectInfo();
 
     /**
      * Ability score being referenced.
      * @type {ApiObjectInfo}
      */
-    ability_score
+    ability_score = new ApiObjectInfo();
 
     /**
      * The minimum score required to satisfy the prerequisite.
@@ -210,7 +210,7 @@ class Option {
      * Reference to type of damage.
      * @type {ApiObjectInfo}
      */
-    damage_type;
+    damage_type = new ApiObjectInfo();
 
     /**
      * Damage expressed in dice (e.g. "13d6").
