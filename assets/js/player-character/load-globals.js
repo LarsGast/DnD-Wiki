@@ -1,5 +1,5 @@
 import { PlayerCharacterBank } from "./objects/PlayerCharacterBank.js";
-import { CustomObjectBank } from "./objects/CustomObjectBank.js";
+import { CustomObjectBank, CustomObjectBankEntry } from "./objects/CustomObjectBank.js";
 import { PlayerCharacter } from "./objects/PlayerCharacter.js";
 
 /**
@@ -29,5 +29,16 @@ export const globals = {
      */
     get activePlayerCharacter() {
         return this.playerCharacterBank.getActivePlayerCharacterBankEntry().playerCharacter;
+    },
+
+    /**
+     * The current active custom object bank entry.
+     * Part of the custom object bank, this variable can have it's properties changed by reference and will be saved if the bank is saved.
+     * @type {CustomObjectBankEntry}
+     */
+    get activeCustomObjectEntry() {
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id');
+        return this.customObjectBank.getCustomObjectBankEntryByIndex(id);
     }
 }
