@@ -1,4 +1,5 @@
 import { globals } from "../../../load-globals.js";
+import { ApiObjectInfo } from "../../../objects/api/resources/ApiObjectInfo.js";
 import { getEmptyOption, getSelectOption } from "../../../util.js";
 
 export class CustomObjectBaseForm extends HTMLFormElement {
@@ -13,12 +14,42 @@ export class CustomObjectBaseForm extends HTMLFormElement {
     }
 
     connectedCallback() {
+        this.addEventListener("submit", this.handleSubmit.bind(this));
+
         this.appendChild(this.getSaveButton());
+    }
+
+    /**
+     * 
+     * @param {Event} event 
+     */
+    handleSubmit(event) {
+        event.preventDefault();
+
+        const data = this.getFormData();
+
+        globals.activeCustomObjectEntry.customObject = data;
+        globals.customObjectBank.save();
+    }
+
+    /**
+     * 
+     * @returns {ApiObjectInfo}
+     */
+    getFormData() {
+        const formData = new FormData(this);
+
+        const data = new ApiObjectInfo();
+        for (const [key, value] of formData) {
+            data[key] = value;
+        }
+
+        return data;
     }
 
     getSaveButton() {
         const button = document.createElement('button');
-        
+
         button.type = 'submit';
         button.textContent = 'Save';
 
@@ -32,6 +63,7 @@ export class CustomObjectBaseForm extends HTMLFormElement {
 
         const input = document.createElement('input');
         input.id = `custom-object-${id}`;
+        input.name = id;
         input.value = defaultValue ?? '';
         input.type = isNumberInput ? 'number' : null;
 
@@ -50,6 +82,7 @@ export class CustomObjectBaseForm extends HTMLFormElement {
 
         const textArea = document.createElement('textarea');
         textArea.id = `custom-object-${id}`;
+        textArea.name = id;
         textArea.value = defaultValue ?? '';
 
         const fragment = document.createDocumentFragment();
@@ -67,6 +100,8 @@ export class CustomObjectBaseForm extends HTMLFormElement {
         label.htmlFor = `custom-object-${id}`;
 
         const select = document.createElement('select');
+        select.id = `custom-object-${id}`;
+        select.name = id;
 
         select.appendChild(getEmptyOption());
 
