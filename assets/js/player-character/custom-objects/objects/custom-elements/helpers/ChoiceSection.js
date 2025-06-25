@@ -97,7 +97,7 @@ export class ChoiceSection extends HTMLElement {
         const choice = new Choice();
 
         choice.desc = this.descTextarea.value;
-        choice.choose = parseInt(this.chooseInput.value) || 0;
+        choice.choose = parseInt(this.chooseInput.value);
         choice.type = this.typeInput.value;
 
         const optionSet = new OptionSet();
