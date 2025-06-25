@@ -4,7 +4,10 @@ import { ObjectSelect } from "./ObjectSelect.js";
 export class LinkedObjectsSection extends HTMLElement {
 
     /**
-     *
+     * 
+     * @param {string} label 
+     * @param {ApiObjectInfo[]} possibleObjects 
+     * @param {ApiObjectInfo[]} selectedObjects 
      */
     constructor(label, possibleObjects, selectedObjects) {
         super();
@@ -38,8 +41,23 @@ export class LinkedObjectsSection extends HTMLElement {
         return button;
     }
 
+    /**
+     * 
+     * @param {ApiObjectInfo} selectedObject 
+     */
     addObjectSelect(selectedObject) {
         this.appendChild(new ObjectSelect(this.possibleObjects, selectedObject));
+    }
+
+    /**
+     * 
+     * @returns {ApiObjectInfo[]}
+     */
+    getValue() {
+        /** @type {ObjectSelect[]} */
+        const objectSelects = Array.from(this.querySelectorAll('object-select'));
+
+        return objectSelects.map(objectSelect => objectSelect.getValue());
     }
 }
 

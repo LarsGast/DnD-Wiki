@@ -1,8 +1,12 @@
+import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
 import { getEmptyOption, getSelectOption } from "../../../../util.js";
 
 export class ObjectSelect extends HTMLElement {
+    
     /**
-     *
+     * 
+     * @param {ApiObjectInfo[]} possibleObjects 
+     * @param {ApiObjectInfo} selectedObject 
      */
     constructor(possibleObjects, selectedObject) {
         super();
@@ -10,10 +14,18 @@ export class ObjectSelect extends HTMLElement {
         /** @type {ApiObjectInfo[]} */
         this.possibleObjects = possibleObjects;
 
-        this.appendChild(this.getSelect(selectedObject));
-        this.appendChild(this.getDeleteButton());
+        this.select = this.getSelect(selectedObject);
+        this.deleteButton = this.getDeleteButton();
+
+        this.appendChild(this.select);
+        this.appendChild(this.deleteButton);
     }
 
+    /**
+     * 
+     * @param {ApiObjectInfo} defaultValue 
+     * @returns 
+     */
     getSelect(defaultValue) {
         const select = document.createElement('select');
 
@@ -23,7 +35,7 @@ export class ObjectSelect extends HTMLElement {
             select.appendChild(getSelectOption(object.name, object.index));
         }
 
-        select.value = this.selectedObject ?? null;
+        select.value = defaultValue?.index ?? null;
 
         return select;
     }
@@ -35,6 +47,19 @@ export class ObjectSelect extends HTMLElement {
         button.onclick = () => { this.remove() };
 
         return button;
+    }
+
+    /**
+     * 
+     * @returns {ApiObjectInfo}
+     */
+    getValue() {
+        const data = new ApiObjectInfo();
+
+        data.index = this.select.value;
+        data.name = this.select.options[this.select.selectedIndex].text;
+
+        return data;
     }
 }
 
