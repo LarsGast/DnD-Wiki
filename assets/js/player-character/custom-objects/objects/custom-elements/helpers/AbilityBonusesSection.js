@@ -1,3 +1,4 @@
+import { AbilityBonus } from "../../../../objects/api/helpers/AbilityBonus.js";
 import { Race } from "../../../../objects/api/resources/Race.js";
 import { AbilityBonusesSelect } from "./AbilityBonusesSelect.js";
 
@@ -40,6 +41,17 @@ export class AbilityBonusesSection extends HTMLElement {
 
     addAbilityBonusSelect(defaultAbilityScore, defaultBonus) {
         this.appendChild(new AbilityBonusesSelect(defaultAbilityScore, defaultBonus));
+    }
+
+    /**
+     * 
+     * @type {AbilityBonus[]}
+     */
+    getValue() {
+        /** @type {AbilityBonusesSelect[]} */
+        const abilityBonusSelects = Array.from(this.querySelectorAll('ability-bonuses-select'));
+
+        return abilityBonusSelects.map(select => select.getValue());
     }
 }
 

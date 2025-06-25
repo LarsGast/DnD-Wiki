@@ -1,4 +1,6 @@
+import { AbilityBonus } from "../../../../objects/api/helpers/AbilityBonus.js";
 import { AbilityScore } from "../../../../objects/api/resources/AbilityScore.js";
+import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
 import { getEmptyOption, getSelectOption } from "../../../../util.js";
 
 export class AbilityBonusesSelect extends HTMLElement {
@@ -56,6 +58,23 @@ export class AbilityBonusesSelect extends HTMLElement {
         }
 
         this.select.value = this.defaultAbilityScore;
+    }
+
+    /**
+     * 
+     * @type {AbilityBonus}
+     */
+    getValue() {
+        const abilityBonus = new AbilityBonus();
+
+        const abilityScore = new ApiObjectInfo();
+        abilityScore.index = this.select.value;
+        abilityScore.name = this.select.options[this.select.selectedIndex].text;
+
+        abilityBonus.ability_score = abilityScore;
+        abilityBonus.bonus = parseInt(this.input.value);
+
+        return abilityBonus;
     }
 }
 

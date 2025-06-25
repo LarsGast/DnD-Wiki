@@ -29,7 +29,10 @@ export class RaceForm extends CustomObjectBaseForm {
         const fragment = document.createDocumentFragment();
 
         fragment.appendChild(this.getInput("Speed", 'speed', this.race.speed, true));
-        fragment.appendChild(new AbilityBonusesSection(this.race));
+
+        this.abilityBonusesSection = new AbilityBonusesSection(this.race);
+        fragment.appendChild(this.abilityBonusesSection);
+
         fragment.appendChild(this.getTextarea("Age", 'age', this.race.age));
         fragment.appendChild(this.getTextarea("Alignment", 'alignment', this.race.alignment));
         fragment.appendChild(this.getSelect("Size", "size", this.race.size, ["Tiny", "Small", "Medium", "Large", "Huge", "Gargantuan"]));
@@ -42,6 +45,19 @@ export class RaceForm extends CustomObjectBaseForm {
         fragment.appendChild(new LinkedObjectsSection("Subraces", (await Subrace.getAllAsync()).results, this.race.subraces));
 
         return fragment;
+    }
+
+    /**
+     * 
+     * @returns {Race}
+     */
+    getFormData() {
+
+        const data = new Race(super.getFormData());
+
+        data.ability_bonuses = this.abilityBonusesSection.getValue();
+
+        return data;
     }
 }
 
