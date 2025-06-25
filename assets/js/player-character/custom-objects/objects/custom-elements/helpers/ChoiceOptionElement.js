@@ -1,13 +1,18 @@
+import { Choice, Option } from "../../../../objects/api/helpers/Choice.js";
+import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
 import { Proficiency } from "../../../../objects/api/resources/Proficiency.js";
 import { getEmptyOption, getSelectOption } from "../../../../util.js";
 
 export class ChoiceOptionElement extends HTMLElement {
+    
     /**
-     *
+     * 
+     * @param {ApiObjectInfo} defaultValue 
      */
     constructor(defaultValue) {
         super();
         
+        /** @type {ApiObjectInfo} */
         this.defaultValue = defaultValue;
         this.select = this.getItemSelect();
 
@@ -43,7 +48,25 @@ export class ChoiceOptionElement extends HTMLElement {
             this.select.appendChild(getSelectOption(proficiency.name, proficiency.index));
         }
 
-        this.select.value = this.defaultValue ?? null;
+        this.select.value = this.defaultValue?.index ?? null;
+    }
+
+    /**
+     * 
+     * @returns {Option}
+     */
+    getValue() {
+        const option = new Option();
+
+        option.option_type = "reference";
+
+        const item = new ApiObjectInfo();
+        item.index = this.select.value;
+        item.name = this.select.options[this.select.selectedIndex].text;
+
+        option.item = item;
+
+        return option;
     }
 }
 

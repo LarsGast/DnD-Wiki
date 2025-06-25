@@ -34,7 +34,7 @@ export class Choice {
 /**
  * Object for storing information about the specific choices a player can make when gaining a feature that let's them choose.
  */
-class OptionSet {
+export class OptionSet {
     
     /**
      * Type of option set.
@@ -68,7 +68,7 @@ class OptionSet {
 /**
  * Option that the player can choose from when gaining a feature that let's them choose.
  */
-class Option {
+export class Option {
     
     /**
      * Indicates the structure of the option.

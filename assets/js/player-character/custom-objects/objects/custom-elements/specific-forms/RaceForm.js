@@ -45,7 +45,11 @@ export class RaceForm extends CustomObjectBaseForm {
         );
         fragment.appendChild(this.startingProficienciesSection);
 
-        fragment.appendChild(new ChoiceSection("Starting proficiency options", this.race.starting_proficiency_options));
+        this.startingProficiencyOptionsSection = new ChoiceSection(
+            "Starting proficiency options", 
+            this.race.starting_proficiency_options
+        );
+        fragment.appendChild(this.startingProficiencyOptionsSection);
 
         this.languagesSection = new LinkedObjectsSection(
             "Languages", 
@@ -83,6 +87,7 @@ export class RaceForm extends CustomObjectBaseForm {
 
         data.ability_bonuses = this.abilityBonusesSection.getValue();
         data.starting_proficiencies = this.startingProficienciesSection.getValue();
+        data.starting_proficiency_options = this.startingProficiencyOptionsSection.getValue();
         data.languages = this.languagesSection.getValue();
         data.traits = this.traitsSection.getValue();
         data.subraces = this.subracesSection.getValue();
