@@ -5,19 +5,17 @@ import { AbilityBonusesSelect } from "./AbilityBonusesSelect.js";
 export class AbilityBonusesSection extends HTMLElement {
 
     /**
-     *
+     * 
+     * @param {AbilityBonus[]} abilityBonuses 
      */
-    constructor(race) {
+    constructor(abilityBonuses) {
         super();
-
-        /** @type {Race} */
-        this.race = race;
 
         this.appendChild(this.getSectionLabel());
         this.appendChild(this.getAddAbilityBonusButton());
 
-        for (const abilityBonus of this.race.ability_bonuses) {
-            this.addAbilityBonusSelect(abilityBonus.ability_score.index, abilityBonus.bonus);
+        for (const abilityBonus of abilityBonuses) {
+            this.addAbilityBonusSelect(abilityBonus);
         }
     }
 
@@ -39,8 +37,8 @@ export class AbilityBonusesSection extends HTMLElement {
         return button;
     }
 
-    addAbilityBonusSelect(defaultAbilityScore, defaultBonus) {
-        this.appendChild(new AbilityBonusesSelect(defaultAbilityScore, defaultBonus));
+    addAbilityBonusSelect(defaultAbilityScore) {
+        this.appendChild(new AbilityBonusesSelect(defaultAbilityScore));
     }
 
     /**

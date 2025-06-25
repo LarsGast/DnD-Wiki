@@ -8,12 +8,14 @@ export class AbilityBonusesSelect extends HTMLElement {
     /**
      *
      */
-    constructor(defaultAbilityScore, defaultBonus) {
+    constructor(defaultAbilityBonus) {
         super();
         
-        this.defaultAbilityScore = defaultAbilityScore;
+        /** @type {AbilityBonus} */
+        this.defaultAbilityBonus = defaultAbilityBonus;
+        
         this.select = this.getSelectElement();
-        this.input = this.getInputElement(defaultBonus);
+        this.input = this.getInputElement();
         this.deleteButton = this.getDeleteButton();
 
         this.appendChild(this.select);
@@ -33,10 +35,11 @@ export class AbilityBonusesSelect extends HTMLElement {
         return select;
     }
 
-    getInputElement(defaultValue) {
+    getInputElement() {
         const input = document.createElement('input');
+
         input.type = 'number';
-        input.value = defaultValue;
+        input.value = this.defaultAbilityBonus?.bonus;
 
         return input;
     }
@@ -57,7 +60,7 @@ export class AbilityBonusesSelect extends HTMLElement {
             this.select.appendChild(getSelectOption(abilityScore.name, abilityScore.index));
         }
 
-        this.select.value = this.defaultAbilityScore;
+        this.select.value = this.defaultAbilityBonus?.ability_score.index ?? null;;
     }
 
     /**

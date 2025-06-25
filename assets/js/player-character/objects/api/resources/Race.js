@@ -65,6 +65,12 @@ export class Race extends ApiBaseObject {
     languages = [];
 
     /**
+     * If applicable, a choice in starting languages that the player can make choosing this race.
+     * @type {Choice}
+     */
+    language_options = new Choice();
+
+    /**
      * Flavor description of the languages known by the race.
      * @type {string}
      */

@@ -30,7 +30,7 @@ export class RaceForm extends CustomObjectBaseForm {
 
         fragment.appendChild(this.getInput("Speed", 'speed', this.race.speed, true));
 
-        this.abilityBonusesSection = new AbilityBonusesSection(this.race);
+        this.abilityBonusesSection = new AbilityBonusesSection(this.race.ability_bonuses);
         fragment.appendChild(this.abilityBonusesSection);
 
         fragment.appendChild(this.getTextarea("Age", 'age', this.race.age));
@@ -58,6 +58,13 @@ export class RaceForm extends CustomObjectBaseForm {
             this.race.languages
         );
         fragment.appendChild(this.languagesSection);
+
+        this.languageOptionsSection = new ChoiceSection(
+            "Language options",
+            (await Language.getAllAsync()).results,
+            this.race.language_options
+        );
+        fragment.appendChild(this.languageOptionsSection);
 
         fragment.appendChild(this.getTextarea("Language description", 'language_desc', this.race.language_desc));
 
@@ -90,6 +97,7 @@ export class RaceForm extends CustomObjectBaseForm {
         data.starting_proficiencies = this.startingProficienciesSection.getValue();
         data.starting_proficiency_options = this.startingProficiencyOptionsSection.getValue();
         data.languages = this.languagesSection.getValue();
+        data.language_options = this.languageOptionsSection.getValue();
         data.traits = this.traitsSection.getValue();
         data.subraces = this.subracesSection.getValue();
 
