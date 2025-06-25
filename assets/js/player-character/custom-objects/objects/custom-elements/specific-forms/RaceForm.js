@@ -39,21 +39,22 @@ export class RaceForm extends CustomObjectBaseForm {
         fragment.appendChild(this.getTextarea("Size description", 'size_description', this.race.size_description));
 
         this.startingProficienciesSection = new LinkedObjectsSection(
-            "Starting proficiencies", 
-            (await Proficiency.getAllAsync()).results, 
+            "Starting proficiencies",
+            (await Proficiency.getAllAsync()).results,
             this.race.starting_proficiencies
         );
         fragment.appendChild(this.startingProficienciesSection);
 
         this.startingProficiencyOptionsSection = new ChoiceSection(
-            "Starting proficiency options", 
+            "Starting proficiency options",
+            (await Proficiency.getAllAsync()).results,
             this.race.starting_proficiency_options
         );
         fragment.appendChild(this.startingProficiencyOptionsSection);
 
         this.languagesSection = new LinkedObjectsSection(
-            "Languages", 
-            (await Language.getAllAsync()).results, 
+            "Languages",
+            (await Language.getAllAsync()).results,
             this.race.languages
         );
         fragment.appendChild(this.languagesSection);
@@ -61,15 +62,15 @@ export class RaceForm extends CustomObjectBaseForm {
         fragment.appendChild(this.getTextarea("Language description", 'language_desc', this.race.language_desc));
 
         this.traitsSection = new LinkedObjectsSection(
-            "Traits", 
-            (await Trait.getAllAsync()).results, 
+            "Traits",
+            (await Trait.getAllAsync()).results,
             this.race.traits
         );
         fragment.appendChild(this.traitsSection);
 
         this.subracesSection = new LinkedObjectsSection(
-            "Subraces", 
-            (await Subrace.getAllAsync()).results, 
+            "Subraces",
+            (await Subrace.getAllAsync()).results,
             this.race.subraces
         );
         fragment.appendChild(this.subracesSection);

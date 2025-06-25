@@ -5,9 +5,15 @@ import { ChoiceOptionElement } from "./ChoiceOptionElement.js";
 export class ChoiceSection extends HTMLElement {
     /**
      *
+     * @param {string} sectionLabel 
+     * @param {ApiObjectInfo[]} possibleObjects 
+     * @param {Choice} defaultValue 
      */
-    constructor(sectionLabel, defaultValue) {
+    constructor(sectionLabel, possibleObjects, defaultValue) {
         super();
+
+        /** @type {ApiObjectInfo[]} */
+        this.possibleObjects = possibleObjects;
 
         /** @type {Choice} */
         this.defaultValue = defaultValue;
@@ -79,7 +85,7 @@ export class ChoiceSection extends HTMLElement {
      * @param {ApiObjectInfo} defaultValue 
      */
     addOption(defaultValue) {
-        this.appendChild(new ChoiceOptionElement(defaultValue));
+        this.appendChild(new ChoiceOptionElement(this.possibleObjects, defaultValue));
     }
 
     /**

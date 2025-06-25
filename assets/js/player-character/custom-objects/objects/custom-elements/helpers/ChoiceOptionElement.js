@@ -1,33 +1,39 @@
-import { Choice, Option } from "../../../../objects/api/helpers/Choice.js";
+import { Option } from "../../../../objects/api/helpers/Choice.js";
 import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
-import { Proficiency } from "../../../../objects/api/resources/Proficiency.js";
 import { getEmptyOption, getSelectOption } from "../../../../util.js";
 
 export class ChoiceOptionElement extends HTMLElement {
     
     /**
      * 
+     * @param {ApiObjectInfo[]} possibleObjects 
      * @param {ApiObjectInfo} defaultValue 
      */
-    constructor(defaultValue) {
+    constructor(possibleObjects, defaultValue) {
         super();
         
+        /** @type {ApiObjectInfo[]} */
+        this.possibleObjects = possibleObjects;
+
         /** @type {ApiObjectInfo} */
         this.defaultValue = defaultValue;
+        
         this.select = this.getItemSelect();
 
         this.appendChild(this.select);
         this.appendChild(this.getDeleteButton());
     }
 
-    async connectedCallback() {
-        await this.fillSelect();
-    }
-
     getItemSelect() {
         const select = document.createElement('select');
 
         select.appendChild(getEmptyOption());
+
+        for (const object of this.possibleObjects) {
+            select.appendChild(getSelectOption(object.name, object.index));
+        }
+
+        select.value = this.defaultValue?.index ?? null;
 
         return select;
     }
@@ -39,16 +45,6 @@ export class ChoiceOptionElement extends HTMLElement {
         button.onclick = () => { this.remove() };
 
         return button;
-    }
-
-    async fillSelect() {
-        const proficiencies = (await Proficiency.getAllAsync()).results;
-
-        for (const proficiency of proficiencies) {
-            this.select.appendChild(getSelectOption(proficiency.name, proficiency.index));
-        }
-
-        this.select.value = this.defaultValue?.index ?? null;
     }
 
     /**
