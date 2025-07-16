@@ -27,8 +27,6 @@ export class RaceForm extends CustomObjectBaseForm {
     async getFormBody() {
         const fragment = document.createDocumentFragment();
 
-        fragment.appendChild(this.getInput("Speed", 'speed', this.race.speed, true));
-
         this.abilityBonusesSection = new AbilityBonusesSection(this.race.ability_bonuses);
         fragment.appendChild(this.abilityBonusesSection);
 
@@ -36,6 +34,14 @@ export class RaceForm extends CustomObjectBaseForm {
         fragment.appendChild(this.getTextarea("Alignment", 'alignment', this.race.alignment));
         fragment.appendChild(this.getSelect("Size", "size", this.race.size, ["Tiny", "Small", "Medium", "Large", "Huge", "Gargantuan"]));
         fragment.appendChild(this.getTextarea("Size description", 'size_description', this.race.size_description));
+        fragment.appendChild(this.getInput("Speed", 'speed', this.race.speed, true));
+
+        this.traitsSection = new LinkedObjectsSection(
+            "Traits",
+            (await Trait.getAllAsync()).results,
+            this.race.traits
+        );
+        fragment.appendChild(this.traitsSection);
 
         this.languagesSection = new LinkedObjectsSection(
             "Languages",
@@ -52,13 +58,6 @@ export class RaceForm extends CustomObjectBaseForm {
         fragment.appendChild(this.languageOptionsSection);
 
         fragment.appendChild(this.getTextarea("Language description", 'language_desc', this.race.language_desc));
-
-        this.traitsSection = new LinkedObjectsSection(
-            "Traits",
-            (await Trait.getAllAsync()).results,
-            this.race.traits
-        );
-        fragment.appendChild(this.traitsSection);
 
         this.subracesSection = new LinkedObjectsSection(
             "Subraces",
@@ -79,9 +78,9 @@ export class RaceForm extends CustomObjectBaseForm {
         const data = new Race(super.getFormData());
 
         data.ability_bonuses = this.abilityBonusesSection.getValue();
+        data.traits = this.traitsSection.getValue();
         data.languages = this.languagesSection.getValue();
         data.language_options = this.languageOptionsSection.getValue();
-        data.traits = this.traitsSection.getValue();
         data.subraces = this.subracesSection.getValue();
 
         return data;
