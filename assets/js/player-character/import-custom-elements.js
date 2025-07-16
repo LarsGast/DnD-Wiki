@@ -31,5 +31,7 @@ import "./objects/custom-elements/custom-objects/ManageCustomObjectsDialog.js";
 import "./objects/custom-elements/custom-objects/CustomObjectDeleteButton.js";
 import "./objects/custom-elements/custom-objects/CustomObjectDeleteDialog.js";
 import "./custom-objects/objects/custom-elements/specific-forms/RaceForm.js";
-import "./custom-objects/objects/custom-elements/CustomObjectFormHeading.js"
-import "./custom-objects/objects/custom-elements/helpers/AbilityBonusesSection.js"
+import "./custom-objects/objects/custom-elements/CustomObjectFormHeading.js";
+import "./custom-objects/objects/custom-elements/helpers/AbilityBonusesSection.js";
+import "./objects/custom-elements/custom-objects/CustomObjectExportButton.js";
+import "./objects/custom-elements/custom-objects/CustomObjectExportDialog.js";

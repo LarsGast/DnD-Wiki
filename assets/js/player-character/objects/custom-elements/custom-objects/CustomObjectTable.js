@@ -4,6 +4,7 @@ import { getElementWithTextContent } from "../../../util.js";
 import { CustomObjectBankEntry } from "../../CustomObjectBank.js";
 import { CustomObjectDeleteButton } from "./CustomObjectDeleteButton.js";
 import { CustomObjectEditButton } from "./CustomObjectEditButton.js";
+import { CustomObjectExportButton } from "./CustomObjectExportButton.js";
 
 export class CustomObjectTable extends HTMLTableElement {
 
@@ -98,8 +99,8 @@ export class CustomObjectTable extends HTMLTableElement {
         const td = document.createElement('td');
 
         td.appendChild(new CustomObjectEditButton(entry.id));
+        td.appendChild(new CustomObjectExportButton(entry.id));
         td.appendChild(new CustomObjectDeleteButton(entry.id));
-        td.appendChild(document.createTextNode("Export"));
 
         return td;
     }
