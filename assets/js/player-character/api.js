@@ -94,6 +94,13 @@ const getApiDataAsync = async function(url, retryCount = 0) {
     try {
         const response = await fetch(url);
 
+        // Success.
+        if (response.ok) {
+            const json = await response.json();
+            return json;
+        }
+
+        // Too Many Requests (HTTP 429) - rate limiting.
         if (response.status === 429) {
 
             if (retryCount >= 5) {
@@ -106,12 +113,8 @@ const getApiDataAsync = async function(url, retryCount = 0) {
             return getApiDataAsync(url, retryCount++);
         }
 
-        if (!response.ok){
-            throw new Error(`Response status: ${response.status}`);
-        }
-
-        const json = await response.json();
-        return json;
+        // Any other error status.
+        throw new Error(`Response status: ${response.status}`);
     }
     catch (error) {
         console.error(error.message);
