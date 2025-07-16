@@ -53,6 +53,12 @@ export class Race extends ApiBaseObject {
     languages = [];
 
     /**
+     * Starting language options for all new characters of this race.
+     * @type {ApiObjectInfo[]}
+     */
+    language_options = new Choice();
+
+    /**
      * Flavor description of the languages known by the race.
      * @type {string}
      */

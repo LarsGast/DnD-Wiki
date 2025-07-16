@@ -1,5 +1,4 @@
 import { Language } from "../../../../objects/api/resources/Language.js";
-import { Proficiency } from "../../../../objects/api/resources/Proficiency.js";
 import { Race } from "../../../../objects/api/resources/Race.js";
 import { Subrace } from "../../../../objects/api/resources/Subrace.js";
 import { Trait } from "../../../../objects/api/resources/Trait.js";
@@ -45,6 +44,13 @@ export class RaceForm extends CustomObjectBaseForm {
         );
         fragment.appendChild(this.languagesSection);
 
+        this.languageOptionsSection = new ChoiceSection(
+            "Language options",
+            (await Language.getAllAsync()).results,
+            this.race.language_options
+        );
+        fragment.appendChild(this.languageOptionsSection);
+
         fragment.appendChild(this.getTextarea("Language description", 'language_desc', this.race.language_desc));
 
         this.traitsSection = new LinkedObjectsSection(
@@ -74,6 +80,7 @@ export class RaceForm extends CustomObjectBaseForm {
 
         data.ability_bonuses = this.abilityBonusesSection.getValue();
         data.languages = this.languagesSection.getValue();
+        data.language_options = this.languageOptionsSection.getValue();
         data.traits = this.traitsSection.getValue();
         data.subraces = this.subracesSection.getValue();
 
