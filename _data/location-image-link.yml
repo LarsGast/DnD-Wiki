@@ -142,3 +142,7 @@
 - locationName: Mountain Hollow
   imageName: mountain hollow
   isHeaderImage: true
+
+- locationName: Mountain's Toe Gold Mine
+  imageName: mountain's-toe-gold-mine
+  isHeaderImage: true

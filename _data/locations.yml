@@ -288,3 +288,21 @@
       value: Dient als vergaderplaats van de volgers van Talos
     - name: Cultuur
       value: Verborgen, en dat willen we zo houden
+
+- name: Mountain's Toe Gold Mine
+  published: false
+  properties:
+    - name: Soort
+      value: Mijn
+    - name: Inwoners
+      value: Mijnwerkers
+    - name: Populatie
+      value: 5-10
+    - name: Geografische locatie
+      value: In de Sword Mountains
+    - name: Infrastructuur
+      value: Ingegraven in de berg
+    - name: Geschiedenis
+      value: Overgenomen door weerratten
+    - name: Cultuur
+      value: Efficiëntie

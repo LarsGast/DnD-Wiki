@@ -67,3 +67,7 @@
 - firstLocationName: Gnomengarde
   secondLocationName: Mountain Hollow
   isSuperSubRelationship: false
+
+- firstLocationName: Mountain's Toe Gold Mine
+  secondLocationName: Phandalin
+  isSuperSubRelationship: false

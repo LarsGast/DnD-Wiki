@@ -858,3 +858,57 @@
     - name: quest
     - name: male
     - name: hostile
+
+- name: Thistle
+  published: false
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Vrouw
+    - name: Leeftijd
+      value: Jong volwassen
+    - name: Bevindt zich op dit moment in
+      value: Barthen's Voorzieningen in Phandalin
+    - name: Talen
+      value: Common
+  icons:
+    - name: quest
+    - name: female
+    - name: indifferent
+
+- name: Ander
+  published: false
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Jong volwassen
+    - name: Bevindt zich op dit moment in
+      value: Onbekend
+    - name: Talen
+      value: Common
+  icons:
+    - name: quest
+    - name: male
+    - name: indifferent
+
+- name: Don-Jon Raskin
+  published: false
+  properties:
+    - name: Ras
+      value: Mens
+    - name: Geslacht
+      value: Man
+    - name: Leeftijd
+      value: Volwassen
+    - name: Bevindt zich op dit moment in
+      value: Mountain's Toe Gold Mine
+    - name: Talen
+      value: Common, Giant
+  icons:
+    - name: quest
+    - name: male
+    - name: friendly

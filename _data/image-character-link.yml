@@ -172,3 +172,15 @@
 - characterName: Kapitein Snorbaard
   imageName: kapitein snorbaard
   isHeaderImage: true
+
+- characterName: Thistle
+  imageName: thistle
+  isHeaderImage: true
+
+- characterName: Ander
+  imageName: ander
+  isHeaderImage: true
+
+- characterName: Don-Jon Raskin
+  imageName: don-jon-raskin
+  isHeaderImage: true

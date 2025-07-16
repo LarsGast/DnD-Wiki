@@ -540,3 +540,27 @@
   alt: Een portret van Kapitein Snorbaard
   width: 1024
   height: 1024
+
+- name: thistle
+  fileType: png
+  alt: Een portret van Thistle
+  width: 594
+  height: 803
+
+- name: ander
+  fileType: jpg
+  alt: Een portret van Ander
+  width: 474
+  height: 575
+
+- name: don-jon-raskin
+  fileType: jpg
+  alt: Een portret van Don-Jon Raskin
+  width: 266
+  height: 332
+
+- name: mountain's-toe-gold-mine
+  fileType: webp
+  alt: De plattegrond van Mountain's Toe Gold Mine
+  width: 2888
+  height: 1838

@@ -1,5 +1,7 @@
 import { updateCharacter } from "./update-character.js";
 import { PlayerCharacter } from "./objects/PlayerCharacter.js";
+import { getCache, saveCache } from "./cache.js";
+import { baseUrl } from "./api.js";
 import { globals } from "./load-globals.js";
 
 /**
@@ -13,6 +15,9 @@ export const loadPage = function() {
 
     // Update the current PC to the latest version so the data and inputs know how to interact with each other.
     updatePlayerBank();
+
+    // Clean the cache.
+    cleanCache();
 }
 
 /**
@@ -62,4 +67,21 @@ const updatePlayerBank = function() {
     // Save the PCs, wether they have changes or not.
     // We don't need to check for changes. Saving is cheap and the extra logic will only bring complexity.
     globals.playerCharacterBank.save();
+}
+
+/**
+ * Clean the cache, remove unwanted entries.
+ */
+const cleanCache = function() {
+    const cache = getCache();
+
+    for (const key in cache) {
+        
+        // Remove all entries that are not from the SRD API.
+        if (!key.includes(baseUrl)) {
+            delete cache[key];
+        }
+    }
+
+    saveCache(cache);
 }

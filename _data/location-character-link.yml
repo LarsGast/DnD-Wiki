@@ -55,6 +55,10 @@
   characterName: Hugo Staalzwaard
 - locationName: Phandalin
   characterName: Linene Graywind
+- locationName: Phandalin
+  characterName: Thistle
+- locationName: Phandalin
+  characterName: Ander
 
 - locationName: Surewould-bos
   characterName: Robina the Hood
@@ -100,3 +104,6 @@
 
 - locationName: Mountain Hollow
   characterName: Yargath
+
+- locationName: Mountain's Toe Gold Mine
+  characterName: Don-Jon Raskin
