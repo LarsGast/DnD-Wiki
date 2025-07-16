@@ -141,6 +141,12 @@ export class CustomObjectImportDialog extends HTMLDialogElement {
 
         // Create a new Custom object from the JSON data.
         const customObjectBankEntry = new CustomObjectBankEntry(JSON.parse(this.previewTextarea.value));
+
+        // Assign a new unique index to the custom object.
+        // This is necessary to ensure that multiple of the same custom object can be added to the bank as different objects.
+        customObjectBankEntry.customObject.index = self.crypto.randomUUID();
+
+        // Add to the bank.
         globals.customObjectBank.addNewCustomObject(customObjectBankEntry.customObject, customObjectBankEntry.apiCategoryName);
         globals.customObjectBank.save();
 
