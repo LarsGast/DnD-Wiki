@@ -318,6 +318,22 @@ form{
         width: 100%;
     }
 
+    label {
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+
+        /* Tooltip icon */
+        .icon {
+
+            // To put it to the right of the label.
+            position: absolute;
+            right: 10px;
+            cursor: help;
+        }
+    }
+
     textarea {
         height: 100px;
         resize: none;

@@ -1,4 +1,5 @@
 import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
+import { CustomObjectBaseForm } from "../CustomObjectBaseForm.js";
 import { ObjectSelect } from "./ObjectSelect.js";
 
 export class LinkedObjectsSection extends HTMLElement {
@@ -9,13 +10,13 @@ export class LinkedObjectsSection extends HTMLElement {
      * @param {ApiObjectInfo[]} possibleObjects 
      * @param {ApiObjectInfo[]} selectedObjects 
      */
-    constructor(label, possibleObjects, selectedObjects) {
+    constructor(label, possibleObjects, selectedObjects, tooltip) {
         super();
         
         /** @type {ApiObjectInfo[]} */
         this.possibleObjects = possibleObjects;
 
-        this.appendChild(this.getSectionLabel(label));
+        this.appendChild(this.getSectionLabel(label, tooltip));
         this.appendChild(this.getAddButton());
 
         for (const selectedObject of selectedObjects) {
@@ -23,10 +24,12 @@ export class LinkedObjectsSection extends HTMLElement {
         }
     }
 
-    getSectionLabel(labelText) {
+    getSectionLabel(labelText, tooltip) {
         const label = document.createElement('label');
 
         label.textContent = labelText;
+
+        label.appendChild(CustomObjectBaseForm.getTooltipSpan(tooltip));
 
         return label;
     }

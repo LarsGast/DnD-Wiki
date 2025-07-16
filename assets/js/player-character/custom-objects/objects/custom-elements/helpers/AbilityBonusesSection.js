@@ -1,5 +1,6 @@
 import { AbilityBonus } from "../../../../objects/api/helpers/AbilityBonus.js";
 import { Race } from "../../../../objects/api/resources/Race.js";
+import { CustomObjectBaseForm } from "../CustomObjectBaseForm.js";
 import { AbilityBonusesSelect } from "./AbilityBonusesSelect.js";
 
 export class AbilityBonusesSection extends HTMLElement {
@@ -8,10 +9,10 @@ export class AbilityBonusesSection extends HTMLElement {
      * 
      * @param {AbilityBonus[]} abilityBonuses 
      */
-    constructor(abilityBonuses) {
+    constructor(abilityBonuses, tooltip) {
         super();
 
-        this.appendChild(this.getSectionLabel());
+        this.appendChild(this.getSectionLabel(tooltip));
         this.appendChild(this.getAddAbilityBonusButton());
 
         for (const abilityBonus of abilityBonuses) {
@@ -19,10 +20,12 @@ export class AbilityBonusesSection extends HTMLElement {
         }
     }
 
-    getSectionLabel() {
+    getSectionLabel(tooltip) {
         const label = document.createElement('label');
 
         label.textContent = "Ability bonuses";
+
+        label.appendChild(CustomObjectBaseForm.getTooltipSpan(tooltip));
 
         return label;
     }

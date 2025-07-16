@@ -10,7 +10,7 @@ export class CustomObjectBaseForm extends HTMLFormElement {
     constructor() {
         super();
 
-        this.appendChild(this.getInput("Name", "name", globals.activeCustomObjectEntry.customObject.name, false));        
+        this.appendChild(this.getInputSection("Name", "name", globals.activeCustomObjectEntry.customObject.name, false));        
     }
 
     connectedCallback() {
@@ -58,7 +58,7 @@ export class CustomObjectBaseForm extends HTMLFormElement {
         return button;
     }
 
-    getInput(labelText, id, defaultValue, isNumberInput) {
+    getInputSection(labelText, id, defaultValue, isNumberInput, tooltip) {
         const label = document.createElement('label');
         label.textContent = labelText;
         label.htmlFor = `custom-object-${id}`;
@@ -69,12 +69,19 @@ export class CustomObjectBaseForm extends HTMLFormElement {
         input.value = defaultValue ?? '';
         input.type = isNumberInput ? 'number' : null;
 
+        if (tooltip) {
+            label.appendChild(CustomObjectBaseForm.getTooltipSpan(tooltip));
+        }
+
         label.appendChild(input);
 
-        return label;
+        const section = document.createElement('section');
+        section.appendChild(label);
+
+        return section;
     }
 
-    getTextarea(labelText, id, defaultValue) {
+    getTextareaSection(labelText, id, defaultValue, tooltip) {
         const label = document.createElement('label');
         label.textContent = labelText;
         label.htmlFor = `custom-object-${id}`;
@@ -84,12 +91,19 @@ export class CustomObjectBaseForm extends HTMLFormElement {
         textArea.name = id;
         textArea.value = defaultValue ?? '';
 
+        if (tooltip) {
+            label.appendChild(CustomObjectBaseForm.getTooltipSpan(tooltip));
+        }
+
         label.appendChild(textArea);
 
-        return label;
+        const section = document.createElement('section');
+        section.appendChild(label);
+
+        return section;
     }
 
-    getSelect(labelText, id, defaultValue, options) {
+    getSelectSection(labelText, id, defaultValue, options, tooltip) {
 
         const label = document.createElement('label');
         label.textContent = labelText;
@@ -107,9 +121,24 @@ export class CustomObjectBaseForm extends HTMLFormElement {
 
         select.value = defaultValue ?? null;
 
+        if (tooltip) {
+            label.appendChild(CustomObjectBaseForm.getTooltipSpan(tooltip));
+        }
+
         label.appendChild(select);
 
-        return label;
+        const section = document.createElement('section');
+        section.appendChild(label);
+
+        return section;
+    }
+
+    static getTooltipSpan(tooltip) {
+        const tooltipSpan = document.createElement('span');
+        tooltipSpan.className = 'icon question';
+        tooltipSpan.title = tooltip;
+
+        return tooltipSpan;
     }
 }
 

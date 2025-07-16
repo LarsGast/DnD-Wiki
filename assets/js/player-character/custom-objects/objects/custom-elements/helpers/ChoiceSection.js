@@ -1,5 +1,6 @@
 import { Choice, OptionSet } from "../../../../objects/api/helpers/Choice.js";
 import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
+import { CustomObjectBaseForm } from "../CustomObjectBaseForm.js";
 import { ChoiceOptionElement } from "./ChoiceOptionElement.js";
 
 export class ChoiceSection extends HTMLElement {
@@ -9,7 +10,7 @@ export class ChoiceSection extends HTMLElement {
      * @param {ApiObjectInfo[]} possibleObjects 
      * @param {Choice} defaultValue 
      */
-    constructor(sectionLabel, possibleObjects, defaultValue) {
+    constructor(sectionLabel, possibleObjects, defaultValue, tooltip) {
         super();
 
         /** @type {ApiObjectInfo[]} */
@@ -22,14 +23,14 @@ export class ChoiceSection extends HTMLElement {
         this.chooseInput = this.getChooseInput();
         this.typeInput = this.getTypeInput();
         
-        this.appendChild(this.getLabel(sectionLabel));
-        this.appendChild(this.getLabel("Description"));
+        this.appendChild(this.getLabel(sectionLabel, tooltip));
+        this.appendChild(this.getLabel("Description", "Description of the choice to be made."));
         this.appendChild(this.descTextarea);
-        this.appendChild(this.getLabel("Choose"));
+        this.appendChild(this.getLabel("Choose", "Number of items to pick from the list."));
         this.appendChild(this.chooseInput);
-        this.appendChild(this.getLabel("Type"));
+        this.appendChild(this.getLabel("Type", "Type of the resources to choose from. e.g. 'language', 'skill'."));
         this.appendChild(this.typeInput);
-        this.appendChild(this.getLabel("Options"));
+        this.appendChild(this.getLabel("Options", "List of options to choose from."));
         this.appendChild(this.getAddOptionButton());
 
         for (const option of this.defaultValue.from.options) {
@@ -37,10 +38,12 @@ export class ChoiceSection extends HTMLElement {
         }
     }
 
-    getLabel(labelText) {
+    getLabel(labelText, tooltip) {
         const label = document.createElement('label');
 
         label.textContent = labelText;
+
+        label.appendChild(CustomObjectBaseForm.getTooltipSpan(tooltip));
 
         return label;
     }
