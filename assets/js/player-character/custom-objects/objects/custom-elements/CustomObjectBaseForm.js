@@ -30,6 +30,8 @@ export class CustomObjectBaseForm extends HTMLFormElement {
 
         globals.activeCustomObjectEntry.customObject = data;
         globals.customObjectBank.save();
+
+        window.location.reload();
     }
 
     /**
