@@ -34,6 +34,7 @@ export class CustomObjectTable extends HTMLTableElement {
 
         document.addEventListener("manageCustomObjectsDialogOpened", this._updateHandler);
         document.addEventListener("newCustomObjectCreated", this._updateHandler);
+        document.addEventListener("customObjectImported", this._updateHandler);
         document.addEventListener("customObjectDeleted", this._updateHandler);
     }
     
@@ -44,6 +45,7 @@ export class CustomObjectTable extends HTMLTableElement {
     disconnectedCallback() {
         document.removeEventListener("manageCustomObjectsDialogOpened", this._updateHandler);
         document.removeEventListener("newCustomObjectCreated", this._updateHandler);
+        document.removeEventListener("customObjectImported", this._updateHandler);
         document.removeEventListener("customObjectDeleted", this._updateHandler);
     }
 

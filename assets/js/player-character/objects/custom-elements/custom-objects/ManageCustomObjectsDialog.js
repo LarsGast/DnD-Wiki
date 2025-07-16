@@ -1,4 +1,5 @@
 import { getElementWithTextContent } from "../../../util.js";
+import { CustomObjectImportButton } from "./CustomObjectImportButton.js";
 import { CustomObjectTable } from "./CustomObjectTable.js";
 import { CustomObjectTypeSelect } from "./CustomObjectTypeSelect.js";
 import { NewCustomObjectButton } from "./NewCustomObjectButton.js";
@@ -29,7 +30,7 @@ export class ManageCustomObjectsDialog extends HTMLDialogElement {
         this.createNewCustomObject = new NewCustomObjectButton();
 
         // Import button.
-        this.importButton = document.createTextNode("Import");
+        this.importButton = new CustomObjectImportButton();
 
         this.customObjectTableContainer = document.createElement('div');
         this.customObjectTableContainer.className = "table-container";

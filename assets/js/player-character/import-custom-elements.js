@@ -35,3 +35,5 @@ import "./custom-objects/objects/custom-elements/CustomObjectFormHeading.js";
 import "./custom-objects/objects/custom-elements/helpers/AbilityBonusesSection.js";
 import "./objects/custom-elements/custom-objects/CustomObjectExportButton.js";
 import "./objects/custom-elements/custom-objects/CustomObjectExportDialog.js";
+import "./objects/custom-elements/custom-objects/CustomObjectImportButton.js";
+import "./objects/custom-elements/custom-objects/CustomObjectImportDialog.js";
