@@ -100,7 +100,6 @@ export class CustomObjectTable extends HTMLTableElement {
         td.appendChild(new CustomObjectEditButton(entry.id));
         td.appendChild(new CustomObjectDeleteButton(entry.id));
         td.appendChild(document.createTextNode("Export"));
-        td.appendChild(document.createTextNode("Delete"));
 
         return td;
     }
