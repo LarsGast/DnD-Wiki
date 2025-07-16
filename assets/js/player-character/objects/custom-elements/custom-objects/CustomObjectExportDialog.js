@@ -91,10 +91,10 @@ export class CustomObjectExportDialog extends HTMLDialogElement {
      */
     showDialog(event) {
 
-        this.customObject = globals.customObjectBank.getCustomObjectBankEntryByIndex(event.detail.customObjectId).customObject;
+        this.customObjectBankEntry = globals.customObjectBank.getCustomObjectBankEntryByIndex(event.detail.customObjectId);
         
         // Display the selected custom object as formatted JSON.
-        this.previewTextarea.value = JSON.stringify(this.customObject, null, 2);
+        this.previewTextarea.value = JSON.stringify(this.customObjectBankEntry, null, 2);
 
         this.showModal();
     }
@@ -106,7 +106,7 @@ export class CustomObjectExportDialog extends HTMLDialogElement {
 
         // Create a Blob from the custom object JSON data.
         const blob = new Blob(
-            [JSON.stringify(this.customObject, null, 2)],
+            [JSON.stringify(this.customObjectBankEntry, null, 2)],
             { type: 'application/json' }
         );
         const url = URL.createObjectURL(blob);
@@ -115,7 +115,7 @@ export class CustomObjectExportDialog extends HTMLDialogElement {
         // That's why we create an anchor tag and trigger a click here.
         const a = document.createElement('a');
         a.href = url;
-        a.download = `${this.customObject.name}.json`;
+        a.download = `${this.customObjectBankEntry.customObject.name}.json`;
         a.click();
 
         URL.revokeObjectURL(url);

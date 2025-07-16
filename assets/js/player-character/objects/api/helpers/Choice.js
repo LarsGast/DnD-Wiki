@@ -114,7 +114,7 @@ export class Option {
      * Reference to the object in the API of the actual choice.
      * @type {ApiObjectInfo}
      */
-    item = new ApiObjectInfo();
+    item;
 
     /**
      * The name of the action, according to its `name` attribute.
@@ -138,13 +138,13 @@ export class Option {
      * An array of Option objects. All of them must be taken if the option is chosen.
      * @type {Option[]}
      */
-    items = [];
+    items;
 
     /**
      * The Choice to resolve.
      * @type {Choice}
      */
-    choice = new Choice();
+    choice;
 
     /**
      * The string.
@@ -162,19 +162,19 @@ export class Option {
      *  A list of alignments of those who might follow the ideal.
      * @type {ApiObjectInfo[]}
      */
-    alignments = [];
+    alignments;
 
     /**
      * Thing being referenced.
      * @type {ApiObjectInfo}
      */
-    of = new ApiObjectInfo();
+    of;
 
     /**
      * Ability score being referenced.
      * @type {ApiObjectInfo}
      */
-    ability_score = new ApiObjectInfo();
+    ability_score;
 
     /**
      * The minimum score required to satisfy the prerequisite.
@@ -210,7 +210,7 @@ export class Option {
      * Reference to type of damage.
      * @type {ApiObjectInfo}
      */
-    damage_type = new ApiObjectInfo();
+    damage_type;
 
     /**
      * Damage expressed in dice (e.g. "13d6").
