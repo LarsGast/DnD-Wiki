@@ -47,28 +47,10 @@ export class Race extends ApiBaseObject {
     size_description;
 
     /**
-     * A list of proficiencies the race starts with.
-     * @type {ApiObjectInfo[]}
-     */
-    starting_proficiencies = [];
-
-    /**
-     * If applicable, a choice in starting proficiencies that the player can make choosing this race.
-     * @type {Choice}
-     */
-    starting_proficiency_options = new Choice();
-
-    /**
      * Starting languages for all new characters of this race.
      * @type {ApiObjectInfo[]}
      */
     languages = [];
-
-    /**
-     * If applicable, a choice in starting languages that the player can make choosing this race.
-     * @type {Choice}
-     */
-    language_options = new Choice();
 
     /**
      * Flavor description of the languages known by the race.

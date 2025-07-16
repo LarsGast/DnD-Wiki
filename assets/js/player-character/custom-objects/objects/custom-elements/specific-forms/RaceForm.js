@@ -38,33 +38,12 @@ export class RaceForm extends CustomObjectBaseForm {
         fragment.appendChild(this.getSelect("Size", "size", this.race.size, ["Tiny", "Small", "Medium", "Large", "Huge", "Gargantuan"]));
         fragment.appendChild(this.getTextarea("Size description", 'size_description', this.race.size_description));
 
-        this.startingProficienciesSection = new LinkedObjectsSection(
-            "Starting proficiencies",
-            (await Proficiency.getAllAsync()).results,
-            this.race.starting_proficiencies
-        );
-        fragment.appendChild(this.startingProficienciesSection);
-
-        this.startingProficiencyOptionsSection = new ChoiceSection(
-            "Starting proficiency options",
-            (await Proficiency.getAllAsync()).results,
-            this.race.starting_proficiency_options
-        );
-        fragment.appendChild(this.startingProficiencyOptionsSection);
-
         this.languagesSection = new LinkedObjectsSection(
             "Languages",
             (await Language.getAllAsync()).results,
             this.race.languages
         );
         fragment.appendChild(this.languagesSection);
-
-        this.languageOptionsSection = new ChoiceSection(
-            "Language options",
-            (await Language.getAllAsync()).results,
-            this.race.language_options
-        );
-        fragment.appendChild(this.languageOptionsSection);
 
         fragment.appendChild(this.getTextarea("Language description", 'language_desc', this.race.language_desc));
 
@@ -94,10 +73,7 @@ export class RaceForm extends CustomObjectBaseForm {
         const data = new Race(super.getFormData());
 
         data.ability_bonuses = this.abilityBonusesSection.getValue();
-        data.starting_proficiencies = this.startingProficienciesSection.getValue();
-        data.starting_proficiency_options = this.startingProficiencyOptionsSection.getValue();
         data.languages = this.languagesSection.getValue();
-        data.language_options = this.languageOptionsSection.getValue();
         data.traits = this.traitsSection.getValue();
         data.subraces = this.subracesSection.getValue();
 
