@@ -17,13 +17,13 @@ export class ManageCustomObjectsDialog extends HTMLDialogElement {
         
         // Container div for styling the content of the dialog.
         this.dialogContent = document.createElement('div');
-        this.dialogContent.classList.add("dialog-content");
+        this.dialogContent.classList.add("dialog-content", "manage-objects-dialog-content");
 
         // Create a heading for the dialog.
         this.heading = getElementWithTextContent("h2", "Manage Custom Objects");
 
         // User friendly description.
-        this.firstParagraph = getElementWithTextContent("p", "Since this page only has access to the SRD, the class, subclass, race, background, etc that you want to add to your characters might not be available. Thats why, in this menu, you can create your own objects.");
+        this.firstParagraph = getElementWithTextContent("p", "Since this page only has access to the SRD, the class, subclass, race, background, or other content that you might want to add to your characters might not be available. Thats why, in this menu, you can create your own objects.");
         
         // New custom object button.
         this.customObjectTypeSelect = new CustomObjectTypeSelect();

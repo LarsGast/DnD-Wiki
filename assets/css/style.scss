@@ -175,8 +175,8 @@ dialog {
     /* Wrapper for all content within a dialog element. */
     .dialog-content {
 
-        /* The manage characters dialog contains more complex elements that do not work well together with set heights and flexbox. */
-        &:not(.manage-characters-dialog-content) {
+        /* The manage characters and custom objects dialogs contain more complex elements that do not work well together with set heights and flexbox. */
+        &:not(.manage-objects-dialog-content) {
 
             height: 100%;
             width: 100%;

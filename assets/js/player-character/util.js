@@ -14,16 +14,17 @@ export const getElementWithTextContent = function(tagName, textContent) {
 
 /**
  * Get an empty option for select elements.
+ * @param {string} customText Text that the user sees in this option.
  * @returns {HTMLOptionElement}
  */
-export const getEmptyOption = function() {
+export const getEmptyOption = function(customText = "-- Select an option --") {
 
     const emptyOption = document.createElement('option');
 
     emptyOption.value = null;
     emptyOption.disabled = true;
     emptyOption.selected = true;
-    emptyOption.textContent = "-- Select an option --";
+    emptyOption.textContent = customText;
 
     return emptyOption;
 }
