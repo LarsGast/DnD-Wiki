@@ -34,7 +34,6 @@ export class CustomObjectTypeSelect extends HTMLSelectElement {
     getTypeSelectOptions() {
         const fragment = document.createDocumentFragment();
 
-        fragment.appendChild(this.getTypeSelectOption(ApiCategory.Classes));
         fragment.appendChild(this.getTypeSelectOption(ApiCategory.Races));
 
         return fragment;
