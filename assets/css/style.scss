@@ -302,14 +302,22 @@ textarea[is="notes-textarea"] {
     height: 200px;
 }
 
-form > * {
+form{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 
-    width: 100%;
-}
+    > *:not(button) {
+        display: flex;
+        flex-direction: column;
 
-form {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+
+        width: 100%;
+    }
+
     textarea {
         height: 100px;
         resize: none;

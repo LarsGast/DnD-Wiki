@@ -69,12 +69,9 @@ export class CustomObjectBaseForm extends HTMLFormElement {
         input.value = defaultValue ?? '';
         input.type = isNumberInput ? 'number' : null;
 
-        const fragment = document.createDocumentFragment();
+        label.appendChild(input);
 
-        fragment.appendChild(label);
-        fragment.appendChild(input);
-
-        return fragment;
+        return label;
     }
 
     getTextarea(labelText, id, defaultValue) {
@@ -87,12 +84,9 @@ export class CustomObjectBaseForm extends HTMLFormElement {
         textArea.name = id;
         textArea.value = defaultValue ?? '';
 
-        const fragment = document.createDocumentFragment();
+        label.appendChild(textArea);
 
-        fragment.appendChild(label);
-        fragment.appendChild(textArea);
-
-        return fragment;
+        return label;
     }
 
     getSelect(labelText, id, defaultValue, options) {
@@ -113,12 +107,9 @@ export class CustomObjectBaseForm extends HTMLFormElement {
 
         select.value = defaultValue ?? null;
 
-        const fragment = document.createDocumentFragment();
+        label.appendChild(select);
 
-        fragment.appendChild(label);
-        fragment.appendChild(select);
-
-        return fragment;
+        return label;
     }
 }
 
