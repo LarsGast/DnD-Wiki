@@ -6,6 +6,12 @@ import { getEmptyOption, getSelectOption } from "../../../../util.js";
 export class AbilityBonusesSelect extends HTMLElement {
 
     /**
+     * Default order of ability scores.
+     * @type {string[]}
+     */
+    abilityScoreOrder = ["str", "dex", "con", "int", "wis", "cha"];
+
+    /**
      *
      */
     constructor(defaultAbilityBonus) {
@@ -54,9 +60,16 @@ export class AbilityBonusesSelect extends HTMLElement {
     }
 
     async fillSelectElement() {
+
         const abilityScores = (await AbilityScore.getAllAsync()).results;
 
-        for (const abilityScore of abilityScores) {
+        const sortedAbilityScores = abilityScores.sort((a, b) => {
+            const posA = this.abilityScoreOrder.indexOf(a.index);
+            const posB = this.abilityScoreOrder.indexOf(b.index);
+            return posA - posB;
+        });
+
+        for (const abilityScore of sortedAbilityScores) {
             this.select.appendChild(getSelectOption(abilityScore.name, abilityScore.index));
         }
 
