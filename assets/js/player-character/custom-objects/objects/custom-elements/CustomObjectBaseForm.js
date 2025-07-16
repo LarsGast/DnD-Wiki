@@ -41,7 +41,7 @@ export class CustomObjectBaseForm extends HTMLFormElement {
     getFormData() {
         const formData = new FormData(this);
 
-        const data = new ApiObjectInfo();
+        const data = new ApiObjectInfo(globals.activeCustomObjectEntry.customObject);
         for (const [key, value] of formData) {
             data[key] = value;
         }
