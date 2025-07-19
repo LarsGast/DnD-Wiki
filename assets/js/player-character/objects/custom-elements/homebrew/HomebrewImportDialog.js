@@ -1,14 +1,14 @@
 import { globals } from "../../../load-globals.js";
-import { CustomObjectBankEntry } from "../../CustomObjectBank.js";
+import { HomebrewBankEntry } from "../../HomebrewBank.js";
 
 /**
- * Custom HTML element for displaying the CustomObject Import Dialog.
+ * Custom HTML element for displaying the Homebrew Import Dialog.
  * Extends HTMLDialogElement.
  *
  * The dialog allows the user to import PC data from a JSON file.
  * The file's contents can be previewed, and clicking the import button replaces the current PC data and reloads the page.
  */
-export class CustomObjectImportDialog extends HTMLDialogElement {
+export class HomebrewImportDialog extends HTMLDialogElement {
     
     constructor() {
         super();
@@ -23,7 +23,7 @@ export class CustomObjectImportDialog extends HTMLDialogElement {
 
         // Create description paragraphs.
         this.firstParagraph = document.createElement('p');
-        this.firstParagraph.textContent = "Use this window to import a new custom object to use on this page. Only the data provided by an export should be used while importing. Using anything else may result in invalid data.";
+        this.firstParagraph.textContent = "Use this window to import a new homebrew object to use on this page. Only the data provided by an export should be used while importing. Using anything else may result in invalid data.";
         this.secondParagraph = document.createElement('p');
         this.secondParagraph.textContent = "Select a JSON file below, then press the Import button to import the data.";
 
@@ -79,11 +79,11 @@ export class CustomObjectImportDialog extends HTMLDialogElement {
 
     /**
      * Called when the element is connected to the DOM.
-     * Listens for the "customObjectImportButtonClicked" event to show the dialog.
+     * Listens for the "homebrewImportButtonClicked" event to show the dialog.
      */
     connectedCallback() {
         this._updateHandler = () => this.showDialog();
-        document.addEventListener("customObjectImportButtonClicked", this._updateHandler);
+        document.addEventListener("homebrewImportButtonClicked", this._updateHandler);
     }
     
     /**
@@ -91,7 +91,7 @@ export class CustomObjectImportDialog extends HTMLDialogElement {
      * Removes the event listener.
      */
     disconnectedCallback() {
-        document.removeEventListener("customObjectImportButtonClicked", this._updateHandler);
+        document.removeEventListener("homebrewImportButtonClicked", this._updateHandler);
     }
 
     /**
@@ -119,10 +119,10 @@ export class CustomObjectImportDialog extends HTMLDialogElement {
             try {
 
                 // Try parsing the JSON data.
-                var customObject = JSON.parse(readerEvent.target.result);
+                var homebrewObject = JSON.parse(readerEvent.target.result);
 
                 // Display the JSON preview.
-                this.previewTextarea.value = JSON.stringify(customObject, null, 2);
+                this.previewTextarea.value = JSON.stringify(homebrewObject, null, 2);
                 this.importButton.removeAttribute("disabled");
             }
             catch {
@@ -139,20 +139,20 @@ export class CustomObjectImportDialog extends HTMLDialogElement {
      */
     handleImportButtonClick() {
 
-        // Create a new Custom object from the JSON data.
-        const customObjectBankEntry = new CustomObjectBankEntry(JSON.parse(this.previewTextarea.value));
+        // Create a new Homebrew from the JSON data.
+        const homebrewBankEntry = new HomebrewBankEntry(JSON.parse(this.previewTextarea.value));
 
-        // Assign a new unique index to the custom object.
-        // This is necessary to ensure that multiple of the same custom object can be added to the bank as different objects.
-        customObjectBankEntry.customObject.index = self.crypto.randomUUID();
+        // Assign a new unique index to the homebrew.
+        // This is necessary to ensure that multiple of the same homebrew can be added to the bank as different objects.
+        homebrewBankEntry.homebrewObject.index = self.crypto.randomUUID();
 
         // Add to the bank.
-        globals.customObjectBank.addNewCustomObject(customObjectBankEntry.customObject, customObjectBankEntry.apiCategoryName);
-        globals.customObjectBank.save();
+        globals.homebrewBank.addNewHomebrew(homebrewBankEntry.homebrewObject, homebrewBankEntry.apiCategoryName);
+        globals.homebrewBank.save();
 
         this.close();
 
-        document.dispatchEvent(new Event("customObjectImported"));
+        document.dispatchEvent(new Event("homebrewImported"));
     }
   
     /**
@@ -163,4 +163,4 @@ export class CustomObjectImportDialog extends HTMLDialogElement {
     }
 }
 
-customElements.define('custom-object-import-dialog', CustomObjectImportDialog, { extends: 'dialog' });
+customElements.define('homebrew-object-import-dialog', HomebrewImportDialog, { extends: 'dialog' });

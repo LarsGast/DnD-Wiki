@@ -2,7 +2,7 @@ import { globals } from "../../../load-globals.js";
 import { ApiObjectInfo } from "../../../objects/api/resources/ApiObjectInfo.js";
 import { getEmptyOption, getSelectOption } from "../../../util.js";
 
-export class CustomObjectBaseForm extends HTMLFormElement {
+export class HomebrewBaseForm extends HTMLFormElement {
 
     /**
      *
@@ -10,7 +10,7 @@ export class CustomObjectBaseForm extends HTMLFormElement {
     constructor() {
         super();
 
-        this.appendChild(this.getInputSection("Name", "name", globals.activeCustomObjectEntry.customObject.name, false));        
+        this.appendChild(this.getInputSection("Name", "name", globals.activeHomebrewEntry.homebrewObject.name, false));        
     }
 
     connectedCallback() {
@@ -28,8 +28,8 @@ export class CustomObjectBaseForm extends HTMLFormElement {
 
         const data = this.getFormData();
 
-        globals.activeCustomObjectEntry.customObject = data;
-        globals.customObjectBank.save();
+        globals.activeHomebrewEntry.homebrewObject = data;
+        globals.homebrewBank.save();
 
         window.location.reload();
     }
@@ -41,7 +41,7 @@ export class CustomObjectBaseForm extends HTMLFormElement {
     getFormData() {
         const formData = new FormData(this);
 
-        const data = new ApiObjectInfo(globals.activeCustomObjectEntry.customObject);
+        const data = new ApiObjectInfo(globals.activeHomebrewEntry.homebrewObject);
         for (const [key, value] of formData) {
             data[key] = value;
         }
@@ -61,16 +61,16 @@ export class CustomObjectBaseForm extends HTMLFormElement {
     getInputSection(labelText, id, defaultValue, isNumberInput, tooltip) {
         const label = document.createElement('label');
         label.textContent = labelText;
-        label.htmlFor = `custom-object-${id}`;
+        label.htmlFor = `homebrew-object-${id}`;
 
         const input = document.createElement('input');
-        input.id = `custom-object-${id}`;
+        input.id = `homebrew-object-${id}`;
         input.name = id;
         input.value = defaultValue ?? '';
         input.type = isNumberInput ? 'number' : null;
 
         if (tooltip) {
-            label.appendChild(CustomObjectBaseForm.getTooltipSpan(tooltip));
+            label.appendChild(HomebrewBaseForm.getTooltipSpan(tooltip));
         }
 
         label.appendChild(input);
@@ -84,15 +84,15 @@ export class CustomObjectBaseForm extends HTMLFormElement {
     getTextareaSection(labelText, id, defaultValue, tooltip) {
         const label = document.createElement('label');
         label.textContent = labelText;
-        label.htmlFor = `custom-object-${id}`;
+        label.htmlFor = `homebrew-object-${id}`;
 
         const textArea = document.createElement('textarea');
-        textArea.id = `custom-object-${id}`;
+        textArea.id = `homebrew-object-${id}`;
         textArea.name = id;
         textArea.value = defaultValue ?? '';
 
         if (tooltip) {
-            label.appendChild(CustomObjectBaseForm.getTooltipSpan(tooltip));
+            label.appendChild(HomebrewBaseForm.getTooltipSpan(tooltip));
         }
 
         label.appendChild(textArea);
@@ -107,10 +107,10 @@ export class CustomObjectBaseForm extends HTMLFormElement {
 
         const label = document.createElement('label');
         label.textContent = labelText;
-        label.htmlFor = `custom-object-${id}`;
+        label.htmlFor = `homebrew-object-${id}`;
 
         const select = document.createElement('select');
-        select.id = `custom-object-${id}`;
+        select.id = `homebrew-object-${id}`;
         select.name = id;
 
         select.appendChild(getEmptyOption());
@@ -122,7 +122,7 @@ export class CustomObjectBaseForm extends HTMLFormElement {
         select.value = defaultValue ?? null;
 
         if (tooltip) {
-            label.appendChild(CustomObjectBaseForm.getTooltipSpan(tooltip));
+            label.appendChild(HomebrewBaseForm.getTooltipSpan(tooltip));
         }
 
         label.appendChild(select);
@@ -142,4 +142,4 @@ export class CustomObjectBaseForm extends HTMLFormElement {
     }
 }
 
-customElements.define('custom-object-base-form', CustomObjectBaseForm, { extends: 'form' });
+customElements.define('homebrew-object-base-form', HomebrewBaseForm, { extends: 'form' });

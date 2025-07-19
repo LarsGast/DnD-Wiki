@@ -1,12 +1,12 @@
 import { globals } from "../../../load-globals.js";
 
 /**
- * Custom HTML element for displaying the CustomObject Export Dialog.
+ * Custom HTML element for displaying the Homebrew Export Dialog.
  * Extends HTMLDialogElement.
  *
- * The dialog warns the user about data loss, upon confirmation exports the selected customObject.
+ * The dialog warns the user about data loss, upon confirmation exports the selected homebrew object.
  */
-export class CustomObjectExportDialog extends HTMLDialogElement {
+export class HomebrewExportDialog extends HTMLDialogElement {
     
     constructor() {
         super();
@@ -21,9 +21,9 @@ export class CustomObjectExportDialog extends HTMLDialogElement {
 
         // Create paragraphs explaining the export process.
         this.firstParagraph = document.createElement('p');
-        this.firstParagraph.textContent = "Use this window to download all information regarding the currently selected custom object. You can use this feature to save backups, move custom objects between devices, and more.";
+        this.firstParagraph.textContent = "Use this window to download all information regarding the currently selected homebrew object. You can use this feature to save backups, move homebrew objects between devices, and more.";
         this.secondParagraph = document.createElement('p');
-        this.secondParagraph.textContent = "Use the Import button to import the information of the custom object using the resulting JSON file from this export.";
+        this.secondParagraph.textContent = "Use the Import button to import the information of the homebrew object using the resulting JSON file from this export.";
 
         // Create a wrapper for the export button and preview label.
         this.exportButtonAndLabel = document.createElement('div');
@@ -70,11 +70,11 @@ export class CustomObjectExportDialog extends HTMLDialogElement {
 
     /**
      * Called when the element is connected to the DOM.
-     * Registers an event listener for "customObjectExportButtonClicked".
+     * Registers an event listener for "homebrewExportButtonClicked".
      */
     connectedCallback() {
         this._updateHandler = (event) => this.showDialog(event);
-        document.addEventListener("customObjectExportButtonClicked", this._updateHandler);
+        document.addEventListener("homebrewExportButtonClicked", this._updateHandler);
     }
     
     /**
@@ -82,19 +82,19 @@ export class CustomObjectExportDialog extends HTMLDialogElement {
      * Removes the event listener.
      */
     disconnectedCallback() {
-        document.removeEventListener("customObjectExportButtonClicked", this._updateHandler);
+        document.removeEventListener("homebrewExportButtonClicked", this._updateHandler);
     }
 
     /**
      * Opens the dialog.
-     * @param {CustomEvent} event Custom event containing information about the selected customObject.
+     * @param {CustomEvent} event Custom event containing information about the selected homebrew object.
      */
     showDialog(event) {
 
-        this.customObjectBankEntry = globals.customObjectBank.getCustomObjectBankEntryByIndex(event.detail.customObjectId);
+        this.homebrewBankEntry = globals.homebrewBank.getHomebrewBankEntryByIndex(event.detail.homebrewId);
         
-        // Display the selected custom object as formatted JSON.
-        this.previewTextarea.value = JSON.stringify(this.customObjectBankEntry, null, 2);
+        // Display the selected homebrew object as formatted JSON.
+        this.previewTextarea.value = JSON.stringify(this.homebrewBankEntry, null, 2);
 
         this.showModal();
     }
@@ -104,9 +104,9 @@ export class CustomObjectExportDialog extends HTMLDialogElement {
      */
     handleExportButtonClick() {
 
-        // Create a Blob from the custom object JSON data.
+        // Create a Blob from the homebrew JSON data.
         const blob = new Blob(
-            [JSON.stringify(this.customObjectBankEntry, null, 2)],
+            [JSON.stringify(this.homebrewBankEntry, null, 2)],
             { type: 'application/json' }
         );
         const url = URL.createObjectURL(blob);
@@ -115,7 +115,7 @@ export class CustomObjectExportDialog extends HTMLDialogElement {
         // That's why we create an anchor tag and trigger a click here.
         const a = document.createElement('a');
         a.href = url;
-        a.download = `${this.customObjectBankEntry.customObject.name}.json`;
+        a.download = `${this.homebrewBankEntry.homebrewObject.name}.json`;
         a.click();
 
         URL.revokeObjectURL(url);
@@ -131,4 +131,4 @@ export class CustomObjectExportDialog extends HTMLDialogElement {
     }
 }
 
-customElements.define('custom-object-export-dialog', CustomObjectExportDialog, { extends: 'dialog' });
+customElements.define('homebrew-object-export-dialog', HomebrewExportDialog, { extends: 'dialog' });

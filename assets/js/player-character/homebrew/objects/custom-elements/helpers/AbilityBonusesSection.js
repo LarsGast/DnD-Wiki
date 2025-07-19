@@ -1,6 +1,6 @@
 import { AbilityBonus } from "../../../../objects/api/helpers/AbilityBonus.js";
 import { Race } from "../../../../objects/api/resources/Race.js";
-import { CustomObjectBaseForm } from "../CustomObjectBaseForm.js";
+import { HomebrewBaseForm } from "../HomebrewBaseForm.js";
 import { AbilityBonusesSelect } from "./AbilityBonusesSelect.js";
 
 export class AbilityBonusesSection extends HTMLElement {
@@ -25,7 +25,7 @@ export class AbilityBonusesSection extends HTMLElement {
 
         label.textContent = "Ability bonuses";
 
-        label.appendChild(CustomObjectBaseForm.getTooltipSpan(tooltip));
+        label.appendChild(HomebrewBaseForm.getTooltipSpan(tooltip));
 
         return label;
     }

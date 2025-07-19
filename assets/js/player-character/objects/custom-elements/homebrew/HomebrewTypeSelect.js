@@ -1,7 +1,7 @@
 import { ApiCategory } from "../../../api.js";
 import { getEmptyOption, getSelectOption } from "../../../util.js";
 
-export class CustomObjectTypeSelect extends HTMLSelectElement {
+export class HomebrewTypeSelect extends HTMLSelectElement {
 
     /**
      *
@@ -48,4 +48,4 @@ export class CustomObjectTypeSelect extends HTMLSelectElement {
     }
 }
 
-customElements.define('custom-object-type-select', CustomObjectTypeSelect, { extends: 'select' });
+customElements.define('homebrew-object-type-select', HomebrewTypeSelect, { extends: 'select' });

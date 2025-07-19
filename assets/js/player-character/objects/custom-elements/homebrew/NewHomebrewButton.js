@@ -1,7 +1,7 @@
 import { globals } from "../../../load-globals.js";
 import { ApiObjectInfo } from "../../api/resources/ApiObjectInfo.js";
 
-export class NewCustomObjectButton extends HTMLButtonElement {
+export class NewHomebrewButton extends HTMLButtonElement {
     
     constructor() {
         super();
@@ -47,11 +47,11 @@ export class NewCustomObjectButton extends HTMLButtonElement {
      * Handles the button click.
      */
     handleClick() {
-        globals.customObjectBank.addNewCustomObject(ApiObjectInfo.getDefault(), this.apiCategoryName);
-        globals.customObjectBank.save();
+        globals.homebrewBank.addNewHomebrew(ApiObjectInfo.getDefault(), this.apiCategoryName);
+        globals.homebrewBank.save();
 
-        document.dispatchEvent(new Event("newCustomObjectCreated"));
+        document.dispatchEvent(new Event("newHomebrewCreated"));
     }
 }
 
-customElements.define('new-custom-object-button', NewCustomObjectButton, { extends: 'button' });
+customElements.define('new-homebrew-object-button', NewHomebrewButton, { extends: 'button' });

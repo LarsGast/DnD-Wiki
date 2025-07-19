@@ -168,14 +168,14 @@ dialog {
     // Generic styling
     width: 80%;
     max-width: calc(0.8 * (800px - (30px * 2)));
-    &:not([is="character-delete-dialog"]):not([is="custom-object-delete-dialog"]) {
+    &:not([is="character-delete-dialog"]):not([is="homebrew-object-delete-dialog"]) {
         height: 50vh;
     }
 
     /* Wrapper for all content within a dialog element. */
     .dialog-content {
 
-        /* The manage characters and custom objects dialogs contain more complex elements that do not work well together with set heights and flexbox. */
+        /* The manage characters and homebrew objects dialogs contain more complex elements that do not work well together with set heights and flexbox. */
         &:not(.manage-objects-dialog-content) {
 
             height: 100%;

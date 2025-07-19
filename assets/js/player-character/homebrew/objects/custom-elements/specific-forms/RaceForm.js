@@ -2,12 +2,12 @@ import { Language } from "../../../../objects/api/resources/Language.js";
 import { Race } from "../../../../objects/api/resources/Race.js";
 import { Subrace } from "../../../../objects/api/resources/Subrace.js";
 import { Trait } from "../../../../objects/api/resources/Trait.js";
-import { CustomObjectBaseForm } from "../CustomObjectBaseForm.js";
+import { HomebrewBaseForm } from "../HomebrewBaseForm.js";
 import { AbilityBonusesSection } from "../helpers/AbilityBonusesSection.js";
 import { ChoiceSection } from "../helpers/ChoiceSection.js";
 import { LinkedObjectsSection } from "../helpers/LinkedObjectsSection.js";
 
-export class RaceForm extends CustomObjectBaseForm {
+export class RaceForm extends HomebrewBaseForm {
     /**
      *
      */

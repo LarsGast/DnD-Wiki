@@ -1,12 +1,12 @@
 import { ApiCategory } from "../../../api.js";
 import { globals } from "../../../load-globals.js";
 import { getElementWithTextContent } from "../../../util.js";
-import { CustomObjectBankEntry } from "../../CustomObjectBank.js";
-import { CustomObjectDeleteButton } from "./CustomObjectDeleteButton.js";
-import { CustomObjectEditButton } from "./CustomObjectEditButton.js";
-import { CustomObjectExportButton } from "./CustomObjectExportButton.js";
+import { HomebrewBankEntry } from "../../HomebrewBank.js";
+import { HomebrewDeleteButton } from "./HomebrewDeleteButton.js";
+import { HomebrewEditButton } from "./HomebrewEditButton.js";
+import { HomebrewExportButton } from "./HomebrewExportButton.js";
 
-export class CustomObjectTable extends HTMLTableElement {
+export class HomebrewTable extends HTMLTableElement {
 
     /**
      *
@@ -14,7 +14,7 @@ export class CustomObjectTable extends HTMLTableElement {
     constructor() {
         super();
         
-        this.tableCaption = getElementWithTextContent("caption", "Custom objects");
+        this.tableCaption = getElementWithTextContent("caption", "Homebrew objects");
         this.tableHead = this.getTableHead();
 
         // Empty body, will be filled on events.
@@ -32,10 +32,10 @@ export class CustomObjectTable extends HTMLTableElement {
     connectedCallback() {
         this._updateHandler = async () => this.updateTableBody();
 
-        document.addEventListener("manageCustomObjectsDialogOpened", this._updateHandler);
-        document.addEventListener("newCustomObjectCreated", this._updateHandler);
-        document.addEventListener("customObjectImported", this._updateHandler);
-        document.addEventListener("customObjectDeleted", this._updateHandler);
+        document.addEventListener("manageHomebrewDialogOpened", this._updateHandler);
+        document.addEventListener("newHomebrewCreated", this._updateHandler);
+        document.addEventListener("homebrewImported", this._updateHandler);
+        document.addEventListener("homebrewDeleted", this._updateHandler);
     }
     
     /**
@@ -43,10 +43,10 @@ export class CustomObjectTable extends HTMLTableElement {
      * Removes the event listeners.
      */
     disconnectedCallback() {
-        document.removeEventListener("manageCustomObjectsDialogOpened", this._updateHandler);
-        document.removeEventListener("newCustomObjectCreated", this._updateHandler);
-        document.removeEventListener("customObjectImported", this._updateHandler);
-        document.removeEventListener("customObjectDeleted", this._updateHandler);
+        document.removeEventListener("manageHomebrewDialogOpened", this._updateHandler);
+        document.removeEventListener("newHomebrewCreated", this._updateHandler);
+        document.removeEventListener("homebrewImported", this._updateHandler);
+        document.removeEventListener("homebrewDeleted", this._updateHandler);
     }
 
     getTableHead() {
@@ -66,10 +66,10 @@ export class CustomObjectTable extends HTMLTableElement {
     updateTableBody() {
         this.tableBody.replaceChildren();
 
-        const customObjectEntry = globals.customObjectBank.customObjectBankEntries;
+        const homebrewEntry = globals.homebrewBank.homebrewBankEntries;
 
-        // Sort them from last edited -> first edited, so the most used custom objects are generally at the top.
-        const sortedEntries = customObjectEntry.sort((a, b) => b.lastEdit - a.lastEdit);
+        // Sort them from last edited -> first edited, so the most used homebrew objects are generally at the top.
+        const sortedEntries = homebrewEntry.sort((a, b) => b.lastEdit - a.lastEdit);
 
         for (const entry of sortedEntries) {
             this.tableBody.appendChild(this.getTableBodyRow(entry));
@@ -78,7 +78,7 @@ export class CustomObjectTable extends HTMLTableElement {
 
     /**
      * 
-     * @param {CustomObjectBankEntry} entry 
+     * @param {HomebrewBankEntry} entry 
      * @returns 
      */
     getTableBodyRow(entry) {
@@ -86,7 +86,7 @@ export class CustomObjectTable extends HTMLTableElement {
         const row = document.createElement('tr');
 
         row.appendChild(this.getButtonsColumnValue(entry));
-        row.appendChild(getElementWithTextContent('td', entry.customObject.name));
+        row.appendChild(getElementWithTextContent('td', entry.homebrewObject.name));
         row.appendChild(getElementWithTextContent('td', new ApiCategory(entry.apiCategoryName).getSingularName()));
 
         return row;
@@ -94,18 +94,18 @@ export class CustomObjectTable extends HTMLTableElement {
 
     /**
      * 
-     * @param {CustomObjectBankEntry} entry 
+     * @param {HomebrewBankEntry} entry 
      * @returns 
      */
     getButtonsColumnValue(entry) {
         const td = document.createElement('td');
 
-        td.appendChild(new CustomObjectEditButton(entry.id));
-        td.appendChild(new CustomObjectExportButton(entry.id));
-        td.appendChild(new CustomObjectDeleteButton(entry.id));
+        td.appendChild(new HomebrewEditButton(entry.id));
+        td.appendChild(new HomebrewExportButton(entry.id));
+        td.appendChild(new HomebrewDeleteButton(entry.id));
 
         return td;
     }
 }
 
-customElements.define('custom-object-table', CustomObjectTable, { extends: 'table' });
+customElements.define('homebrew-object-table', HomebrewTable, { extends: 'table' });

@@ -1,12 +1,12 @@
 import { globals } from "../../../load-globals.js";
 
 /**
- * Custom HTML element for displaying the CustomObject Delete Dialog.
+ * Custom HTML element for displaying the Homebrew Delete Dialog.
  * Extends HTMLDialogElement.
  *
- * The dialog warns the user about data loss, upon confirmation deletes the selected customObject.
+ * The dialog warns the user about data loss, upon confirmation deletes the selected homebrew object.
  */
-export class CustomObjectDeleteDialog extends HTMLDialogElement {
+export class HomebrewDeleteDialog extends HTMLDialogElement {
     
     constructor() {
         super();
@@ -50,11 +50,11 @@ export class CustomObjectDeleteDialog extends HTMLDialogElement {
 
     /**
      * Called when the element is connected to the DOM.
-     * Registers an event listener for "customObjectDeleteButtonClicked".
+     * Registers an event listener for "homebrewDeleteButtonClicked".
      */
     connectedCallback() {
         this._updateHandler = (event) => this.showDialog(event);
-        document.addEventListener("customObjectDeleteButtonClicked", this._updateHandler);
+        document.addEventListener("homebrewDeleteButtonClicked", this._updateHandler);
     }
     
     /**
@@ -62,33 +62,33 @@ export class CustomObjectDeleteDialog extends HTMLDialogElement {
      * Removes the event listener.
      */
     disconnectedCallback() {
-        document.removeEventListener("customObjectDeleteButtonClicked", this._updateHandler);
+        document.removeEventListener("homebrewDeleteButtonClicked", this._updateHandler);
     }
 
     /**
      * Opens the dialog.
-     * @param {CustomEvent} event Custom event containing information about the selected customObject.
+     * @param {CustomEvent} event Custom event containing information about the selected homebrew object.
      */
     showDialog(event) {
 
         // Set the PC ID here to use on confirmation.
-        this.customObjectId = event.detail.customObjectId;
+        this.homebrewId = event.detail.homebrewId;
 
         this.showModal();
     }
   
     /**
      * Handles reset button clicks.
-     * Simply remove the customObject from the bank, close the dialog, and reload the UI.
+     * Simply remove the homebrew object from the bank, close the dialog, and reload the UI.
      */
     handleDeleteButtonClick() {
 
-        globals.customObjectBank.removeCustomObjectFromBank(this.customObjectId);
-        globals.customObjectBank.save();
+        globals.homebrewBank.removeHomebrewFromBank(this.homebrewId);
+        globals.homebrewBank.save();
 
         this.close();
 
-        document.dispatchEvent(new Event("customObjectDeleted"));
+        document.dispatchEvent(new Event("homebrewDeleted"));
     }
   
     /**
@@ -99,4 +99,4 @@ export class CustomObjectDeleteDialog extends HTMLDialogElement {
     }
 }
 
-customElements.define('custom-object-delete-dialog', CustomObjectDeleteDialog, { extends: 'dialog' });
+customElements.define('homebrew-object-delete-dialog', HomebrewDeleteDialog, { extends: 'dialog' });

@@ -1,5 +1,5 @@
 import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
-import { CustomObjectBaseForm } from "../CustomObjectBaseForm.js";
+import { HomebrewBaseForm } from "../HomebrewBaseForm.js";
 import { ObjectSelect } from "./ObjectSelect.js";
 
 export class LinkedObjectsSection extends HTMLElement {
@@ -29,7 +29,7 @@ export class LinkedObjectsSection extends HTMLElement {
 
         label.textContent = labelText;
 
-        label.appendChild(CustomObjectBaseForm.getTooltipSpan(tooltip));
+        label.appendChild(HomebrewBaseForm.getTooltipSpan(tooltip));
 
         return label;
     }

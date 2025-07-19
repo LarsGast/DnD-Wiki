@@ -11,7 +11,7 @@ export class ApiObjectInfo {
 
     /**
      * Unique identifier in the 5e SRD API.
-     * UUID for custom objects.
+     * UUID for homebrew objects.
      * @type {string}
      */
     index;

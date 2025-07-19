@@ -50,7 +50,7 @@ permalink: /pc-builder/
 
 <section>
     <button is="manage-characters-button"></button>
-    <button is="manage-custom-objects-button"></button>
+    <button is="manage-homebrew-button"></button>
 </section>
 
 <section>
@@ -159,14 +159,14 @@ permalink: /pc-builder/
 </section>
 
 <div>
-    <dialog is="manage-custom-objects-dialog"></dialog>
+    <dialog is="manage-homebrew-dialog"></dialog>
     <dialog is="manage-characters-dialog"></dialog>
     <dialog is="character-import-dialog"></dialog>
     <dialog is="character-export-dialog"></dialog>
     <dialog is="character-delete-dialog"></dialog>
-    <dialog is="custom-object-import-dialog"></dialog>
-    <dialog is="custom-object-export-dialog"></dialog>
-    <dialog is="custom-object-delete-dialog"></dialog>
+    <dialog is="homebrew-object-import-dialog"></dialog>
+    <dialog is="homebrew-object-export-dialog"></dialog>
+    <dialog is="homebrew-object-delete-dialog"></dialog>
 </div>
 
 <script type="module" src="{{ '/assets/js/player-character/load-globals.js' | relative_url }}"></script>

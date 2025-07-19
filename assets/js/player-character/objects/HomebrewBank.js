@@ -3,32 +3,32 @@ import { ApiObjectInfo } from "./api/resources/ApiObjectInfo.js";
 import { Race } from "./api/resources/Race.js";
 
 /**
- * Key used for saving and loading the custom object bank from localStorage.
+ * Key used for saving and loading the homebrew bank from localStorage.
  * @constant {string}
  */
-const CUSTOM_OBJECT_BANK_KEY = "customObjectBank";
+const CUSTOM_OBJECT_BANK_KEY = "homebrewBank";
 
 /**
- * The current latest version of the custom object bank object.
- * This should be updated whenever a breaking change is performed on the custom object bank object specification.
+ * The current latest version of the homebrew bank object.
+ * This should be updated whenever a breaking change is performed on the homebrew bank object specification.
  * @constant {number}
  */
 export const LATEST_CUSTOM_OBJECT_BANK_VERSION_NUMBER = 1;
 
 /**
- * The current latest version of the custom object bank entry object.
- * This should be updated whenever a breaking change is performed on the custom object bank entry object specification.
+ * The current latest version of the homebrew bank entry object.
+ * This should be updated whenever a breaking change is performed on the homebrew bank entry object specification.
  * @constant {number}
  */
 export const LATEST_CUSTOM_OBJECT_BANK_ENTRY_VERSION_NUMBER = 1;
 
-export class CustomObjectBank {
+export class HomebrewBank {
 
     /**
-     * Objects that contain all information about each saved custom object.
-     * @type {CustomObjectBankEntry[]}
+     * Objects that contain all information about each saved homebrew object.
+     * @type {HomebrewBankEntry[]}
      */
-    customObjectBankEntries = [];
+    homebrewBankEntries = [];
 
     /**
      * Version number of the object bank.
@@ -39,50 +39,50 @@ export class CustomObjectBank {
     version = 1;
     
     /**
-     * Constructs a new CustomObjectBank instance.
+     * Constructs a new HomebrewBank instance.
      * If data is provided, properties are assigned from it.
      * @param {JSON} data Optional initial data for the object bank.
      */
     constructor(data = {}) {
         Object.assign(this, data);
 
-        this.customObjectBankEntries = this.customObjectBankEntries.map(entry => new CustomObjectBankEntry(entry));
+        this.homebrewBankEntries = this.homebrewBankEntries.map(entry => new HomebrewBankEntry(entry));
     }
 
     /**
      * Loads the object bank from localStorage.
      * If no saved bank exists, returns a default bank.
-     * @returns {CustomObjectBank} The loaded or default bank instance.
+     * @returns {HomebrewBank} The loaded or default bank instance.
      */
     static load() {
         try {
-            const customObjectBankAsString = localStorage.getItem(CUSTOM_OBJECT_BANK_KEY);
+            const homebrewBankAsString = localStorage.getItem(CUSTOM_OBJECT_BANK_KEY);
 
             // If no stored bank is found, create a new default one.
             // Should only occur if the user visits the site for the very first time.
-            if (!customObjectBankAsString) {
-                const defaultBank = CustomObjectBank.getDefault();
+            if (!homebrewBankAsString) {
+                const defaultBank = HomebrewBank.getDefault();
                 defaultBank.save();
                 return defaultBank;
             }
 
-            const customObjectBankAsJson = JSON.parse(customObjectBankAsString);
+            const homebrewBankAsJson = JSON.parse(homebrewBankAsString);
 
-            return new CustomObjectBank(customObjectBankAsJson);
+            return new HomebrewBank(homebrewBankAsJson);
         }
         catch (error) {
-            console.error("Error parsing custom object bank JSON:", error);
-            return new CustomObjectBank();
+            console.error("Error parsing homebrew bank JSON:", error);
+            return new HomebrewBank();
         }
     }
 
     /**
-     * Returns a default CustomObjectBank instance.
+     * Returns a default HomebrewBank instance.
      * Sets the version to the latest version number.
-     * @returns {CustomObjectBank} A new default object bank instance.
+     * @returns {HomebrewBank} A new default object bank instance.
      */
     static getDefault() {
-        const defaultBank = new CustomObjectBank();
+        const defaultBank = new HomebrewBank();
 
         defaultBank.version = LATEST_CUSTOM_OBJECT_BANK_VERSION_NUMBER;
 
@@ -90,53 +90,53 @@ export class CustomObjectBank {
     }
 
     /**
-     * Saves the custom object bank object into localStorage to persist the data over multiple browser sessions.
+     * Saves the homebrew bank object into localStorage to persist the data over multiple browser sessions.
      * Catches and logs any errors during saving.
      */
     save() {
         try {
             localStorage.setItem(CUSTOM_OBJECT_BANK_KEY, JSON.stringify(this));
         } catch (error) {
-            console.error("Error while saving custom object bank:", error);
+            console.error("Error while saving homebrew bank:", error);
         }
     }
     
     /**
-     * Adds a single custom object to the bank.
-     * @param {ApiObjectInfo} customObject 
+     * Adds a single homebrew object to the bank.
+     * @param {ApiObjectInfo} homebrewObject 
      * @param {string} apiCategoryName 
      */
-    addNewCustomObject(customObject, apiCategoryName) {
+    addNewHomebrew(homebrewObject, apiCategoryName) {
 
-        const bankEntry = new CustomObjectBankEntry();
+        const bankEntry = new HomebrewBankEntry();
 
-        bankEntry.customObject = customObject;
+        bankEntry.homebrewObject = homebrewObject;
         bankEntry.apiCategoryName = apiCategoryName;
         bankEntry.version = LATEST_CUSTOM_OBJECT_BANK_ENTRY_VERSION_NUMBER;
 
-        this.customObjectBankEntries.push(bankEntry);
+        this.homebrewBankEntries.push(bankEntry);
     }
 
     /**
-     * Removes a single custom object from the bank.
+     * Removes a single homebrew object from the bank.
      * @param {`${string}-${string}-${string}-${string}-${string}`} id UUID.
      */
-    removeCustomObjectFromBank(id) {
-        this.customObjectBankEntries = this.customObjectBankEntries.filter(entry => entry.id != id);
+    removeHomebrewFromBank(id) {
+        this.homebrewBankEntries = this.homebrewBankEntries.filter(entry => entry.id != id);
     }
 
     /**
-     * Get a CustomObjectBankEntry by ID.
+     * Get a HomebrewBankEntry by ID.
      * @param {`${string}-${string}-${string}-${string}-${string}`} id UUID.
-     * @returns {CustomObjectBankEntry}
+     * @returns {HomebrewBankEntry}
      */
-    getCustomObjectBankEntryByIndex(id) {
-        return this.customObjectBankEntries.find(entry => entry.id === id);
+    getHomebrewBankEntryByIndex(id) {
+        return this.homebrewBankEntries.find(entry => entry.id === id);
     }
 
 }
 
-export class CustomObjectBankEntry {
+export class HomebrewBankEntry {
 
     /**
      * ID of the entry.
@@ -146,10 +146,10 @@ export class CustomObjectBankEntry {
     id = self.crypto.randomUUID();
 
     /**
-     * All data required for a custom object.
+     * All data required for a homebrew object.
      * @type {ApiObjectInfo}
      */
-    customObject;
+    homebrewObject;
 
     /**
      * @type {string}
@@ -157,7 +157,7 @@ export class CustomObjectBankEntry {
     apiCategoryName;
 
     /**
-     * Date and time of the last time the custom object was edited.
+     * Date and time of the last time the homebrew object was edited.
      * This value gets updated when:
      * - The object is created (by import or manual)
      * - The object is saved
@@ -166,7 +166,7 @@ export class CustomObjectBankEntry {
     lastEdit = new Date();
 
     /**
-     * Version number of the custom object bank entry.
+     * Version number of the homebrew bank entry.
      * Used to upgrade the bank entries when breaking changes in the data specification occur.
      * Default 1, which might be upgraded on page load.
      * @type {number}
@@ -174,7 +174,7 @@ export class CustomObjectBankEntry {
     version = 1;
     
     /**
-     * Constructs a new CustomObjectBankEntry instance.
+     * Constructs a new HomebrewBankEntry instance.
      * If data is provided, properties are assigned from it.
      * @param {JSON} data Initial data for the object bank entry.
      */
@@ -182,14 +182,14 @@ export class CustomObjectBankEntry {
         Object.assign(this, data);
 
         // Initialize objects.
-        this.customObject = this.getCustomObject();
+        this.homebrewObject = this.getHomebrewObject();
         this.lastEdit = new Date(this.lastEdit);
     }
 
-    getCustomObject() {
+    getHomebrewObject() {
         switch (this.apiCategoryName) {
-            case ApiCategory.Races.name: return new Race(this.customObject);
-            default: return new ApiObjectInfo(this.customObject);
+            case ApiCategory.Races.name: return new Race(this.homebrewObject);
+            default: return new ApiObjectInfo(this.homebrewObject);
         }
     }
 }
