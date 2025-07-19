@@ -6,11 +6,12 @@ import { HomebrewDeleteButton } from "./HomebrewDeleteButton.js";
 import { HomebrewEditButton } from "./HomebrewEditButton.js";
 import { HomebrewExportButton } from "./HomebrewExportButton.js";
 
+/**
+ * Custom table element for displaying homebrew objects.
+ * This table will be filled with homebrew objects when the manage homebrew dialog is opened.
+ */
 export class HomebrewTable extends HTMLTableElement {
-
-    /**
-     *
-     */
+    
     constructor() {
         super();
         
@@ -49,6 +50,10 @@ export class HomebrewTable extends HTMLTableElement {
         document.removeEventListener("homebrewDeleted", this._updateHandler);
     }
 
+    /**
+     * Creates the table head with the column titles.
+     * @returns {HTMLTableSectionElement} The table head element.
+     */
     getTableHead() {
         const head = document.createElement('thead');
 
@@ -63,6 +68,10 @@ export class HomebrewTable extends HTMLTableElement {
         return head;
     }
 
+    /**
+     * Updates the table body with the current homebrew entries.
+     * This method sorts the entries by last edited date and populates the table body.
+     */
     updateTableBody() {
         this.tableBody.replaceChildren();
 
@@ -77,9 +86,9 @@ export class HomebrewTable extends HTMLTableElement {
     }
 
     /**
-     * 
-     * @param {HomebrewBankEntry} entry 
-     * @returns 
+     * Creates a table row for a homebrew entry.
+     * @param {HomebrewBankEntry} entry The homebrew entry to create the row for.
+     * @returns {HTMLTableRowElement} The table row element containing the entry's data.
      */
     getTableBodyRow(entry) {
 
@@ -93,9 +102,10 @@ export class HomebrewTable extends HTMLTableElement {
     }
 
     /**
-     * 
-     * @param {HomebrewBankEntry} entry 
-     * @returns 
+     * Creates the buttons column for a homebrew entry.
+     * This column contains buttons for editing, exporting, and deleting the homebrew entry.
+     * @param {HomebrewBankEntry} entry The homebrew entry to create the buttons for.
+     * @returns {HTMLTableCellElement} The table cell containing the buttons.
      */
     getButtonsColumnValue(entry) {
         const td = document.createElement('td');

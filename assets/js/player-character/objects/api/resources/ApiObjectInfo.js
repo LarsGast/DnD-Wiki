@@ -36,6 +36,11 @@ export class ApiObjectInfo {
         Object.assign(this, data);
     }
 
+    /**
+     * Creates a new instance of the object with default values.
+     * This is used for creating new homebrew objects.
+     * @returns {ApiObjectInfo} A new instance with default values.
+     */
     static getDefault() {
         const obj = new this();
 
@@ -45,6 +50,10 @@ export class ApiObjectInfo {
         return obj;
     }
 
+    /**
+     * Returns the API category of the object.
+     * This is used to determine the type of object when creating homebrew entries.
+     */
     get apiCategory() {
         return this.constructor.apiCategory;
     }
