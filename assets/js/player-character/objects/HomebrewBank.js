@@ -22,6 +22,9 @@ export const LATEST_CUSTOM_OBJECT_BANK_VERSION_NUMBER = 1;
  */
 export const LATEST_CUSTOM_OBJECT_BANK_ENTRY_VERSION_NUMBER = 1;
 
+/**
+ * Object that contains all information of all homebrew objects the user has saved in the page.
+ */
 export class HomebrewBank {
 
     /**
@@ -50,7 +53,7 @@ export class HomebrewBank {
     }
 
     /**
-     * Loads the object bank from localStorage.
+     * Loads the homebrew bank from localStorage.
      * If no saved bank exists, returns a default bank.
      * @returns {HomebrewBank} The loaded or default bank instance.
      */
@@ -136,6 +139,10 @@ export class HomebrewBank {
 
 }
 
+/**
+ * Object for storing information about a homebrew object in the HomebrewBank.
+ * Each homebrew object gets their own HomebrewBankEntry, and all of them are put in localStorage under the same key.
+ */
 export class HomebrewBankEntry {
 
     /**
@@ -152,7 +159,9 @@ export class HomebrewBankEntry {
     homebrewObject;
 
     /**
-     * @type {string}
+     * Name of the API category this homebrew object belongs to.
+     * Used to determine which type of homebrew object this is.
+     * @type {string} Value of ApiCategory.name.
      */
     apiCategoryName;
 
@@ -182,11 +191,16 @@ export class HomebrewBankEntry {
         Object.assign(this, data);
 
         // Initialize objects.
-        this.homebrewObject = this.getHomebrewObject();
+        this.homebrewObject = this.#getHomebrewObject();
         this.lastEdit = new Date(this.lastEdit);
     }
 
-    getHomebrewObject() {
+    /**
+     * Gets the initialized version of the homebrewObject property based on the apiCategoryName.
+     * This is necessary because the homebrewObject can be of different types depending on the category.
+     * @returns {ApiObjectInfo} The initialized homebrew object.
+     */
+    #getHomebrewObject() {
         switch (this.apiCategoryName) {
             case ApiCategory.Races.name: return new Race(this.homebrewObject);
             default: return new ApiObjectInfo(this.homebrewObject);

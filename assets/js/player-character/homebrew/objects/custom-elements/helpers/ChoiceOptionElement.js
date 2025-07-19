@@ -2,12 +2,16 @@ import { Option } from "../../../../objects/api/helpers/Choice.js";
 import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
 import { getEmptyOption, getSelectOption } from "../../../../util.js";
 
+/**
+ * Custom element for selecting a choice option.
+ * It allows the user to select an object from a list of possible objects.
+ */
 export class ChoiceOptionElement extends HTMLElement {
     
     /**
-     * 
-     * @param {ApiObjectInfo[]} possibleObjects 
-     * @param {ApiObjectInfo} defaultValue 
+     * Creates an instance of ChoiceOptionElement.
+     * @param {ApiObjectInfo[]} possibleObjects The list of possible objects to select from
+     * @param {ApiObjectInfo} defaultValue The default value to set in the select element
      */
     constructor(possibleObjects, defaultValue) {
         super();
@@ -24,6 +28,11 @@ export class ChoiceOptionElement extends HTMLElement {
         this.appendChild(this.getDeleteButton());
     }
 
+    /**
+     * Gets the select element for choosing an object.
+     * It populates the select options with the provided possible objects.
+     * @returns {HTMLSelectElement} The select element with options for each possible object.
+     */
     getItemSelect() {
         const select = document.createElement('select');
 
@@ -38,6 +47,10 @@ export class ChoiceOptionElement extends HTMLElement {
         return select;
     }
 
+    /**
+     * Creates a delete button to remove the choice option element.
+     * @returns {HTMLButtonElement} The button element that, when clicked, will remove this element from the DOM.
+     */
     getDeleteButton() {
         const button = document.createElement('button');
 
@@ -48,8 +61,8 @@ export class ChoiceOptionElement extends HTMLElement {
     }
 
     /**
-     * 
-     * @returns {Option}
+     * Gets the value of the choice option element.
+     * @returns {Option} The constructed Option object containing the selected index and name.
      */
     getValue() {
         const option = new Option();

@@ -7,9 +7,14 @@ import { AbilityBonusesSection } from "../helpers/AbilityBonusesSection.js";
 import { ChoiceSection } from "../helpers/ChoiceSection.js";
 import { LinkedObjectsSection } from "../helpers/LinkedObjectsSection.js";
 
+/**
+ * Form for editing custom homebrew Race objects.
+ */
 export class RaceForm extends HomebrewBaseForm {
+
     /**
-     *
+     * Creates an instance of RaceForm.
+     * @param {Race} raceElement
      */
     constructor(raceElement) {
         super();
@@ -18,12 +23,21 @@ export class RaceForm extends HomebrewBaseForm {
         this.race = raceElement;
     }
 
+    /**
+     * Initializes the form by appending the form body.
+     * This method is called when the element is connected to the DOM.
+     * @returns {Promise<void>}
+     */
     async connectedCallback() {
         this.appendChild(await this.getFormBody());
 
         super.connectedCallback();
     }
 
+    /**
+     * Creates the body of the form with all necessary sections.
+     * @returns {Promise<DocumentFragment>} A fragment containing all the sections of the form.
+     */
     async getFormBody() {
         const fragment = document.createDocumentFragment();
 
@@ -74,8 +88,7 @@ export class RaceForm extends HomebrewBaseForm {
     }
 
     /**
-     * 
-     * @returns {Race}
+     * @override Race specific properties.
      */
     getFormData() {
 

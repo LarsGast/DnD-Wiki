@@ -3,12 +3,18 @@ import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.j
 import { HomebrewBaseForm } from "../HomebrewBaseForm.js";
 import { ChoiceOptionElement } from "./ChoiceOptionElement.js";
 
+/**
+ * Custom element for a choice section.
+ * It allows the user to select a number of options from a list of possible objects.
+ */
 export class ChoiceSection extends HTMLElement {
+
     /**
-     *
-     * @param {string} sectionLabel 
-     * @param {ApiObjectInfo[]} possibleObjects 
-     * @param {Choice} defaultValue 
+     * Creates an instance of ChoiceSection.
+     * @param {string} sectionLabel The label for the section.
+     * @param {ApiObjectInfo[]} possibleObjects The list of possible objects to choose from.
+     * @param {Choice} defaultValue The default choice value to initialize the section.
+     * @param {string} tooltip Optional tooltip text for the section.
      */
     constructor(sectionLabel, possibleObjects, defaultValue, tooltip) {
         super();
@@ -38,6 +44,12 @@ export class ChoiceSection extends HTMLElement {
         }
     }
 
+    /**
+     * Creates a label element with the given text and optional tooltip.
+     * @param {string} labelText The text for the label.
+     * @param {string} tooltip Optional tooltip text for the label.
+     * @returns {HTMLLabelElement} The label element with the specified text and tooltip.
+     */
     getLabel(labelText, tooltip) {
         const label = document.createElement('label');
 
@@ -48,6 +60,10 @@ export class ChoiceSection extends HTMLElement {
         return label;
     }
 
+    /**
+     * Creates a textarea element for the description of the choice.
+     * @returns {HTMLTextAreaElement} The textarea element for the description.
+     */
     getDescTextarea() {
         const textarea = document.createElement('textarea');
 
@@ -56,6 +72,10 @@ export class ChoiceSection extends HTMLElement {
         return textarea;
     }
 
+    /**
+     * Creates an input element for the number of choices to make.
+     * @returns {HTMLInputElement} The input element for the number of choices.
+     */
     getChooseInput() {
         const input = document.createElement('input');
 
@@ -65,6 +85,10 @@ export class ChoiceSection extends HTMLElement {
         return input;
     }
 
+    /**
+     * Creates an input element for the type of the choice.
+     * @returns {HTMLInputElement} The input element for the type of the choice.
+     */
     getTypeInput() {
         const input = document.createElement('input');
 
@@ -73,6 +97,10 @@ export class ChoiceSection extends HTMLElement {
         return input;
     }
 
+    /**
+     * Creates a button to add a new choice option.
+     * @returns {HTMLButtonElement} The button element that, when clicked, will add a new choice option element.
+     */
     getAddOptionButton() {
         const button = document.createElement('button');
 
@@ -84,16 +112,16 @@ export class ChoiceSection extends HTMLElement {
     }
 
     /**
-     * 
-     * @param {ApiObjectInfo} defaultValue 
+     * Adds a new choice option element to the section.
+     * @param {ApiObjectInfo} defaultValue The default value to set in the new choice option element.
      */
     addOption(defaultValue) {
         this.appendChild(new ChoiceOptionElement(this.possibleObjects, defaultValue));
     }
 
     /**
-     * 
-     * @returns {Choice}
+     * Gets the form data from the choice section.
+     * @returns {Choice} The constructed Choice object containing the description, number of choices,
      */
     getValue() {
 

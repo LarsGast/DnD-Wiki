@@ -2,13 +2,17 @@ import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.j
 import { HomebrewBaseForm } from "../HomebrewBaseForm.js";
 import { ObjectSelect } from "./ObjectSelect.js";
 
+/**
+ * Custom element for a section that allows linking multiple objects.
+ * It provides a way to select objects from a list of possible objects and manage them.
+ */
 export class LinkedObjectsSection extends HTMLElement {
 
     /**
-     * 
-     * @param {string} label 
-     * @param {ApiObjectInfo[]} possibleObjects 
-     * @param {ApiObjectInfo[]} selectedObjects 
+     * Creates an instance of LinkedObjectsSection.
+     * @param {string} label The label for the section.
+     * @param {ApiObjectInfo[]} possibleObjects The list of possible objects to select from.
+     * @param {ApiObjectInfo[]} selectedObjects The list of objects that are currently selected
      */
     constructor(label, possibleObjects, selectedObjects, tooltip) {
         super();
@@ -24,6 +28,12 @@ export class LinkedObjectsSection extends HTMLElement {
         }
     }
 
+    /**
+     * Creates a label for the section with the given text and optional tooltip.
+     * @param {string} labelText The text for the label.
+     * @param {string} tooltip Optional tooltip text for the label.
+     * @returns {HTMLLabelElement} The label element with the specified text and tooltip.
+     */
     getSectionLabel(labelText, tooltip) {
         const label = document.createElement('label');
 
@@ -34,6 +44,10 @@ export class LinkedObjectsSection extends HTMLElement {
         return label;
     }
 
+    /**
+     * Creates a button to add a new object select element.
+     * @returns {HTMLButtonElement} The button element that, when clicked, will add a new object select element.
+     */
     getAddButton() {
         const button = document.createElement('button');
 
@@ -45,16 +59,16 @@ export class LinkedObjectsSection extends HTMLElement {
     }
 
     /**
-     * 
-     * @param {ApiObjectInfo} selectedObject 
+     * Adds a new ObjectSelect element to the section.
+     * @param {ApiObjectInfo} selectedObject Optional default value for the new ObjectSelect
      */
     addObjectSelect(selectedObject) {
         this.appendChild(new ObjectSelect(this.possibleObjects, selectedObject));
     }
 
     /**
-     * 
-     * @returns {ApiObjectInfo[]}
+     * Gets the form data from the linked objects section.
+     * @returns {ObjectSelect[]} An array of ObjectSelect objects containing the selected values.
      */
     getValue() {
         /** @type {ObjectSelect[]} */

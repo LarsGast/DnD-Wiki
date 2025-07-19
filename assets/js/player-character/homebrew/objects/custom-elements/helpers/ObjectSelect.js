@@ -1,12 +1,16 @@
 import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
 import { getEmptyOption, getSelectOption } from "../../../../util.js";
 
+/**
+ * Custom element for selecting an object from a list of possible objects.
+ * It allows the user to select an object and provides a delete button to remove the selection.
+ */
 export class ObjectSelect extends HTMLElement {
-    
+
     /**
-     * 
-     * @param {ApiObjectInfo[]} possibleObjects 
-     * @param {ApiObjectInfo} selectedObject 
+     * Creates an instance of ObjectSelect.
+     * @param {ApiObjectInfo[]} possibleObjects The list of possible objects to select from
+     * @param {ApiObjectInfo} selectedObject The object that is currently selected, if any.
      */
     constructor(possibleObjects, selectedObject) {
         super();
@@ -22,9 +26,9 @@ export class ObjectSelect extends HTMLElement {
     }
 
     /**
-     * 
-     * @param {ApiObjectInfo} defaultValue 
-     * @returns 
+     * Creates a select element populated with the possible objects.
+     * @param {ApiObjectInfo} defaultValue The default value to set in the select
+     * @returns {HTMLSelectElement} The select element with options for each possible object.
      */
     getSelect(defaultValue) {
         const select = document.createElement('select');
@@ -40,6 +44,10 @@ export class ObjectSelect extends HTMLElement {
         return select;
     }
 
+    /**
+     * Creates a delete button to remove the object select element.
+     * @returns {HTMLButtonElement} The button element that, when clicked, will remove this element from the DOM.
+     */
     getDeleteButton() {
         const button = document.createElement('button');
 
@@ -50,8 +58,8 @@ export class ObjectSelect extends HTMLElement {
     }
 
     /**
-     * 
-     * @returns {ApiObjectInfo}
+     * Gets the value of the selected object.
+     * @returns {ApiObjectInfo} An ApiObjectInfo object containing the index and name of the selected object.
      */
     getValue() {
         const data = new ApiObjectInfo();
