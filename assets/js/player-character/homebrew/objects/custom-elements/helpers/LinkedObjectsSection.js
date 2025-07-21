@@ -1,3 +1,4 @@
+import { ApiBaseObjectList } from "../../../../objects/api/resources/ApiBaseObject.js";
 import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
 import { HomebrewBaseForm } from "../HomebrewBaseForm.js";
 import { ObjectSelect } from "./ObjectSelect.js";
@@ -11,13 +12,13 @@ export class LinkedObjectsSection extends HTMLElement {
     /**
      * Creates an instance of LinkedObjectsSection.
      * @param {string} label The label for the section.
-     * @param {ApiObjectInfo[]} possibleObjects The list of possible objects to select from.
+     * @param {ApiBaseObjectList} possibleObjects The list of possible objects to select from.
      * @param {ApiObjectInfo[]} selectedObjects The list of objects that are currently selected
      */
     constructor(label, possibleObjects, selectedObjects, tooltip) {
         super();
         
-        /** @type {ApiObjectInfo[]} */
+        /** @type {ApiBaseObjectList} */
         this.possibleObjects = possibleObjects;
 
         this.appendChild(this.getSectionLabel(label, tooltip));

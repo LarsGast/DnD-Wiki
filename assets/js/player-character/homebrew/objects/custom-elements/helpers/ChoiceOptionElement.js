@@ -1,6 +1,7 @@
 import { Option } from "../../../../objects/api/helpers/Choice.js";
+import { ApiBaseObjectList } from "../../../../objects/api/resources/ApiBaseObject.js";
 import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
-import { getEmptyOption, getSelectOption } from "../../../../util.js";
+import { getEmptyOption } from "../../../../util.js";
 
 /**
  * Custom element for selecting a choice option.
@@ -10,13 +11,13 @@ export class ChoiceOptionElement extends HTMLElement {
     
     /**
      * Creates an instance of ChoiceOptionElement.
-     * @param {ApiObjectInfo[]} possibleObjects The list of possible objects to select from
+     * @param {ApiBaseObjectList} possibleObjects The list of possible objects to select from
      * @param {ApiObjectInfo} defaultValue The default value to set in the select element
      */
     constructor(possibleObjects, defaultValue) {
         super();
         
-        /** @type {ApiObjectInfo[]} */
+        /** @type {ApiBaseObjectList} */
         this.possibleObjects = possibleObjects;
 
         /** @type {ApiObjectInfo} */
@@ -37,10 +38,9 @@ export class ChoiceOptionElement extends HTMLElement {
         const select = document.createElement('select');
 
         select.appendChild(getEmptyOption());
-
-        for (const object of this.possibleObjects) {
-            select.appendChild(getSelectOption(object.name, object.index));
-        }
+        
+        select.appendChild(this.possibleObjects.getSrdOptionGroup());
+        select.appendChild(this.possibleObjects.getHomebrewOptionGroup());
 
         select.value = this.defaultValue?.index ?? null;
 

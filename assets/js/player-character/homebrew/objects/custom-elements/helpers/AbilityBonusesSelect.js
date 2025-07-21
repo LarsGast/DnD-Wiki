@@ -86,9 +86,9 @@ export class AbilityBonusesSelect extends HTMLElement {
      */
     async fillSelectElement() {
 
-        const abilityScores = (await AbilityScore.getAllAsync()).results;
+        const abilityScores = (await AbilityScore.getAllAsync());
 
-        const sortedAbilityScores = abilityScores.sort((a, b) => {
+        const sortedAbilityScores = abilityScores.srdObjects.sort((a, b) => {
             const posA = this.abilityScoreOrder.indexOf(a.index);
             const posB = this.abilityScoreOrder.indexOf(b.index);
             return posA - posB;

@@ -52,7 +52,7 @@ export class RaceForm extends HomebrewBaseForm {
 
         this.traitsSection = new LinkedObjectsSection(
             "Traits",
-            (await Trait.getAllAsync()).results,
+            (await Trait.getAllAsync()),
             this.race.traits,
             "Racial traits that provide benefits to its members."
         );
@@ -60,7 +60,7 @@ export class RaceForm extends HomebrewBaseForm {
 
         this.languagesSection = new LinkedObjectsSection(
             "Languages",
-            (await Language.getAllAsync()).results,
+            (await Language.getAllAsync()),
             this.race.languages,
             "Starting languages for all new characters of this race."
         );
@@ -68,7 +68,7 @@ export class RaceForm extends HomebrewBaseForm {
 
         this.languageOptionsSection = new ChoiceSection(
             "Language options",
-            (await Language.getAllAsync()).results,
+            (await Language.getAllAsync()),
             this.race.language_options,
             "A choice of additional starting languages of this race"
         );
@@ -78,7 +78,7 @@ export class RaceForm extends HomebrewBaseForm {
 
         this.subracesSection = new LinkedObjectsSection(
             "Subraces",
-            (await Subrace.getAllAsync()).results,
+            (await Subrace.getAllAsync()),
             this.race.subraces,
             "All possible subraces that this race includes."
         );

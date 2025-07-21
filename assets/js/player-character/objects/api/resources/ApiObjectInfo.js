@@ -57,4 +57,15 @@ export class ApiObjectInfo {
     get apiCategory() {
         return this.constructor.apiCategory;
     }
+
+    /**
+     * Returns an object that can be used as an option in a select element.
+     * @returns {{optionText: string, optionValue: string}
+     */
+    getOptionTextAndValueFunc() {
+        return {
+            optionText: this.name,
+            optionValue: this.index
+        };
+    }
 }

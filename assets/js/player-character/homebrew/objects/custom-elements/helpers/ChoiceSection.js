@@ -12,14 +12,14 @@ export class ChoiceSection extends HTMLElement {
     /**
      * Creates an instance of ChoiceSection.
      * @param {string} sectionLabel The label for the section.
-     * @param {ApiObjectInfo[]} possibleObjects The list of possible objects to choose from.
+     * @param {ApiBaseObjectList} possibleObjects The list of possible objects to choose from.
      * @param {Choice} defaultValue The default choice value to initialize the section.
      * @param {string} tooltip Optional tooltip text for the section.
      */
     constructor(sectionLabel, possibleObjects, defaultValue, tooltip) {
         super();
 
-        /** @type {ApiObjectInfo[]} */
+        /** @type {ApiBaseObjectList} */
         this.possibleObjects = possibleObjects;
 
         /** @type {Choice} */

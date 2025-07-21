@@ -137,6 +137,25 @@ export class HomebrewBank {
         return this.homebrewBankEntries.find(entry => entry.id === id);
     }
 
+    /**
+     * Get a homebrew object by its ID.
+     * @param {`${string}-${string}-${string}-${string}-${string}`} id UUID.
+     * @return {ApiObjectInfo|undefined} The homebrew object if found, otherwise undefined.
+     */
+    getHomebrewObjectByIndex(id) {
+        return this.homebrewBankEntries.find(entry => entry.homebrewObject.index === id)?.homebrewObject;
+    }
+
+    /**
+     * Get all homebrew objects that belong to a specific API category.
+     * @param {ApiCategory} apiCategory The API category to filter by.
+     * @return {ApiObjectInfo[]} An array of homebrew objects that belong to the specified category.
+     */
+    getHomebrewObjectsByCategory(apiCategory) {
+        return this.homebrewBankEntries
+            .filter(entry => entry.apiCategoryName === apiCategory.name)
+            .map(entry => entry.homebrewObject);
+    }
 }
 
 /**

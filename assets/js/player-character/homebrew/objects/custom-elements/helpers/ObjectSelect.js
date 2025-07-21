@@ -9,13 +9,13 @@ export class ObjectSelect extends HTMLElement {
 
     /**
      * Creates an instance of ObjectSelect.
-     * @param {ApiObjectInfo[]} possibleObjects The list of possible objects to select from
+     * @param {ApiBaseObjectList} possibleObjects The list of possible objects to select from
      * @param {ApiObjectInfo} selectedObject The object that is currently selected, if any.
      */
     constructor(possibleObjects, selectedObject) {
         super();
         
-        /** @type {ApiObjectInfo[]} */
+        /** @type {ApiBaseObjectList} */
         this.possibleObjects = possibleObjects;
 
         this.select = this.getSelect(selectedObject);
@@ -34,10 +34,9 @@ export class ObjectSelect extends HTMLElement {
         const select = document.createElement('select');
 
         select.appendChild(getEmptyOption());
-
-        for (const object of this.possibleObjects) {
-            select.appendChild(getSelectOption(object.name, object.index));
-        }
+        
+        select.appendChild(this.possibleObjects.getSrdOptionGroup());
+        select.appendChild(this.possibleObjects.getHomebrewOptionGroup());
 
         select.value = defaultValue?.index ?? null;
 

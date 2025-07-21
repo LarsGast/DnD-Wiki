@@ -31,9 +31,8 @@ export class RaceInput extends HTMLSelectElement {
         this.appendChild(getEmptyOption());
 
         // Populate the select element with race options.
-        for (const race of allRaces.results) {
-            this.appendChild(getSelectOption(race.name, race.index));
-        }
+        this.appendChild(allRaces.getSrdOptionGroup());
+        this.appendChild(allRaces.getHomebrewOptionGroup());
 
         // Set the value to the current PC's race.
         this.value = globals.activePlayerCharacter.race;

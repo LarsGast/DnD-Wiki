@@ -31,9 +31,8 @@ export class BackgroundInput extends HTMLSelectElement {
         this.appendChild(getEmptyOption());
 
         // Populate the select element with background options.
-        for (const background of allBackgrounds.results) {
-            this.appendChild(getSelectOption(background.name, background.index));
-        }
+        this.appendChild(allBackgrounds.getSrdOptionGroup());
+        this.appendChild(allBackgrounds.getHomebrewOptionGroup());
 
         // Set the current value from the active player's data.
         this.value = globals.activePlayerCharacter.background;
