@@ -85,7 +85,6 @@ export class ClassLevelInput extends HTMLLIElement {
         const allClasses = await Class.getAllAsync();
 
         this.classSelect.appendChild(allClasses.getSrdOptionGroup());
-        this.classSelect.appendChild(allClasses.getHomebrewOptionGroup());
         
         // Set the current values, if already provided.
         this.classSelect.value = this.classIndex ?? null;

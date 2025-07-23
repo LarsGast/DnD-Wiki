@@ -32,7 +32,6 @@ export class AlignmentInput extends HTMLSelectElement {
 
         // For each alignment, create and add a select option.
         this.appendChild(allAlignments.getSrdOptionGroup());
-        this.appendChild(allAlignments.getHomebrewOptionGroup());
 
         // Set the select value to the active PC's current alignment.
         this.value = globals.activePlayerCharacter.alignment;
