@@ -20,9 +20,23 @@ export class RaceInput extends HTMLSelectElement {
 
     /**
      * Called when the element is connected to the DOM.
-     * Loads all races and sets up the select options.
      */
     async connectedCallback() {
+        this._updateHandler = async () => await this.updateSelectOptions();
+
+        document.addEventListener("newHomebrewCreated", this._updateHandler);
+        document.addEventListener("homebrewImported", this._updateHandler);
+        document.addEventListener("homebrewDeleted", this._updateHandler);
+
+        await this.updateSelectOptions();
+    }
+
+    /**
+     * Loads all races and sets up the select options.
+     */
+    async updateSelectOptions() {
+
+        this.replaceChildren();
 
         // Retrieve all races.
         const allRaces = await Race.getAllAsync();
