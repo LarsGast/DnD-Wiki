@@ -14,16 +14,17 @@ export const getElementWithTextContent = function(tagName, textContent) {
 
 /**
  * Get an empty option for select elements.
+ * @param {string} customText Text that the user sees in this option.
  * @returns {HTMLOptionElement}
  */
-export const getEmptyOption = function() {
+export const getEmptyOption = function(customText = "-- Select an option --") {
 
     const emptyOption = document.createElement('option');
 
     emptyOption.value = null;
     emptyOption.disabled = true;
     emptyOption.selected = true;
-    emptyOption.textContent = "-- Select an option --";
+    emptyOption.textContent = customText;
 
     return emptyOption;
 }
@@ -41,4 +42,25 @@ export const getSelectOption = function(optionText, optionValue) {
     option.value = optionValue ?? optionText;
 
     return option;
+}
+
+/**
+ * Get a group of options for a select element.
+ * @template T
+ * @param {string} label Label of the group.
+ * @param {T[]} options Array of objects with name and index properties.
+ * @param {(option: T) => {optionText: string, optionValue: string}} getOptionTextAndValueFunc Function to get the name and index from an option object.
+ * @returns {HTMLOptGroupElement}
+ */
+export const getSelectOptionGroup = function(label, options, getOptionTextAndValueFunc) {
+    const optGroup = document.createElement('optgroup');
+
+    optGroup.label = label;
+
+    for (const option of options) {
+        const { optionText, optionValue } = getOptionTextAndValueFunc(option);
+        optGroup.appendChild(getSelectOption(optionText, optionValue));
+    }
+
+    return optGroup;
 }
