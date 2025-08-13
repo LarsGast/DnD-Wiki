@@ -2,6 +2,7 @@ import { Language } from "../../../../objects/api/resources/Language.js";
 import { Race } from "../../../../objects/api/resources/Race.js";
 import { Subrace } from "../../../../objects/api/resources/Subrace.js";
 import { Trait } from "../../../../objects/api/resources/Trait.js";
+import { getInputSection, getSelectSection, getTextareaSection } from "../FormElementsBuilder.js";
 import { HomebrewBaseForm } from "../HomebrewBaseForm.js";
 import { AbilityBonusesSection } from "../helpers/AbilityBonusesSection.js";
 import { ChoiceSection } from "../helpers/ChoiceSection.js";
@@ -44,11 +45,11 @@ export class RaceForm extends HomebrewBaseForm {
         this.abilityBonusesSection = new AbilityBonusesSection(this.race.ability_bonuses, "Racial bonuses to ability scores.");
         fragment.appendChild(this.abilityBonusesSection);
 
-        fragment.appendChild(this.getTextareaSection("Age", 'age', this.race.age, "Flavor description of possible ages for this race."));
-        fragment.appendChild(this.getTextareaSection("Alignment", 'alignment', this.race.alignment, "Flavor description of likely alignments this race takes."));
-        fragment.appendChild(this.getSelectSection("Size", "size", this.race.size, ["Tiny", "Small", "Medium", "Large", "Huge", "Gargantuan"], "Size class of this race."));
-        fragment.appendChild(this.getTextareaSection("Size description", 'size_description', this.race.size_description, "Flavor description of height and weight for this race."));
-        fragment.appendChild(this.getInputSection("Speed", 'speed', this.race.speed, true, "Base move speed for this race (in feet per round)."));
+        fragment.appendChild(getTextareaSection("Age", 'age', this.race.age, "Flavor description of possible ages for this race.", true));
+        fragment.appendChild(getTextareaSection("Alignment", 'alignment', this.race.alignment, "Flavor description of likely alignments this race takes.", true));
+        fragment.appendChild(getSelectSection("Size", "size", this.race.size, ["Tiny", "Small", "Medium", "Large", "Huge", "Gargantuan"], "Size class of this race."));
+        fragment.appendChild(getTextareaSection("Size description", 'size_description', this.race.size_description, "Flavor description of height and weight for this race.", true));
+        fragment.appendChild(getInputSection("Speed", 'speed', this.race.speed, true, "Base move speed for this race (in feet per round).", true));
 
         this.traitsSection = new LinkedObjectsSection(
             "Traits",
@@ -74,7 +75,7 @@ export class RaceForm extends HomebrewBaseForm {
         );
         fragment.appendChild(this.languageOptionsSection);
 
-        fragment.appendChild(this.getTextareaSection("Language description", 'language_desc', this.race.language_desc, "Flavor description of the languages this race knows."));
+        fragment.appendChild(getTextareaSection("Language description", 'language_desc', this.race.language_desc, "Flavor description of the languages this race knows.", true));
 
         this.subracesSection = new LinkedObjectsSection(
             "Subraces",

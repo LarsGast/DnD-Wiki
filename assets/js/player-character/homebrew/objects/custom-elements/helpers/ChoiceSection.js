@@ -1,5 +1,6 @@
 import { Choice, OptionSet } from "../../../../objects/api/helpers/Choice.js";
 import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
+import { getTooltipSpan } from "../FormElementsBuilder.js";
 import { HomebrewBaseForm } from "../HomebrewBaseForm.js";
 import { ChoiceOptionElement } from "./ChoiceOptionElement.js";
 
@@ -55,7 +56,7 @@ export class ChoiceSection extends HTMLElement {
 
         label.textContent = labelText;
 
-        label.appendChild(HomebrewBaseForm.getTooltipSpan(tooltip));
+        label.appendChild(getTooltipSpan(tooltip));
 
         return label;
     }

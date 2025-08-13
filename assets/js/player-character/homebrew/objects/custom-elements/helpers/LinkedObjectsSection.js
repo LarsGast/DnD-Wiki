@@ -1,5 +1,6 @@
 import { ApiBaseObjectList } from "../../../../objects/api/resources/ApiBaseObject.js";
 import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
+import { getTooltipSpan } from "../FormElementsBuilder.js";
 import { HomebrewBaseForm } from "../HomebrewBaseForm.js";
 import { ObjectSelect } from "./ObjectSelect.js";
 
@@ -40,7 +41,7 @@ export class LinkedObjectsSection extends HTMLElement {
 
         label.textContent = labelText;
 
-        label.appendChild(HomebrewBaseForm.getTooltipSpan(tooltip));
+        label.appendChild(getTooltipSpan(tooltip));
 
         return label;
     }

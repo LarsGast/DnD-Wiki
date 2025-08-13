@@ -1,4 +1,5 @@
 import { AbilityBonus } from "../../../../objects/api/helpers/AbilityBonus.js";
+import { getTooltipSpan } from "../FormElementsBuilder.js";
 import { HomebrewBaseForm } from "../HomebrewBaseForm.js";
 import { AbilityBonusesSelect } from "./AbilityBonusesSelect.js";
 
@@ -34,7 +35,7 @@ export class AbilityBonusesSection extends HTMLElement {
 
         label.textContent = "Ability bonuses";
 
-        label.appendChild(HomebrewBaseForm.getTooltipSpan(tooltip));
+        label.appendChild(getTooltipSpan(tooltip));
 
         return label;
     }
