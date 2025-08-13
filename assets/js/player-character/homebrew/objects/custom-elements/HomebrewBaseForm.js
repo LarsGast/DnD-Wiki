@@ -9,11 +9,15 @@ import { getEmptyOption, getSelectOption } from "../../../util.js";
  */
 export class HomebrewBaseForm extends HTMLFormElement {
     
-    constructor() {
+    /**
+     * Creates an instance of HomebrewBaseForm.
+     * @param {ApiObjectInfo} homebrewObject 
+     */
+    constructor(homebrewObject) {
         super();
 
         // "Name" is the only required field for all homebrew objects.
-        this.appendChild(this.getInputSection("Name", "name", globals.activeHomebrewEntry.homebrewObject.name, false));        
+        this.appendChild(this.getInputSection("Name", "name", homebrewObject.name, false));        
     }
 
     /**

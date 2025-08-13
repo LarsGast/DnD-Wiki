@@ -17,7 +17,7 @@ export class RaceForm extends HomebrewBaseForm {
      * @param {Race} raceElement
      */
     constructor(raceElement) {
-        super();
+        super(raceElement);
         
         /** @type {Race} */
         this.race = raceElement;
