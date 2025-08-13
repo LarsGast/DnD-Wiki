@@ -168,7 +168,7 @@ dialog {
     // Generic styling
     width: 80%;
     max-width: calc(0.8 * (800px - (30px * 2)));
-    &:not([is="character-delete-dialog"]):not([is="homebrew-object-delete-dialog"]) {
+    &:not([is="character-delete-dialog"]):not([is="homebrew-object-delete-dialog"]):not([is="homebrew-object-import-id-already-exists-dialog"]) {
         height: 50vh;
     }
 
@@ -184,6 +184,11 @@ dialog {
             // To dynamically grow the textarea within.
             display: flex;
             flex-direction: column;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-evenly;
         }
 
         /* Close button for the modal */

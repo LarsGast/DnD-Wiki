@@ -16,21 +16,24 @@ export class HomebrewImportIdAlreadyExistsDialog extends HTMLDialogElement {
 
         // Create dialog heading.
         this.heading = document.createElement('h2');
-        this.heading.textContent = "ID already exists";
+        this.heading.textContent = "Object already exists";
 
         // Create description paragraphs.
+        this.homebrewIdentifierAnchor = document.createElement('a');
         this.firstParagraph = document.createElement('p');
-        this.firstParagraph.textContent = "The object you are trying to import already exists in the homebrew bank. Please choose from the options below.";
+        this.firstParagraph.appendChild(document.createTextNode("We found an existing homebrew object with the same ID as the one you're trying to import ("));
+        this.firstParagraph.appendChild(this.homebrewIdentifierAnchor);
+        this.firstParagraph.appendChild(document.createTextNode("). Please choose from the options below."));
 
         // Cancel button.
         this.cancelImportButton = document.createElement('button');
-        this.cancelImportButton.textContent = "Cancel import";
+        this.cancelImportButton.textContent = "Keep current only";
         this.cancelImportButton.type = 'button';
         this.cancelImportButton.onclick = () => this.handleCancelImportButtonClick();
 
         // Overwrite button.
         this.overwriteButton = document.createElement('button');
-        this.overwriteButton.textContent = "Overwrite existing object";
+        this.overwriteButton.textContent = "Keep new only";
         this.overwriteButton.type = 'button';
         this.overwriteButton.onclick = () => this.handleOverwriteButtonClick();
 
@@ -47,12 +50,16 @@ export class HomebrewImportIdAlreadyExistsDialog extends HTMLDialogElement {
         this.closeButton.classList.add('close');
         this.closeButton.onclick = () => this.handleCloseButtonClick();
 
+        this.buttonGroup = document.createElement('div');
+        this.buttonGroup.classList.add('button-group');
+        this.buttonGroup.appendChild(this.cancelImportButton);
+        this.buttonGroup.appendChild(this.overwriteButton);
+        this.buttonGroup.appendChild(this.keepBothButton);
+
         // Add all elements to the dialog content.
         this.dialogContent.appendChild(this.heading);
         this.dialogContent.appendChild(this.firstParagraph);
-        this.dialogContent.appendChild(this.cancelImportButton);
-        this.dialogContent.appendChild(this.overwriteButton);
-        this.dialogContent.appendChild(this.keepBothButton);
+        this.dialogContent.appendChild(this.buttonGroup);
         this.dialogContent.appendChild(this.closeButton);
 
         // Append the content to the dialog.
@@ -85,6 +92,13 @@ export class HomebrewImportIdAlreadyExistsDialog extends HTMLDialogElement {
 
         /** @type {HomebrewBankEntry} */
         this.homebrewBankEntry = event.detail.homebrewBankEntry;
+
+        this.homebrewIdentifierAnchor.textContent = `${this.homebrewBankEntry.apiCategoryName}: ${this.homebrewBankEntry.homebrewObject.name}`;
+
+        const existingEntry = globals.homebrewBank.getHomebrewBankEntryByObjectIndex(this.homebrewBankEntry.homebrewObject.index);
+
+        this.homebrewIdentifierAnchor.href = `/pc-builder/homebrew/?id=${existingEntry.id}`;
+        this.homebrewIdentifierAnchor.target = "_blank";
     }
   
     /**
