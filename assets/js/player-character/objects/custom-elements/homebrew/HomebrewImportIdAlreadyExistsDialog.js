@@ -136,6 +136,7 @@ export class HomebrewImportIdAlreadyExistsDialog extends HTMLDialogElement {
         this.homebrewBankEntry.homebrewObject.name += " (copy)";
 
         globals.homebrewBank.addNewHomebrew(this.homebrewBankEntry.homebrewObject, this.homebrewBankEntry.apiCategoryName);
+        globals.homebrewBank.save();
 
         this.close();
 
