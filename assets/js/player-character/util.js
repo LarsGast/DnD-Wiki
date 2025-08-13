@@ -31,13 +31,14 @@ export const populateSelectWithApiObjects = function(select, options) {
 /**
  * Get an empty option for select elements.
  * @param {string} customText Text that the user sees in this option.
+ * @param {string} customValue Value of the option.
  * @returns {HTMLOptionElement}
  */
-export const getEmptyOption = function(customText = "-- Select an option --") {
+export const getEmptyOption = function(customText = "-- Select an option --", customValue = null) {
 
     const emptyOption = document.createElement('option');
 
-    emptyOption.value = null;
+    emptyOption.value = customValue;
     emptyOption.disabled = true;
     emptyOption.selected = true;
     emptyOption.textContent = customText;

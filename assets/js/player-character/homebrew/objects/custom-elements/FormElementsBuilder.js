@@ -60,25 +60,27 @@ export const getTextareaSection = function(labelText, id, defaultValue, tooltip,
  * @param {string} defaultValue Default value for the select element.
  * @param {string[]} options Array of options for the select element. No support for objects, only strings.
  * @param {string} tooltip Optional tooltip text for the select element. If provided, a tooltip icon will be added to the label.
+ * @param {boolean} isRequired Whether the input is required.
  * @returns {HTMLElement} Section containing the label and select element.
  */
-export const getSelectSection = function(labelText, id, defaultValue, options, tooltip) {
+export const getSelectSection = function(labelText, id, defaultValue, options, tooltip, isRequired) {
 
     // Label.
-    const label = getLabel(labelText, id);
+    const label = getLabel(labelText, id, isRequired);
 
     // Select.
     const select = document.createElement('select');
     select.id = `homebrew-object-${id}`;
     select.name = id;
+    select.required = isRequired;
 
-    select.appendChild(getEmptyOption());
+    select.appendChild(getEmptyOption("-- Select an option --", ""));
 
     for (const option of options) {
         select.appendChild(getSelectOption(option));
     }
 
-    select.value = defaultValue ?? null;
+    select.value = defaultValue ?? "";
 
     label.appendChild(select);
 
