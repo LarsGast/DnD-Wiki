@@ -1,13 +1,19 @@
 import { AbilityBonus } from "../../../../objects/api/helpers/AbilityBonus.js";
-import { getTooltipSpan } from "../FormElementsBuilder.js";
-import { HomebrewBaseForm } from "../HomebrewBaseForm.js";
-import { AbilityBonusesSelect } from "./AbilityBonusesSelect.js";
+import { AbilityScore } from "../../../../objects/api/resources/AbilityScore.js";
+import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
+import { getInputWithLabel, getTooltipSpan } from "../FormElementsBuilder.js";
 
 /**
  * Custom section element for displaying and editing ability bonuses.
  * This element allows users to add, remove, and modify ability bonuses for homebrew objects.
  */
 export class AbilityBonusesSection extends HTMLElement {
+
+    /**
+     * Default order of ability scores.
+     * @type {string[]}
+     */
+    abilityScoreOrder = ["str", "dex", "con", "int", "wis", "cha"];
 
     /**
      * Creates an instance of AbilityBonusesSection.
@@ -17,11 +23,26 @@ export class AbilityBonusesSection extends HTMLElement {
     constructor(abilityBonuses, tooltip) {
         super();
 
-        this.appendChild(this.getSectionLabel(tooltip));
-        this.appendChild(this.getAddAbilityBonusButton());
+        /** @type {AbilityBonus[]} */
+        this.abilityBonuses = abilityBonuses;
 
-        for (const abilityBonus of abilityBonuses) {
-            this.addAbilityBonusSelect(abilityBonus);
+        this.appendChild(this.getSectionLabel(tooltip));
+    }
+
+    async connectedCallback() {
+        const abilityScores = await AbilityScore.getAllAsync();
+
+        const sortedAbilityScores = abilityScores.srdObjects.sort((a, b) => {
+            const posA = this.abilityScoreOrder.indexOf(a.index);
+            const posB = this.abilityScoreOrder.indexOf(b.index);
+            return posA - posB;
+        });
+
+        for (const abilityScore of sortedAbilityScores) {
+            const abilityBonus = this.abilityBonuses.find(bonus => bonus.ability_score.index === abilityScore.index);
+
+            const inputWithLabel = getInputWithLabel(abilityScore.name, abilityScore.index, abilityBonus?.bonus ?? 0, true, null, true);
+            this.appendChild(inputWithLabel);
         }
     }
 
@@ -41,36 +62,40 @@ export class AbilityBonusesSection extends HTMLElement {
     }
 
     /**
-     * Creates and returns a button to add new ability bonus selects.
-     * @returns {HTMLButtonElement} Button element to add new ability bonus selects.
-     */
-    getAddAbilityBonusButton() {
-        const button = document.createElement('button');
-
-        button.textContent = "Add";
-        button.type = "button";
-        button.onclick = () => { this.addAbilityBonusSelect() };
-
-        return button;
-    }
-
-    /**
-     * Adds a new AbilityBonusesSelect element to the section.
-     * @param {AbilityBonus} defaultAbilityScore Optional initial ability bonus to set the select value.
-     */
-    addAbilityBonusSelect(defaultAbilityScore) {
-        this.appendChild(new AbilityBonusesSelect(defaultAbilityScore));
-    }
-
-    /**
      * Retrieves the values of all ability bonuses from the section.
-     * @returns {AbilityBonus[]} Array of AbilityBonus objects representing the selected values.
+     * @returns {Promise<AbilityBonus[]>} Array of AbilityBonus objects representing the selected values.
      */
-    getValue() {
-        /** @type {AbilityBonusesSelect[]} */
-        const abilityBonusSelects = Array.from(this.querySelectorAll('ability-bonuses-select'));
+    async getValueAsync() {
+        const inputs = this.querySelectorAll('input[type="number"]');
+        const abilityBonuses = [];
 
-        return abilityBonusSelects.map(select => select.getValue());
+        for (const input of inputs) {
+            const abilityScoreIndex = input.name;
+            const bonusValue = parseInt(input.value, 10);
+
+            // Only save non-zero bonuses, as this is also done like this in the SRD API.
+            if (isNaN(bonusValue) || bonusValue === 0) {
+                continue;
+            }
+
+            const abilityScore = new ApiObjectInfo(await AbilityScore.getAsync(abilityScoreIndex));
+        
+            // Remove unwanted keys
+            const emptyApiObjectInfo = new ApiObjectInfo();
+            for (const key in abilityScore) {
+                if (!emptyApiObjectInfo.hasOwnProperty(key)) {
+                    delete abilityScore[key];
+                }
+            }
+
+            const abilityBonus = new AbilityBonus();
+            abilityBonus.ability_score = abilityScore;
+            abilityBonus.bonus = bonusValue;
+
+            abilityBonuses.push(abilityBonus);
+        }
+
+        return abilityBonuses;
     }
 }
 

@@ -91,11 +91,11 @@ export class RaceForm extends HomebrewBaseForm {
     /**
      * @override Race specific properties.
      */
-    getFormData() {
+    async getFormDataAsync() {
 
-        const data = new Race(super.getFormData());
+        const data = new Race(await super.getFormDataAsync());
 
-        data.ability_bonuses = this.abilityBonusesSection.getValue();
+        data.ability_bonuses = await this.abilityBonusesSection.getValueAsync();
         data.traits = this.traitsSection.getValue();
         data.languages = this.languagesSection.getValue();
         data.language_options = this.languageOptionsSection.getValue();

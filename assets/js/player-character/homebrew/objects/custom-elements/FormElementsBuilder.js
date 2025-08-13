@@ -12,6 +12,23 @@ import { getEmptyOption, getSelectOption } from '../../../util.js'
  */
 export const getInputSection = function(labelText, id, defaultValue, isNumberInput, tooltip, isRequired) {
 
+    const label = getInputWithLabel(labelText, id, defaultValue, isNumberInput, tooltip, isRequired);
+    
+    return getSection(label);
+}
+
+/**
+ * Creates and returns a labeled input element for the form.
+ * @param {string} labelText Text for the label of the input.
+ * @param {string} id ID and name for the input element.
+ * @param {string} defaultValue Default value for the input.
+ * @param {boolean} isNumberInput Whether the input should be a number input.
+ * @param {string} tooltip Optional tooltip text for the input. If provided, a tooltip icon will be added to the label.
+ * @param {boolean} isRequired Whether the input is required.
+ * @returns {HTMLLabelElement} Label element containing the input.
+ */
+export const getInputWithLabel = function(labelText, id, defaultValue, isNumberInput, tooltip, isRequired) {
+
     // Label.
     const label = getLabel(labelText, id, isRequired);
 
@@ -23,8 +40,8 @@ export const getInputSection = function(labelText, id, defaultValue, isNumberInp
     if (tooltip) {
         label.appendChild(getTooltipSpan(tooltip));
     }
-    
-    return getSection(label);
+
+    return label;
 }
 
 /**

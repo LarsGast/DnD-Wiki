@@ -24,7 +24,7 @@ export class HomebrewBaseForm extends HTMLFormElement {
      * Called when the form is connected to the DOM.
      */
     connectedCallback() {
-        this.addEventListener("submit", this.handleSubmit.bind(this));
+        this.addEventListener("submit", this.handleSubmitAsync.bind(this));
 
         // Add the save button on the bottom of the form.
         this.appendChild(this.getSaveButton());
@@ -36,10 +36,10 @@ export class HomebrewBaseForm extends HTMLFormElement {
      * Override this method in subclasses to add additional functionality.
      * @param {Event} event 
      */
-    handleSubmit(event) {
+    async handleSubmitAsync(event) {
         event.preventDefault();
 
-        const data = this.getFormData();
+        const data = await this.getFormDataAsync();
 
         globals.activeHomebrewEntry.homebrewObject = data;
         globals.homebrewBank.save();
@@ -50,9 +50,9 @@ export class HomebrewBaseForm extends HTMLFormElement {
     /**
      * Collects the form data and returns it as an ApiObjectInfo instance.
      * Override this method in subclasses to add additional fields.
-     * @returns {ApiObjectInfo} Homebrew object data collected from the form.
+     * @returns {Promise<ApiObjectInfo>} Homebrew object data collected from the form.
      */
-    getFormData() {
+    async getFormDataAsync() {
         const formData = new FormData(this);
 
         // Initialize a new ApiObjectInfo instance with the current homebrew object to keep the UUID the same.
@@ -62,8 +62,8 @@ export class HomebrewBaseForm extends HTMLFormElement {
         for (const [key, value] of formData) {
             data[key] = value;
         }
-
-        return data;
+        
+        return Promise.resolve(data);
     }
 
     /**
