@@ -1,5 +1,5 @@
 import { Race } from "../../api/resources/Race.js";
-import { getEmptyOption, getSelectOption } from "../../../util.js";
+import { getEmptyOption, getSelectOption, populateSelectWithApiObjects } from "../../../util.js";
 import { globals } from "../../../load-globals.js";
 
 /**
@@ -45,8 +45,7 @@ export class RaceInput extends HTMLSelectElement {
         this.appendChild(getEmptyOption());
 
         // Populate the select element with race options.
-        this.appendChild(allRaces.getSrdOptionGroup());
-        this.appendChild(allRaces.getHomebrewOptionGroup());
+        populateSelectWithApiObjects(this, allRaces);
 
         // Set the value to the current PC's race.
         this.value = globals.activePlayerCharacter.race;

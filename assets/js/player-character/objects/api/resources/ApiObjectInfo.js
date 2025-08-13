@@ -60,7 +60,7 @@ export class ApiObjectInfo {
 
     /**
      * Returns an object that can be used as an option in a select element.
-     * @returns {{optionText: string, optionValue: string}
+     * @returns {{optionText: string, optionValue: string}}
      */
     getOptionTextAndValueFunc() {
         return {

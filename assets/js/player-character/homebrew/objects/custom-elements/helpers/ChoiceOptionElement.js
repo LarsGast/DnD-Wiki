@@ -1,7 +1,7 @@
 import { Option } from "../../../../objects/api/helpers/Choice.js";
 import { ApiBaseObjectList } from "../../../../objects/api/resources/ApiBaseObject.js";
 import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
-import { getEmptyOption } from "../../../../util.js";
+import { getEmptyOption, populateSelectWithApiObjects } from "../../../../util.js";
 
 /**
  * Custom element for selecting a choice option.
@@ -38,12 +38,8 @@ export class ChoiceOptionElement extends HTMLElement {
         const select = document.createElement('select');
 
         select.appendChild(getEmptyOption());
-        
-        select.appendChild(this.possibleObjects.getSrdOptionGroup());
 
-        if (this.possibleObjects.homebrewObjects.length > 0) {
-            select.appendChild(this.possibleObjects.getHomebrewOptionGroup());
-        }
+        populateSelectWithApiObjects(select, this.possibleObjects);
 
         select.value = this.defaultValue?.index ?? null;
 

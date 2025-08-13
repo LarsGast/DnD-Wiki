@@ -2,7 +2,6 @@ import { getApiResultsAsync } from "../../../api.js";
 import { ApiObjectInfo } from "./ApiObjectInfo.js";
 import { ResourceList } from "../helpers/ResourceList.js";
 import { globals } from "../../../load-globals.js";
-import { getSelectOptionGroup } from "../../../util.js";
 
 export class ApiBaseObject extends ApiObjectInfo {
 
@@ -75,21 +74,5 @@ export class ApiBaseObjectList {
     constructor(srdObjects = [], homebrewObjects = []) {
         this.srdObjects = srdObjects.map(obj => new ApiObjectInfo(obj)).sort((a, b) => a.name.localeCompare(b.name));
         this.homebrewObjects = homebrewObjects.map(obj => new ApiObjectInfo(obj)).sort((a, b) => a.name.localeCompare(b.name));
-    }
-
-    /**
-     * Get an option group containing all SRD objects for a select element.
-     * @returns {HTMLOptGroupElement} An optgroup element with SRD objects.
-     */
-    getSrdOptionGroup() {
-        return getSelectOptionGroup("SRD", this.srdObjects, (obj) => obj.getOptionTextAndValueFunc());
-    }
-
-    /**
-     * Get an option group containing all homebrew objects for a select element.
-     * @returns {HTMLOptGroupElement} An optgroup element with homebrew objects.
-     */
-    getHomebrewOptionGroup() {
-        return getSelectOptionGroup("Homebrew", this.homebrewObjects, (obj) => obj.getOptionTextAndValueFunc());
     }
 }

@@ -1,4 +1,4 @@
-import { getEmptyOption, getSelectOption } from "../../../util.js";
+import { getEmptyOption, getSelectOption, populateSelectWithApiObjects } from "../../../util.js";
 import { Class } from "../../api/resources/Class.js";
 
 /**
@@ -84,7 +84,7 @@ export class ClassLevelInput extends HTMLLIElement {
         // Retrieve all available classes.
         const allClasses = await Class.getAllAsync();
 
-        this.classSelect.appendChild(allClasses.getSrdOptionGroup());
+        populateSelectWithApiObjects(this.classSelect, allClasses);
         
         // Set the current values, if already provided.
         this.classSelect.value = this.classIndex ?? null;

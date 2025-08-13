@@ -1,3 +1,5 @@
+import { ApiBaseObjectList } from './objects/api/resources/ApiBaseObject.js'
+
 /**
  * Create an HTML element and add a value to the the textContent property.
  * @param {HTMLElementTagNameMap} tagName 
@@ -10,6 +12,20 @@ export const getElementWithTextContent = function(tagName, textContent) {
     element.textContent = textContent;
 
     return element;
+}
+
+/**
+ * Populate a select element with options from a list of ApiBaseObject instances.
+ * @param {HTMLSelectElement} select The select element to populate.
+ * @param {ApiBaseObjectList} options The list of ApiBaseObject instances to populate the select with.
+ */
+export const populateSelectWithApiObjects = function(select, options) {
+
+    select.appendChild(getSelectOptionGroup("SRD", options.srdObjects, (obj) => obj.getOptionTextAndValueFunc()));
+
+    if (options.homebrewObjects.length > 0) {
+        select.appendChild(getSelectOptionGroup("Homebrew", options.homebrewObjects, (obj) => obj.getOptionTextAndValueFunc()));
+    }
 }
 
 /**
@@ -52,7 +68,7 @@ export const getSelectOption = function(optionText, optionValue) {
  * @param {(option: T) => {optionText: string, optionValue: string}} getOptionTextAndValueFunc Function to get the name and index from an option object.
  * @returns {HTMLOptGroupElement}
  */
-export const getSelectOptionGroup = function(label, options, getOptionTextAndValueFunc) {
+const getSelectOptionGroup = function(label, options, getOptionTextAndValueFunc) {
     const optGroup = document.createElement('optgroup');
 
     optGroup.label = label;
