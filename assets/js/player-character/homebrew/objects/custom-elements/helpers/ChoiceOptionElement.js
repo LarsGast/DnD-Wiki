@@ -40,7 +40,10 @@ export class ChoiceOptionElement extends HTMLElement {
         select.appendChild(getEmptyOption());
         
         select.appendChild(this.possibleObjects.getSrdOptionGroup());
-        select.appendChild(this.possibleObjects.getHomebrewOptionGroup());
+
+        if (this.possibleObjects.homebrewObjects.length > 0) {
+            select.appendChild(this.possibleObjects.getHomebrewOptionGroup());
+        }
 
         select.value = this.defaultValue?.index ?? null;
 

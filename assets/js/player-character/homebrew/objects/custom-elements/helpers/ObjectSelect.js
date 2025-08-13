@@ -1,5 +1,6 @@
+import { ApiBaseObjectList } from "../../../../objects/api/resources/ApiBaseObject.js";
 import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
-import { getEmptyOption, getSelectOption } from "../../../../util.js";
+import { getEmptyOption } from "../../../../util.js";
 
 /**
  * Custom element for selecting an object from a list of possible objects.
@@ -36,7 +37,10 @@ export class ObjectSelect extends HTMLElement {
         select.appendChild(getEmptyOption());
         
         select.appendChild(this.possibleObjects.getSrdOptionGroup());
-        select.appendChild(this.possibleObjects.getHomebrewOptionGroup());
+
+        if (this.possibleObjects.homebrewObjects.length > 0) {
+            select.appendChild(this.possibleObjects.getHomebrewOptionGroup());
+        }
 
         select.value = defaultValue?.index ?? null;
 
