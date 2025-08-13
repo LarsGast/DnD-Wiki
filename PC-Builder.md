@@ -167,6 +167,7 @@ permalink: /pc-builder/
     <dialog is="homebrew-object-import-dialog"></dialog>
     <dialog is="homebrew-object-export-dialog"></dialog>
     <dialog is="homebrew-object-delete-dialog"></dialog>
+    <dialog is="homebrew-object-import-id-already-exists-dialog"></dialog>
 </div>
 
 <script type="module" src="{{ '/assets/js/player-character/load-globals.js' | relative_url }}"></script>

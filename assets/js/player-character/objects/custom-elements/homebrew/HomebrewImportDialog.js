@@ -84,6 +84,10 @@ export class HomebrewImportDialog extends HTMLDialogElement {
     connectedCallback() {
         this._updateHandler = () => this.showDialog();
         document.addEventListener("homebrewImportButtonClicked", this._updateHandler);
+
+        this._importHandlingUpdateHandler = () => this.hideDialog();
+        document.addEventListener("homebrewImportCancelled", this._importHandlingUpdateHandler);
+        document.addEventListener("homebrewImported", this._importHandlingUpdateHandler);
     }
     
     /**
@@ -92,6 +96,8 @@ export class HomebrewImportDialog extends HTMLDialogElement {
      */
     disconnectedCallback() {
         document.removeEventListener("homebrewImportButtonClicked", this._updateHandler);
+        document.removeEventListener("homebrewImportCancelled", this._updateHandler);
+        document.removeEventListener("homebrewImported", this._updateHandler);
     }
 
     /**
@@ -142,23 +148,33 @@ export class HomebrewImportDialog extends HTMLDialogElement {
         // Create a new Homebrew from the JSON data.
         const homebrewBankEntry = new HomebrewBankEntry(JSON.parse(this.previewTextarea.value));
 
-        // Assign a new unique index to the homebrew.
-        // This is necessary to ensure that multiple of the same homebrew can be added to the bank as different objects.
-        homebrewBankEntry.homebrewObject.index = self.crypto.randomUUID();
+        if (!globals.homebrewBank.getDoesHomebrewObjectExistByIndex(homebrewBankEntry.homebrewObject.index)) {
 
-        // Add to the bank.
-        globals.homebrewBank.addNewHomebrew(homebrewBankEntry.homebrewObject, homebrewBankEntry.apiCategoryName);
-        globals.homebrewBank.save();
+            // Add to the bank.
+            // The ID of the object itself won't change, the ID of the entry will be generated and overwritten.
+            globals.homebrewBank.addNewHomebrew(homebrewBankEntry.homebrewObject, homebrewBankEntry.apiCategoryName);
+            globals.homebrewBank.save();
 
-        this.close();
-
-        document.dispatchEvent(new Event("homebrewImported"));
+            document.dispatchEvent(new Event("homebrewImported"));
+        }
+        else {
+            document.dispatchEvent(new CustomEvent("homebrewImportIdAlreadyExists", {
+                detail: {
+                    homebrewBankEntry: homebrewBankEntry
+                },
+                bubbles: true
+            }));
+        }
     }
   
     /**
      * Closes the dialog.
      */
     handleCloseButtonClick() {
+        this.hideDialog();
+    }
+
+    hideDialog() {
         this.close();
     }
 }

@@ -138,6 +138,15 @@ export class HomebrewBank {
     }
 
     /**
+     * Get a HomebrewBankEntry by the index of the homebrew object.
+     * @param {`${string}-${string}-${string}-${string}-${string}`} id UUID of the homebrew object.
+     * @returns {HomebrewBankEntry|undefined} The homebrew bank entry if found.
+     */
+    getHomebrewBankEntryByObjectIndex(id) {
+        return this.homebrewBankEntries.find(entry => entry.homebrewObject.index === id);
+    }
+
+    /**
      * Get a homebrew object by its ID.
      * @param {`${string}-${string}-${string}-${string}-${string}`} id UUID.
      * @return {ApiObjectInfo|undefined} The homebrew object if found, otherwise undefined.
@@ -155,6 +164,15 @@ export class HomebrewBank {
         return this.homebrewBankEntries
             .filter(entry => entry.apiCategoryName === apiCategory.name)
             .map(entry => entry.homebrewObject);
+    }
+
+    /**
+     * Checks if a homebrew object exists in the bank by its index.
+     * @param {`${string}-${string}-${string}-${string}-${string}`} id UUID of the homebrew object.
+     * @returns {boolean} True if the homebrew object exists, false otherwise.
+     */
+    getDoesHomebrewObjectExistByIndex(id) {
+        return this.homebrewBankEntries.some(entry => entry.homebrewObject.index === id);
     }
 }
 

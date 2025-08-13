@@ -37,3 +37,4 @@ import "./objects/custom-elements/homebrew/HomebrewExportButton.js";
 import "./objects/custom-elements/homebrew/HomebrewExportDialog.js";
 import "./objects/custom-elements/homebrew/HomebrewImportButton.js";
 import "./objects/custom-elements/homebrew/HomebrewImportDialog.js";
+import "./objects/custom-elements/homebrew/HomebrewImportIdAlreadyExistsDialog.js";
