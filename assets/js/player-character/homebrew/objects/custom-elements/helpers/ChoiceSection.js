@@ -1,7 +1,6 @@
 import { Choice, OptionSet } from "../../../../objects/api/helpers/Choice.js";
 import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
 import { getTooltipSpan } from "../FormElementsBuilder.js";
-import { HomebrewBaseForm } from "../HomebrewBaseForm.js";
 import { ChoiceOptionElement } from "./ChoiceOptionElement.js";
 
 /**

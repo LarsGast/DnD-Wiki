@@ -1,7 +1,6 @@
 import { ApiBaseObjectList } from "../../../../objects/api/resources/ApiBaseObject.js";
 import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
 import { getTooltipSpan } from "../FormElementsBuilder.js";
-import { HomebrewBaseForm } from "../HomebrewBaseForm.js";
 import { ObjectSelect } from "./ObjectSelect.js";
 
 /**
