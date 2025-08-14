@@ -24,8 +24,12 @@ export class HomebrewImportDialog extends HTMLDialogElement {
         // Create description paragraphs.
         this.firstParagraph = document.createElement('p');
         this.firstParagraph.textContent = "Use this window to import a new homebrew object to use on this page. Only the data provided by an export should be used while importing. Using anything else may result in invalid data.";
+
         this.secondParagraph = document.createElement('p');
-        this.secondParagraph.textContent = "Select a JSON file below, then press the Import button to import the data.";
+        this.secondParagraph.textContent = "If you try to import an object for which an ID already exists, you will be prompted to make a choice on which version to keep.";
+
+        this.thirdParagraph = document.createElement('p');
+        this.thirdParagraph.textContent = "Select a JSON file below, then press the Import button to import the data.";
 
         // Container for import button, file input, and preview label.
         this.importButtonAndLabel = document.createElement('div');
@@ -69,6 +73,7 @@ export class HomebrewImportDialog extends HTMLDialogElement {
         this.dialogContent.appendChild(this.heading);
         this.dialogContent.appendChild(this.firstParagraph);
         this.dialogContent.appendChild(this.secondParagraph);
+        this.dialogContent.appendChild(this.thirdParagraph);
         this.dialogContent.appendChild(this.importButtonAndLabel);
         this.dialogContent.appendChild(this.previewTextarea);
         this.dialogContent.appendChild(this.closeButton);
