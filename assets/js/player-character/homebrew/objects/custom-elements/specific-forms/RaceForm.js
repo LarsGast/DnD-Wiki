@@ -101,6 +101,15 @@ export class RaceForm extends HomebrewBaseForm {
         data.language_options = this.languageOptionsSection.getValue();
         data.subraces = this.subracesSection.getValue();
 
+        // The data below is part of the form, but not of the actual object.
+        // super.getFormDataAsync() generates these, but they should not be saved on the race object.
+        delete data.str;
+        delete data.dex;
+        delete data.con;
+        delete data.int;
+        delete data.wis;
+        delete data.cha;
+
         return data;
     }
 }
