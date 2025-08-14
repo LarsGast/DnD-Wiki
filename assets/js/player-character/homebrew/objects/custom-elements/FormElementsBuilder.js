@@ -5,15 +5,32 @@ import { getEmptyOption, getSelectOption } from '../../../util.js'
  * @param {string} labelText Text for the label of the input.
  * @param {string} id ID and name for the input element.
  * @param {string} defaultValue Default value for the input.
- * @param {boolean} isNumberInput Whether the input should be a number input.
  * @param {string} tooltip Optional tooltip text for the input. If provided, a tooltip icon will be added to the label.
  * @param {boolean} isRequired Whether the input is required.
  * @returns {HTMLElement} Section containing the label and input element.
  */
-export const getInputSection = function(labelText, id, defaultValue, isNumberInput, tooltip, isRequired) {
+export const getTextInputSection = function(labelText, id, defaultValue, tooltip, isRequired) {
 
-    const label = getInputWithLabel(labelText, id, defaultValue, isNumberInput, tooltip, isRequired);
+    const label = getTextInputWithLabel(labelText, id, defaultValue, tooltip, isRequired);
     
+    return getSection(label);
+}
+
+/**
+ * Creates and returns a labeled number input section for the form.
+ * @param {string} labelText Text for the label of the input.
+ * @param {string} id ID and name for the input element.
+ * @param {number} defaultValue Default value for the input.
+ * @param {string} tooltip Optional tooltip text for the input. If provided, a tooltip icon will be added to the label.
+ * @param {boolean} isRequired Whether the input is required.
+ * @param {number|null} min Minimum value for the input.
+ * @param {number|null} max Maximum value for the input.
+ * @returns 
+ */
+export const getNumberInputSection = function(labelText, id, defaultValue, tooltip, isRequired, min = null, max = null) {
+
+    const label = getNumberInputWithLabel(labelText, id, defaultValue, tooltip, isRequired, min, max);
+
     return getSection(label);
 }
 
@@ -22,18 +39,45 @@ export const getInputSection = function(labelText, id, defaultValue, isNumberInp
  * @param {string} labelText Text for the label of the input.
  * @param {string} id ID and name for the input element.
  * @param {string} defaultValue Default value for the input.
- * @param {boolean} isNumberInput Whether the input should be a number input.
  * @param {string} tooltip Optional tooltip text for the input. If provided, a tooltip icon will be added to the label.
  * @param {boolean} isRequired Whether the input is required.
  * @returns {HTMLLabelElement} Label element containing the input.
  */
-export const getInputWithLabel = function(labelText, id, defaultValue, isNumberInput, tooltip, isRequired) {
+export const getTextInputWithLabel = function(labelText, id, defaultValue, tooltip, isRequired) {
 
     // Label.
     const label = getLabel(labelText, id, isRequired);
 
     // Input.
-    const input = getInput(id, defaultValue, isNumberInput, isRequired);
+    const input = getInput(id, defaultValue, false, isRequired);
+    label.appendChild(input);
+
+    // Tooltip.
+    if (tooltip) {
+        label.appendChild(getTooltipSpan(tooltip));
+    }
+
+    return label;
+}
+
+/**
+ * Creates and returns a labeled number input element for the form.
+ * @param {string} labelText Text for the label of the input.
+ * @param {string} id ID and name for the input element.
+ * @param {number} defaultValue Default value for the input.
+ * @param {string} tooltip Optional tooltip text for the input. If provided, a tooltip icon will be added to the label.
+ * @param {boolean} isRequired Whether the input is required.
+ * @param {number|null} min Minimum value for the input.
+ * @param {number|null} max Maximum value for the input.
+ * @returns 
+ */
+export const getNumberInputWithLabel = function(labelText, id, defaultValue, tooltip, isRequired, min, max) {
+
+    // Label.
+    const label = getLabel(labelText, id, isRequired);
+
+    // Input.
+    const input = getInput(id, defaultValue, true, isRequired, min, max);
     label.appendChild(input);
 
     // Tooltip.
@@ -153,19 +197,26 @@ const getSection = function(label) {
 /**
  * Creates and returns a input element for the form.
  * @param {string} id ID and name for the input element.
- * @param {string} defaultValue Default value for the input.
+ * @param {string|number} defaultValue Default value for the input.
  * @param {boolean} isNumberInput Whether the input should be a number input.
  * @param {boolean} isRequired Whether the input is required.
+ * @param {number|null} min Minimum value for the input (if number input).
+ * @param {number|null} max Maximum value for the input (if number input).
  * @returns {HTMLInputElement} Input element.
  */
-const getInput = function(id, defaultValue, isNumberInput, isRequired) {
+const getInput = function(id, defaultValue, isNumberInput, isRequired, min = null, max = null) {
     const input = document.createElement('input');
 
     input.id = `homebrew-object-${id}`;
     input.name = id;
     input.value = defaultValue ?? '';
-    input.type = isNumberInput ? 'number' : null;
     input.required = isRequired;
+
+    if (isNumberInput) {
+        input.type = 'number'
+        input.min = min;
+        input.max = max;
+    }
 
     return input;
 }

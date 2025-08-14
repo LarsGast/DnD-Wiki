@@ -1,6 +1,6 @@
 import { globals } from "../../../load-globals.js";
 import { ApiObjectInfo } from "../../../objects/api/resources/ApiObjectInfo.js";
-import { getInputSection } from './FormElementsBuilder.js'
+import { getTextInputSection } from './FormElementsBuilder.js'
 
 /**
  * Base class for homebrew object forms.
@@ -17,7 +17,7 @@ export class HomebrewBaseForm extends HTMLFormElement {
         super();
 
         // "Name" is the only required field for all homebrew objects.
-        this.appendChild(getInputSection("Name", "name", homebrewObject.name, false, "Name of the homebrew object.", true));    
+        this.appendChild(getTextInputSection("Name", "name", homebrewObject.name, "Name of the homebrew object.", true));    
     }
 
     /**

@@ -1,7 +1,7 @@
 import { AbilityBonus } from "../../../../objects/api/helpers/AbilityBonus.js";
 import { AbilityScore } from "../../../../objects/api/resources/AbilityScore.js";
 import { ApiObjectInfo } from "../../../../objects/api/resources/ApiObjectInfo.js";
-import { getInputWithLabel, getTooltipSpan } from "../FormElementsBuilder.js";
+import { getNumberInputWithLabel, getTooltipSpan } from "../FormElementsBuilder.js";
 
 /**
  * Custom section element for displaying and editing ability bonuses.
@@ -41,7 +41,7 @@ export class AbilityBonusesSection extends HTMLElement {
         for (const abilityScore of sortedAbilityScores) {
             const abilityBonus = this.abilityBonuses.find(bonus => bonus.ability_score.index === abilityScore.index);
 
-            const inputWithLabel = getInputWithLabel(abilityScore.name, abilityScore.index, abilityBonus?.bonus ?? 0, true, null, true);
+            const inputWithLabel = getNumberInputWithLabel(abilityScore.name, abilityScore.index, abilityBonus?.bonus ?? 0, null, true);
             this.appendChild(inputWithLabel);
         }
     }
